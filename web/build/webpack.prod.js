@@ -4,6 +4,7 @@ const path = require('path');
 const { PUBLIC_PATH } = require('../config/index');
 const { prodEntry } = require('./entry');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const prodConfig = {
   entry: prodEntry,
   output: {

@@ -37,7 +37,7 @@
     "editor.defaultFormatter": "HookyQR.beautify"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"

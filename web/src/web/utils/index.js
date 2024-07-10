@@ -1,15 +1,15 @@
 // 数字补位转字符串
-export function covering(num, text = '0',digit=7) {
-  let str = String(num);
-  let len = digit - str.length;
-  if (len) {
-    let newStr = [];
-    for (let i = 0; i < len; i++) {
-      newStr.push(text);
+export function covering(num, text = '0', digit = 7) {
+    let str = String(num);
+    let len = digit - str.length;
+    if (len) {
+        let newStr = [];
+        for (let i = 0; i < len; i++) {
+            newStr.push(text);
+        }
+        str = newStr.join('') + str;
     }
-    str = newStr.join('') + str;
-  }
-  return str;
+    return str;
 }
 
 /**
@@ -254,3 +254,4 @@ export function decimal(val, num = 0) {
     }
     return val;
 }
+

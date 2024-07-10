@@ -1,25 +1,26 @@
 <template>
+  <navTab />
   <div class="mian">
     <router-view></router-view>
   </div>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
+import navTab from './view/navTab.vue';
 const count = ref(0);
-const themeList=[{
-back:'',
-
-
-},{}]
+const themeList = [
+  {
+    back: '',
+  },
+  {},
+];
 function increment() {
   count.value++;
 }
-function changetheme(theme){
-document.documentElement.style.setProperty('--back', '#ccc');
-
+function changetheme(theme) {
+  document.documentElement.style.setProperty('--back', '#ccc');
 }
-onMounted(() => {
-});
+onMounted(() => {});
 </script>
 <style>
 .main {
@@ -28,4 +29,9 @@ onMounted(() => {
 }
 </style>
 <style lang="less">
+.mian {
+  width: 100%;
+  height: calc(100% - 60px);
+  background: #fff;
+}
 </style>

@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const config = require('./webpack.config');
 const path = require('path');
-const { PUBLIC_PATH } = require('../config/index');
+const { PUBLIC_PATH, STATIC_PATH } = require('../config/index');
 const { devEntry } = require('./entry');
 
 const devConfig = {
@@ -20,6 +20,9 @@ const devConfig = {
       directory: path.join(__dirname, '..', PUBLIC_PATH),
     }, //静态资源 //？？
     compress: true, //为每个静态文件开启 gzip compression；
+    client: {
+      overlay: false, //关闭全屏报错
+    },
   }, //开发服务配置
 };
 
