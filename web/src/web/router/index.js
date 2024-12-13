@@ -1,22 +1,20 @@
-import Vue from 'vue';
-import * as VueRouter from 'vue-router';
+import Vue from "vue";
+import * as VueRouter from "vue-router";
+import { routerListConfig } from "@/web/assets";
+function importFile(page) {
+  return () => import(`../view/${page}/index.vue`);
+}
 
-const home = () => import('../view/home/index.vue');
-const excelTool = () => import('../view/excelTool/index.vue');
-const threeDemo = () => import('../view/three/index.vue');
-const cesiumDemo = () => import('../view/cesium/index.vue');
-const field = ()=>import('../view/field/index.vue');
-const fileUpload = () => import('../view/fileUpload/index.vue');
-const routes = [
-  { path: '/', component: home },
-  { path: '/home', component: home, name: 'home' },
-  { path: '/excelTool', component: excelTool, name: 'excelTool' },
-  { path: '/three', component: threeDemo, name: 'three' },
-  { path: '/cesium', component: cesiumDemo, name: 'cesium' },
-  { path: '/fileUpload', component: fileUpload, name: 'fileUpload' },
-  { path: '/field', component: field, name: 'field' },
-  
-];
+const app = [{ path: "/", component: importFile("home") }];
+const routes = app.concat(
+  routerListConfig.map((item) => {
+    return {
+      path: "/" + item.path,
+      component: importFile(item.path),
+      name: item.path,
+    };
+  })
+);
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),
   routes,
