@@ -232,6 +232,7 @@ const reset = () => {
     setChart();
   }
 };
+const exportExcel = () => {};
 onMounted(() => {
   setChart();
 });
@@ -267,6 +268,7 @@ onMounted(() => {
         <a-button :disabled="!paramsData.dataList.length" @click="setChart"
           >生成</a-button
         >
+        <a-button @click="exportExcel">导出</a-button>
       </div>
       <div class="data-list">
         <a-tree

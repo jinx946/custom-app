@@ -1,7 +1,8 @@
-# 忽略目录 
+# 忽略目录
 node_modules/
 build_dist/
 uploads/
 static/
 public/
+.history/
 .vscode/
