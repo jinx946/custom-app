@@ -7,4 +7,6 @@ export const routerListConfig = [
   { name: "数据生成", path: "excelTool" },
   { name: "字段处理", path: "field" },
   { name: "ant-design", path: "antDemo" },
+  { name: "md", path: "md" },
+  { name: "test", path: "test" },
 ];
