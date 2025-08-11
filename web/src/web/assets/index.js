@@ -9,4 +9,5 @@ export const routerListConfig = [
   { name: "ant-design", path: "antDemo" },
   { name: "md", path: "md" },
   { name: "test", path: "test" },
+  { name: "element plus", path: "elementDemo" },
 ];
