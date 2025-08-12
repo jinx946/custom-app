@@ -1,5 +1,6 @@
 export const routerListConfig = [
   { name: "首页", path: "home" },
+  { name: "计划", path: "plan" },
   { name: "趋势", path: "trend" },
   { name: "threeDemo", path: "threeDemo" },
   { name: "cesiumDemo", path: "cesiumDemo" },
