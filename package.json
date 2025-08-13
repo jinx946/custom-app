@@ -1,10 +1,10 @@
 {
   "name": "custom-app-web",
   "scripts": {
-    "build": "webpack --config web/build/webpack.prod.js",
+    "build": "cd web && npm run build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b gh-pages -m \"Auto deploy to GitHub Pages\"",
-    "deploy-custom": "gh-pages -d dist -b deploy -m \"Deploy to custom branch\""
+    "deploy": "gh-pages -d docs -b gh-pages -m \"Auto deploy to GitHub Pages\"",
+    "deploy-custom": "gh-pages -d docs -b deploy -m \"Deploy to custom branch\""
   },
   "devDependencies": {
     "@traptitech/markdown-it-katex": "^3.6.0",
@@ -12,5 +12,8 @@
     "highlight.js": "^11.11.1",
     "markdown-it": "^14.1.0",
     "markdown-it-link-attributes": "^4.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
