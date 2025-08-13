@@ -663,7 +663,7 @@ const initChart = () => {
 
     const barOption = {
       title: {
-        text: "数据趋势",
+        text: "趋势",
         left: "center",
       },
       tooltip: {
@@ -930,7 +930,7 @@ onMounted(() => {
             ></div>
             <a-input
               v-model:value="editForm.color"
-              type="text"
+              type="color"
               style="width: 60px; height: 32px"
             />
             <span style="margin-left: 8px">{{ editForm.color }}</span>
