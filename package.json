@@ -3,8 +3,8 @@
   "scripts": {
     "build": "cd web && npm run build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs -b gh-pages -m \"Auto deploy to GitHub Pages\"",
-    "deploy-custom": "gh-pages -d docs -b deploy -m \"Deploy to custom branch\""
+    "deploy": "gh-pages -d build_dist -b gh-pages -m \"Auto deploy to GitHub Pages\"",
+    "deploy-custom": "gh-pages -d build_dist -b deploy -m \"Deploy to custom branch\""
   },
   "devDependencies": {
     "@traptitech/markdown-it-katex": "^3.6.0",

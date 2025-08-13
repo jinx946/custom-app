@@ -1,9 +1,10 @@
 # 忽略目录
 node_modules/
 build_dist/
+docs/
+docs/*
 uploads/
 static/
 public/
 .history/
 .vscode/
-docs/
