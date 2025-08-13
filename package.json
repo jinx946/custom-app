@@ -1,4 +1,11 @@
 {
+  "name": "custom-app-web",
+  "scripts": {
+    "build": "webpack --config web/build/webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -b gh-pages -m \"Auto deploy to GitHub Pages\"",
+    "deploy-custom": "gh-pages -d dist -b deploy -m \"Deploy to custom branch\""
+  },
   "devDependencies": {
     "@traptitech/markdown-it-katex": "^3.6.0",
     "@vueuse/core": "^13.4.0",

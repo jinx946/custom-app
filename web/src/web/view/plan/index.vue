@@ -114,7 +114,7 @@ const loadFromLocalStorage = () => {
       dataSource.value = [
         {
           key: "1",
-          name: "商品A",
+          name: "商品AAA",
           code: "001",
           price: 100,
           quantity: 2,
@@ -166,7 +166,7 @@ const loadFromLocalStorage = () => {
     dataSource.value = [
       {
         key: "1",
-        name: "商品A",
+        name: "商品AAA",
         code: "001",
         price: 100,
         quantity: 2,
