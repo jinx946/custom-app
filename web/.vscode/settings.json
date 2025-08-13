@@ -1,0 +1,56 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules/*/**": true
+  },
+  "relativePath.excludedExtensions": [".ts", ".js", ".css", ".html", ".scss"],
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript", "html", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.tabSize": 2,
+  "editor.formatOnType": false,
+  "editor.mouseWheelZoom": true,
+  "vetur.format.options.tabSize": 2,
+  "beautify.config": {
+    "brace_style": "collapse,preserve-inline"
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.autoIndent": "advanced",
+  "editor.detectIndentation": true,
+  "vetur.format.scriptInitialIndent": false,
+  "vetur.format.styleInitialIndent": false,
+  "vetur.format.options.useTabs": true,
+  "html.format.indentInnerHtml": false,
+  "html.format.indentHandlebars": false,
+  "window.zoomLevel": 1,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "vetur.validation.template": false,
+  "sonarlint.rules": {
+    "typescript:S2201": {
+      "level": "off"
+    }
+  },
+  "prettier.tabWidth": 2
+}
