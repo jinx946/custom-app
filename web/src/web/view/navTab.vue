@@ -15,12 +15,33 @@
 </template>
 
 <script setup>
-import { ref, reactive } from "vue";
+import { ref, reactive, watch } from "vue";
 import { useRouter, useRoute } from "_router/config.js";
 import { routerListConfig } from "@/web/assets";
 const router = useRouter();
+const route = useRoute();
 const routerList = reactive(routerListConfig);
 const activeIndex = ref("home");
+
+// 初始化时根据当前路由设置activeIndex
+const initActiveIndex = () => {
+  if (route.name) {
+    activeIndex.value = route.name;
+  }
+};
+
+// 监听路由变化，同步更新activeIndex
+watch(
+  () => route.name,
+  (newName) => {
+    if (newName) {
+      activeIndex.value = newName;
+    }
+  }
+);
+
+initActiveIndex();
+
 const handleSelect = (path, keyPath) => {
   activeIndex.value = path;
   console.log(path, keyPath);
