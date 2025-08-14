@@ -7,6 +7,9 @@ import {
   Popconfirm,
   Modal,
   Upload,
+  Form,
+  FormItem,
+  InputNumber,
 } from "ant-design-vue";
 import {
   PlusOutlined,
@@ -692,7 +695,346 @@ const initChart = () => {
     barChart.setOption(barOption);
   }
 };
+// 预测相关
+const predictVisible = ref(false);
+const predictData = ref(null);
 
+// 线性预测函数（加权版，使用斐波那契数列作为权重）
+const weightedLinearRegression = (x, y) => {
+  if (x.length !== y.length || x.length < 2) {
+    // 如果数据点不足或长度不匹配，退化为简单线性回归
+    return simpleLinearRegression(x, y);
+  }
+
+  // 生成斐波那契数列作为权重
+  const weights = generateFibonacciWeights(x.length);
+
+  let sumW = 0;
+  let sumWX = 0;
+  let sumWY = 0;
+  let sumWXY = 0;
+  let sumWXX = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    const w = weights[i];
+    const xi = x[i];
+    const yi = y[i];
+
+    sumW += w;
+    sumWX += w * xi;
+    sumWY += w * yi;
+    sumWXY += w * xi * yi;
+    sumWXX += w * xi * xi;
+  }
+
+  // 加权线性回归公式
+  const denominator = sumW * sumWXX - sumWX * sumWX;
+
+  // 避免除零错误
+  if (Math.abs(denominator) < 1e-10) {
+    return simpleLinearRegression(x, y);
+  }
+
+  const slope = (sumW * sumWXY - sumWX * sumWY) / denominator;
+  const intercept = (sumWY - slope * sumWX) / sumW;
+
+  return { slope, intercept };
+};
+
+// 简单线性回归（备用方案）
+const simpleLinearRegression = (x, y) => {
+  const n = x.length;
+  let sumX = 0;
+  let sumY = 0;
+  let sumXY = 0;
+  let sumXX = 0;
+
+  for (let i = 0; i < n; i++) {
+    sumX += x[i];
+    sumY += y[i];
+    sumXY += x[i] * y[i];
+    sumXX += x[i] * x[i];
+  }
+
+  const denominator = n * sumXX - sumX * sumX;
+
+  // 避免除零错误
+  if (Math.abs(denominator) < 1e-10) {
+    return { slope: 0, intercept: sumY / n };
+  }
+
+  const slope = (n * sumXY - sumX * sumY) / denominator;
+  const intercept = (sumY - slope * sumX) / n;
+
+  return { slope, intercept };
+};
+
+// 生成斐波那契权重数组
+const generateFibonacciWeights = (n) => {
+  if (n <= 0) return [];
+  if (n === 1) return [1];
+
+  const fib = [1, 1];
+  for (let i = 2; i < n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+
+  return fib;
+};
+
+// 模式识别预测算法
+const patternRecognitionPredict = (values) => {
+  if (values.length < 4) {
+    return null; // 数据不足，无法识别模式
+  }
+
+  // 检查是否存在螺旋模式（交替增减）
+  const diffs = [];
+  for (let i = 1; i < values.length; i++) {
+    diffs.push(values[i] - values[i - 1]);
+  }
+
+  // 检查是否为螺旋模式（正负交替）
+  let isSpiralPattern = true;
+  for (let i = 1; i < diffs.length; i++) {
+    // 检查相邻差值是否正负交替
+    if (diffs[i] * diffs[i - 1] >= 0) {
+      isSpiralPattern = false;
+      break;
+    }
+  }
+
+  if (isSpiralPattern) {
+    // 螺旋模式预测
+    const lastDiff = diffs[diffs.length - 1];
+    const predictions = [];
+
+    // 预测未来3个值
+    let currentValue = values[values.length - 1];
+    let currentDiff = -lastDiff; // 反向
+
+    for (let i = 0; i < 3; i++) {
+      // 调整差值幅度（可以保持或略微增加）
+      if (i > 0) {
+        currentDiff = -currentDiff * 1.1; // 反向并增加10%幅度
+      }
+      currentValue += currentDiff;
+      predictions.push(currentValue);
+    }
+
+    return predictions;
+  }
+
+  // 检查是否存在周期性模式
+  const patternLength = findPatternLength(values);
+  if (patternLength > 0) {
+    // 周期性模式预测
+    const predictions = [];
+    const patternStartIndex = values.length - patternLength;
+
+    for (let i = 0; i < 3; i++) {
+      const patternIndex = (i + patternStartIndex) % patternLength;
+      predictions.push(values[patternIndex]);
+    }
+
+    return predictions;
+  }
+
+  return null; // 未识别出特定模式
+};
+
+// 查找周期性模式长度
+const findPatternLength = (values) => {
+  const n = values.length;
+
+  // 检查长度从2到n/2的可能周期
+  for (let len = 2; len <= Math.floor(n / 2); len++) {
+    let isPattern = true;
+
+    // 检查是否符合该周期
+    for (let i = 0; i < n - len; i++) {
+      if (Math.abs(values[i] - values[i + len]) > 0.01) {
+        // 允许小误差
+        isPattern = false;
+        break;
+      }
+    }
+
+    if (isPattern) {
+      return len;
+    }
+  }
+
+  return 0; // 未找到周期性模式
+};
+
+// 改进的预测算法
+const advancedPredict = (years, values) => {
+  // 首先尝试模式识别
+  const patternPredictions = patternRecognitionPredict(values);
+  if (patternPredictions) {
+    return patternPredictions;
+  }
+
+  // 如果没有识别出特定模式，使用加权线性回归
+  const { slope, intercept } = weightedLinearRegression(years, values);
+
+  // 预测未来3年的数据
+  const lastYear = Math.max(...years);
+  const predictions = [];
+  for (let i = 1; i <= 3; i++) {
+    const year = lastYear + i;
+    const predictedValue = slope * year + intercept;
+    predictions.push(predictedValue);
+  }
+
+  return predictions;
+};
+
+// 修改预测未来趋势函数
+const predictFuture = (record) => {
+  // 获取自定义列年份数据
+  const years = customColumns.value
+    .map((col) => {
+      const year = parseInt(col.title);
+      return isNaN(year) ? 0 : year;
+    })
+    .filter((year) => year > 0);
+
+  if (years.length < 2) {
+    Modal.warning({
+      title: "无法预测",
+      content: "需要至少两个年份的数据才能进行预测",
+    });
+    return;
+  }
+
+  // 获取对应年份的数值
+  const values = years.map((year) => {
+    const dataIndex = customColumns.value.find(
+      (col) => col.title === year.toString()
+    )?.dataIndex;
+    const value = dataIndex ? parseFloat(record[dataIndex]) : 0;
+    return isNaN(value) ? 0 : value;
+  });
+
+  // 使用改进的预测算法
+  const predictionsArray = advancedPredict(years, values);
+
+  // 预测未来3年的数据
+  const lastYear = Math.max(...years);
+  const predictions = [];
+  for (let i = 0; i < 3; i++) {
+    const year = lastYear + i + 1;
+    predictions.push({
+      year,
+      value: Math.max(0, predictionsArray[i]), // 确保预测值不为负
+    });
+  }
+
+  // 显示预测结果
+  predictData.value = {
+    record,
+    predictions,
+  };
+  predictVisible.value = true;
+
+  // 初始化预测图表
+  nextTick(() => {
+    initPredictChart(record, years, values, predictions);
+  });
+};
+let predictChart = null;
+// 初始化预测图表
+const initPredictChart = (record, years, values, predictions) => {
+  const predictChartDom = document.getElementById("predict-chart");
+  if (!predictChartDom) return;
+  if (!predictChart) {
+    predictChart = echarts.init(predictChartDom);
+  } else {
+    predictChart.clear();
+  }
+
+  // 组合历史数据和预测数据
+  const allYears = [...years, ...predictions.map((p) => p.year)];
+  const allValues = [...values, ...predictions.map((p) => p.value)];
+  // 区分历史数据和预测数据
+  const historicalData = allYears.map((year, index) => values[index] || null);
+  const len = values.length;
+  const predictedData = new Array(len - 1)
+    .fill(null)
+    .concat([historicalData[len - 1]])
+    .concat(predictions.map((p, index) => p.value));
+  const option = {
+    title: {
+      text: `「${record.name}」趋势预测`,
+      left: "center",
+    },
+    tooltip: {
+      trigger: "axis",
+      formatter: (params) => {
+        let _params = Array.isArray(params) ? params : [params];
+        let result = _params[0].name + "<br/>";
+        _params.forEach((param) => {
+          const name = param.name;
+          const value = !!param.value ? param.value.toFixed(2) : null;
+          if (!!value) {
+            result += `${name}: ${value}<br/>`;
+          }
+        });
+        return result;
+      },
+    },
+    legend: {
+      data: ["历史数据", "预测数据"],
+      top: 30,
+    },
+    xAxis: {
+      type: "category",
+      data: allYears,
+    },
+    yAxis: {
+      type: "value",
+    },
+    series: [
+      {
+        name: "历史数据",
+        data: historicalData,
+        type: "line",
+        smooth: false,
+        itemStyle: {
+          color: record.color,
+        },
+        markPoint: {
+          data: [
+            { type: "max", name: "最大值" },
+            { type: "min", name: "最小值" },
+          ],
+        },
+      },
+      {
+        name: "预测数据",
+        data: predictedData,
+        type: "line",
+        smooth: true,
+        itemStyle: {
+          color: "#ff7f00",
+        },
+        lineStyle: {
+          type: "dashed",
+        },
+      },
+    ],
+  };
+  predictChart.setOption(option, true);
+};
+
+// 关闭预测模态框
+const closePredictModal = () => {
+  predictVisible.value = false;
+  predictData.value = null;
+  // predictChart = null;
+};
 // 监听数据变化，重新绘制图表
 watch(
   dataSource,
@@ -833,6 +1175,9 @@ onMounted(() => {
           <div style="display: flex; gap: 8px">
             <Button size="small" @click="showEditModal(record)">
               <EditOutlined />
+            </Button>
+            <Button size="small" @click="predictFuture(record)" type="primary">
+              预测
             </Button>
             <a-popconfirm
               title="确定要删除这一行吗?"
@@ -979,6 +1324,45 @@ onMounted(() => {
         >
           <a-button> <UploadOutlined /> 选择Excel文件 </a-button>
         </a-upload>
+      </div>
+    </a-modal>
+
+    <!-- 预测图表容器 -->
+    <a-modal
+      v-model:visible="predictVisible"
+      title="趋势预测"
+      width="800px"
+      @cancel="closePredictModal"
+      :footer="null"
+    >
+      <div id="predict-chart" style="width: 100%; height: 500px"></div>
+      <div v-if="predictData" style="margin-top: 20px">
+        <h3>预测结果</h3>
+        <p>
+          基于智能预测算法（模式识别+加权线性回归）预测「{{
+            predictData.record.name
+          }}」未来三年的趋势：
+        </p>
+        <a-table
+          :dataSource="predictData.predictions"
+          :pagination="false"
+          size="small"
+        >
+          <a-table-column title="年份" dataIndex="year">
+            <template #default="text">
+              {{ text }}
+            </template>
+          </a-table-column>
+          <a-table-column title="预测值" dataIndex="value">
+            <template #default="text">
+              {{
+                typeof text === "object"
+                  ? text.value.toFixed(2)
+                  : parseFloat(text).toFixed(2)
+              }}
+            </template>
+          </a-table-column>
+        </a-table>
       </div>
     </a-modal>
   </div>
