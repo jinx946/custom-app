@@ -2,6 +2,9 @@
   "name": "custom-app-web",
   "scripts": {
     "build": "cd web && npm run build",
+    "dev": "cd web && npm run dev",
+    "build-server": "cd server && npm run build",
+    "dev-server": "cd server && npm run dev",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build_dist -b gh-pages -m \"Auto deploy to GitHub Pages\"",
     "deploy-custom": "gh-pages -d build_dist -b deploy -m \"Deploy to custom branch\""
