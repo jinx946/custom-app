@@ -47,9 +47,6 @@ egg 服务启动错误
 npm run build
 
 # 部署到 gh-pages 分支
-切换分支到 gh-pages 分支
-git checkout gh-pages
-npm run build
 npm run deploy
 ```
 
