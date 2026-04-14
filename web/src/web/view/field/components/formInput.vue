@@ -277,6 +277,21 @@ function generate() {
     form.value.output = str;
   }
 }
+function getArrayLen(arr) {
+  if (!Array.isArray(arr)) {
+    return 0;
+  }
+  return arr.length;
+}
+
+// 返回一个对象的全部属性
+function getObjectProps(obj) {
+  if (typeof obj !== "object" || obj === null) {
+    return [];
+  }
+  return Object.keys(obj);
+}
+
 defineExpose({
   formRef,
 });

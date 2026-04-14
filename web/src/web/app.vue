@@ -5,12 +5,12 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue';
-import navTab from './view/navTab.vue';
+import { ref, onMounted } from "vue";
+import navTab from "./view/navTab.vue";
 const count = ref(0);
 const themeList = [
   {
-    back: '',
+    back: "",
   },
   {},
 ];
@@ -18,7 +18,7 @@ function increment() {
   count.value++;
 }
 function changetheme(theme) {
-  document.documentElement.style.setProperty('--back', '#ccc');
+  document.documentElement.style.setProperty("--back", "#ccc");
 }
 onMounted(() => {});
 </script>
