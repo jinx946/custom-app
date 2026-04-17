@@ -9,6 +9,7 @@ export const routerListConfig = [
   { name: "图片水印", path: "fileUpload/watermark" },
   { name: "数据生成", path: "excelTool" },
   { name: "字段处理", path: "field" },
+  { name: "小工具", path: "tool" },
   { name: "ant-design", path: "antDemo" },
   { name: "md", path: "md" },
   { name: "test", path: "test" },
