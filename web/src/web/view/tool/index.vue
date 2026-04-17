@@ -21,13 +21,27 @@
 
       <!-- TAB 头部 -->
       <div class="tabs-bar">
-        <button class="tab-btn active" data-tab="diffTab" @click="switchTab('diffTab')">
+        <button
+          class="tab-btn active"
+          data-tab="diffTab"
+          @click="switchTab('diffTab')"
+        >
           🔍 文本差异对比
         </button>
-        <button class="tab-btn" data-tab="jsonTab" @click="switchTab('jsonTab')">
+        <button
+          class="tab-btn"
+          data-tab="jsonTab"
+          @click="switchTab('jsonTab')"
+        >
           📦 文本转JSON & 格式化
         </button>
-        <button class="tab-btn" data-tab="base64Tab" @click="switchTab('base64Tab')">🖼️ 图片转Base64</button>
+        <button
+          class="tab-btn"
+          data-tab="base64Tab"
+          @click="switchTab('base64Tab')"
+        >
+          🖼️ 图片转Base64
+        </button>
       </div>
 
       <!-- ========================= TAB 1 : 差异对比区域 ========================= -->
@@ -79,24 +93,52 @@
 
         <div class="diff-output-area">
           <div class="diff-panel">
-            <div class="diff-panel-header" id="leftHeaderClick" @click="locateFirstByType('delete')">
+            <div
+              class="diff-panel-header"
+              id="leftHeaderClick"
+              @click="locateFirstByType('delete')"
+            >
               <div>
                 🔴 文本A 独有差异
                 <span style="font-size: 10px">(点击下方删除项可定位)</span>
               </div>
-              <div id="leftStat" class="stat-badge del-stat" @click.stop="locateFirstByType('delete')">删除: -</div>
+              <div
+                id="leftStat"
+                class="stat-badge del-stat"
+                @click.stop="locateFirstByType('delete')"
+              >
+                删除: -
+              </div>
             </div>
-            <div id="leftDiffPanel" class="diff-viewer" v-html="leftDiffContent"></div>
+            <div
+              id="leftDiffPanel"
+              class="diff-viewer"
+              v-html="leftDiffContent"
+            ></div>
           </div>
           <div class="diff-panel">
-            <div class="diff-panel-header" id="rightHeaderClick" @click="locateFirstByType('insert')">
+            <div
+              class="diff-panel-header"
+              id="rightHeaderClick"
+              @click="locateFirstByType('insert')"
+            >
               <div>
                 🟢 文本B 独有差异
                 <span style="font-size: 10px">(点击下方新增项可定位)</span>
               </div>
-              <div id="rightStat" class="stat-badge ins-stat" @click.stop="locateFirstByType('insert')">新增: -</div>
+              <div
+                id="rightStat"
+                class="stat-badge ins-stat"
+                @click.stop="locateFirstByType('insert')"
+              >
+                新增: -
+              </div>
             </div>
-            <div id="rightDiffPanel" class="diff-viewer" v-html="rightDiffContent"></div>
+            <div
+              id="rightDiffPanel"
+              class="diff-viewer"
+              v-html="rightDiffContent"
+            ></div>
           </div>
         </div>
 
@@ -124,7 +166,11 @@
             id="progressContainer"
             :style="{ display: showProgress ? 'block' : 'none' }"
           >
-            <div class="progress-fill" id="progressFill" :style="{ width: progressPercent + '%' }"></div>
+            <div
+              class="progress-fill"
+              id="progressFill"
+              :style="{ width: progressPercent + '%' }"
+            ></div>
           </div>
           <div>💡 对比后自动保存至历史记录</div>
         </div>
@@ -136,10 +182,20 @@
           <div class="json-input-header">
             <h3 style="font-size: 1.2rem">📋 原始文本 / JSON字符串</h3>
             <div class="json-actions">
-              <button id="formatJsonBtn" class="btn-secondary" @click="formatAndSaveJson">
+              <button
+                id="formatJsonBtn"
+                class="btn-secondary"
+                @click="formatAndSaveJson"
+              >
                 ✨ 格式化 & 美化JSON
               </button>
-              <button id="clearJsonBtn" class="btn-secondary" @click="clearJsonInput">🗑️ 清空</button>
+              <button
+                id="clearJsonBtn"
+                class="btn-secondary"
+                @click="clearJsonInput"
+              >
+                🗑️ 清空
+              </button>
             </div>
           </div>
           <textarea
@@ -171,7 +227,11 @@
               📋 复制结果
             </button>
           </div>
-          <div id="jsonPreviewArea" class="json-preview" v-html="jsonPreviewContent"></div>
+          <div
+            id="jsonPreviewArea"
+            class="json-preview"
+            v-html="jsonPreviewContent"
+          ></div>
         </div>
       </div>
 
@@ -181,13 +241,26 @@
           <div class="json-input-header">
             <h3 style="font-size: 1.2rem">🖼️ 图片转Base64</h3>
             <div class="json-actions">
-              <button id="clearBase64Btn" class="btn-secondary" @click="clearBase64Content">🗑️ 清空</button>
+              <button
+                id="clearBase64Btn"
+                class="btn-secondary"
+                @click="clearBase64Content"
+              >
+                🗑️ 清空
+              </button>
             </div>
           </div>
           <div class="tool-container">
             <!-- 左侧：上传与预览 -->
             <div class="upload-preview-area">
-              <div class="drop-zone" id="dropZone" @click="triggerFileSelect" @dragover.prevent="onDragOver" @dragleave.prevent="onDragLeave" @drop.prevent="onDrop">
+              <div
+                class="drop-zone"
+                id="dropZone"
+                @click="triggerFileSelect"
+                @dragover.prevent="onDragOver"
+                @dragleave.prevent="onDragLeave"
+                @drop.prevent="onDrop"
+              >
                 <div class="upload-icon">📸</div>
                 <p>点击或拖拽图片至此区域</p>
                 <p class="small-hint">支持 JPG, PNG, GIF, WEBP, SVG, BMP 等</p>
@@ -204,17 +277,28 @@
                   <span>🖼️ 图片预览</span>
                 </div>
                 <div class="preview-box" id="previewBox">
-                  <div class="image-placeholder" id="imagePlaceholder" v-if="!imagePreviewSrc">
+                  <div
+                    class="image-placeholder"
+                    id="imagePlaceholder"
+                    v-if="!imagePreviewSrc"
+                  >
                     <span>✨ 暂无图片</span>
                     <span style="font-size: 12px">上传后显示缩略图</span>
                   </div>
-                  <img id="imagePreview" :src="imagePreviewSrc" :style="{ display: imagePreviewSrc ? 'block' : 'none' }" alt="预览图" />
+                  <img
+                    id="imagePreview"
+                    :src="imagePreviewSrc"
+                    :style="{ display: imagePreviewSrc ? 'block' : 'none' }"
+                    alt="预览图"
+                  />
                 </div>
                 <div
                   id="fileMetaInfo"
                   class="file-info"
                   :style="{ display: fileMetaInfo ? 'inline-block' : 'none' }"
-                >{{ fileMetaInfo }}</div>
+                >
+                  {{ fileMetaInfo }}
+                </div>
               </div>
             </div>
 
@@ -223,7 +307,12 @@
               <div class="result-header">
                 <h3>📋 Base64 编码结果</h3>
                 <div class="action-buttons">
-                  <button class="btn-copy" id="copyBtn" title="复制Base64文本" @click="copyToClipboard">
+                  <button
+                    class="btn-copy"
+                    id="copyBtn"
+                    title="复制Base64文本"
+                    @click="copyToClipboard"
+                  >
                     📋 复制
                   </button>
                   <button
@@ -245,9 +334,15 @@
               ></textarea>
               <div class="meta-row">
                 <span id="dataUriPrefix">{{ dataUriPrefix }}</span>
-                <span id="charCountSpan" class="char-count">{{ charCount }}</span>
+                <span id="charCountSpan" class="char-count">{{
+                  charCount
+                }}</span>
               </div>
-              <div id="errorMessage" class="error-message" :style="{ display: errorMessage ? 'flex' : 'none' }">
+              <div
+                id="errorMessage"
+                class="error-message"
+                :style="{ display: errorMessage ? 'flex' : 'none' }"
+              >
                 ⚠️ <span id="errorText">{{ errorMessage }}</span>
               </div>
             </div>
@@ -260,52 +355,59 @@
       </div>
     </div>
 
-    <div id="toastMsg" class="success-toast" :class="{ show: showToast }" ref="toast">{{ toastMessage }}</div>
+    <div
+      id="toastMsg"
+      class="success-toast"
+      :class="{ show: showToast }"
+      ref="toast"
+    >
+      {{ toastMessage }}
+    </div>
   </div>
 </template>
 
 <script>
-import '@/web/style/tool.less';
+import "@/web/style/tool.less";
 export default {
-  name: 'ToolView',
+  name: "ToolView",
   data() {
     return {
       // 文本对比相关
-      textA: '',
-      textB: '',
-      chunkSize: '1000',
-      leftDiffContent: '等待对比',
-      rightDiffContent: '等待对比',
-      perfStatus: '✅ 就绪',
+      textA: "",
+      textB: "",
+      chunkSize: "1000",
+      leftDiffContent: "等待对比",
+      rightDiffContent: "等待对比",
+      perfStatus: "✅ 就绪",
       showProgress: false,
       progressPercent: 0,
       isComparing: false,
       currentAbortFlag: false,
       lastOperations: null,
       locateNum: 0,
-      
+
       // JSON 相关
-      rawJson: '',
-      jsonPreviewContent: '✨ 点击“格式化”按钮，将显示结构化的JSON内容',
-      
+      rawJson: "",
+      jsonPreviewContent: "✨ 点击“格式化”按钮，将显示结构化的JSON内容",
+
       // Base64 相关
-      imagePreviewSrc: '',
-      base64Output: '',
-      fileMetaInfo: '',
-      dataUriPrefix: '📄 格式: DataURL (Base64)',
-      charCount: '字符数: 0',
-      errorMessage: '',
-      
+      imagePreviewSrc: "",
+      base64Output: "",
+      fileMetaInfo: "",
+      dataUriPrefix: "📄 格式: DataURL (Base64)",
+      charCount: "字符数: 0",
+      errorMessage: "",
+
       // 历史记录
       historyRecords: [],
       db: null,
-      
+
       // Toast 相关
       showToast: false,
-      toastMessage: '',
-      
+      toastMessage: "",
+
       // 当前激活的Tab
-      activeTab: 'diffTab'
+      activeTab: "diffTab",
     };
   },
   mounted() {
@@ -314,11 +416,12 @@ export default {
     });
     this.setupHeaderLocate();
     this.bindClickLocate();
-    
+
     // 示例填充
     if (!this.textA && !this.textB) {
       this.textA = '{"project":"diff工具","version":"1.0","author":"张三"}';
-      this.textB = '{"project":"diff工具","version":"2.0","author":"李四","feature":"历史记录"}';
+      this.textB =
+        '{"project":"diff工具","version":"2.0","author":"李四","feature":"历史记录"}';
       this.updateCharCounts();
     }
   },
@@ -328,7 +431,7 @@ export default {
       const DB_NAME = "textDiffTool";
       const DB_VERSION = 1;
       const STORE_NAME = "history";
-      
+
       return new Promise((resolve, reject) => {
         const request = indexedDB.open(DB_NAME, DB_VERSION);
 
@@ -355,7 +458,7 @@ export default {
 
     loadHistory() {
       if (!this.db) return;
-      
+
       const transaction = this.db.transaction("history", "readonly");
       const store = transaction.objectStore("history");
       const request = store.getAll();
@@ -383,25 +486,62 @@ export default {
 
     saveHistory() {
       if (!this.db) return;
-      
+
       if (this.historyRecords.length > 20) {
         this.historyRecords = this.historyRecords.slice(0, 20);
       }
 
-      const transaction = this.db.transaction("history", "readwrite");
-      const store = transaction.objectStore("history");
+      try {
+        const transaction = this.db.transaction("history", "readwrite");
+        const store = transaction.objectStore("history");
 
-      // 先清空所有记录
-      store.clear();
+        // 先清空所有记录
+        store.clear();
 
-      // 然后添加所有记录
-      this.historyRecords.forEach((record) => {
-        store.put(record);
-      });
+        // 然后添加所有记录
+        this.historyRecords.forEach((record) => {
+          // 确保记录可以被结构化克隆
+          try {
+            // 测试是否可以被结构化克隆
+            structuredClone(record);
+            store.put(record);
+          } catch (cloneError) {
+            console.warn("无法存储历史记录，跳过:", cloneError);
+            // 尝试简化记录后存储
+            try {
+              const simplifiedRecord = {
+                id: record.id,
+                type: record.type,
+                name: record.name,
+                timestamp: record.timestamp,
+                data: {
+                  // 只存储基本类型数据
+                  textA: record.data.textA?.substring(0, 10000) || "",
+                  textB: record.data.textB?.substring(0, 10000) || "",
+                  rawJson: record.data.rawJson?.substring(0, 10000) || "",
+                  formattedJson:
+                    record.data.formattedJson?.substring(0, 10000) || "",
+                  fileName: record.data.fileName || "",
+                  base64Data: record.data.base64Data?.substring(0, 10000) || "",
+                },
+              };
+              store.put(simplifiedRecord);
+            } catch (simplifyError) {
+              console.error("简化后仍无法存储:", simplifyError);
+            }
+          }
+        });
 
-      transaction.oncomplete = () => {
-        this.renderHistoryTags();
-      };
+        transaction.oncomplete = () => {
+          this.renderHistoryTags();
+        };
+
+        transaction.onerror = (event) => {
+          console.error("存储历史记录失败:", event.target.error);
+        };
+      } catch (error) {
+        console.error("保存历史记录出错:", error);
+      }
     },
 
     addDiffHistory(textA, textB, chunkSize) {
@@ -419,7 +559,8 @@ export default {
     },
 
     addJsonHistory(rawJson, formattedJson) {
-      const preview = rawJson.length > 50 ? rawJson.substring(0, 50) + "..." : rawJson;
+      const preview =
+        rawJson.length > 50 ? rawJson.substring(0, 50) + "..." : rawJson;
       const record = {
         id: Date.now() + "_json_" + Math.random(),
         type: "json",
@@ -448,12 +589,18 @@ export default {
       const container = document.getElementById("historyTagsContainer");
       if (!container) return;
       if (this.historyRecords.length === 0) {
-        container.innerHTML = '<span style="color:#94a3b8; font-size:0.7rem;">暂无记录，对比或格式化JSON后自动保存</span>';
+        container.innerHTML =
+          '<span style="color:#94a3b8; font-size:0.7rem;">暂无记录，对比或格式化JSON后自动保存</span>';
         return;
       }
       const tagsHtml = this.historyRecords
         .map((record) => {
-          const icon = record.type === "diff" ? "🔁" : record.type === "json" ? "📋" : "🖼️";
+          const icon =
+            record.type === "diff"
+              ? "🔁"
+              : record.type === "json"
+              ? "📋"
+              : "🖼️";
           return `<div class="history-tag" data-id="${record.id}">
                       <span class="tag-icon">${icon}</span>
                       <span>${this.escapeHtmlSimple(record.name)}</span>
@@ -490,7 +637,8 @@ export default {
         }
         this.updateCharCounts();
         this.perfStatus = `📂 已加载历史对比记录，点击"高亮差异"重新对比`;
-        this.leftDiffContent = "<span>⚡ 历史已加载，点击对比按钮查看差异</span>";
+        this.leftDiffContent =
+          "<span>⚡ 历史已加载，点击对比按钮查看差异</span>";
         this.rightDiffContent = "<span>⚡ 历史已加载</span>";
         document.getElementById("leftStat").innerHTML = "删除: -";
         document.getElementById("rightStat").innerHTML = "新增: -";
@@ -534,10 +682,14 @@ export default {
       const charCountA = document.getElementById("charCountA");
       const charCountB = document.getElementById("charCountB");
       if (charCountA) {
-        charCountA.innerText = `${Array.from(this.textA).length.toLocaleString()} 字符`;
+        charCountA.innerText = `${Array.from(
+          this.textA
+        ).length.toLocaleString()} 字符`;
       }
       if (charCountB) {
-        charCountB.innerText = `${Array.from(this.textB).length.toLocaleString()} 字符`;
+        charCountB.innerText = `${Array.from(
+          this.textB
+        ).length.toLocaleString()} 字符`;
       }
     },
 
@@ -637,11 +789,16 @@ export default {
     },
 
     locateFirstByType(type) {
-      const panel = type === "delete" ? document.getElementById("leftDiffPanel") : document.getElementById("rightDiffPanel");
+      const panel =
+        type === "delete"
+          ? document.getElementById("leftDiffPanel")
+          : document.getElementById("rightDiffPanel");
       const selector = type === "delete" ? ".diff-del" : ".diff-ins";
       const elems = panel.querySelectorAll(selector);
       if (elems.length === 0) {
-        this.perfStatus = `ℹ️ 没有找到${type === "delete" ? "删除" : "新增"}差异项`;
+        this.perfStatus = `ℹ️ 没有找到${
+          type === "delete" ? "删除" : "新增"
+        }差异项`;
         return;
       }
       if (this.locateNum >= elems.length) this.locateNum = 0;
@@ -652,13 +809,16 @@ export default {
         firstElem.scrollIntoView({ behavior: "smooth", block: "center" });
         firstElem.classList.add("highlight-glow");
         setTimeout(() => firstElem.classList.remove("highlight-glow"), 800);
-        this.perfStatus = `🎯 已定位到首个${type === "delete" ? "删除" : "新增"}差异`;
+        this.perfStatus = `🎯 已定位到首个${
+          type === "delete" ? "删除" : "新增"
+        }差异`;
         setTimeout(() => {
-          if (this.perfStatus.includes("已定位"))
-            this.perfStatus = "✅ 就绪";
+          if (this.perfStatus.includes("已定位")) this.perfStatus = "✅ 就绪";
         }, 1500);
       } else {
-        this.perfStatus = `ℹ️ 没有找到${type === "delete" ? "删除" : "新增"}差异项`;
+        this.perfStatus = `ℹ️ 没有找到${
+          type === "delete" ? "删除" : "新增"
+        }差异项`;
       }
     },
 
@@ -678,9 +838,13 @@ export default {
       const flushLeft = () => {
         if (leftBuffer === "") return;
         if (leftLastType === "equal")
-          leftResult += `<span class="diff-equal">${this.escapeHtml(leftBuffer)}</span>`;
+          leftResult += `<span class="diff-equal">${this.escapeHtml(
+            leftBuffer
+          )}</span>`;
         else if (leftLastType === "delete") {
-          leftResult += `<span class="diff-del" data-del-idx="${delCount}">${this.escapeHtml(leftBuffer)}</span>`;
+          leftResult += `<span class="diff-del" data-del-idx="${delCount}">${this.escapeHtml(
+            leftBuffer
+          )}</span>`;
           delCount++;
         }
         leftBuffer = "";
@@ -700,9 +864,13 @@ export default {
       const flushRight = () => {
         if (rightBuffer === "") return;
         if (rightLastType === "equal")
-          rightResult += `<span class="diff-equal">${this.escapeHtml(rightBuffer)}</span>`;
+          rightResult += `<span class="diff-equal">${this.escapeHtml(
+            rightBuffer
+          )}</span>`;
         else if (rightLastType === "insert") {
-          rightResult += `<span class="diff-ins" data-ins-idx="${insCount}">${this.escapeHtml(rightBuffer)}</span>`;
+          rightResult += `<span class="diff-ins" data-ins-idx="${insCount}">${this.escapeHtml(
+            rightBuffer
+          )}</span>`;
           insCount++;
         }
         rightBuffer = "";
@@ -715,8 +883,10 @@ export default {
       }
       flushRight();
 
-      this.leftDiffContent = leftResult || '<span class="diff-equal">无A独有内容</span>';
-      this.rightDiffContent = rightResult || '<span class="diff-equal">无B独有内容</span>';
+      this.leftDiffContent =
+        leftResult || '<span class="diff-equal">无A独有内容</span>';
+      this.rightDiffContent =
+        rightResult || '<span class="diff-equal">无B独有内容</span>';
       document.getElementById("leftStat").innerHTML = `删除: ${delCount}`;
       document.getElementById("rightStat").innerHTML = `新增: ${insCount}`;
     },
@@ -727,11 +897,17 @@ export default {
       const rightPanel = document.getElementById("rightDiffPanel");
       if (leftPanel) {
         leftPanel.removeEventListener("click", this.leftItemClickHandler);
-        leftPanel.addEventListener("click", this.leftItemClickHandler.bind(this));
+        leftPanel.addEventListener(
+          "click",
+          this.leftItemClickHandler.bind(this)
+        );
       }
       if (rightPanel) {
         rightPanel.removeEventListener("click", this.rightItemClickHandler);
-        rightPanel.addEventListener("click", this.rightItemClickHandler.bind(this));
+        rightPanel.addEventListener(
+          "click",
+          this.rightItemClickHandler.bind(this)
+        );
       }
     },
 
@@ -768,7 +944,14 @@ export default {
       let rawChunkSize = parseInt(this.chunkSize, 10);
       if (rawChunkSize === 0) {
         const maxLen = Math.max(textA.length, textB.length);
-        rawChunkSize = maxLen > 50000 ? 3000 : maxLen > 20000 ? 2000 : maxLen > 8000 ? 1200 : 800;
+        rawChunkSize =
+          maxLen > 50000
+            ? 3000
+            : maxLen > 20000
+            ? 2000
+            : maxLen > 8000
+            ? 1200
+            : 800;
         this.perfStatus = `🔧 自动分块: ${rawChunkSize}`;
       }
       const start = performance.now();
@@ -785,9 +968,15 @@ export default {
         const insStat = document.getElementById("rightStat").innerText;
         this.perfStatus = `✅ 完成 (${elapsed}ms) ${delStat} ${insStat}`;
         this.setProgress(100, false);
-        this.addDiffHistory(textA, textB, rawChunkSize);
+        try {
+          this.addDiffHistory(textA, textB, rawChunkSize);
+        } catch (historyError) {
+          console.warn("保存历史记录失败:", historyError);
+          // 不影响对比结果，继续执行
+        }
       } catch (e) {
-        this.leftDiffContent = '<span style="color:#b91c1c;">❌ 对比出错</span>';
+        this.leftDiffContent =
+          '<span style="color:#b91c1c;">❌ 对比出错</span>';
         this.perfStatus = "⚠️ 对比失败";
       } finally {
         this.isComparing = false;
@@ -813,7 +1002,12 @@ export default {
         const parsed = JSON.parse(raw);
         const pretty = JSON.stringify(parsed, null, 2);
         this.jsonPreviewContent = this.escapeHtmlSimple(pretty);
-        this.addJsonHistory(raw, pretty);
+        try {
+          this.addJsonHistory(raw, pretty);
+        } catch (historyError) {
+          console.warn("保存JSON历史记录失败:", historyError);
+          // 不影响JSON格式化结果，继续执行
+        }
       } catch (e) {
         this.jsonPreviewContent = `❌ JSON解析失败: ${e.message}`;
       }
@@ -824,11 +1018,14 @@ export default {
       if (!content || content.includes("JSON解析失败")) {
         this.showToast("无有效内容可复制", true);
       } else {
-        navigator.clipboard.writeText(content).then(() => {
-          this.showToast("✅ JSON结果已复制到剪贴板");
-        }).catch(() => {
-          this.showToast("复制失败，请手动选择复制", true);
-        });
+        navigator.clipboard
+          .writeText(content)
+          .then(() => {
+            this.showToast("✅ JSON结果已复制到剪贴板");
+          })
+          .catch(() => {
+            this.showToast("复制失败，请手动选择复制", true);
+          });
       }
     },
 
@@ -839,7 +1036,8 @@ export default {
 
     // Base64 相关方法
     showToast(message, isError = false) {
-      this.toastMessage = message || (isError ? "❌ 操作失败" : "✅ 已复制到剪贴板");
+      this.toastMessage =
+        message || (isError ? "❌ 操作失败" : "✅ 已复制到剪贴板");
       this.showToast = true;
       setTimeout(() => {
         this.showToast = false;
@@ -878,7 +1076,9 @@ export default {
       }
       // 检查是否为图片类型
       if (!file.type.startsWith("image/")) {
-        this.showError("请选择一个有效的图片文件（JPEG, PNG, GIF, WebP, SVG等）");
+        this.showError(
+          "请选择一个有效的图片文件（JPEG, PNG, GIF, WebP, SVG等）"
+        );
         this.clearBase64AndMeta();
         this.resetImagePreview();
         return;
@@ -899,7 +1099,8 @@ export default {
       // 显示文件名和大小
       const fileSizeKB = (file.size / 1024).toFixed(1);
       const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
-      const sizeStr = file.size > 1024 * 1024 ? `${fileSizeMB} MB` : `${fileSizeKB} KB`;
+      const sizeStr =
+        file.size > 1024 * 1024 ? `${fileSizeMB} MB` : `${fileSizeKB} KB`;
       this.fileMetaInfo = `📁 ${file.name}  ·  ${sizeStr}  ·  ${file.type}`;
 
       const reader = new FileReader();
@@ -916,7 +1117,12 @@ export default {
         this.imagePreviewSrc = dataURL;
 
         // 保存到历史记录
-        this.addBase64History(file.name, dataURL);
+        try {
+          this.addBase64History(file.name, dataURL);
+        } catch (historyError) {
+          console.warn("保存Base64历史记录失败:", historyError);
+          // 不影响Base64转换结果，继续执行
+        }
       };
       reader.onerror = () => {
         this.showError("文件读取失败，请重试或更换图片");
@@ -1030,15 +1236,19 @@ export default {
     // Tab 切换方法
     switchTab(activeId) {
       this.activeTab = activeId;
-      document.querySelectorAll(".tab-content").forEach((tab) => tab.classList.remove("active"));
-      document.querySelectorAll(".tab-btn").forEach((btn) => btn.classList.remove("active"));
+      document
+        .querySelectorAll(".tab-content")
+        .forEach((tab) => tab.classList.remove("active"));
+      document
+        .querySelectorAll(".tab-btn")
+        .forEach((btn) => btn.classList.remove("active"));
       document.getElementById(activeId).classList.add("active");
       const btn = Array.from(document.querySelectorAll(".tab-btn")).find(
         (b) => b.getAttribute("data-tab") === activeId
       );
       if (btn) btn.classList.add("active");
-    }
-  }
+    },
+  },
 };
 </script>
 
