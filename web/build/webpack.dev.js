@@ -18,10 +18,24 @@ const devConfig = {
     open: false, // 是否自动打开浏览器
     static: {
       directory: path.join(__dirname, "..", PUBLIC_PATH),
-    }, //静态资源 //？？
+    }, //静态资源
     compress: true, //为每个静态文件开启 gzip compression；
     client: {
       overlay: false, //关闭全屏报错
+    },
+    // 新增代理配置
+    proxy: {
+      "/ai-api/v1": {
+        target: "http://114.119.174.47:3010/v1",
+        changeOrigin: true, // 允许跨域
+        pathRewrite: {
+          "^/ai-api/v1": "", // 将 /ai-api/v1 重写为空，因为 target 已经包含了 /v1
+          // 如果目标地址是 http://114.119.174.47:3010 (没有/v1)，则不需要 pathRewrite 或改为 '^/ai-api/v1': '/v1'
+          // 根据题目要求目标包含 /v1，且请求前缀是 /ai-api/v1，通常意味着我们要去掉 /ai-api 部分或者完全替换。
+          // 假设请求是 /ai-api/v1/chat，目标是 http://114.119.174.47:3010/v1/chat
+          // 那么 pathRewrite 应该是 {'^/ai-api': ''}
+        },
+      },
     },
   }, //开发服务配置
 };

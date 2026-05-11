@@ -42,6 +42,13 @@
         >
           🖼️ 图片转Base64
         </button>
+        <button
+          class="tab-btn"
+          data-tab="dashboardTab"
+          @click="switchTab('dashboardTab')"
+        >
+          📊 数据看板
+        </button>
       </div>
 
       <!-- ========================= TAB 1 : 差异对比区域 ========================= -->
@@ -353,6 +360,61 @@
           </div>
         </div>
       </div>
+
+      <!-- ========================= TAB 4 : 数据看板 ========================= -->
+      <div id="dashboardTab" class="tab-content">
+        <div class="json-tool-container">
+          <div class="json-input-header">
+            <h3 style="font-size: 1.2rem">📊 网站浏览数据统计</h3>
+            <div class="json-actions">
+              <button class="btn-secondary" @click="initDashboard">
+                🔄 刷新数据
+              </button>
+            </div>
+          </div>
+
+          <div class="dashboard-stats-grid">
+            <div class="stat-card">
+              <div class="stat-title">总浏览量 (PV)</div>
+              <div class="stat-value">{{ dashboardStats.totalViews }}</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-title">今日浏览量</div>
+              <div class="stat-value">{{ dashboardStats.todayViews }}</div>
+            </div>
+          </div>
+
+          <div class="dashboard-history-list">
+            <h4>📅 近期每日浏览记录 (本地模拟)</h4>
+            <div class="history-table">
+              <div class="table-header">
+                <span>日期</span>
+                <span>浏览量</span>
+              </div>
+              <div
+                v-for="(record, index) in dashboardStats.dailyRecords"
+                :key="index"
+                class="table-row"
+              >
+                <span>{{ record.date }}</span>
+                <span>{{ record.count }}</span>
+              </div>
+              <div
+                v-if="dashboardStats.dailyRecords.length === 0"
+                class="empty-tip"
+              >
+                暂无数据
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <div>
+              ⚠️ 注：当前为前端本地模拟统计，真实场景需接入后端或第三方统计服务
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div
@@ -408,6 +470,13 @@ export default {
 
       // 当前激活的Tab
       activeTab: "diffTab",
+
+      // 看板相关
+      dashboardStats: {
+        totalViews: 0,
+        todayViews: 0,
+        dailyRecords: [],
+      },
     };
   },
   mounted() {
@@ -416,6 +485,10 @@ export default {
     });
     this.setupHeaderLocate();
     this.bindClickLocate();
+
+    // 初始化看板数据并记录本次访问
+    this.initDashboard();
+    this.recordPageView();
 
     // 示例填充
     if (!this.textA && !this.textB) {
@@ -1233,6 +1306,91 @@ export default {
       this.showToast("✅ 已清空Base64内容");
     },
 
+    // ---------- 看板相关方法 ----------
+    initDashboard() {
+      // 从 localStorage 获取历史数据
+      const storedData = localStorage.getItem("site_view_stats");
+      if (storedData) {
+        try {
+          this.dashboardStats = JSON.parse(storedData);
+        } catch (e) {
+          console.error("解析统计数据失败", e);
+          this.resetDashboardData();
+        }
+      } else {
+        // 如果没有数据，初始化一些模拟数据用于展示
+        this.resetDashboardData(true);
+      }
+    },
+
+    resetDashboardData(withMock = false) {
+      const today = new Date().toISOString().split("T")[0];
+      this.dashboardStats = {
+        totalViews: 0,
+        todayViews: 0,
+        dailyRecords: [],
+      };
+
+      if (withMock) {
+        // 生成过去7天的模拟数据
+        for (let i = 6; i >= 0; i--) {
+          const d = new Date();
+          d.setDate(d.getDate() - i);
+          const dateStr = d.toISOString().split("T")[0];
+          const mockCount = Math.floor(Math.random() * 50) + 10;
+          this.dashboardStats.dailyRecords.push({
+            date: dateStr,
+            count: mockCount,
+          });
+          this.dashboardStats.totalViews += mockCount;
+          if (dateStr === today) {
+            this.dashboardStats.todayViews = mockCount;
+          }
+        }
+        this.saveDashboardStats();
+      }
+    },
+
+    recordPageView() {
+      const today = new Date().toISOString().split("T")[0];
+
+      // 更新总数
+      this.dashboardStats.totalViews++;
+
+      // 更新今日数
+      this.dashboardStats.todayViews++;
+
+      // 更新每日记录
+      const todayRecord = this.dashboardStats.dailyRecords.find(
+        (r) => r.date === today
+      );
+      if (todayRecord) {
+        todayRecord.count++;
+      } else {
+        this.dashboardStats.dailyRecords.unshift({
+          date: today,
+          count: 1,
+        });
+        // 保持最近30天记录
+        if (this.dashboardStats.dailyRecords.length > 30) {
+          this.dashboardStats.dailyRecords.pop();
+        }
+      }
+
+      this.saveDashboardStats();
+    },
+
+    saveDashboardStats() {
+      try {
+        localStorage.setItem(
+          "site_view_stats",
+          JSON.stringify(this.dashboardStats)
+        );
+      } catch (e) {
+        console.error("保存统计数据失败", e);
+      }
+    },
+
     // Tab 切换方法
     switchTab(activeId) {
       this.activeTab = activeId;
@@ -1256,5 +1414,81 @@ export default {
 .tool-container {
   width: 100%;
   min-height: 100vh;
+}
+
+/* 看板样式补充 */
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-title {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.dashboard-history-list {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.dashboard-history-list h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.history-table {
+  width: 100%;
+}
+
+.table-header,
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #475569;
+  background: #f8fafc;
+  border-radius: 4px;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row:hover {
+  background: #f8fafc;
+}
+
+.empty-tip {
+  text-align: center;
+  color: #94a3b8;
+  padding: 20px;
 }
 </style>

@@ -6,3 +6,5 @@ static/
 public/
 .history/
 .vscode/
+
+ignore-files/
