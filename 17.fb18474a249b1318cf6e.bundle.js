@@ -1,7 +1,7 @@
-(self["webpackChunktest"] = self["webpackChunktest"] || []).push([[324],{
+(self["webpackChunktest"] = self["webpackChunktest"] || []).push([[17],{
 
-/***/ 72400:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 43577
+(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 /* Process inline math */
@@ -16,7 +16,7 @@ for rendering output.
 /*jslint node: true */
 
 
-var katex = __webpack_require__(3088);
+var katex = __webpack_require__(29086);
 
 // Test if potential opening or closing delimieter
 // Assumes that there is a "$" at state.src[pos]
@@ -221,15 +221,16 @@ module.exports = function math_plugin(md, options) {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ 3088:
-/***/ (function(module) {
+/***/ 29086
+(module) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
 		module.exports = factory();
-	else {}
+	else // removed by dead control flow
+{}
 })((typeof self !== 'undefined' ? self : this), function() {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
@@ -19314,10 +19315,10 @@ __nested_webpack_exports__ = __nested_webpack_exports__["default"];
 ;
 });
 
-/***/ }),
+/***/ },
 
-/***/ 58600:
-/***/ ((module) => {
+/***/ 63829
+(module) {
 
 "use strict";
 
@@ -19408,10 +19409,10 @@ markdownitLinkAttributes.defaultRender = function (
 module.exports = markdownitLinkAttributes;
 
 
-/***/ }),
+/***/ },
 
-/***/ 18152:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ 45667
+(__unused_webpack_module, exports) {
 
 "use strict";
 var __webpack_unused_export__;
@@ -19419,7 +19420,7 @@ var __webpack_unused_export__;
 __webpack_unused_export__ = ({ value: true });
 // runtime helper for setting properties on components
 // in a tree-shakable way
-exports.c = (sfc, props) => {
+exports.A = (sfc, props) => {
     const target = sfc.__vccOpts || sfc;
     for (const [key, val] of props) {
         target[key] = val;
@@ -19428,10 +19429,10 @@ exports.c = (sfc, props) => {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ 10376:
-/***/ ((module) => {
+/***/ 22085
+(module) {
 
 /* eslint-disable no-multi-assign */
 
@@ -22032,214 +22033,214 @@ highlight.HighlightJS = highlight;
 highlight.default = highlight;
 
 
-/***/ }),
+/***/ },
 
-/***/ 78056:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 59677
+(module, __unused_webpack_exports, __webpack_require__) {
 
-var hljs = __webpack_require__(10376);
+var hljs = __webpack_require__(22085);
 
-hljs.registerLanguage('1c', __webpack_require__(11992));
-hljs.registerLanguage('abnf', __webpack_require__(9856));
-hljs.registerLanguage('accesslog', __webpack_require__(41308));
-hljs.registerLanguage('actionscript', __webpack_require__(46000));
-hljs.registerLanguage('ada', __webpack_require__(96024));
-hljs.registerLanguage('angelscript', __webpack_require__(39700));
-hljs.registerLanguage('apache', __webpack_require__(95128));
-hljs.registerLanguage('applescript', __webpack_require__(77837));
-hljs.registerLanguage('arcade', __webpack_require__(45424));
-hljs.registerLanguage('arduino', __webpack_require__(20248));
-hljs.registerLanguage('armasm', __webpack_require__(29976));
-hljs.registerLanguage('xml', __webpack_require__(48112));
-hljs.registerLanguage('asciidoc', __webpack_require__(12584));
-hljs.registerLanguage('aspectj', __webpack_require__(88860));
-hljs.registerLanguage('autohotkey', __webpack_require__(21091));
-hljs.registerLanguage('autoit', __webpack_require__(8371));
-hljs.registerLanguage('avrasm', __webpack_require__(87384));
-hljs.registerLanguage('awk', __webpack_require__(71312));
-hljs.registerLanguage('axapta', __webpack_require__(83456));
-hljs.registerLanguage('bash', __webpack_require__(12396));
-hljs.registerLanguage('basic', __webpack_require__(89016));
-hljs.registerLanguage('bnf', __webpack_require__(86160));
-hljs.registerLanguage('brainfuck', __webpack_require__(81468));
-hljs.registerLanguage('c', __webpack_require__(94112));
-hljs.registerLanguage('cal', __webpack_require__(51352));
-hljs.registerLanguage('capnproto', __webpack_require__(78392));
-hljs.registerLanguage('ceylon', __webpack_require__(74912));
-hljs.registerLanguage('clean', __webpack_require__(22208));
-hljs.registerLanguage('clojure', __webpack_require__(61824));
-hljs.registerLanguage('clojure-repl', __webpack_require__(65128));
-hljs.registerLanguage('cmake', __webpack_require__(13112));
-hljs.registerLanguage('coffeescript', __webpack_require__(54512));
-hljs.registerLanguage('coq', __webpack_require__(12776));
-hljs.registerLanguage('cos', __webpack_require__(75076));
-hljs.registerLanguage('cpp', __webpack_require__(45856));
-hljs.registerLanguage('crmsh', __webpack_require__(58459));
-hljs.registerLanguage('crystal', __webpack_require__(60764));
-hljs.registerLanguage('csharp', __webpack_require__(96728));
-hljs.registerLanguage('csp', __webpack_require__(65160));
-hljs.registerLanguage('css', __webpack_require__(19616));
-hljs.registerLanguage('d', __webpack_require__(78252));
-hljs.registerLanguage('markdown', __webpack_require__(41600));
-hljs.registerLanguage('dart', __webpack_require__(28380));
-hljs.registerLanguage('delphi', __webpack_require__(71776));
-hljs.registerLanguage('diff', __webpack_require__(9763));
-hljs.registerLanguage('django', __webpack_require__(96696));
-hljs.registerLanguage('dns', __webpack_require__(90716));
-hljs.registerLanguage('dockerfile', __webpack_require__(53184));
-hljs.registerLanguage('dos', __webpack_require__(83828));
-hljs.registerLanguage('dsconfig', __webpack_require__(83144));
-hljs.registerLanguage('dts', __webpack_require__(56400));
-hljs.registerLanguage('dust', __webpack_require__(14088));
-hljs.registerLanguage('ebnf', __webpack_require__(16456));
-hljs.registerLanguage('elixir', __webpack_require__(77768));
-hljs.registerLanguage('elm', __webpack_require__(29836));
-hljs.registerLanguage('ruby', __webpack_require__(36256));
-hljs.registerLanguage('erb', __webpack_require__(96508));
-hljs.registerLanguage('erlang-repl', __webpack_require__(5960));
-hljs.registerLanguage('erlang', __webpack_require__(40856));
-hljs.registerLanguage('excel', __webpack_require__(19016));
-hljs.registerLanguage('fix', __webpack_require__(3052));
-hljs.registerLanguage('flix', __webpack_require__(33112));
-hljs.registerLanguage('fortran', __webpack_require__(33764));
-hljs.registerLanguage('fsharp', __webpack_require__(67352));
-hljs.registerLanguage('gams', __webpack_require__(70000));
-hljs.registerLanguage('gauss', __webpack_require__(86720));
-hljs.registerLanguage('gcode', __webpack_require__(94048));
-hljs.registerLanguage('gherkin', __webpack_require__(75040));
-hljs.registerLanguage('glsl', __webpack_require__(29332));
-hljs.registerLanguage('gml', __webpack_require__(28664));
-hljs.registerLanguage('go', __webpack_require__(71084));
-hljs.registerLanguage('golo', __webpack_require__(84516));
-hljs.registerLanguage('gradle', __webpack_require__(84416));
-hljs.registerLanguage('graphql', __webpack_require__(85992));
-hljs.registerLanguage('groovy', __webpack_require__(56));
-hljs.registerLanguage('haml', __webpack_require__(12587));
-hljs.registerLanguage('handlebars', __webpack_require__(87844));
-hljs.registerLanguage('haskell', __webpack_require__(47004));
-hljs.registerLanguage('haxe', __webpack_require__(85272));
-hljs.registerLanguage('hsp', __webpack_require__(75572));
-hljs.registerLanguage('http', __webpack_require__(72904));
-hljs.registerLanguage('hy', __webpack_require__(49584));
-hljs.registerLanguage('inform7', __webpack_require__(99168));
-hljs.registerLanguage('ini', __webpack_require__(34960));
-hljs.registerLanguage('irpf90', __webpack_require__(77332));
-hljs.registerLanguage('isbl', __webpack_require__(5104));
-hljs.registerLanguage('java', __webpack_require__(89480));
-hljs.registerLanguage('javascript', __webpack_require__(52360));
-hljs.registerLanguage('jboss-cli', __webpack_require__(71984));
-hljs.registerLanguage('json', __webpack_require__(46523));
-hljs.registerLanguage('julia', __webpack_require__(34160));
-hljs.registerLanguage('julia-repl', __webpack_require__(38136));
-hljs.registerLanguage('kotlin', __webpack_require__(78768));
-hljs.registerLanguage('lasso', __webpack_require__(13296));
-hljs.registerLanguage('latex', __webpack_require__(51648));
-hljs.registerLanguage('ldif', __webpack_require__(38404));
-hljs.registerLanguage('leaf', __webpack_require__(81824));
-hljs.registerLanguage('less', __webpack_require__(13104));
-hljs.registerLanguage('lisp', __webpack_require__(37428));
-hljs.registerLanguage('livecodeserver', __webpack_require__(63032));
-hljs.registerLanguage('livescript', __webpack_require__(60640));
-hljs.registerLanguage('llvm', __webpack_require__(92636));
-hljs.registerLanguage('lsl', __webpack_require__(90364));
-hljs.registerLanguage('lua', __webpack_require__(57204));
-hljs.registerLanguage('makefile', __webpack_require__(84600));
-hljs.registerLanguage('mathematica', __webpack_require__(70704));
-hljs.registerLanguage('matlab', __webpack_require__(32680));
-hljs.registerLanguage('maxima', __webpack_require__(45900));
-hljs.registerLanguage('mel', __webpack_require__(87448));
-hljs.registerLanguage('mercury', __webpack_require__(50605));
-hljs.registerLanguage('mipsasm', __webpack_require__(68347));
-hljs.registerLanguage('mizar', __webpack_require__(81964));
-hljs.registerLanguage('perl', __webpack_require__(80748));
-hljs.registerLanguage('mojolicious', __webpack_require__(33448));
-hljs.registerLanguage('monkey', __webpack_require__(57776));
-hljs.registerLanguage('moonscript', __webpack_require__(60448));
-hljs.registerLanguage('n1ql', __webpack_require__(17088));
-hljs.registerLanguage('nestedtext', __webpack_require__(3736));
-hljs.registerLanguage('nginx', __webpack_require__(1712));
-hljs.registerLanguage('nim', __webpack_require__(29692));
-hljs.registerLanguage('nix', __webpack_require__(36733));
-hljs.registerLanguage('node-repl', __webpack_require__(43412));
-hljs.registerLanguage('nsis', __webpack_require__(66060));
-hljs.registerLanguage('objectivec', __webpack_require__(81928));
-hljs.registerLanguage('ocaml', __webpack_require__(54328));
-hljs.registerLanguage('openscad', __webpack_require__(20884));
-hljs.registerLanguage('oxygene', __webpack_require__(6284));
-hljs.registerLanguage('parser3', __webpack_require__(86435));
-hljs.registerLanguage('pf', __webpack_require__(58820));
-hljs.registerLanguage('pgsql', __webpack_require__(79568));
-hljs.registerLanguage('php', __webpack_require__(42376));
-hljs.registerLanguage('php-template', __webpack_require__(43876));
-hljs.registerLanguage('plaintext', __webpack_require__(45340));
-hljs.registerLanguage('pony', __webpack_require__(93140));
-hljs.registerLanguage('powershell', __webpack_require__(70448));
-hljs.registerLanguage('processing', __webpack_require__(64027));
-hljs.registerLanguage('profile', __webpack_require__(13480));
-hljs.registerLanguage('prolog', __webpack_require__(5096));
-hljs.registerLanguage('properties', __webpack_require__(58784));
-hljs.registerLanguage('protobuf', __webpack_require__(43664));
-hljs.registerLanguage('puppet', __webpack_require__(22664));
-hljs.registerLanguage('purebasic', __webpack_require__(63140));
-hljs.registerLanguage('python', __webpack_require__(94272));
-hljs.registerLanguage('python-repl', __webpack_require__(49736));
-hljs.registerLanguage('q', __webpack_require__(84567));
-hljs.registerLanguage('qml', __webpack_require__(45412));
-hljs.registerLanguage('r', __webpack_require__(79872));
-hljs.registerLanguage('reasonml', __webpack_require__(61616));
-hljs.registerLanguage('rib', __webpack_require__(7784));
-hljs.registerLanguage('roboconf', __webpack_require__(56837));
-hljs.registerLanguage('routeros', __webpack_require__(59284));
-hljs.registerLanguage('rsl', __webpack_require__(99560));
-hljs.registerLanguage('ruleslanguage', __webpack_require__(83204));
-hljs.registerLanguage('rust', __webpack_require__(419));
-hljs.registerLanguage('sas', __webpack_require__(64440));
-hljs.registerLanguage('scala', __webpack_require__(35800));
-hljs.registerLanguage('scheme', __webpack_require__(73268));
-hljs.registerLanguage('scilab', __webpack_require__(8164));
-hljs.registerLanguage('scss', __webpack_require__(77760));
-hljs.registerLanguage('shell', __webpack_require__(86368));
-hljs.registerLanguage('smali', __webpack_require__(25680));
-hljs.registerLanguage('smalltalk', __webpack_require__(29195));
-hljs.registerLanguage('sml', __webpack_require__(65808));
-hljs.registerLanguage('sqf', __webpack_require__(5488));
-hljs.registerLanguage('sql', __webpack_require__(23572));
-hljs.registerLanguage('stan', __webpack_require__(79932));
-hljs.registerLanguage('stata', __webpack_require__(74664));
-hljs.registerLanguage('step21', __webpack_require__(42684));
-hljs.registerLanguage('stylus', __webpack_require__(42956));
-hljs.registerLanguage('subunit', __webpack_require__(73717));
-hljs.registerLanguage('swift', __webpack_require__(60188));
-hljs.registerLanguage('taggerscript', __webpack_require__(94664));
-hljs.registerLanguage('yaml', __webpack_require__(36908));
-hljs.registerLanguage('tap', __webpack_require__(50740));
-hljs.registerLanguage('tcl', __webpack_require__(89608));
-hljs.registerLanguage('thrift', __webpack_require__(44663));
-hljs.registerLanguage('tp', __webpack_require__(33956));
-hljs.registerLanguage('twig', __webpack_require__(17148));
-hljs.registerLanguage('typescript', __webpack_require__(91224));
-hljs.registerLanguage('vala', __webpack_require__(68745));
-hljs.registerLanguage('vbnet', __webpack_require__(95468));
-hljs.registerLanguage('vbscript', __webpack_require__(46984));
-hljs.registerLanguage('vbscript-html', __webpack_require__(51340));
-hljs.registerLanguage('verilog', __webpack_require__(92540));
-hljs.registerLanguage('vhdl', __webpack_require__(53064));
-hljs.registerLanguage('vim', __webpack_require__(41292));
-hljs.registerLanguage('wasm', __webpack_require__(31984));
-hljs.registerLanguage('wren', __webpack_require__(70560));
-hljs.registerLanguage('x86asm', __webpack_require__(17084));
-hljs.registerLanguage('xl', __webpack_require__(2560));
-hljs.registerLanguage('xquery', __webpack_require__(23600));
-hljs.registerLanguage('zephir', __webpack_require__(99472));
+hljs.registerLanguage('1c', __webpack_require__(78757));
+hljs.registerLanguage('abnf', __webpack_require__(2934));
+hljs.registerLanguage('accesslog', __webpack_require__(43165));
+hljs.registerLanguage('actionscript', __webpack_require__(95716));
+hljs.registerLanguage('ada', __webpack_require__(84721));
+hljs.registerLanguage('angelscript', __webpack_require__(49139));
+hljs.registerLanguage('apache', __webpack_require__(67891));
+hljs.registerLanguage('applescript', __webpack_require__(85170));
+hljs.registerLanguage('arcade', __webpack_require__(86961));
+hljs.registerLanguage('arduino', __webpack_require__(21913));
+hljs.registerLanguage('armasm', __webpack_require__(28236));
+hljs.registerLanguage('xml', __webpack_require__(94472));
+hljs.registerLanguage('asciidoc', __webpack_require__(80182));
+hljs.registerLanguage('aspectj', __webpack_require__(24235));
+hljs.registerLanguage('autohotkey', __webpack_require__(29356));
+hljs.registerLanguage('autoit', __webpack_require__(21395));
+hljs.registerLanguage('avrasm', __webpack_require__(19107));
+hljs.registerLanguage('awk', __webpack_require__(60932));
+hljs.registerLanguage('axapta', __webpack_require__(35326));
+hljs.registerLanguage('bash', __webpack_require__(60195));
+hljs.registerLanguage('basic', __webpack_require__(88099));
+hljs.registerLanguage('bnf', __webpack_require__(79623));
+hljs.registerLanguage('brainfuck', __webpack_require__(4050));
+hljs.registerLanguage('c', __webpack_require__(72388));
+hljs.registerLanguage('cal', __webpack_require__(22325));
+hljs.registerLanguage('capnproto', __webpack_require__(62185));
+hljs.registerLanguage('ceylon', __webpack_require__(96875));
+hljs.registerLanguage('clean', __webpack_require__(31784));
+hljs.registerLanguage('clojure', __webpack_require__(48625));
+hljs.registerLanguage('clojure-repl', __webpack_require__(75295));
+hljs.registerLanguage('cmake', __webpack_require__(310));
+hljs.registerLanguage('coffeescript', __webpack_require__(54602));
+hljs.registerLanguage('coq', __webpack_require__(7160));
+hljs.registerLanguage('cos', __webpack_require__(53602));
+hljs.registerLanguage('cpp', __webpack_require__(85436));
+hljs.registerLanguage('crmsh', __webpack_require__(97486));
+hljs.registerLanguage('crystal', __webpack_require__(7599));
+hljs.registerLanguage('csharp', __webpack_require__(67254));
+hljs.registerLanguage('csp', __webpack_require__(66523));
+hljs.registerLanguage('css', __webpack_require__(97726));
+hljs.registerLanguage('d', __webpack_require__(19409));
+hljs.registerLanguage('markdown', __webpack_require__(10352));
+hljs.registerLanguage('dart', __webpack_require__(79944));
+hljs.registerLanguage('delphi', __webpack_require__(7613));
+hljs.registerLanguage('diff', __webpack_require__(87086));
+hljs.registerLanguage('django', __webpack_require__(86722));
+hljs.registerLanguage('dns', __webpack_require__(50850));
+hljs.registerLanguage('dockerfile', __webpack_require__(89979));
+hljs.registerLanguage('dos', __webpack_require__(54495));
+hljs.registerLanguage('dsconfig', __webpack_require__(45222));
+hljs.registerLanguage('dts', __webpack_require__(50852));
+hljs.registerLanguage('dust', __webpack_require__(75809));
+hljs.registerLanguage('ebnf', __webpack_require__(35026));
+hljs.registerLanguage('elixir', __webpack_require__(21494));
+hljs.registerLanguage('elm', __webpack_require__(55921));
+hljs.registerLanguage('ruby', __webpack_require__(45529));
+hljs.registerLanguage('erb', __webpack_require__(61042));
+hljs.registerLanguage('erlang-repl', __webpack_require__(5562));
+hljs.registerLanguage('erlang', __webpack_require__(36098));
+hljs.registerLanguage('excel', __webpack_require__(95170));
+hljs.registerLanguage('fix', __webpack_require__(88674));
+hljs.registerLanguage('flix', __webpack_require__(10654));
+hljs.registerLanguage('fortran', __webpack_require__(50919));
+hljs.registerLanguage('fsharp', __webpack_require__(71939));
+hljs.registerLanguage('gams', __webpack_require__(21649));
+hljs.registerLanguage('gauss', __webpack_require__(75692));
+hljs.registerLanguage('gcode', __webpack_require__(79861));
+hljs.registerLanguage('gherkin', __webpack_require__(98815));
+hljs.registerLanguage('glsl', __webpack_require__(10413));
+hljs.registerLanguage('gml', __webpack_require__(23445));
+hljs.registerLanguage('go', __webpack_require__(70011));
+hljs.registerLanguage('golo', __webpack_require__(49398));
+hljs.registerLanguage('gradle', __webpack_require__(65770));
+hljs.registerLanguage('graphql', __webpack_require__(93568));
+hljs.registerLanguage('groovy', __webpack_require__(39163));
+hljs.registerLanguage('haml', __webpack_require__(31783));
+hljs.registerLanguage('handlebars', __webpack_require__(21461));
+hljs.registerLanguage('haskell', __webpack_require__(41985));
+hljs.registerLanguage('haxe', __webpack_require__(15973));
+hljs.registerLanguage('hsp', __webpack_require__(53858));
+hljs.registerLanguage('http', __webpack_require__(35881));
+hljs.registerLanguage('hy', __webpack_require__(25314));
+hljs.registerLanguage('inform7', __webpack_require__(15187));
+hljs.registerLanguage('ini', __webpack_require__(13263));
+hljs.registerLanguage('irpf90', __webpack_require__(99125));
+hljs.registerLanguage('isbl', __webpack_require__(62315));
+hljs.registerLanguage('java', __webpack_require__(897));
+hljs.registerLanguage('javascript', __webpack_require__(6206));
+hljs.registerLanguage('jboss-cli', __webpack_require__(6341));
+hljs.registerLanguage('json', __webpack_require__(76639));
+hljs.registerLanguage('julia', __webpack_require__(6860));
+hljs.registerLanguage('julia-repl', __webpack_require__(42180));
+hljs.registerLanguage('kotlin', __webpack_require__(6068));
+hljs.registerLanguage('lasso', __webpack_require__(86763));
+hljs.registerLanguage('latex', __webpack_require__(91457));
+hljs.registerLanguage('ldif', __webpack_require__(39210));
+hljs.registerLanguage('leaf', __webpack_require__(27709));
+hljs.registerLanguage('less', __webpack_require__(56268));
+hljs.registerLanguage('lisp', __webpack_require__(53814));
+hljs.registerLanguage('livecodeserver', __webpack_require__(55801));
+hljs.registerLanguage('livescript', __webpack_require__(15468));
+hljs.registerLanguage('llvm', __webpack_require__(89796));
+hljs.registerLanguage('lsl', __webpack_require__(9650));
+hljs.registerLanguage('lua', __webpack_require__(14695));
+hljs.registerLanguage('makefile', __webpack_require__(27797));
+hljs.registerLanguage('mathematica', __webpack_require__(47017));
+hljs.registerLanguage('matlab', __webpack_require__(61856));
+hljs.registerLanguage('maxima', __webpack_require__(49370));
+hljs.registerLanguage('mel', __webpack_require__(20367));
+hljs.registerLanguage('mercury', __webpack_require__(17624));
+hljs.registerLanguage('mipsasm', __webpack_require__(56475));
+hljs.registerLanguage('mizar', __webpack_require__(97302));
+hljs.registerLanguage('perl', __webpack_require__(41360));
+hljs.registerLanguage('mojolicious', __webpack_require__(5932));
+hljs.registerLanguage('monkey', __webpack_require__(20208));
+hljs.registerLanguage('moonscript', __webpack_require__(47427));
+hljs.registerLanguage('n1ql', __webpack_require__(43137));
+hljs.registerLanguage('nestedtext', __webpack_require__(49501));
+hljs.registerLanguage('nginx', __webpack_require__(9485));
+hljs.registerLanguage('nim', __webpack_require__(9205));
+hljs.registerLanguage('nix', __webpack_require__(95738));
+hljs.registerLanguage('node-repl', __webpack_require__(48755));
+hljs.registerLanguage('nsis', __webpack_require__(8194));
+hljs.registerLanguage('objectivec', __webpack_require__(80481));
+hljs.registerLanguage('ocaml', __webpack_require__(26109));
+hljs.registerLanguage('openscad', __webpack_require__(66938));
+hljs.registerLanguage('oxygene', __webpack_require__(90782));
+hljs.registerLanguage('parser3', __webpack_require__(65361));
+hljs.registerLanguage('pf', __webpack_require__(29595));
+hljs.registerLanguage('pgsql', __webpack_require__(47338));
+hljs.registerLanguage('php', __webpack_require__(43205));
+hljs.registerLanguage('php-template', __webpack_require__(26696));
+hljs.registerLanguage('plaintext', __webpack_require__(48706));
+hljs.registerLanguage('pony', __webpack_require__(70241));
+hljs.registerLanguage('powershell', __webpack_require__(37088));
+hljs.registerLanguage('processing', __webpack_require__(96094));
+hljs.registerLanguage('profile', __webpack_require__(28984));
+hljs.registerLanguage('prolog', __webpack_require__(4162));
+hljs.registerLanguage('properties', __webpack_require__(66696));
+hljs.registerLanguage('protobuf', __webpack_require__(13586));
+hljs.registerLanguage('puppet', __webpack_require__(57523));
+hljs.registerLanguage('purebasic', __webpack_require__(12073));
+hljs.registerLanguage('python', __webpack_require__(29031));
+hljs.registerLanguage('python-repl', __webpack_require__(24861));
+hljs.registerLanguage('q', __webpack_require__(5790));
+hljs.registerLanguage('qml', __webpack_require__(75211));
+hljs.registerLanguage('r', __webpack_require__(9275));
+hljs.registerLanguage('reasonml', __webpack_require__(4848));
+hljs.registerLanguage('rib', __webpack_require__(52140));
+hljs.registerLanguage('roboconf', __webpack_require__(91559));
+hljs.registerLanguage('routeros', __webpack_require__(2066));
+hljs.registerLanguage('rsl', __webpack_require__(92040));
+hljs.registerLanguage('ruleslanguage', __webpack_require__(64124));
+hljs.registerLanguage('rust', __webpack_require__(65915));
+hljs.registerLanguage('sas', __webpack_require__(11816));
+hljs.registerLanguage('scala', __webpack_require__(42759));
+hljs.registerLanguage('scheme', __webpack_require__(30902));
+hljs.registerLanguage('scilab', __webpack_require__(83241));
+hljs.registerLanguage('scss', __webpack_require__(26805));
+hljs.registerLanguage('shell', __webpack_require__(10199));
+hljs.registerLanguage('smali', __webpack_require__(52905));
+hljs.registerLanguage('smalltalk', __webpack_require__(47708));
+hljs.registerLanguage('sml', __webpack_require__(54321));
+hljs.registerLanguage('sqf', __webpack_require__(12411));
+hljs.registerLanguage('sql', __webpack_require__(21));
+hljs.registerLanguage('stan', __webpack_require__(4925));
+hljs.registerLanguage('stata', __webpack_require__(10028));
+hljs.registerLanguage('step21', __webpack_require__(91234));
+hljs.registerLanguage('stylus', __webpack_require__(91183));
+hljs.registerLanguage('subunit', __webpack_require__(36629));
+hljs.registerLanguage('swift', __webpack_require__(98282));
+hljs.registerLanguage('taggerscript', __webpack_require__(80640));
+hljs.registerLanguage('yaml', __webpack_require__(78230));
+hljs.registerLanguage('tap', __webpack_require__(71612));
+hljs.registerLanguage('tcl', __webpack_require__(22762));
+hljs.registerLanguage('thrift', __webpack_require__(58034));
+hljs.registerLanguage('tp', __webpack_require__(55069));
+hljs.registerLanguage('twig', __webpack_require__(97320));
+hljs.registerLanguage('typescript', __webpack_require__(98958));
+hljs.registerLanguage('vala', __webpack_require__(58043));
+hljs.registerLanguage('vbnet', __webpack_require__(37370));
+hljs.registerLanguage('vbscript', __webpack_require__(48166));
+hljs.registerLanguage('vbscript-html', __webpack_require__(59254));
+hljs.registerLanguage('verilog', __webpack_require__(79023));
+hljs.registerLanguage('vhdl', __webpack_require__(75151));
+hljs.registerLanguage('vim', __webpack_require__(44429));
+hljs.registerLanguage('wasm', __webpack_require__(80641));
+hljs.registerLanguage('wren', __webpack_require__(49475));
+hljs.registerLanguage('x86asm', __webpack_require__(1652));
+hljs.registerLanguage('xl', __webpack_require__(81005));
+hljs.registerLanguage('xquery', __webpack_require__(64209));
+hljs.registerLanguage('zephir', __webpack_require__(78883));
 
 hljs.HighlightJS = hljs
 hljs.default = hljs
 module.exports = hljs;
 
-/***/ }),
+/***/ },
 
-/***/ 11992:
-/***/ ((module) => {
+/***/ 78757
+(module) {
 
 /*
 Language: 1C:Enterprise
@@ -22787,10 +22788,10 @@ function _1c(hljs) {
 module.exports = _1c;
 
 
-/***/ }),
+/***/ },
 
-/***/ 9856:
-/***/ ((module) => {
+/***/ 2934
+(module) {
 
 /*
 Language: Augmented Backus-Naur Form
@@ -22877,10 +22878,10 @@ function abnf(hljs) {
 module.exports = abnf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 41308:
-/***/ ((module) => {
+/***/ 43165
+(module) {
 
 /*
  Language: Apache Access Log
@@ -22976,10 +22977,10 @@ function accesslog(hljs) {
 module.exports = accesslog;
 
 
-/***/ }),
+/***/ },
 
-/***/ 46000:
-/***/ ((module) => {
+/***/ 95716
+(module) {
 
 /*
 Language: ActionScript
@@ -23136,10 +23137,10 @@ function actionscript(hljs) {
 module.exports = actionscript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 96024:
-/***/ ((module) => {
+/***/ 84721
+(module) {
 
 /*
 Language: Ada
@@ -23408,10 +23409,10 @@ function ada(hljs) {
 module.exports = ada;
 
 
-/***/ }),
+/***/ },
 
-/***/ 39700:
-/***/ ((module) => {
+/***/ 49139
+(module) {
 
 /*
 Language: AngelScript
@@ -23593,10 +23594,10 @@ function angelscript(hljs) {
 module.exports = angelscript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 95128:
-/***/ ((module) => {
+/***/ 67891
+(module) {
 
 /*
 Language: Apache config
@@ -23705,10 +23706,10 @@ function apache(hljs) {
 module.exports = apache;
 
 
-/***/ }),
+/***/ },
 
-/***/ 77837:
-/***/ ((module) => {
+/***/ 85170
+(module) {
 
 /*
 Language: AppleScript
@@ -23861,10 +23862,10 @@ function applescript(hljs) {
 module.exports = applescript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 45424:
-/***/ ((module) => {
+/***/ 86961
+(module) {
 
 /*
  Language: ArcGIS Arcade
@@ -24296,10 +24297,10 @@ function arcade(hljs) {
 module.exports = arcade;
 
 
-/***/ }),
+/***/ },
 
-/***/ 20248:
-/***/ ((module) => {
+/***/ 21913
+(module) {
 
 /*
 Language: C++
@@ -25311,10 +25312,10 @@ function arduino(hljs) {
 module.exports = arduino;
 
 
-/***/ }),
+/***/ },
 
-/***/ 29976:
-/***/ ((module) => {
+/***/ 28236
+(module) {
 
 /*
 Language: ARM Assembly
@@ -25442,10 +25443,10 @@ function armasm(hljs) {
 module.exports = armasm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 12584:
-/***/ ((module) => {
+/***/ 80182
+(module) {
 
 /*
 Language: AsciiDoc
@@ -25710,10 +25711,10 @@ function asciidoc(hljs) {
 module.exports = asciidoc;
 
 
-/***/ }),
+/***/ },
 
-/***/ 88860:
-/***/ ((module) => {
+/***/ 24235
+(module) {
 
 /*
 Language: AspectJ
@@ -25948,10 +25949,10 @@ function aspectj(hljs) {
 module.exports = aspectj;
 
 
-/***/ }),
+/***/ },
 
-/***/ 21091:
-/***/ ((module) => {
+/***/ 29356
+(module) {
 
 /*
 Language: AutoHotkey
@@ -26030,10 +26031,10 @@ function autohotkey(hljs) {
 module.exports = autohotkey;
 
 
-/***/ }),
+/***/ },
 
-/***/ 8371:
-/***/ ((module) => {
+/***/ 21395
+(module) {
 
 /*
 Language: AutoIt
@@ -26215,10 +26216,10 @@ function autoit(hljs) {
 module.exports = autoit;
 
 
-/***/ }),
+/***/ },
 
-/***/ 87384:
-/***/ ((module) => {
+/***/ 19107
+(module) {
 
 /*
 Language: AVR Assembly
@@ -26300,10 +26301,10 @@ function avrasm(hljs) {
 module.exports = avrasm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 71312:
-/***/ ((module) => {
+/***/ 60932
+(module) {
 
 /*
 Language: Awk
@@ -26375,10 +26376,10 @@ function awk(hljs) {
 module.exports = awk;
 
 
-/***/ }),
+/***/ },
 
-/***/ 83456:
-/***/ ((module) => {
+/***/ 35326
+(module) {
 
 /*
 Language: Microsoft X++
@@ -26570,10 +26571,10 @@ function axapta(hljs) {
 module.exports = axapta;
 
 
-/***/ }),
+/***/ },
 
-/***/ 12396:
-/***/ ((module) => {
+/***/ 60195
+(module) {
 
 /*
 Language: Bash
@@ -26986,10 +26987,10 @@ function bash(hljs) {
 module.exports = bash;
 
 
-/***/ }),
+/***/ },
 
-/***/ 89016:
-/***/ ((module) => {
+/***/ 88099
+(module) {
 
 /*
 Language: BASIC
@@ -27229,10 +27230,10 @@ function basic(hljs) {
 module.exports = basic;
 
 
-/***/ }),
+/***/ },
 
-/***/ 86160:
-/***/ ((module) => {
+/***/ 79623
+(module) {
 
 /*
 Language: Backus–Naur Form
@@ -27275,10 +27276,10 @@ function bnf(hljs) {
 module.exports = bnf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 81468:
-/***/ ((module) => {
+/***/ 4050
+(module) {
 
 /*
 Language: Brainfuck
@@ -27336,10 +27337,10 @@ function brainfuck(hljs) {
 module.exports = brainfuck;
 
 
-/***/ }),
+/***/ },
 
-/***/ 94112:
-/***/ ((module) => {
+/***/ 72388
+(module) {
 
 /*
 Language: C
@@ -27676,10 +27677,10 @@ function c(hljs) {
 module.exports = c;
 
 
-/***/ }),
+/***/ },
 
-/***/ 51352:
-/***/ ((module) => {
+/***/ 22325
+(module) {
 
 /*
 Language: C/AL
@@ -27843,10 +27844,10 @@ function cal(hljs) {
 module.exports = cal;
 
 
-/***/ }),
+/***/ },
 
-/***/ 78392:
-/***/ ((module) => {
+/***/ 62185
+(module) {
 
 /*
 Language: Cap’n Proto
@@ -27949,10 +27950,10 @@ function capnproto(hljs) {
 module.exports = capnproto;
 
 
-/***/ }),
+/***/ },
 
-/***/ 74912:
-/***/ ((module) => {
+/***/ 96875
+(module) {
 
 /*
 Language: Ceylon
@@ -28096,10 +28097,10 @@ function ceylon(hljs) {
 module.exports = ceylon;
 
 
-/***/ }),
+/***/ },
 
-/***/ 22208:
-/***/ ((module) => {
+/***/ 31784
+(module) {
 
 /*
 Language: Clean
@@ -28170,10 +28171,10 @@ function clean(hljs) {
 module.exports = clean;
 
 
-/***/ }),
+/***/ },
 
-/***/ 65128:
-/***/ ((module) => {
+/***/ 75295
+(module) {
 
 /*
 Language: Clojure REPL
@@ -28204,10 +28205,10 @@ function clojureRepl(hljs) {
 module.exports = clojureRepl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 61824:
-/***/ ((module) => {
+/***/ 48625
+(module) {
 
 /*
 Language: Clojure
@@ -28395,10 +28396,10 @@ function clojure(hljs) {
 module.exports = clojure;
 
 
-/***/ }),
+/***/ },
 
-/***/ 13112:
-/***/ ((module) => {
+/***/ 310
+(module) {
 
 /*
 Language: CMake
@@ -28466,10 +28467,10 @@ function cmake(hljs) {
 module.exports = cmake;
 
 
-/***/ }),
+/***/ },
 
-/***/ 54512:
-/***/ ((module) => {
+/***/ 54602
+(module) {
 
 const KEYWORDS = [
   "as", // for exports
@@ -28841,10 +28842,10 @@ function coffeescript(hljs) {
 module.exports = coffeescript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 12776:
-/***/ ((module) => {
+/***/ 7160
+(module) {
 
 /*
 Language: Coq
@@ -29293,10 +29294,10 @@ function coq(hljs) {
 module.exports = coq;
 
 
-/***/ }),
+/***/ },
 
-/***/ 75076:
-/***/ ((module) => {
+/***/ 53602
+(module) {
 
 /*
 Language: Caché Object Script
@@ -29440,10 +29441,10 @@ function cos(hljs) {
 module.exports = cos;
 
 
-/***/ }),
+/***/ },
 
-/***/ 45856:
-/***/ ((module) => {
+/***/ 85436
+(module) {
 
 /*
 Language: C++
@@ -30052,10 +30053,10 @@ function cpp(hljs) {
 module.exports = cpp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 58459:
-/***/ ((module) => {
+/***/ 97486
+(module) {
 
 /*
 Language: crmsh
@@ -30159,10 +30160,10 @@ function crmsh(hljs) {
 module.exports = crmsh;
 
 
-/***/ }),
+/***/ },
 
-/***/ 60764:
-/***/ ((module) => {
+/***/ 7599
+(module) {
 
 /*
 Language: Crystal
@@ -30478,10 +30479,10 @@ function crystal(hljs) {
 module.exports = crystal;
 
 
-/***/ }),
+/***/ },
 
-/***/ 96728:
-/***/ ((module) => {
+/***/ 67254
+(module) {
 
 /*
 Language: C#
@@ -30897,10 +30898,10 @@ function csharp(hljs) {
 module.exports = csharp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 65160:
-/***/ ((module) => {
+/***/ 66523
+(module) {
 
 /*
 Language: CSP
@@ -30962,10 +30963,10 @@ function csp(hljs) {
 module.exports = csp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 19616:
-/***/ ((module) => {
+/***/ 97726
+(module) {
 
 const MODES = (hljs) => {
   return {
@@ -31918,10 +31919,10 @@ function css(hljs) {
 module.exports = css;
 
 
-/***/ }),
+/***/ },
 
-/***/ 78252:
-/***/ ((module) => {
+/***/ 19409
+(module) {
 
 /*
 Language: D
@@ -32197,10 +32198,10 @@ function d(hljs) {
 module.exports = d;
 
 
-/***/ }),
+/***/ },
 
-/***/ 28380:
-/***/ ((module) => {
+/***/ 79944
+(module) {
 
 /*
 Language: Dart
@@ -32475,10 +32476,10 @@ function dart(hljs) {
 module.exports = dart;
 
 
-/***/ }),
+/***/ },
 
-/***/ 71776:
-/***/ ((module) => {
+/***/ 7613
+(module) {
 
 /*
 Language: Delphi
@@ -32728,10 +32729,10 @@ function delphi(hljs) {
 module.exports = delphi;
 
 
-/***/ }),
+/***/ },
 
-/***/ 9763:
-/***/ ((module) => {
+/***/ 87086
+(module) {
 
 /*
 Language: Diff
@@ -32797,10 +32798,10 @@ function diff(hljs) {
 module.exports = diff;
 
 
-/***/ }),
+/***/ },
 
-/***/ 96696:
-/***/ ((module) => {
+/***/ 86722
+(module) {
 
 /*
 Language: Django
@@ -32879,10 +32880,10 @@ function django(hljs) {
 module.exports = django;
 
 
-/***/ }),
+/***/ },
 
-/***/ 90716:
-/***/ ((module) => {
+/***/ 50850
+(module) {
 
 /*
 Language: DNS Zone
@@ -32964,10 +32965,10 @@ function dns(hljs) {
 module.exports = dns;
 
 
-/***/ }),
+/***/ },
 
-/***/ 53184:
-/***/ ((module) => {
+/***/ 89979
+(module) {
 
 /*
 Language: Dockerfile
@@ -33015,10 +33016,10 @@ function dockerfile(hljs) {
 module.exports = dockerfile;
 
 
-/***/ }),
+/***/ },
 
-/***/ 83828:
-/***/ ((module) => {
+/***/ 54495
+(module) {
 
 /*
 Language: Batch file (DOS)
@@ -33189,10 +33190,10 @@ function dos(hljs) {
 module.exports = dos;
 
 
-/***/ }),
+/***/ },
 
-/***/ 83144:
-/***/ ((module) => {
+/***/ 45222
+(module) {
 
 /*
  Language: dsconfig
@@ -33262,10 +33263,10 @@ function dsconfig(hljs) {
 module.exports = dsconfig;
 
 
-/***/ }),
+/***/ },
 
-/***/ 56400:
-/***/ ((module) => {
+/***/ 50852
+(module) {
 
 /*
 Language: Device Tree
@@ -33426,10 +33427,10 @@ function dts(hljs) {
 module.exports = dts;
 
 
-/***/ }),
+/***/ },
 
-/***/ 14088:
-/***/ ((module) => {
+/***/ 75809
+(module) {
 
 /*
 Language: Dust
@@ -33480,10 +33481,10 @@ function dust(hljs) {
 module.exports = dust;
 
 
-/***/ }),
+/***/ },
 
-/***/ 16456:
-/***/ ((module) => {
+/***/ 35026
+(module) {
 
 /*
 Language: Extended Backus-Naur Form
@@ -33541,10 +33542,10 @@ function ebnf(hljs) {
 module.exports = ebnf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 77768:
-/***/ ((module) => {
+/***/ 21494
+(module) {
 
 /*
 Language: Elixir
@@ -33827,10 +33828,10 @@ function elixir(hljs) {
 module.exports = elixir;
 
 
-/***/ }),
+/***/ },
 
-/***/ 29836:
-/***/ ((module) => {
+/***/ 55921
+(module) {
 
 /*
 Language: Elm
@@ -33977,10 +33978,10 @@ function elm(hljs) {
 module.exports = elm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 96508:
-/***/ ((module) => {
+/***/ 61042
+(module) {
 
 /*
 Language: ERB (Embedded Ruby)
@@ -34013,10 +34014,10 @@ function erb(hljs) {
 module.exports = erb;
 
 
-/***/ }),
+/***/ },
 
-/***/ 5960:
-/***/ ((module) => {
+/***/ 5562
+(module) {
 
 /*
 Language: Erlang REPL
@@ -34074,10 +34075,10 @@ function erlangRepl(hljs) {
 module.exports = erlangRepl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 40856:
-/***/ ((module) => {
+/***/ 36098
+(module) {
 
 /*
 Language: Erlang
@@ -34316,10 +34317,10 @@ function erlang(hljs) {
 module.exports = erlang;
 
 
-/***/ }),
+/***/ },
 
-/***/ 19016:
-/***/ ((module) => {
+/***/ 95170
+(module) {
 
 /*
 Language: Excel formulae
@@ -34903,10 +34904,10 @@ function excel(hljs) {
 module.exports = excel;
 
 
-/***/ }),
+/***/ },
 
-/***/ 3052:
-/***/ ((module) => {
+/***/ 88674
+(module) {
 
 /*
 Language: FIX
@@ -34949,10 +34950,10 @@ function fix(hljs) {
 module.exports = fix;
 
 
-/***/ }),
+/***/ },
 
-/***/ 33112:
-/***/ ((module) => {
+/***/ 10654
+(module) {
 
 /*
  Language: Flix
@@ -35035,10 +35036,10 @@ function flix(hljs) {
 module.exports = flix;
 
 
-/***/ }),
+/***/ },
 
-/***/ 33764:
-/***/ ((module) => {
+/***/ 50919
+(module) {
 
 /*
 Language: Fortran
@@ -35616,10 +35617,10 @@ function fortran(hljs) {
 module.exports = fortran;
 
 
-/***/ }),
+/***/ },
 
-/***/ 67352:
-/***/ ((module) => {
+/***/ 71939
+(module) {
 
 /**
  * @param {string} value
@@ -36250,10 +36251,10 @@ function fsharp(hljs) {
 module.exports = fsharp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 70000:
-/***/ ((module) => {
+/***/ 21649
+(module) {
 
 /*
  Language: GAMS
@@ -36438,10 +36439,10 @@ function gams(hljs) {
 module.exports = gams;
 
 
-/***/ }),
+/***/ },
 
-/***/ 86720:
-/***/ ((module) => {
+/***/ 75692
+(module) {
 
 /*
 Language: GAUSS
@@ -36751,10 +36752,10 @@ function gauss(hljs) {
 module.exports = gauss;
 
 
-/***/ }),
+/***/ },
 
-/***/ 94048:
-/***/ ((module) => {
+/***/ 79861
+(module) {
 
 /*
  Language: G-code (ISO 6983)
@@ -36947,10 +36948,10 @@ function gcode(hljs) {
 module.exports = gcode;
 
 
-/***/ }),
+/***/ },
 
-/***/ 75040:
-/***/ ((module) => {
+/***/ 98815
+(module) {
 
 /*
  Language: Gherkin
@@ -37003,10 +37004,10 @@ function gherkin(hljs) {
 module.exports = gherkin;
 
 
-/***/ }),
+/***/ },
 
-/***/ 29332:
-/***/ ((module) => {
+/***/ 10413
+(module) {
 
 /*
 Language: GLSL
@@ -37138,10 +37139,10 @@ function glsl(hljs) {
 module.exports = glsl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 28664:
-/***/ ((module) => {
+/***/ 23445
+(module) {
 
 /*
 Language: GML
@@ -40275,10 +40276,10 @@ function gml(hljs) {
 module.exports = gml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 71084:
-/***/ ((module) => {
+/***/ 70011
+(module) {
 
 /*
 Language: Go
@@ -40438,10 +40439,10 @@ function go(hljs) {
 module.exports = go;
 
 
-/***/ }),
+/***/ },
 
-/***/ 84516:
-/***/ ((module) => {
+/***/ 49398
+(module) {
 
 /*
 Language: Golo
@@ -40526,10 +40527,10 @@ function golo(hljs) {
 module.exports = golo;
 
 
-/***/ }),
+/***/ },
 
-/***/ 84416:
-/***/ ((module) => {
+/***/ 65770
+(module) {
 
 /*
 Language: Gradle
@@ -40723,10 +40724,10 @@ function gradle(hljs) {
 module.exports = gradle;
 
 
-/***/ }),
+/***/ },
 
-/***/ 85992:
-/***/ ((module) => {
+/***/ 93568
+(module) {
 
 /*
  Language: GraphQL
@@ -40808,10 +40809,10 @@ function graphql(hljs) {
 module.exports = graphql;
 
 
-/***/ }),
+/***/ },
 
-/***/ 56:
-/***/ ((module) => {
+/***/ 39163
+(module) {
 
 /*
  Language: Groovy
@@ -41005,10 +41006,10 @@ function groovy(hljs) {
 module.exports = groovy;
 
 
-/***/ }),
+/***/ },
 
-/***/ 12587:
-/***/ ((module) => {
+/***/ 31783
+(module) {
 
 /*
 Language: HAML
@@ -41125,10 +41126,10 @@ function haml(hljs) {
 module.exports = haml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 87844:
-/***/ ((module) => {
+/***/ 21461
+(module) {
 
 /*
 Language: Handlebars
@@ -41390,10 +41391,10 @@ function handlebars(hljs) {
 module.exports = handlebars;
 
 
-/***/ }),
+/***/ },
 
-/***/ 47004:
-/***/ ((module) => {
+/***/ 41985
+(module) {
 
 /*
 Language: Haskell
@@ -41614,10 +41615,10 @@ function haskell(hljs) {
 module.exports = haskell;
 
 
-/***/ }),
+/***/ },
 
-/***/ 85272:
-/***/ ((module) => {
+/***/ 15973
+(module) {
 
 /*
 Language: Haxe
@@ -41788,10 +41789,10 @@ function haxe(hljs) {
 module.exports = haxe;
 
 
-/***/ }),
+/***/ },
 
-/***/ 75572:
-/***/ ((module) => {
+/***/ 53858
+(module) {
 
 /*
 Language: HSP
@@ -41854,10 +41855,10 @@ function hsp(hljs) {
 module.exports = hsp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 72904:
-/***/ ((module) => {
+/***/ 35881
+(module) {
 
 /*
 Language: HTTP
@@ -41958,10 +41959,10 @@ function http(hljs) {
 module.exports = http;
 
 
-/***/ }),
+/***/ },
 
-/***/ 49584:
-/***/ ((module) => {
+/***/ 25314
+(module) {
 
 /*
 Language: Hy
@@ -42102,10 +42103,10 @@ function hy(hljs) {
 module.exports = hy;
 
 
-/***/ }),
+/***/ },
 
-/***/ 99168:
-/***/ ((module) => {
+/***/ 15187
+(module) {
 
 /*
 Language: Inform 7
@@ -42179,10 +42180,10 @@ function inform7(hljs) {
 module.exports = inform7;
 
 
-/***/ }),
+/***/ },
 
-/***/ 34960:
-/***/ ((module) => {
+/***/ 13263
+(module) {
 
 /*
 Language: TOML, also INI
@@ -42307,10 +42308,10 @@ function ini(hljs) {
 module.exports = ini;
 
 
-/***/ }),
+/***/ },
 
-/***/ 77332:
-/***/ ((module) => {
+/***/ 99125
+(module) {
 
 /*
 Language: IRPF90
@@ -42421,10 +42422,10 @@ function irpf90(hljs) {
 module.exports = irpf90;
 
 
-/***/ }),
+/***/ },
 
-/***/ 5104:
-/***/ ((module) => {
+/***/ 62315
+(module) {
 
 /*
 Language: ISBL
@@ -45633,10 +45634,10 @@ function isbl(hljs) {
 module.exports = isbl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 89480:
-/***/ ((module) => {
+/***/ 897
+(module) {
 
 // https://docs.oracle.com/javase/specs/jls/se15/html/jls-3.html#jls-3.10
 var decimalDigits = '[0-9](_*[0-9])*';
@@ -45931,10 +45932,10 @@ function java(hljs) {
 module.exports = java;
 
 
-/***/ }),
+/***/ },
 
-/***/ 52360:
-/***/ ((module) => {
+/***/ 6206
+(module) {
 
 const IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
 const KEYWORDS = [
@@ -46707,10 +46708,10 @@ function javascript(hljs) {
 module.exports = javascript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 71984:
-/***/ ((module) => {
+/***/ 6341
+(module) {
 
 /*
  Language: JBoss CLI
@@ -46777,10 +46778,10 @@ function jbossCli(hljs) {
 module.exports = jbossCli;
 
 
-/***/ }),
+/***/ },
 
-/***/ 46523:
-/***/ ((module) => {
+/***/ 76639
+(module) {
 
 /*
 Language: JSON
@@ -46838,10 +46839,10 @@ function json(hljs) {
 module.exports = json;
 
 
-/***/ }),
+/***/ },
 
-/***/ 38136:
-/***/ ((module) => {
+/***/ 42180
+(module) {
 
 /*
 Language: Julia REPL
@@ -46896,10 +46897,10 @@ function juliaRepl(hljs) {
 module.exports = juliaRepl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 34160:
-/***/ ((module) => {
+/***/ 6860
+(module) {
 
 /*
 Language: Julia
@@ -47345,10 +47346,10 @@ function julia(hljs) {
 module.exports = julia;
 
 
-/***/ }),
+/***/ },
 
-/***/ 78768:
-/***/ ((module) => {
+/***/ 6068
+(module) {
 
 // https://docs.oracle.com/javase/specs/jls/se15/html/jls-3.html#jls-3.10
 var decimalDigits = '[0-9](_*[0-9])*';
@@ -47638,10 +47639,10 @@ function kotlin(hljs) {
 module.exports = kotlin;
 
 
-/***/ }),
+/***/ },
 
-/***/ 13296:
-/***/ ((module) => {
+/***/ 86763
+(module) {
 
 /*
 Language: Lasso
@@ -47816,10 +47817,10 @@ function lasso(hljs) {
 module.exports = lasso;
 
 
-/***/ }),
+/***/ },
 
-/***/ 51648:
-/***/ ((module) => {
+/***/ 91457
+(module) {
 
 /*
 Language: LaTeX
@@ -48101,10 +48102,10 @@ function latex(hljs) {
 module.exports = latex;
 
 
-/***/ }),
+/***/ },
 
-/***/ 38404:
-/***/ ((module) => {
+/***/ 39210
+(module) {
 
 /*
 Language: LDIF
@@ -48139,10 +48140,10 @@ function ldif(hljs) {
 module.exports = ldif;
 
 
-/***/ }),
+/***/ },
 
-/***/ 81824:
-/***/ ((module) => {
+/***/ 27709
+(module) {
 
 /*
 Language: Leaf
@@ -48243,10 +48244,10 @@ function leaf(hljs) {
 module.exports = leaf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 13104:
-/***/ ((module) => {
+/***/ 56268
+(module) {
 
 const MODES = (hljs) => {
   return {
@@ -49300,10 +49301,10 @@ function less(hljs) {
 module.exports = less;
 
 
-/***/ }),
+/***/ },
 
-/***/ 37428:
-/***/ ((module) => {
+/***/ 53814
+(module) {
 
 /*
 Language: Lisp
@@ -49446,10 +49447,10 @@ function lisp(hljs) {
 module.exports = lisp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 63032:
-/***/ ((module) => {
+/***/ 55801
+(module) {
 
 /*
 Language: LiveCode
@@ -49626,10 +49627,10 @@ function livecodeserver(hljs) {
 module.exports = livecodeserver;
 
 
-/***/ }),
+/***/ },
 
-/***/ 60640:
-/***/ ((module) => {
+/***/ 15468
+(module) {
 
 const KEYWORDS = [
   "as", // for exports
@@ -50013,10 +50014,10 @@ function livescript(hljs) {
 module.exports = livescript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 92636:
-/***/ ((module) => {
+/***/ 89796
+(module) {
 
 /*
 Language: LLVM IR
@@ -50155,10 +50156,10 @@ function llvm(hljs) {
 module.exports = llvm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 90364:
-/***/ ((module) => {
+/***/ 9650
+(module) {
 
 /*
 Language: LSL (Linden Scripting Language)
@@ -50238,10 +50239,10 @@ function lsl(hljs) {
 module.exports = lsl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 57204:
-/***/ ((module) => {
+/***/ 14695
+(module) {
 
 /*
 Language: Lua
@@ -50326,10 +50327,10 @@ function lua(hljs) {
 module.exports = lua;
 
 
-/***/ }),
+/***/ },
 
-/***/ 84600:
-/***/ ((module) => {
+/***/ 27797
+(module) {
 
 /*
 Language: Makefile
@@ -50422,10 +50423,10 @@ function makefile(hljs) {
 module.exports = makefile;
 
 
-/***/ }),
+/***/ },
 
-/***/ 41600:
-/***/ ((module) => {
+/***/ 10352
+(module) {
 
 /*
 Language: Markdown
@@ -50677,10 +50678,10 @@ function markdown(hljs) {
 module.exports = markdown;
 
 
-/***/ }),
+/***/ },
 
-/***/ 70704:
-/***/ ((module) => {
+/***/ 47017
+(module) {
 
 const SYSTEM_SYMBOLS = [
   "AASTriangle",
@@ -58043,10 +58044,10 @@ function mathematica(hljs) {
 module.exports = mathematica;
 
 
-/***/ }),
+/***/ },
 
-/***/ 32680:
-/***/ ((module) => {
+/***/ 61856
+(module) {
 
 /*
 Language: Matlab
@@ -58157,10 +58158,10 @@ function matlab(hljs) {
 module.exports = matlab;
 
 
-/***/ }),
+/***/ },
 
-/***/ 45900:
-/***/ ((module) => {
+/***/ 49370
+(module) {
 
 /*
 Language: Maxima
@@ -58578,10 +58579,10 @@ function maxima(hljs) {
 module.exports = maxima;
 
 
-/***/ }),
+/***/ },
 
-/***/ 87448:
-/***/ ((module) => {
+/***/ 20367
+(module) {
 
 /*
 Language: MEL
@@ -58820,10 +58821,10 @@ function mel(hljs) {
 module.exports = mel;
 
 
-/***/ }),
+/***/ },
 
-/***/ 50605:
-/***/ ((module) => {
+/***/ 17624
+(module) {
 
 /*
 Language: Mercury
@@ -58935,10 +58936,10 @@ function mercury(hljs) {
 module.exports = mercury;
 
 
-/***/ }),
+/***/ },
 
-/***/ 68347:
-/***/ ((module) => {
+/***/ 56475
+(module) {
 
 /*
 Language: MIPS Assembly
@@ -59046,10 +59047,10 @@ function mipsasm(hljs) {
 module.exports = mipsasm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 81964:
-/***/ ((module) => {
+/***/ 97302
+(module) {
 
 /*
 Language: Mizar
@@ -59080,10 +59081,10 @@ function mizar(hljs) {
 module.exports = mizar;
 
 
-/***/ }),
+/***/ },
 
-/***/ 33448:
-/***/ ((module) => {
+/***/ 5932
+(module) {
 
 /*
 Language: Mojolicious
@@ -59123,10 +59124,10 @@ function mojolicious(hljs) {
 module.exports = mojolicious;
 
 
-/***/ }),
+/***/ },
 
-/***/ 57776:
-/***/ ((module) => {
+/***/ 20208
+(module) {
 
 /*
 Language: Monkey
@@ -59314,10 +59315,10 @@ function monkey(hljs) {
 module.exports = monkey;
 
 
-/***/ }),
+/***/ },
 
-/***/ 60448:
-/***/ ((module) => {
+/***/ 47427
+(module) {
 
 /*
 Language: MoonScript
@@ -59462,10 +59463,10 @@ function moonscript(hljs) {
 module.exports = moonscript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 17088:
-/***/ ((module) => {
+/***/ 43137
+(module) {
 
 /*
  Language: N1QL
@@ -59834,10 +59835,10 @@ function n1ql(hljs) {
 module.exports = n1ql;
 
 
-/***/ }),
+/***/ },
 
-/***/ 3736:
-/***/ ((module) => {
+/***/ 49501
+(module) {
 
 /*
 Language: NestedText
@@ -59924,10 +59925,10 @@ function nestedtext(hljs) {
 module.exports = nestedtext;
 
 
-/***/ }),
+/***/ },
 
-/***/ 1712:
-/***/ ((module) => {
+/***/ 9485
+(module) {
 
 /*
 Language: Nginx config
@@ -60084,10 +60085,10 @@ function nginx(hljs) {
 module.exports = nginx;
 
 
-/***/ }),
+/***/ },
 
-/***/ 29692:
-/***/ ((module) => {
+/***/ 9205
+(module) {
 
 /*
 Language: Nim
@@ -60278,10 +60279,10 @@ function nim(hljs) {
 module.exports = nim;
 
 
-/***/ }),
+/***/ },
 
-/***/ 36733:
-/***/ ((module) => {
+/***/ 95738
+(module) {
 
 /*
 Language: Nix
@@ -60657,10 +60658,10 @@ function nix(hljs) {
 module.exports = nix;
 
 
-/***/ }),
+/***/ },
 
-/***/ 43412:
-/***/ ((module) => {
+/***/ 48755
+(module) {
 
 /*
 Language: Node REPL
@@ -60697,10 +60698,10 @@ function nodeRepl(hljs) {
 module.exports = nodeRepl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 66060:
-/***/ ((module) => {
+/***/ 8194
+(module) {
 
 /*
 Language: NSIS
@@ -61261,10 +61262,10 @@ function nsis(hljs) {
 module.exports = nsis;
 
 
-/***/ }),
+/***/ },
 
-/***/ 81928:
-/***/ ((module) => {
+/***/ 80481
+(module) {
 
 /*
 Language: Objective-C
@@ -61521,10 +61522,10 @@ function objectivec(hljs) {
 module.exports = objectivec;
 
 
-/***/ }),
+/***/ },
 
-/***/ 54328:
-/***/ ((module) => {
+/***/ 26109
+(module) {
 
 /*
 Language: OCaml
@@ -61611,10 +61612,10 @@ function ocaml(hljs) {
 module.exports = ocaml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 20884:
-/***/ ((module) => {
+/***/ 66938
+(module) {
 
 /*
 Language: OpenSCAD
@@ -61695,10 +61696,10 @@ function openscad(hljs) {
 module.exports = openscad;
 
 
-/***/ }),
+/***/ },
 
-/***/ 6284:
-/***/ ((module) => {
+/***/ 90782
+(module) {
 
 /*
 Language: Oxygene
@@ -61789,10 +61790,10 @@ function oxygene(hljs) {
 module.exports = oxygene;
 
 
-/***/ }),
+/***/ },
 
-/***/ 86435:
-/***/ ((module) => {
+/***/ 65361
+(module) {
 
 /*
 Language: Parser3
@@ -61851,10 +61852,10 @@ function parser3(hljs) {
 module.exports = parser3;
 
 
-/***/ }),
+/***/ },
 
-/***/ 80748:
-/***/ ((module) => {
+/***/ 41360
+(module) {
 
 /*
 Language: Perl
@@ -62362,10 +62363,10 @@ function perl(hljs) {
 module.exports = perl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 58820:
-/***/ ((module) => {
+/***/ 29595
+(module) {
 
 /*
 Language: Packet Filter config
@@ -62429,10 +62430,10 @@ function pf(hljs) {
 module.exports = pf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 79568:
-/***/ ((module) => {
+/***/ 47338
+(module) {
 
 /*
 Language: PostgreSQL and PL/pgSQL
@@ -62961,10 +62962,10 @@ function pgsql(hljs) {
 module.exports = pgsql;
 
 
-/***/ }),
+/***/ },
 
-/***/ 43876:
-/***/ ((module) => {
+/***/ 26696
+(module) {
 
 /*
 Language: PHP Template
@@ -63022,10 +63023,10 @@ function phpTemplate(hljs) {
 module.exports = phpTemplate;
 
 
-/***/ }),
+/***/ },
 
-/***/ 42376:
-/***/ ((module) => {
+/***/ 43205
+(module) {
 
 /*
 Language: PHP
@@ -63654,10 +63655,10 @@ function php(hljs) {
 module.exports = php;
 
 
-/***/ }),
+/***/ },
 
-/***/ 45340:
-/***/ ((module) => {
+/***/ 48706
+(module) {
 
 /*
 Language: Plain text
@@ -63680,10 +63681,10 @@ function plaintext(hljs) {
 module.exports = plaintext;
 
 
-/***/ }),
+/***/ },
 
-/***/ 93140:
-/***/ ((module) => {
+/***/ 70241
+(module) {
 
 /*
 Language: Pony
@@ -63777,10 +63778,10 @@ function pony(hljs) {
 module.exports = pony;
 
 
-/***/ }),
+/***/ },
 
-/***/ 70448:
-/***/ ((module) => {
+/***/ 37088
+(module) {
 
 /*
 Language: PowerShell
@@ -64101,10 +64102,10 @@ function powershell(hljs) {
 module.exports = powershell;
 
 
-/***/ }),
+/***/ },
 
-/***/ 64027:
-/***/ ((module) => {
+/***/ 96094
+(module) {
 
 /*
 Language: Processing
@@ -64542,10 +64543,10 @@ function processing(hljs) {
 module.exports = processing;
 
 
-/***/ }),
+/***/ },
 
-/***/ 13480:
-/***/ ((module) => {
+/***/ 28984
+(module) {
 
 /*
 Language: Python profiler
@@ -64592,10 +64593,10 @@ function profile(hljs) {
 module.exports = profile;
 
 
-/***/ }),
+/***/ },
 
-/***/ 5096:
-/***/ ((module) => {
+/***/ 4162
+(module) {
 
 /*
 Language: Prolog
@@ -64696,10 +64697,10 @@ function prolog(hljs) {
 module.exports = prolog;
 
 
-/***/ }),
+/***/ },
 
-/***/ 58784:
-/***/ ((module) => {
+/***/ 66696
+(module) {
 
 /*
 Language: .properties
@@ -64771,10 +64772,10 @@ function properties(hljs) {
 module.exports = properties;
 
 
-/***/ }),
+/***/ },
 
-/***/ 43664:
-/***/ ((module) => {
+/***/ 13586
+(module) {
 
 /*
 Language: Protocol Buffers
@@ -64857,10 +64858,10 @@ function protobuf(hljs) {
 module.exports = protobuf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 22664:
-/***/ ((module) => {
+/***/ 57523
+(module) {
 
 /*
 Language: Puppet
@@ -65010,10 +65011,10 @@ function puppet(hljs) {
 module.exports = puppet;
 
 
-/***/ }),
+/***/ },
 
-/***/ 63140:
-/***/ ((module) => {
+/***/ 12073
+(module) {
 
 /*
 Language: PureBASIC
@@ -65117,10 +65118,10 @@ function purebasic(hljs) {
 module.exports = purebasic;
 
 
-/***/ }),
+/***/ },
 
-/***/ 49736:
-/***/ ((module) => {
+/***/ 24861
+(module) {
 
 /*
 Language: Python REPL
@@ -65156,10 +65157,10 @@ function pythonRepl(hljs) {
 module.exports = pythonRepl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 94272:
-/***/ ((module) => {
+/***/ 29031
+(module) {
 
 /*
 Language: Python
@@ -65599,10 +65600,10 @@ function python(hljs) {
 module.exports = python;
 
 
-/***/ }),
+/***/ },
 
-/***/ 84567:
-/***/ ((module) => {
+/***/ 5790
+(module) {
 
 /*
 Language: Q
@@ -65644,10 +65645,10 @@ function q(hljs) {
 module.exports = q;
 
 
-/***/ }),
+/***/ },
 
-/***/ 45412:
-/***/ ((module) => {
+/***/ 75211
+(module) {
 
 /*
 Language: QML
@@ -65840,10 +65841,10 @@ function qml(hljs) {
 module.exports = qml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 79872:
-/***/ ((module) => {
+/***/ 9275
+(module) {
 
 /*
 Language: R
@@ -66104,10 +66105,10 @@ function r(hljs) {
 module.exports = r;
 
 
-/***/ }),
+/***/ },
 
-/***/ 61616:
-/***/ ((module) => {
+/***/ 4848
+(module) {
 
 /*
 Language: ReasonML
@@ -66253,10 +66254,10 @@ function reasonml(hljs) {
 module.exports = reasonml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 7784:
-/***/ ((module) => {
+/***/ 52140
+(module) {
 
 /*
 Language: RenderMan RIB
@@ -66297,10 +66298,10 @@ function rib(hljs) {
 module.exports = rib;
 
 
-/***/ }),
+/***/ },
 
-/***/ 56837:
-/***/ ((module) => {
+/***/ 91559
+(module) {
 
 /*
 Language: Roboconf
@@ -66386,10 +66387,10 @@ function roboconf(hljs) {
 module.exports = roboconf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 59284:
-/***/ ((module) => {
+/***/ 2066
+(module) {
 
 /*
 Language: MikroTik RouterOS script
@@ -66557,10 +66558,10 @@ function routeros(hljs) {
 module.exports = routeros;
 
 
-/***/ }),
+/***/ },
 
-/***/ 99560:
-/***/ ((module) => {
+/***/ 92040
+(module) {
 
 /*
 Language: RenderMan RSL
@@ -66713,10 +66714,10 @@ function rsl(hljs) {
 module.exports = rsl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 36256:
-/***/ ((module) => {
+/***/ 45529
+(module) {
 
 /*
 Language: Ruby
@@ -67168,10 +67169,10 @@ function ruby(hljs) {
 module.exports = ruby;
 
 
-/***/ }),
+/***/ },
 
-/***/ 83204:
-/***/ ((module) => {
+/***/ 64124
+(module) {
 
 /*
 Language: Oracle Rules Language
@@ -67251,10 +67252,10 @@ function ruleslanguage(hljs) {
 module.exports = ruleslanguage;
 
 
-/***/ }),
+/***/ },
 
-/***/ 419:
-/***/ ((module) => {
+/***/ 65915
+(module) {
 
 /*
 Language: Rust
@@ -67584,10 +67585,10 @@ function rust(hljs) {
 module.exports = rust;
 
 
-/***/ }),
+/***/ },
 
-/***/ 64440:
-/***/ ((module) => {
+/***/ 11816
+(module) {
 
 /*
 Language: SAS
@@ -68148,10 +68149,10 @@ function sas(hljs) {
 module.exports = sas;
 
 
-/***/ }),
+/***/ },
 
-/***/ 35800:
-/***/ ((module) => {
+/***/ 42759
+(module) {
 
 /*
 Language: Scala
@@ -68369,10 +68370,10 @@ function scala(hljs) {
 module.exports = scala;
 
 
-/***/ }),
+/***/ },
 
-/***/ 73268:
-/***/ ((module) => {
+/***/ 30902
+(module) {
 
 /*
 Language: Scheme
@@ -68572,10 +68573,10 @@ function scheme(hljs) {
 module.exports = scheme;
 
 
-/***/ }),
+/***/ },
 
-/***/ 8164:
-/***/ ((module) => {
+/***/ 83241
+(module) {
 
 /*
 Language: Scilab
@@ -68652,10 +68653,10 @@ function scilab(hljs) {
 module.exports = scilab;
 
 
-/***/ }),
+/***/ },
 
-/***/ 77760:
-/***/ ((module) => {
+/***/ 26805
+(module) {
 
 const MODES = (hljs) => {
   return {
@@ -69598,10 +69599,10 @@ function scss(hljs) {
 module.exports = scss;
 
 
-/***/ }),
+/***/ },
 
-/***/ 86368:
-/***/ ((module) => {
+/***/ 10199
+(module) {
 
 /*
 Language: Shell Session
@@ -69638,10 +69639,10 @@ function shell(hljs) {
 module.exports = shell;
 
 
-/***/ }),
+/***/ },
 
-/***/ 25680:
-/***/ ((module) => {
+/***/ 52905
+(module) {
 
 /*
 Language: Smali
@@ -69771,10 +69772,10 @@ function smali(hljs) {
 module.exports = smali;
 
 
-/***/ }),
+/***/ },
 
-/***/ 29195:
-/***/ ((module) => {
+/***/ 47708
+(module) {
 
 /*
 Language: Smalltalk
@@ -69847,10 +69848,10 @@ function smalltalk(hljs) {
 module.exports = smalltalk;
 
 
-/***/ }),
+/***/ },
 
-/***/ 65808:
-/***/ ((module) => {
+/***/ 54321
+(module) {
 
 /*
 Language: SML (Standard ML)
@@ -69929,10 +69930,10 @@ function sml(hljs) {
 module.exports = sml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 5488:
-/***/ ((module) => {
+/***/ 12411
+(module) {
 
 /*
 Language: SQF
@@ -72598,10 +72599,10 @@ function sqf(hljs) {
 module.exports = sqf;
 
 
-/***/ }),
+/***/ },
 
-/***/ 23572:
-/***/ ((module) => {
+/***/ 21
+(module) {
 
 /*
  Language: SQL
@@ -73298,10 +73299,10 @@ function sql(hljs) {
 module.exports = sql;
 
 
-/***/ }),
+/***/ },
 
-/***/ 79932:
-/***/ ((module) => {
+/***/ 4925
+(module) {
 
 /*
 Language: Stan
@@ -73826,10 +73827,10 @@ function stan(hljs) {
 module.exports = stan;
 
 
-/***/ }),
+/***/ },
 
-/***/ 74664:
-/***/ ((module) => {
+/***/ 10028
+(module) {
 
 /*
 Language: Stata
@@ -73886,10 +73887,10 @@ function stata(hljs) {
 module.exports = stata;
 
 
-/***/ }),
+/***/ },
 
-/***/ 42684:
-/***/ ((module) => {
+/***/ 91234
+(module) {
 
 /*
 Language: STEP Part 21
@@ -73960,10 +73961,10 @@ function step21(hljs) {
 module.exports = step21;
 
 
-/***/ }),
+/***/ },
 
-/***/ 42956:
-/***/ ((module) => {
+/***/ 91183
+(module) {
 
 const MODES = (hljs) => {
   return {
@@ -74966,10 +74967,10 @@ function stylus(hljs) {
 module.exports = stylus;
 
 
-/***/ }),
+/***/ },
 
-/***/ 73717:
-/***/ ((module) => {
+/***/ 36629
+(module) {
 
 /*
 Language: SubUnit
@@ -75017,10 +75018,10 @@ function subunit(hljs) {
 module.exports = subunit;
 
 
-/***/ }),
+/***/ },
 
-/***/ 60188:
-/***/ ((module) => {
+/***/ 98282
+(module) {
 
 /**
  * @param {string} value
@@ -75996,10 +75997,10 @@ function swift(hljs) {
 module.exports = swift;
 
 
-/***/ }),
+/***/ },
 
-/***/ 94664:
-/***/ ((module) => {
+/***/ 80640
+(module) {
 
 /*
 Language: Tagger Script
@@ -76062,10 +76063,10 @@ function taggerscript(hljs) {
 module.exports = taggerscript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 50740:
-/***/ ((module) => {
+/***/ 71612
+(module) {
 
 /*
 Language: Test Anything Protocol
@@ -76116,10 +76117,10 @@ function tap(hljs) {
 module.exports = tap;
 
 
-/***/ }),
+/***/ },
 
-/***/ 89608:
-/***/ ((module) => {
+/***/ 22762
+(module) {
 
 /*
 Language: Tcl
@@ -76314,10 +76315,10 @@ function tcl(hljs) {
 module.exports = tcl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 44663:
-/***/ ((module) => {
+/***/ 58034
+(module) {
 
 /*
 Language: Thrift
@@ -76398,10 +76399,10 @@ function thrift(hljs) {
 module.exports = thrift;
 
 
-/***/ }),
+/***/ },
 
-/***/ 33956:
-/***/ ((module) => {
+/***/ 55069
+(module) {
 
 /*
 Language: TP
@@ -76577,10 +76578,10 @@ function tp(hljs) {
 module.exports = tp;
 
 
-/***/ }),
+/***/ },
 
-/***/ 17148:
-/***/ ((module) => {
+/***/ 97320
+(module) {
 
 /*
 Language: Twig
@@ -76844,10 +76845,10 @@ function twig(hljs) {
 module.exports = twig;
 
 
-/***/ }),
+/***/ },
 
-/***/ 91224:
-/***/ ((module) => {
+/***/ 98958
+(module) {
 
 const IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
 const KEYWORDS = [
@@ -77764,10 +77765,10 @@ function typescript(hljs) {
 module.exports = typescript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 68745:
-/***/ ((module) => {
+/***/ 58043
+(module) {
 
 /*
 Language: Vala
@@ -77832,10 +77833,10 @@ function vala(hljs) {
 module.exports = vala;
 
 
-/***/ }),
+/***/ },
 
-/***/ 95468:
-/***/ ((module) => {
+/***/ 37370
+(module) {
 
 /*
 Language: Visual Basic .NET
@@ -77996,10 +77997,10 @@ function vbnet(hljs) {
 module.exports = vbnet;
 
 
-/***/ }),
+/***/ },
 
-/***/ 51340:
-/***/ ((module) => {
+/***/ 59254
+(module) {
 
 /*
 Language: VBScript in HTML
@@ -78027,10 +78028,10 @@ function vbscriptHtml(hljs) {
 module.exports = vbscriptHtml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 46984:
-/***/ ((module) => {
+/***/ 48166
+(module) {
 
 /*
 Language: VBScript
@@ -78254,10 +78255,10 @@ function vbscript(hljs) {
 module.exports = vbscript;
 
 
-/***/ }),
+/***/ },
 
-/***/ 92540:
-/***/ ((module) => {
+/***/ 79023
+(module) {
 
 /*
 Language: Verilog
@@ -78811,10 +78812,10 @@ function verilog(hljs) {
 module.exports = verilog;
 
 
-/***/ }),
+/***/ },
 
-/***/ 53064:
-/***/ ((module) => {
+/***/ 75151
+(module) {
 
 /*
 Language: VHDL
@@ -79034,10 +79035,10 @@ function vhdl(hljs) {
 module.exports = vhdl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 41292:
-/***/ ((module) => {
+/***/ 44429
+(module) {
 
 /*
 Language: Vim Script
@@ -79170,10 +79171,10 @@ function vim(hljs) {
 module.exports = vim;
 
 
-/***/ }),
+/***/ },
 
-/***/ 31984:
-/***/ ((module) => {
+/***/ 80641
+(module) {
 
 /*
 Language: WebAssembly
@@ -79316,10 +79317,10 @@ function wasm(hljs) {
 module.exports = wasm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 70560:
-/***/ ((module) => {
+/***/ 49475
+(module) {
 
 /*
 Language: Wren
@@ -79625,10 +79626,10 @@ function wren(hljs) {
 module.exports = wren;
 
 
-/***/ }),
+/***/ },
 
-/***/ 17084:
-/***/ ((module) => {
+/***/ 1652
+(module) {
 
 /*
 Language: Intel x86 Assembly
@@ -79785,10 +79786,10 @@ function x86asm(hljs) {
 module.exports = x86asm;
 
 
-/***/ }),
+/***/ },
 
-/***/ 2560:
-/***/ ((module) => {
+/***/ 81005
+(module) {
 
 /*
 Language: XL
@@ -79997,10 +79998,10 @@ function xl(hljs) {
 module.exports = xl;
 
 
-/***/ }),
+/***/ },
 
-/***/ 48112:
-/***/ ((module) => {
+/***/ 94472
+(module) {
 
 /*
 Language: HTML, XML
@@ -80245,10 +80246,10 @@ function xml(hljs) {
 module.exports = xml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 23600:
-/***/ ((module) => {
+/***/ 64209
+(module) {
 
 /*
 Language: XQuery
@@ -80612,10 +80613,10 @@ function xquery(_hljs) {
 module.exports = xquery;
 
 
-/***/ }),
+/***/ },
 
-/***/ 36908:
-/***/ ((module) => {
+/***/ 78230
+(module) {
 
 /*
 Language: YAML
@@ -80832,10 +80833,10 @@ function yaml(hljs) {
 module.exports = yaml;
 
 
-/***/ }),
+/***/ },
 
-/***/ 99472:
-/***/ ((module) => {
+/***/ 78883
+(module) {
 
 /*
  Language: Zephir
@@ -80968,32 +80969,20170 @@ function zephir(hljs) {
 module.exports = zephir;
 
 
-/***/ }),
+/***/ },
 
-/***/ 63028:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ 41548
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  iDZ: () => (/* binding */ useClipboard)
+});
+
+// UNUSED EXPORTS: DefaultMagicKeysAliasMap, StorageSerializers, TransitionPresets, assert, asyncComputed, autoResetRef, breakpointsAntDesign, breakpointsBootstrapV5, breakpointsElement, breakpointsMasterCss, breakpointsPrimeFlex, breakpointsQuasar, breakpointsSematic, breakpointsTailwind, breakpointsVuetify, breakpointsVuetifyV2, breakpointsVuetifyV3, bypassFilter, camelize, clamp, cloneFnJSON, computedAsync, computedEager, computedInject, computedWithControl, containsProp, controlledComputed, controlledRef, createEventHook, createFetch, createFilterWrapper, createGlobalState, createInjectionState, createReactiveFn, createRef, createReusableTemplate, createSharedComposable, createSingletonPromise, createTemplatePromise, createUnrefFn, customStorageEventName, debounceFilter, debouncedRef, debouncedWatch, defaultDocument, defaultLocation, defaultNavigator, defaultWindow, eagerComputed, executeTransition, extendRef, formatDate, formatTimeAgo, get, getLifeCycleTarget, getSSRHandler, hasOwn, hyphenate, identity, ignorableWatch, increaseWithUnit, injectLocal, invoke, isClient, isDef, isDefined, isIOS, isObject, isWorker, makeDestructurable, mapGamepadToXbox360Controller, noop, normalizeDate, notNullish, now, objectEntries, objectOmit, objectPick, onClickOutside, onElementRemoval, onKeyDown, onKeyPressed, onKeyStroke, onKeyUp, onLongPress, onStartTyping, pausableFilter, pausableWatch, promiseTimeout, provideLocal, provideSSRWidth, pxValue, rand, reactify, reactifyObject, reactiveComputed, reactiveOmit, reactivePick, refAutoReset, refDebounced, refDefault, refThrottled, refWithControl, resolveRef, resolveUnref, set, setSSRHandler, syncRef, syncRefs, templateRef, throttleFilter, throttledRef, throttledWatch, timestamp, toArray, toReactive, toRef, toRefs, toValue, tryOnBeforeMount, tryOnBeforeUnmount, tryOnMounted, tryOnScopeDispose, tryOnUnmounted, unrefElement, until, useActiveElement, useAnimate, useArrayDifference, useArrayEvery, useArrayFilter, useArrayFind, useArrayFindIndex, useArrayFindLast, useArrayIncludes, useArrayJoin, useArrayMap, useArrayReduce, useArraySome, useArrayUnique, useAsyncQueue, useAsyncState, useBase64, useBattery, useBluetooth, useBreakpoints, useBroadcastChannel, useBrowserLocation, useCached, useClipboardItems, useCloned, useColorMode, useConfirmDialog, useCountdown, useCounter, useCssVar, useCurrentElement, useCycleList, useDark, useDateFormat, useDebounce, useDebounceFn, useDebouncedRefHistory, useDeviceMotion, useDeviceOrientation, useDevicePixelRatio, useDevicesList, useDisplayMedia, useDocumentVisibility, useDraggable, useDropZone, useElementBounding, useElementByPoint, useElementHover, useElementSize, useElementVisibility, useEventBus, useEventListener, useEventSource, useEyeDropper, useFavicon, useFetch, useFileDialog, useFileSystemAccess, useFocus, useFocusWithin, useFps, useFullscreen, useGamepad, useGeolocation, useIdle, useImage, useInfiniteScroll, useIntersectionObserver, useInterval, useIntervalFn, useKeyModifier, useLastChanged, useLocalStorage, useMagicKeys, useManualRefHistory, useMediaControls, useMediaQuery, useMemoize, useMemory, useMounted, useMouse, useMouseInElement, useMousePressed, useMutationObserver, useNavigatorLanguage, useNetwork, useNow, useObjectUrl, useOffsetPagination, useOnline, usePageLeave, useParallax, useParentElement, usePerformanceObserver, usePermission, usePointer, usePointerLock, usePointerSwipe, usePreferredColorScheme, usePreferredContrast, usePreferredDark, usePreferredLanguages, usePreferredReducedMotion, usePreferredReducedTransparency, usePrevious, useRafFn, useRefHistory, useResizeObserver, useSSRWidth, useScreenOrientation, useScreenSafeArea, useScriptTag, useScroll, useScrollLock, useSessionStorage, useShare, useSorted, useSpeechRecognition, useSpeechSynthesis, useStepper, useStorage, useStorageAsync, useStyleTag, useSupported, useSwipe, useTemplateRefsList, useTextDirection, useTextSelection, useTextareaAutosize, useThrottle, useThrottleFn, useThrottledRefHistory, useTimeAgo, useTimeout, useTimeoutFn, useTimeoutPoll, useTimestamp, useTitle, useToNumber, useToString, useToggle, useTransition, useUrlSearchParams, useUserMedia, useVModel, useVModels, useVibrate, useVirtualList, useWakeLock, useWebNotification, useWebSocket, useWebWorker, useWebWorkerFn, useWindowFocus, useWindowScroll, useWindowSize, watchArray, watchAtMost, watchDebounced, watchDeep, watchIgnorable, watchImmediate, watchOnce, watchPausable, watchThrottled, watchTriggerable, watchWithFilter, whenever
+
+;// ../node_modules/@vue/shared/dist/shared.esm-bundler.js
+/**
+* @vue/shared v3.5.17
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+/*! #__NO_SIDE_EFFECTS__ */
+// @__NO_SIDE_EFFECTS__
+function makeMap(str) {
+  const map = /* @__PURE__ */ Object.create(null);
+  for (const key of str.split(",")) map[key] = 1;
+  return (val) => val in map;
+}
+
+const EMPTY_OBJ =  false ? 0 : {};
+const EMPTY_ARR =  false ? 0 : [];
+const NOOP = () => {
+};
+const NO = () => false;
+const isOn = (key) => key.charCodeAt(0) === 111 && key.charCodeAt(1) === 110 && // uppercase letter
+(key.charCodeAt(2) > 122 || key.charCodeAt(2) < 97);
+const isModelListener = (key) => key.startsWith("onUpdate:");
+const extend = Object.assign;
+const remove = (arr, el) => {
+  const i = arr.indexOf(el);
+  if (i > -1) {
+    arr.splice(i, 1);
+  }
+};
+const shared_esm_bundler_hasOwnProperty = Object.prototype.hasOwnProperty;
+const hasOwn = (val, key) => shared_esm_bundler_hasOwnProperty.call(val, key);
+const isArray = Array.isArray;
+const isMap = (val) => toTypeString(val) === "[object Map]";
+const isSet = (val) => toTypeString(val) === "[object Set]";
+const isDate = (val) => toTypeString(val) === "[object Date]";
+const isRegExp = (val) => toTypeString(val) === "[object RegExp]";
+const isFunction = (val) => typeof val === "function";
+const isString = (val) => typeof val === "string";
+const isSymbol = (val) => typeof val === "symbol";
+const isObject = (val) => val !== null && typeof val === "object";
+const isPromise = (val) => {
+  return (isObject(val) || isFunction(val)) && isFunction(val.then) && isFunction(val.catch);
+};
+const objectToString = Object.prototype.toString;
+const toTypeString = (value) => objectToString.call(value);
+const toRawType = (value) => {
+  return toTypeString(value).slice(8, -1);
+};
+const isPlainObject = (val) => toTypeString(val) === "[object Object]";
+const isIntegerKey = (key) => isString(key) && key !== "NaN" && key[0] !== "-" && "" + parseInt(key, 10) === key;
+const isReservedProp = /* @__PURE__ */ makeMap(
+  // the leading comma is intentional so empty string "" is also included
+  ",key,ref,ref_for,ref_key,onVnodeBeforeMount,onVnodeMounted,onVnodeBeforeUpdate,onVnodeUpdated,onVnodeBeforeUnmount,onVnodeUnmounted"
+);
+const isBuiltInDirective = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(
+  "bind,cloak,else-if,else,for,html,if,model,on,once,pre,show,slot,text,memo"
+)));
+const cacheStringFunction = (fn) => {
+  const cache = /* @__PURE__ */ Object.create(null);
+  return (str) => {
+    const hit = cache[str];
+    return hit || (cache[str] = fn(str));
+  };
+};
+const camelizeRE = /-(\w)/g;
+const camelize = cacheStringFunction(
+  (str) => {
+    return str.replace(camelizeRE, (_, c) => c ? c.toUpperCase() : "");
+  }
+);
+const hyphenateRE = /\B([A-Z])/g;
+const hyphenate = cacheStringFunction(
+  (str) => str.replace(hyphenateRE, "-$1").toLowerCase()
+);
+const capitalize = cacheStringFunction((str) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+});
+const toHandlerKey = cacheStringFunction(
+  (str) => {
+    const s = str ? `on${capitalize(str)}` : ``;
+    return s;
+  }
+);
+const hasChanged = (value, oldValue) => !Object.is(value, oldValue);
+const invokeArrayFns = (fns, ...arg) => {
+  for (let i = 0; i < fns.length; i++) {
+    fns[i](...arg);
+  }
+};
+const def = (obj, key, value, writable = false) => {
+  Object.defineProperty(obj, key, {
+    configurable: true,
+    enumerable: false,
+    writable,
+    value
+  });
+};
+const looseToNumber = (val) => {
+  const n = parseFloat(val);
+  return isNaN(n) ? val : n;
+};
+const toNumber = (val) => {
+  const n = isString(val) ? Number(val) : NaN;
+  return isNaN(n) ? val : n;
+};
+let _globalThis;
+const getGlobalThis = () => {
+  return _globalThis || (_globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : typeof __webpack_require__.g !== "undefined" ? __webpack_require__.g : {});
+};
+const identRE = /^[_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*$/;
+function genPropsAccessExp(name) {
+  return identRE.test(name) ? `__props.${name}` : `__props[${JSON.stringify(name)}]`;
+}
+function genCacheKey(source, options) {
+  return source + JSON.stringify(
+    options,
+    (_, val) => typeof val === "function" ? val.toString() : val
+  );
+}
+
+const PatchFlags = {
+  "TEXT": 1,
+  "1": "TEXT",
+  "CLASS": 2,
+  "2": "CLASS",
+  "STYLE": 4,
+  "4": "STYLE",
+  "PROPS": 8,
+  "8": "PROPS",
+  "FULL_PROPS": 16,
+  "16": "FULL_PROPS",
+  "NEED_HYDRATION": 32,
+  "32": "NEED_HYDRATION",
+  "STABLE_FRAGMENT": 64,
+  "64": "STABLE_FRAGMENT",
+  "KEYED_FRAGMENT": 128,
+  "128": "KEYED_FRAGMENT",
+  "UNKEYED_FRAGMENT": 256,
+  "256": "UNKEYED_FRAGMENT",
+  "NEED_PATCH": 512,
+  "512": "NEED_PATCH",
+  "DYNAMIC_SLOTS": 1024,
+  "1024": "DYNAMIC_SLOTS",
+  "DEV_ROOT_FRAGMENT": 2048,
+  "2048": "DEV_ROOT_FRAGMENT",
+  "CACHED": -1,
+  "-1": "CACHED",
+  "BAIL": -2,
+  "-2": "BAIL"
+};
+const PatchFlagNames = {
+  [1]: `TEXT`,
+  [2]: `CLASS`,
+  [4]: `STYLE`,
+  [8]: `PROPS`,
+  [16]: `FULL_PROPS`,
+  [32]: `NEED_HYDRATION`,
+  [64]: `STABLE_FRAGMENT`,
+  [128]: `KEYED_FRAGMENT`,
+  [256]: `UNKEYED_FRAGMENT`,
+  [512]: `NEED_PATCH`,
+  [1024]: `DYNAMIC_SLOTS`,
+  [2048]: `DEV_ROOT_FRAGMENT`,
+  [-1]: `CACHED`,
+  [-2]: `BAIL`
+};
+
+const ShapeFlags = {
+  "ELEMENT": 1,
+  "1": "ELEMENT",
+  "FUNCTIONAL_COMPONENT": 2,
+  "2": "FUNCTIONAL_COMPONENT",
+  "STATEFUL_COMPONENT": 4,
+  "4": "STATEFUL_COMPONENT",
+  "TEXT_CHILDREN": 8,
+  "8": "TEXT_CHILDREN",
+  "ARRAY_CHILDREN": 16,
+  "16": "ARRAY_CHILDREN",
+  "SLOTS_CHILDREN": 32,
+  "32": "SLOTS_CHILDREN",
+  "TELEPORT": 64,
+  "64": "TELEPORT",
+  "SUSPENSE": 128,
+  "128": "SUSPENSE",
+  "COMPONENT_SHOULD_KEEP_ALIVE": 256,
+  "256": "COMPONENT_SHOULD_KEEP_ALIVE",
+  "COMPONENT_KEPT_ALIVE": 512,
+  "512": "COMPONENT_KEPT_ALIVE",
+  "COMPONENT": 6,
+  "6": "COMPONENT"
+};
+
+const SlotFlags = {
+  "STABLE": 1,
+  "1": "STABLE",
+  "DYNAMIC": 2,
+  "2": "DYNAMIC",
+  "FORWARDED": 3,
+  "3": "FORWARDED"
+};
+const slotFlagsText = {
+  [1]: "STABLE",
+  [2]: "DYNAMIC",
+  [3]: "FORWARDED"
+};
+
+const GLOBALS_ALLOWED = "Infinity,undefined,NaN,isFinite,isNaN,parseFloat,parseInt,decodeURI,decodeURIComponent,encodeURI,encodeURIComponent,Math,Number,Date,Array,Object,Boolean,String,RegExp,Map,Set,JSON,Intl,BigInt,console,Error,Symbol";
+const isGloballyAllowed = /* @__PURE__ */ makeMap(GLOBALS_ALLOWED);
+const isGloballyWhitelisted = (/* unused pure expression or super */ null && (isGloballyAllowed));
+
+const range = 2;
+function generateCodeFrame(source, start = 0, end = source.length) {
+  start = Math.max(0, Math.min(start, source.length));
+  end = Math.max(0, Math.min(end, source.length));
+  if (start > end) return "";
+  let lines = source.split(/(\r?\n)/);
+  const newlineSequences = lines.filter((_, idx) => idx % 2 === 1);
+  lines = lines.filter((_, idx) => idx % 2 === 0);
+  let count = 0;
+  const res = [];
+  for (let i = 0; i < lines.length; i++) {
+    count += lines[i].length + (newlineSequences[i] && newlineSequences[i].length || 0);
+    if (count >= start) {
+      for (let j = i - range; j <= i + range || end > count; j++) {
+        if (j < 0 || j >= lines.length) continue;
+        const line = j + 1;
+        res.push(
+          `${line}${" ".repeat(Math.max(3 - String(line).length, 0))}|  ${lines[j]}`
+        );
+        const lineLength = lines[j].length;
+        const newLineSeqLength = newlineSequences[j] && newlineSequences[j].length || 0;
+        if (j === i) {
+          const pad = start - (count - (lineLength + newLineSeqLength));
+          const length = Math.max(
+            1,
+            end > count ? lineLength - pad : end - start
+          );
+          res.push(`   |  ` + " ".repeat(pad) + "^".repeat(length));
+        } else if (j > i) {
+          if (end > count) {
+            const length = Math.max(Math.min(end - count, lineLength), 1);
+            res.push(`   |  ` + "^".repeat(length));
+          }
+          count += lineLength + newLineSeqLength;
+        }
+      }
+      break;
+    }
+  }
+  return res.join("\n");
+}
+
+function normalizeStyle(value) {
+  if (isArray(value)) {
+    const res = {};
+    for (let i = 0; i < value.length; i++) {
+      const item = value[i];
+      const normalized = isString(item) ? parseStringStyle(item) : normalizeStyle(item);
+      if (normalized) {
+        for (const key in normalized) {
+          res[key] = normalized[key];
+        }
+      }
+    }
+    return res;
+  } else if (isString(value) || isObject(value)) {
+    return value;
+  }
+}
+const listDelimiterRE = /;(?![^(]*\))/g;
+const propertyDelimiterRE = /:([^]+)/;
+const styleCommentRE = /\/\*[^]*?\*\//g;
+function parseStringStyle(cssText) {
+  const ret = {};
+  cssText.replace(styleCommentRE, "").split(listDelimiterRE).forEach((item) => {
+    if (item) {
+      const tmp = item.split(propertyDelimiterRE);
+      tmp.length > 1 && (ret[tmp[0].trim()] = tmp[1].trim());
+    }
+  });
+  return ret;
+}
+function stringifyStyle(styles) {
+  if (!styles) return "";
+  if (isString(styles)) return styles;
+  let ret = "";
+  for (const key in styles) {
+    const value = styles[key];
+    if (isString(value) || typeof value === "number") {
+      const normalizedKey = key.startsWith(`--`) ? key : hyphenate(key);
+      ret += `${normalizedKey}:${value};`;
+    }
+  }
+  return ret;
+}
+function normalizeClass(value) {
+  let res = "";
+  if (isString(value)) {
+    res = value;
+  } else if (isArray(value)) {
+    for (let i = 0; i < value.length; i++) {
+      const normalized = normalizeClass(value[i]);
+      if (normalized) {
+        res += normalized + " ";
+      }
+    }
+  } else if (isObject(value)) {
+    for (const name in value) {
+      if (value[name]) {
+        res += name + " ";
+      }
+    }
+  }
+  return res.trim();
+}
+function normalizeProps(props) {
+  if (!props) return null;
+  let { class: klass, style } = props;
+  if (klass && !isString(klass)) {
+    props.class = normalizeClass(klass);
+  }
+  if (style) {
+    props.style = normalizeStyle(style);
+  }
+  return props;
+}
+
+const HTML_TAGS = "html,body,base,head,link,meta,style,title,address,article,aside,footer,header,hgroup,h1,h2,h3,h4,h5,h6,nav,section,div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,ruby,s,samp,small,span,strong,sub,sup,time,u,var,wbr,area,audio,map,track,video,embed,object,param,source,canvas,script,noscript,del,ins,caption,col,colgroup,table,thead,tbody,td,th,tr,button,datalist,fieldset,form,input,label,legend,meter,optgroup,option,output,progress,select,textarea,details,dialog,menu,summary,template,blockquote,iframe,tfoot";
+const SVG_TAGS = "svg,animate,animateMotion,animateTransform,circle,clipPath,color-profile,defs,desc,discard,ellipse,feBlend,feColorMatrix,feComponentTransfer,feComposite,feConvolveMatrix,feDiffuseLighting,feDisplacementMap,feDistantLight,feDropShadow,feFlood,feFuncA,feFuncB,feFuncG,feFuncR,feGaussianBlur,feImage,feMerge,feMergeNode,feMorphology,feOffset,fePointLight,feSpecularLighting,feSpotLight,feTile,feTurbulence,filter,foreignObject,g,hatch,hatchpath,image,line,linearGradient,marker,mask,mesh,meshgradient,meshpatch,meshrow,metadata,mpath,path,pattern,polygon,polyline,radialGradient,rect,set,solidcolor,stop,switch,symbol,text,textPath,title,tspan,unknown,use,view";
+const MATH_TAGS = "annotation,annotation-xml,maction,maligngroup,malignmark,math,menclose,merror,mfenced,mfrac,mfraction,mglyph,mi,mlabeledtr,mlongdiv,mmultiscripts,mn,mo,mover,mpadded,mphantom,mprescripts,mroot,mrow,ms,mscarries,mscarry,msgroup,msline,mspace,msqrt,msrow,mstack,mstyle,msub,msubsup,msup,mtable,mtd,mtext,mtr,munder,munderover,none,semantics";
+const VOID_TAGS = "area,base,br,col,embed,hr,img,input,link,meta,param,source,track,wbr";
+const isHTMLTag = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(HTML_TAGS)));
+const isSVGTag = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(SVG_TAGS)));
+const isMathMLTag = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(MATH_TAGS)));
+const isVoidTag = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(VOID_TAGS)));
+
+const specialBooleanAttrs = `itemscope,allowfullscreen,formnovalidate,ismap,nomodule,novalidate,readonly`;
+const isSpecialBooleanAttr = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(specialBooleanAttrs)));
+const isBooleanAttr = /* @__PURE__ */ makeMap(
+  specialBooleanAttrs + `,async,autofocus,autoplay,controls,default,defer,disabled,hidden,inert,loop,open,required,reversed,scoped,seamless,checked,muted,multiple,selected`
+);
+function includeBooleanAttr(value) {
+  return !!value || value === "";
+}
+const unsafeAttrCharRE = /[>/="'\u0009\u000a\u000c\u0020]/;
+const attrValidationCache = {};
+function isSSRSafeAttrName(name) {
+  if (attrValidationCache.hasOwnProperty(name)) {
+    return attrValidationCache[name];
+  }
+  const isUnsafe = unsafeAttrCharRE.test(name);
+  if (isUnsafe) {
+    console.error(`unsafe attribute name: ${name}`);
+  }
+  return attrValidationCache[name] = !isUnsafe;
+}
+const propsToAttrMap = {
+  acceptCharset: "accept-charset",
+  className: "class",
+  htmlFor: "for",
+  httpEquiv: "http-equiv"
+};
+const isKnownHtmlAttr = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(
+  `accept,accept-charset,accesskey,action,align,allow,alt,async,autocapitalize,autocomplete,autofocus,autoplay,background,bgcolor,border,buffered,capture,challenge,charset,checked,cite,class,code,codebase,color,cols,colspan,content,contenteditable,contextmenu,controls,coords,crossorigin,csp,data,datetime,decoding,default,defer,dir,dirname,disabled,download,draggable,dropzone,enctype,enterkeyhint,for,form,formaction,formenctype,formmethod,formnovalidate,formtarget,headers,height,hidden,high,href,hreflang,http-equiv,icon,id,importance,inert,integrity,ismap,itemprop,keytype,kind,label,lang,language,loading,list,loop,low,manifest,max,maxlength,minlength,media,min,multiple,muted,name,novalidate,open,optimum,pattern,ping,placeholder,poster,preload,radiogroup,readonly,referrerpolicy,rel,required,reversed,rows,rowspan,sandbox,scope,scoped,selected,shape,size,sizes,slot,span,spellcheck,src,srcdoc,srclang,srcset,start,step,style,summary,tabindex,target,title,translate,type,usemap,value,width,wrap`
+)));
+const isKnownSvgAttr = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(
+  `xmlns,accent-height,accumulate,additive,alignment-baseline,alphabetic,amplitude,arabic-form,ascent,attributeName,attributeType,azimuth,baseFrequency,baseline-shift,baseProfile,bbox,begin,bias,by,calcMode,cap-height,class,clip,clipPathUnits,clip-path,clip-rule,color,color-interpolation,color-interpolation-filters,color-profile,color-rendering,contentScriptType,contentStyleType,crossorigin,cursor,cx,cy,d,decelerate,descent,diffuseConstant,direction,display,divisor,dominant-baseline,dur,dx,dy,edgeMode,elevation,enable-background,end,exponent,fill,fill-opacity,fill-rule,filter,filterRes,filterUnits,flood-color,flood-opacity,font-family,font-size,font-size-adjust,font-stretch,font-style,font-variant,font-weight,format,from,fr,fx,fy,g1,g2,glyph-name,glyph-orientation-horizontal,glyph-orientation-vertical,glyphRef,gradientTransform,gradientUnits,hanging,height,href,hreflang,horiz-adv-x,horiz-origin-x,id,ideographic,image-rendering,in,in2,intercept,k,k1,k2,k3,k4,kernelMatrix,kernelUnitLength,kerning,keyPoints,keySplines,keyTimes,lang,lengthAdjust,letter-spacing,lighting-color,limitingConeAngle,local,marker-end,marker-mid,marker-start,markerHeight,markerUnits,markerWidth,mask,maskContentUnits,maskUnits,mathematical,max,media,method,min,mode,name,numOctaves,offset,opacity,operator,order,orient,orientation,origin,overflow,overline-position,overline-thickness,panose-1,paint-order,path,pathLength,patternContentUnits,patternTransform,patternUnits,ping,pointer-events,points,pointsAtX,pointsAtY,pointsAtZ,preserveAlpha,preserveAspectRatio,primitiveUnits,r,radius,referrerPolicy,refX,refY,rel,rendering-intent,repeatCount,repeatDur,requiredExtensions,requiredFeatures,restart,result,rotate,rx,ry,scale,seed,shape-rendering,slope,spacing,specularConstant,specularExponent,speed,spreadMethod,startOffset,stdDeviation,stemh,stemv,stitchTiles,stop-color,stop-opacity,strikethrough-position,strikethrough-thickness,string,stroke,stroke-dasharray,stroke-dashoffset,stroke-linecap,stroke-linejoin,stroke-miterlimit,stroke-opacity,stroke-width,style,surfaceScale,systemLanguage,tabindex,tableValues,target,targetX,targetY,text-anchor,text-decoration,text-rendering,textLength,to,transform,transform-origin,type,u1,u2,underline-position,underline-thickness,unicode,unicode-bidi,unicode-range,units-per-em,v-alphabetic,v-hanging,v-ideographic,v-mathematical,values,vector-effect,version,vert-adv-y,vert-origin-x,vert-origin-y,viewBox,viewTarget,visibility,width,widths,word-spacing,writing-mode,x,x-height,x1,x2,xChannelSelector,xlink:actuate,xlink:arcrole,xlink:href,xlink:role,xlink:show,xlink:title,xlink:type,xmlns:xlink,xml:base,xml:lang,xml:space,y,y1,y2,yChannelSelector,z,zoomAndPan`
+)));
+const isKnownMathMLAttr = /* @__PURE__ */ (/* unused pure expression or super */ null && (makeMap(
+  `accent,accentunder,actiontype,align,alignmentscope,altimg,altimg-height,altimg-valign,altimg-width,alttext,bevelled,close,columnsalign,columnlines,columnspan,denomalign,depth,dir,display,displaystyle,encoding,equalcolumns,equalrows,fence,fontstyle,fontweight,form,frame,framespacing,groupalign,height,href,id,indentalign,indentalignfirst,indentalignlast,indentshift,indentshiftfirst,indentshiftlast,indextype,justify,largetop,largeop,lquote,lspace,mathbackground,mathcolor,mathsize,mathvariant,maxsize,minlabelspacing,mode,other,overflow,position,rowalign,rowlines,rowspan,rquote,rspace,scriptlevel,scriptminsize,scriptsizemultiplier,selection,separator,separators,shift,side,src,stackalign,stretchy,subscriptshift,superscriptshift,symmetric,voffset,width,widths,xlink:href,xlink:show,xlink:type,xmlns`
+)));
+function isRenderableAttrValue(value) {
+  if (value == null) {
+    return false;
+  }
+  const type = typeof value;
+  return type === "string" || type === "number" || type === "boolean";
+}
+
+const escapeRE = /["'&<>]/;
+function escapeHtml(string) {
+  const str = "" + string;
+  const match = escapeRE.exec(str);
+  if (!match) {
+    return str;
+  }
+  let html = "";
+  let escaped;
+  let index;
+  let lastIndex = 0;
+  for (index = match.index; index < str.length; index++) {
+    switch (str.charCodeAt(index)) {
+      case 34:
+        escaped = "&quot;";
+        break;
+      case 38:
+        escaped = "&amp;";
+        break;
+      case 39:
+        escaped = "&#39;";
+        break;
+      case 60:
+        escaped = "&lt;";
+        break;
+      case 62:
+        escaped = "&gt;";
+        break;
+      default:
+        continue;
+    }
+    if (lastIndex !== index) {
+      html += str.slice(lastIndex, index);
+    }
+    lastIndex = index + 1;
+    html += escaped;
+  }
+  return lastIndex !== index ? html + str.slice(lastIndex, index) : html;
+}
+const commentStripRE = /^-?>|<!--|-->|--!>|<!-$/g;
+function escapeHtmlComment(src) {
+  return src.replace(commentStripRE, "");
+}
+const cssVarNameEscapeSymbolsRE = /[ !"#$%&'()*+,./:;<=>?@[\\\]^`{|}~]/g;
+function getEscapedCssVarName(key, doubleEscape) {
+  return key.replace(
+    cssVarNameEscapeSymbolsRE,
+    (s) => doubleEscape ? s === '"' ? '\\\\\\"' : `\\\\${s}` : `\\${s}`
+  );
+}
+
+function looseCompareArrays(a, b) {
+  if (a.length !== b.length) return false;
+  let equal = true;
+  for (let i = 0; equal && i < a.length; i++) {
+    equal = looseEqual(a[i], b[i]);
+  }
+  return equal;
+}
+function looseEqual(a, b) {
+  if (a === b) return true;
+  let aValidType = isDate(a);
+  let bValidType = isDate(b);
+  if (aValidType || bValidType) {
+    return aValidType && bValidType ? a.getTime() === b.getTime() : false;
+  }
+  aValidType = isSymbol(a);
+  bValidType = isSymbol(b);
+  if (aValidType || bValidType) {
+    return a === b;
+  }
+  aValidType = isArray(a);
+  bValidType = isArray(b);
+  if (aValidType || bValidType) {
+    return aValidType && bValidType ? looseCompareArrays(a, b) : false;
+  }
+  aValidType = isObject(a);
+  bValidType = isObject(b);
+  if (aValidType || bValidType) {
+    if (!aValidType || !bValidType) {
+      return false;
+    }
+    const aKeysCount = Object.keys(a).length;
+    const bKeysCount = Object.keys(b).length;
+    if (aKeysCount !== bKeysCount) {
+      return false;
+    }
+    for (const key in a) {
+      const aHasKey = a.hasOwnProperty(key);
+      const bHasKey = b.hasOwnProperty(key);
+      if (aHasKey && !bHasKey || !aHasKey && bHasKey || !looseEqual(a[key], b[key])) {
+        return false;
+      }
+    }
+  }
+  return String(a) === String(b);
+}
+function looseIndexOf(arr, val) {
+  return arr.findIndex((item) => looseEqual(item, val));
+}
+
+const isRef = (val) => {
+  return !!(val && val["__v_isRef"] === true);
+};
+const toDisplayString = (val) => {
+  return isString(val) ? val : val == null ? "" : isArray(val) || isObject(val) && (val.toString === objectToString || !isFunction(val.toString)) ? isRef(val) ? toDisplayString(val.value) : JSON.stringify(val, replacer, 2) : String(val);
+};
+const replacer = (_key, val) => {
+  if (isRef(val)) {
+    return replacer(_key, val.value);
+  } else if (isMap(val)) {
+    return {
+      [`Map(${val.size})`]: [...val.entries()].reduce(
+        (entries, [key, val2], i) => {
+          entries[stringifySymbol(key, i) + " =>"] = val2;
+          return entries;
+        },
+        {}
+      )
+    };
+  } else if (isSet(val)) {
+    return {
+      [`Set(${val.size})`]: [...val.values()].map((v) => stringifySymbol(v))
+    };
+  } else if (isSymbol(val)) {
+    return stringifySymbol(val);
+  } else if (isObject(val) && !isArray(val) && !isPlainObject(val)) {
+    return String(val);
+  }
+  return val;
+};
+const stringifySymbol = (v, i = "") => {
+  var _a;
+  return (
+    // Symbol.description in es2019+ so we need to cast here to pass
+    // the lib: es2016 check
+    isSymbol(v) ? `Symbol(${(_a = v.description) != null ? _a : i})` : v
+  );
+};
+
+
+
+;// ../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+/* unused harmony import specifier */ var reactivity_esm_bundler_extend;
+/* unused harmony import specifier */ var reactivity_esm_bundler_toRawType;
+/* unused harmony import specifier */ var reactivity_esm_bundler_isArray;
+/* unused harmony import specifier */ var reactivity_esm_bundler_isFunction;
+/* unused harmony import specifier */ var reactivity_esm_bundler_isObject;
+/**
+* @vue/reactivity v3.5.17
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+
+function warn(msg, ...args) {
+  console.warn(`[Vue warn] ${msg}`, ...args);
+}
+
+let activeEffectScope;
+class EffectScope {
+  constructor(detached = false) {
+    this.detached = detached;
+    /**
+     * @internal
+     */
+    this._active = true;
+    /**
+     * @internal track `on` calls, allow `on` call multiple times
+     */
+    this._on = 0;
+    /**
+     * @internal
+     */
+    this.effects = [];
+    /**
+     * @internal
+     */
+    this.cleanups = [];
+    this._isPaused = false;
+    this.parent = activeEffectScope;
+    if (!detached && activeEffectScope) {
+      this.index = (activeEffectScope.scopes || (activeEffectScope.scopes = [])).push(
+        this
+      ) - 1;
+    }
+  }
+  get active() {
+    return this._active;
+  }
+  pause() {
+    if (this._active) {
+      this._isPaused = true;
+      let i, l;
+      if (this.scopes) {
+        for (i = 0, l = this.scopes.length; i < l; i++) {
+          this.scopes[i].pause();
+        }
+      }
+      for (i = 0, l = this.effects.length; i < l; i++) {
+        this.effects[i].pause();
+      }
+    }
+  }
+  /**
+   * Resumes the effect scope, including all child scopes and effects.
+   */
+  resume() {
+    if (this._active) {
+      if (this._isPaused) {
+        this._isPaused = false;
+        let i, l;
+        if (this.scopes) {
+          for (i = 0, l = this.scopes.length; i < l; i++) {
+            this.scopes[i].resume();
+          }
+        }
+        for (i = 0, l = this.effects.length; i < l; i++) {
+          this.effects[i].resume();
+        }
+      }
+    }
+  }
+  run(fn) {
+    if (this._active) {
+      const currentEffectScope = activeEffectScope;
+      try {
+        activeEffectScope = this;
+        return fn();
+      } finally {
+        activeEffectScope = currentEffectScope;
+      }
+    } else if (false) // removed by dead control flow
+{}
+  }
+  /**
+   * This should only be called on non-detached scopes
+   * @internal
+   */
+  on() {
+    if (++this._on === 1) {
+      this.prevScope = activeEffectScope;
+      activeEffectScope = this;
+    }
+  }
+  /**
+   * This should only be called on non-detached scopes
+   * @internal
+   */
+  off() {
+    if (this._on > 0 && --this._on === 0) {
+      activeEffectScope = this.prevScope;
+      this.prevScope = void 0;
+    }
+  }
+  stop(fromParent) {
+    if (this._active) {
+      this._active = false;
+      let i, l;
+      for (i = 0, l = this.effects.length; i < l; i++) {
+        this.effects[i].stop();
+      }
+      this.effects.length = 0;
+      for (i = 0, l = this.cleanups.length; i < l; i++) {
+        this.cleanups[i]();
+      }
+      this.cleanups.length = 0;
+      if (this.scopes) {
+        for (i = 0, l = this.scopes.length; i < l; i++) {
+          this.scopes[i].stop(true);
+        }
+        this.scopes.length = 0;
+      }
+      if (!this.detached && this.parent && !fromParent) {
+        const last = this.parent.scopes.pop();
+        if (last && last !== this) {
+          this.parent.scopes[this.index] = last;
+          last.index = this.index;
+        }
+      }
+      this.parent = void 0;
+    }
+  }
+}
+function effectScope(detached) {
+  return new EffectScope(detached);
+}
+function getCurrentScope() {
+  return activeEffectScope;
+}
+function onScopeDispose(fn, failSilently = false) {
+  if (activeEffectScope) {
+    activeEffectScope.cleanups.push(fn);
+  } else if (false) // removed by dead control flow
+{}
+}
+
+let activeSub;
+const EffectFlags = {
+  "ACTIVE": 1,
+  "1": "ACTIVE",
+  "RUNNING": 2,
+  "2": "RUNNING",
+  "TRACKING": 4,
+  "4": "TRACKING",
+  "NOTIFIED": 8,
+  "8": "NOTIFIED",
+  "DIRTY": 16,
+  "16": "DIRTY",
+  "ALLOW_RECURSE": 32,
+  "32": "ALLOW_RECURSE",
+  "PAUSED": 64,
+  "64": "PAUSED",
+  "EVALUATED": 128,
+  "128": "EVALUATED"
+};
+const pausedQueueEffects = /* @__PURE__ */ new WeakSet();
+class ReactiveEffect {
+  constructor(fn) {
+    this.fn = fn;
+    /**
+     * @internal
+     */
+    this.deps = void 0;
+    /**
+     * @internal
+     */
+    this.depsTail = void 0;
+    /**
+     * @internal
+     */
+    this.flags = 1 | 4;
+    /**
+     * @internal
+     */
+    this.next = void 0;
+    /**
+     * @internal
+     */
+    this.cleanup = void 0;
+    this.scheduler = void 0;
+    if (activeEffectScope && activeEffectScope.active) {
+      activeEffectScope.effects.push(this);
+    }
+  }
+  pause() {
+    this.flags |= 64;
+  }
+  resume() {
+    if (this.flags & 64) {
+      this.flags &= -65;
+      if (pausedQueueEffects.has(this)) {
+        pausedQueueEffects.delete(this);
+        this.trigger();
+      }
+    }
+  }
+  /**
+   * @internal
+   */
+  notify() {
+    if (this.flags & 2 && !(this.flags & 32)) {
+      return;
+    }
+    if (!(this.flags & 8)) {
+      batch(this);
+    }
+  }
+  run() {
+    if (!(this.flags & 1)) {
+      return this.fn();
+    }
+    this.flags |= 2;
+    cleanupEffect(this);
+    prepareDeps(this);
+    const prevEffect = activeSub;
+    const prevShouldTrack = shouldTrack;
+    activeSub = this;
+    shouldTrack = true;
+    try {
+      return this.fn();
+    } finally {
+      if (false) // removed by dead control flow
+{}
+      cleanupDeps(this);
+      activeSub = prevEffect;
+      shouldTrack = prevShouldTrack;
+      this.flags &= -3;
+    }
+  }
+  stop() {
+    if (this.flags & 1) {
+      for (let link = this.deps; link; link = link.nextDep) {
+        removeSub(link);
+      }
+      this.deps = this.depsTail = void 0;
+      cleanupEffect(this);
+      this.onStop && this.onStop();
+      this.flags &= -2;
+    }
+  }
+  trigger() {
+    if (this.flags & 64) {
+      pausedQueueEffects.add(this);
+    } else if (this.scheduler) {
+      this.scheduler();
+    } else {
+      this.runIfDirty();
+    }
+  }
+  /**
+   * @internal
+   */
+  runIfDirty() {
+    if (isDirty(this)) {
+      this.run();
+    }
+  }
+  get dirty() {
+    return isDirty(this);
+  }
+}
+let batchDepth = 0;
+let batchedSub;
+let batchedComputed;
+function batch(sub, isComputed = false) {
+  sub.flags |= 8;
+  if (isComputed) {
+    sub.next = batchedComputed;
+    batchedComputed = sub;
+    return;
+  }
+  sub.next = batchedSub;
+  batchedSub = sub;
+}
+function startBatch() {
+  batchDepth++;
+}
+function endBatch() {
+  if (--batchDepth > 0) {
+    return;
+  }
+  if (batchedComputed) {
+    let e = batchedComputed;
+    batchedComputed = void 0;
+    while (e) {
+      const next = e.next;
+      e.next = void 0;
+      e.flags &= -9;
+      e = next;
+    }
+  }
+  let error;
+  while (batchedSub) {
+    let e = batchedSub;
+    batchedSub = void 0;
+    while (e) {
+      const next = e.next;
+      e.next = void 0;
+      e.flags &= -9;
+      if (e.flags & 1) {
+        try {
+          ;
+          e.trigger();
+        } catch (err) {
+          if (!error) error = err;
+        }
+      }
+      e = next;
+    }
+  }
+  if (error) throw error;
+}
+function prepareDeps(sub) {
+  for (let link = sub.deps; link; link = link.nextDep) {
+    link.version = -1;
+    link.prevActiveLink = link.dep.activeLink;
+    link.dep.activeLink = link;
+  }
+}
+function cleanupDeps(sub) {
+  let head;
+  let tail = sub.depsTail;
+  let link = tail;
+  while (link) {
+    const prev = link.prevDep;
+    if (link.version === -1) {
+      if (link === tail) tail = prev;
+      removeSub(link);
+      removeDep(link);
+    } else {
+      head = link;
+    }
+    link.dep.activeLink = link.prevActiveLink;
+    link.prevActiveLink = void 0;
+    link = prev;
+  }
+  sub.deps = head;
+  sub.depsTail = tail;
+}
+function isDirty(sub) {
+  for (let link = sub.deps; link; link = link.nextDep) {
+    if (link.dep.version !== link.version || link.dep.computed && (refreshComputed(link.dep.computed) || link.dep.version !== link.version)) {
+      return true;
+    }
+  }
+  if (sub._dirty) {
+    return true;
+  }
+  return false;
+}
+function refreshComputed(computed) {
+  if (computed.flags & 4 && !(computed.flags & 16)) {
+    return;
+  }
+  computed.flags &= -17;
+  if (computed.globalVersion === globalVersion) {
+    return;
+  }
+  computed.globalVersion = globalVersion;
+  if (!computed.isSSR && computed.flags & 128 && (!computed.deps && !computed._dirty || !isDirty(computed))) {
+    return;
+  }
+  computed.flags |= 2;
+  const dep = computed.dep;
+  const prevSub = activeSub;
+  const prevShouldTrack = shouldTrack;
+  activeSub = computed;
+  shouldTrack = true;
+  try {
+    prepareDeps(computed);
+    const value = computed.fn(computed._value);
+    if (dep.version === 0 || hasChanged(value, computed._value)) {
+      computed.flags |= 128;
+      computed._value = value;
+      dep.version++;
+    }
+  } catch (err) {
+    dep.version++;
+    throw err;
+  } finally {
+    activeSub = prevSub;
+    shouldTrack = prevShouldTrack;
+    cleanupDeps(computed);
+    computed.flags &= -3;
+  }
+}
+function removeSub(link, soft = false) {
+  const { dep, prevSub, nextSub } = link;
+  if (prevSub) {
+    prevSub.nextSub = nextSub;
+    link.prevSub = void 0;
+  }
+  if (nextSub) {
+    nextSub.prevSub = prevSub;
+    link.nextSub = void 0;
+  }
+  if (false) // removed by dead control flow
+{}
+  if (dep.subs === link) {
+    dep.subs = prevSub;
+    if (!prevSub && dep.computed) {
+      dep.computed.flags &= -5;
+      for (let l = dep.computed.deps; l; l = l.nextDep) {
+        removeSub(l, true);
+      }
+    }
+  }
+  if (!soft && !--dep.sc && dep.map) {
+    dep.map.delete(dep.key);
+  }
+}
+function removeDep(link) {
+  const { prevDep, nextDep } = link;
+  if (prevDep) {
+    prevDep.nextDep = nextDep;
+    link.prevDep = void 0;
+  }
+  if (nextDep) {
+    nextDep.prevDep = prevDep;
+    link.nextDep = void 0;
+  }
+}
+function effect(fn, options) {
+  if (fn.effect instanceof ReactiveEffect) {
+    fn = fn.effect.fn;
+  }
+  const e = new ReactiveEffect(fn);
+  if (options) {
+    reactivity_esm_bundler_extend(e, options);
+  }
+  try {
+    e.run();
+  } catch (err) {
+    e.stop();
+    throw err;
+  }
+  const runner = e.run.bind(e);
+  runner.effect = e;
+  return runner;
+}
+function stop(runner) {
+  runner.effect.stop();
+}
+let shouldTrack = true;
+const trackStack = [];
+function pauseTracking() {
+  trackStack.push(shouldTrack);
+  shouldTrack = false;
+}
+function enableTracking() {
+  trackStack.push(shouldTrack);
+  shouldTrack = true;
+}
+function resetTracking() {
+  const last = trackStack.pop();
+  shouldTrack = last === void 0 ? true : last;
+}
+function onEffectCleanup(fn, failSilently = false) {
+  if (activeSub instanceof ReactiveEffect) {
+    activeSub.cleanup = fn;
+  } else if (false) // removed by dead control flow
+{}
+}
+function cleanupEffect(e) {
+  const { cleanup } = e;
+  e.cleanup = void 0;
+  if (cleanup) {
+    const prevSub = activeSub;
+    activeSub = void 0;
+    try {
+      cleanup();
+    } finally {
+      activeSub = prevSub;
+    }
+  }
+}
+
+let globalVersion = 0;
+class Link {
+  constructor(sub, dep) {
+    this.sub = sub;
+    this.dep = dep;
+    this.version = dep.version;
+    this.nextDep = this.prevDep = this.nextSub = this.prevSub = this.prevActiveLink = void 0;
+  }
+}
+class Dep {
+  // TODO isolatedDeclarations "__v_skip"
+  constructor(computed) {
+    this.computed = computed;
+    this.version = 0;
+    /**
+     * Link between this dep and the current active effect
+     */
+    this.activeLink = void 0;
+    /**
+     * Doubly linked list representing the subscribing effects (tail)
+     */
+    this.subs = void 0;
+    /**
+     * For object property deps cleanup
+     */
+    this.map = void 0;
+    this.key = void 0;
+    /**
+     * Subscriber counter
+     */
+    this.sc = 0;
+    /**
+     * @internal
+     */
+    this.__v_skip = true;
+    if (false) // removed by dead control flow
+{}
+  }
+  track(debugInfo) {
+    if (!activeSub || !shouldTrack || activeSub === this.computed) {
+      return;
+    }
+    let link = this.activeLink;
+    if (link === void 0 || link.sub !== activeSub) {
+      link = this.activeLink = new Link(activeSub, this);
+      if (!activeSub.deps) {
+        activeSub.deps = activeSub.depsTail = link;
+      } else {
+        link.prevDep = activeSub.depsTail;
+        activeSub.depsTail.nextDep = link;
+        activeSub.depsTail = link;
+      }
+      addSub(link);
+    } else if (link.version === -1) {
+      link.version = this.version;
+      if (link.nextDep) {
+        const next = link.nextDep;
+        next.prevDep = link.prevDep;
+        if (link.prevDep) {
+          link.prevDep.nextDep = next;
+        }
+        link.prevDep = activeSub.depsTail;
+        link.nextDep = void 0;
+        activeSub.depsTail.nextDep = link;
+        activeSub.depsTail = link;
+        if (activeSub.deps === link) {
+          activeSub.deps = next;
+        }
+      }
+    }
+    if (false) // removed by dead control flow
+{}
+    return link;
+  }
+  trigger(debugInfo) {
+    this.version++;
+    globalVersion++;
+    this.notify(debugInfo);
+  }
+  notify(debugInfo) {
+    startBatch();
+    try {
+      if (false) // removed by dead control flow
+{}
+      for (let link = this.subs; link; link = link.prevSub) {
+        if (link.sub.notify()) {
+          ;
+          link.sub.dep.notify();
+        }
+      }
+    } finally {
+      endBatch();
+    }
+  }
+}
+function addSub(link) {
+  link.dep.sc++;
+  if (link.sub.flags & 4) {
+    const computed = link.dep.computed;
+    if (computed && !link.dep.subs) {
+      computed.flags |= 4 | 16;
+      for (let l = computed.deps; l; l = l.nextDep) {
+        addSub(l);
+      }
+    }
+    const currentTail = link.dep.subs;
+    if (currentTail !== link) {
+      link.prevSub = currentTail;
+      if (currentTail) currentTail.nextSub = link;
+    }
+    if (false) // removed by dead control flow
+{}
+    link.dep.subs = link;
+  }
+}
+const targetMap = /* @__PURE__ */ new WeakMap();
+const ITERATE_KEY = Symbol(
+   false ? 0 : ""
+);
+const MAP_KEY_ITERATE_KEY = Symbol(
+   false ? 0 : ""
+);
+const ARRAY_ITERATE_KEY = Symbol(
+   false ? 0 : ""
+);
+function track(target, type, key) {
+  if (shouldTrack && activeSub) {
+    let depsMap = targetMap.get(target);
+    if (!depsMap) {
+      targetMap.set(target, depsMap = /* @__PURE__ */ new Map());
+    }
+    let dep = depsMap.get(key);
+    if (!dep) {
+      depsMap.set(key, dep = new Dep());
+      dep.map = depsMap;
+      dep.key = key;
+    }
+    if (false) // removed by dead control flow
+{} else {
+      dep.track();
+    }
+  }
+}
+function trigger(target, type, key, newValue, oldValue, oldTarget) {
+  const depsMap = targetMap.get(target);
+  if (!depsMap) {
+    globalVersion++;
+    return;
+  }
+  const run = (dep) => {
+    if (dep) {
+      if (false) // removed by dead control flow
+{} else {
+        dep.trigger();
+      }
+    }
+  };
+  startBatch();
+  if (type === "clear") {
+    depsMap.forEach(run);
+  } else {
+    const targetIsArray = isArray(target);
+    const isArrayIndex = targetIsArray && isIntegerKey(key);
+    if (targetIsArray && key === "length") {
+      const newLength = Number(newValue);
+      depsMap.forEach((dep, key2) => {
+        if (key2 === "length" || key2 === ARRAY_ITERATE_KEY || !isSymbol(key2) && key2 >= newLength) {
+          run(dep);
+        }
+      });
+    } else {
+      if (key !== void 0 || depsMap.has(void 0)) {
+        run(depsMap.get(key));
+      }
+      if (isArrayIndex) {
+        run(depsMap.get(ARRAY_ITERATE_KEY));
+      }
+      switch (type) {
+        case "add":
+          if (!targetIsArray) {
+            run(depsMap.get(ITERATE_KEY));
+            if (isMap(target)) {
+              run(depsMap.get(MAP_KEY_ITERATE_KEY));
+            }
+          } else if (isArrayIndex) {
+            run(depsMap.get("length"));
+          }
+          break;
+        case "delete":
+          if (!targetIsArray) {
+            run(depsMap.get(ITERATE_KEY));
+            if (isMap(target)) {
+              run(depsMap.get(MAP_KEY_ITERATE_KEY));
+            }
+          }
+          break;
+        case "set":
+          if (isMap(target)) {
+            run(depsMap.get(ITERATE_KEY));
+          }
+          break;
+      }
+    }
+  }
+  endBatch();
+}
+function getDepFromReactive(object, key) {
+  const depMap = targetMap.get(object);
+  return depMap && depMap.get(key);
+}
+
+function reactiveReadArray(array) {
+  const raw = toRaw(array);
+  if (raw === array) return raw;
+  track(raw, "iterate", ARRAY_ITERATE_KEY);
+  return isShallow(array) ? raw : raw.map(toReactive);
+}
+function shallowReadArray(arr) {
+  track(arr = toRaw(arr), "iterate", ARRAY_ITERATE_KEY);
+  return arr;
+}
+const arrayInstrumentations = {
+  __proto__: null,
+  [Symbol.iterator]() {
+    return iterator(this, Symbol.iterator, toReactive);
+  },
+  concat(...args) {
+    return reactiveReadArray(this).concat(
+      ...args.map((x) => isArray(x) ? reactiveReadArray(x) : x)
+    );
+  },
+  entries() {
+    return iterator(this, "entries", (value) => {
+      value[1] = toReactive(value[1]);
+      return value;
+    });
+  },
+  every(fn, thisArg) {
+    return apply(this, "every", fn, thisArg, void 0, arguments);
+  },
+  filter(fn, thisArg) {
+    return apply(this, "filter", fn, thisArg, (v) => v.map(toReactive), arguments);
+  },
+  find(fn, thisArg) {
+    return apply(this, "find", fn, thisArg, toReactive, arguments);
+  },
+  findIndex(fn, thisArg) {
+    return apply(this, "findIndex", fn, thisArg, void 0, arguments);
+  },
+  findLast(fn, thisArg) {
+    return apply(this, "findLast", fn, thisArg, toReactive, arguments);
+  },
+  findLastIndex(fn, thisArg) {
+    return apply(this, "findLastIndex", fn, thisArg, void 0, arguments);
+  },
+  // flat, flatMap could benefit from ARRAY_ITERATE but are not straight-forward to implement
+  forEach(fn, thisArg) {
+    return apply(this, "forEach", fn, thisArg, void 0, arguments);
+  },
+  includes(...args) {
+    return searchProxy(this, "includes", args);
+  },
+  indexOf(...args) {
+    return searchProxy(this, "indexOf", args);
+  },
+  join(separator) {
+    return reactiveReadArray(this).join(separator);
+  },
+  // keys() iterator only reads `length`, no optimisation required
+  lastIndexOf(...args) {
+    return searchProxy(this, "lastIndexOf", args);
+  },
+  map(fn, thisArg) {
+    return apply(this, "map", fn, thisArg, void 0, arguments);
+  },
+  pop() {
+    return noTracking(this, "pop");
+  },
+  push(...args) {
+    return noTracking(this, "push", args);
+  },
+  reduce(fn, ...args) {
+    return reduce(this, "reduce", fn, args);
+  },
+  reduceRight(fn, ...args) {
+    return reduce(this, "reduceRight", fn, args);
+  },
+  shift() {
+    return noTracking(this, "shift");
+  },
+  // slice could use ARRAY_ITERATE but also seems to beg for range tracking
+  some(fn, thisArg) {
+    return apply(this, "some", fn, thisArg, void 0, arguments);
+  },
+  splice(...args) {
+    return noTracking(this, "splice", args);
+  },
+  toReversed() {
+    return reactiveReadArray(this).toReversed();
+  },
+  toSorted(comparer) {
+    return reactiveReadArray(this).toSorted(comparer);
+  },
+  toSpliced(...args) {
+    return reactiveReadArray(this).toSpliced(...args);
+  },
+  unshift(...args) {
+    return noTracking(this, "unshift", args);
+  },
+  values() {
+    return iterator(this, "values", toReactive);
+  }
+};
+function iterator(self, method, wrapValue) {
+  const arr = shallowReadArray(self);
+  const iter = arr[method]();
+  if (arr !== self && !isShallow(self)) {
+    iter._next = iter.next;
+    iter.next = () => {
+      const result = iter._next();
+      if (result.value) {
+        result.value = wrapValue(result.value);
+      }
+      return result;
+    };
+  }
+  return iter;
+}
+const arrayProto = Array.prototype;
+function apply(self, method, fn, thisArg, wrappedRetFn, args) {
+  const arr = shallowReadArray(self);
+  const needsWrap = arr !== self && !isShallow(self);
+  const methodFn = arr[method];
+  if (methodFn !== arrayProto[method]) {
+    const result2 = methodFn.apply(self, args);
+    return needsWrap ? toReactive(result2) : result2;
+  }
+  let wrappedFn = fn;
+  if (arr !== self) {
+    if (needsWrap) {
+      wrappedFn = function(item, index) {
+        return fn.call(this, toReactive(item), index, self);
+      };
+    } else if (fn.length > 2) {
+      wrappedFn = function(item, index) {
+        return fn.call(this, item, index, self);
+      };
+    }
+  }
+  const result = methodFn.call(arr, wrappedFn, thisArg);
+  return needsWrap && wrappedRetFn ? wrappedRetFn(result) : result;
+}
+function reduce(self, method, fn, args) {
+  const arr = shallowReadArray(self);
+  let wrappedFn = fn;
+  if (arr !== self) {
+    if (!isShallow(self)) {
+      wrappedFn = function(acc, item, index) {
+        return fn.call(this, acc, toReactive(item), index, self);
+      };
+    } else if (fn.length > 3) {
+      wrappedFn = function(acc, item, index) {
+        return fn.call(this, acc, item, index, self);
+      };
+    }
+  }
+  return arr[method](wrappedFn, ...args);
+}
+function searchProxy(self, method, args) {
+  const arr = toRaw(self);
+  track(arr, "iterate", ARRAY_ITERATE_KEY);
+  const res = arr[method](...args);
+  if ((res === -1 || res === false) && isProxy(args[0])) {
+    args[0] = toRaw(args[0]);
+    return arr[method](...args);
+  }
+  return res;
+}
+function noTracking(self, method, args = []) {
+  pauseTracking();
+  startBatch();
+  const res = toRaw(self)[method].apply(self, args);
+  endBatch();
+  resetTracking();
+  return res;
+}
+
+const isNonTrackableKeys = /* @__PURE__ */ makeMap(`__proto__,__v_isRef,__isVue`);
+const builtInSymbols = new Set(
+  /* @__PURE__ */ Object.getOwnPropertyNames(Symbol).filter((key) => key !== "arguments" && key !== "caller").map((key) => Symbol[key]).filter(isSymbol)
+);
+function reactivity_esm_bundler_hasOwnProperty(key) {
+  if (!isSymbol(key)) key = String(key);
+  const obj = toRaw(this);
+  track(obj, "has", key);
+  return obj.hasOwnProperty(key);
+}
+class BaseReactiveHandler {
+  constructor(_isReadonly = false, _isShallow = false) {
+    this._isReadonly = _isReadonly;
+    this._isShallow = _isShallow;
+  }
+  get(target, key, receiver) {
+    if (key === "__v_skip") return target["__v_skip"];
+    const isReadonly2 = this._isReadonly, isShallow2 = this._isShallow;
+    if (key === "__v_isReactive") {
+      return !isReadonly2;
+    } else if (key === "__v_isReadonly") {
+      return isReadonly2;
+    } else if (key === "__v_isShallow") {
+      return isShallow2;
+    } else if (key === "__v_raw") {
+      if (receiver === (isReadonly2 ? isShallow2 ? shallowReadonlyMap : readonlyMap : isShallow2 ? shallowReactiveMap : reactiveMap).get(target) || // receiver is not the reactive proxy, but has the same prototype
+      // this means the receiver is a user proxy of the reactive proxy
+      Object.getPrototypeOf(target) === Object.getPrototypeOf(receiver)) {
+        return target;
+      }
+      return;
+    }
+    const targetIsArray = isArray(target);
+    if (!isReadonly2) {
+      let fn;
+      if (targetIsArray && (fn = arrayInstrumentations[key])) {
+        return fn;
+      }
+      if (key === "hasOwnProperty") {
+        return reactivity_esm_bundler_hasOwnProperty;
+      }
+    }
+    const res = Reflect.get(
+      target,
+      key,
+      // if this is a proxy wrapping a ref, return methods using the raw ref
+      // as receiver so that we don't have to call `toRaw` on the ref in all
+      // its class methods
+      reactivity_esm_bundler_isRef(target) ? target : receiver
+    );
+    if (isSymbol(key) ? builtInSymbols.has(key) : isNonTrackableKeys(key)) {
+      return res;
+    }
+    if (!isReadonly2) {
+      track(target, "get", key);
+    }
+    if (isShallow2) {
+      return res;
+    }
+    if (reactivity_esm_bundler_isRef(res)) {
+      return targetIsArray && isIntegerKey(key) ? res : res.value;
+    }
+    if (isObject(res)) {
+      return isReadonly2 ? readonly(res) : reactive(res);
+    }
+    return res;
+  }
+}
+class MutableReactiveHandler extends BaseReactiveHandler {
+  constructor(isShallow2 = false) {
+    super(false, isShallow2);
+  }
+  set(target, key, value, receiver) {
+    let oldValue = target[key];
+    if (!this._isShallow) {
+      const isOldValueReadonly = isReadonly(oldValue);
+      if (!isShallow(value) && !isReadonly(value)) {
+        oldValue = toRaw(oldValue);
+        value = toRaw(value);
+      }
+      if (!isArray(target) && reactivity_esm_bundler_isRef(oldValue) && !reactivity_esm_bundler_isRef(value)) {
+        if (isOldValueReadonly) {
+          return false;
+        } else {
+          oldValue.value = value;
+          return true;
+        }
+      }
+    }
+    const hadKey = isArray(target) && isIntegerKey(key) ? Number(key) < target.length : hasOwn(target, key);
+    const result = Reflect.set(
+      target,
+      key,
+      value,
+      reactivity_esm_bundler_isRef(target) ? target : receiver
+    );
+    if (target === toRaw(receiver)) {
+      if (!hadKey) {
+        trigger(target, "add", key, value);
+      } else if (hasChanged(value, oldValue)) {
+        trigger(target, "set", key, value, oldValue);
+      }
+    }
+    return result;
+  }
+  deleteProperty(target, key) {
+    const hadKey = hasOwn(target, key);
+    const oldValue = target[key];
+    const result = Reflect.deleteProperty(target, key);
+    if (result && hadKey) {
+      trigger(target, "delete", key, void 0, oldValue);
+    }
+    return result;
+  }
+  has(target, key) {
+    const result = Reflect.has(target, key);
+    if (!isSymbol(key) || !builtInSymbols.has(key)) {
+      track(target, "has", key);
+    }
+    return result;
+  }
+  ownKeys(target) {
+    track(
+      target,
+      "iterate",
+      isArray(target) ? "length" : ITERATE_KEY
+    );
+    return Reflect.ownKeys(target);
+  }
+}
+class ReadonlyReactiveHandler extends BaseReactiveHandler {
+  constructor(isShallow2 = false) {
+    super(true, isShallow2);
+  }
+  set(target, key) {
+    if (false) // removed by dead control flow
+{}
+    return true;
+  }
+  deleteProperty(target, key) {
+    if (false) // removed by dead control flow
+{}
+    return true;
+  }
+}
+const mutableHandlers = /* @__PURE__ */ new MutableReactiveHandler();
+const readonlyHandlers = /* @__PURE__ */ new ReadonlyReactiveHandler();
+const shallowReactiveHandlers = /* @__PURE__ */ new MutableReactiveHandler(true);
+const shallowReadonlyHandlers = /* @__PURE__ */ new ReadonlyReactiveHandler(true);
+
+const toShallow = (value) => value;
+const getProto = (v) => Reflect.getPrototypeOf(v);
+function createIterableMethod(method, isReadonly2, isShallow2) {
+  return function(...args) {
+    const target = this["__v_raw"];
+    const rawTarget = toRaw(target);
+    const targetIsMap = isMap(rawTarget);
+    const isPair = method === "entries" || method === Symbol.iterator && targetIsMap;
+    const isKeyOnly = method === "keys" && targetIsMap;
+    const innerIterator = target[method](...args);
+    const wrap = isShallow2 ? toShallow : isReadonly2 ? toReadonly : toReactive;
+    !isReadonly2 && track(
+      rawTarget,
+      "iterate",
+      isKeyOnly ? MAP_KEY_ITERATE_KEY : ITERATE_KEY
+    );
+    return {
+      // iterator protocol
+      next() {
+        const { value, done } = innerIterator.next();
+        return done ? { value, done } : {
+          value: isPair ? [wrap(value[0]), wrap(value[1])] : wrap(value),
+          done
+        };
+      },
+      // iterable protocol
+      [Symbol.iterator]() {
+        return this;
+      }
+    };
+  };
+}
+function createReadonlyMethod(type) {
+  return function(...args) {
+    if (false) // removed by dead control flow
+{}
+    return type === "delete" ? false : type === "clear" ? void 0 : this;
+  };
+}
+function createInstrumentations(readonly, shallow) {
+  const instrumentations = {
+    get(key) {
+      const target = this["__v_raw"];
+      const rawTarget = toRaw(target);
+      const rawKey = toRaw(key);
+      if (!readonly) {
+        if (hasChanged(key, rawKey)) {
+          track(rawTarget, "get", key);
+        }
+        track(rawTarget, "get", rawKey);
+      }
+      const { has } = getProto(rawTarget);
+      const wrap = shallow ? toShallow : readonly ? toReadonly : toReactive;
+      if (has.call(rawTarget, key)) {
+        return wrap(target.get(key));
+      } else if (has.call(rawTarget, rawKey)) {
+        return wrap(target.get(rawKey));
+      } else if (target !== rawTarget) {
+        target.get(key);
+      }
+    },
+    get size() {
+      const target = this["__v_raw"];
+      !readonly && track(toRaw(target), "iterate", ITERATE_KEY);
+      return Reflect.get(target, "size", target);
+    },
+    has(key) {
+      const target = this["__v_raw"];
+      const rawTarget = toRaw(target);
+      const rawKey = toRaw(key);
+      if (!readonly) {
+        if (hasChanged(key, rawKey)) {
+          track(rawTarget, "has", key);
+        }
+        track(rawTarget, "has", rawKey);
+      }
+      return key === rawKey ? target.has(key) : target.has(key) || target.has(rawKey);
+    },
+    forEach(callback, thisArg) {
+      const observed = this;
+      const target = observed["__v_raw"];
+      const rawTarget = toRaw(target);
+      const wrap = shallow ? toShallow : readonly ? toReadonly : toReactive;
+      !readonly && track(rawTarget, "iterate", ITERATE_KEY);
+      return target.forEach((value, key) => {
+        return callback.call(thisArg, wrap(value), wrap(key), observed);
+      });
+    }
+  };
+  extend(
+    instrumentations,
+    readonly ? {
+      add: createReadonlyMethod("add"),
+      set: createReadonlyMethod("set"),
+      delete: createReadonlyMethod("delete"),
+      clear: createReadonlyMethod("clear")
+    } : {
+      add(value) {
+        if (!shallow && !isShallow(value) && !isReadonly(value)) {
+          value = toRaw(value);
+        }
+        const target = toRaw(this);
+        const proto = getProto(target);
+        const hadKey = proto.has.call(target, value);
+        if (!hadKey) {
+          target.add(value);
+          trigger(target, "add", value, value);
+        }
+        return this;
+      },
+      set(key, value) {
+        if (!shallow && !isShallow(value) && !isReadonly(value)) {
+          value = toRaw(value);
+        }
+        const target = toRaw(this);
+        const { has, get } = getProto(target);
+        let hadKey = has.call(target, key);
+        if (!hadKey) {
+          key = toRaw(key);
+          hadKey = has.call(target, key);
+        } else if (false) // removed by dead control flow
+{}
+        const oldValue = get.call(target, key);
+        target.set(key, value);
+        if (!hadKey) {
+          trigger(target, "add", key, value);
+        } else if (hasChanged(value, oldValue)) {
+          trigger(target, "set", key, value, oldValue);
+        }
+        return this;
+      },
+      delete(key) {
+        const target = toRaw(this);
+        const { has, get } = getProto(target);
+        let hadKey = has.call(target, key);
+        if (!hadKey) {
+          key = toRaw(key);
+          hadKey = has.call(target, key);
+        } else if (false) // removed by dead control flow
+{}
+        const oldValue = get ? get.call(target, key) : void 0;
+        const result = target.delete(key);
+        if (hadKey) {
+          trigger(target, "delete", key, void 0, oldValue);
+        }
+        return result;
+      },
+      clear() {
+        const target = toRaw(this);
+        const hadItems = target.size !== 0;
+        const oldTarget =  false ? 0 : void 0;
+        const result = target.clear();
+        if (hadItems) {
+          trigger(
+            target,
+            "clear",
+            void 0,
+            void 0,
+            oldTarget
+          );
+        }
+        return result;
+      }
+    }
+  );
+  const iteratorMethods = [
+    "keys",
+    "values",
+    "entries",
+    Symbol.iterator
+  ];
+  iteratorMethods.forEach((method) => {
+    instrumentations[method] = createIterableMethod(method, readonly, shallow);
+  });
+  return instrumentations;
+}
+function createInstrumentationGetter(isReadonly2, shallow) {
+  const instrumentations = createInstrumentations(isReadonly2, shallow);
+  return (target, key, receiver) => {
+    if (key === "__v_isReactive") {
+      return !isReadonly2;
+    } else if (key === "__v_isReadonly") {
+      return isReadonly2;
+    } else if (key === "__v_raw") {
+      return target;
+    }
+    return Reflect.get(
+      hasOwn(instrumentations, key) && key in target ? instrumentations : target,
+      key,
+      receiver
+    );
+  };
+}
+const mutableCollectionHandlers = {
+  get: /* @__PURE__ */ createInstrumentationGetter(false, false)
+};
+const shallowCollectionHandlers = {
+  get: /* @__PURE__ */ createInstrumentationGetter(false, true)
+};
+const readonlyCollectionHandlers = {
+  get: /* @__PURE__ */ createInstrumentationGetter(true, false)
+};
+const shallowReadonlyCollectionHandlers = {
+  get: /* @__PURE__ */ createInstrumentationGetter(true, true)
+};
+function checkIdentityKeys(target, has, key) {
+  const rawKey = toRaw(key);
+  if (rawKey !== key && has.call(target, rawKey)) {
+    const type = reactivity_esm_bundler_toRawType(target);
+    warn(
+      `Reactive ${type} contains both the raw and reactive versions of the same object${type === `Map` ? ` as keys` : ``}, which can lead to inconsistencies. Avoid differentiating between the raw and reactive versions of an object and only use the reactive version if possible.`
+    );
+  }
+}
+
+const reactiveMap = /* @__PURE__ */ new WeakMap();
+const shallowReactiveMap = /* @__PURE__ */ new WeakMap();
+const readonlyMap = /* @__PURE__ */ new WeakMap();
+const shallowReadonlyMap = /* @__PURE__ */ new WeakMap();
+function targetTypeMap(rawType) {
+  switch (rawType) {
+    case "Object":
+    case "Array":
+      return 1 /* COMMON */;
+    case "Map":
+    case "Set":
+    case "WeakMap":
+    case "WeakSet":
+      return 2 /* COLLECTION */;
+    default:
+      return 0 /* INVALID */;
+  }
+}
+function getTargetType(value) {
+  return value["__v_skip"] || !Object.isExtensible(value) ? 0 /* INVALID */ : targetTypeMap(toRawType(value));
+}
+function reactive(target) {
+  if (isReadonly(target)) {
+    return target;
+  }
+  return createReactiveObject(
+    target,
+    false,
+    mutableHandlers,
+    mutableCollectionHandlers,
+    reactiveMap
+  );
+}
+function shallowReactive(target) {
+  return createReactiveObject(
+    target,
+    false,
+    shallowReactiveHandlers,
+    shallowCollectionHandlers,
+    shallowReactiveMap
+  );
+}
+function readonly(target) {
+  return createReactiveObject(
+    target,
+    true,
+    readonlyHandlers,
+    readonlyCollectionHandlers,
+    readonlyMap
+  );
+}
+function shallowReadonly(target) {
+  return createReactiveObject(
+    target,
+    true,
+    shallowReadonlyHandlers,
+    shallowReadonlyCollectionHandlers,
+    shallowReadonlyMap
+  );
+}
+function createReactiveObject(target, isReadonly2, baseHandlers, collectionHandlers, proxyMap) {
+  if (!isObject(target)) {
+    if (false) // removed by dead control flow
+{}
+    return target;
+  }
+  if (target["__v_raw"] && !(isReadonly2 && target["__v_isReactive"])) {
+    return target;
+  }
+  const targetType = getTargetType(target);
+  if (targetType === 0 /* INVALID */) {
+    return target;
+  }
+  const existingProxy = proxyMap.get(target);
+  if (existingProxy) {
+    return existingProxy;
+  }
+  const proxy = new Proxy(
+    target,
+    targetType === 2 /* COLLECTION */ ? collectionHandlers : baseHandlers
+  );
+  proxyMap.set(target, proxy);
+  return proxy;
+}
+function isReactive(value) {
+  if (isReadonly(value)) {
+    return isReactive(value["__v_raw"]);
+  }
+  return !!(value && value["__v_isReactive"]);
+}
+function isReadonly(value) {
+  return !!(value && value["__v_isReadonly"]);
+}
+function isShallow(value) {
+  return !!(value && value["__v_isShallow"]);
+}
+function isProxy(value) {
+  return value ? !!value["__v_raw"] : false;
+}
+function toRaw(observed) {
+  const raw = observed && observed["__v_raw"];
+  return raw ? toRaw(raw) : observed;
+}
+function markRaw(value) {
+  if (!hasOwn(value, "__v_skip") && Object.isExtensible(value)) {
+    def(value, "__v_skip", true);
+  }
+  return value;
+}
+const toReactive = (value) => isObject(value) ? reactive(value) : value;
+const toReadonly = (value) => isObject(value) ? readonly(value) : value;
+
+function reactivity_esm_bundler_isRef(r) {
+  return r ? r["__v_isRef"] === true : false;
+}
+function ref(value) {
+  return createRef(value, false);
+}
+function shallowRef(value) {
+  return createRef(value, true);
+}
+function createRef(rawValue, shallow) {
+  if (reactivity_esm_bundler_isRef(rawValue)) {
+    return rawValue;
+  }
+  return new RefImpl(rawValue, shallow);
+}
+class RefImpl {
+  constructor(value, isShallow2) {
+    this.dep = new Dep();
+    this["__v_isRef"] = true;
+    this["__v_isShallow"] = false;
+    this._rawValue = isShallow2 ? value : toRaw(value);
+    this._value = isShallow2 ? value : toReactive(value);
+    this["__v_isShallow"] = isShallow2;
+  }
+  get value() {
+    if (false) // removed by dead control flow
+{} else {
+      this.dep.track();
+    }
+    return this._value;
+  }
+  set value(newValue) {
+    const oldValue = this._rawValue;
+    const useDirectValue = this["__v_isShallow"] || isShallow(newValue) || isReadonly(newValue);
+    newValue = useDirectValue ? newValue : toRaw(newValue);
+    if (hasChanged(newValue, oldValue)) {
+      this._rawValue = newValue;
+      this._value = useDirectValue ? newValue : toReactive(newValue);
+      if (false) // removed by dead control flow
+{} else {
+        this.dep.trigger();
+      }
+    }
+  }
+}
+function triggerRef(ref2) {
+  if (ref2.dep) {
+    if (false) // removed by dead control flow
+{} else {
+      ref2.dep.trigger();
+    }
+  }
+}
+function unref(ref2) {
+  return reactivity_esm_bundler_isRef(ref2) ? ref2.value : ref2;
+}
+function toValue(source) {
+  return isFunction(source) ? source() : unref(source);
+}
+const shallowUnwrapHandlers = {
+  get: (target, key, receiver) => key === "__v_raw" ? target : unref(Reflect.get(target, key, receiver)),
+  set: (target, key, value, receiver) => {
+    const oldValue = target[key];
+    if (reactivity_esm_bundler_isRef(oldValue) && !reactivity_esm_bundler_isRef(value)) {
+      oldValue.value = value;
+      return true;
+    } else {
+      return Reflect.set(target, key, value, receiver);
+    }
+  }
+};
+function proxyRefs(objectWithRefs) {
+  return isReactive(objectWithRefs) ? objectWithRefs : new Proxy(objectWithRefs, shallowUnwrapHandlers);
+}
+class CustomRefImpl {
+  constructor(factory) {
+    this["__v_isRef"] = true;
+    this._value = void 0;
+    const dep = this.dep = new Dep();
+    const { get, set } = factory(dep.track.bind(dep), dep.trigger.bind(dep));
+    this._get = get;
+    this._set = set;
+  }
+  get value() {
+    return this._value = this._get();
+  }
+  set value(newVal) {
+    this._set(newVal);
+  }
+}
+function customRef(factory) {
+  return new CustomRefImpl(factory);
+}
+function toRefs(object) {
+  if (false) // removed by dead control flow
+{}
+  const ret = reactivity_esm_bundler_isArray(object) ? new Array(object.length) : {};
+  for (const key in object) {
+    ret[key] = propertyToRef(object, key);
+  }
+  return ret;
+}
+class ObjectRefImpl {
+  constructor(_object, _key, _defaultValue) {
+    this._object = _object;
+    this._key = _key;
+    this._defaultValue = _defaultValue;
+    this["__v_isRef"] = true;
+    this._value = void 0;
+  }
+  get value() {
+    const val = this._object[this._key];
+    return this._value = val === void 0 ? this._defaultValue : val;
+  }
+  set value(newVal) {
+    this._object[this._key] = newVal;
+  }
+  get dep() {
+    return getDepFromReactive(toRaw(this._object), this._key);
+  }
+}
+class GetterRefImpl {
+  constructor(_getter) {
+    this._getter = _getter;
+    this["__v_isRef"] = true;
+    this["__v_isReadonly"] = true;
+    this._value = void 0;
+  }
+  get value() {
+    return this._value = this._getter();
+  }
+}
+function toRef(source, key, defaultValue) {
+  if (reactivity_esm_bundler_isRef(source)) {
+    return source;
+  } else if (reactivity_esm_bundler_isFunction(source)) {
+    return new GetterRefImpl(source);
+  } else if (reactivity_esm_bundler_isObject(source) && arguments.length > 1) {
+    return propertyToRef(source, key, defaultValue);
+  } else {
+    return ref(source);
+  }
+}
+function propertyToRef(source, key, defaultValue) {
+  const val = source[key];
+  return reactivity_esm_bundler_isRef(val) ? val : new ObjectRefImpl(source, key, defaultValue);
+}
+
+class ComputedRefImpl {
+  constructor(fn, setter, isSSR) {
+    this.fn = fn;
+    this.setter = setter;
+    /**
+     * @internal
+     */
+    this._value = void 0;
+    /**
+     * @internal
+     */
+    this.dep = new Dep(this);
+    /**
+     * @internal
+     */
+    this.__v_isRef = true;
+    // TODO isolatedDeclarations "__v_isReadonly"
+    // A computed is also a subscriber that tracks other deps
+    /**
+     * @internal
+     */
+    this.deps = void 0;
+    /**
+     * @internal
+     */
+    this.depsTail = void 0;
+    /**
+     * @internal
+     */
+    this.flags = 16;
+    /**
+     * @internal
+     */
+    this.globalVersion = globalVersion - 1;
+    /**
+     * @internal
+     */
+    this.next = void 0;
+    // for backwards compat
+    this.effect = this;
+    this["__v_isReadonly"] = !setter;
+    this.isSSR = isSSR;
+  }
+  /**
+   * @internal
+   */
+  notify() {
+    this.flags |= 16;
+    if (!(this.flags & 8) && // avoid infinite self recursion
+    activeSub !== this) {
+      batch(this, true);
+      return true;
+    } else if (false) // removed by dead control flow
+{}
+  }
+  get value() {
+    const link =  false ? 0 : this.dep.track();
+    refreshComputed(this);
+    if (link) {
+      link.version = this.dep.version;
+    }
+    return this._value;
+  }
+  set value(newValue) {
+    if (this.setter) {
+      this.setter(newValue);
+    } else if (false) // removed by dead control flow
+{}
+  }
+}
+function computed(getterOrOptions, debugOptions, isSSR = false) {
+  let getter;
+  let setter;
+  if (isFunction(getterOrOptions)) {
+    getter = getterOrOptions;
+  } else {
+    getter = getterOrOptions.get;
+    setter = getterOrOptions.set;
+  }
+  const cRef = new ComputedRefImpl(getter, setter, isSSR);
+  if (false) // removed by dead control flow
+{}
+  return cRef;
+}
+
+const TrackOpTypes = {
+  "GET": "get",
+  "HAS": "has",
+  "ITERATE": "iterate"
+};
+const TriggerOpTypes = {
+  "SET": "set",
+  "ADD": "add",
+  "DELETE": "delete",
+  "CLEAR": "clear"
+};
+const ReactiveFlags = {
+  "SKIP": "__v_skip",
+  "IS_REACTIVE": "__v_isReactive",
+  "IS_READONLY": "__v_isReadonly",
+  "IS_SHALLOW": "__v_isShallow",
+  "RAW": "__v_raw",
+  "IS_REF": "__v_isRef"
+};
+
+const WatchErrorCodes = {
+  "WATCH_GETTER": 2,
+  "2": "WATCH_GETTER",
+  "WATCH_CALLBACK": 3,
+  "3": "WATCH_CALLBACK",
+  "WATCH_CLEANUP": 4,
+  "4": "WATCH_CLEANUP"
+};
+const INITIAL_WATCHER_VALUE = {};
+const cleanupMap = /* @__PURE__ */ new WeakMap();
+let activeWatcher = void 0;
+function getCurrentWatcher() {
+  return activeWatcher;
+}
+function onWatcherCleanup(cleanupFn, failSilently = false, owner = activeWatcher) {
+  if (owner) {
+    let cleanups = cleanupMap.get(owner);
+    if (!cleanups) cleanupMap.set(owner, cleanups = []);
+    cleanups.push(cleanupFn);
+  } else if (false) // removed by dead control flow
+{}
+}
+function watch(source, cb, options = EMPTY_OBJ) {
+  const { immediate, deep, once, scheduler, augmentJob, call } = options;
+  const warnInvalidSource = (s) => {
+    (options.onWarn || warn)(
+      `Invalid watch source: `,
+      s,
+      `A watch source can only be a getter/effect function, a ref, a reactive object, or an array of these types.`
+    );
+  };
+  const reactiveGetter = (source2) => {
+    if (deep) return source2;
+    if (isShallow(source2) || deep === false || deep === 0)
+      return traverse(source2, 1);
+    return traverse(source2);
+  };
+  let effect;
+  let getter;
+  let cleanup;
+  let boundCleanup;
+  let forceTrigger = false;
+  let isMultiSource = false;
+  if (reactivity_esm_bundler_isRef(source)) {
+    getter = () => source.value;
+    forceTrigger = isShallow(source);
+  } else if (isReactive(source)) {
+    getter = () => reactiveGetter(source);
+    forceTrigger = true;
+  } else if (isArray(source)) {
+    isMultiSource = true;
+    forceTrigger = source.some((s) => isReactive(s) || isShallow(s));
+    getter = () => source.map((s) => {
+      if (reactivity_esm_bundler_isRef(s)) {
+        return s.value;
+      } else if (isReactive(s)) {
+        return reactiveGetter(s);
+      } else if (isFunction(s)) {
+        return call ? call(s, 2) : s();
+      } else {
+         false && 0;
+      }
+    });
+  } else if (isFunction(source)) {
+    if (cb) {
+      getter = call ? () => call(source, 2) : source;
+    } else {
+      getter = () => {
+        if (cleanup) {
+          pauseTracking();
+          try {
+            cleanup();
+          } finally {
+            resetTracking();
+          }
+        }
+        const currentEffect = activeWatcher;
+        activeWatcher = effect;
+        try {
+          return call ? call(source, 3, [boundCleanup]) : source(boundCleanup);
+        } finally {
+          activeWatcher = currentEffect;
+        }
+      };
+    }
+  } else {
+    getter = NOOP;
+     false && 0;
+  }
+  if (cb && deep) {
+    const baseGetter = getter;
+    const depth = deep === true ? Infinity : deep;
+    getter = () => traverse(baseGetter(), depth);
+  }
+  const scope = getCurrentScope();
+  const watchHandle = () => {
+    effect.stop();
+    if (scope && scope.active) {
+      remove(scope.effects, effect);
+    }
+  };
+  if (once && cb) {
+    const _cb = cb;
+    cb = (...args) => {
+      _cb(...args);
+      watchHandle();
+    };
+  }
+  let oldValue = isMultiSource ? new Array(source.length).fill(INITIAL_WATCHER_VALUE) : INITIAL_WATCHER_VALUE;
+  const job = (immediateFirstRun) => {
+    if (!(effect.flags & 1) || !effect.dirty && !immediateFirstRun) {
+      return;
+    }
+    if (cb) {
+      const newValue = effect.run();
+      if (deep || forceTrigger || (isMultiSource ? newValue.some((v, i) => hasChanged(v, oldValue[i])) : hasChanged(newValue, oldValue))) {
+        if (cleanup) {
+          cleanup();
+        }
+        const currentWatcher = activeWatcher;
+        activeWatcher = effect;
+        try {
+          const args = [
+            newValue,
+            // pass undefined as the old value when it's changed for the first time
+            oldValue === INITIAL_WATCHER_VALUE ? void 0 : isMultiSource && oldValue[0] === INITIAL_WATCHER_VALUE ? [] : oldValue,
+            boundCleanup
+          ];
+          oldValue = newValue;
+          call ? call(cb, 3, args) : (
+            // @ts-expect-error
+            cb(...args)
+          );
+        } finally {
+          activeWatcher = currentWatcher;
+        }
+      }
+    } else {
+      effect.run();
+    }
+  };
+  if (augmentJob) {
+    augmentJob(job);
+  }
+  effect = new ReactiveEffect(getter);
+  effect.scheduler = scheduler ? () => scheduler(job, false) : job;
+  boundCleanup = (fn) => onWatcherCleanup(fn, false, effect);
+  cleanup = effect.onStop = () => {
+    const cleanups = cleanupMap.get(effect);
+    if (cleanups) {
+      if (call) {
+        call(cleanups, 4);
+      } else {
+        for (const cleanup2 of cleanups) cleanup2();
+      }
+      cleanupMap.delete(effect);
+    }
+  };
+  if (false) // removed by dead control flow
+{}
+  if (cb) {
+    if (immediate) {
+      job(true);
+    } else {
+      oldValue = effect.run();
+    }
+  } else if (scheduler) {
+    scheduler(job.bind(null, true), true);
+  } else {
+    effect.run();
+  }
+  watchHandle.pause = effect.pause.bind(effect);
+  watchHandle.resume = effect.resume.bind(effect);
+  watchHandle.stop = watchHandle;
+  return watchHandle;
+}
+function traverse(value, depth = Infinity, seen) {
+  if (depth <= 0 || !isObject(value) || value["__v_skip"]) {
+    return value;
+  }
+  seen = seen || /* @__PURE__ */ new Set();
+  if (seen.has(value)) {
+    return value;
+  }
+  seen.add(value);
+  depth--;
+  if (reactivity_esm_bundler_isRef(value)) {
+    traverse(value.value, depth, seen);
+  } else if (isArray(value)) {
+    for (let i = 0; i < value.length; i++) {
+      traverse(value[i], depth, seen);
+    }
+  } else if (isSet(value) || isMap(value)) {
+    value.forEach((v) => {
+      traverse(v, depth, seen);
+    });
+  } else if (isPlainObject(value)) {
+    for (const key in value) {
+      traverse(value[key], depth, seen);
+    }
+    for (const key of Object.getOwnPropertySymbols(value)) {
+      if (Object.prototype.propertyIsEnumerable.call(value, key)) {
+        traverse(value[key], depth, seen);
+      }
+    }
+  }
+  return value;
+}
+
+
+
+;// ../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+/* unused harmony import specifier */ var runtime_core_esm_bundler_pauseTracking;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_resetTracking;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isRef;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_toRaw;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_traverse;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_shallowRef;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isReactive;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_ref;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isShallow;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isReadonly;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_shallowReadArray;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_toReadonly;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_toReactive;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_trigger;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_ReactiveEffect;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_customRef;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_track;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isString;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isFunction;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_extend;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isBuiltInDirective;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_EMPTY_OBJ;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isArray;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_hasOwn;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_remove;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_def;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isOn;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isReservedProp;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_normalizeClass;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_stringifyStyle;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_normalizeStyle;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isKnownSvgAttr;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isBooleanAttr;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isKnownHtmlAttr;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_includeBooleanAttr;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isRenderableAttrValue;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_getEscapedCssVarName;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_camelize;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_capitalize;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isObject;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isSymbol;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_toHandlerKey;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_NOOP;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_isPromise;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_hyphenate;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_makeMap;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_toRawType;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_getGlobalThis;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_invokeArrayFns;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_EMPTY_ARR;
+/* unused harmony import specifier */ var runtime_core_esm_bundler_hasChanged;
+/**
+* @vue/runtime-core v3.5.17
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+
+
+
+
+const stack = [];
+function pushWarningContext(vnode) {
+  stack.push(vnode);
+}
+function popWarningContext() {
+  stack.pop();
+}
+let isWarning = false;
+function warn$1(msg, ...args) {
+  if (isWarning) return;
+  isWarning = true;
+  runtime_core_esm_bundler_pauseTracking();
+  const instance = stack.length ? stack[stack.length - 1].component : null;
+  const appWarnHandler = instance && instance.appContext.config.warnHandler;
+  const trace = getComponentTrace();
+  if (appWarnHandler) {
+    callWithErrorHandling(
+      appWarnHandler,
+      instance,
+      11,
+      [
+        // eslint-disable-next-line no-restricted-syntax
+        msg + args.map((a) => {
+          var _a, _b;
+          return (_b = (_a = a.toString) == null ? void 0 : _a.call(a)) != null ? _b : JSON.stringify(a);
+        }).join(""),
+        instance && instance.proxy,
+        trace.map(
+          ({ vnode }) => `at <${formatComponentName(instance, vnode.type)}>`
+        ).join("\n"),
+        trace
+      ]
+    );
+  } else {
+    const warnArgs = [`[Vue warn]: ${msg}`, ...args];
+    if (trace.length && // avoid spamming console during tests
+    true) {
+      warnArgs.push(`
+`, ...formatTrace(trace));
+    }
+    console.warn(...warnArgs);
+  }
+  runtime_core_esm_bundler_resetTracking();
+  isWarning = false;
+}
+function getComponentTrace() {
+  let currentVNode = stack[stack.length - 1];
+  if (!currentVNode) {
+    return [];
+  }
+  const normalizedStack = [];
+  while (currentVNode) {
+    const last = normalizedStack[0];
+    if (last && last.vnode === currentVNode) {
+      last.recurseCount++;
+    } else {
+      normalizedStack.push({
+        vnode: currentVNode,
+        recurseCount: 0
+      });
+    }
+    const parentInstance = currentVNode.component && currentVNode.component.parent;
+    currentVNode = parentInstance && parentInstance.vnode;
+  }
+  return normalizedStack;
+}
+function formatTrace(trace) {
+  const logs = [];
+  trace.forEach((entry, i) => {
+    logs.push(...i === 0 ? [] : [`
+`], ...formatTraceEntry(entry));
+  });
+  return logs;
+}
+function formatTraceEntry({ vnode, recurseCount }) {
+  const postfix = recurseCount > 0 ? `... (${recurseCount} recursive calls)` : ``;
+  const isRoot = vnode.component ? vnode.component.parent == null : false;
+  const open = ` at <${formatComponentName(
+    vnode.component,
+    vnode.type,
+    isRoot
+  )}`;
+  const close = `>` + postfix;
+  return vnode.props ? [open, ...formatProps(vnode.props), close] : [open + close];
+}
+function formatProps(props) {
+  const res = [];
+  const keys = Object.keys(props);
+  keys.slice(0, 3).forEach((key) => {
+    res.push(...formatProp(key, props[key]));
+  });
+  if (keys.length > 3) {
+    res.push(` ...`);
+  }
+  return res;
+}
+function formatProp(key, value, raw) {
+  if (runtime_core_esm_bundler_isString(value)) {
+    value = JSON.stringify(value);
+    return raw ? value : [`${key}=${value}`];
+  } else if (typeof value === "number" || typeof value === "boolean" || value == null) {
+    return raw ? value : [`${key}=${value}`];
+  } else if (runtime_core_esm_bundler_isRef(value)) {
+    value = formatProp(key, runtime_core_esm_bundler_toRaw(value.value), true);
+    return raw ? value : [`${key}=Ref<`, value, `>`];
+  } else if (runtime_core_esm_bundler_isFunction(value)) {
+    return [`${key}=fn${value.name ? `<${value.name}>` : ``}`];
+  } else {
+    value = runtime_core_esm_bundler_toRaw(value);
+    return raw ? value : [`${key}=`, value];
+  }
+}
+function assertNumber(val, type) {
+  if (true) return;
+  // removed by dead control flow
+
+}
+
+const ErrorCodes = {
+  "SETUP_FUNCTION": 0,
+  "0": "SETUP_FUNCTION",
+  "RENDER_FUNCTION": 1,
+  "1": "RENDER_FUNCTION",
+  "NATIVE_EVENT_HANDLER": 5,
+  "5": "NATIVE_EVENT_HANDLER",
+  "COMPONENT_EVENT_HANDLER": 6,
+  "6": "COMPONENT_EVENT_HANDLER",
+  "VNODE_HOOK": 7,
+  "7": "VNODE_HOOK",
+  "DIRECTIVE_HOOK": 8,
+  "8": "DIRECTIVE_HOOK",
+  "TRANSITION_HOOK": 9,
+  "9": "TRANSITION_HOOK",
+  "APP_ERROR_HANDLER": 10,
+  "10": "APP_ERROR_HANDLER",
+  "APP_WARN_HANDLER": 11,
+  "11": "APP_WARN_HANDLER",
+  "FUNCTION_REF": 12,
+  "12": "FUNCTION_REF",
+  "ASYNC_COMPONENT_LOADER": 13,
+  "13": "ASYNC_COMPONENT_LOADER",
+  "SCHEDULER": 14,
+  "14": "SCHEDULER",
+  "COMPONENT_UPDATE": 15,
+  "15": "COMPONENT_UPDATE",
+  "APP_UNMOUNT_CLEANUP": 16,
+  "16": "APP_UNMOUNT_CLEANUP"
+};
+const ErrorTypeStrings$1 = {
+  ["sp"]: "serverPrefetch hook",
+  ["bc"]: "beforeCreate hook",
+  ["c"]: "created hook",
+  ["bm"]: "beforeMount hook",
+  ["m"]: "mounted hook",
+  ["bu"]: "beforeUpdate hook",
+  ["u"]: "updated",
+  ["bum"]: "beforeUnmount hook",
+  ["um"]: "unmounted hook",
+  ["a"]: "activated hook",
+  ["da"]: "deactivated hook",
+  ["ec"]: "errorCaptured hook",
+  ["rtc"]: "renderTracked hook",
+  ["rtg"]: "renderTriggered hook",
+  [0]: "setup function",
+  [1]: "render function",
+  [2]: "watcher getter",
+  [3]: "watcher callback",
+  [4]: "watcher cleanup function",
+  [5]: "native event handler",
+  [6]: "component event handler",
+  [7]: "vnode hook",
+  [8]: "directive hook",
+  [9]: "transition hook",
+  [10]: "app errorHandler",
+  [11]: "app warnHandler",
+  [12]: "ref function",
+  [13]: "async component loader",
+  [14]: "scheduler flush",
+  [15]: "component update",
+  [16]: "app unmount cleanup function"
+};
+function callWithErrorHandling(fn, instance, type, args) {
+  try {
+    return args ? fn(...args) : fn();
+  } catch (err) {
+    handleError(err, instance, type);
+  }
+}
+function callWithAsyncErrorHandling(fn, instance, type, args) {
+  if (isFunction(fn)) {
+    const res = callWithErrorHandling(fn, instance, type, args);
+    if (res && isPromise(res)) {
+      res.catch((err) => {
+        handleError(err, instance, type);
+      });
+    }
+    return res;
+  }
+  if (isArray(fn)) {
+    const values = [];
+    for (let i = 0; i < fn.length; i++) {
+      values.push(callWithAsyncErrorHandling(fn[i], instance, type, args));
+    }
+    return values;
+  } else if (false) // removed by dead control flow
+{}
+}
+function handleError(err, instance, type, throwInDev = true) {
+  const contextVNode = instance ? instance.vnode : null;
+  const { errorHandler, throwUnhandledErrorInProduction } = instance && instance.appContext.config || EMPTY_OBJ;
+  if (instance) {
+    let cur = instance.parent;
+    const exposedInstance = instance.proxy;
+    const errorInfo =  false ? 0 : `https://vuejs.org/error-reference/#runtime-${type}`;
+    while (cur) {
+      const errorCapturedHooks = cur.ec;
+      if (errorCapturedHooks) {
+        for (let i = 0; i < errorCapturedHooks.length; i++) {
+          if (errorCapturedHooks[i](err, exposedInstance, errorInfo) === false) {
+            return;
+          }
+        }
+      }
+      cur = cur.parent;
+    }
+    if (errorHandler) {
+      pauseTracking();
+      callWithErrorHandling(errorHandler, null, 10, [
+        err,
+        exposedInstance,
+        errorInfo
+      ]);
+      resetTracking();
+      return;
+    }
+  }
+  logError(err, type, contextVNode, throwInDev, throwUnhandledErrorInProduction);
+}
+function logError(err, type, contextVNode, throwInDev = true, throwInProd = false) {
+  if (false) // removed by dead control flow
+{} else if (throwInProd) {
+    throw err;
+  } else {
+    console.error(err);
+  }
+}
+
+const queue = [];
+let flushIndex = -1;
+const pendingPostFlushCbs = [];
+let activePostFlushCbs = null;
+let postFlushIndex = 0;
+const resolvedPromise = /* @__PURE__ */ Promise.resolve();
+let currentFlushPromise = null;
+const RECURSION_LIMIT = 100;
+function nextTick(fn) {
+  const p = currentFlushPromise || resolvedPromise;
+  return fn ? p.then(this ? fn.bind(this) : fn) : p;
+}
+function findInsertionIndex(id) {
+  let start = flushIndex + 1;
+  let end = queue.length;
+  while (start < end) {
+    const middle = start + end >>> 1;
+    const middleJob = queue[middle];
+    const middleJobId = getId(middleJob);
+    if (middleJobId < id || middleJobId === id && middleJob.flags & 2) {
+      start = middle + 1;
+    } else {
+      end = middle;
+    }
+  }
+  return start;
+}
+function queueJob(job) {
+  if (!(job.flags & 1)) {
+    const jobId = getId(job);
+    const lastJob = queue[queue.length - 1];
+    if (!lastJob || // fast path when the job id is larger than the tail
+    !(job.flags & 2) && jobId >= getId(lastJob)) {
+      queue.push(job);
+    } else {
+      queue.splice(findInsertionIndex(jobId), 0, job);
+    }
+    job.flags |= 1;
+    queueFlush();
+  }
+}
+function queueFlush() {
+  if (!currentFlushPromise) {
+    currentFlushPromise = resolvedPromise.then(flushJobs);
+  }
+}
+function queuePostFlushCb(cb) {
+  if (!isArray(cb)) {
+    if (activePostFlushCbs && cb.id === -1) {
+      activePostFlushCbs.splice(postFlushIndex + 1, 0, cb);
+    } else if (!(cb.flags & 1)) {
+      pendingPostFlushCbs.push(cb);
+      cb.flags |= 1;
+    }
+  } else {
+    pendingPostFlushCbs.push(...cb);
+  }
+  queueFlush();
+}
+function flushPreFlushCbs(instance, seen, i = flushIndex + 1) {
+  if (false) // removed by dead control flow
+{}
+  for (; i < queue.length; i++) {
+    const cb = queue[i];
+    if (cb && cb.flags & 2) {
+      if (instance && cb.id !== instance.uid) {
+        continue;
+      }
+      if (false) // removed by dead control flow
+{}
+      queue.splice(i, 1);
+      i--;
+      if (cb.flags & 4) {
+        cb.flags &= -2;
+      }
+      cb();
+      if (!(cb.flags & 4)) {
+        cb.flags &= -2;
+      }
+    }
+  }
+}
+function flushPostFlushCbs(seen) {
+  if (pendingPostFlushCbs.length) {
+    const deduped = [...new Set(pendingPostFlushCbs)].sort(
+      (a, b) => getId(a) - getId(b)
+    );
+    pendingPostFlushCbs.length = 0;
+    if (activePostFlushCbs) {
+      activePostFlushCbs.push(...deduped);
+      return;
+    }
+    activePostFlushCbs = deduped;
+    if (false) // removed by dead control flow
+{}
+    for (postFlushIndex = 0; postFlushIndex < activePostFlushCbs.length; postFlushIndex++) {
+      const cb = activePostFlushCbs[postFlushIndex];
+      if (false) // removed by dead control flow
+{}
+      if (cb.flags & 4) {
+        cb.flags &= -2;
+      }
+      if (!(cb.flags & 8)) cb();
+      cb.flags &= -2;
+    }
+    activePostFlushCbs = null;
+    postFlushIndex = 0;
+  }
+}
+const getId = (job) => job.id == null ? job.flags & 2 ? -1 : Infinity : job.id;
+function flushJobs(seen) {
+  if (false) // removed by dead control flow
+{}
+  const check =  false ? 0 : NOOP;
+  try {
+    for (flushIndex = 0; flushIndex < queue.length; flushIndex++) {
+      const job = queue[flushIndex];
+      if (job && !(job.flags & 8)) {
+        if (false) // removed by dead control flow
+{}
+        if (job.flags & 4) {
+          job.flags &= ~1;
+        }
+        callWithErrorHandling(
+          job,
+          job.i,
+          job.i ? 15 : 14
+        );
+        if (!(job.flags & 4)) {
+          job.flags &= ~1;
+        }
+      }
+    }
+  } finally {
+    for (; flushIndex < queue.length; flushIndex++) {
+      const job = queue[flushIndex];
+      if (job) {
+        job.flags &= -2;
+      }
+    }
+    flushIndex = -1;
+    queue.length = 0;
+    flushPostFlushCbs(seen);
+    currentFlushPromise = null;
+    if (queue.length || pendingPostFlushCbs.length) {
+      flushJobs(seen);
+    }
+  }
+}
+function checkRecursiveUpdates(seen, fn) {
+  const count = seen.get(fn) || 0;
+  if (count > RECURSION_LIMIT) {
+    const instance = fn.i;
+    const componentName = instance && getComponentName(instance.type);
+    handleError(
+      `Maximum recursive updates exceeded${componentName ? ` in component <${componentName}>` : ``}. This means you have a reactive effect that is mutating its own dependencies and thus recursively triggering itself. Possible sources include component template, render function, updated hook or watcher source function.`,
+      null,
+      10
+    );
+    return true;
+  }
+  seen.set(fn, count + 1);
+  return false;
+}
+
+let isHmrUpdating = false;
+const hmrDirtyComponents = /* @__PURE__ */ new Map();
+if (false) // removed by dead control flow
+{}
+const map = /* @__PURE__ */ new Map();
+function registerHMR(instance) {
+  const id = instance.type.__hmrId;
+  let record = map.get(id);
+  if (!record) {
+    createRecord(id, instance.type);
+    record = map.get(id);
+  }
+  record.instances.add(instance);
+}
+function unregisterHMR(instance) {
+  map.get(instance.type.__hmrId).instances.delete(instance);
+}
+function createRecord(id, initialDef) {
+  if (map.has(id)) {
+    return false;
+  }
+  map.set(id, {
+    initialDef: normalizeClassComponent(initialDef),
+    instances: /* @__PURE__ */ new Set()
+  });
+  return true;
+}
+function normalizeClassComponent(component) {
+  return isClassComponent(component) ? component.__vccOpts : component;
+}
+function rerender(id, newRender) {
+  const record = map.get(id);
+  if (!record) {
+    return;
+  }
+  record.initialDef.render = newRender;
+  [...record.instances].forEach((instance) => {
+    if (newRender) {
+      instance.render = newRender;
+      normalizeClassComponent(instance.type).render = newRender;
+    }
+    instance.renderCache = [];
+    isHmrUpdating = true;
+    instance.update();
+    isHmrUpdating = false;
+  });
+}
+function reload(id, newComp) {
+  const record = map.get(id);
+  if (!record) return;
+  newComp = normalizeClassComponent(newComp);
+  updateComponentDef(record.initialDef, newComp);
+  const instances = [...record.instances];
+  for (let i = 0; i < instances.length; i++) {
+    const instance = instances[i];
+    const oldComp = normalizeClassComponent(instance.type);
+    let dirtyInstances = hmrDirtyComponents.get(oldComp);
+    if (!dirtyInstances) {
+      if (oldComp !== record.initialDef) {
+        updateComponentDef(oldComp, newComp);
+      }
+      hmrDirtyComponents.set(oldComp, dirtyInstances = /* @__PURE__ */ new Set());
+    }
+    dirtyInstances.add(instance);
+    instance.appContext.propsCache.delete(instance.type);
+    instance.appContext.emitsCache.delete(instance.type);
+    instance.appContext.optionsCache.delete(instance.type);
+    if (instance.ceReload) {
+      dirtyInstances.add(instance);
+      instance.ceReload(newComp.styles);
+      dirtyInstances.delete(instance);
+    } else if (instance.parent) {
+      queueJob(() => {
+        isHmrUpdating = true;
+        instance.parent.update();
+        isHmrUpdating = false;
+        dirtyInstances.delete(instance);
+      });
+    } else if (instance.appContext.reload) {
+      instance.appContext.reload();
+    } else if (typeof window !== "undefined") {
+      window.location.reload();
+    } else {
+      console.warn(
+        "[HMR] Root or manually mounted instance modified. Full reload required."
+      );
+    }
+    if (instance.root.ce && instance !== instance.root) {
+      instance.root.ce._removeChildStyle(oldComp);
+    }
+  }
+  queuePostFlushCb(() => {
+    hmrDirtyComponents.clear();
+  });
+}
+function updateComponentDef(oldComp, newComp) {
+  runtime_core_esm_bundler_extend(oldComp, newComp);
+  for (const key in oldComp) {
+    if (key !== "__file" && !(key in newComp)) {
+      delete oldComp[key];
+    }
+  }
+}
+function tryWrap(fn) {
+  return (id, arg) => {
+    try {
+      return fn(id, arg);
+    } catch (e) {
+      console.error(e);
+      console.warn(
+        `[HMR] Something went wrong during Vue component hot-reload. Full reload required.`
+      );
+    }
+  };
+}
+
+let devtools$1;
+let buffer = [];
+let devtoolsNotInstalled = false;
+function emit$1(event, ...args) {
+  if (devtools$1) {
+    devtools$1.emit(event, ...args);
+  } else if (!devtoolsNotInstalled) {
+    buffer.push({ event, args });
+  }
+}
+function setDevtoolsHook$1(hook, target) {
+  var _a, _b;
+  devtools$1 = hook;
+  if (devtools$1) {
+    devtools$1.enabled = true;
+    buffer.forEach(({ event, args }) => devtools$1.emit(event, ...args));
+    buffer = [];
+  } else if (
+    // handle late devtools injection - only do this if we are in an actual
+    // browser environment to avoid the timer handle stalling test runner exit
+    // (#4815)
+    typeof window !== "undefined" && // some envs mock window but not fully
+    window.HTMLElement && // also exclude jsdom
+    // eslint-disable-next-line no-restricted-syntax
+    !((_b = (_a = window.navigator) == null ? void 0 : _a.userAgent) == null ? void 0 : _b.includes("jsdom"))
+  ) {
+    const replay = target.__VUE_DEVTOOLS_HOOK_REPLAY__ = target.__VUE_DEVTOOLS_HOOK_REPLAY__ || [];
+    replay.push((newHook) => {
+      setDevtoolsHook$1(newHook, target);
+    });
+    setTimeout(() => {
+      if (!devtools$1) {
+        target.__VUE_DEVTOOLS_HOOK_REPLAY__ = null;
+        devtoolsNotInstalled = true;
+        buffer = [];
+      }
+    }, 3e3);
+  } else {
+    devtoolsNotInstalled = true;
+    buffer = [];
+  }
+}
+function devtoolsInitApp(app, version) {
+  emit$1("app:init" /* APP_INIT */, app, version, {
+    Fragment,
+    Text,
+    Comment,
+    Static
+  });
+}
+function devtoolsUnmountApp(app) {
+  emit$1("app:unmount" /* APP_UNMOUNT */, app);
+}
+const devtoolsComponentAdded = /* @__PURE__ */ createDevtoolsComponentHook("component:added" /* COMPONENT_ADDED */);
+const devtoolsComponentUpdated = /* @__PURE__ */ createDevtoolsComponentHook("component:updated" /* COMPONENT_UPDATED */);
+const _devtoolsComponentRemoved = /* @__PURE__ */ (/* unused pure expression or super */ null && (createDevtoolsComponentHook(
+  "component:removed" /* COMPONENT_REMOVED */
+)));
+const devtoolsComponentRemoved = (component) => {
+  if (devtools$1 && typeof devtools$1.cleanupBuffer === "function" && // remove the component if it wasn't buffered
+  !devtools$1.cleanupBuffer(component)) {
+    _devtoolsComponentRemoved(component);
+  }
+};
+/*! #__NO_SIDE_EFFECTS__ */
+// @__NO_SIDE_EFFECTS__
+function createDevtoolsComponentHook(hook) {
+  return (component) => {
+    emit$1(
+      hook,
+      component.appContext.app,
+      component.uid,
+      component.parent ? component.parent.uid : void 0,
+      component
+    );
+  };
+}
+const devtoolsPerfStart = /* @__PURE__ */ (/* unused pure expression or super */ null && (createDevtoolsPerformanceHook("perf:start" /* PERFORMANCE_START */)));
+const devtoolsPerfEnd = /* @__PURE__ */ (/* unused pure expression or super */ null && (createDevtoolsPerformanceHook("perf:end" /* PERFORMANCE_END */)));
+function createDevtoolsPerformanceHook(hook) {
+  return (component, type, time) => {
+    emit$1(hook, component.appContext.app, component.uid, component, type, time);
+  };
+}
+function devtoolsComponentEmit(component, event, params) {
+  emit$1(
+    "component:emit" /* COMPONENT_EMIT */,
+    component.appContext.app,
+    component,
+    event,
+    params
+  );
+}
+
+let currentRenderingInstance = null;
+let currentScopeId = null;
+function setCurrentRenderingInstance(instance) {
+  const prev = currentRenderingInstance;
+  currentRenderingInstance = instance;
+  currentScopeId = instance && instance.type.__scopeId || null;
+  return prev;
+}
+function pushScopeId(id) {
+  currentScopeId = id;
+}
+function popScopeId() {
+  currentScopeId = null;
+}
+const withScopeId = (_id) => withCtx;
+function withCtx(fn, ctx = currentRenderingInstance, isNonScopedSlot) {
+  if (!ctx) return fn;
+  if (fn._n) {
+    return fn;
+  }
+  const renderFnWithContext = (...args) => {
+    if (renderFnWithContext._d) {
+      setBlockTracking(-1);
+    }
+    const prevInstance = setCurrentRenderingInstance(ctx);
+    let res;
+    try {
+      res = fn(...args);
+    } finally {
+      setCurrentRenderingInstance(prevInstance);
+      if (renderFnWithContext._d) {
+        setBlockTracking(1);
+      }
+    }
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      devtoolsComponentUpdated(ctx);
+    }
+    return res;
+  };
+  renderFnWithContext._n = true;
+  renderFnWithContext._c = true;
+  renderFnWithContext._d = true;
+  return renderFnWithContext;
+}
+
+function validateDirectiveName(name) {
+  if (runtime_core_esm_bundler_isBuiltInDirective(name)) {
+    warn$1("Do not use built-in directive ids as custom directive id: " + name);
+  }
+}
+function withDirectives(vnode, directives) {
+  if (currentRenderingInstance === null) {
+     false && 0;
+    return vnode;
+  }
+  const instance = getComponentPublicInstance(currentRenderingInstance);
+  const bindings = vnode.dirs || (vnode.dirs = []);
+  for (let i = 0; i < directives.length; i++) {
+    let [dir, value, arg, modifiers = runtime_core_esm_bundler_EMPTY_OBJ] = directives[i];
+    if (dir) {
+      if (runtime_core_esm_bundler_isFunction(dir)) {
+        dir = {
+          mounted: dir,
+          updated: dir
+        };
+      }
+      if (dir.deep) {
+        runtime_core_esm_bundler_traverse(value);
+      }
+      bindings.push({
+        dir,
+        instance,
+        value,
+        oldValue: void 0,
+        arg,
+        modifiers
+      });
+    }
+  }
+  return vnode;
+}
+function invokeDirectiveHook(vnode, prevVNode, instance, name) {
+  const bindings = vnode.dirs;
+  const oldBindings = prevVNode && prevVNode.dirs;
+  for (let i = 0; i < bindings.length; i++) {
+    const binding = bindings[i];
+    if (oldBindings) {
+      binding.oldValue = oldBindings[i].value;
+    }
+    let hook = binding.dir[name];
+    if (hook) {
+      runtime_core_esm_bundler_pauseTracking();
+      callWithAsyncErrorHandling(hook, instance, 8, [
+        vnode.el,
+        binding,
+        vnode,
+        prevVNode
+      ]);
+      runtime_core_esm_bundler_resetTracking();
+    }
+  }
+}
+
+const TeleportEndKey = Symbol("_vte");
+const isTeleport = (type) => type.__isTeleport;
+const isTeleportDisabled = (props) => props && (props.disabled || props.disabled === "");
+const isTeleportDeferred = (props) => props && (props.defer || props.defer === "");
+const isTargetSVG = (target) => typeof SVGElement !== "undefined" && target instanceof SVGElement;
+const isTargetMathML = (target) => typeof MathMLElement === "function" && target instanceof MathMLElement;
+const resolveTarget = (props, select) => {
+  const targetSelector = props && props.to;
+  if (isString(targetSelector)) {
+    if (!select) {
+       false && 0;
+      return null;
+    } else {
+      const target = select(targetSelector);
+      if (false) // removed by dead control flow
+{}
+      return target;
+    }
+  } else {
+    if (false) // removed by dead control flow
+{}
+    return targetSelector;
+  }
+};
+const TeleportImpl = {
+  name: "Teleport",
+  __isTeleport: true,
+  process(n1, n2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized, internals) {
+    const {
+      mc: mountChildren,
+      pc: patchChildren,
+      pbc: patchBlockChildren,
+      o: { insert, querySelector, createText, createComment }
+    } = internals;
+    const disabled = isTeleportDisabled(n2.props);
+    let { shapeFlag, children, dynamicChildren } = n2;
+    if (false) // removed by dead control flow
+{}
+    if (n1 == null) {
+      const placeholder = n2.el =  false ? 0 : createText("");
+      const mainAnchor = n2.anchor =  false ? 0 : createText("");
+      insert(placeholder, container, anchor);
+      insert(mainAnchor, container, anchor);
+      const mount = (container2, anchor2) => {
+        if (shapeFlag & 16) {
+          if (parentComponent && parentComponent.isCE) {
+            parentComponent.ce._teleportTarget = container2;
+          }
+          mountChildren(
+            children,
+            container2,
+            anchor2,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+        }
+      };
+      const mountToTarget = () => {
+        const target = n2.target = resolveTarget(n2.props, querySelector);
+        const targetAnchor = prepareAnchor(target, n2, createText, insert);
+        if (target) {
+          if (namespace !== "svg" && isTargetSVG(target)) {
+            namespace = "svg";
+          } else if (namespace !== "mathml" && isTargetMathML(target)) {
+            namespace = "mathml";
+          }
+          if (!disabled) {
+            mount(target, targetAnchor);
+            updateCssVars(n2, false);
+          }
+        } else if (false) // removed by dead control flow
+{}
+      };
+      if (disabled) {
+        mount(container, mainAnchor);
+        updateCssVars(n2, true);
+      }
+      if (isTeleportDeferred(n2.props)) {
+        n2.el.__isMounted = false;
+        queuePostRenderEffect(() => {
+          mountToTarget();
+          delete n2.el.__isMounted;
+        }, parentSuspense);
+      } else {
+        mountToTarget();
+      }
+    } else {
+      if (isTeleportDeferred(n2.props) && n1.el.__isMounted === false) {
+        queuePostRenderEffect(() => {
+          TeleportImpl.process(
+            n1,
+            n2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized,
+            internals
+          );
+        }, parentSuspense);
+        return;
+      }
+      n2.el = n1.el;
+      n2.targetStart = n1.targetStart;
+      const mainAnchor = n2.anchor = n1.anchor;
+      const target = n2.target = n1.target;
+      const targetAnchor = n2.targetAnchor = n1.targetAnchor;
+      const wasDisabled = isTeleportDisabled(n1.props);
+      const currentContainer = wasDisabled ? container : target;
+      const currentAnchor = wasDisabled ? mainAnchor : targetAnchor;
+      if (namespace === "svg" || isTargetSVG(target)) {
+        namespace = "svg";
+      } else if (namespace === "mathml" || isTargetMathML(target)) {
+        namespace = "mathml";
+      }
+      if (dynamicChildren) {
+        patchBlockChildren(
+          n1.dynamicChildren,
+          dynamicChildren,
+          currentContainer,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds
+        );
+        traverseStaticChildren(n1, n2, !!!("production" !== "production"));
+      } else if (!optimized) {
+        patchChildren(
+          n1,
+          n2,
+          currentContainer,
+          currentAnchor,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          false
+        );
+      }
+      if (disabled) {
+        if (!wasDisabled) {
+          moveTeleport(
+            n2,
+            container,
+            mainAnchor,
+            internals,
+            1
+          );
+        } else {
+          if (n2.props && n1.props && n2.props.to !== n1.props.to) {
+            n2.props.to = n1.props.to;
+          }
+        }
+      } else {
+        if ((n2.props && n2.props.to) !== (n1.props && n1.props.to)) {
+          const nextTarget = n2.target = resolveTarget(
+            n2.props,
+            querySelector
+          );
+          if (nextTarget) {
+            moveTeleport(
+              n2,
+              nextTarget,
+              null,
+              internals,
+              0
+            );
+          } else if (false) // removed by dead control flow
+{}
+        } else if (wasDisabled) {
+          moveTeleport(
+            n2,
+            target,
+            targetAnchor,
+            internals,
+            1
+          );
+        }
+      }
+      updateCssVars(n2, disabled);
+    }
+  },
+  remove(vnode, parentComponent, parentSuspense, { um: unmount, o: { remove: hostRemove } }, doRemove) {
+    const {
+      shapeFlag,
+      children,
+      anchor,
+      targetStart,
+      targetAnchor,
+      target,
+      props
+    } = vnode;
+    if (target) {
+      hostRemove(targetStart);
+      hostRemove(targetAnchor);
+    }
+    doRemove && hostRemove(anchor);
+    if (shapeFlag & 16) {
+      const shouldRemove = doRemove || !isTeleportDisabled(props);
+      for (let i = 0; i < children.length; i++) {
+        const child = children[i];
+        unmount(
+          child,
+          parentComponent,
+          parentSuspense,
+          shouldRemove,
+          !!child.dynamicChildren
+        );
+      }
+    }
+  },
+  move: moveTeleport,
+  hydrate: hydrateTeleport
+};
+function moveTeleport(vnode, container, parentAnchor, { o: { insert }, m: move }, moveType = 2) {
+  if (moveType === 0) {
+    insert(vnode.targetAnchor, container, parentAnchor);
+  }
+  const { el, anchor, shapeFlag, children, props } = vnode;
+  const isReorder = moveType === 2;
+  if (isReorder) {
+    insert(el, container, parentAnchor);
+  }
+  if (!isReorder || isTeleportDisabled(props)) {
+    if (shapeFlag & 16) {
+      for (let i = 0; i < children.length; i++) {
+        move(
+          children[i],
+          container,
+          parentAnchor,
+          2
+        );
+      }
+    }
+  }
+  if (isReorder) {
+    insert(anchor, container, parentAnchor);
+  }
+}
+function hydrateTeleport(node, vnode, parentComponent, parentSuspense, slotScopeIds, optimized, {
+  o: { nextSibling, parentNode, querySelector, insert, createText }
+}, hydrateChildren) {
+  const target = vnode.target = resolveTarget(
+    vnode.props,
+    querySelector
+  );
+  if (target) {
+    const disabled = isTeleportDisabled(vnode.props);
+    const targetNode = target._lpa || target.firstChild;
+    if (vnode.shapeFlag & 16) {
+      if (disabled) {
+        vnode.anchor = hydrateChildren(
+          nextSibling(node),
+          vnode,
+          parentNode(node),
+          parentComponent,
+          parentSuspense,
+          slotScopeIds,
+          optimized
+        );
+        vnode.targetStart = targetNode;
+        vnode.targetAnchor = targetNode && nextSibling(targetNode);
+      } else {
+        vnode.anchor = nextSibling(node);
+        let targetAnchor = targetNode;
+        while (targetAnchor) {
+          if (targetAnchor && targetAnchor.nodeType === 8) {
+            if (targetAnchor.data === "teleport start anchor") {
+              vnode.targetStart = targetAnchor;
+            } else if (targetAnchor.data === "teleport anchor") {
+              vnode.targetAnchor = targetAnchor;
+              target._lpa = vnode.targetAnchor && nextSibling(vnode.targetAnchor);
+              break;
+            }
+          }
+          targetAnchor = nextSibling(targetAnchor);
+        }
+        if (!vnode.targetAnchor) {
+          prepareAnchor(target, vnode, createText, insert);
+        }
+        hydrateChildren(
+          targetNode && nextSibling(targetNode),
+          vnode,
+          target,
+          parentComponent,
+          parentSuspense,
+          slotScopeIds,
+          optimized
+        );
+      }
+    }
+    updateCssVars(vnode, disabled);
+  }
+  return vnode.anchor && nextSibling(vnode.anchor);
+}
+const Teleport = (/* unused pure expression or super */ null && (TeleportImpl));
+function updateCssVars(vnode, isDisabled) {
+  const ctx = vnode.ctx;
+  if (ctx && ctx.ut) {
+    let node, anchor;
+    if (isDisabled) {
+      node = vnode.el;
+      anchor = vnode.anchor;
+    } else {
+      node = vnode.targetStart;
+      anchor = vnode.targetAnchor;
+    }
+    while (node && node !== anchor) {
+      if (node.nodeType === 1) node.setAttribute("data-v-owner", ctx.uid);
+      node = node.nextSibling;
+    }
+    ctx.ut();
+  }
+}
+function prepareAnchor(target, vnode, createText, insert) {
+  const targetStart = vnode.targetStart = createText("");
+  const targetAnchor = vnode.targetAnchor = createText("");
+  targetStart[TeleportEndKey] = targetAnchor;
+  if (target) {
+    insert(targetStart, target);
+    insert(targetAnchor, target);
+  }
+  return targetAnchor;
+}
+
+const leaveCbKey = Symbol("_leaveCb");
+const enterCbKey = Symbol("_enterCb");
+function useTransitionState() {
+  const state = {
+    isMounted: false,
+    isLeaving: false,
+    isUnmounting: false,
+    leavingVNodes: /* @__PURE__ */ new Map()
+  };
+  onMounted(() => {
+    state.isMounted = true;
+  });
+  onBeforeUnmount(() => {
+    state.isUnmounting = true;
+  });
+  return state;
+}
+const TransitionHookValidator = [Function, Array];
+const BaseTransitionPropsValidators = {
+  mode: String,
+  appear: Boolean,
+  persisted: Boolean,
+  // enter
+  onBeforeEnter: TransitionHookValidator,
+  onEnter: TransitionHookValidator,
+  onAfterEnter: TransitionHookValidator,
+  onEnterCancelled: TransitionHookValidator,
+  // leave
+  onBeforeLeave: TransitionHookValidator,
+  onLeave: TransitionHookValidator,
+  onAfterLeave: TransitionHookValidator,
+  onLeaveCancelled: TransitionHookValidator,
+  // appear
+  onBeforeAppear: TransitionHookValidator,
+  onAppear: TransitionHookValidator,
+  onAfterAppear: TransitionHookValidator,
+  onAppearCancelled: TransitionHookValidator
+};
+const recursiveGetSubtree = (instance) => {
+  const subTree = instance.subTree;
+  return subTree.component ? recursiveGetSubtree(subTree.component) : subTree;
+};
+const BaseTransitionImpl = {
+  name: `BaseTransition`,
+  props: BaseTransitionPropsValidators,
+  setup(props, { slots }) {
+    const instance = getCurrentInstance();
+    const state = useTransitionState();
+    return () => {
+      const children = slots.default && getTransitionRawChildren(slots.default(), true);
+      if (!children || !children.length) {
+        return;
+      }
+      const child = findNonCommentChild(children);
+      const rawProps = toRaw(props);
+      const { mode } = rawProps;
+      if (false) // removed by dead control flow
+{}
+      if (state.isLeaving) {
+        return emptyPlaceholder(child);
+      }
+      const innerChild = getInnerChild$1(child);
+      if (!innerChild) {
+        return emptyPlaceholder(child);
+      }
+      let enterHooks = resolveTransitionHooks(
+        innerChild,
+        rawProps,
+        state,
+        instance,
+        // #11061, ensure enterHooks is fresh after clone
+        (hooks) => enterHooks = hooks
+      );
+      if (innerChild.type !== Comment) {
+        setTransitionHooks(innerChild, enterHooks);
+      }
+      let oldInnerChild = instance.subTree && getInnerChild$1(instance.subTree);
+      if (oldInnerChild && oldInnerChild.type !== Comment && !isSameVNodeType(innerChild, oldInnerChild) && recursiveGetSubtree(instance).type !== Comment) {
+        let leavingHooks = resolveTransitionHooks(
+          oldInnerChild,
+          rawProps,
+          state,
+          instance
+        );
+        setTransitionHooks(oldInnerChild, leavingHooks);
+        if (mode === "out-in" && innerChild.type !== Comment) {
+          state.isLeaving = true;
+          leavingHooks.afterLeave = () => {
+            state.isLeaving = false;
+            if (!(instance.job.flags & 8)) {
+              instance.update();
+            }
+            delete leavingHooks.afterLeave;
+            oldInnerChild = void 0;
+          };
+          return emptyPlaceholder(child);
+        } else if (mode === "in-out" && innerChild.type !== Comment) {
+          leavingHooks.delayLeave = (el, earlyRemove, delayedLeave) => {
+            const leavingVNodesCache = getLeavingNodesForType(
+              state,
+              oldInnerChild
+            );
+            leavingVNodesCache[String(oldInnerChild.key)] = oldInnerChild;
+            el[leaveCbKey] = () => {
+              earlyRemove();
+              el[leaveCbKey] = void 0;
+              delete enterHooks.delayedLeave;
+              oldInnerChild = void 0;
+            };
+            enterHooks.delayedLeave = () => {
+              delayedLeave();
+              delete enterHooks.delayedLeave;
+              oldInnerChild = void 0;
+            };
+          };
+        } else {
+          oldInnerChild = void 0;
+        }
+      } else if (oldInnerChild) {
+        oldInnerChild = void 0;
+      }
+      return child;
+    };
+  }
+};
+function findNonCommentChild(children) {
+  let child = children[0];
+  if (children.length > 1) {
+    let hasFound = false;
+    for (const c of children) {
+      if (c.type !== Comment) {
+        if (false) // removed by dead control flow
+{}
+        child = c;
+        hasFound = true;
+        if (true) break;
+      }
+    }
+  }
+  return child;
+}
+const BaseTransition = (/* unused pure expression or super */ null && (BaseTransitionImpl));
+function getLeavingNodesForType(state, vnode) {
+  const { leavingVNodes } = state;
+  let leavingVNodesCache = leavingVNodes.get(vnode.type);
+  if (!leavingVNodesCache) {
+    leavingVNodesCache = /* @__PURE__ */ Object.create(null);
+    leavingVNodes.set(vnode.type, leavingVNodesCache);
+  }
+  return leavingVNodesCache;
+}
+function resolveTransitionHooks(vnode, props, state, instance, postClone) {
+  const {
+    appear,
+    mode,
+    persisted = false,
+    onBeforeEnter,
+    onEnter,
+    onAfterEnter,
+    onEnterCancelled,
+    onBeforeLeave,
+    onLeave,
+    onAfterLeave,
+    onLeaveCancelled,
+    onBeforeAppear,
+    onAppear,
+    onAfterAppear,
+    onAppearCancelled
+  } = props;
+  const key = String(vnode.key);
+  const leavingVNodesCache = getLeavingNodesForType(state, vnode);
+  const callHook = (hook, args) => {
+    hook && callWithAsyncErrorHandling(
+      hook,
+      instance,
+      9,
+      args
+    );
+  };
+  const callAsyncHook = (hook, args) => {
+    const done = args[1];
+    callHook(hook, args);
+    if (isArray(hook)) {
+      if (hook.every((hook2) => hook2.length <= 1)) done();
+    } else if (hook.length <= 1) {
+      done();
+    }
+  };
+  const hooks = {
+    mode,
+    persisted,
+    beforeEnter(el) {
+      let hook = onBeforeEnter;
+      if (!state.isMounted) {
+        if (appear) {
+          hook = onBeforeAppear || onBeforeEnter;
+        } else {
+          return;
+        }
+      }
+      if (el[leaveCbKey]) {
+        el[leaveCbKey](
+          true
+          /* cancelled */
+        );
+      }
+      const leavingVNode = leavingVNodesCache[key];
+      if (leavingVNode && isSameVNodeType(vnode, leavingVNode) && leavingVNode.el[leaveCbKey]) {
+        leavingVNode.el[leaveCbKey]();
+      }
+      callHook(hook, [el]);
+    },
+    enter(el) {
+      let hook = onEnter;
+      let afterHook = onAfterEnter;
+      let cancelHook = onEnterCancelled;
+      if (!state.isMounted) {
+        if (appear) {
+          hook = onAppear || onEnter;
+          afterHook = onAfterAppear || onAfterEnter;
+          cancelHook = onAppearCancelled || onEnterCancelled;
+        } else {
+          return;
+        }
+      }
+      let called = false;
+      const done = el[enterCbKey] = (cancelled) => {
+        if (called) return;
+        called = true;
+        if (cancelled) {
+          callHook(cancelHook, [el]);
+        } else {
+          callHook(afterHook, [el]);
+        }
+        if (hooks.delayedLeave) {
+          hooks.delayedLeave();
+        }
+        el[enterCbKey] = void 0;
+      };
+      if (hook) {
+        callAsyncHook(hook, [el, done]);
+      } else {
+        done();
+      }
+    },
+    leave(el, remove) {
+      const key2 = String(vnode.key);
+      if (el[enterCbKey]) {
+        el[enterCbKey](
+          true
+          /* cancelled */
+        );
+      }
+      if (state.isUnmounting) {
+        return remove();
+      }
+      callHook(onBeforeLeave, [el]);
+      let called = false;
+      const done = el[leaveCbKey] = (cancelled) => {
+        if (called) return;
+        called = true;
+        remove();
+        if (cancelled) {
+          callHook(onLeaveCancelled, [el]);
+        } else {
+          callHook(onAfterLeave, [el]);
+        }
+        el[leaveCbKey] = void 0;
+        if (leavingVNodesCache[key2] === vnode) {
+          delete leavingVNodesCache[key2];
+        }
+      };
+      leavingVNodesCache[key2] = vnode;
+      if (onLeave) {
+        callAsyncHook(onLeave, [el, done]);
+      } else {
+        done();
+      }
+    },
+    clone(vnode2) {
+      const hooks2 = resolveTransitionHooks(
+        vnode2,
+        props,
+        state,
+        instance,
+        postClone
+      );
+      if (postClone) postClone(hooks2);
+      return hooks2;
+    }
+  };
+  return hooks;
+}
+function emptyPlaceholder(vnode) {
+  if (isKeepAlive(vnode)) {
+    vnode = cloneVNode(vnode);
+    vnode.children = null;
+    return vnode;
+  }
+}
+function getInnerChild$1(vnode) {
+  if (!isKeepAlive(vnode)) {
+    if (isTeleport(vnode.type) && vnode.children) {
+      return findNonCommentChild(vnode.children);
+    }
+    return vnode;
+  }
+  if (vnode.component) {
+    return vnode.component.subTree;
+  }
+  const { shapeFlag, children } = vnode;
+  if (children) {
+    if (shapeFlag & 16) {
+      return children[0];
+    }
+    if (shapeFlag & 32 && isFunction(children.default)) {
+      return children.default();
+    }
+  }
+}
+function setTransitionHooks(vnode, hooks) {
+  if (vnode.shapeFlag & 6 && vnode.component) {
+    vnode.transition = hooks;
+    setTransitionHooks(vnode.component.subTree, hooks);
+  } else if (vnode.shapeFlag & 128) {
+    vnode.ssContent.transition = hooks.clone(vnode.ssContent);
+    vnode.ssFallback.transition = hooks.clone(vnode.ssFallback);
+  } else {
+    vnode.transition = hooks;
+  }
+}
+function getTransitionRawChildren(children, keepComment = false, parentKey) {
+  let ret = [];
+  let keyedFragmentCount = 0;
+  for (let i = 0; i < children.length; i++) {
+    let child = children[i];
+    const key = parentKey == null ? child.key : String(parentKey) + String(child.key != null ? child.key : i);
+    if (child.type === Fragment) {
+      if (child.patchFlag & 128) keyedFragmentCount++;
+      ret = ret.concat(
+        getTransitionRawChildren(child.children, keepComment, key)
+      );
+    } else if (keepComment || child.type !== Comment) {
+      ret.push(key != null ? cloneVNode(child, { key }) : child);
+    }
+  }
+  if (keyedFragmentCount > 1) {
+    for (let i = 0; i < ret.length; i++) {
+      ret[i].patchFlag = -2;
+    }
+  }
+  return ret;
+}
+
+/*! #__NO_SIDE_EFFECTS__ */
+// @__NO_SIDE_EFFECTS__
+function defineComponent(options, extraOptions) {
+  return runtime_core_esm_bundler_isFunction(options) ? (
+    // #8236: extend call and options.name access are considered side-effects
+    // by Rollup, so we have to wrap it in a pure-annotated IIFE.
+    /* @__PURE__ */ (() => runtime_core_esm_bundler_extend({ name: options.name }, extraOptions, { setup: options }))()
+  ) : options;
+}
+
+function useId() {
+  const i = getCurrentInstance();
+  if (i) {
+    return (i.appContext.config.idPrefix || "v") + "-" + i.ids[0] + i.ids[1]++;
+  } else if (false) // removed by dead control flow
+{}
+  return "";
+}
+function markAsyncBoundary(instance) {
+  instance.ids = [instance.ids[0] + instance.ids[2]++ + "-", 0, 0];
+}
+
+const knownTemplateRefs = /* @__PURE__ */ new WeakSet();
+function useTemplateRef(key) {
+  const i = getCurrentInstance();
+  const r = runtime_core_esm_bundler_shallowRef(null);
+  if (i) {
+    const refs = i.refs === runtime_core_esm_bundler_EMPTY_OBJ ? i.refs = {} : i.refs;
+    let desc;
+    if (false) // removed by dead control flow
+{} else {
+      Object.defineProperty(refs, key, {
+        enumerable: true,
+        get: () => r.value,
+        set: (val) => r.value = val
+      });
+    }
+  } else if (false) // removed by dead control flow
+{}
+  const ret =  false ? 0 : r;
+  if (false) // removed by dead control flow
+{}
+  return ret;
+}
+
+function setRef(rawRef, oldRawRef, parentSuspense, vnode, isUnmount = false) {
+  if (runtime_core_esm_bundler_isArray(rawRef)) {
+    rawRef.forEach(
+      (r, i) => setRef(
+        r,
+        oldRawRef && (runtime_core_esm_bundler_isArray(oldRawRef) ? oldRawRef[i] : oldRawRef),
+        parentSuspense,
+        vnode,
+        isUnmount
+      )
+    );
+    return;
+  }
+  if (isAsyncWrapper(vnode) && !isUnmount) {
+    if (vnode.shapeFlag & 512 && vnode.type.__asyncResolved && vnode.component.subTree.component) {
+      setRef(rawRef, oldRawRef, parentSuspense, vnode.component.subTree);
+    }
+    return;
+  }
+  const refValue = vnode.shapeFlag & 4 ? getComponentPublicInstance(vnode.component) : vnode.el;
+  const value = isUnmount ? null : refValue;
+  const { i: owner, r: ref } = rawRef;
+  if (false) // removed by dead control flow
+{}
+  const oldRef = oldRawRef && oldRawRef.r;
+  const refs = owner.refs === runtime_core_esm_bundler_EMPTY_OBJ ? owner.refs = {} : owner.refs;
+  const setupState = owner.setupState;
+  const rawSetupState = runtime_core_esm_bundler_toRaw(setupState);
+  const canSetSetupRef = setupState === runtime_core_esm_bundler_EMPTY_OBJ ? () => false : (key) => {
+    if (false) // removed by dead control flow
+{}
+    return runtime_core_esm_bundler_hasOwn(rawSetupState, key);
+  };
+  if (oldRef != null && oldRef !== ref) {
+    if (runtime_core_esm_bundler_isString(oldRef)) {
+      refs[oldRef] = null;
+      if (canSetSetupRef(oldRef)) {
+        setupState[oldRef] = null;
+      }
+    } else if (runtime_core_esm_bundler_isRef(oldRef)) {
+      oldRef.value = null;
+    }
+  }
+  if (runtime_core_esm_bundler_isFunction(ref)) {
+    callWithErrorHandling(ref, owner, 12, [value, refs]);
+  } else {
+    const _isString = runtime_core_esm_bundler_isString(ref);
+    const _isRef = runtime_core_esm_bundler_isRef(ref);
+    if (_isString || _isRef) {
+      const doSet = () => {
+        if (rawRef.f) {
+          const existing = _isString ? canSetSetupRef(ref) ? setupState[ref] : refs[ref] : ref.value;
+          if (isUnmount) {
+            runtime_core_esm_bundler_isArray(existing) && runtime_core_esm_bundler_remove(existing, refValue);
+          } else {
+            if (!runtime_core_esm_bundler_isArray(existing)) {
+              if (_isString) {
+                refs[ref] = [refValue];
+                if (canSetSetupRef(ref)) {
+                  setupState[ref] = refs[ref];
+                }
+              } else {
+                ref.value = [refValue];
+                if (rawRef.k) refs[rawRef.k] = ref.value;
+              }
+            } else if (!existing.includes(refValue)) {
+              existing.push(refValue);
+            }
+          }
+        } else if (_isString) {
+          refs[ref] = value;
+          if (canSetSetupRef(ref)) {
+            setupState[ref] = value;
+          }
+        } else if (_isRef) {
+          ref.value = value;
+          if (rawRef.k) refs[rawRef.k] = value;
+        } else if (false) // removed by dead control flow
+{}
+      };
+      if (value) {
+        doSet.id = -1;
+        queuePostRenderEffect(doSet, parentSuspense);
+      } else {
+        doSet();
+      }
+    } else if (false) // removed by dead control flow
+{}
+  }
+}
+
+let hasLoggedMismatchError = false;
+const logMismatchError = () => {
+  if (hasLoggedMismatchError) {
+    return;
+  }
+  console.error("Hydration completed but contains mismatches.");
+  hasLoggedMismatchError = true;
+};
+const isSVGContainer = (container) => container.namespaceURI.includes("svg") && container.tagName !== "foreignObject";
+const isMathMLContainer = (container) => container.namespaceURI.includes("MathML");
+const getContainerType = (container) => {
+  if (container.nodeType !== 1) return void 0;
+  if (isSVGContainer(container)) return "svg";
+  if (isMathMLContainer(container)) return "mathml";
+  return void 0;
+};
+const isComment = (node) => node.nodeType === 8;
+function createHydrationFunctions(rendererInternals) {
+  const {
+    mt: mountComponent,
+    p: patch,
+    o: {
+      patchProp,
+      createText,
+      nextSibling,
+      parentNode,
+      remove,
+      insert,
+      createComment
+    }
+  } = rendererInternals;
+  const hydrate = (vnode, container) => {
+    if (!container.hasChildNodes()) {
+      ( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && warn$1(
+        `Attempting to hydrate existing markup but container is empty. Performing full mount instead.`
+      );
+      patch(null, vnode, container);
+      flushPostFlushCbs();
+      container._vnode = vnode;
+      return;
+    }
+    hydrateNode(container.firstChild, vnode, null, null, null);
+    flushPostFlushCbs();
+    container._vnode = vnode;
+  };
+  const hydrateNode = (node, vnode, parentComponent, parentSuspense, slotScopeIds, optimized = false) => {
+    optimized = optimized || !!vnode.dynamicChildren;
+    const isFragmentStart = isComment(node) && node.data === "[";
+    const onMismatch = () => handleMismatch(
+      node,
+      vnode,
+      parentComponent,
+      parentSuspense,
+      slotScopeIds,
+      isFragmentStart
+    );
+    const { type, ref, shapeFlag, patchFlag } = vnode;
+    let domType = node.nodeType;
+    vnode.el = node;
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      runtime_core_esm_bundler_def(node, "__vnode", vnode, true);
+      runtime_core_esm_bundler_def(node, "__vueParentComponent", parentComponent, true);
+    }
+    if (patchFlag === -2) {
+      optimized = false;
+      vnode.dynamicChildren = null;
+    }
+    let nextNode = null;
+    switch (type) {
+      case Text:
+        if (domType !== 3) {
+          if (vnode.children === "") {
+            insert(vnode.el = createText(""), parentNode(node), node);
+            nextNode = node;
+          } else {
+            nextNode = onMismatch();
+          }
+        } else {
+          if (node.data !== vnode.children) {
+            ( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && warn$1(
+              `Hydration text mismatch in`,
+              node.parentNode,
+              `
+  - rendered on server: ${JSON.stringify(
+                node.data
+              )}
+  - expected on client: ${JSON.stringify(vnode.children)}`
+            );
+            logMismatchError();
+            node.data = vnode.children;
+          }
+          nextNode = nextSibling(node);
+        }
+        break;
+      case Comment:
+        if (isTemplateNode(node)) {
+          nextNode = nextSibling(node);
+          replaceNode(
+            vnode.el = node.content.firstChild,
+            node,
+            parentComponent
+          );
+        } else if (domType !== 8 || isFragmentStart) {
+          nextNode = onMismatch();
+        } else {
+          nextNode = nextSibling(node);
+        }
+        break;
+      case Static:
+        if (isFragmentStart) {
+          node = nextSibling(node);
+          domType = node.nodeType;
+        }
+        if (domType === 1 || domType === 3) {
+          nextNode = node;
+          const needToAdoptContent = !vnode.children.length;
+          for (let i = 0; i < vnode.staticCount; i++) {
+            if (needToAdoptContent)
+              vnode.children += nextNode.nodeType === 1 ? nextNode.outerHTML : nextNode.data;
+            if (i === vnode.staticCount - 1) {
+              vnode.anchor = nextNode;
+            }
+            nextNode = nextSibling(nextNode);
+          }
+          return isFragmentStart ? nextSibling(nextNode) : nextNode;
+        } else {
+          onMismatch();
+        }
+        break;
+      case Fragment:
+        if (!isFragmentStart) {
+          nextNode = onMismatch();
+        } else {
+          nextNode = hydrateFragment(
+            node,
+            vnode,
+            parentComponent,
+            parentSuspense,
+            slotScopeIds,
+            optimized
+          );
+        }
+        break;
+      default:
+        if (shapeFlag & 1) {
+          if ((domType !== 1 || vnode.type.toLowerCase() !== node.tagName.toLowerCase()) && !isTemplateNode(node)) {
+            nextNode = onMismatch();
+          } else {
+            nextNode = hydrateElement(
+              node,
+              vnode,
+              parentComponent,
+              parentSuspense,
+              slotScopeIds,
+              optimized
+            );
+          }
+        } else if (shapeFlag & 6) {
+          vnode.slotScopeIds = slotScopeIds;
+          const container = parentNode(node);
+          if (isFragmentStart) {
+            nextNode = locateClosingAnchor(node);
+          } else if (isComment(node) && node.data === "teleport start") {
+            nextNode = locateClosingAnchor(node, node.data, "teleport end");
+          } else {
+            nextNode = nextSibling(node);
+          }
+          mountComponent(
+            vnode,
+            container,
+            null,
+            parentComponent,
+            parentSuspense,
+            getContainerType(container),
+            optimized
+          );
+          if (isAsyncWrapper(vnode) && !vnode.type.__asyncResolved) {
+            let subTree;
+            if (isFragmentStart) {
+              subTree = createVNode(Fragment);
+              subTree.anchor = nextNode ? nextNode.previousSibling : container.lastChild;
+            } else {
+              subTree = node.nodeType === 3 ? createTextVNode("") : createVNode("div");
+            }
+            subTree.el = node;
+            vnode.component.subTree = subTree;
+          }
+        } else if (shapeFlag & 64) {
+          if (domType !== 8) {
+            nextNode = onMismatch();
+          } else {
+            nextNode = vnode.type.hydrate(
+              node,
+              vnode,
+              parentComponent,
+              parentSuspense,
+              slotScopeIds,
+              optimized,
+              rendererInternals,
+              hydrateChildren
+            );
+          }
+        } else if (shapeFlag & 128) {
+          nextNode = vnode.type.hydrate(
+            node,
+            vnode,
+            parentComponent,
+            parentSuspense,
+            getContainerType(parentNode(node)),
+            slotScopeIds,
+            optimized,
+            rendererInternals,
+            hydrateNode
+          );
+        } else if ( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) {
+          warn$1("Invalid HostVNode type:", type, `(${typeof type})`);
+        }
+    }
+    if (ref != null) {
+      setRef(ref, null, parentSuspense, vnode);
+    }
+    return nextNode;
+  };
+  const hydrateElement = (el, vnode, parentComponent, parentSuspense, slotScopeIds, optimized) => {
+    optimized = optimized || !!vnode.dynamicChildren;
+    const { type, props, patchFlag, shapeFlag, dirs, transition } = vnode;
+    const forcePatch = type === "input" || type === "option";
+    if ( false || forcePatch || patchFlag !== -1) {
+      if (dirs) {
+        invokeDirectiveHook(vnode, null, parentComponent, "created");
+      }
+      let needCallTransitionHooks = false;
+      if (isTemplateNode(el)) {
+        needCallTransitionHooks = needTransition(
+          null,
+          // no need check parentSuspense in hydration
+          transition
+        ) && parentComponent && parentComponent.vnode.props && parentComponent.vnode.props.appear;
+        const content = el.content.firstChild;
+        if (needCallTransitionHooks) {
+          const cls = content.getAttribute("class");
+          if (cls) content.$cls = cls;
+          transition.beforeEnter(content);
+        }
+        replaceNode(content, el, parentComponent);
+        vnode.el = el = content;
+      }
+      if (shapeFlag & 16 && // skip if element has innerHTML / textContent
+      !(props && (props.innerHTML || props.textContent))) {
+        let next = hydrateChildren(
+          el.firstChild,
+          vnode,
+          el,
+          parentComponent,
+          parentSuspense,
+          slotScopeIds,
+          optimized
+        );
+        let hasWarned = false;
+        while (next) {
+          if (!isMismatchAllowed(el, 1 /* CHILDREN */)) {
+            if (( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && !hasWarned) {
+              warn$1(
+                `Hydration children mismatch on`,
+                el,
+                `
+Server rendered element contains more child nodes than client vdom.`
+              );
+              hasWarned = true;
+            }
+            logMismatchError();
+          }
+          const cur = next;
+          next = next.nextSibling;
+          remove(cur);
+        }
+      } else if (shapeFlag & 8) {
+        let clientText = vnode.children;
+        if (clientText[0] === "\n" && (el.tagName === "PRE" || el.tagName === "TEXTAREA")) {
+          clientText = clientText.slice(1);
+        }
+        if (el.textContent !== clientText) {
+          if (!isMismatchAllowed(el, 0 /* TEXT */)) {
+            ( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && warn$1(
+              `Hydration text content mismatch on`,
+              el,
+              `
+  - rendered on server: ${el.textContent}
+  - expected on client: ${vnode.children}`
+            );
+            logMismatchError();
+          }
+          el.textContent = vnode.children;
+        }
+      }
+      if (props) {
+        if ( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__ || forcePatch || !optimized || patchFlag & (16 | 32)) {
+          const isCustomElement = el.tagName.includes("-");
+          for (const key in props) {
+            if (( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && // #11189 skip if this node has directives that have created hooks
+            // as it could have mutated the DOM in any possible way
+            !(dirs && dirs.some((d) => d.dir.created)) && propHasMismatch(el, key, props[key], vnode, parentComponent)) {
+              logMismatchError();
+            }
+            if (forcePatch && (key.endsWith("value") || key === "indeterminate") || runtime_core_esm_bundler_isOn(key) && !runtime_core_esm_bundler_isReservedProp(key) || // force hydrate v-bind with .prop modifiers
+            key[0] === "." || isCustomElement) {
+              patchProp(el, key, null, props[key], void 0, parentComponent);
+            }
+          }
+        } else if (props.onClick) {
+          patchProp(
+            el,
+            "onClick",
+            null,
+            props.onClick,
+            void 0,
+            parentComponent
+          );
+        } else if (patchFlag & 4 && runtime_core_esm_bundler_isReactive(props.style)) {
+          for (const key in props.style) props.style[key];
+        }
+      }
+      let vnodeHooks;
+      if (vnodeHooks = props && props.onVnodeBeforeMount) {
+        invokeVNodeHook(vnodeHooks, parentComponent, vnode);
+      }
+      if (dirs) {
+        invokeDirectiveHook(vnode, null, parentComponent, "beforeMount");
+      }
+      if ((vnodeHooks = props && props.onVnodeMounted) || dirs || needCallTransitionHooks) {
+        queueEffectWithSuspense(() => {
+          vnodeHooks && invokeVNodeHook(vnodeHooks, parentComponent, vnode);
+          needCallTransitionHooks && transition.enter(el);
+          dirs && invokeDirectiveHook(vnode, null, parentComponent, "mounted");
+        }, parentSuspense);
+      }
+    }
+    return el.nextSibling;
+  };
+  const hydrateChildren = (node, parentVNode, container, parentComponent, parentSuspense, slotScopeIds, optimized) => {
+    optimized = optimized || !!parentVNode.dynamicChildren;
+    const children = parentVNode.children;
+    const l = children.length;
+    let hasWarned = false;
+    for (let i = 0; i < l; i++) {
+      const vnode = optimized ? children[i] : children[i] = normalizeVNode(children[i]);
+      const isText = vnode.type === Text;
+      if (node) {
+        if (isText && !optimized) {
+          if (i + 1 < l && normalizeVNode(children[i + 1]).type === Text) {
+            insert(
+              createText(
+                node.data.slice(vnode.children.length)
+              ),
+              container,
+              nextSibling(node)
+            );
+            node.data = vnode.children;
+          }
+        }
+        node = hydrateNode(
+          node,
+          vnode,
+          parentComponent,
+          parentSuspense,
+          slotScopeIds,
+          optimized
+        );
+      } else if (isText && !vnode.children) {
+        insert(vnode.el = createText(""), container);
+      } else {
+        if (!isMismatchAllowed(container, 1 /* CHILDREN */)) {
+          if (( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && !hasWarned) {
+            warn$1(
+              `Hydration children mismatch on`,
+              container,
+              `
+Server rendered element contains fewer child nodes than client vdom.`
+            );
+            hasWarned = true;
+          }
+          logMismatchError();
+        }
+        patch(
+          null,
+          vnode,
+          container,
+          null,
+          parentComponent,
+          parentSuspense,
+          getContainerType(container),
+          slotScopeIds
+        );
+      }
+    }
+    return node;
+  };
+  const hydrateFragment = (node, vnode, parentComponent, parentSuspense, slotScopeIds, optimized) => {
+    const { slotScopeIds: fragmentSlotScopeIds } = vnode;
+    if (fragmentSlotScopeIds) {
+      slotScopeIds = slotScopeIds ? slotScopeIds.concat(fragmentSlotScopeIds) : fragmentSlotScopeIds;
+    }
+    const container = parentNode(node);
+    const next = hydrateChildren(
+      nextSibling(node),
+      vnode,
+      container,
+      parentComponent,
+      parentSuspense,
+      slotScopeIds,
+      optimized
+    );
+    if (next && isComment(next) && next.data === "]") {
+      return nextSibling(vnode.anchor = next);
+    } else {
+      logMismatchError();
+      insert(vnode.anchor = createComment(`]`), container, next);
+      return next;
+    }
+  };
+  const handleMismatch = (node, vnode, parentComponent, parentSuspense, slotScopeIds, isFragment) => {
+    if (!isMismatchAllowed(node.parentElement, 1 /* CHILDREN */)) {
+      ( false || __VUE_PROD_HYDRATION_MISMATCH_DETAILS__) && warn$1(
+        `Hydration node mismatch:
+- rendered on server:`,
+        node,
+        node.nodeType === 3 ? `(text)` : isComment(node) && node.data === "[" ? `(start of fragment)` : ``,
+        `
+- expected on client:`,
+        vnode.type
+      );
+      logMismatchError();
+    }
+    vnode.el = null;
+    if (isFragment) {
+      const end = locateClosingAnchor(node);
+      while (true) {
+        const next2 = nextSibling(node);
+        if (next2 && next2 !== end) {
+          remove(next2);
+        } else {
+          break;
+        }
+      }
+    }
+    const next = nextSibling(node);
+    const container = parentNode(node);
+    remove(node);
+    patch(
+      null,
+      vnode,
+      container,
+      next,
+      parentComponent,
+      parentSuspense,
+      getContainerType(container),
+      slotScopeIds
+    );
+    if (parentComponent) {
+      parentComponent.vnode.el = vnode.el;
+      updateHOCHostEl(parentComponent, vnode.el);
+    }
+    return next;
+  };
+  const locateClosingAnchor = (node, open = "[", close = "]") => {
+    let match = 0;
+    while (node) {
+      node = nextSibling(node);
+      if (node && isComment(node)) {
+        if (node.data === open) match++;
+        if (node.data === close) {
+          if (match === 0) {
+            return nextSibling(node);
+          } else {
+            match--;
+          }
+        }
+      }
+    }
+    return node;
+  };
+  const replaceNode = (newNode, oldNode, parentComponent) => {
+    const parentNode2 = oldNode.parentNode;
+    if (parentNode2) {
+      parentNode2.replaceChild(newNode, oldNode);
+    }
+    let parent = parentComponent;
+    while (parent) {
+      if (parent.vnode.el === oldNode) {
+        parent.vnode.el = parent.subTree.el = newNode;
+      }
+      parent = parent.parent;
+    }
+  };
+  const isTemplateNode = (node) => {
+    return node.nodeType === 1 && node.tagName === "TEMPLATE";
+  };
+  return [hydrate, hydrateNode];
+}
+function propHasMismatch(el, key, clientValue, vnode, instance) {
+  let mismatchType;
+  let mismatchKey;
+  let actual;
+  let expected;
+  if (key === "class") {
+    if (el.$cls) {
+      actual = el.$cls;
+      delete el.$cls;
+    } else {
+      actual = el.getAttribute("class");
+    }
+    expected = runtime_core_esm_bundler_normalizeClass(clientValue);
+    if (!isSetEqual(toClassSet(actual || ""), toClassSet(expected))) {
+      mismatchType = 2 /* CLASS */;
+      mismatchKey = `class`;
+    }
+  } else if (key === "style") {
+    actual = el.getAttribute("style") || "";
+    expected = runtime_core_esm_bundler_isString(clientValue) ? clientValue : runtime_core_esm_bundler_stringifyStyle(runtime_core_esm_bundler_normalizeStyle(clientValue));
+    const actualMap = toStyleMap(actual);
+    const expectedMap = toStyleMap(expected);
+    if (vnode.dirs) {
+      for (const { dir, value } of vnode.dirs) {
+        if (dir.name === "show" && !value) {
+          expectedMap.set("display", "none");
+        }
+      }
+    }
+    if (instance) {
+      resolveCssVars(instance, vnode, expectedMap);
+    }
+    if (!isMapEqual(actualMap, expectedMap)) {
+      mismatchType = 3 /* STYLE */;
+      mismatchKey = "style";
+    }
+  } else if (el instanceof SVGElement && runtime_core_esm_bundler_isKnownSvgAttr(key) || el instanceof HTMLElement && (runtime_core_esm_bundler_isBooleanAttr(key) || runtime_core_esm_bundler_isKnownHtmlAttr(key))) {
+    if (runtime_core_esm_bundler_isBooleanAttr(key)) {
+      actual = el.hasAttribute(key);
+      expected = runtime_core_esm_bundler_includeBooleanAttr(clientValue);
+    } else if (clientValue == null) {
+      actual = el.hasAttribute(key);
+      expected = false;
+    } else {
+      if (el.hasAttribute(key)) {
+        actual = el.getAttribute(key);
+      } else if (key === "value" && el.tagName === "TEXTAREA") {
+        actual = el.value;
+      } else {
+        actual = false;
+      }
+      expected = runtime_core_esm_bundler_isRenderableAttrValue(clientValue) ? String(clientValue) : false;
+    }
+    if (actual !== expected) {
+      mismatchType = 4 /* ATTRIBUTE */;
+      mismatchKey = key;
+    }
+  }
+  if (mismatchType != null && !isMismatchAllowed(el, mismatchType)) {
+    const format = (v) => v === false ? `(not rendered)` : `${mismatchKey}="${v}"`;
+    const preSegment = `Hydration ${MismatchTypeString[mismatchType]} mismatch on`;
+    const postSegment = `
+  - rendered on server: ${format(actual)}
+  - expected on client: ${format(expected)}
+  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.
+  You should fix the source of the mismatch.`;
+    {
+      warn$1(preSegment, el, postSegment);
+    }
+    return true;
+  }
+  return false;
+}
+function toClassSet(str) {
+  return new Set(str.trim().split(/\s+/));
+}
+function isSetEqual(a, b) {
+  if (a.size !== b.size) {
+    return false;
+  }
+  for (const s of a) {
+    if (!b.has(s)) {
+      return false;
+    }
+  }
+  return true;
+}
+function toStyleMap(str) {
+  const styleMap = /* @__PURE__ */ new Map();
+  for (const item of str.split(";")) {
+    let [key, value] = item.split(":");
+    key = key.trim();
+    value = value && value.trim();
+    if (key && value) {
+      styleMap.set(key, value);
+    }
+  }
+  return styleMap;
+}
+function isMapEqual(a, b) {
+  if (a.size !== b.size) {
+    return false;
+  }
+  for (const [key, value] of a) {
+    if (value !== b.get(key)) {
+      return false;
+    }
+  }
+  return true;
+}
+function resolveCssVars(instance, vnode, expectedMap) {
+  const root = instance.subTree;
+  if (instance.getCssVars && (vnode === root || root && root.type === Fragment && root.children.includes(vnode))) {
+    const cssVars = instance.getCssVars();
+    for (const key in cssVars) {
+      expectedMap.set(
+        `--${runtime_core_esm_bundler_getEscapedCssVarName(key, false)}`,
+        String(cssVars[key])
+      );
+    }
+  }
+  if (vnode === root && instance.parent) {
+    resolveCssVars(instance.parent, instance.vnode, expectedMap);
+  }
+}
+const allowMismatchAttr = "data-allow-mismatch";
+const MismatchTypeString = {
+  [0 /* TEXT */]: "text",
+  [1 /* CHILDREN */]: "children",
+  [2 /* CLASS */]: "class",
+  [3 /* STYLE */]: "style",
+  [4 /* ATTRIBUTE */]: "attribute"
+};
+function isMismatchAllowed(el, allowedType) {
+  if (allowedType === 0 /* TEXT */ || allowedType === 1 /* CHILDREN */) {
+    while (el && !el.hasAttribute(allowMismatchAttr)) {
+      el = el.parentElement;
+    }
+  }
+  const allowedAttr = el && el.getAttribute(allowMismatchAttr);
+  if (allowedAttr == null) {
+    return false;
+  } else if (allowedAttr === "") {
+    return true;
+  } else {
+    const list = allowedAttr.split(",");
+    if (allowedType === 0 /* TEXT */ && list.includes("children")) {
+      return true;
+    }
+    return list.includes(MismatchTypeString[allowedType]);
+  }
+}
+
+const requestIdleCallback = getGlobalThis().requestIdleCallback || ((cb) => setTimeout(cb, 1));
+const cancelIdleCallback = getGlobalThis().cancelIdleCallback || ((id) => clearTimeout(id));
+const hydrateOnIdle = (timeout = 1e4) => (hydrate) => {
+  const id = requestIdleCallback(hydrate, { timeout });
+  return () => cancelIdleCallback(id);
+};
+function elementIsVisibleInViewport(el) {
+  const { top, left, bottom, right } = el.getBoundingClientRect();
+  const { innerHeight, innerWidth } = window;
+  return (top > 0 && top < innerHeight || bottom > 0 && bottom < innerHeight) && (left > 0 && left < innerWidth || right > 0 && right < innerWidth);
+}
+const hydrateOnVisible = (opts) => (hydrate, forEach) => {
+  const ob = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      ob.disconnect();
+      hydrate();
+      break;
+    }
+  }, opts);
+  forEach((el) => {
+    if (!(el instanceof Element)) return;
+    if (elementIsVisibleInViewport(el)) {
+      hydrate();
+      ob.disconnect();
+      return false;
+    }
+    ob.observe(el);
+  });
+  return () => ob.disconnect();
+};
+const hydrateOnMediaQuery = (query) => (hydrate) => {
+  if (query) {
+    const mql = matchMedia(query);
+    if (mql.matches) {
+      hydrate();
+    } else {
+      mql.addEventListener("change", hydrate, { once: true });
+      return () => mql.removeEventListener("change", hydrate);
+    }
+  }
+};
+const hydrateOnInteraction = (interactions = []) => (hydrate, forEach) => {
+  if (runtime_core_esm_bundler_isString(interactions)) interactions = [interactions];
+  let hasHydrated = false;
+  const doHydrate = (e) => {
+    if (!hasHydrated) {
+      hasHydrated = true;
+      teardown();
+      hydrate();
+      e.target.dispatchEvent(new e.constructor(e.type, e));
+    }
+  };
+  const teardown = () => {
+    forEach((el) => {
+      for (const i of interactions) {
+        el.removeEventListener(i, doHydrate);
+      }
+    });
+  };
+  forEach((el) => {
+    for (const i of interactions) {
+      el.addEventListener(i, doHydrate, { once: true });
+    }
+  });
+  return teardown;
+};
+function forEachElement(node, cb) {
+  if (isComment(node) && node.data === "[") {
+    let depth = 1;
+    let next = node.nextSibling;
+    while (next) {
+      if (next.nodeType === 1) {
+        const result = cb(next);
+        if (result === false) {
+          break;
+        }
+      } else if (isComment(next)) {
+        if (next.data === "]") {
+          if (--depth === 0) break;
+        } else if (next.data === "[") {
+          depth++;
+        }
+      }
+      next = next.nextSibling;
+    }
+  } else {
+    cb(node);
+  }
+}
+
+const isAsyncWrapper = (i) => !!i.type.__asyncLoader;
+/*! #__NO_SIDE_EFFECTS__ */
+// @__NO_SIDE_EFFECTS__
+function defineAsyncComponent(source) {
+  if (runtime_core_esm_bundler_isFunction(source)) {
+    source = { loader: source };
+  }
+  const {
+    loader,
+    loadingComponent,
+    errorComponent,
+    delay = 200,
+    hydrate: hydrateStrategy,
+    timeout,
+    // undefined = never times out
+    suspensible = true,
+    onError: userOnError
+  } = source;
+  let pendingRequest = null;
+  let resolvedComp;
+  let retries = 0;
+  const retry = () => {
+    retries++;
+    pendingRequest = null;
+    return load();
+  };
+  const load = () => {
+    let thisRequest;
+    return pendingRequest || (thisRequest = pendingRequest = loader().catch((err) => {
+      err = err instanceof Error ? err : new Error(String(err));
+      if (userOnError) {
+        return new Promise((resolve, reject) => {
+          const userRetry = () => resolve(retry());
+          const userFail = () => reject(err);
+          userOnError(err, userRetry, userFail, retries + 1);
+        });
+      } else {
+        throw err;
+      }
+    }).then((comp) => {
+      if (thisRequest !== pendingRequest && pendingRequest) {
+        return pendingRequest;
+      }
+      if (false) // removed by dead control flow
+{}
+      if (comp && (comp.__esModule || comp[Symbol.toStringTag] === "Module")) {
+        comp = comp.default;
+      }
+      if (false) // removed by dead control flow
+{}
+      resolvedComp = comp;
+      return comp;
+    }));
+  };
+  return defineComponent({
+    name: "AsyncComponentWrapper",
+    __asyncLoader: load,
+    __asyncHydrate(el, instance, hydrate) {
+      let patched = false;
+      const doHydrate = hydrateStrategy ? () => {
+        const performHydrate = () => {
+          if (false) // removed by dead control flow
+{}
+          hydrate();
+        };
+        const teardown = hydrateStrategy(
+          performHydrate,
+          (cb) => forEachElement(el, cb)
+        );
+        if (teardown) {
+          (instance.bum || (instance.bum = [])).push(teardown);
+        }
+        (instance.u || (instance.u = [])).push(() => patched = true);
+      } : hydrate;
+      if (resolvedComp) {
+        doHydrate();
+      } else {
+        load().then(() => !instance.isUnmounted && doHydrate());
+      }
+    },
+    get __asyncResolved() {
+      return resolvedComp;
+    },
+    setup() {
+      const instance = currentInstance;
+      markAsyncBoundary(instance);
+      if (resolvedComp) {
+        return () => createInnerComp(resolvedComp, instance);
+      }
+      const onError = (err) => {
+        pendingRequest = null;
+        handleError(
+          err,
+          instance,
+          13,
+          !errorComponent
+        );
+      };
+      if (suspensible && instance.suspense || isInSSRComponentSetup) {
+        return load().then((comp) => {
+          return () => createInnerComp(comp, instance);
+        }).catch((err) => {
+          onError(err);
+          return () => errorComponent ? createVNode(errorComponent, {
+            error: err
+          }) : null;
+        });
+      }
+      const loaded = runtime_core_esm_bundler_ref(false);
+      const error = runtime_core_esm_bundler_ref();
+      const delayed = runtime_core_esm_bundler_ref(!!delay);
+      if (delay) {
+        setTimeout(() => {
+          delayed.value = false;
+        }, delay);
+      }
+      if (timeout != null) {
+        setTimeout(() => {
+          if (!loaded.value && !error.value) {
+            const err = new Error(
+              `Async component timed out after ${timeout}ms.`
+            );
+            onError(err);
+            error.value = err;
+          }
+        }, timeout);
+      }
+      load().then(() => {
+        loaded.value = true;
+        if (instance.parent && isKeepAlive(instance.parent.vnode)) {
+          instance.parent.update();
+        }
+      }).catch((err) => {
+        onError(err);
+        error.value = err;
+      });
+      return () => {
+        if (loaded.value && resolvedComp) {
+          return createInnerComp(resolvedComp, instance);
+        } else if (error.value && errorComponent) {
+          return createVNode(errorComponent, {
+            error: error.value
+          });
+        } else if (loadingComponent && !delayed.value) {
+          return createVNode(loadingComponent);
+        }
+      };
+    }
+  });
+}
+function createInnerComp(comp, parent) {
+  const { ref: ref2, props, children, ce } = parent.vnode;
+  const vnode = createVNode(comp, props, children);
+  vnode.ref = ref2;
+  vnode.ce = ce;
+  delete parent.vnode.ce;
+  return vnode;
+}
+
+const isKeepAlive = (vnode) => vnode.type.__isKeepAlive;
+const KeepAliveImpl = {
+  name: `KeepAlive`,
+  // Marker for special handling inside the renderer. We are not using a ===
+  // check directly on KeepAlive in the renderer, because importing it directly
+  // would prevent it from being tree-shaken.
+  __isKeepAlive: true,
+  props: {
+    include: [String, RegExp, Array],
+    exclude: [String, RegExp, Array],
+    max: [String, Number]
+  },
+  setup(props, { slots }) {
+    const instance = getCurrentInstance();
+    const sharedContext = instance.ctx;
+    if (!sharedContext.renderer) {
+      return () => {
+        const children = slots.default && slots.default();
+        return children && children.length === 1 ? children[0] : children;
+      };
+    }
+    const cache = /* @__PURE__ */ new Map();
+    const keys = /* @__PURE__ */ new Set();
+    let current = null;
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      instance.__v_cache = cache;
+    }
+    const parentSuspense = instance.suspense;
+    const {
+      renderer: {
+        p: patch,
+        m: move,
+        um: _unmount,
+        o: { createElement }
+      }
+    } = sharedContext;
+    const storageContainer = createElement("div");
+    sharedContext.activate = (vnode, container, anchor, namespace, optimized) => {
+      const instance2 = vnode.component;
+      move(vnode, container, anchor, 0, parentSuspense);
+      patch(
+        instance2.vnode,
+        vnode,
+        container,
+        anchor,
+        instance2,
+        parentSuspense,
+        namespace,
+        vnode.slotScopeIds,
+        optimized
+      );
+      queuePostRenderEffect(() => {
+        instance2.isDeactivated = false;
+        if (instance2.a) {
+          invokeArrayFns(instance2.a);
+        }
+        const vnodeHook = vnode.props && vnode.props.onVnodeMounted;
+        if (vnodeHook) {
+          invokeVNodeHook(vnodeHook, instance2.parent, vnode);
+        }
+      }, parentSuspense);
+      if ( false || __VUE_PROD_DEVTOOLS__) {
+        devtoolsComponentAdded(instance2);
+      }
+    };
+    sharedContext.deactivate = (vnode) => {
+      const instance2 = vnode.component;
+      invalidateMount(instance2.m);
+      invalidateMount(instance2.a);
+      move(vnode, storageContainer, null, 1, parentSuspense);
+      queuePostRenderEffect(() => {
+        if (instance2.da) {
+          invokeArrayFns(instance2.da);
+        }
+        const vnodeHook = vnode.props && vnode.props.onVnodeUnmounted;
+        if (vnodeHook) {
+          invokeVNodeHook(vnodeHook, instance2.parent, vnode);
+        }
+        instance2.isDeactivated = true;
+      }, parentSuspense);
+      if ( false || __VUE_PROD_DEVTOOLS__) {
+        devtoolsComponentAdded(instance2);
+      }
+      if (false) // removed by dead control flow
+{}
+    };
+    function unmount(vnode) {
+      resetShapeFlag(vnode);
+      _unmount(vnode, instance, parentSuspense, true);
+    }
+    function pruneCache(filter) {
+      cache.forEach((vnode, key) => {
+        const name = getComponentName(vnode.type);
+        if (name && !filter(name)) {
+          pruneCacheEntry(key);
+        }
+      });
+    }
+    function pruneCacheEntry(key) {
+      const cached = cache.get(key);
+      if (cached && (!current || !isSameVNodeType(cached, current))) {
+        unmount(cached);
+      } else if (current) {
+        resetShapeFlag(current);
+      }
+      cache.delete(key);
+      keys.delete(key);
+    }
+    runtime_core_esm_bundler_watch(
+      () => [props.include, props.exclude],
+      ([include, exclude]) => {
+        include && pruneCache((name) => matches(include, name));
+        exclude && pruneCache((name) => !matches(exclude, name));
+      },
+      // prune post-render after `current` has been updated
+      { flush: "post", deep: true }
+    );
+    let pendingCacheKey = null;
+    const cacheSubtree = () => {
+      if (pendingCacheKey != null) {
+        if (isSuspense(instance.subTree.type)) {
+          queuePostRenderEffect(() => {
+            cache.set(pendingCacheKey, getInnerChild(instance.subTree));
+          }, instance.subTree.suspense);
+        } else {
+          cache.set(pendingCacheKey, getInnerChild(instance.subTree));
+        }
+      }
+    };
+    onMounted(cacheSubtree);
+    onUpdated(cacheSubtree);
+    onBeforeUnmount(() => {
+      cache.forEach((cached) => {
+        const { subTree, suspense } = instance;
+        const vnode = getInnerChild(subTree);
+        if (cached.type === vnode.type && cached.key === vnode.key) {
+          resetShapeFlag(vnode);
+          const da = vnode.component.da;
+          da && queuePostRenderEffect(da, suspense);
+          return;
+        }
+        unmount(cached);
+      });
+    });
+    return () => {
+      pendingCacheKey = null;
+      if (!slots.default) {
+        return current = null;
+      }
+      const children = slots.default();
+      const rawVNode = children[0];
+      if (children.length > 1) {
+        if (false) // removed by dead control flow
+{}
+        current = null;
+        return children;
+      } else if (!isVNode(rawVNode) || !(rawVNode.shapeFlag & 4) && !(rawVNode.shapeFlag & 128)) {
+        current = null;
+        return rawVNode;
+      }
+      let vnode = getInnerChild(rawVNode);
+      if (vnode.type === Comment) {
+        current = null;
+        return vnode;
+      }
+      const comp = vnode.type;
+      const name = getComponentName(
+        isAsyncWrapper(vnode) ? vnode.type.__asyncResolved || {} : comp
+      );
+      const { include, exclude, max } = props;
+      if (include && (!name || !matches(include, name)) || exclude && name && matches(exclude, name)) {
+        vnode.shapeFlag &= -257;
+        current = vnode;
+        return rawVNode;
+      }
+      const key = vnode.key == null ? comp : vnode.key;
+      const cachedVNode = cache.get(key);
+      if (vnode.el) {
+        vnode = cloneVNode(vnode);
+        if (rawVNode.shapeFlag & 128) {
+          rawVNode.ssContent = vnode;
+        }
+      }
+      pendingCacheKey = key;
+      if (cachedVNode) {
+        vnode.el = cachedVNode.el;
+        vnode.component = cachedVNode.component;
+        if (vnode.transition) {
+          setTransitionHooks(vnode, vnode.transition);
+        }
+        vnode.shapeFlag |= 512;
+        keys.delete(key);
+        keys.add(key);
+      } else {
+        keys.add(key);
+        if (max && keys.size > parseInt(max, 10)) {
+          pruneCacheEntry(keys.values().next().value);
+        }
+      }
+      vnode.shapeFlag |= 256;
+      current = vnode;
+      return isSuspense(rawVNode.type) ? rawVNode : vnode;
+    };
+  }
+};
+const KeepAlive = (/* unused pure expression or super */ null && (KeepAliveImpl));
+function matches(pattern, name) {
+  if (isArray(pattern)) {
+    return pattern.some((p) => matches(p, name));
+  } else if (isString(pattern)) {
+    return pattern.split(",").includes(name);
+  } else if (isRegExp(pattern)) {
+    pattern.lastIndex = 0;
+    return pattern.test(name);
+  }
+  return false;
+}
+function onActivated(hook, target) {
+  registerKeepAliveHook(hook, "a", target);
+}
+function onDeactivated(hook, target) {
+  registerKeepAliveHook(hook, "da", target);
+}
+function registerKeepAliveHook(hook, type, target = currentInstance) {
+  const wrappedHook = hook.__wdc || (hook.__wdc = () => {
+    let current = target;
+    while (current) {
+      if (current.isDeactivated) {
+        return;
+      }
+      current = current.parent;
+    }
+    return hook();
+  });
+  injectHook(type, wrappedHook, target);
+  if (target) {
+    let current = target.parent;
+    while (current && current.parent) {
+      if (isKeepAlive(current.parent.vnode)) {
+        injectToKeepAliveRoot(wrappedHook, type, target, current);
+      }
+      current = current.parent;
+    }
+  }
+}
+function injectToKeepAliveRoot(hook, type, target, keepAliveRoot) {
+  const injected = injectHook(
+    type,
+    hook,
+    keepAliveRoot,
+    true
+    /* prepend */
+  );
+  onUnmounted(() => {
+    remove(keepAliveRoot[type], injected);
+  }, target);
+}
+function resetShapeFlag(vnode) {
+  vnode.shapeFlag &= -257;
+  vnode.shapeFlag &= -513;
+}
+function getInnerChild(vnode) {
+  return vnode.shapeFlag & 128 ? vnode.ssContent : vnode;
+}
+
+function injectHook(type, hook, target = currentInstance, prepend = false) {
+  if (target) {
+    const hooks = target[type] || (target[type] = []);
+    const wrappedHook = hook.__weh || (hook.__weh = (...args) => {
+      pauseTracking();
+      const reset = setCurrentInstance(target);
+      const res = callWithAsyncErrorHandling(hook, target, type, args);
+      reset();
+      resetTracking();
+      return res;
+    });
+    if (prepend) {
+      hooks.unshift(wrappedHook);
+    } else {
+      hooks.push(wrappedHook);
+    }
+    return wrappedHook;
+  } else if (false) // removed by dead control flow
+{}
+}
+const createHook = (lifecycle) => (hook, target = currentInstance) => {
+  if (!isInSSRComponentSetup || lifecycle === "sp") {
+    injectHook(lifecycle, (...args) => hook(...args), target);
+  }
+};
+const onBeforeMount = createHook("bm");
+const onMounted = createHook("m");
+const onBeforeUpdate = createHook(
+  "bu"
+);
+const onUpdated = createHook("u");
+const onBeforeUnmount = createHook(
+  "bum"
+);
+const onUnmounted = createHook("um");
+const onServerPrefetch = createHook(
+  "sp"
+);
+const onRenderTriggered = createHook("rtg");
+const onRenderTracked = createHook("rtc");
+function onErrorCaptured(hook, target = currentInstance) {
+  injectHook("ec", hook, target);
+}
+
+const COMPONENTS = "components";
+const DIRECTIVES = "directives";
+function resolveComponent(name, maybeSelfReference) {
+  return resolveAsset(COMPONENTS, name, true, maybeSelfReference) || name;
+}
+const NULL_DYNAMIC_COMPONENT = Symbol.for("v-ndc");
+function resolveDynamicComponent(component) {
+  if (runtime_core_esm_bundler_isString(component)) {
+    return resolveAsset(COMPONENTS, component, false) || component;
+  } else {
+    return component || NULL_DYNAMIC_COMPONENT;
+  }
+}
+function resolveDirective(name) {
+  return resolveAsset(DIRECTIVES, name);
+}
+function resolveAsset(type, name, warnMissing = true, maybeSelfReference = false) {
+  const instance = currentRenderingInstance || currentInstance;
+  if (instance) {
+    const Component = instance.type;
+    if (type === COMPONENTS) {
+      const selfName = getComponentName(
+        Component,
+        false
+      );
+      if (selfName && (selfName === name || selfName === runtime_core_esm_bundler_camelize(name) || selfName === runtime_core_esm_bundler_capitalize(runtime_core_esm_bundler_camelize(name)))) {
+        return Component;
+      }
+    }
+    const res = (
+      // local registration
+      // check instance[type] first which is resolved for options API
+      resolve(instance[type] || Component[type], name) || // global registration
+      resolve(instance.appContext[type], name)
+    );
+    if (!res && maybeSelfReference) {
+      return Component;
+    }
+    if (false) // removed by dead control flow
+{}
+    return res;
+  } else if (false) // removed by dead control flow
+{}
+}
+function resolve(registry, name) {
+  return registry && (registry[name] || registry[runtime_core_esm_bundler_camelize(name)] || registry[runtime_core_esm_bundler_capitalize(runtime_core_esm_bundler_camelize(name))]);
+}
+
+function renderList(source, renderItem, cache, index) {
+  let ret;
+  const cached = cache && cache[index];
+  const sourceIsArray = runtime_core_esm_bundler_isArray(source);
+  if (sourceIsArray || runtime_core_esm_bundler_isString(source)) {
+    const sourceIsReactiveArray = sourceIsArray && runtime_core_esm_bundler_isReactive(source);
+    let needsWrap = false;
+    let isReadonlySource = false;
+    if (sourceIsReactiveArray) {
+      needsWrap = !runtime_core_esm_bundler_isShallow(source);
+      isReadonlySource = runtime_core_esm_bundler_isReadonly(source);
+      source = runtime_core_esm_bundler_shallowReadArray(source);
+    }
+    ret = new Array(source.length);
+    for (let i = 0, l = source.length; i < l; i++) {
+      ret[i] = renderItem(
+        needsWrap ? isReadonlySource ? runtime_core_esm_bundler_toReadonly(runtime_core_esm_bundler_toReactive(source[i])) : runtime_core_esm_bundler_toReactive(source[i]) : source[i],
+        i,
+        void 0,
+        cached && cached[i]
+      );
+    }
+  } else if (typeof source === "number") {
+    if (false) // removed by dead control flow
+{}
+    ret = new Array(source);
+    for (let i = 0; i < source; i++) {
+      ret[i] = renderItem(i + 1, i, void 0, cached && cached[i]);
+    }
+  } else if (runtime_core_esm_bundler_isObject(source)) {
+    if (source[Symbol.iterator]) {
+      ret = Array.from(
+        source,
+        (item, i) => renderItem(item, i, void 0, cached && cached[i])
+      );
+    } else {
+      const keys = Object.keys(source);
+      ret = new Array(keys.length);
+      for (let i = 0, l = keys.length; i < l; i++) {
+        const key = keys[i];
+        ret[i] = renderItem(source[key], key, i, cached && cached[i]);
+      }
+    }
+  } else {
+    ret = [];
+  }
+  if (cache) {
+    cache[index] = ret;
+  }
+  return ret;
+}
+
+function createSlots(slots, dynamicSlots) {
+  for (let i = 0; i < dynamicSlots.length; i++) {
+    const slot = dynamicSlots[i];
+    if (runtime_core_esm_bundler_isArray(slot)) {
+      for (let j = 0; j < slot.length; j++) {
+        slots[slot[j].name] = slot[j].fn;
+      }
+    } else if (slot) {
+      slots[slot.name] = slot.key ? (...args) => {
+        const res = slot.fn(...args);
+        if (res) res.key = slot.key;
+        return res;
+      } : slot.fn;
+    }
+  }
+  return slots;
+}
+
+function renderSlot(slots, name, props = {}, fallback, noSlotted) {
+  if (currentRenderingInstance.ce || currentRenderingInstance.parent && isAsyncWrapper(currentRenderingInstance.parent) && currentRenderingInstance.parent.ce) {
+    if (name !== "default") props.name = name;
+    return openBlock(), createBlock(
+      Fragment,
+      null,
+      [createVNode("slot", props, fallback && fallback())],
+      64
+    );
+  }
+  let slot = slots[name];
+  if (false) // removed by dead control flow
+{}
+  if (slot && slot._c) {
+    slot._d = false;
+  }
+  openBlock();
+  const validSlotContent = slot && ensureValidVNode(slot(props));
+  const slotKey = props.key || // slot content array of a dynamic conditional slot may have a branch
+  // key attached in the `createSlots` helper, respect that
+  validSlotContent && validSlotContent.key;
+  const rendered = createBlock(
+    Fragment,
+    {
+      key: (slotKey && !runtime_core_esm_bundler_isSymbol(slotKey) ? slotKey : `_${name}`) + // #7256 force differentiate fallback content from actual content
+      (!validSlotContent && fallback ? "_fb" : "")
+    },
+    validSlotContent || (fallback ? fallback() : []),
+    validSlotContent && slots._ === 1 ? 64 : -2
+  );
+  if (!noSlotted && rendered.scopeId) {
+    rendered.slotScopeIds = [rendered.scopeId + "-s"];
+  }
+  if (slot && slot._c) {
+    slot._d = true;
+  }
+  return rendered;
+}
+function ensureValidVNode(vnodes) {
+  return vnodes.some((child) => {
+    if (!isVNode(child)) return true;
+    if (child.type === Comment) return false;
+    if (child.type === Fragment && !ensureValidVNode(child.children))
+      return false;
+    return true;
+  }) ? vnodes : null;
+}
+
+function toHandlers(obj, preserveCaseIfNecessary) {
+  const ret = {};
+  if (false) // removed by dead control flow
+{}
+  for (const key in obj) {
+    ret[preserveCaseIfNecessary && /[A-Z]/.test(key) ? `on:${key}` : runtime_core_esm_bundler_toHandlerKey(key)] = obj[key];
+  }
+  return ret;
+}
+
+const getPublicInstance = (i) => {
+  if (!i) return null;
+  if (isStatefulComponent(i)) return getComponentPublicInstance(i);
+  return getPublicInstance(i.parent);
+};
+const publicPropertiesMap = (
+  // Move PURE marker to new line to workaround compiler discarding it
+  // due to type annotation
+  /* @__PURE__ */ extend(/* @__PURE__ */ Object.create(null), {
+    $: (i) => i,
+    $el: (i) => i.vnode.el,
+    $data: (i) => i.data,
+    $props: (i) =>  false ? 0 : i.props,
+    $attrs: (i) =>  false ? 0 : i.attrs,
+    $slots: (i) =>  false ? 0 : i.slots,
+    $refs: (i) =>  false ? 0 : i.refs,
+    $parent: (i) => getPublicInstance(i.parent),
+    $root: (i) => getPublicInstance(i.root),
+    $host: (i) => i.ce,
+    $emit: (i) => i.emit,
+    $options: (i) => __VUE_OPTIONS_API__ ? resolveMergedOptions(i) : i.type,
+    $forceUpdate: (i) => i.f || (i.f = () => {
+      queueJob(i.update);
+    }),
+    $nextTick: (i) => i.n || (i.n = nextTick.bind(i.proxy)),
+    $watch: (i) => __VUE_OPTIONS_API__ ? instanceWatch.bind(i) : NOOP
+  })
+);
+const isReservedPrefix = (key) => key === "_" || key === "$";
+const hasSetupBinding = (state, key) => state !== EMPTY_OBJ && !state.__isScriptSetup && hasOwn(state, key);
+const PublicInstanceProxyHandlers = {
+  get({ _: instance }, key) {
+    if (key === "__v_skip") {
+      return true;
+    }
+    const { ctx, setupState, data, props, accessCache, type, appContext } = instance;
+    if (false) // removed by dead control flow
+{}
+    let normalizedProps;
+    if (key[0] !== "$") {
+      const n = accessCache[key];
+      if (n !== void 0) {
+        switch (n) {
+          case 1 /* SETUP */:
+            return setupState[key];
+          case 2 /* DATA */:
+            return data[key];
+          case 4 /* CONTEXT */:
+            return ctx[key];
+          case 3 /* PROPS */:
+            return props[key];
+        }
+      } else if (hasSetupBinding(setupState, key)) {
+        accessCache[key] = 1 /* SETUP */;
+        return setupState[key];
+      } else if (data !== EMPTY_OBJ && hasOwn(data, key)) {
+        accessCache[key] = 2 /* DATA */;
+        return data[key];
+      } else if (
+        // only cache other properties when instance has declared (thus stable)
+        // props
+        (normalizedProps = instance.propsOptions[0]) && hasOwn(normalizedProps, key)
+      ) {
+        accessCache[key] = 3 /* PROPS */;
+        return props[key];
+      } else if (ctx !== EMPTY_OBJ && hasOwn(ctx, key)) {
+        accessCache[key] = 4 /* CONTEXT */;
+        return ctx[key];
+      } else if (!__VUE_OPTIONS_API__ || shouldCacheAccess) {
+        accessCache[key] = 0 /* OTHER */;
+      }
+    }
+    const publicGetter = publicPropertiesMap[key];
+    let cssModule, globalProperties;
+    if (publicGetter) {
+      if (key === "$attrs") {
+        track(instance.attrs, "get", "");
+         false && 0;
+      } else if (false) // removed by dead control flow
+{}
+      return publicGetter(instance);
+    } else if (
+      // css module (injected by vue-loader)
+      (cssModule = type.__cssModules) && (cssModule = cssModule[key])
+    ) {
+      return cssModule;
+    } else if (ctx !== EMPTY_OBJ && hasOwn(ctx, key)) {
+      accessCache[key] = 4 /* CONTEXT */;
+      return ctx[key];
+    } else if (
+      // global properties
+      globalProperties = appContext.config.globalProperties, hasOwn(globalProperties, key)
+    ) {
+      {
+        return globalProperties[key];
+      }
+    } else if (false) // removed by dead control flow
+{}
+  },
+  set({ _: instance }, key, value) {
+    const { data, setupState, ctx } = instance;
+    if (hasSetupBinding(setupState, key)) {
+      setupState[key] = value;
+      return true;
+    } else if (false) // removed by dead control flow
+{} else if (data !== EMPTY_OBJ && hasOwn(data, key)) {
+      data[key] = value;
+      return true;
+    } else if (hasOwn(instance.props, key)) {
+       false && 0;
+      return false;
+    }
+    if (key[0] === "$" && key.slice(1) in instance) {
+       false && 0;
+      return false;
+    } else {
+      if (false) // removed by dead control flow
+{} else {
+        ctx[key] = value;
+      }
+    }
+    return true;
+  },
+  has({
+    _: { data, setupState, accessCache, ctx, appContext, propsOptions }
+  }, key) {
+    let normalizedProps;
+    return !!accessCache[key] || data !== EMPTY_OBJ && hasOwn(data, key) || hasSetupBinding(setupState, key) || (normalizedProps = propsOptions[0]) && hasOwn(normalizedProps, key) || hasOwn(ctx, key) || hasOwn(publicPropertiesMap, key) || hasOwn(appContext.config.globalProperties, key);
+  },
+  defineProperty(target, key, descriptor) {
+    if (descriptor.get != null) {
+      target._.accessCache[key] = 0;
+    } else if (hasOwn(descriptor, "value")) {
+      this.set(target, key, descriptor.value, null);
+    }
+    return Reflect.defineProperty(target, key, descriptor);
+  }
+};
+if (false) // removed by dead control flow
+{}
+const RuntimeCompiledPublicInstanceProxyHandlers = /* @__PURE__ */ extend({}, PublicInstanceProxyHandlers, {
+  get(target, key) {
+    if (key === Symbol.unscopables) {
+      return;
+    }
+    return PublicInstanceProxyHandlers.get(target, key, target);
+  },
+  has(_, key) {
+    const has = key[0] !== "_" && !isGloballyAllowed(key);
+    if (false) // removed by dead control flow
+{}
+    return has;
+  }
+});
+function createDevRenderContext(instance) {
+  const target = {};
+  Object.defineProperty(target, `_`, {
+    configurable: true,
+    enumerable: false,
+    get: () => instance
+  });
+  Object.keys(publicPropertiesMap).forEach((key) => {
+    Object.defineProperty(target, key, {
+      configurable: true,
+      enumerable: false,
+      get: () => publicPropertiesMap[key](instance),
+      // intercepted by the proxy so no need for implementation,
+      // but needed to prevent set errors
+      set: runtime_core_esm_bundler_NOOP
+    });
+  });
+  return target;
+}
+function exposePropsOnRenderContext(instance) {
+  const {
+    ctx,
+    propsOptions: [propsOptions]
+  } = instance;
+  if (propsOptions) {
+    Object.keys(propsOptions).forEach((key) => {
+      Object.defineProperty(ctx, key, {
+        enumerable: true,
+        configurable: true,
+        get: () => instance.props[key],
+        set: runtime_core_esm_bundler_NOOP
+      });
+    });
+  }
+}
+function exposeSetupStateOnRenderContext(instance) {
+  const { ctx, setupState } = instance;
+  Object.keys(runtime_core_esm_bundler_toRaw(setupState)).forEach((key) => {
+    if (!setupState.__isScriptSetup) {
+      if (isReservedPrefix(key[0])) {
+        warn$1(
+          `setup() return property ${JSON.stringify(
+            key
+          )} should not start with "$" or "_" which are reserved prefixes for Vue internals.`
+        );
+        return;
+      }
+      Object.defineProperty(ctx, key, {
+        enumerable: true,
+        configurable: true,
+        get: () => setupState[key],
+        set: runtime_core_esm_bundler_NOOP
+      });
+    }
+  });
+}
+
+const warnRuntimeUsage = (method) => warn$1(
+  `${method}() is a compiler-hint helper that is only usable inside <script setup> of a single file component. Its arguments should be compiled away and passing it at runtime has no effect.`
+);
+function defineProps() {
+  if (false) // removed by dead control flow
+{}
+  return null;
+}
+function defineEmits() {
+  if (false) // removed by dead control flow
+{}
+  return null;
+}
+function defineExpose(exposed) {
+  if (false) // removed by dead control flow
+{}
+}
+function defineOptions(options) {
+  if (false) // removed by dead control flow
+{}
+}
+function defineSlots() {
+  if (false) // removed by dead control flow
+{}
+  return null;
+}
+function defineModel() {
+  if (false) // removed by dead control flow
+{}
+}
+function withDefaults(props, defaults) {
+  if (false) // removed by dead control flow
+{}
+  return null;
+}
+function useSlots() {
+  return getContext().slots;
+}
+function useAttrs() {
+  return getContext().attrs;
+}
+function getContext() {
+  const i = getCurrentInstance();
+  if (false) // removed by dead control flow
+{}
+  return i.setupContext || (i.setupContext = createSetupContext(i));
+}
+function normalizePropsOrEmits(props) {
+  return isArray(props) ? props.reduce(
+    (normalized, p) => (normalized[p] = null, normalized),
+    {}
+  ) : props;
+}
+function mergeDefaults(raw, defaults) {
+  const props = normalizePropsOrEmits(raw);
+  for (const key in defaults) {
+    if (key.startsWith("__skip")) continue;
+    let opt = props[key];
+    if (opt) {
+      if (runtime_core_esm_bundler_isArray(opt) || runtime_core_esm_bundler_isFunction(opt)) {
+        opt = props[key] = { type: opt, default: defaults[key] };
+      } else {
+        opt.default = defaults[key];
+      }
+    } else if (opt === null) {
+      opt = props[key] = { default: defaults[key] };
+    } else if (false) // removed by dead control flow
+{}
+    if (opt && defaults[`__skip_${key}`]) {
+      opt.skipFactory = true;
+    }
+  }
+  return props;
+}
+function mergeModels(a, b) {
+  if (!a || !b) return a || b;
+  if (runtime_core_esm_bundler_isArray(a) && runtime_core_esm_bundler_isArray(b)) return a.concat(b);
+  return runtime_core_esm_bundler_extend({}, normalizePropsOrEmits(a), normalizePropsOrEmits(b));
+}
+function createPropsRestProxy(props, excludedKeys) {
+  const ret = {};
+  for (const key in props) {
+    if (!excludedKeys.includes(key)) {
+      Object.defineProperty(ret, key, {
+        enumerable: true,
+        get: () => props[key]
+      });
+    }
+  }
+  return ret;
+}
+function withAsyncContext(getAwaitable) {
+  const ctx = getCurrentInstance();
+  if (false) // removed by dead control flow
+{}
+  let awaitable = getAwaitable();
+  unsetCurrentInstance();
+  if (runtime_core_esm_bundler_isPromise(awaitable)) {
+    awaitable = awaitable.catch((e) => {
+      setCurrentInstance(ctx);
+      throw e;
+    });
+  }
+  return [awaitable, () => setCurrentInstance(ctx)];
+}
+
+function createDuplicateChecker() {
+  const cache = /* @__PURE__ */ Object.create(null);
+  return (type, key) => {
+    if (cache[key]) {
+      warn$1(`${type} property "${key}" is already defined in ${cache[key]}.`);
+    } else {
+      cache[key] = type;
+    }
+  };
+}
+let shouldCacheAccess = true;
+function applyOptions(instance) {
+  const options = resolveMergedOptions(instance);
+  const publicThis = instance.proxy;
+  const ctx = instance.ctx;
+  shouldCacheAccess = false;
+  if (options.beforeCreate) {
+    callHook(options.beforeCreate, instance, "bc");
+  }
+  const {
+    // state
+    data: dataOptions,
+    computed: computedOptions,
+    methods,
+    watch: watchOptions,
+    provide: provideOptions,
+    inject: injectOptions,
+    // lifecycle
+    created,
+    beforeMount,
+    mounted,
+    beforeUpdate,
+    updated,
+    activated,
+    deactivated,
+    beforeDestroy,
+    beforeUnmount,
+    destroyed,
+    unmounted,
+    render,
+    renderTracked,
+    renderTriggered,
+    errorCaptured,
+    serverPrefetch,
+    // public API
+    expose,
+    inheritAttrs,
+    // assets
+    components,
+    directives,
+    filters
+  } = options;
+  const checkDuplicateProperties =  false ? 0 : null;
+  if (false) // removed by dead control flow
+{}
+  if (injectOptions) {
+    resolveInjections(injectOptions, ctx, checkDuplicateProperties);
+  }
+  if (methods) {
+    for (const key in methods) {
+      const methodHandler = methods[key];
+      if (isFunction(methodHandler)) {
+        if (false) // removed by dead control flow
+{} else {
+          ctx[key] = methodHandler.bind(publicThis);
+        }
+        if (false) // removed by dead control flow
+{}
+      } else if (false) // removed by dead control flow
+{}
+    }
+  }
+  if (dataOptions) {
+    if (false) // removed by dead control flow
+{}
+    const data = dataOptions.call(publicThis, publicThis);
+    if (false) // removed by dead control flow
+{}
+    if (!isObject(data)) {
+       false && 0;
+    } else {
+      instance.data = reactive(data);
+      if (false) // removed by dead control flow
+{}
+    }
+  }
+  shouldCacheAccess = true;
+  if (computedOptions) {
+    for (const key in computedOptions) {
+      const opt = computedOptions[key];
+      const get = isFunction(opt) ? opt.bind(publicThis, publicThis) : isFunction(opt.get) ? opt.get.bind(publicThis, publicThis) : NOOP;
+      if (false) // removed by dead control flow
+{}
+      const set = !isFunction(opt) && isFunction(opt.set) ? opt.set.bind(publicThis) :  false ? 0 : NOOP;
+      const c = runtime_core_esm_bundler_computed({
+        get,
+        set
+      });
+      Object.defineProperty(ctx, key, {
+        enumerable: true,
+        configurable: true,
+        get: () => c.value,
+        set: (v) => c.value = v
+      });
+      if (false) // removed by dead control flow
+{}
+    }
+  }
+  if (watchOptions) {
+    for (const key in watchOptions) {
+      createWatcher(watchOptions[key], ctx, publicThis, key);
+    }
+  }
+  if (provideOptions) {
+    const provides = isFunction(provideOptions) ? provideOptions.call(publicThis) : provideOptions;
+    Reflect.ownKeys(provides).forEach((key) => {
+      provide(key, provides[key]);
+    });
+  }
+  if (created) {
+    callHook(created, instance, "c");
+  }
+  function registerLifecycleHook(register, hook) {
+    if (isArray(hook)) {
+      hook.forEach((_hook) => register(_hook.bind(publicThis)));
+    } else if (hook) {
+      register(hook.bind(publicThis));
+    }
+  }
+  registerLifecycleHook(onBeforeMount, beforeMount);
+  registerLifecycleHook(onMounted, mounted);
+  registerLifecycleHook(onBeforeUpdate, beforeUpdate);
+  registerLifecycleHook(onUpdated, updated);
+  registerLifecycleHook(onActivated, activated);
+  registerLifecycleHook(onDeactivated, deactivated);
+  registerLifecycleHook(onErrorCaptured, errorCaptured);
+  registerLifecycleHook(onRenderTracked, renderTracked);
+  registerLifecycleHook(onRenderTriggered, renderTriggered);
+  registerLifecycleHook(onBeforeUnmount, beforeUnmount);
+  registerLifecycleHook(onUnmounted, unmounted);
+  registerLifecycleHook(onServerPrefetch, serverPrefetch);
+  if (isArray(expose)) {
+    if (expose.length) {
+      const exposed = instance.exposed || (instance.exposed = {});
+      expose.forEach((key) => {
+        Object.defineProperty(exposed, key, {
+          get: () => publicThis[key],
+          set: (val) => publicThis[key] = val
+        });
+      });
+    } else if (!instance.exposed) {
+      instance.exposed = {};
+    }
+  }
+  if (render && instance.render === NOOP) {
+    instance.render = render;
+  }
+  if (inheritAttrs != null) {
+    instance.inheritAttrs = inheritAttrs;
+  }
+  if (components) instance.components = components;
+  if (directives) instance.directives = directives;
+  if (serverPrefetch) {
+    markAsyncBoundary(instance);
+  }
+}
+function resolveInjections(injectOptions, ctx, checkDuplicateProperties = NOOP) {
+  if (isArray(injectOptions)) {
+    injectOptions = normalizeInject(injectOptions);
+  }
+  for (const key in injectOptions) {
+    const opt = injectOptions[key];
+    let injected;
+    if (isObject(opt)) {
+      if ("default" in opt) {
+        injected = inject(
+          opt.from || key,
+          opt.default,
+          true
+        );
+      } else {
+        injected = inject(opt.from || key);
+      }
+    } else {
+      injected = inject(opt);
+    }
+    if (reactivity_esm_bundler_isRef(injected)) {
+      Object.defineProperty(ctx, key, {
+        enumerable: true,
+        configurable: true,
+        get: () => injected.value,
+        set: (v) => injected.value = v
+      });
+    } else {
+      ctx[key] = injected;
+    }
+    if (false) // removed by dead control flow
+{}
+  }
+}
+function callHook(hook, instance, type) {
+  callWithAsyncErrorHandling(
+    isArray(hook) ? hook.map((h) => h.bind(instance.proxy)) : hook.bind(instance.proxy),
+    instance,
+    type
+  );
+}
+function createWatcher(raw, ctx, publicThis, key) {
+  let getter = key.includes(".") ? createPathGetter(publicThis, key) : () => publicThis[key];
+  if (isString(raw)) {
+    const handler = ctx[raw];
+    if (isFunction(handler)) {
+      {
+        runtime_core_esm_bundler_watch(getter, handler);
+      }
+    } else if (false) // removed by dead control flow
+{}
+  } else if (isFunction(raw)) {
+    {
+      runtime_core_esm_bundler_watch(getter, raw.bind(publicThis));
+    }
+  } else if (isObject(raw)) {
+    if (isArray(raw)) {
+      raw.forEach((r) => createWatcher(r, ctx, publicThis, key));
+    } else {
+      const handler = isFunction(raw.handler) ? raw.handler.bind(publicThis) : ctx[raw.handler];
+      if (isFunction(handler)) {
+        runtime_core_esm_bundler_watch(getter, handler, raw);
+      } else if (false) // removed by dead control flow
+{}
+    }
+  } else if (false) // removed by dead control flow
+{}
+}
+function resolveMergedOptions(instance) {
+  const base = instance.type;
+  const { mixins, extends: extendsOptions } = base;
+  const {
+    mixins: globalMixins,
+    optionsCache: cache,
+    config: { optionMergeStrategies }
+  } = instance.appContext;
+  const cached = cache.get(base);
+  let resolved;
+  if (cached) {
+    resolved = cached;
+  } else if (!globalMixins.length && !mixins && !extendsOptions) {
+    {
+      resolved = base;
+    }
+  } else {
+    resolved = {};
+    if (globalMixins.length) {
+      globalMixins.forEach(
+        (m) => mergeOptions(resolved, m, optionMergeStrategies, true)
+      );
+    }
+    mergeOptions(resolved, base, optionMergeStrategies);
+  }
+  if (isObject(base)) {
+    cache.set(base, resolved);
+  }
+  return resolved;
+}
+function mergeOptions(to, from, strats, asMixin = false) {
+  const { mixins, extends: extendsOptions } = from;
+  if (extendsOptions) {
+    mergeOptions(to, extendsOptions, strats, true);
+  }
+  if (mixins) {
+    mixins.forEach(
+      (m) => mergeOptions(to, m, strats, true)
+    );
+  }
+  for (const key in from) {
+    if (asMixin && key === "expose") {
+       false && 0;
+    } else {
+      const strat = internalOptionMergeStrats[key] || strats && strats[key];
+      to[key] = strat ? strat(to[key], from[key]) : from[key];
+    }
+  }
+  return to;
+}
+const internalOptionMergeStrats = {
+  data: mergeDataFn,
+  props: mergeEmitsOrPropsOptions,
+  emits: mergeEmitsOrPropsOptions,
+  // objects
+  methods: mergeObjectOptions,
+  computed: mergeObjectOptions,
+  // lifecycle
+  beforeCreate: mergeAsArray,
+  created: mergeAsArray,
+  beforeMount: mergeAsArray,
+  mounted: mergeAsArray,
+  beforeUpdate: mergeAsArray,
+  updated: mergeAsArray,
+  beforeDestroy: mergeAsArray,
+  beforeUnmount: mergeAsArray,
+  destroyed: mergeAsArray,
+  unmounted: mergeAsArray,
+  activated: mergeAsArray,
+  deactivated: mergeAsArray,
+  errorCaptured: mergeAsArray,
+  serverPrefetch: mergeAsArray,
+  // assets
+  components: mergeObjectOptions,
+  directives: mergeObjectOptions,
+  // watch
+  watch: mergeWatchOptions,
+  // provide / inject
+  provide: mergeDataFn,
+  inject: mergeInject
+};
+function mergeDataFn(to, from) {
+  if (!from) {
+    return to;
+  }
+  if (!to) {
+    return from;
+  }
+  return function mergedDataFn() {
+    return (extend)(
+      isFunction(to) ? to.call(this, this) : to,
+      isFunction(from) ? from.call(this, this) : from
+    );
+  };
+}
+function mergeInject(to, from) {
+  return mergeObjectOptions(normalizeInject(to), normalizeInject(from));
+}
+function normalizeInject(raw) {
+  if (isArray(raw)) {
+    const res = {};
+    for (let i = 0; i < raw.length; i++) {
+      res[raw[i]] = raw[i];
+    }
+    return res;
+  }
+  return raw;
+}
+function mergeAsArray(to, from) {
+  return to ? [...new Set([].concat(to, from))] : from;
+}
+function mergeObjectOptions(to, from) {
+  return to ? extend(/* @__PURE__ */ Object.create(null), to, from) : from;
+}
+function mergeEmitsOrPropsOptions(to, from) {
+  if (to) {
+    if (isArray(to) && isArray(from)) {
+      return [.../* @__PURE__ */ new Set([...to, ...from])];
+    }
+    return extend(
+      /* @__PURE__ */ Object.create(null),
+      normalizePropsOrEmits(to),
+      normalizePropsOrEmits(from != null ? from : {})
+    );
+  } else {
+    return from;
+  }
+}
+function mergeWatchOptions(to, from) {
+  if (!to) return from;
+  if (!from) return to;
+  const merged = extend(/* @__PURE__ */ Object.create(null), to);
+  for (const key in from) {
+    merged[key] = mergeAsArray(to[key], from[key]);
+  }
+  return merged;
+}
+
+function createAppContext() {
+  return {
+    app: null,
+    config: {
+      isNativeTag: NO,
+      performance: false,
+      globalProperties: {},
+      optionMergeStrategies: {},
+      errorHandler: void 0,
+      warnHandler: void 0,
+      compilerOptions: {}
+    },
+    mixins: [],
+    components: {},
+    directives: {},
+    provides: /* @__PURE__ */ Object.create(null),
+    optionsCache: /* @__PURE__ */ new WeakMap(),
+    propsCache: /* @__PURE__ */ new WeakMap(),
+    emitsCache: /* @__PURE__ */ new WeakMap()
+  };
+}
+let uid$1 = 0;
+function createAppAPI(render, hydrate) {
+  return function createApp(rootComponent, rootProps = null) {
+    if (!runtime_core_esm_bundler_isFunction(rootComponent)) {
+      rootComponent = runtime_core_esm_bundler_extend({}, rootComponent);
+    }
+    if (rootProps != null && !runtime_core_esm_bundler_isObject(rootProps)) {
+       false && 0;
+      rootProps = null;
+    }
+    const context = createAppContext();
+    const installedPlugins = /* @__PURE__ */ new WeakSet();
+    const pluginCleanupFns = [];
+    let isMounted = false;
+    const app = context.app = {
+      _uid: uid$1++,
+      _component: rootComponent,
+      _props: rootProps,
+      _container: null,
+      _context: context,
+      _instance: null,
+      version,
+      get config() {
+        return context.config;
+      },
+      set config(v) {
+        if (false) // removed by dead control flow
+{}
+      },
+      use(plugin, ...options) {
+        if (installedPlugins.has(plugin)) {
+           false && 0;
+        } else if (plugin && runtime_core_esm_bundler_isFunction(plugin.install)) {
+          installedPlugins.add(plugin);
+          plugin.install(app, ...options);
+        } else if (runtime_core_esm_bundler_isFunction(plugin)) {
+          installedPlugins.add(plugin);
+          plugin(app, ...options);
+        } else if (false) // removed by dead control flow
+{}
+        return app;
+      },
+      mixin(mixin) {
+        if (__VUE_OPTIONS_API__) {
+          if (!context.mixins.includes(mixin)) {
+            context.mixins.push(mixin);
+          } else if (false) // removed by dead control flow
+{}
+        } else if (false) // removed by dead control flow
+{}
+        return app;
+      },
+      component(name, component) {
+        if (false) // removed by dead control flow
+{}
+        if (!component) {
+          return context.components[name];
+        }
+        if (false) // removed by dead control flow
+{}
+        context.components[name] = component;
+        return app;
+      },
+      directive(name, directive) {
+        if (false) // removed by dead control flow
+{}
+        if (!directive) {
+          return context.directives[name];
+        }
+        if (false) // removed by dead control flow
+{}
+        context.directives[name] = directive;
+        return app;
+      },
+      mount(rootContainer, isHydrate, namespace) {
+        if (!isMounted) {
+          if (false) // removed by dead control flow
+{}
+          const vnode = app._ceVNode || createVNode(rootComponent, rootProps);
+          vnode.appContext = context;
+          if (namespace === true) {
+            namespace = "svg";
+          } else if (namespace === false) {
+            namespace = void 0;
+          }
+          if (false) // removed by dead control flow
+{}
+          if (isHydrate && hydrate) {
+            hydrate(vnode, rootContainer);
+          } else {
+            render(vnode, rootContainer, namespace);
+          }
+          isMounted = true;
+          app._container = rootContainer;
+          rootContainer.__vue_app__ = app;
+          if ( false || __VUE_PROD_DEVTOOLS__) {
+            app._instance = vnode.component;
+            devtoolsInitApp(app, version);
+          }
+          return getComponentPublicInstance(vnode.component);
+        } else if (false) // removed by dead control flow
+{}
+      },
+      onUnmount(cleanupFn) {
+        if (false) // removed by dead control flow
+{}
+        pluginCleanupFns.push(cleanupFn);
+      },
+      unmount() {
+        if (isMounted) {
+          callWithAsyncErrorHandling(
+            pluginCleanupFns,
+            app._instance,
+            16
+          );
+          render(null, app._container);
+          if ( false || __VUE_PROD_DEVTOOLS__) {
+            app._instance = null;
+            devtoolsUnmountApp(app);
+          }
+          delete app._container.__vue_app__;
+        } else if (false) // removed by dead control flow
+{}
+      },
+      provide(key, value) {
+        if (false) // removed by dead control flow
+{}
+        context.provides[key] = value;
+        return app;
+      },
+      runWithContext(fn) {
+        const lastApp = currentApp;
+        currentApp = app;
+        try {
+          return fn();
+        } finally {
+          currentApp = lastApp;
+        }
+      }
+    };
+    return app;
+  };
+}
+let currentApp = null;
+
+function provide(key, value) {
+  if (!currentInstance) {
+    if (false) // removed by dead control flow
+{}
+  } else {
+    let provides = currentInstance.provides;
+    const parentProvides = currentInstance.parent && currentInstance.parent.provides;
+    if (parentProvides === provides) {
+      provides = currentInstance.provides = Object.create(parentProvides);
+    }
+    provides[key] = value;
+  }
+}
+function inject(key, defaultValue, treatDefaultAsFactory = false) {
+  const instance = currentInstance || currentRenderingInstance;
+  if (instance || currentApp) {
+    let provides = currentApp ? currentApp._context.provides : instance ? instance.parent == null || instance.ce ? instance.vnode.appContext && instance.vnode.appContext.provides : instance.parent.provides : void 0;
+    if (provides && key in provides) {
+      return provides[key];
+    } else if (arguments.length > 1) {
+      return treatDefaultAsFactory && isFunction(defaultValue) ? defaultValue.call(instance && instance.proxy) : defaultValue;
+    } else if (false) // removed by dead control flow
+{}
+  } else if (false) // removed by dead control flow
+{}
+}
+function hasInjectionContext() {
+  return !!(currentInstance || currentRenderingInstance || currentApp);
+}
+
+const internalObjectProto = {};
+const createInternalObject = () => Object.create(internalObjectProto);
+const isInternalObject = (obj) => Object.getPrototypeOf(obj) === internalObjectProto;
+
+function initProps(instance, rawProps, isStateful, isSSR = false) {
+  const props = {};
+  const attrs = createInternalObject();
+  instance.propsDefaults = /* @__PURE__ */ Object.create(null);
+  setFullProps(instance, rawProps, props, attrs);
+  for (const key in instance.propsOptions[0]) {
+    if (!(key in props)) {
+      props[key] = void 0;
+    }
+  }
+  if (false) // removed by dead control flow
+{}
+  if (isStateful) {
+    instance.props = isSSR ? props : shallowReactive(props);
+  } else {
+    if (!instance.type.props) {
+      instance.props = attrs;
+    } else {
+      instance.props = props;
+    }
+  }
+  instance.attrs = attrs;
+}
+function isInHmrContext(instance) {
+  while (instance) {
+    if (instance.type.__hmrId) return true;
+    instance = instance.parent;
+  }
+}
+function updateProps(instance, rawProps, rawPrevProps, optimized) {
+  const {
+    props,
+    attrs,
+    vnode: { patchFlag }
+  } = instance;
+  const rawCurrentProps = runtime_core_esm_bundler_toRaw(props);
+  const [options] = instance.propsOptions;
+  let hasAttrsChanged = false;
+  if (
+    // always force full diff in dev
+    // - #1942 if hmr is enabled with sfc component
+    // - vite#872 non-sfc component used by sfc component
+     true && (optimized || patchFlag > 0) && !(patchFlag & 16)
+  ) {
+    if (patchFlag & 8) {
+      const propsToUpdate = instance.vnode.dynamicProps;
+      for (let i = 0; i < propsToUpdate.length; i++) {
+        let key = propsToUpdate[i];
+        if (isEmitListener(instance.emitsOptions, key)) {
+          continue;
+        }
+        const value = rawProps[key];
+        if (options) {
+          if (runtime_core_esm_bundler_hasOwn(attrs, key)) {
+            if (value !== attrs[key]) {
+              attrs[key] = value;
+              hasAttrsChanged = true;
+            }
+          } else {
+            const camelizedKey = runtime_core_esm_bundler_camelize(key);
+            props[camelizedKey] = resolvePropValue(
+              options,
+              rawCurrentProps,
+              camelizedKey,
+              value,
+              instance,
+              false
+            );
+          }
+        } else {
+          if (value !== attrs[key]) {
+            attrs[key] = value;
+            hasAttrsChanged = true;
+          }
+        }
+      }
+    }
+  } else {
+    if (setFullProps(instance, rawProps, props, attrs)) {
+      hasAttrsChanged = true;
+    }
+    let kebabKey;
+    for (const key in rawCurrentProps) {
+      if (!rawProps || // for camelCase
+      !runtime_core_esm_bundler_hasOwn(rawProps, key) && // it's possible the original props was passed in as kebab-case
+      // and converted to camelCase (#955)
+      ((kebabKey = runtime_core_esm_bundler_hyphenate(key)) === key || !runtime_core_esm_bundler_hasOwn(rawProps, kebabKey))) {
+        if (options) {
+          if (rawPrevProps && // for camelCase
+          (rawPrevProps[key] !== void 0 || // for kebab-case
+          rawPrevProps[kebabKey] !== void 0)) {
+            props[key] = resolvePropValue(
+              options,
+              rawCurrentProps,
+              key,
+              void 0,
+              instance,
+              true
+            );
+          }
+        } else {
+          delete props[key];
+        }
+      }
+    }
+    if (attrs !== rawCurrentProps) {
+      for (const key in attrs) {
+        if (!rawProps || !runtime_core_esm_bundler_hasOwn(rawProps, key) && true) {
+          delete attrs[key];
+          hasAttrsChanged = true;
+        }
+      }
+    }
+  }
+  if (hasAttrsChanged) {
+    runtime_core_esm_bundler_trigger(instance.attrs, "set", "");
+  }
+  if (false) // removed by dead control flow
+{}
+}
+function setFullProps(instance, rawProps, props, attrs) {
+  const [options, needCastKeys] = instance.propsOptions;
+  let hasAttrsChanged = false;
+  let rawCastValues;
+  if (rawProps) {
+    for (let key in rawProps) {
+      if (isReservedProp(key)) {
+        continue;
+      }
+      const value = rawProps[key];
+      let camelKey;
+      if (options && hasOwn(options, camelKey = camelize(key))) {
+        if (!needCastKeys || !needCastKeys.includes(camelKey)) {
+          props[camelKey] = value;
+        } else {
+          (rawCastValues || (rawCastValues = {}))[camelKey] = value;
+        }
+      } else if (!isEmitListener(instance.emitsOptions, key)) {
+        if (!(key in attrs) || value !== attrs[key]) {
+          attrs[key] = value;
+          hasAttrsChanged = true;
+        }
+      }
+    }
+  }
+  if (needCastKeys) {
+    const rawCurrentProps = toRaw(props);
+    const castValues = rawCastValues || EMPTY_OBJ;
+    for (let i = 0; i < needCastKeys.length; i++) {
+      const key = needCastKeys[i];
+      props[key] = resolvePropValue(
+        options,
+        rawCurrentProps,
+        key,
+        castValues[key],
+        instance,
+        !hasOwn(castValues, key)
+      );
+    }
+  }
+  return hasAttrsChanged;
+}
+function resolvePropValue(options, props, key, value, instance, isAbsent) {
+  const opt = options[key];
+  if (opt != null) {
+    const hasDefault = hasOwn(opt, "default");
+    if (hasDefault && value === void 0) {
+      const defaultValue = opt.default;
+      if (opt.type !== Function && !opt.skipFactory && isFunction(defaultValue)) {
+        const { propsDefaults } = instance;
+        if (key in propsDefaults) {
+          value = propsDefaults[key];
+        } else {
+          const reset = setCurrentInstance(instance);
+          value = propsDefaults[key] = defaultValue.call(
+            null,
+            props
+          );
+          reset();
+        }
+      } else {
+        value = defaultValue;
+      }
+      if (instance.ce) {
+        instance.ce._setProp(key, value);
+      }
+    }
+    if (opt[0 /* shouldCast */]) {
+      if (isAbsent && !hasDefault) {
+        value = false;
+      } else if (opt[1 /* shouldCastTrue */] && (value === "" || value === hyphenate(key))) {
+        value = true;
+      }
+    }
+  }
+  return value;
+}
+const mixinPropsCache = /* @__PURE__ */ new WeakMap();
+function normalizePropsOptions(comp, appContext, asMixin = false) {
+  const cache = __VUE_OPTIONS_API__ && asMixin ? mixinPropsCache : appContext.propsCache;
+  const cached = cache.get(comp);
+  if (cached) {
+    return cached;
+  }
+  const raw = comp.props;
+  const normalized = {};
+  const needCastKeys = [];
+  let hasExtends = false;
+  if (__VUE_OPTIONS_API__ && !isFunction(comp)) {
+    const extendProps = (raw2) => {
+      hasExtends = true;
+      const [props, keys] = normalizePropsOptions(raw2, appContext, true);
+      extend(normalized, props);
+      if (keys) needCastKeys.push(...keys);
+    };
+    if (!asMixin && appContext.mixins.length) {
+      appContext.mixins.forEach(extendProps);
+    }
+    if (comp.extends) {
+      extendProps(comp.extends);
+    }
+    if (comp.mixins) {
+      comp.mixins.forEach(extendProps);
+    }
+  }
+  if (!raw && !hasExtends) {
+    if (isObject(comp)) {
+      cache.set(comp, EMPTY_ARR);
+    }
+    return EMPTY_ARR;
+  }
+  if (isArray(raw)) {
+    for (let i = 0; i < raw.length; i++) {
+      if (false) // removed by dead control flow
+{}
+      const normalizedKey = camelize(raw[i]);
+      if (validatePropName(normalizedKey)) {
+        normalized[normalizedKey] = EMPTY_OBJ;
+      }
+    }
+  } else if (raw) {
+    if (false) // removed by dead control flow
+{}
+    for (const key in raw) {
+      const normalizedKey = camelize(key);
+      if (validatePropName(normalizedKey)) {
+        const opt = raw[key];
+        const prop = normalized[normalizedKey] = isArray(opt) || isFunction(opt) ? { type: opt } : extend({}, opt);
+        const propType = prop.type;
+        let shouldCast = false;
+        let shouldCastTrue = true;
+        if (isArray(propType)) {
+          for (let index = 0; index < propType.length; ++index) {
+            const type = propType[index];
+            const typeName = isFunction(type) && type.name;
+            if (typeName === "Boolean") {
+              shouldCast = true;
+              break;
+            } else if (typeName === "String") {
+              shouldCastTrue = false;
+            }
+          }
+        } else {
+          shouldCast = isFunction(propType) && propType.name === "Boolean";
+        }
+        prop[0 /* shouldCast */] = shouldCast;
+        prop[1 /* shouldCastTrue */] = shouldCastTrue;
+        if (shouldCast || hasOwn(prop, "default")) {
+          needCastKeys.push(normalizedKey);
+        }
+      }
+    }
+  }
+  const res = [normalized, needCastKeys];
+  if (isObject(comp)) {
+    cache.set(comp, res);
+  }
+  return res;
+}
+function validatePropName(key) {
+  if (key[0] !== "$" && !isReservedProp(key)) {
+    return true;
+  } else if (false) // removed by dead control flow
+{}
+  return false;
+}
+function getType(ctor) {
+  if (ctor === null) {
+    return "null";
+  }
+  if (typeof ctor === "function") {
+    return ctor.name || "";
+  } else if (typeof ctor === "object") {
+    const name = ctor.constructor && ctor.constructor.name;
+    return name || "";
+  }
+  return "";
+}
+function validateProps(rawProps, props, instance) {
+  const resolvedValues = runtime_core_esm_bundler_toRaw(props);
+  const options = instance.propsOptions[0];
+  const camelizePropsKey = Object.keys(rawProps).map((key) => runtime_core_esm_bundler_camelize(key));
+  for (const key in options) {
+    let opt = options[key];
+    if (opt == null) continue;
+    validateProp(
+      key,
+      resolvedValues[key],
+      opt,
+       false ? 0 : resolvedValues,
+      !camelizePropsKey.includes(key)
+    );
+  }
+}
+function validateProp(name, value, prop, props, isAbsent) {
+  const { type, required, validator, skipCheck } = prop;
+  if (required && isAbsent) {
+    warn$1('Missing required prop: "' + name + '"');
+    return;
+  }
+  if (value == null && !required) {
+    return;
+  }
+  if (type != null && type !== true && !skipCheck) {
+    let isValid = false;
+    const types = runtime_core_esm_bundler_isArray(type) ? type : [type];
+    const expectedTypes = [];
+    for (let i = 0; i < types.length && !isValid; i++) {
+      const { valid, expectedType } = assertType(value, types[i]);
+      expectedTypes.push(expectedType || "");
+      isValid = valid;
+    }
+    if (!isValid) {
+      warn$1(getInvalidTypeMessage(name, value, expectedTypes));
+      return;
+    }
+  }
+  if (validator && !validator(value, props)) {
+    warn$1('Invalid prop: custom validator check failed for prop "' + name + '".');
+  }
+}
+const isSimpleType = /* @__PURE__ */ (/* unused pure expression or super */ null && (runtime_core_esm_bundler_makeMap(
+  "String,Number,Boolean,Function,Symbol,BigInt"
+)));
+function assertType(value, type) {
+  let valid;
+  const expectedType = getType(type);
+  if (expectedType === "null") {
+    valid = value === null;
+  } else if (isSimpleType(expectedType)) {
+    const t = typeof value;
+    valid = t === expectedType.toLowerCase();
+    if (!valid && t === "object") {
+      valid = value instanceof type;
+    }
+  } else if (expectedType === "Object") {
+    valid = runtime_core_esm_bundler_isObject(value);
+  } else if (expectedType === "Array") {
+    valid = runtime_core_esm_bundler_isArray(value);
+  } else {
+    valid = value instanceof type;
+  }
+  return {
+    valid,
+    expectedType
+  };
+}
+function getInvalidTypeMessage(name, value, expectedTypes) {
+  if (expectedTypes.length === 0) {
+    return `Prop type [] for prop "${name}" won't match anything. Did you mean to use type Array instead?`;
+  }
+  let message = `Invalid prop: type check failed for prop "${name}". Expected ${expectedTypes.map(runtime_core_esm_bundler_capitalize).join(" | ")}`;
+  const expectedType = expectedTypes[0];
+  const receivedType = runtime_core_esm_bundler_toRawType(value);
+  const expectedValue = styleValue(value, expectedType);
+  const receivedValue = styleValue(value, receivedType);
+  if (expectedTypes.length === 1 && isExplicable(expectedType) && !isBoolean(expectedType, receivedType)) {
+    message += ` with value ${expectedValue}`;
+  }
+  message += `, got ${receivedType} `;
+  if (isExplicable(receivedType)) {
+    message += `with value ${receivedValue}.`;
+  }
+  return message;
+}
+function styleValue(value, type) {
+  if (type === "String") {
+    return `"${value}"`;
+  } else if (type === "Number") {
+    return `${Number(value)}`;
+  } else {
+    return `${value}`;
+  }
+}
+function isExplicable(type) {
+  const explicitTypes = ["string", "number", "boolean"];
+  return explicitTypes.some((elem) => type.toLowerCase() === elem);
+}
+function isBoolean(...args) {
+  return args.some((elem) => elem.toLowerCase() === "boolean");
+}
+
+const isInternalKey = (key) => key[0] === "_" || key === "$stable";
+const normalizeSlotValue = (value) => isArray(value) ? value.map(normalizeVNode) : [normalizeVNode(value)];
+const normalizeSlot = (key, rawSlot, ctx) => {
+  if (rawSlot._n) {
+    return rawSlot;
+  }
+  const normalized = withCtx((...args) => {
+    if (false) // removed by dead control flow
+{}
+    return normalizeSlotValue(rawSlot(...args));
+  }, ctx);
+  normalized._c = false;
+  return normalized;
+};
+const normalizeObjectSlots = (rawSlots, slots, instance) => {
+  const ctx = rawSlots._ctx;
+  for (const key in rawSlots) {
+    if (isInternalKey(key)) continue;
+    const value = rawSlots[key];
+    if (isFunction(value)) {
+      slots[key] = normalizeSlot(key, value, ctx);
+    } else if (value != null) {
+      if (false) // removed by dead control flow
+{}
+      const normalized = normalizeSlotValue(value);
+      slots[key] = () => normalized;
+    }
+  }
+};
+const normalizeVNodeSlots = (instance, children) => {
+  if (false) // removed by dead control flow
+{}
+  const normalized = normalizeSlotValue(children);
+  instance.slots.default = () => normalized;
+};
+const assignSlots = (slots, children, optimized) => {
+  for (const key in children) {
+    if (optimized || !isInternalKey(key)) {
+      slots[key] = children[key];
+    }
+  }
+};
+const initSlots = (instance, children, optimized) => {
+  const slots = instance.slots = createInternalObject();
+  if (instance.vnode.shapeFlag & 32) {
+    const cacheIndexes = children.__;
+    if (cacheIndexes) def(slots, "__", cacheIndexes, true);
+    const type = children._;
+    if (type) {
+      assignSlots(slots, children, optimized);
+      if (optimized) {
+        def(slots, "_", type, true);
+      }
+    } else {
+      normalizeObjectSlots(children, slots);
+    }
+  } else if (children) {
+    normalizeVNodeSlots(instance, children);
+  }
+};
+const updateSlots = (instance, children, optimized) => {
+  const { vnode, slots } = instance;
+  let needDeletionCheck = true;
+  let deletionComparisonTarget = runtime_core_esm_bundler_EMPTY_OBJ;
+  if (vnode.shapeFlag & 32) {
+    const type = children._;
+    if (type) {
+      if (false) // removed by dead control flow
+{} else if (optimized && type === 1) {
+        needDeletionCheck = false;
+      } else {
+        assignSlots(slots, children, optimized);
+      }
+    } else {
+      needDeletionCheck = !children.$stable;
+      normalizeObjectSlots(children, slots);
+    }
+    deletionComparisonTarget = children;
+  } else if (children) {
+    normalizeVNodeSlots(instance, children);
+    deletionComparisonTarget = { default: 1 };
+  }
+  if (needDeletionCheck) {
+    for (const key in slots) {
+      if (!isInternalKey(key) && deletionComparisonTarget[key] == null) {
+        delete slots[key];
+      }
+    }
+  }
+};
+
+let supported;
+let perf;
+function startMeasure(instance, type) {
+  if (instance.appContext.config.performance && isSupported()) {
+    perf.mark(`vue-${type}-${instance.uid}`);
+  }
+  if ( false || __VUE_PROD_DEVTOOLS__) {
+    devtoolsPerfStart(instance, type, isSupported() ? perf.now() : Date.now());
+  }
+}
+function endMeasure(instance, type) {
+  if (instance.appContext.config.performance && isSupported()) {
+    const startTag = `vue-${type}-${instance.uid}`;
+    const endTag = startTag + `:end`;
+    perf.mark(endTag);
+    perf.measure(
+      `<${formatComponentName(instance, instance.type)}> ${type}`,
+      startTag,
+      endTag
+    );
+    perf.clearMarks(startTag);
+    perf.clearMarks(endTag);
+  }
+  if ( false || __VUE_PROD_DEVTOOLS__) {
+    devtoolsPerfEnd(instance, type, isSupported() ? perf.now() : Date.now());
+  }
+}
+function isSupported() {
+  if (supported !== void 0) {
+    return supported;
+  }
+  if (typeof window !== "undefined" && window.performance) {
+    supported = true;
+    perf = window.performance;
+  } else {
+    supported = false;
+  }
+  return supported;
+}
+
+function initFeatureFlags() {
+  const needWarn = [];
+  if (typeof __VUE_OPTIONS_API__ !== "boolean") {
+     false && 0;
+    runtime_core_esm_bundler_getGlobalThis().__VUE_OPTIONS_API__ = true;
+  }
+  if (typeof __VUE_PROD_DEVTOOLS__ !== "boolean") {
+     false && 0;
+    runtime_core_esm_bundler_getGlobalThis().__VUE_PROD_DEVTOOLS__ = false;
+  }
+  if (typeof __VUE_PROD_HYDRATION_MISMATCH_DETAILS__ !== "boolean") {
+     false && 0;
+    runtime_core_esm_bundler_getGlobalThis().__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = false;
+  }
+  if (false) // removed by dead control flow
+{}
+}
+
+const queuePostRenderEffect = queueEffectWithSuspense ;
+function createRenderer(options) {
+  return baseCreateRenderer(options);
+}
+function createHydrationRenderer(options) {
+  return baseCreateRenderer(options, createHydrationFunctions);
+}
+function baseCreateRenderer(options, createHydrationFns) {
+  {
+    initFeatureFlags();
+  }
+  const target = runtime_core_esm_bundler_getGlobalThis();
+  target.__VUE__ = true;
+  if ( false || __VUE_PROD_DEVTOOLS__) {
+    setDevtoolsHook$1(target.__VUE_DEVTOOLS_GLOBAL_HOOK__, target);
+  }
+  const {
+    insert: hostInsert,
+    remove: hostRemove,
+    patchProp: hostPatchProp,
+    createElement: hostCreateElement,
+    createText: hostCreateText,
+    createComment: hostCreateComment,
+    setText: hostSetText,
+    setElementText: hostSetElementText,
+    parentNode: hostParentNode,
+    nextSibling: hostNextSibling,
+    setScopeId: hostSetScopeId = runtime_core_esm_bundler_NOOP,
+    insertStaticContent: hostInsertStaticContent
+  } = options;
+  const patch = (n1, n2, container, anchor = null, parentComponent = null, parentSuspense = null, namespace = void 0, slotScopeIds = null, optimized =  false ? 0 : !!n2.dynamicChildren) => {
+    if (n1 === n2) {
+      return;
+    }
+    if (n1 && !isSameVNodeType(n1, n2)) {
+      anchor = getNextHostNode(n1);
+      unmount(n1, parentComponent, parentSuspense, true);
+      n1 = null;
+    }
+    if (n2.patchFlag === -2) {
+      optimized = false;
+      n2.dynamicChildren = null;
+    }
+    const { type, ref, shapeFlag } = n2;
+    switch (type) {
+      case Text:
+        processText(n1, n2, container, anchor);
+        break;
+      case Comment:
+        processCommentNode(n1, n2, container, anchor);
+        break;
+      case Static:
+        if (n1 == null) {
+          mountStaticNode(n2, container, anchor, namespace);
+        } else if (false) // removed by dead control flow
+{}
+        break;
+      case Fragment:
+        processFragment(
+          n1,
+          n2,
+          container,
+          anchor,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+        break;
+      default:
+        if (shapeFlag & 1) {
+          processElement(
+            n1,
+            n2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+        } else if (shapeFlag & 6) {
+          processComponent(
+            n1,
+            n2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+        } else if (shapeFlag & 64) {
+          type.process(
+            n1,
+            n2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized,
+            internals
+          );
+        } else if (shapeFlag & 128) {
+          type.process(
+            n1,
+            n2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized,
+            internals
+          );
+        } else if (false) // removed by dead control flow
+{}
+    }
+    if (ref != null && parentComponent) {
+      setRef(ref, n1 && n1.ref, parentSuspense, n2 || n1, !n2);
+    } else if (ref == null && n1 && n1.ref != null) {
+      setRef(n1.ref, null, parentSuspense, n1, true);
+    }
+  };
+  const processText = (n1, n2, container, anchor) => {
+    if (n1 == null) {
+      hostInsert(
+        n2.el = hostCreateText(n2.children),
+        container,
+        anchor
+      );
+    } else {
+      const el = n2.el = n1.el;
+      if (n2.children !== n1.children) {
+        hostSetText(el, n2.children);
+      }
+    }
+  };
+  const processCommentNode = (n1, n2, container, anchor) => {
+    if (n1 == null) {
+      hostInsert(
+        n2.el = hostCreateComment(n2.children || ""),
+        container,
+        anchor
+      );
+    } else {
+      n2.el = n1.el;
+    }
+  };
+  const mountStaticNode = (n2, container, anchor, namespace) => {
+    [n2.el, n2.anchor] = hostInsertStaticContent(
+      n2.children,
+      container,
+      anchor,
+      namespace,
+      n2.el,
+      n2.anchor
+    );
+  };
+  const patchStaticNode = (n1, n2, container, namespace) => {
+    if (n2.children !== n1.children) {
+      const anchor = hostNextSibling(n1.anchor);
+      removeStaticNode(n1);
+      [n2.el, n2.anchor] = hostInsertStaticContent(
+        n2.children,
+        container,
+        anchor,
+        namespace
+      );
+    } else {
+      n2.el = n1.el;
+      n2.anchor = n1.anchor;
+    }
+  };
+  const moveStaticNode = ({ el, anchor }, container, nextSibling) => {
+    let next;
+    while (el && el !== anchor) {
+      next = hostNextSibling(el);
+      hostInsert(el, container, nextSibling);
+      el = next;
+    }
+    hostInsert(anchor, container, nextSibling);
+  };
+  const removeStaticNode = ({ el, anchor }) => {
+    let next;
+    while (el && el !== anchor) {
+      next = hostNextSibling(el);
+      hostRemove(el);
+      el = next;
+    }
+    hostRemove(anchor);
+  };
+  const processElement = (n1, n2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    if (n2.type === "svg") {
+      namespace = "svg";
+    } else if (n2.type === "math") {
+      namespace = "mathml";
+    }
+    if (n1 == null) {
+      mountElement(
+        n2,
+        container,
+        anchor,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+    } else {
+      patchElement(
+        n1,
+        n2,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+    }
+  };
+  const mountElement = (vnode, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    let el;
+    let vnodeHook;
+    const { props, shapeFlag, transition, dirs } = vnode;
+    el = vnode.el = hostCreateElement(
+      vnode.type,
+      namespace,
+      props && props.is,
+      props
+    );
+    if (shapeFlag & 8) {
+      hostSetElementText(el, vnode.children);
+    } else if (shapeFlag & 16) {
+      mountChildren(
+        vnode.children,
+        el,
+        null,
+        parentComponent,
+        parentSuspense,
+        resolveChildrenNamespace(vnode, namespace),
+        slotScopeIds,
+        optimized
+      );
+    }
+    if (dirs) {
+      invokeDirectiveHook(vnode, null, parentComponent, "created");
+    }
+    setScopeId(el, vnode, vnode.scopeId, slotScopeIds, parentComponent);
+    if (props) {
+      for (const key in props) {
+        if (key !== "value" && !runtime_core_esm_bundler_isReservedProp(key)) {
+          hostPatchProp(el, key, null, props[key], namespace, parentComponent);
+        }
+      }
+      if ("value" in props) {
+        hostPatchProp(el, "value", null, props.value, namespace);
+      }
+      if (vnodeHook = props.onVnodeBeforeMount) {
+        invokeVNodeHook(vnodeHook, parentComponent, vnode);
+      }
+    }
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      runtime_core_esm_bundler_def(el, "__vnode", vnode, true);
+      runtime_core_esm_bundler_def(el, "__vueParentComponent", parentComponent, true);
+    }
+    if (dirs) {
+      invokeDirectiveHook(vnode, null, parentComponent, "beforeMount");
+    }
+    const needCallTransitionHooks = needTransition(parentSuspense, transition);
+    if (needCallTransitionHooks) {
+      transition.beforeEnter(el);
+    }
+    hostInsert(el, container, anchor);
+    if ((vnodeHook = props && props.onVnodeMounted) || needCallTransitionHooks || dirs) {
+      queuePostRenderEffect(() => {
+        vnodeHook && invokeVNodeHook(vnodeHook, parentComponent, vnode);
+        needCallTransitionHooks && transition.enter(el);
+        dirs && invokeDirectiveHook(vnode, null, parentComponent, "mounted");
+      }, parentSuspense);
+    }
+  };
+  const setScopeId = (el, vnode, scopeId, slotScopeIds, parentComponent) => {
+    if (scopeId) {
+      hostSetScopeId(el, scopeId);
+    }
+    if (slotScopeIds) {
+      for (let i = 0; i < slotScopeIds.length; i++) {
+        hostSetScopeId(el, slotScopeIds[i]);
+      }
+    }
+    if (parentComponent) {
+      let subTree = parentComponent.subTree;
+      if (false) // removed by dead control flow
+{}
+      if (vnode === subTree || isSuspense(subTree.type) && (subTree.ssContent === vnode || subTree.ssFallback === vnode)) {
+        const parentVNode = parentComponent.vnode;
+        setScopeId(
+          el,
+          parentVNode,
+          parentVNode.scopeId,
+          parentVNode.slotScopeIds,
+          parentComponent.parent
+        );
+      }
+    }
+  };
+  const mountChildren = (children, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized, start = 0) => {
+    for (let i = start; i < children.length; i++) {
+      const child = children[i] = optimized ? cloneIfMounted(children[i]) : normalizeVNode(children[i]);
+      patch(
+        null,
+        child,
+        container,
+        anchor,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+    }
+  };
+  const patchElement = (n1, n2, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    const el = n2.el = n1.el;
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      el.__vnode = n2;
+    }
+    let { patchFlag, dynamicChildren, dirs } = n2;
+    patchFlag |= n1.patchFlag & 16;
+    const oldProps = n1.props || runtime_core_esm_bundler_EMPTY_OBJ;
+    const newProps = n2.props || runtime_core_esm_bundler_EMPTY_OBJ;
+    let vnodeHook;
+    parentComponent && toggleRecurse(parentComponent, false);
+    if (vnodeHook = newProps.onVnodeBeforeUpdate) {
+      invokeVNodeHook(vnodeHook, parentComponent, n2, n1);
+    }
+    if (dirs) {
+      invokeDirectiveHook(n2, n1, parentComponent, "beforeUpdate");
+    }
+    parentComponent && toggleRecurse(parentComponent, true);
+    if (false) // removed by dead control flow
+{}
+    if (oldProps.innerHTML && newProps.innerHTML == null || oldProps.textContent && newProps.textContent == null) {
+      hostSetElementText(el, "");
+    }
+    if (dynamicChildren) {
+      patchBlockChildren(
+        n1.dynamicChildren,
+        dynamicChildren,
+        el,
+        parentComponent,
+        parentSuspense,
+        resolveChildrenNamespace(n2, namespace),
+        slotScopeIds
+      );
+      if (false) // removed by dead control flow
+{}
+    } else if (!optimized) {
+      patchChildren(
+        n1,
+        n2,
+        el,
+        null,
+        parentComponent,
+        parentSuspense,
+        resolveChildrenNamespace(n2, namespace),
+        slotScopeIds,
+        false
+      );
+    }
+    if (patchFlag > 0) {
+      if (patchFlag & 16) {
+        patchProps(el, oldProps, newProps, parentComponent, namespace);
+      } else {
+        if (patchFlag & 2) {
+          if (oldProps.class !== newProps.class) {
+            hostPatchProp(el, "class", null, newProps.class, namespace);
+          }
+        }
+        if (patchFlag & 4) {
+          hostPatchProp(el, "style", oldProps.style, newProps.style, namespace);
+        }
+        if (patchFlag & 8) {
+          const propsToUpdate = n2.dynamicProps;
+          for (let i = 0; i < propsToUpdate.length; i++) {
+            const key = propsToUpdate[i];
+            const prev = oldProps[key];
+            const next = newProps[key];
+            if (next !== prev || key === "value") {
+              hostPatchProp(el, key, prev, next, namespace, parentComponent);
+            }
+          }
+        }
+      }
+      if (patchFlag & 1) {
+        if (n1.children !== n2.children) {
+          hostSetElementText(el, n2.children);
+        }
+      }
+    } else if (!optimized && dynamicChildren == null) {
+      patchProps(el, oldProps, newProps, parentComponent, namespace);
+    }
+    if ((vnodeHook = newProps.onVnodeUpdated) || dirs) {
+      queuePostRenderEffect(() => {
+        vnodeHook && invokeVNodeHook(vnodeHook, parentComponent, n2, n1);
+        dirs && invokeDirectiveHook(n2, n1, parentComponent, "updated");
+      }, parentSuspense);
+    }
+  };
+  const patchBlockChildren = (oldChildren, newChildren, fallbackContainer, parentComponent, parentSuspense, namespace, slotScopeIds) => {
+    for (let i = 0; i < newChildren.length; i++) {
+      const oldVNode = oldChildren[i];
+      const newVNode = newChildren[i];
+      const container = (
+        // oldVNode may be an errored async setup() component inside Suspense
+        // which will not have a mounted element
+        oldVNode.el && // - In the case of a Fragment, we need to provide the actual parent
+        // of the Fragment itself so it can move its children.
+        (oldVNode.type === Fragment || // - In the case of different nodes, there is going to be a replacement
+        // which also requires the correct parent container
+        !isSameVNodeType(oldVNode, newVNode) || // - In the case of a component, it could contain anything.
+        oldVNode.shapeFlag & (6 | 64 | 128)) ? hostParentNode(oldVNode.el) : (
+          // In other cases, the parent container is not actually used so we
+          // just pass the block element here to avoid a DOM parentNode call.
+          fallbackContainer
+        )
+      );
+      patch(
+        oldVNode,
+        newVNode,
+        container,
+        null,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        true
+      );
+    }
+  };
+  const patchProps = (el, oldProps, newProps, parentComponent, namespace) => {
+    if (oldProps !== newProps) {
+      if (oldProps !== runtime_core_esm_bundler_EMPTY_OBJ) {
+        for (const key in oldProps) {
+          if (!runtime_core_esm_bundler_isReservedProp(key) && !(key in newProps)) {
+            hostPatchProp(
+              el,
+              key,
+              oldProps[key],
+              null,
+              namespace,
+              parentComponent
+            );
+          }
+        }
+      }
+      for (const key in newProps) {
+        if (runtime_core_esm_bundler_isReservedProp(key)) continue;
+        const next = newProps[key];
+        const prev = oldProps[key];
+        if (next !== prev && key !== "value") {
+          hostPatchProp(el, key, prev, next, namespace, parentComponent);
+        }
+      }
+      if ("value" in newProps) {
+        hostPatchProp(el, "value", oldProps.value, newProps.value, namespace);
+      }
+    }
+  };
+  const processFragment = (n1, n2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    const fragmentStartAnchor = n2.el = n1 ? n1.el : hostCreateText("");
+    const fragmentEndAnchor = n2.anchor = n1 ? n1.anchor : hostCreateText("");
+    let { patchFlag, dynamicChildren, slotScopeIds: fragmentSlotScopeIds } = n2;
+    if (false) // removed by dead control flow
+{}
+    if (fragmentSlotScopeIds) {
+      slotScopeIds = slotScopeIds ? slotScopeIds.concat(fragmentSlotScopeIds) : fragmentSlotScopeIds;
+    }
+    if (n1 == null) {
+      hostInsert(fragmentStartAnchor, container, anchor);
+      hostInsert(fragmentEndAnchor, container, anchor);
+      mountChildren(
+        // #10007
+        // such fragment like `<></>` will be compiled into
+        // a fragment which doesn't have a children.
+        // In this case fallback to an empty array
+        n2.children || [],
+        container,
+        fragmentEndAnchor,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+    } else {
+      if (patchFlag > 0 && patchFlag & 64 && dynamicChildren && // #2715 the previous fragment could've been a BAILed one as a result
+      // of renderSlot() with no valid children
+      n1.dynamicChildren) {
+        patchBlockChildren(
+          n1.dynamicChildren,
+          dynamicChildren,
+          container,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds
+        );
+        if (false) // removed by dead control flow
+{} else if (
+          // #2080 if the stable fragment has a key, it's a <template v-for> that may
+          //  get moved around. Make sure all root level vnodes inherit el.
+          // #2134 or if it's a component root, it may also get moved around
+          // as the component is being moved.
+          n2.key != null || parentComponent && n2 === parentComponent.subTree
+        ) {
+          traverseStaticChildren(
+            n1,
+            n2,
+            true
+            /* shallow */
+          );
+        }
+      } else {
+        patchChildren(
+          n1,
+          n2,
+          container,
+          fragmentEndAnchor,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+      }
+    }
+  };
+  const processComponent = (n1, n2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    n2.slotScopeIds = slotScopeIds;
+    if (n1 == null) {
+      if (n2.shapeFlag & 512) {
+        parentComponent.ctx.activate(
+          n2,
+          container,
+          anchor,
+          namespace,
+          optimized
+        );
+      } else {
+        mountComponent(
+          n2,
+          container,
+          anchor,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          optimized
+        );
+      }
+    } else {
+      updateComponent(n1, n2, optimized);
+    }
+  };
+  const mountComponent = (initialVNode, container, anchor, parentComponent, parentSuspense, namespace, optimized) => {
+    const instance = (initialVNode.component = createComponentInstance(
+      initialVNode,
+      parentComponent,
+      parentSuspense
+    ));
+    if (false) // removed by dead control flow
+{}
+    if (false) // removed by dead control flow
+{}
+    if (isKeepAlive(initialVNode)) {
+      instance.ctx.renderer = internals;
+    }
+    {
+      if (false) // removed by dead control flow
+{}
+      setupComponent(instance, false, optimized);
+      if (false) // removed by dead control flow
+{}
+    }
+    if (false) // removed by dead control flow
+{}
+    if (instance.asyncDep) {
+      parentSuspense && parentSuspense.registerDep(instance, setupRenderEffect, optimized);
+      if (!initialVNode.el) {
+        const placeholder = instance.subTree = createVNode(Comment);
+        processCommentNode(null, placeholder, container, anchor);
+      }
+    } else {
+      setupRenderEffect(
+        instance,
+        initialVNode,
+        container,
+        anchor,
+        parentSuspense,
+        namespace,
+        optimized
+      );
+    }
+    if (false) // removed by dead control flow
+{}
+  };
+  const updateComponent = (n1, n2, optimized) => {
+    const instance = n2.component = n1.component;
+    if (shouldUpdateComponent(n1, n2, optimized)) {
+      if (instance.asyncDep && !instance.asyncResolved) {
+        if (false) // removed by dead control flow
+{}
+        updateComponentPreRender(instance, n2, optimized);
+        if (false) // removed by dead control flow
+{}
+        return;
+      } else {
+        instance.next = n2;
+        instance.update();
+      }
+    } else {
+      n2.el = n1.el;
+      instance.vnode = n2;
+    }
+  };
+  const setupRenderEffect = (instance, initialVNode, container, anchor, parentSuspense, namespace, optimized) => {
+    const componentUpdateFn = () => {
+      if (!instance.isMounted) {
+        let vnodeHook;
+        const { el, props } = initialVNode;
+        const { bm, m, parent, root, type } = instance;
+        const isAsyncWrapperVNode = isAsyncWrapper(initialVNode);
+        toggleRecurse(instance, false);
+        if (bm) {
+          runtime_core_esm_bundler_invokeArrayFns(bm);
+        }
+        if (!isAsyncWrapperVNode && (vnodeHook = props && props.onVnodeBeforeMount)) {
+          invokeVNodeHook(vnodeHook, parent, initialVNode);
+        }
+        toggleRecurse(instance, true);
+        if (el && hydrateNode) {
+          const hydrateSubTree = () => {
+            if (false) // removed by dead control flow
+{}
+            instance.subTree = renderComponentRoot(instance);
+            if (false) // removed by dead control flow
+{}
+            if (false) // removed by dead control flow
+{}
+            hydrateNode(
+              el,
+              instance.subTree,
+              instance,
+              parentSuspense,
+              null
+            );
+            if (false) // removed by dead control flow
+{}
+          };
+          if (isAsyncWrapperVNode && type.__asyncHydrate) {
+            type.__asyncHydrate(
+              el,
+              instance,
+              hydrateSubTree
+            );
+          } else {
+            hydrateSubTree();
+          }
+        } else {
+          if (root.ce && // @ts-expect-error _def is private
+          root.ce._def.shadowRoot !== false) {
+            root.ce._injectChildStyle(type);
+          }
+          if (false) // removed by dead control flow
+{}
+          const subTree = instance.subTree = renderComponentRoot(instance);
+          if (false) // removed by dead control flow
+{}
+          if (false) // removed by dead control flow
+{}
+          patch(
+            null,
+            subTree,
+            container,
+            anchor,
+            instance,
+            parentSuspense,
+            namespace
+          );
+          if (false) // removed by dead control flow
+{}
+          initialVNode.el = subTree.el;
+        }
+        if (m) {
+          queuePostRenderEffect(m, parentSuspense);
+        }
+        if (!isAsyncWrapperVNode && (vnodeHook = props && props.onVnodeMounted)) {
+          const scopedInitialVNode = initialVNode;
+          queuePostRenderEffect(
+            () => invokeVNodeHook(vnodeHook, parent, scopedInitialVNode),
+            parentSuspense
+          );
+        }
+        if (initialVNode.shapeFlag & 256 || parent && isAsyncWrapper(parent.vnode) && parent.vnode.shapeFlag & 256) {
+          instance.a && queuePostRenderEffect(instance.a, parentSuspense);
+        }
+        instance.isMounted = true;
+        if ( false || __VUE_PROD_DEVTOOLS__) {
+          devtoolsComponentAdded(instance);
+        }
+        initialVNode = container = anchor = null;
+      } else {
+        let { next, bu, u, parent, vnode } = instance;
+        {
+          const nonHydratedAsyncRoot = locateNonHydratedAsyncRoot(instance);
+          if (nonHydratedAsyncRoot) {
+            if (next) {
+              next.el = vnode.el;
+              updateComponentPreRender(instance, next, optimized);
+            }
+            nonHydratedAsyncRoot.asyncDep.then(() => {
+              if (!instance.isUnmounted) {
+                componentUpdateFn();
+              }
+            });
+            return;
+          }
+        }
+        let originNext = next;
+        let vnodeHook;
+        if (false) // removed by dead control flow
+{}
+        toggleRecurse(instance, false);
+        if (next) {
+          next.el = vnode.el;
+          updateComponentPreRender(instance, next, optimized);
+        } else {
+          next = vnode;
+        }
+        if (bu) {
+          runtime_core_esm_bundler_invokeArrayFns(bu);
+        }
+        if (vnodeHook = next.props && next.props.onVnodeBeforeUpdate) {
+          invokeVNodeHook(vnodeHook, parent, next, vnode);
+        }
+        toggleRecurse(instance, true);
+        if (false) // removed by dead control flow
+{}
+        const nextTree = renderComponentRoot(instance);
+        if (false) // removed by dead control flow
+{}
+        const prevTree = instance.subTree;
+        instance.subTree = nextTree;
+        if (false) // removed by dead control flow
+{}
+        patch(
+          prevTree,
+          nextTree,
+          // parent may have changed if it's in a teleport
+          hostParentNode(prevTree.el),
+          // anchor may have changed if it's in a fragment
+          getNextHostNode(prevTree),
+          instance,
+          parentSuspense,
+          namespace
+        );
+        if (false) // removed by dead control flow
+{}
+        next.el = nextTree.el;
+        if (originNext === null) {
+          updateHOCHostEl(instance, nextTree.el);
+        }
+        if (u) {
+          queuePostRenderEffect(u, parentSuspense);
+        }
+        if (vnodeHook = next.props && next.props.onVnodeUpdated) {
+          queuePostRenderEffect(
+            () => invokeVNodeHook(vnodeHook, parent, next, vnode),
+            parentSuspense
+          );
+        }
+        if ( false || __VUE_PROD_DEVTOOLS__) {
+          devtoolsComponentUpdated(instance);
+        }
+        if (false) // removed by dead control flow
+{}
+      }
+    };
+    instance.scope.on();
+    const effect = instance.effect = new runtime_core_esm_bundler_ReactiveEffect(componentUpdateFn);
+    instance.scope.off();
+    const update = instance.update = effect.run.bind(effect);
+    const job = instance.job = effect.runIfDirty.bind(effect);
+    job.i = instance;
+    job.id = instance.uid;
+    effect.scheduler = () => queueJob(job);
+    toggleRecurse(instance, true);
+    if (false) // removed by dead control flow
+{}
+    update();
+  };
+  const updateComponentPreRender = (instance, nextVNode, optimized) => {
+    nextVNode.component = instance;
+    const prevProps = instance.vnode.props;
+    instance.vnode = nextVNode;
+    instance.next = null;
+    updateProps(instance, nextVNode.props, prevProps, optimized);
+    updateSlots(instance, nextVNode.children, optimized);
+    runtime_core_esm_bundler_pauseTracking();
+    flushPreFlushCbs(instance);
+    runtime_core_esm_bundler_resetTracking();
+  };
+  const patchChildren = (n1, n2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized = false) => {
+    const c1 = n1 && n1.children;
+    const prevShapeFlag = n1 ? n1.shapeFlag : 0;
+    const c2 = n2.children;
+    const { patchFlag, shapeFlag } = n2;
+    if (patchFlag > 0) {
+      if (patchFlag & 128) {
+        patchKeyedChildren(
+          c1,
+          c2,
+          container,
+          anchor,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+        return;
+      } else if (patchFlag & 256) {
+        patchUnkeyedChildren(
+          c1,
+          c2,
+          container,
+          anchor,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+        return;
+      }
+    }
+    if (shapeFlag & 8) {
+      if (prevShapeFlag & 16) {
+        unmountChildren(c1, parentComponent, parentSuspense);
+      }
+      if (c2 !== c1) {
+        hostSetElementText(container, c2);
+      }
+    } else {
+      if (prevShapeFlag & 16) {
+        if (shapeFlag & 16) {
+          patchKeyedChildren(
+            c1,
+            c2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+        } else {
+          unmountChildren(c1, parentComponent, parentSuspense, true);
+        }
+      } else {
+        if (prevShapeFlag & 8) {
+          hostSetElementText(container, "");
+        }
+        if (shapeFlag & 16) {
+          mountChildren(
+            c2,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+        }
+      }
+    }
+  };
+  const patchUnkeyedChildren = (c1, c2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    c1 = c1 || runtime_core_esm_bundler_EMPTY_ARR;
+    c2 = c2 || runtime_core_esm_bundler_EMPTY_ARR;
+    const oldLength = c1.length;
+    const newLength = c2.length;
+    const commonLength = Math.min(oldLength, newLength);
+    let i;
+    for (i = 0; i < commonLength; i++) {
+      const nextChild = c2[i] = optimized ? cloneIfMounted(c2[i]) : normalizeVNode(c2[i]);
+      patch(
+        c1[i],
+        nextChild,
+        container,
+        null,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+    }
+    if (oldLength > newLength) {
+      unmountChildren(
+        c1,
+        parentComponent,
+        parentSuspense,
+        true,
+        false,
+        commonLength
+      );
+    } else {
+      mountChildren(
+        c2,
+        container,
+        anchor,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized,
+        commonLength
+      );
+    }
+  };
+  const patchKeyedChildren = (c1, c2, container, parentAnchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized) => {
+    let i = 0;
+    const l2 = c2.length;
+    let e1 = c1.length - 1;
+    let e2 = l2 - 1;
+    while (i <= e1 && i <= e2) {
+      const n1 = c1[i];
+      const n2 = c2[i] = optimized ? cloneIfMounted(c2[i]) : normalizeVNode(c2[i]);
+      if (isSameVNodeType(n1, n2)) {
+        patch(
+          n1,
+          n2,
+          container,
+          null,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+      } else {
+        break;
+      }
+      i++;
+    }
+    while (i <= e1 && i <= e2) {
+      const n1 = c1[e1];
+      const n2 = c2[e2] = optimized ? cloneIfMounted(c2[e2]) : normalizeVNode(c2[e2]);
+      if (isSameVNodeType(n1, n2)) {
+        patch(
+          n1,
+          n2,
+          container,
+          null,
+          parentComponent,
+          parentSuspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+      } else {
+        break;
+      }
+      e1--;
+      e2--;
+    }
+    if (i > e1) {
+      if (i <= e2) {
+        const nextPos = e2 + 1;
+        const anchor = nextPos < l2 ? c2[nextPos].el : parentAnchor;
+        while (i <= e2) {
+          patch(
+            null,
+            c2[i] = optimized ? cloneIfMounted(c2[i]) : normalizeVNode(c2[i]),
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+          i++;
+        }
+      }
+    } else if (i > e2) {
+      while (i <= e1) {
+        unmount(c1[i], parentComponent, parentSuspense, true);
+        i++;
+      }
+    } else {
+      const s1 = i;
+      const s2 = i;
+      const keyToNewIndexMap = /* @__PURE__ */ new Map();
+      for (i = s2; i <= e2; i++) {
+        const nextChild = c2[i] = optimized ? cloneIfMounted(c2[i]) : normalizeVNode(c2[i]);
+        if (nextChild.key != null) {
+          if (false) // removed by dead control flow
+{}
+          keyToNewIndexMap.set(nextChild.key, i);
+        }
+      }
+      let j;
+      let patched = 0;
+      const toBePatched = e2 - s2 + 1;
+      let moved = false;
+      let maxNewIndexSoFar = 0;
+      const newIndexToOldIndexMap = new Array(toBePatched);
+      for (i = 0; i < toBePatched; i++) newIndexToOldIndexMap[i] = 0;
+      for (i = s1; i <= e1; i++) {
+        const prevChild = c1[i];
+        if (patched >= toBePatched) {
+          unmount(prevChild, parentComponent, parentSuspense, true);
+          continue;
+        }
+        let newIndex;
+        if (prevChild.key != null) {
+          newIndex = keyToNewIndexMap.get(prevChild.key);
+        } else {
+          for (j = s2; j <= e2; j++) {
+            if (newIndexToOldIndexMap[j - s2] === 0 && isSameVNodeType(prevChild, c2[j])) {
+              newIndex = j;
+              break;
+            }
+          }
+        }
+        if (newIndex === void 0) {
+          unmount(prevChild, parentComponent, parentSuspense, true);
+        } else {
+          newIndexToOldIndexMap[newIndex - s2] = i + 1;
+          if (newIndex >= maxNewIndexSoFar) {
+            maxNewIndexSoFar = newIndex;
+          } else {
+            moved = true;
+          }
+          patch(
+            prevChild,
+            c2[newIndex],
+            container,
+            null,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+          patched++;
+        }
+      }
+      const increasingNewIndexSequence = moved ? getSequence(newIndexToOldIndexMap) : runtime_core_esm_bundler_EMPTY_ARR;
+      j = increasingNewIndexSequence.length - 1;
+      for (i = toBePatched - 1; i >= 0; i--) {
+        const nextIndex = s2 + i;
+        const nextChild = c2[nextIndex];
+        const anchor = nextIndex + 1 < l2 ? c2[nextIndex + 1].el : parentAnchor;
+        if (newIndexToOldIndexMap[i] === 0) {
+          patch(
+            null,
+            nextChild,
+            container,
+            anchor,
+            parentComponent,
+            parentSuspense,
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+        } else if (moved) {
+          if (j < 0 || i !== increasingNewIndexSequence[j]) {
+            move(nextChild, container, anchor, 2);
+          } else {
+            j--;
+          }
+        }
+      }
+    }
+  };
+  const move = (vnode, container, anchor, moveType, parentSuspense = null) => {
+    const { el, type, transition, children, shapeFlag } = vnode;
+    if (shapeFlag & 6) {
+      move(vnode.component.subTree, container, anchor, moveType);
+      return;
+    }
+    if (shapeFlag & 128) {
+      vnode.suspense.move(container, anchor, moveType);
+      return;
+    }
+    if (shapeFlag & 64) {
+      type.move(vnode, container, anchor, internals);
+      return;
+    }
+    if (type === Fragment) {
+      hostInsert(el, container, anchor);
+      for (let i = 0; i < children.length; i++) {
+        move(children[i], container, anchor, moveType);
+      }
+      hostInsert(vnode.anchor, container, anchor);
+      return;
+    }
+    if (type === Static) {
+      moveStaticNode(vnode, container, anchor);
+      return;
+    }
+    const needTransition2 = moveType !== 2 && shapeFlag & 1 && transition;
+    if (needTransition2) {
+      if (moveType === 0) {
+        transition.beforeEnter(el);
+        hostInsert(el, container, anchor);
+        queuePostRenderEffect(() => transition.enter(el), parentSuspense);
+      } else {
+        const { leave, delayLeave, afterLeave } = transition;
+        const remove2 = () => {
+          if (vnode.ctx.isUnmounted) {
+            hostRemove(el);
+          } else {
+            hostInsert(el, container, anchor);
+          }
+        };
+        const performLeave = () => {
+          leave(el, () => {
+            remove2();
+            afterLeave && afterLeave();
+          });
+        };
+        if (delayLeave) {
+          delayLeave(el, remove2, performLeave);
+        } else {
+          performLeave();
+        }
+      }
+    } else {
+      hostInsert(el, container, anchor);
+    }
+  };
+  const unmount = (vnode, parentComponent, parentSuspense, doRemove = false, optimized = false) => {
+    const {
+      type,
+      props,
+      ref,
+      children,
+      dynamicChildren,
+      shapeFlag,
+      patchFlag,
+      dirs,
+      cacheIndex
+    } = vnode;
+    if (patchFlag === -2) {
+      optimized = false;
+    }
+    if (ref != null) {
+      runtime_core_esm_bundler_pauseTracking();
+      setRef(ref, null, parentSuspense, vnode, true);
+      runtime_core_esm_bundler_resetTracking();
+    }
+    if (cacheIndex != null) {
+      parentComponent.renderCache[cacheIndex] = void 0;
+    }
+    if (shapeFlag & 256) {
+      parentComponent.ctx.deactivate(vnode);
+      return;
+    }
+    const shouldInvokeDirs = shapeFlag & 1 && dirs;
+    const shouldInvokeVnodeHook = !isAsyncWrapper(vnode);
+    let vnodeHook;
+    if (shouldInvokeVnodeHook && (vnodeHook = props && props.onVnodeBeforeUnmount)) {
+      invokeVNodeHook(vnodeHook, parentComponent, vnode);
+    }
+    if (shapeFlag & 6) {
+      unmountComponent(vnode.component, parentSuspense, doRemove);
+    } else {
+      if (shapeFlag & 128) {
+        vnode.suspense.unmount(parentSuspense, doRemove);
+        return;
+      }
+      if (shouldInvokeDirs) {
+        invokeDirectiveHook(vnode, null, parentComponent, "beforeUnmount");
+      }
+      if (shapeFlag & 64) {
+        vnode.type.remove(
+          vnode,
+          parentComponent,
+          parentSuspense,
+          internals,
+          doRemove
+        );
+      } else if (dynamicChildren && // #5154
+      // when v-once is used inside a block, setBlockTracking(-1) marks the
+      // parent block with hasOnce: true
+      // so that it doesn't take the fast path during unmount - otherwise
+      // components nested in v-once are never unmounted.
+      !dynamicChildren.hasOnce && // #1153: fast path should not be taken for non-stable (v-for) fragments
+      (type !== Fragment || patchFlag > 0 && patchFlag & 64)) {
+        unmountChildren(
+          dynamicChildren,
+          parentComponent,
+          parentSuspense,
+          false,
+          true
+        );
+      } else if (type === Fragment && patchFlag & (128 | 256) || !optimized && shapeFlag & 16) {
+        unmountChildren(children, parentComponent, parentSuspense);
+      }
+      if (doRemove) {
+        remove(vnode);
+      }
+    }
+    if (shouldInvokeVnodeHook && (vnodeHook = props && props.onVnodeUnmounted) || shouldInvokeDirs) {
+      queuePostRenderEffect(() => {
+        vnodeHook && invokeVNodeHook(vnodeHook, parentComponent, vnode);
+        shouldInvokeDirs && invokeDirectiveHook(vnode, null, parentComponent, "unmounted");
+      }, parentSuspense);
+    }
+  };
+  const remove = (vnode) => {
+    const { type, el, anchor, transition } = vnode;
+    if (type === Fragment) {
+      if (false) // removed by dead control flow
+{} else {
+        removeFragment(el, anchor);
+      }
+      return;
+    }
+    if (type === Static) {
+      removeStaticNode(vnode);
+      return;
+    }
+    const performRemove = () => {
+      hostRemove(el);
+      if (transition && !transition.persisted && transition.afterLeave) {
+        transition.afterLeave();
+      }
+    };
+    if (vnode.shapeFlag & 1 && transition && !transition.persisted) {
+      const { leave, delayLeave } = transition;
+      const performLeave = () => leave(el, performRemove);
+      if (delayLeave) {
+        delayLeave(vnode.el, performRemove, performLeave);
+      } else {
+        performLeave();
+      }
+    } else {
+      performRemove();
+    }
+  };
+  const removeFragment = (cur, end) => {
+    let next;
+    while (cur !== end) {
+      next = hostNextSibling(cur);
+      hostRemove(cur);
+      cur = next;
+    }
+    hostRemove(end);
+  };
+  const unmountComponent = (instance, parentSuspense, doRemove) => {
+    if (false) // removed by dead control flow
+{}
+    const {
+      bum,
+      scope,
+      job,
+      subTree,
+      um,
+      m,
+      a,
+      parent,
+      slots: { __: slotCacheKeys }
+    } = instance;
+    invalidateMount(m);
+    invalidateMount(a);
+    if (bum) {
+      runtime_core_esm_bundler_invokeArrayFns(bum);
+    }
+    if (parent && runtime_core_esm_bundler_isArray(slotCacheKeys)) {
+      slotCacheKeys.forEach((v) => {
+        parent.renderCache[v] = void 0;
+      });
+    }
+    scope.stop();
+    if (job) {
+      job.flags |= 8;
+      unmount(subTree, instance, parentSuspense, doRemove);
+    }
+    if (um) {
+      queuePostRenderEffect(um, parentSuspense);
+    }
+    queuePostRenderEffect(() => {
+      instance.isUnmounted = true;
+    }, parentSuspense);
+    if (parentSuspense && parentSuspense.pendingBranch && !parentSuspense.isUnmounted && instance.asyncDep && !instance.asyncResolved && instance.suspenseId === parentSuspense.pendingId) {
+      parentSuspense.deps--;
+      if (parentSuspense.deps === 0) {
+        parentSuspense.resolve();
+      }
+    }
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      devtoolsComponentRemoved(instance);
+    }
+  };
+  const unmountChildren = (children, parentComponent, parentSuspense, doRemove = false, optimized = false, start = 0) => {
+    for (let i = start; i < children.length; i++) {
+      unmount(children[i], parentComponent, parentSuspense, doRemove, optimized);
+    }
+  };
+  const getNextHostNode = (vnode) => {
+    if (vnode.shapeFlag & 6) {
+      return getNextHostNode(vnode.component.subTree);
+    }
+    if (vnode.shapeFlag & 128) {
+      return vnode.suspense.next();
+    }
+    const el = hostNextSibling(vnode.anchor || vnode.el);
+    const teleportEnd = el && el[TeleportEndKey];
+    return teleportEnd ? hostNextSibling(teleportEnd) : el;
+  };
+  let isFlushing = false;
+  const render = (vnode, container, namespace) => {
+    if (vnode == null) {
+      if (container._vnode) {
+        unmount(container._vnode, null, null, true);
+      }
+    } else {
+      patch(
+        container._vnode || null,
+        vnode,
+        container,
+        null,
+        null,
+        null,
+        namespace
+      );
+    }
+    container._vnode = vnode;
+    if (!isFlushing) {
+      isFlushing = true;
+      flushPreFlushCbs();
+      flushPostFlushCbs();
+      isFlushing = false;
+    }
+  };
+  const internals = {
+    p: patch,
+    um: unmount,
+    m: move,
+    r: remove,
+    mt: mountComponent,
+    mc: mountChildren,
+    pc: patchChildren,
+    pbc: patchBlockChildren,
+    n: getNextHostNode,
+    o: options
+  };
+  let hydrate;
+  let hydrateNode;
+  if (createHydrationFns) {
+    [hydrate, hydrateNode] = createHydrationFns(
+      internals
+    );
+  }
+  return {
+    render,
+    hydrate,
+    createApp: createAppAPI(render, hydrate)
+  };
+}
+function resolveChildrenNamespace({ type, props }, currentNamespace) {
+  return currentNamespace === "svg" && type === "foreignObject" || currentNamespace === "mathml" && type === "annotation-xml" && props && props.encoding && props.encoding.includes("html") ? void 0 : currentNamespace;
+}
+function toggleRecurse({ effect, job }, allowed) {
+  if (allowed) {
+    effect.flags |= 32;
+    job.flags |= 4;
+  } else {
+    effect.flags &= -33;
+    job.flags &= -5;
+  }
+}
+function needTransition(parentSuspense, transition) {
+  return (!parentSuspense || parentSuspense && !parentSuspense.pendingBranch) && transition && !transition.persisted;
+}
+function traverseStaticChildren(n1, n2, shallow = false) {
+  const ch1 = n1.children;
+  const ch2 = n2.children;
+  if (isArray(ch1) && isArray(ch2)) {
+    for (let i = 0; i < ch1.length; i++) {
+      const c1 = ch1[i];
+      let c2 = ch2[i];
+      if (c2.shapeFlag & 1 && !c2.dynamicChildren) {
+        if (c2.patchFlag <= 0 || c2.patchFlag === 32) {
+          c2 = ch2[i] = cloneIfMounted(ch2[i]);
+          c2.el = c1.el;
+        }
+        if (!shallow && c2.patchFlag !== -2)
+          traverseStaticChildren(c1, c2);
+      }
+      if (c2.type === Text) {
+        c2.el = c1.el;
+      }
+      if (c2.type === Comment && !c2.el) {
+        c2.el = c1.el;
+      }
+      if (false) // removed by dead control flow
+{}
+    }
+  }
+}
+function getSequence(arr) {
+  const p = arr.slice();
+  const result = [0];
+  let i, j, u, v, c;
+  const len = arr.length;
+  for (i = 0; i < len; i++) {
+    const arrI = arr[i];
+    if (arrI !== 0) {
+      j = result[result.length - 1];
+      if (arr[j] < arrI) {
+        p[i] = j;
+        result.push(i);
+        continue;
+      }
+      u = 0;
+      v = result.length - 1;
+      while (u < v) {
+        c = u + v >> 1;
+        if (arr[result[c]] < arrI) {
+          u = c + 1;
+        } else {
+          v = c;
+        }
+      }
+      if (arrI < arr[result[u]]) {
+        if (u > 0) {
+          p[i] = result[u - 1];
+        }
+        result[u] = i;
+      }
+    }
+  }
+  u = result.length;
+  v = result[u - 1];
+  while (u-- > 0) {
+    result[u] = v;
+    v = p[v];
+  }
+  return result;
+}
+function locateNonHydratedAsyncRoot(instance) {
+  const subComponent = instance.subTree.component;
+  if (subComponent) {
+    if (subComponent.asyncDep && !subComponent.asyncResolved) {
+      return subComponent;
+    } else {
+      return locateNonHydratedAsyncRoot(subComponent);
+    }
+  }
+}
+function invalidateMount(hooks) {
+  if (hooks) {
+    for (let i = 0; i < hooks.length; i++)
+      hooks[i].flags |= 8;
+  }
+}
+
+const ssrContextKey = Symbol.for("v-scx");
+const useSSRContext = () => {
+  {
+    const ctx = inject(ssrContextKey);
+    if (!ctx) {
+       false && 0;
+    }
+    return ctx;
+  }
+};
+
+function watchEffect(effect, options) {
+  return doWatch(effect, null, options);
+}
+function watchPostEffect(effect, options) {
+  return doWatch(
+    effect,
+    null,
+     false ? 0 : { flush: "post" }
+  );
+}
+function watchSyncEffect(effect, options) {
+  return doWatch(
+    effect,
+    null,
+     false ? 0 : { flush: "sync" }
+  );
+}
+function runtime_core_esm_bundler_watch(source, cb, options) {
+  if (false) // removed by dead control flow
+{}
+  return doWatch(source, cb, options);
+}
+function doWatch(source, cb, options = EMPTY_OBJ) {
+  const { immediate, deep, flush, once } = options;
+  if (false) // removed by dead control flow
+{}
+  const baseWatchOptions = extend({}, options);
+  if (false) // removed by dead control flow
+{}
+  const runsImmediately = cb && immediate || !cb && flush !== "post";
+  let ssrCleanup;
+  if (isInSSRComponentSetup) {
+    if (flush === "sync") {
+      const ctx = useSSRContext();
+      ssrCleanup = ctx.__watcherHandles || (ctx.__watcherHandles = []);
+    } else if (!runsImmediately) {
+      const watchStopHandle = () => {
+      };
+      watchStopHandle.stop = NOOP;
+      watchStopHandle.resume = NOOP;
+      watchStopHandle.pause = NOOP;
+      return watchStopHandle;
+    }
+  }
+  const instance = currentInstance;
+  baseWatchOptions.call = (fn, type, args) => callWithAsyncErrorHandling(fn, instance, type, args);
+  let isPre = false;
+  if (flush === "post") {
+    baseWatchOptions.scheduler = (job) => {
+      queuePostRenderEffect(job, instance && instance.suspense);
+    };
+  } else if (flush !== "sync") {
+    isPre = true;
+    baseWatchOptions.scheduler = (job, isFirstRun) => {
+      if (isFirstRun) {
+        job();
+      } else {
+        queueJob(job);
+      }
+    };
+  }
+  baseWatchOptions.augmentJob = (job) => {
+    if (cb) {
+      job.flags |= 4;
+    }
+    if (isPre) {
+      job.flags |= 2;
+      if (instance) {
+        job.id = instance.uid;
+        job.i = instance;
+      }
+    }
+  };
+  const watchHandle = watch(source, cb, baseWatchOptions);
+  if (isInSSRComponentSetup) {
+    if (ssrCleanup) {
+      ssrCleanup.push(watchHandle);
+    } else if (runsImmediately) {
+      watchHandle();
+    }
+  }
+  return watchHandle;
+}
+function instanceWatch(source, value, options) {
+  const publicThis = this.proxy;
+  const getter = isString(source) ? source.includes(".") ? createPathGetter(publicThis, source) : () => publicThis[source] : source.bind(publicThis, publicThis);
+  let cb;
+  if (isFunction(value)) {
+    cb = value;
+  } else {
+    cb = value.handler;
+    options = value;
+  }
+  const reset = setCurrentInstance(this);
+  const res = doWatch(getter, cb.bind(publicThis), options);
+  reset();
+  return res;
+}
+function createPathGetter(ctx, path) {
+  const segments = path.split(".");
+  return () => {
+    let cur = ctx;
+    for (let i = 0; i < segments.length && cur; i++) {
+      cur = cur[segments[i]];
+    }
+    return cur;
+  };
+}
+
+function useModel(props, name, options = runtime_core_esm_bundler_EMPTY_OBJ) {
+  const i = getCurrentInstance();
+  if (false) // removed by dead control flow
+{}
+  const camelizedName = runtime_core_esm_bundler_camelize(name);
+  if (false) // removed by dead control flow
+{}
+  const hyphenatedName = runtime_core_esm_bundler_hyphenate(name);
+  const modifiers = getModelModifiers(props, camelizedName);
+  const res = runtime_core_esm_bundler_customRef((track, trigger) => {
+    let localValue;
+    let prevSetValue = runtime_core_esm_bundler_EMPTY_OBJ;
+    let prevEmittedValue;
+    watchSyncEffect(() => {
+      const propValue = props[camelizedName];
+      if (runtime_core_esm_bundler_hasChanged(localValue, propValue)) {
+        localValue = propValue;
+        trigger();
+      }
+    });
+    return {
+      get() {
+        track();
+        return options.get ? options.get(localValue) : localValue;
+      },
+      set(value) {
+        const emittedValue = options.set ? options.set(value) : value;
+        if (!runtime_core_esm_bundler_hasChanged(emittedValue, localValue) && !(prevSetValue !== runtime_core_esm_bundler_EMPTY_OBJ && runtime_core_esm_bundler_hasChanged(value, prevSetValue))) {
+          return;
+        }
+        const rawProps = i.vnode.props;
+        if (!(rawProps && // check if parent has passed v-model
+        (name in rawProps || camelizedName in rawProps || hyphenatedName in rawProps) && (`onUpdate:${name}` in rawProps || `onUpdate:${camelizedName}` in rawProps || `onUpdate:${hyphenatedName}` in rawProps))) {
+          localValue = value;
+          trigger();
+        }
+        i.emit(`update:${name}`, emittedValue);
+        if (runtime_core_esm_bundler_hasChanged(value, emittedValue) && runtime_core_esm_bundler_hasChanged(value, prevSetValue) && !runtime_core_esm_bundler_hasChanged(emittedValue, prevEmittedValue)) {
+          trigger();
+        }
+        prevSetValue = value;
+        prevEmittedValue = emittedValue;
+      }
+    };
+  });
+  res[Symbol.iterator] = () => {
+    let i2 = 0;
+    return {
+      next() {
+        if (i2 < 2) {
+          return { value: i2++ ? modifiers || runtime_core_esm_bundler_EMPTY_OBJ : res, done: false };
+        } else {
+          return { done: true };
+        }
+      }
+    };
+  };
+  return res;
+}
+const getModelModifiers = (props, modelName) => {
+  return modelName === "modelValue" || modelName === "model-value" ? props.modelModifiers : props[`${modelName}Modifiers`] || props[`${camelize(modelName)}Modifiers`] || props[`${hyphenate(modelName)}Modifiers`];
+};
+
+function emit(instance, event, ...rawArgs) {
+  if (instance.isUnmounted) return;
+  const props = instance.vnode.props || EMPTY_OBJ;
+  if (false) // removed by dead control flow
+{}
+  let args = rawArgs;
+  const isModelListener = event.startsWith("update:");
+  const modifiers = isModelListener && getModelModifiers(props, event.slice(7));
+  if (modifiers) {
+    if (modifiers.trim) {
+      args = rawArgs.map((a) => isString(a) ? a.trim() : a);
+    }
+    if (modifiers.number) {
+      args = rawArgs.map(looseToNumber);
+    }
+  }
+  if ( false || __VUE_PROD_DEVTOOLS__) {
+    devtoolsComponentEmit(instance, event, args);
+  }
+  if (false) // removed by dead control flow
+{}
+  let handlerName;
+  let handler = props[handlerName = toHandlerKey(event)] || // also try camelCase event handler (#2249)
+  props[handlerName = toHandlerKey(camelize(event))];
+  if (!handler && isModelListener) {
+    handler = props[handlerName = toHandlerKey(hyphenate(event))];
+  }
+  if (handler) {
+    callWithAsyncErrorHandling(
+      handler,
+      instance,
+      6,
+      args
+    );
+  }
+  const onceHandler = props[handlerName + `Once`];
+  if (onceHandler) {
+    if (!instance.emitted) {
+      instance.emitted = {};
+    } else if (instance.emitted[handlerName]) {
+      return;
+    }
+    instance.emitted[handlerName] = true;
+    callWithAsyncErrorHandling(
+      onceHandler,
+      instance,
+      6,
+      args
+    );
+  }
+}
+function normalizeEmitsOptions(comp, appContext, asMixin = false) {
+  const cache = appContext.emitsCache;
+  const cached = cache.get(comp);
+  if (cached !== void 0) {
+    return cached;
+  }
+  const raw = comp.emits;
+  let normalized = {};
+  let hasExtends = false;
+  if (__VUE_OPTIONS_API__ && !isFunction(comp)) {
+    const extendEmits = (raw2) => {
+      const normalizedFromExtend = normalizeEmitsOptions(raw2, appContext, true);
+      if (normalizedFromExtend) {
+        hasExtends = true;
+        extend(normalized, normalizedFromExtend);
+      }
+    };
+    if (!asMixin && appContext.mixins.length) {
+      appContext.mixins.forEach(extendEmits);
+    }
+    if (comp.extends) {
+      extendEmits(comp.extends);
+    }
+    if (comp.mixins) {
+      comp.mixins.forEach(extendEmits);
+    }
+  }
+  if (!raw && !hasExtends) {
+    if (isObject(comp)) {
+      cache.set(comp, null);
+    }
+    return null;
+  }
+  if (isArray(raw)) {
+    raw.forEach((key) => normalized[key] = null);
+  } else {
+    extend(normalized, raw);
+  }
+  if (isObject(comp)) {
+    cache.set(comp, normalized);
+  }
+  return normalized;
+}
+function isEmitListener(options, key) {
+  if (!options || !isOn(key)) {
+    return false;
+  }
+  key = key.slice(2).replace(/Once$/, "");
+  return hasOwn(options, key[0].toLowerCase() + key.slice(1)) || hasOwn(options, hyphenate(key)) || hasOwn(options, key);
+}
+
+let accessedAttrs = false;
+function markAttrsAccessed() {
+  accessedAttrs = true;
+}
+function renderComponentRoot(instance) {
+  const {
+    type: Component,
+    vnode,
+    proxy,
+    withProxy,
+    propsOptions: [propsOptions],
+    slots,
+    attrs,
+    emit,
+    render,
+    renderCache,
+    props,
+    data,
+    setupState,
+    ctx,
+    inheritAttrs
+  } = instance;
+  const prev = setCurrentRenderingInstance(instance);
+  let result;
+  let fallthroughAttrs;
+  if (false) // removed by dead control flow
+{}
+  try {
+    if (vnode.shapeFlag & 4) {
+      const proxyToUse = withProxy || proxy;
+      const thisProxy =  false ? 0 : proxyToUse;
+      result = normalizeVNode(
+        render.call(
+          thisProxy,
+          proxyToUse,
+          renderCache,
+           false ? 0 : props,
+          setupState,
+          data,
+          ctx
+        )
+      );
+      fallthroughAttrs = attrs;
+    } else {
+      const render2 = Component;
+      if (false) // removed by dead control flow
+{}
+      result = normalizeVNode(
+        render2.length > 1 ? render2(
+           false ? 0 : props,
+           false ? 0 : { attrs, slots, emit }
+        ) : render2(
+           false ? 0 : props,
+          null
+        )
+      );
+      fallthroughAttrs = Component.props ? attrs : getFunctionalFallthrough(attrs);
+    }
+  } catch (err) {
+    blockStack.length = 0;
+    handleError(err, instance, 1);
+    result = createVNode(Comment);
+  }
+  let root = result;
+  let setRoot = void 0;
+  if (false) // removed by dead control flow
+{}
+  if (fallthroughAttrs && inheritAttrs !== false) {
+    const keys = Object.keys(fallthroughAttrs);
+    const { shapeFlag } = root;
+    if (keys.length) {
+      if (shapeFlag & (1 | 6)) {
+        if (propsOptions && keys.some(isModelListener)) {
+          fallthroughAttrs = filterModelListeners(
+            fallthroughAttrs,
+            propsOptions
+          );
+        }
+        root = cloneVNode(root, fallthroughAttrs, false, true);
+      } else if (false) // removed by dead control flow
+{}
+    }
+  }
+  if (vnode.dirs) {
+    if (false) // removed by dead control flow
+{}
+    root = cloneVNode(root, null, false, true);
+    root.dirs = root.dirs ? root.dirs.concat(vnode.dirs) : vnode.dirs;
+  }
+  if (vnode.transition) {
+    if (false) // removed by dead control flow
+{}
+    setTransitionHooks(root, vnode.transition);
+  }
+  if (false) // removed by dead control flow
+{} else {
+    result = root;
+  }
+  setCurrentRenderingInstance(prev);
+  return result;
+}
+const getChildRoot = (vnode) => {
+  const rawChildren = vnode.children;
+  const dynamicChildren = vnode.dynamicChildren;
+  const childRoot = filterSingleRoot(rawChildren, false);
+  if (!childRoot) {
+    return [vnode, void 0];
+  } else if (false) // removed by dead control flow
+{}
+  const index = rawChildren.indexOf(childRoot);
+  const dynamicIndex = dynamicChildren ? dynamicChildren.indexOf(childRoot) : -1;
+  const setRoot = (updatedRoot) => {
+    rawChildren[index] = updatedRoot;
+    if (dynamicChildren) {
+      if (dynamicIndex > -1) {
+        dynamicChildren[dynamicIndex] = updatedRoot;
+      } else if (updatedRoot.patchFlag > 0) {
+        vnode.dynamicChildren = [...dynamicChildren, updatedRoot];
+      }
+    }
+  };
+  return [normalizeVNode(childRoot), setRoot];
+};
+function filterSingleRoot(children, recurse = true) {
+  let singleRoot;
+  for (let i = 0; i < children.length; i++) {
+    const child = children[i];
+    if (isVNode(child)) {
+      if (child.type !== Comment || child.children === "v-if") {
+        if (singleRoot) {
+          return;
+        } else {
+          singleRoot = child;
+          if (false) // removed by dead control flow
+{}
+        }
+      }
+    } else {
+      return;
+    }
+  }
+  return singleRoot;
+}
+const getFunctionalFallthrough = (attrs) => {
+  let res;
+  for (const key in attrs) {
+    if (key === "class" || key === "style" || isOn(key)) {
+      (res || (res = {}))[key] = attrs[key];
+    }
+  }
+  return res;
+};
+const filterModelListeners = (attrs, props) => {
+  const res = {};
+  for (const key in attrs) {
+    if (!isModelListener(key) || !(key.slice(9) in props)) {
+      res[key] = attrs[key];
+    }
+  }
+  return res;
+};
+const isElementRoot = (vnode) => {
+  return vnode.shapeFlag & (6 | 1) || vnode.type === Comment;
+};
+function shouldUpdateComponent(prevVNode, nextVNode, optimized) {
+  const { props: prevProps, children: prevChildren, component } = prevVNode;
+  const { props: nextProps, children: nextChildren, patchFlag } = nextVNode;
+  const emits = component.emitsOptions;
+  if (false) // removed by dead control flow
+{}
+  if (nextVNode.dirs || nextVNode.transition) {
+    return true;
+  }
+  if (optimized && patchFlag >= 0) {
+    if (patchFlag & 1024) {
+      return true;
+    }
+    if (patchFlag & 16) {
+      if (!prevProps) {
+        return !!nextProps;
+      }
+      return hasPropsChanged(prevProps, nextProps, emits);
+    } else if (patchFlag & 8) {
+      const dynamicProps = nextVNode.dynamicProps;
+      for (let i = 0; i < dynamicProps.length; i++) {
+        const key = dynamicProps[i];
+        if (nextProps[key] !== prevProps[key] && !isEmitListener(emits, key)) {
+          return true;
+        }
+      }
+    }
+  } else {
+    if (prevChildren || nextChildren) {
+      if (!nextChildren || !nextChildren.$stable) {
+        return true;
+      }
+    }
+    if (prevProps === nextProps) {
+      return false;
+    }
+    if (!prevProps) {
+      return !!nextProps;
+    }
+    if (!nextProps) {
+      return true;
+    }
+    return hasPropsChanged(prevProps, nextProps, emits);
+  }
+  return false;
+}
+function hasPropsChanged(prevProps, nextProps, emitsOptions) {
+  const nextKeys = Object.keys(nextProps);
+  if (nextKeys.length !== Object.keys(prevProps).length) {
+    return true;
+  }
+  for (let i = 0; i < nextKeys.length; i++) {
+    const key = nextKeys[i];
+    if (nextProps[key] !== prevProps[key] && !isEmitListener(emitsOptions, key)) {
+      return true;
+    }
+  }
+  return false;
+}
+function updateHOCHostEl({ vnode, parent }, el) {
+  while (parent) {
+    const root = parent.subTree;
+    if (root.suspense && root.suspense.activeBranch === vnode) {
+      root.el = vnode.el;
+    }
+    if (root === vnode) {
+      (vnode = parent.vnode).el = el;
+      parent = parent.parent;
+    } else {
+      break;
+    }
+  }
+}
+
+const isSuspense = (type) => type.__isSuspense;
+let suspenseId = 0;
+const SuspenseImpl = {
+  name: "Suspense",
+  // In order to make Suspense tree-shakable, we need to avoid importing it
+  // directly in the renderer. The renderer checks for the __isSuspense flag
+  // on a vnode's type and calls the `process` method, passing in renderer
+  // internals.
+  __isSuspense: true,
+  process(n1, n2, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized, rendererInternals) {
+    if (n1 == null) {
+      mountSuspense(
+        n2,
+        container,
+        anchor,
+        parentComponent,
+        parentSuspense,
+        namespace,
+        slotScopeIds,
+        optimized,
+        rendererInternals
+      );
+    } else {
+      if (parentSuspense && parentSuspense.deps > 0 && !n1.suspense.isInFallback) {
+        n2.suspense = n1.suspense;
+        n2.suspense.vnode = n2;
+        n2.el = n1.el;
+        return;
+      }
+      patchSuspense(
+        n1,
+        n2,
+        container,
+        anchor,
+        parentComponent,
+        namespace,
+        slotScopeIds,
+        optimized,
+        rendererInternals
+      );
+    }
+  },
+  hydrate: hydrateSuspense,
+  normalize: normalizeSuspenseChildren
+};
+const Suspense = (/* unused pure expression or super */ null && (SuspenseImpl)) ;
+function triggerEvent(vnode, name) {
+  const eventListener = vnode.props && vnode.props[name];
+  if (isFunction(eventListener)) {
+    eventListener();
+  }
+}
+function mountSuspense(vnode, container, anchor, parentComponent, parentSuspense, namespace, slotScopeIds, optimized, rendererInternals) {
+  const {
+    p: patch,
+    o: { createElement }
+  } = rendererInternals;
+  const hiddenContainer = createElement("div");
+  const suspense = vnode.suspense = createSuspenseBoundary(
+    vnode,
+    parentSuspense,
+    parentComponent,
+    container,
+    hiddenContainer,
+    anchor,
+    namespace,
+    slotScopeIds,
+    optimized,
+    rendererInternals
+  );
+  patch(
+    null,
+    suspense.pendingBranch = vnode.ssContent,
+    hiddenContainer,
+    null,
+    parentComponent,
+    suspense,
+    namespace,
+    slotScopeIds
+  );
+  if (suspense.deps > 0) {
+    triggerEvent(vnode, "onPending");
+    triggerEvent(vnode, "onFallback");
+    patch(
+      null,
+      vnode.ssFallback,
+      container,
+      anchor,
+      parentComponent,
+      null,
+      // fallback tree will not have suspense context
+      namespace,
+      slotScopeIds
+    );
+    setActiveBranch(suspense, vnode.ssFallback);
+  } else {
+    suspense.resolve(false, true);
+  }
+}
+function patchSuspense(n1, n2, container, anchor, parentComponent, namespace, slotScopeIds, optimized, { p: patch, um: unmount, o: { createElement } }) {
+  const suspense = n2.suspense = n1.suspense;
+  suspense.vnode = n2;
+  n2.el = n1.el;
+  const newBranch = n2.ssContent;
+  const newFallback = n2.ssFallback;
+  const { activeBranch, pendingBranch, isInFallback, isHydrating } = suspense;
+  if (pendingBranch) {
+    suspense.pendingBranch = newBranch;
+    if (isSameVNodeType(newBranch, pendingBranch)) {
+      patch(
+        pendingBranch,
+        newBranch,
+        suspense.hiddenContainer,
+        null,
+        parentComponent,
+        suspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+      if (suspense.deps <= 0) {
+        suspense.resolve();
+      } else if (isInFallback) {
+        if (!isHydrating) {
+          patch(
+            activeBranch,
+            newFallback,
+            container,
+            anchor,
+            parentComponent,
+            null,
+            // fallback tree will not have suspense context
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+          setActiveBranch(suspense, newFallback);
+        }
+      }
+    } else {
+      suspense.pendingId = suspenseId++;
+      if (isHydrating) {
+        suspense.isHydrating = false;
+        suspense.activeBranch = pendingBranch;
+      } else {
+        unmount(pendingBranch, parentComponent, suspense);
+      }
+      suspense.deps = 0;
+      suspense.effects.length = 0;
+      suspense.hiddenContainer = createElement("div");
+      if (isInFallback) {
+        patch(
+          null,
+          newBranch,
+          suspense.hiddenContainer,
+          null,
+          parentComponent,
+          suspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+        if (suspense.deps <= 0) {
+          suspense.resolve();
+        } else {
+          patch(
+            activeBranch,
+            newFallback,
+            container,
+            anchor,
+            parentComponent,
+            null,
+            // fallback tree will not have suspense context
+            namespace,
+            slotScopeIds,
+            optimized
+          );
+          setActiveBranch(suspense, newFallback);
+        }
+      } else if (activeBranch && isSameVNodeType(newBranch, activeBranch)) {
+        patch(
+          activeBranch,
+          newBranch,
+          container,
+          anchor,
+          parentComponent,
+          suspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+        suspense.resolve(true);
+      } else {
+        patch(
+          null,
+          newBranch,
+          suspense.hiddenContainer,
+          null,
+          parentComponent,
+          suspense,
+          namespace,
+          slotScopeIds,
+          optimized
+        );
+        if (suspense.deps <= 0) {
+          suspense.resolve();
+        }
+      }
+    }
+  } else {
+    if (activeBranch && isSameVNodeType(newBranch, activeBranch)) {
+      patch(
+        activeBranch,
+        newBranch,
+        container,
+        anchor,
+        parentComponent,
+        suspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+      setActiveBranch(suspense, newBranch);
+    } else {
+      triggerEvent(n2, "onPending");
+      suspense.pendingBranch = newBranch;
+      if (newBranch.shapeFlag & 512) {
+        suspense.pendingId = newBranch.component.suspenseId;
+      } else {
+        suspense.pendingId = suspenseId++;
+      }
+      patch(
+        null,
+        newBranch,
+        suspense.hiddenContainer,
+        null,
+        parentComponent,
+        suspense,
+        namespace,
+        slotScopeIds,
+        optimized
+      );
+      if (suspense.deps <= 0) {
+        suspense.resolve();
+      } else {
+        const { timeout, pendingId } = suspense;
+        if (timeout > 0) {
+          setTimeout(() => {
+            if (suspense.pendingId === pendingId) {
+              suspense.fallback(newFallback);
+            }
+          }, timeout);
+        } else if (timeout === 0) {
+          suspense.fallback(newFallback);
+        }
+      }
+    }
+  }
+}
+let hasWarned = false;
+function createSuspenseBoundary(vnode, parentSuspense, parentComponent, container, hiddenContainer, anchor, namespace, slotScopeIds, optimized, rendererInternals, isHydrating = false) {
+  if (false) // removed by dead control flow
+{}
+  const {
+    p: patch,
+    m: move,
+    um: unmount,
+    n: next,
+    o: { parentNode, remove }
+  } = rendererInternals;
+  let parentSuspenseId;
+  const isSuspensible = isVNodeSuspensible(vnode);
+  if (isSuspensible) {
+    if (parentSuspense && parentSuspense.pendingBranch) {
+      parentSuspenseId = parentSuspense.pendingId;
+      parentSuspense.deps++;
+    }
+  }
+  const timeout = vnode.props ? toNumber(vnode.props.timeout) : void 0;
+  if (false) // removed by dead control flow
+{}
+  const initialAnchor = anchor;
+  const suspense = {
+    vnode,
+    parent: parentSuspense,
+    parentComponent,
+    namespace,
+    container,
+    hiddenContainer,
+    deps: 0,
+    pendingId: suspenseId++,
+    timeout: typeof timeout === "number" ? timeout : -1,
+    activeBranch: null,
+    pendingBranch: null,
+    isInFallback: !isHydrating,
+    isHydrating,
+    isUnmounted: false,
+    effects: [],
+    resolve(resume = false, sync = false) {
+      if (false) // removed by dead control flow
+{}
+      const {
+        vnode: vnode2,
+        activeBranch,
+        pendingBranch,
+        pendingId,
+        effects,
+        parentComponent: parentComponent2,
+        container: container2
+      } = suspense;
+      let delayEnter = false;
+      if (suspense.isHydrating) {
+        suspense.isHydrating = false;
+      } else if (!resume) {
+        delayEnter = activeBranch && pendingBranch.transition && pendingBranch.transition.mode === "out-in";
+        if (delayEnter) {
+          activeBranch.transition.afterLeave = () => {
+            if (pendingId === suspense.pendingId) {
+              move(
+                pendingBranch,
+                container2,
+                anchor === initialAnchor ? next(activeBranch) : anchor,
+                0
+              );
+              queuePostFlushCb(effects);
+            }
+          };
+        }
+        if (activeBranch) {
+          if (parentNode(activeBranch.el) === container2) {
+            anchor = next(activeBranch);
+          }
+          unmount(activeBranch, parentComponent2, suspense, true);
+        }
+        if (!delayEnter) {
+          move(pendingBranch, container2, anchor, 0);
+        }
+      }
+      setActiveBranch(suspense, pendingBranch);
+      suspense.pendingBranch = null;
+      suspense.isInFallback = false;
+      let parent = suspense.parent;
+      let hasUnresolvedAncestor = false;
+      while (parent) {
+        if (parent.pendingBranch) {
+          parent.effects.push(...effects);
+          hasUnresolvedAncestor = true;
+          break;
+        }
+        parent = parent.parent;
+      }
+      if (!hasUnresolvedAncestor && !delayEnter) {
+        queuePostFlushCb(effects);
+      }
+      suspense.effects = [];
+      if (isSuspensible) {
+        if (parentSuspense && parentSuspense.pendingBranch && parentSuspenseId === parentSuspense.pendingId) {
+          parentSuspense.deps--;
+          if (parentSuspense.deps === 0 && !sync) {
+            parentSuspense.resolve();
+          }
+        }
+      }
+      triggerEvent(vnode2, "onResolve");
+    },
+    fallback(fallbackVNode) {
+      if (!suspense.pendingBranch) {
+        return;
+      }
+      const { vnode: vnode2, activeBranch, parentComponent: parentComponent2, container: container2, namespace: namespace2 } = suspense;
+      triggerEvent(vnode2, "onFallback");
+      const anchor2 = next(activeBranch);
+      const mountFallback = () => {
+        if (!suspense.isInFallback) {
+          return;
+        }
+        patch(
+          null,
+          fallbackVNode,
+          container2,
+          anchor2,
+          parentComponent2,
+          null,
+          // fallback tree will not have suspense context
+          namespace2,
+          slotScopeIds,
+          optimized
+        );
+        setActiveBranch(suspense, fallbackVNode);
+      };
+      const delayEnter = fallbackVNode.transition && fallbackVNode.transition.mode === "out-in";
+      if (delayEnter) {
+        activeBranch.transition.afterLeave = mountFallback;
+      }
+      suspense.isInFallback = true;
+      unmount(
+        activeBranch,
+        parentComponent2,
+        null,
+        // no suspense so unmount hooks fire now
+        true
+        // shouldRemove
+      );
+      if (!delayEnter) {
+        mountFallback();
+      }
+    },
+    move(container2, anchor2, type) {
+      suspense.activeBranch && move(suspense.activeBranch, container2, anchor2, type);
+      suspense.container = container2;
+    },
+    next() {
+      return suspense.activeBranch && next(suspense.activeBranch);
+    },
+    registerDep(instance, setupRenderEffect, optimized2) {
+      const isInPendingSuspense = !!suspense.pendingBranch;
+      if (isInPendingSuspense) {
+        suspense.deps++;
+      }
+      const hydratedEl = instance.vnode.el;
+      instance.asyncDep.catch((err) => {
+        handleError(err, instance, 0);
+      }).then((asyncSetupResult) => {
+        if (instance.isUnmounted || suspense.isUnmounted || suspense.pendingId !== instance.suspenseId) {
+          return;
+        }
+        instance.asyncResolved = true;
+        const { vnode: vnode2 } = instance;
+        if (false) // removed by dead control flow
+{}
+        handleSetupResult(instance, asyncSetupResult, false);
+        if (hydratedEl) {
+          vnode2.el = hydratedEl;
+        }
+        const placeholder = !hydratedEl && instance.subTree.el;
+        setupRenderEffect(
+          instance,
+          vnode2,
+          // component may have been moved before resolve.
+          // if this is not a hydration, instance.subTree will be the comment
+          // placeholder.
+          parentNode(hydratedEl || instance.subTree.el),
+          // anchor will not be used if this is hydration, so only need to
+          // consider the comment placeholder case.
+          hydratedEl ? null : next(instance.subTree),
+          suspense,
+          namespace,
+          optimized2
+        );
+        if (placeholder) {
+          remove(placeholder);
+        }
+        updateHOCHostEl(instance, vnode2.el);
+        if (false) // removed by dead control flow
+{}
+        if (isInPendingSuspense && --suspense.deps === 0) {
+          suspense.resolve();
+        }
+      });
+    },
+    unmount(parentSuspense2, doRemove) {
+      suspense.isUnmounted = true;
+      if (suspense.activeBranch) {
+        unmount(
+          suspense.activeBranch,
+          parentComponent,
+          parentSuspense2,
+          doRemove
+        );
+      }
+      if (suspense.pendingBranch) {
+        unmount(
+          suspense.pendingBranch,
+          parentComponent,
+          parentSuspense2,
+          doRemove
+        );
+      }
+    }
+  };
+  return suspense;
+}
+function hydrateSuspense(node, vnode, parentComponent, parentSuspense, namespace, slotScopeIds, optimized, rendererInternals, hydrateNode) {
+  const suspense = vnode.suspense = createSuspenseBoundary(
+    vnode,
+    parentSuspense,
+    parentComponent,
+    node.parentNode,
+    // eslint-disable-next-line no-restricted-globals
+    document.createElement("div"),
+    null,
+    namespace,
+    slotScopeIds,
+    optimized,
+    rendererInternals,
+    true
+  );
+  const result = hydrateNode(
+    node,
+    suspense.pendingBranch = vnode.ssContent,
+    parentComponent,
+    suspense,
+    slotScopeIds,
+    optimized
+  );
+  if (suspense.deps === 0) {
+    suspense.resolve(false, true);
+  }
+  return result;
+}
+function normalizeSuspenseChildren(vnode) {
+  const { shapeFlag, children } = vnode;
+  const isSlotChildren = shapeFlag & 32;
+  vnode.ssContent = normalizeSuspenseSlot(
+    isSlotChildren ? children.default : children
+  );
+  vnode.ssFallback = isSlotChildren ? normalizeSuspenseSlot(children.fallback) : createVNode(Comment);
+}
+function normalizeSuspenseSlot(s) {
+  let block;
+  if (isFunction(s)) {
+    const trackBlock = isBlockTreeEnabled && s._c;
+    if (trackBlock) {
+      s._d = false;
+      openBlock();
+    }
+    s = s();
+    if (trackBlock) {
+      s._d = true;
+      block = currentBlock;
+      closeBlock();
+    }
+  }
+  if (isArray(s)) {
+    const singleChild = filterSingleRoot(s);
+    if (false) // removed by dead control flow
+{}
+    s = singleChild;
+  }
+  s = normalizeVNode(s);
+  if (block && !s.dynamicChildren) {
+    s.dynamicChildren = block.filter((c) => c !== s);
+  }
+  return s;
+}
+function queueEffectWithSuspense(fn, suspense) {
+  if (suspense && suspense.pendingBranch) {
+    if (isArray(fn)) {
+      suspense.effects.push(...fn);
+    } else {
+      suspense.effects.push(fn);
+    }
+  } else {
+    queuePostFlushCb(fn);
+  }
+}
+function setActiveBranch(suspense, branch) {
+  suspense.activeBranch = branch;
+  const { vnode, parentComponent } = suspense;
+  let el = branch.el;
+  while (!el && branch.component) {
+    branch = branch.component.subTree;
+    el = branch.el;
+  }
+  vnode.el = el;
+  if (parentComponent && parentComponent.subTree === vnode) {
+    parentComponent.vnode.el = el;
+    updateHOCHostEl(parentComponent, el);
+  }
+}
+function isVNodeSuspensible(vnode) {
+  const suspensible = vnode.props && vnode.props.suspensible;
+  return suspensible != null && suspensible !== false;
+}
+
+const Fragment = Symbol.for("v-fgt");
+const Text = Symbol.for("v-txt");
+const Comment = Symbol.for("v-cmt");
+const Static = Symbol.for("v-stc");
+const blockStack = [];
+let currentBlock = null;
+function openBlock(disableTracking = false) {
+  blockStack.push(currentBlock = disableTracking ? null : []);
+}
+function closeBlock() {
+  blockStack.pop();
+  currentBlock = blockStack[blockStack.length - 1] || null;
+}
+let isBlockTreeEnabled = 1;
+function setBlockTracking(value, inVOnce = false) {
+  isBlockTreeEnabled += value;
+  if (value < 0 && currentBlock && inVOnce) {
+    currentBlock.hasOnce = true;
+  }
+}
+function setupBlock(vnode) {
+  vnode.dynamicChildren = isBlockTreeEnabled > 0 ? currentBlock || runtime_core_esm_bundler_EMPTY_ARR : null;
+  closeBlock();
+  if (isBlockTreeEnabled > 0 && currentBlock) {
+    currentBlock.push(vnode);
+  }
+  return vnode;
+}
+function createElementBlock(type, props, children, patchFlag, dynamicProps, shapeFlag) {
+  return setupBlock(
+    createBaseVNode(
+      type,
+      props,
+      children,
+      patchFlag,
+      dynamicProps,
+      shapeFlag,
+      true
+    )
+  );
+}
+function createBlock(type, props, children, patchFlag, dynamicProps) {
+  return setupBlock(
+    createVNode(
+      type,
+      props,
+      children,
+      patchFlag,
+      dynamicProps,
+      true
+    )
+  );
+}
+function isVNode(value) {
+  return value ? value.__v_isVNode === true : false;
+}
+function isSameVNodeType(n1, n2) {
+  if (false) // removed by dead control flow
+{}
+  return n1.type === n2.type && n1.key === n2.key;
+}
+let vnodeArgsTransformer;
+function transformVNodeArgs(transformer) {
+  vnodeArgsTransformer = transformer;
+}
+const createVNodeWithArgsTransform = (...args) => {
+  return _createVNode(
+    ...vnodeArgsTransformer ? vnodeArgsTransformer(args, currentRenderingInstance) : args
+  );
+};
+const normalizeKey = ({ key }) => key != null ? key : null;
+const normalizeRef = ({
+  ref,
+  ref_key,
+  ref_for
+}) => {
+  if (typeof ref === "number") {
+    ref = "" + ref;
+  }
+  return ref != null ? isString(ref) || reactivity_esm_bundler_isRef(ref) || isFunction(ref) ? { i: currentRenderingInstance, r: ref, k: ref_key, f: !!ref_for } : ref : null;
+};
+function createBaseVNode(type, props = null, children = null, patchFlag = 0, dynamicProps = null, shapeFlag = type === Fragment ? 0 : 1, isBlockNode = false, needFullChildrenNormalization = false) {
+  const vnode = {
+    __v_isVNode: true,
+    __v_skip: true,
+    type,
+    props,
+    key: props && normalizeKey(props),
+    ref: props && normalizeRef(props),
+    scopeId: currentScopeId,
+    slotScopeIds: null,
+    children,
+    component: null,
+    suspense: null,
+    ssContent: null,
+    ssFallback: null,
+    dirs: null,
+    transition: null,
+    el: null,
+    anchor: null,
+    target: null,
+    targetStart: null,
+    targetAnchor: null,
+    staticCount: 0,
+    shapeFlag,
+    patchFlag,
+    dynamicProps,
+    dynamicChildren: null,
+    appContext: null,
+    ctx: currentRenderingInstance
+  };
+  if (needFullChildrenNormalization) {
+    normalizeChildren(vnode, children);
+    if (shapeFlag & 128) {
+      type.normalize(vnode);
+    }
+  } else if (children) {
+    vnode.shapeFlag |= isString(children) ? 8 : 16;
+  }
+  if (false) // removed by dead control flow
+{}
+  if (isBlockTreeEnabled > 0 && // avoid a block node from tracking itself
+  !isBlockNode && // has current parent block
+  currentBlock && // presence of a patch flag indicates this node needs patching on updates.
+  // component nodes also should always be patched, because even if the
+  // component doesn't need to update, it needs to persist the instance on to
+  // the next vnode so that it can be properly unmounted later.
+  (vnode.patchFlag > 0 || shapeFlag & 6) && // the EVENTS flag is only for hydration and if it is the only flag, the
+  // vnode should not be considered dynamic due to handler caching.
+  vnode.patchFlag !== 32) {
+    currentBlock.push(vnode);
+  }
+  return vnode;
+}
+const createVNode =  false ? 0 : _createVNode;
+function _createVNode(type, props = null, children = null, patchFlag = 0, dynamicProps = null, isBlockNode = false) {
+  if (!type || type === NULL_DYNAMIC_COMPONENT) {
+    if (false) // removed by dead control flow
+{}
+    type = Comment;
+  }
+  if (isVNode(type)) {
+    const cloned = cloneVNode(
+      type,
+      props,
+      true
+      /* mergeRef: true */
+    );
+    if (children) {
+      normalizeChildren(cloned, children);
+    }
+    if (isBlockTreeEnabled > 0 && !isBlockNode && currentBlock) {
+      if (cloned.shapeFlag & 6) {
+        currentBlock[currentBlock.indexOf(type)] = cloned;
+      } else {
+        currentBlock.push(cloned);
+      }
+    }
+    cloned.patchFlag = -2;
+    return cloned;
+  }
+  if (isClassComponent(type)) {
+    type = type.__vccOpts;
+  }
+  if (props) {
+    props = guardReactiveProps(props);
+    let { class: klass, style } = props;
+    if (klass && !isString(klass)) {
+      props.class = normalizeClass(klass);
+    }
+    if (isObject(style)) {
+      if (isProxy(style) && !isArray(style)) {
+        style = extend({}, style);
+      }
+      props.style = normalizeStyle(style);
+    }
+  }
+  const shapeFlag = isString(type) ? 1 : isSuspense(type) ? 128 : isTeleport(type) ? 64 : isObject(type) ? 4 : isFunction(type) ? 2 : 0;
+  if (false) // removed by dead control flow
+{}
+  return createBaseVNode(
+    type,
+    props,
+    children,
+    patchFlag,
+    dynamicProps,
+    shapeFlag,
+    isBlockNode,
+    true
+  );
+}
+function guardReactiveProps(props) {
+  if (!props) return null;
+  return isProxy(props) || isInternalObject(props) ? extend({}, props) : props;
+}
+function cloneVNode(vnode, extraProps, mergeRef = false, cloneTransition = false) {
+  const { props, ref, patchFlag, children, transition } = vnode;
+  const mergedProps = extraProps ? mergeProps(props || {}, extraProps) : props;
+  const cloned = {
+    __v_isVNode: true,
+    __v_skip: true,
+    type: vnode.type,
+    props: mergedProps,
+    key: mergedProps && normalizeKey(mergedProps),
+    ref: extraProps && extraProps.ref ? (
+      // #2078 in the case of <component :is="vnode" ref="extra"/>
+      // if the vnode itself already has a ref, cloneVNode will need to merge
+      // the refs so the single vnode can be set on multiple refs
+      mergeRef && ref ? isArray(ref) ? ref.concat(normalizeRef(extraProps)) : [ref, normalizeRef(extraProps)] : normalizeRef(extraProps)
+    ) : ref,
+    scopeId: vnode.scopeId,
+    slotScopeIds: vnode.slotScopeIds,
+    children:  false ? 0 : children,
+    target: vnode.target,
+    targetStart: vnode.targetStart,
+    targetAnchor: vnode.targetAnchor,
+    staticCount: vnode.staticCount,
+    shapeFlag: vnode.shapeFlag,
+    // if the vnode is cloned with extra props, we can no longer assume its
+    // existing patch flag to be reliable and need to add the FULL_PROPS flag.
+    // note: preserve flag for fragments since they use the flag for children
+    // fast paths only.
+    patchFlag: extraProps && vnode.type !== Fragment ? patchFlag === -1 ? 16 : patchFlag | 16 : patchFlag,
+    dynamicProps: vnode.dynamicProps,
+    dynamicChildren: vnode.dynamicChildren,
+    appContext: vnode.appContext,
+    dirs: vnode.dirs,
+    transition,
+    // These should technically only be non-null on mounted VNodes. However,
+    // they *should* be copied for kept-alive vnodes. So we just always copy
+    // them since them being non-null during a mount doesn't affect the logic as
+    // they will simply be overwritten.
+    component: vnode.component,
+    suspense: vnode.suspense,
+    ssContent: vnode.ssContent && cloneVNode(vnode.ssContent),
+    ssFallback: vnode.ssFallback && cloneVNode(vnode.ssFallback),
+    el: vnode.el,
+    anchor: vnode.anchor,
+    ctx: vnode.ctx,
+    ce: vnode.ce
+  };
+  if (transition && cloneTransition) {
+    setTransitionHooks(
+      cloned,
+      transition.clone(cloned)
+    );
+  }
+  return cloned;
+}
+function deepCloneVNode(vnode) {
+  const cloned = cloneVNode(vnode);
+  if (runtime_core_esm_bundler_isArray(vnode.children)) {
+    cloned.children = vnode.children.map(deepCloneVNode);
+  }
+  return cloned;
+}
+function createTextVNode(text = " ", flag = 0) {
+  return createVNode(Text, null, text, flag);
+}
+function createStaticVNode(content, numberOfNodes) {
+  const vnode = createVNode(Static, null, content);
+  vnode.staticCount = numberOfNodes;
+  return vnode;
+}
+function createCommentVNode(text = "", asBlock = false) {
+  return asBlock ? (openBlock(), createBlock(Comment, null, text)) : createVNode(Comment, null, text);
+}
+function normalizeVNode(child) {
+  if (child == null || typeof child === "boolean") {
+    return createVNode(Comment);
+  } else if (isArray(child)) {
+    return createVNode(
+      Fragment,
+      null,
+      // #3666, avoid reference pollution when reusing vnode
+      child.slice()
+    );
+  } else if (isVNode(child)) {
+    return cloneIfMounted(child);
+  } else {
+    return createVNode(Text, null, String(child));
+  }
+}
+function cloneIfMounted(child) {
+  return child.el === null && child.patchFlag !== -1 || child.memo ? child : cloneVNode(child);
+}
+function normalizeChildren(vnode, children) {
+  let type = 0;
+  const { shapeFlag } = vnode;
+  if (children == null) {
+    children = null;
+  } else if (isArray(children)) {
+    type = 16;
+  } else if (typeof children === "object") {
+    if (shapeFlag & (1 | 64)) {
+      const slot = children.default;
+      if (slot) {
+        slot._c && (slot._d = false);
+        normalizeChildren(vnode, slot());
+        slot._c && (slot._d = true);
+      }
+      return;
+    } else {
+      type = 32;
+      const slotFlag = children._;
+      if (!slotFlag && !isInternalObject(children)) {
+        children._ctx = currentRenderingInstance;
+      } else if (slotFlag === 3 && currentRenderingInstance) {
+        if (currentRenderingInstance.slots._ === 1) {
+          children._ = 1;
+        } else {
+          children._ = 2;
+          vnode.patchFlag |= 1024;
+        }
+      }
+    }
+  } else if (isFunction(children)) {
+    children = { default: children, _ctx: currentRenderingInstance };
+    type = 32;
+  } else {
+    children = String(children);
+    if (shapeFlag & 64) {
+      type = 16;
+      children = [createTextVNode(children)];
+    } else {
+      type = 8;
+    }
+  }
+  vnode.children = children;
+  vnode.shapeFlag |= type;
+}
+function mergeProps(...args) {
+  const ret = {};
+  for (let i = 0; i < args.length; i++) {
+    const toMerge = args[i];
+    for (const key in toMerge) {
+      if (key === "class") {
+        if (ret.class !== toMerge.class) {
+          ret.class = normalizeClass([ret.class, toMerge.class]);
+        }
+      } else if (key === "style") {
+        ret.style = normalizeStyle([ret.style, toMerge.style]);
+      } else if (isOn(key)) {
+        const existing = ret[key];
+        const incoming = toMerge[key];
+        if (incoming && existing !== incoming && !(isArray(existing) && existing.includes(incoming))) {
+          ret[key] = existing ? [].concat(existing, incoming) : incoming;
+        }
+      } else if (key !== "") {
+        ret[key] = toMerge[key];
+      }
+    }
+  }
+  return ret;
+}
+function invokeVNodeHook(hook, instance, vnode, prevVNode = null) {
+  callWithAsyncErrorHandling(hook, instance, 7, [
+    vnode,
+    prevVNode
+  ]);
+}
+
+const emptyAppContext = createAppContext();
+let uid = 0;
+function createComponentInstance(vnode, parent, suspense) {
+  const type = vnode.type;
+  const appContext = (parent ? parent.appContext : vnode.appContext) || emptyAppContext;
+  const instance = {
+    uid: uid++,
+    vnode,
+    type,
+    parent,
+    appContext,
+    root: null,
+    // to be immediately set
+    next: null,
+    subTree: null,
+    // will be set synchronously right after creation
+    effect: null,
+    update: null,
+    // will be set synchronously right after creation
+    job: null,
+    scope: new EffectScope(
+      true
+      /* detached */
+    ),
+    render: null,
+    proxy: null,
+    exposed: null,
+    exposeProxy: null,
+    withProxy: null,
+    provides: parent ? parent.provides : Object.create(appContext.provides),
+    ids: parent ? parent.ids : ["", 0, 0],
+    accessCache: null,
+    renderCache: [],
+    // local resolved assets
+    components: null,
+    directives: null,
+    // resolved props and emits options
+    propsOptions: normalizePropsOptions(type, appContext),
+    emitsOptions: normalizeEmitsOptions(type, appContext),
+    // emit
+    emit: null,
+    // to be set immediately
+    emitted: null,
+    // props default value
+    propsDefaults: EMPTY_OBJ,
+    // inheritAttrs
+    inheritAttrs: type.inheritAttrs,
+    // state
+    ctx: EMPTY_OBJ,
+    data: EMPTY_OBJ,
+    props: EMPTY_OBJ,
+    attrs: EMPTY_OBJ,
+    slots: EMPTY_OBJ,
+    refs: EMPTY_OBJ,
+    setupState: EMPTY_OBJ,
+    setupContext: null,
+    // suspense related
+    suspense,
+    suspenseId: suspense ? suspense.pendingId : 0,
+    asyncDep: null,
+    asyncResolved: false,
+    // lifecycle hooks
+    // not using enums here because it results in computed properties
+    isMounted: false,
+    isUnmounted: false,
+    isDeactivated: false,
+    bc: null,
+    c: null,
+    bm: null,
+    m: null,
+    bu: null,
+    u: null,
+    um: null,
+    bum: null,
+    da: null,
+    a: null,
+    rtg: null,
+    rtc: null,
+    ec: null,
+    sp: null
+  };
+  if (false) // removed by dead control flow
+{} else {
+    instance.ctx = { _: instance };
+  }
+  instance.root = parent ? parent.root : instance;
+  instance.emit = emit.bind(null, instance);
+  if (vnode.ce) {
+    vnode.ce(instance);
+  }
+  return instance;
+}
+let currentInstance = null;
+const getCurrentInstance = () => currentInstance || currentRenderingInstance;
+let internalSetCurrentInstance;
+let setInSSRSetupState;
+{
+  const g = getGlobalThis();
+  const registerGlobalSetter = (key, setter) => {
+    let setters;
+    if (!(setters = g[key])) setters = g[key] = [];
+    setters.push(setter);
+    return (v) => {
+      if (setters.length > 1) setters.forEach((set) => set(v));
+      else setters[0](v);
+    };
+  };
+  internalSetCurrentInstance = registerGlobalSetter(
+    `__VUE_INSTANCE_SETTERS__`,
+    (v) => currentInstance = v
+  );
+  setInSSRSetupState = registerGlobalSetter(
+    `__VUE_SSR_SETTERS__`,
+    (v) => isInSSRComponentSetup = v
+  );
+}
+const setCurrentInstance = (instance) => {
+  const prev = currentInstance;
+  internalSetCurrentInstance(instance);
+  instance.scope.on();
+  return () => {
+    instance.scope.off();
+    internalSetCurrentInstance(prev);
+  };
+};
+const unsetCurrentInstance = () => {
+  currentInstance && currentInstance.scope.off();
+  internalSetCurrentInstance(null);
+};
+const isBuiltInTag = /* @__PURE__ */ (/* unused pure expression or super */ null && (runtime_core_esm_bundler_makeMap("slot,component")));
+function validateComponentName(name, { isNativeTag }) {
+  if (isBuiltInTag(name) || isNativeTag(name)) {
+    warn$1(
+      "Do not use built-in or reserved HTML elements as component id: " + name
+    );
+  }
+}
+function isStatefulComponent(instance) {
+  return instance.vnode.shapeFlag & 4;
+}
+let isInSSRComponentSetup = false;
+function setupComponent(instance, isSSR = false, optimized = false) {
+  isSSR && setInSSRSetupState(isSSR);
+  const { props, children } = instance.vnode;
+  const isStateful = isStatefulComponent(instance);
+  initProps(instance, props, isStateful, isSSR);
+  initSlots(instance, children, optimized || isSSR);
+  const setupResult = isStateful ? setupStatefulComponent(instance, isSSR) : void 0;
+  isSSR && setInSSRSetupState(false);
+  return setupResult;
+}
+function setupStatefulComponent(instance, isSSR) {
+  var _a;
+  const Component = instance.type;
+  if (false) // removed by dead control flow
+{}
+  instance.accessCache = /* @__PURE__ */ Object.create(null);
+  instance.proxy = new Proxy(instance.ctx, PublicInstanceProxyHandlers);
+  if (false) // removed by dead control flow
+{}
+  const { setup } = Component;
+  if (setup) {
+    pauseTracking();
+    const setupContext = instance.setupContext = setup.length > 1 ? createSetupContext(instance) : null;
+    const reset = setCurrentInstance(instance);
+    const setupResult = callWithErrorHandling(
+      setup,
+      instance,
+      0,
+      [
+         false ? 0 : instance.props,
+        setupContext
+      ]
+    );
+    const isAsyncSetup = isPromise(setupResult);
+    resetTracking();
+    reset();
+    if ((isAsyncSetup || instance.sp) && !isAsyncWrapper(instance)) {
+      markAsyncBoundary(instance);
+    }
+    if (isAsyncSetup) {
+      setupResult.then(unsetCurrentInstance, unsetCurrentInstance);
+      if (isSSR) {
+        return setupResult.then((resolvedResult) => {
+          handleSetupResult(instance, resolvedResult, isSSR);
+        }).catch((e) => {
+          handleError(e, instance, 0);
+        });
+      } else {
+        instance.asyncDep = setupResult;
+        if (false) // removed by dead control flow
+{}
+      }
+    } else {
+      handleSetupResult(instance, setupResult, isSSR);
+    }
+  } else {
+    finishComponentSetup(instance, isSSR);
+  }
+}
+function handleSetupResult(instance, setupResult, isSSR) {
+  if (isFunction(setupResult)) {
+    if (instance.type.__ssrInlineRender) {
+      instance.ssrRender = setupResult;
+    } else {
+      instance.render = setupResult;
+    }
+  } else if (isObject(setupResult)) {
+    if (false) // removed by dead control flow
+{}
+    if ( false || __VUE_PROD_DEVTOOLS__) {
+      instance.devtoolsRawSetupState = setupResult;
+    }
+    instance.setupState = proxyRefs(setupResult);
+    if (false) // removed by dead control flow
+{}
+  } else if (false) // removed by dead control flow
+{}
+  finishComponentSetup(instance, isSSR);
+}
+let compile;
+let installWithProxy;
+function registerRuntimeCompiler(_compile) {
+  compile = _compile;
+  installWithProxy = (i) => {
+    if (i.render._rc) {
+      i.withProxy = new Proxy(i.ctx, RuntimeCompiledPublicInstanceProxyHandlers);
+    }
+  };
+}
+const isRuntimeOnly = () => !compile;
+function finishComponentSetup(instance, isSSR, skipOptions) {
+  const Component = instance.type;
+  if (!instance.render) {
+    if (!isSSR && compile && !Component.render) {
+      const template = Component.template || __VUE_OPTIONS_API__ && resolveMergedOptions(instance).template;
+      if (template) {
+        if (false) // removed by dead control flow
+{}
+        const { isCustomElement, compilerOptions } = instance.appContext.config;
+        const { delimiters, compilerOptions: componentCompilerOptions } = Component;
+        const finalCompilerOptions = extend(
+          extend(
+            {
+              isCustomElement,
+              delimiters
+            },
+            compilerOptions
+          ),
+          componentCompilerOptions
+        );
+        Component.render = compile(template, finalCompilerOptions);
+        if (false) // removed by dead control flow
+{}
+      }
+    }
+    instance.render = Component.render || NOOP;
+    if (installWithProxy) {
+      installWithProxy(instance);
+    }
+  }
+  if (__VUE_OPTIONS_API__ && true) {
+    const reset = setCurrentInstance(instance);
+    pauseTracking();
+    try {
+      applyOptions(instance);
+    } finally {
+      resetTracking();
+      reset();
+    }
+  }
+  if (false) // removed by dead control flow
+{}
+}
+const attrsProxyHandlers =  false ? 0 : {
+  get(target, key) {
+    track(target, "get", "");
+    return target[key];
+  }
+};
+function getSlotsProxy(instance) {
+  return new Proxy(instance.slots, {
+    get(target, key) {
+      runtime_core_esm_bundler_track(instance, "get", "$slots");
+      return target[key];
+    }
+  });
+}
+function createSetupContext(instance) {
+  const expose = (exposed) => {
+    if (false) // removed by dead control flow
+{}
+    instance.exposed = exposed || {};
+  };
+  if (false) // removed by dead control flow
+{} else {
+    return {
+      attrs: new Proxy(instance.attrs, attrsProxyHandlers),
+      slots: instance.slots,
+      emit: instance.emit,
+      expose
+    };
+  }
+}
+function getComponentPublicInstance(instance) {
+  if (instance.exposed) {
+    return instance.exposeProxy || (instance.exposeProxy = new Proxy(proxyRefs(markRaw(instance.exposed)), {
+      get(target, key) {
+        if (key in target) {
+          return target[key];
+        } else if (key in publicPropertiesMap) {
+          return publicPropertiesMap[key](instance);
+        }
+      },
+      has(target, key) {
+        return key in target || key in publicPropertiesMap;
+      }
+    }));
+  } else {
+    return instance.proxy;
+  }
+}
+const classifyRE = /(?:^|[-_])(\w)/g;
+const classify = (str) => str.replace(classifyRE, (c) => c.toUpperCase()).replace(/[-_]/g, "");
+function getComponentName(Component, includeInferred = true) {
+  return isFunction(Component) ? Component.displayName || Component.name : Component.name || includeInferred && Component.__name;
+}
+function formatComponentName(instance, Component, isRoot = false) {
+  let name = getComponentName(Component);
+  if (!name && Component.__file) {
+    const match = Component.__file.match(/([^/\\]+)\.\w+$/);
+    if (match) {
+      name = match[1];
+    }
+  }
+  if (!name && instance && instance.parent) {
+    const inferFromRegistry = (registry) => {
+      for (const key in registry) {
+        if (registry[key] === Component) {
+          return key;
+        }
+      }
+    };
+    name = inferFromRegistry(
+      instance.components || instance.parent.type.components
+    ) || inferFromRegistry(instance.appContext.components);
+  }
+  return name ? classify(name) : isRoot ? `App` : `Anonymous`;
+}
+function isClassComponent(value) {
+  return isFunction(value) && "__vccOpts" in value;
+}
+
+const runtime_core_esm_bundler_computed = (getterOrOptions, debugOptions) => {
+  const c = computed(getterOrOptions, debugOptions, isInSSRComponentSetup);
+  if (false) // removed by dead control flow
+{}
+  return c;
+};
+
+function h(type, propsOrChildren, children) {
+  const l = arguments.length;
+  if (l === 2) {
+    if (runtime_core_esm_bundler_isObject(propsOrChildren) && !runtime_core_esm_bundler_isArray(propsOrChildren)) {
+      if (isVNode(propsOrChildren)) {
+        return createVNode(type, null, [propsOrChildren]);
+      }
+      return createVNode(type, propsOrChildren);
+    } else {
+      return createVNode(type, null, propsOrChildren);
+    }
+  } else {
+    if (l > 3) {
+      children = Array.prototype.slice.call(arguments, 2);
+    } else if (l === 3 && isVNode(children)) {
+      children = [children];
+    }
+    return createVNode(type, propsOrChildren, children);
+  }
+}
+
+function initCustomFormatter() {
+  if (true) {
+    return;
+  }
+  // removed by dead control flow
+
+  // removed by dead control flow
+
+  // removed by dead control flow
+
+  // removed by dead control flow
+
+  // removed by dead control flow
+
+  function formatInstance(instance) {
+    const blocks = [];
+    if (instance.type.props && instance.props) {
+      blocks.push(createInstanceBlock("props", runtime_core_esm_bundler_toRaw(instance.props)));
+    }
+    if (instance.setupState !== runtime_core_esm_bundler_EMPTY_OBJ) {
+      blocks.push(createInstanceBlock("setup", instance.setupState));
+    }
+    if (instance.data !== runtime_core_esm_bundler_EMPTY_OBJ) {
+      blocks.push(createInstanceBlock("data", runtime_core_esm_bundler_toRaw(instance.data)));
+    }
+    const computed = extractKeys(instance, "computed");
+    if (computed) {
+      blocks.push(createInstanceBlock("computed", computed));
+    }
+    const injected = extractKeys(instance, "inject");
+    if (injected) {
+      blocks.push(createInstanceBlock("injected", injected));
+    }
+    blocks.push([
+      "div",
+      {},
+      [
+        "span",
+        {
+          style: keywordStyle.style + ";opacity:0.66"
+        },
+        "$ (internal): "
+      ],
+      ["object", { object: instance }]
+    ]);
+    return blocks;
+  }
+  function createInstanceBlock(type, target) {
+    target = runtime_core_esm_bundler_extend({}, target);
+    if (!Object.keys(target).length) {
+      return ["span", {}];
+    }
+    return [
+      "div",
+      { style: "line-height:1.25em;margin-bottom:0.6em" },
+      [
+        "div",
+        {
+          style: "color:#476582"
+        },
+        type
+      ],
+      [
+        "div",
+        {
+          style: "padding-left:1.25em"
+        },
+        ...Object.keys(target).map((key) => {
+          return [
+            "div",
+            {},
+            ["span", keywordStyle, key + ": "],
+            formatValue(target[key], false)
+          ];
+        })
+      ]
+    ];
+  }
+  function formatValue(v, asRaw = true) {
+    if (typeof v === "number") {
+      return ["span", numberStyle, v];
+    } else if (typeof v === "string") {
+      return ["span", stringStyle, JSON.stringify(v)];
+    } else if (typeof v === "boolean") {
+      return ["span", keywordStyle, v];
+    } else if (runtime_core_esm_bundler_isObject(v)) {
+      return ["object", { object: asRaw ? runtime_core_esm_bundler_toRaw(v) : v }];
+    } else {
+      return ["span", stringStyle, String(v)];
+    }
+  }
+  function extractKeys(instance, type) {
+    const Comp = instance.type;
+    if (runtime_core_esm_bundler_isFunction(Comp)) {
+      return;
+    }
+    const extracted = {};
+    for (const key in instance.ctx) {
+      if (isKeyOfType(Comp, key, type)) {
+        extracted[key] = instance.ctx[key];
+      }
+    }
+    return extracted;
+  }
+  function isKeyOfType(Comp, key, type) {
+    const opts = Comp[type];
+    if (runtime_core_esm_bundler_isArray(opts) && opts.includes(key) || runtime_core_esm_bundler_isObject(opts) && key in opts) {
+      return true;
+    }
+    if (Comp.extends && isKeyOfType(Comp.extends, key, type)) {
+      return true;
+    }
+    if (Comp.mixins && Comp.mixins.some((m) => isKeyOfType(m, key, type))) {
+      return true;
+    }
+  }
+  function genRefFlag(v) {
+    if (runtime_core_esm_bundler_isShallow(v)) {
+      return `ShallowRef`;
+    }
+    if (v.effect) {
+      return `ComputedRef`;
+    }
+    return `Ref`;
+  }
+  // removed by dead control flow
+
+}
+
+function withMemo(memo, render, cache, index) {
+  const cached = cache[index];
+  if (cached && isMemoSame(cached, memo)) {
+    return cached;
+  }
+  const ret = render();
+  ret.memo = memo.slice();
+  ret.cacheIndex = index;
+  return cache[index] = ret;
+}
+function isMemoSame(cached, memo) {
+  const prev = cached.memo;
+  if (prev.length != memo.length) {
+    return false;
+  }
+  for (let i = 0; i < prev.length; i++) {
+    if (runtime_core_esm_bundler_hasChanged(prev[i], memo[i])) {
+      return false;
+    }
+  }
+  if (isBlockTreeEnabled > 0 && currentBlock) {
+    currentBlock.push(cached);
+  }
+  return true;
+}
+
+const version = "3.5.17";
+const runtime_core_esm_bundler_warn = (/* unused pure expression or super */ null && ( false ? 0 : runtime_core_esm_bundler_NOOP));
+const ErrorTypeStrings = (/* unused pure expression or super */ null && (ErrorTypeStrings$1)) ;
+const devtools =  true ? devtools$1 : 0;
+const setDevtoolsHook = (/* unused pure expression or super */ null && ( true ? setDevtoolsHook$1 : 0));
+const _ssrUtils = {
+  createComponentInstance,
+  setupComponent,
+  renderComponentRoot,
+  setCurrentRenderingInstance,
+  isVNode: isVNode,
+  normalizeVNode,
+  getComponentPublicInstance,
+  ensureValidVNode,
+  pushWarningContext,
+  popWarningContext
+};
+const ssrUtils = (/* unused pure expression or super */ null && (_ssrUtils)) ;
+const resolveFilter = null;
+const compatUtils = null;
+const DeprecationTypes = null;
+
+
+
+;// ../node_modules/@vueuse/shared/index.mjs
+/* unused harmony import specifier */ var shared_shallowRef;
+/* unused harmony import specifier */ var shared_watchEffect;
+/* unused harmony import specifier */ var shared_readonly;
+/* unused harmony import specifier */ var shared_watch;
+/* unused harmony import specifier */ var shared_customRef;
+/* unused harmony import specifier */ var shared_effectScope;
+/* unused harmony import specifier */ var shared_getCurrentInstance;
+/* unused harmony import specifier */ var shared_hasInjectionContext;
+/* unused harmony import specifier */ var shared_inject;
+/* unused harmony import specifier */ var shared_provide;
+/* unused harmony import specifier */ var shared_ref;
+/* unused harmony import specifier */ var shared_isRef;
+/* unused harmony import specifier */ var shared_unref;
+/* unused harmony import specifier */ var toValue$1;
+/* unused harmony import specifier */ var shared_computed;
+/* unused harmony import specifier */ var shared_reactive;
+/* unused harmony import specifier */ var toRefs$1;
+/* unused harmony import specifier */ var toRef$1;
+/* unused harmony import specifier */ var shared_shallowReadonly;
+/* unused harmony import specifier */ var shared_onBeforeMount;
+/* unused harmony import specifier */ var shared_nextTick;
+/* unused harmony import specifier */ var shared_onBeforeUnmount;
+/* unused harmony import specifier */ var shared_onMounted;
+/* unused harmony import specifier */ var shared_onUnmounted;
+/* unused harmony import specifier */ var shared_isReactive;
+
+
+function computedEager(fn, options) {
+  var _a;
+  const result = shared_shallowRef();
+  shared_watchEffect(() => {
+    result.value = fn();
+  }, {
+    ...options,
+    flush: (_a = options == null ? void 0 : options.flush) != null ? _a : "sync"
+  });
+  return shared_readonly(result);
+}
+
+function computedWithControl(source, fn, options = {}) {
+  let v = void 0;
+  let track;
+  let trigger;
+  let dirty = true;
+  const update = () => {
+    dirty = true;
+    trigger();
+  };
+  shared_watch(source, update, { flush: "sync", ...options });
+  const get = typeof fn === "function" ? fn : fn.get;
+  const set = typeof fn === "function" ? void 0 : fn.set;
+  const result = shared_customRef((_track, _trigger) => {
+    track = _track;
+    trigger = _trigger;
+    return {
+      get() {
+        if (dirty) {
+          v = get(v);
+          dirty = false;
+        }
+        track();
+        return v;
+      },
+      set(v2) {
+        set == null ? void 0 : set(v2);
+      }
+    };
+  });
+  result.trigger = update;
+  return result;
+}
+
+function tryOnScopeDispose(fn) {
+  if (getCurrentScope()) {
+    onScopeDispose(fn);
+    return true;
+  }
+  return false;
+}
+
+function createEventHook() {
+  const fns = /* @__PURE__ */ new Set();
+  const off = (fn) => {
+    fns.delete(fn);
+  };
+  const clear = () => {
+    fns.clear();
+  };
+  const on = (fn) => {
+    fns.add(fn);
+    const offFn = () => off(fn);
+    tryOnScopeDispose(offFn);
+    return {
+      off: offFn
+    };
+  };
+  const trigger = (...args) => {
+    return Promise.all(Array.from(fns).map((fn) => fn(...args)));
+  };
+  return {
+    on,
+    off,
+    trigger,
+    clear
+  };
+}
+
+function createGlobalState(stateFactory) {
+  let initialized = false;
+  let state;
+  const scope = shared_effectScope(true);
+  return (...args) => {
+    if (!initialized) {
+      state = scope.run(() => stateFactory(...args));
+      initialized = true;
+    }
+    return state;
+  };
+}
+
+const localProvidedStateMap = /* @__PURE__ */ new WeakMap();
+
+const injectLocal = (...args) => {
+  var _a;
+  const key = args[0];
+  const instance = (_a = shared_getCurrentInstance()) == null ? void 0 : _a.proxy;
+  if (instance == null && !shared_hasInjectionContext())
+    throw new Error("injectLocal must be called in setup");
+  if (instance && localProvidedStateMap.has(instance) && key in localProvidedStateMap.get(instance))
+    return localProvidedStateMap.get(instance)[key];
+  return shared_inject(...args);
+};
+
+function provideLocal(key, value) {
+  var _a;
+  const instance = (_a = shared_getCurrentInstance()) == null ? void 0 : _a.proxy;
+  if (instance == null)
+    throw new Error("provideLocal must be called in setup");
+  if (!localProvidedStateMap.has(instance))
+    localProvidedStateMap.set(instance, /* @__PURE__ */ Object.create(null));
+  const localProvidedState = localProvidedStateMap.get(instance);
+  localProvidedState[key] = value;
+  return shared_provide(key, value);
+}
+
+function createInjectionState(composable, options) {
+  const key = (options == null ? void 0 : options.injectionKey) || Symbol(composable.name || "InjectionState");
+  const defaultValue = options == null ? void 0 : options.defaultValue;
+  const useProvidingState = (...args) => {
+    const state = composable(...args);
+    provideLocal(key, state);
+    return state;
+  };
+  const useInjectedState = () => injectLocal(key, defaultValue);
+  return [useProvidingState, useInjectedState];
+}
+
+function shared_createRef(value, deep) {
+  if (deep === true) {
+    return shared_ref(value);
+  } else {
+    return shared_shallowRef(value);
+  }
+}
+
+function createSharedComposable(composable) {
+  let subscribers = 0;
+  let state;
+  let scope;
+  const dispose = () => {
+    subscribers -= 1;
+    if (scope && subscribers <= 0) {
+      scope.stop();
+      state = void 0;
+      scope = void 0;
+    }
+  };
+  return (...args) => {
+    subscribers += 1;
+    if (!scope) {
+      scope = shared_effectScope(true);
+      state = scope.run(() => composable(...args));
+    }
+    tryOnScopeDispose(dispose);
+    return state;
+  };
+}
+
+function extendRef(ref, extend, { enumerable = false, unwrap = true } = {}) {
+  for (const [key, value] of Object.entries(extend)) {
+    if (key === "value")
+      continue;
+    if (shared_isRef(value) && unwrap) {
+      Object.defineProperty(ref, key, {
+        get() {
+          return value.value;
+        },
+        set(v) {
+          value.value = v;
+        },
+        enumerable
+      });
+    } else {
+      Object.defineProperty(ref, key, { value, enumerable });
+    }
+  }
+  return ref;
+}
+
+function get(obj, key) {
+  if (key == null)
+    return shared_unref(obj);
+  return shared_unref(obj)[key];
+}
+
+function isDefined(v) {
+  return shared_unref(v) != null;
+}
+
+function makeDestructurable(obj, arr) {
+  if (typeof Symbol !== "undefined") {
+    const clone = { ...obj };
+    Object.defineProperty(clone, Symbol.iterator, {
+      enumerable: false,
+      value() {
+        let index = 0;
+        return {
+          next: () => ({
+            value: arr[index++],
+            done: index > arr.length
+          })
+        };
+      }
+    });
+    return clone;
+  } else {
+    return Object.assign([...arr], obj);
+  }
+}
+
+function reactify(fn, options) {
+  const unrefFn = (options == null ? void 0 : options.computedGetter) === false ? shared_unref : toValue$1;
+  return function(...args) {
+    return shared_computed(() => fn.apply(this, args.map((i) => unrefFn(i))));
+  };
+}
+
+function reactifyObject(obj, optionsOrKeys = {}) {
+  let keys = [];
+  let options;
+  if (Array.isArray(optionsOrKeys)) {
+    keys = optionsOrKeys;
+  } else {
+    options = optionsOrKeys;
+    const { includeOwnProperties = true } = optionsOrKeys;
+    keys.push(...Object.keys(obj));
+    if (includeOwnProperties)
+      keys.push(...Object.getOwnPropertyNames(obj));
+  }
+  return Object.fromEntries(
+    keys.map((key) => {
+      const value = obj[key];
+      return [
+        key,
+        typeof value === "function" ? reactify(value.bind(obj), options) : value
+      ];
+    })
+  );
+}
+
+function shared_toReactive(objectRef) {
+  if (!shared_isRef(objectRef))
+    return shared_reactive(objectRef);
+  const proxy = new Proxy({}, {
+    get(_, p, receiver) {
+      return shared_unref(Reflect.get(objectRef.value, p, receiver));
+    },
+    set(_, p, value) {
+      if (shared_isRef(objectRef.value[p]) && !shared_isRef(value))
+        objectRef.value[p].value = value;
+      else
+        objectRef.value[p] = value;
+      return true;
+    },
+    deleteProperty(_, p) {
+      return Reflect.deleteProperty(objectRef.value, p);
+    },
+    has(_, p) {
+      return Reflect.has(objectRef.value, p);
+    },
+    ownKeys() {
+      return Object.keys(objectRef.value);
+    },
+    getOwnPropertyDescriptor() {
+      return {
+        enumerable: true,
+        configurable: true
+      };
+    }
+  });
+  return shared_reactive(proxy);
+}
+
+function reactiveComputed(fn) {
+  return shared_toReactive(shared_computed(fn));
+}
+
+function reactiveOmit(obj, ...keys) {
+  const flatKeys = keys.flat();
+  const predicate = flatKeys[0];
+  return reactiveComputed(() => typeof predicate === "function" ? Object.fromEntries(Object.entries(toRefs$1(obj)).filter(([k, v]) => !predicate(toValue$1(v), k))) : Object.fromEntries(Object.entries(toRefs$1(obj)).filter((e) => !flatKeys.includes(e[0]))));
+}
+
+const isClient = typeof window !== "undefined" && typeof document !== "undefined";
+const isWorker = typeof WorkerGlobalScope !== "undefined" && globalThis instanceof WorkerGlobalScope;
+const isDef = (val) => typeof val !== "undefined";
+const notNullish = (val) => val != null;
+const assert = (condition, ...infos) => {
+  if (!condition)
+    console.warn(...infos);
+};
+const shared_toString = Object.prototype.toString;
+const shared_isObject = (val) => shared_toString.call(val) === "[object Object]";
+const now = () => Date.now();
+const timestamp = () => +Date.now();
+const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
+const noop = () => {
+};
+const rand = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+const shared_hasOwn = (val, key) => Object.prototype.hasOwnProperty.call(val, key);
+const isIOS = /* @__PURE__ */ (/* unused pure expression or super */ null && (getIsIOS()));
+function getIsIOS() {
+  var _a, _b;
+  return isClient && ((_a = window == null ? void 0 : window.navigator) == null ? void 0 : _a.userAgent) && (/iP(?:ad|hone|od)/.test(window.navigator.userAgent) || ((_b = window == null ? void 0 : window.navigator) == null ? void 0 : _b.maxTouchPoints) > 2 && /iPad|Macintosh/.test(window == null ? void 0 : window.navigator.userAgent));
+}
+
+function shared_toRef(...args) {
+  if (args.length !== 1)
+    return toRef$1(...args);
+  const r = args[0];
+  return typeof r === "function" ? shared_readonly(shared_customRef(() => ({ get: r, set: noop }))) : shared_ref(r);
+}
+const resolveRef = (/* unused pure expression or super */ null && (shared_toRef));
+
+function reactivePick(obj, ...keys) {
+  const flatKeys = keys.flat();
+  const predicate = flatKeys[0];
+  return reactiveComputed(() => typeof predicate === "function" ? Object.fromEntries(Object.entries(toRefs$1(obj)).filter(([k, v]) => predicate(toValue$1(v), k))) : Object.fromEntries(flatKeys.map((k) => [k, shared_toRef(obj, k)])));
+}
+
+function refAutoReset(defaultValue, afterMs = 1e4) {
+  return shared_customRef((track, trigger) => {
+    let value = toValue$1(defaultValue);
+    let timer;
+    const resetAfter = () => setTimeout(() => {
+      value = toValue$1(defaultValue);
+      trigger();
+    }, toValue$1(afterMs));
+    tryOnScopeDispose(() => {
+      clearTimeout(timer);
+    });
+    return {
+      get() {
+        track();
+        return value;
+      },
+      set(newValue) {
+        value = newValue;
+        trigger();
+        clearTimeout(timer);
+        timer = resetAfter();
+      }
+    };
+  });
+}
+
+function createFilterWrapper(filter, fn) {
+  function wrapper(...args) {
+    return new Promise((resolve, reject) => {
+      Promise.resolve(filter(() => fn.apply(this, args), { fn, thisArg: this, args })).then(resolve).catch(reject);
+    });
+  }
+  return wrapper;
+}
+const bypassFilter = (invoke) => {
+  return invoke();
+};
+function debounceFilter(ms, options = {}) {
+  let timer;
+  let maxTimer;
+  let lastRejector = noop;
+  const _clearTimeout = (timer2) => {
+    clearTimeout(timer2);
+    lastRejector();
+    lastRejector = noop;
+  };
+  let lastInvoker;
+  const filter = (invoke) => {
+    const duration = toValue$1(ms);
+    const maxDuration = toValue$1(options.maxWait);
+    if (timer)
+      _clearTimeout(timer);
+    if (duration <= 0 || maxDuration !== void 0 && maxDuration <= 0) {
+      if (maxTimer) {
+        _clearTimeout(maxTimer);
+        maxTimer = void 0;
+      }
+      return Promise.resolve(invoke());
+    }
+    return new Promise((resolve, reject) => {
+      lastRejector = options.rejectOnCancel ? reject : resolve;
+      lastInvoker = invoke;
+      if (maxDuration && !maxTimer) {
+        maxTimer = setTimeout(() => {
+          if (timer)
+            _clearTimeout(timer);
+          maxTimer = void 0;
+          resolve(lastInvoker());
+        }, maxDuration);
+      }
+      timer = setTimeout(() => {
+        if (maxTimer)
+          _clearTimeout(maxTimer);
+        maxTimer = void 0;
+        resolve(invoke());
+      }, duration);
+    });
+  };
+  return filter;
+}
+function throttleFilter(...args) {
+  let lastExec = 0;
+  let timer;
+  let isLeading = true;
+  let lastRejector = noop;
+  let lastValue;
+  let ms;
+  let trailing;
+  let leading;
+  let rejectOnCancel;
+  if (!shared_isRef(args[0]) && typeof args[0] === "object")
+    ({ delay: ms, trailing = true, leading = true, rejectOnCancel = false } = args[0]);
+  else
+    [ms, trailing = true, leading = true, rejectOnCancel = false] = args;
+  const clear = () => {
+    if (timer) {
+      clearTimeout(timer);
+      timer = void 0;
+      lastRejector();
+      lastRejector = noop;
+    }
+  };
+  const filter = (_invoke) => {
+    const duration = toValue$1(ms);
+    const elapsed = Date.now() - lastExec;
+    const invoke = () => {
+      return lastValue = _invoke();
+    };
+    clear();
+    if (duration <= 0) {
+      lastExec = Date.now();
+      return invoke();
+    }
+    if (elapsed > duration && (leading || !isLeading)) {
+      lastExec = Date.now();
+      invoke();
+    } else if (trailing) {
+      lastValue = new Promise((resolve, reject) => {
+        lastRejector = rejectOnCancel ? reject : resolve;
+        timer = setTimeout(() => {
+          lastExec = Date.now();
+          isLeading = true;
+          resolve(invoke());
+          clear();
+        }, Math.max(0, duration - elapsed));
+      });
+    }
+    if (!leading && !timer)
+      timer = setTimeout(() => isLeading = true, duration);
+    isLeading = false;
+    return lastValue;
+  };
+  return filter;
+}
+function pausableFilter(extendFilter = bypassFilter, options = {}) {
+  const {
+    initialState = "active"
+  } = options;
+  const isActive = shared_toRef(initialState === "active");
+  function pause() {
+    isActive.value = false;
+  }
+  function resume() {
+    isActive.value = true;
+  }
+  const eventFilter = (...args) => {
+    if (isActive.value)
+      extendFilter(...args);
+  };
+  return { isActive: shared_readonly(isActive), pause, resume, eventFilter };
+}
+
+function promiseTimeout(ms, throwOnTimeout = false, reason = "Timeout") {
+  return new Promise((resolve, reject) => {
+    if (throwOnTimeout)
+      setTimeout(() => reject(reason), ms);
+    else
+      setTimeout(resolve, ms);
+  });
+}
+function identity(arg) {
+  return arg;
+}
+function createSingletonPromise(fn) {
+  let _promise;
+  function wrapper() {
+    if (!_promise)
+      _promise = fn();
+    return _promise;
+  }
+  wrapper.reset = async () => {
+    const _prev = _promise;
+    _promise = void 0;
+    if (_prev)
+      await _prev;
+  };
+  return wrapper;
+}
+function invoke(fn) {
+  return fn();
+}
+function containsProp(obj, ...props) {
+  return props.some((k) => k in obj);
+}
+function increaseWithUnit(target, delta) {
+  var _a;
+  if (typeof target === "number")
+    return target + delta;
+  const value = ((_a = target.match(/^-?\d+\.?\d*/)) == null ? void 0 : _a[0]) || "";
+  const unit = target.slice(value.length);
+  const result = Number.parseFloat(value) + delta;
+  if (Number.isNaN(result))
+    return target;
+  return result + unit;
+}
+function pxValue(px) {
+  return px.endsWith("rem") ? Number.parseFloat(px) * 16 : Number.parseFloat(px);
+}
+function objectPick(obj, keys, omitUndefined = false) {
+  return keys.reduce((n, k) => {
+    if (k in obj) {
+      if (!omitUndefined || obj[k] !== void 0)
+        n[k] = obj[k];
+    }
+    return n;
+  }, {});
+}
+function objectOmit(obj, keys, omitUndefined = false) {
+  return Object.fromEntries(Object.entries(obj).filter(([key, value]) => {
+    return (!omitUndefined || value !== void 0) && !keys.includes(key);
+  }));
+}
+function objectEntries(obj) {
+  return Object.entries(obj);
+}
+function toArray(value) {
+  return Array.isArray(value) ? value : [value];
+}
+
+function shared_cacheStringFunction(fn) {
+  const cache = /* @__PURE__ */ Object.create(null);
+  return (str) => {
+    const hit = cache[str];
+    return hit || (cache[str] = fn(str));
+  };
+}
+const shared_hyphenateRE = /\B([A-Z])/g;
+const shared_hyphenate = shared_cacheStringFunction((str) => str.replace(shared_hyphenateRE, "-$1").toLowerCase());
+const shared_camelizeRE = /-(\w)/g;
+const shared_camelize = shared_cacheStringFunction((str) => {
+  return str.replace(shared_camelizeRE, (_, c) => c ? c.toUpperCase() : "");
+});
+
+function getLifeCycleTarget(target) {
+  return target || shared_getCurrentInstance();
+}
+
+function useDebounceFn(fn, ms = 200, options = {}) {
+  return createFilterWrapper(
+    debounceFilter(ms, options),
+    fn
+  );
+}
+
+function refDebounced(value, ms = 200, options = {}) {
+  const debounced = shared_ref(toValue$1(value));
+  const updater = useDebounceFn(() => {
+    debounced.value = value.value;
+  }, ms, options);
+  shared_watch(value, () => updater());
+  return shared_shallowReadonly(debounced);
+}
+
+function refDefault(source, defaultValue) {
+  return shared_computed({
+    get() {
+      var _a;
+      return (_a = source.value) != null ? _a : defaultValue;
+    },
+    set(value) {
+      source.value = value;
+    }
+  });
+}
+
+function useThrottleFn(fn, ms = 200, trailing = false, leading = true, rejectOnCancel = false) {
+  return createFilterWrapper(
+    throttleFilter(ms, trailing, leading, rejectOnCancel),
+    fn
+  );
+}
+
+function refThrottled(value, delay = 200, trailing = true, leading = true) {
+  if (delay <= 0)
+    return value;
+  const throttled = shared_ref(toValue$1(value));
+  const updater = useThrottleFn(() => {
+    throttled.value = value.value;
+  }, delay, trailing, leading);
+  shared_watch(value, () => updater());
+  return throttled;
+}
+
+function refWithControl(initial, options = {}) {
+  let source = initial;
+  let track;
+  let trigger;
+  const ref = shared_customRef((_track, _trigger) => {
+    track = _track;
+    trigger = _trigger;
+    return {
+      get() {
+        return get();
+      },
+      set(v) {
+        set(v);
+      }
+    };
+  });
+  function get(tracking = true) {
+    if (tracking)
+      track();
+    return source;
+  }
+  function set(value, triggering = true) {
+    var _a, _b;
+    if (value === source)
+      return;
+    const old = source;
+    if (((_a = options.onBeforeChange) == null ? void 0 : _a.call(options, value, old)) === false)
+      return;
+    source = value;
+    (_b = options.onChanged) == null ? void 0 : _b.call(options, value, old);
+    if (triggering)
+      trigger();
+  }
+  const untrackedGet = () => get(false);
+  const silentSet = (v) => set(v, false);
+  const peek = () => get(false);
+  const lay = (v) => set(v, false);
+  return extendRef(
+    ref,
+    {
+      get,
+      set,
+      untrackedGet,
+      silentSet,
+      peek,
+      lay
+    },
+    { enumerable: true }
+  );
+}
+const controlledRef = (/* unused pure expression or super */ null && (refWithControl));
+
+function set(...args) {
+  if (args.length === 2) {
+    const [ref, value] = args;
+    ref.value = value;
+  }
+  if (args.length === 3) {
+    const [target, key, value] = args;
+    target[key] = value;
+  }
+}
+
+function watchWithFilter(source, cb, options = {}) {
+  const {
+    eventFilter = bypassFilter,
+    ...watchOptions
+  } = options;
+  return shared_watch(
+    source,
+    createFilterWrapper(
+      eventFilter,
+      cb
+    ),
+    watchOptions
+  );
+}
+
+function watchPausable(source, cb, options = {}) {
+  const {
+    eventFilter: filter,
+    initialState = "active",
+    ...watchOptions
+  } = options;
+  const { eventFilter, pause, resume, isActive } = pausableFilter(filter, { initialState });
+  const stop = watchWithFilter(
+    source,
+    cb,
+    {
+      ...watchOptions,
+      eventFilter
+    }
+  );
+  return { stop, pause, resume, isActive };
+}
+
+function syncRef(left, right, ...[options]) {
+  const {
+    flush = "sync",
+    deep = false,
+    immediate = true,
+    direction = "both",
+    transform = {}
+  } = options || {};
+  const watchers = [];
+  const transformLTR = "ltr" in transform && transform.ltr || ((v) => v);
+  const transformRTL = "rtl" in transform && transform.rtl || ((v) => v);
+  if (direction === "both" || direction === "ltr") {
+    watchers.push(watchPausable(
+      left,
+      (newValue) => {
+        watchers.forEach((w) => w.pause());
+        right.value = transformLTR(newValue);
+        watchers.forEach((w) => w.resume());
+      },
+      { flush, deep, immediate }
+    ));
+  }
+  if (direction === "both" || direction === "rtl") {
+    watchers.push(watchPausable(
+      right,
+      (newValue) => {
+        watchers.forEach((w) => w.pause());
+        left.value = transformRTL(newValue);
+        watchers.forEach((w) => w.resume());
+      },
+      { flush, deep, immediate }
+    ));
+  }
+  const stop = () => {
+    watchers.forEach((w) => w.stop());
+  };
+  return stop;
+}
+
+function syncRefs(source, targets, options = {}) {
+  const {
+    flush = "sync",
+    deep = false,
+    immediate = true
+  } = options;
+  const targetsArray = toArray(targets);
+  return shared_watch(
+    source,
+    (newValue) => targetsArray.forEach((target) => target.value = newValue),
+    { flush, deep, immediate }
+  );
+}
+
+function shared_toRefs(objectRef, options = {}) {
+  if (!shared_isRef(objectRef))
+    return toRefs$1(objectRef);
+  const result = Array.isArray(objectRef.value) ? Array.from({ length: objectRef.value.length }) : {};
+  for (const key in objectRef.value) {
+    result[key] = shared_customRef(() => ({
+      get() {
+        return objectRef.value[key];
+      },
+      set(v) {
+        var _a;
+        const replaceRef = (_a = toValue$1(options.replaceRef)) != null ? _a : true;
+        if (replaceRef) {
+          if (Array.isArray(objectRef.value)) {
+            const copy = [...objectRef.value];
+            copy[key] = v;
+            objectRef.value = copy;
+          } else {
+            const newObject = { ...objectRef.value, [key]: v };
+            Object.setPrototypeOf(newObject, Object.getPrototypeOf(objectRef.value));
+            objectRef.value = newObject;
+          }
+        } else {
+          objectRef.value[key] = v;
+        }
+      }
+    }));
+  }
+  return result;
+}
+
+const shared_toValue = (/* unused pure expression or super */ null && (toValue$1));
+const resolveUnref = (/* unused pure expression or super */ null && (toValue$1));
+
+function tryOnBeforeMount(fn, sync = true, target) {
+  const instance = getLifeCycleTarget(target);
+  if (instance)
+    shared_onBeforeMount(fn, target);
+  else if (sync)
+    fn();
+  else
+    shared_nextTick(fn);
+}
+
+function tryOnBeforeUnmount(fn, target) {
+  const instance = getLifeCycleTarget(target);
+  if (instance)
+    shared_onBeforeUnmount(fn, target);
+}
+
+function tryOnMounted(fn, sync = true, target) {
+  const instance = getLifeCycleTarget(target);
+  if (instance)
+    shared_onMounted(fn, target);
+  else if (sync)
+    fn();
+  else
+    shared_nextTick(fn);
+}
+
+function tryOnUnmounted(fn, target) {
+  const instance = getLifeCycleTarget(target);
+  if (instance)
+    shared_onUnmounted(fn, target);
+}
+
+function createUntil(r, isNot = false) {
+  function toMatch(condition, { flush = "sync", deep = false, timeout, throwOnTimeout } = {}) {
+    let stop = null;
+    const watcher = new Promise((resolve) => {
+      stop = shared_watch(
+        r,
+        (v) => {
+          if (condition(v) !== isNot) {
+            if (stop)
+              stop();
+            else
+              shared_nextTick(() => stop == null ? void 0 : stop());
+            resolve(v);
+          }
+        },
+        {
+          flush,
+          deep,
+          immediate: true
+        }
+      );
+    });
+    const promises = [watcher];
+    if (timeout != null) {
+      promises.push(
+        promiseTimeout(timeout, throwOnTimeout).then(() => toValue$1(r)).finally(() => stop == null ? void 0 : stop())
+      );
+    }
+    return Promise.race(promises);
+  }
+  function toBe(value, options) {
+    if (!shared_isRef(value))
+      return toMatch((v) => v === value, options);
+    const { flush = "sync", deep = false, timeout, throwOnTimeout } = options != null ? options : {};
+    let stop = null;
+    const watcher = new Promise((resolve) => {
+      stop = shared_watch(
+        [r, value],
+        ([v1, v2]) => {
+          if (isNot !== (v1 === v2)) {
+            if (stop)
+              stop();
+            else
+              shared_nextTick(() => stop == null ? void 0 : stop());
+            resolve(v1);
+          }
+        },
+        {
+          flush,
+          deep,
+          immediate: true
+        }
+      );
+    });
+    const promises = [watcher];
+    if (timeout != null) {
+      promises.push(
+        promiseTimeout(timeout, throwOnTimeout).then(() => toValue$1(r)).finally(() => {
+          stop == null ? void 0 : stop();
+          return toValue$1(r);
+        })
+      );
+    }
+    return Promise.race(promises);
+  }
+  function toBeTruthy(options) {
+    return toMatch((v) => Boolean(v), options);
+  }
+  function toBeNull(options) {
+    return toBe(null, options);
+  }
+  function toBeUndefined(options) {
+    return toBe(void 0, options);
+  }
+  function toBeNaN(options) {
+    return toMatch(Number.isNaN, options);
+  }
+  function toContains(value, options) {
+    return toMatch((v) => {
+      const array = Array.from(v);
+      return array.includes(value) || array.includes(toValue$1(value));
+    }, options);
+  }
+  function changed(options) {
+    return changedTimes(1, options);
+  }
+  function changedTimes(n = 1, options) {
+    let count = -1;
+    return toMatch(() => {
+      count += 1;
+      return count >= n;
+    }, options);
+  }
+  if (Array.isArray(toValue$1(r))) {
+    const instance = {
+      toMatch,
+      toContains,
+      changed,
+      changedTimes,
+      get not() {
+        return createUntil(r, !isNot);
+      }
+    };
+    return instance;
+  } else {
+    const instance = {
+      toMatch,
+      toBe,
+      toBeTruthy,
+      toBeNull,
+      toBeNaN,
+      toBeUndefined,
+      changed,
+      changedTimes,
+      get not() {
+        return createUntil(r, !isNot);
+      }
+    };
+    return instance;
+  }
+}
+function until(r) {
+  return createUntil(r);
+}
+
+function defaultComparator(value, othVal) {
+  return value === othVal;
+}
+function useArrayDifference(...args) {
+  var _a, _b;
+  const list = args[0];
+  const values = args[1];
+  let compareFn = (_a = args[2]) != null ? _a : defaultComparator;
+  const {
+    symmetric = false
+  } = (_b = args[3]) != null ? _b : {};
+  if (typeof compareFn === "string") {
+    const key = compareFn;
+    compareFn = (value, othVal) => value[key] === othVal[key];
+  }
+  const diff1 = shared_computed(() => toValue$1(list).filter((x) => toValue$1(values).findIndex((y) => compareFn(x, y)) === -1));
+  if (symmetric) {
+    const diff2 = shared_computed(() => toValue$1(values).filter((x) => toValue$1(list).findIndex((y) => compareFn(x, y)) === -1));
+    return shared_computed(() => symmetric ? [...toValue$1(diff1), ...toValue$1(diff2)] : toValue$1(diff1));
+  } else {
+    return diff1;
+  }
+}
+
+function useArrayEvery(list, fn) {
+  return shared_computed(() => toValue$1(list).every((element, index, array) => fn(toValue$1(element), index, array)));
+}
+
+function useArrayFilter(list, fn) {
+  return shared_computed(() => toValue$1(list).map((i) => toValue$1(i)).filter(fn));
+}
+
+function useArrayFind(list, fn) {
+  return shared_computed(() => toValue$1(
+    toValue$1(list).find((element, index, array) => fn(toValue$1(element), index, array))
+  ));
+}
+
+function useArrayFindIndex(list, fn) {
+  return shared_computed(() => toValue$1(list).findIndex((element, index, array) => fn(toValue$1(element), index, array)));
+}
+
+function findLast(arr, cb) {
+  let index = arr.length;
+  while (index-- > 0) {
+    if (cb(arr[index], index, arr))
+      return arr[index];
+  }
+  return void 0;
+}
+function useArrayFindLast(list, fn) {
+  return shared_computed(() => toValue$1(
+    !Array.prototype.findLast ? findLast(toValue$1(list), (element, index, array) => fn(toValue$1(element), index, array)) : toValue$1(list).findLast((element, index, array) => fn(toValue$1(element), index, array))
+  ));
+}
+
+function isArrayIncludesOptions(obj) {
+  return shared_isObject(obj) && containsProp(obj, "formIndex", "comparator");
+}
+function useArrayIncludes(...args) {
+  var _a;
+  const list = args[0];
+  const value = args[1];
+  let comparator = args[2];
+  let formIndex = 0;
+  if (isArrayIncludesOptions(comparator)) {
+    formIndex = (_a = comparator.fromIndex) != null ? _a : 0;
+    comparator = comparator.comparator;
+  }
+  if (typeof comparator === "string") {
+    const key = comparator;
+    comparator = (element, value2) => element[key] === toValue$1(value2);
+  }
+  comparator = comparator != null ? comparator : (element, value2) => element === toValue$1(value2);
+  return shared_computed(() => toValue$1(list).slice(formIndex).some((element, index, array) => comparator(
+    toValue$1(element),
+    toValue$1(value),
+    index,
+    toValue$1(array)
+  )));
+}
+
+function useArrayJoin(list, separator) {
+  return shared_computed(() => toValue$1(list).map((i) => toValue$1(i)).join(toValue$1(separator)));
+}
+
+function useArrayMap(list, fn) {
+  return shared_computed(() => toValue$1(list).map((i) => toValue$1(i)).map(fn));
+}
+
+function useArrayReduce(list, reducer, ...args) {
+  const reduceCallback = (sum, value, index) => reducer(toValue$1(sum), toValue$1(value), index);
+  return shared_computed(() => {
+    const resolved = toValue$1(list);
+    return args.length ? resolved.reduce(reduceCallback, typeof args[0] === "function" ? toValue$1(args[0]()) : toValue$1(args[0])) : resolved.reduce(reduceCallback);
+  });
+}
+
+function useArraySome(list, fn) {
+  return shared_computed(() => toValue$1(list).some((element, index, array) => fn(toValue$1(element), index, array)));
+}
+
+function uniq(array) {
+  return Array.from(new Set(array));
+}
+function uniqueElementsBy(array, fn) {
+  return array.reduce((acc, v) => {
+    if (!acc.some((x) => fn(v, x, array)))
+      acc.push(v);
+    return acc;
+  }, []);
+}
+function useArrayUnique(list, compareFn) {
+  return shared_computed(() => {
+    const resolvedList = toValue$1(list).map((element) => toValue$1(element));
+    return compareFn ? uniqueElementsBy(resolvedList, compareFn) : uniq(resolvedList);
+  });
+}
+
+function useCounter(initialValue = 0, options = {}) {
+  let _initialValue = shared_unref(initialValue);
+  const count = shared_shallowRef(initialValue);
+  const {
+    max = Number.POSITIVE_INFINITY,
+    min = Number.NEGATIVE_INFINITY
+  } = options;
+  const inc = (delta = 1) => count.value = Math.max(Math.min(max, count.value + delta), min);
+  const dec = (delta = 1) => count.value = Math.min(Math.max(min, count.value - delta), max);
+  const get = () => count.value;
+  const set = (val) => count.value = Math.max(min, Math.min(max, val));
+  const reset = (val = _initialValue) => {
+    _initialValue = val;
+    return set(val);
+  };
+  return { count: shared_shallowReadonly(count), inc, dec, get, set, reset };
+}
+
+const REGEX_PARSE = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[T\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/i;
+const REGEX_FORMAT = /[YMDHhms]o|\[([^\]]+)\]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a{1,2}|A{1,2}|m{1,2}|s{1,2}|Z{1,2}|z{1,4}|SSS/g;
+function defaultMeridiem(hours, minutes, isLowercase, hasPeriod) {
+  let m = hours < 12 ? "AM" : "PM";
+  if (hasPeriod)
+    m = m.split("").reduce((acc, curr) => acc += `${curr}.`, "");
+  return isLowercase ? m.toLowerCase() : m;
+}
+function formatOrdinal(num) {
+  const suffixes = ["th", "st", "nd", "rd"];
+  const v = num % 100;
+  return num + (suffixes[(v - 20) % 10] || suffixes[v] || suffixes[0]);
+}
+function formatDate(date, formatStr, options = {}) {
+  var _a;
+  const years = date.getFullYear();
+  const month = date.getMonth();
+  const days = date.getDate();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  const milliseconds = date.getMilliseconds();
+  const day = date.getDay();
+  const meridiem = (_a = options.customMeridiem) != null ? _a : defaultMeridiem;
+  const stripTimeZone = (dateString) => {
+    var _a2;
+    return (_a2 = dateString.split(" ")[1]) != null ? _a2 : "";
+  };
+  const matches = {
+    Yo: () => formatOrdinal(years),
+    YY: () => String(years).slice(-2),
+    YYYY: () => years,
+    M: () => month + 1,
+    Mo: () => formatOrdinal(month + 1),
+    MM: () => `${month + 1}`.padStart(2, "0"),
+    MMM: () => date.toLocaleDateString(toValue$1(options.locales), { month: "short" }),
+    MMMM: () => date.toLocaleDateString(toValue$1(options.locales), { month: "long" }),
+    D: () => String(days),
+    Do: () => formatOrdinal(days),
+    DD: () => `${days}`.padStart(2, "0"),
+    H: () => String(hours),
+    Ho: () => formatOrdinal(hours),
+    HH: () => `${hours}`.padStart(2, "0"),
+    h: () => `${hours % 12 || 12}`.padStart(1, "0"),
+    ho: () => formatOrdinal(hours % 12 || 12),
+    hh: () => `${hours % 12 || 12}`.padStart(2, "0"),
+    m: () => String(minutes),
+    mo: () => formatOrdinal(minutes),
+    mm: () => `${minutes}`.padStart(2, "0"),
+    s: () => String(seconds),
+    so: () => formatOrdinal(seconds),
+    ss: () => `${seconds}`.padStart(2, "0"),
+    SSS: () => `${milliseconds}`.padStart(3, "0"),
+    d: () => day,
+    dd: () => date.toLocaleDateString(toValue$1(options.locales), { weekday: "narrow" }),
+    ddd: () => date.toLocaleDateString(toValue$1(options.locales), { weekday: "short" }),
+    dddd: () => date.toLocaleDateString(toValue$1(options.locales), { weekday: "long" }),
+    A: () => meridiem(hours, minutes),
+    AA: () => meridiem(hours, minutes, false, true),
+    a: () => meridiem(hours, minutes, true),
+    aa: () => meridiem(hours, minutes, true, true),
+    z: () => stripTimeZone(date.toLocaleDateString(toValue$1(options.locales), { timeZoneName: "shortOffset" })),
+    zz: () => stripTimeZone(date.toLocaleDateString(toValue$1(options.locales), { timeZoneName: "shortOffset" })),
+    zzz: () => stripTimeZone(date.toLocaleDateString(toValue$1(options.locales), { timeZoneName: "shortOffset" })),
+    zzzz: () => stripTimeZone(date.toLocaleDateString(toValue$1(options.locales), { timeZoneName: "longOffset" }))
+  };
+  return formatStr.replace(REGEX_FORMAT, (match, $1) => {
+    var _a2, _b;
+    return (_b = $1 != null ? $1 : (_a2 = matches[match]) == null ? void 0 : _a2.call(matches)) != null ? _b : match;
+  });
+}
+function normalizeDate(date) {
+  if (date === null)
+    return new Date(Number.NaN);
+  if (date === void 0)
+    return /* @__PURE__ */ new Date();
+  if (date instanceof Date)
+    return new Date(date);
+  if (typeof date === "string" && !/Z$/i.test(date)) {
+    const d = date.match(REGEX_PARSE);
+    if (d) {
+      const m = d[2] - 1 || 0;
+      const ms = (d[7] || "0").substring(0, 3);
+      return new Date(d[1], m, d[3] || 1, d[4] || 0, d[5] || 0, d[6] || 0, ms);
+    }
+  }
+  return new Date(date);
+}
+function useDateFormat(date, formatStr = "HH:mm:ss", options = {}) {
+  return shared_computed(() => formatDate(normalizeDate(toValue$1(date)), toValue$1(formatStr), options));
+}
+
+function useIntervalFn(cb, interval = 1e3, options = {}) {
+  const {
+    immediate = true,
+    immediateCallback = false
+  } = options;
+  let timer = null;
+  const isActive = shared_shallowRef(false);
+  function clean() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+  function pause() {
+    isActive.value = false;
+    clean();
+  }
+  function resume() {
+    const intervalValue = toValue$1(interval);
+    if (intervalValue <= 0)
+      return;
+    isActive.value = true;
+    if (immediateCallback)
+      cb();
+    clean();
+    if (isActive.value)
+      timer = setInterval(cb, intervalValue);
+  }
+  if (immediate && isClient)
+    resume();
+  if (shared_isRef(interval) || typeof interval === "function") {
+    const stopWatch = shared_watch(interval, () => {
+      if (isActive.value && isClient)
+        resume();
+    });
+    tryOnScopeDispose(stopWatch);
+  }
+  tryOnScopeDispose(pause);
+  return {
+    isActive: shared_shallowReadonly(isActive),
+    pause,
+    resume
+  };
+}
+
+function useInterval(interval = 1e3, options = {}) {
+  const {
+    controls: exposeControls = false,
+    immediate = true,
+    callback
+  } = options;
+  const counter = shared_shallowRef(0);
+  const update = () => counter.value += 1;
+  const reset = () => {
+    counter.value = 0;
+  };
+  const controls = useIntervalFn(
+    callback ? () => {
+      update();
+      callback(counter.value);
+    } : update,
+    interval,
+    { immediate }
+  );
+  if (exposeControls) {
+    return {
+      counter: shared_shallowReadonly(counter),
+      reset,
+      ...controls
+    };
+  } else {
+    return shared_shallowReadonly(counter);
+  }
+}
+
+function useLastChanged(source, options = {}) {
+  var _a;
+  const ms = shared_shallowRef((_a = options.initialValue) != null ? _a : null);
+  shared_watch(
+    source,
+    () => ms.value = timestamp(),
+    options
+  );
+  return shared_shallowReadonly(ms);
+}
+
+function useTimeoutFn(cb, interval, options = {}) {
+  const {
+    immediate = true,
+    immediateCallback = false
+  } = options;
+  const isPending = shallowRef(false);
+  let timer;
+  function clear() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = void 0;
+    }
+  }
+  function stop() {
+    isPending.value = false;
+    clear();
+  }
+  function start(...args) {
+    if (immediateCallback)
+      cb();
+    clear();
+    isPending.value = true;
+    timer = setTimeout(() => {
+      isPending.value = false;
+      timer = void 0;
+      cb(...args);
+    }, toValue(interval));
+  }
+  if (immediate) {
+    isPending.value = true;
+    if (isClient)
+      start();
+  }
+  tryOnScopeDispose(stop);
+  return {
+    isPending: shallowReadonly(isPending),
+    start,
+    stop
+  };
+}
+
+function useTimeout(interval = 1e3, options = {}) {
+  const {
+    controls: exposeControls = false,
+    callback
+  } = options;
+  const controls = useTimeoutFn(
+    callback != null ? callback : noop,
+    interval,
+    options
+  );
+  const ready = shared_computed(() => !controls.isPending.value);
+  if (exposeControls) {
+    return {
+      ready,
+      ...controls
+    };
+  } else {
+    return ready;
+  }
+}
+
+function useToNumber(value, options = {}) {
+  const {
+    method = "parseFloat",
+    radix,
+    nanToZero
+  } = options;
+  return shared_computed(() => {
+    let resolved = toValue$1(value);
+    if (typeof method === "function")
+      resolved = method(resolved);
+    else if (typeof resolved === "string")
+      resolved = Number[method](resolved, radix);
+    if (nanToZero && Number.isNaN(resolved))
+      resolved = 0;
+    return resolved;
+  });
+}
+
+function useToString(value) {
+  return shared_computed(() => `${toValue$1(value)}`);
+}
+
+function useToggle(initialValue = false, options = {}) {
+  const {
+    truthyValue = true,
+    falsyValue = false
+  } = options;
+  const valueIsRef = shared_isRef(initialValue);
+  const _value = shared_shallowRef(initialValue);
+  function toggle(value) {
+    if (arguments.length) {
+      _value.value = value;
+      return _value.value;
+    } else {
+      const truthy = toValue$1(truthyValue);
+      _value.value = _value.value === truthy ? toValue$1(falsyValue) : truthy;
+      return _value.value;
+    }
+  }
+  if (valueIsRef)
+    return toggle;
+  else
+    return [_value, toggle];
+}
+
+function watchArray(source, cb, options) {
+  let oldList = (options == null ? void 0 : options.immediate) ? [] : [...typeof source === "function" ? source() : Array.isArray(source) ? source : toValue$1(source)];
+  return shared_watch(source, (newList, _, onCleanup) => {
+    const oldListRemains = Array.from({ length: oldList.length });
+    const added = [];
+    for (const obj of newList) {
+      let found = false;
+      for (let i = 0; i < oldList.length; i++) {
+        if (!oldListRemains[i] && obj === oldList[i]) {
+          oldListRemains[i] = true;
+          found = true;
+          break;
+        }
+      }
+      if (!found)
+        added.push(obj);
+    }
+    const removed = oldList.filter((_2, i) => !oldListRemains[i]);
+    cb(newList, oldList, added, removed, onCleanup);
+    oldList = [...newList];
+  }, options);
+}
+
+function watchAtMost(source, cb, options) {
+  const {
+    count,
+    ...watchOptions
+  } = options;
+  const current = shared_shallowRef(0);
+  const stop = watchWithFilter(
+    source,
+    (...args) => {
+      current.value += 1;
+      if (current.value >= toValue$1(count))
+        shared_nextTick(() => stop());
+      cb(...args);
+    },
+    watchOptions
+  );
+  return { count: current, stop };
+}
+
+function watchDebounced(source, cb, options = {}) {
+  const {
+    debounce = 0,
+    maxWait = void 0,
+    ...watchOptions
+  } = options;
+  return watchWithFilter(
+    source,
+    cb,
+    {
+      ...watchOptions,
+      eventFilter: debounceFilter(debounce, { maxWait })
+    }
+  );
+}
+
+function watchDeep(source, cb, options) {
+  return shared_watch(
+    source,
+    cb,
+    {
+      ...options,
+      deep: true
+    }
+  );
+}
+
+function watchIgnorable(source, cb, options = {}) {
+  const {
+    eventFilter = bypassFilter,
+    ...watchOptions
+  } = options;
+  const filteredCb = createFilterWrapper(
+    eventFilter,
+    cb
+  );
+  let ignoreUpdates;
+  let ignorePrevAsyncUpdates;
+  let stop;
+  if (watchOptions.flush === "sync") {
+    let ignore = false;
+    ignorePrevAsyncUpdates = () => {
+    };
+    ignoreUpdates = (updater) => {
+      ignore = true;
+      updater();
+      ignore = false;
+    };
+    stop = shared_watch(
+      source,
+      (...args) => {
+        if (!ignore)
+          filteredCb(...args);
+      },
+      watchOptions
+    );
+  } else {
+    const disposables = [];
+    let ignoreCounter = 0;
+    let syncCounter = 0;
+    ignorePrevAsyncUpdates = () => {
+      ignoreCounter = syncCounter;
+    };
+    disposables.push(
+      shared_watch(
+        source,
+        () => {
+          syncCounter++;
+        },
+        { ...watchOptions, flush: "sync" }
+      )
+    );
+    ignoreUpdates = (updater) => {
+      const syncCounterPrev = syncCounter;
+      updater();
+      ignoreCounter += syncCounter - syncCounterPrev;
+    };
+    disposables.push(
+      shared_watch(
+        source,
+        (...args) => {
+          const ignore = ignoreCounter > 0 && ignoreCounter === syncCounter;
+          ignoreCounter = 0;
+          syncCounter = 0;
+          if (ignore)
+            return;
+          filteredCb(...args);
+        },
+        watchOptions
+      )
+    );
+    stop = () => {
+      disposables.forEach((fn) => fn());
+    };
+  }
+  return { stop, ignoreUpdates, ignorePrevAsyncUpdates };
+}
+
+function watchImmediate(source, cb, options) {
+  return runtime_core_esm_bundler_watch(
+    source,
+    cb,
+    {
+      ...options,
+      immediate: true
+    }
+  );
+}
+
+function watchOnce(source, cb, options) {
+  return shared_watch(
+    source,
+    cb,
+    {
+      ...options,
+      once: true
+    }
+  );
+}
+
+function watchThrottled(source, cb, options = {}) {
+  const {
+    throttle = 0,
+    trailing = true,
+    leading = true,
+    ...watchOptions
+  } = options;
+  return watchWithFilter(
+    source,
+    cb,
+    {
+      ...watchOptions,
+      eventFilter: throttleFilter(throttle, trailing, leading)
+    }
+  );
+}
+
+function watchTriggerable(source, cb, options = {}) {
+  let cleanupFn;
+  function onEffect() {
+    if (!cleanupFn)
+      return;
+    const fn = cleanupFn;
+    cleanupFn = void 0;
+    fn();
+  }
+  function onCleanup(callback) {
+    cleanupFn = callback;
+  }
+  const _cb = (value, oldValue) => {
+    onEffect();
+    return cb(value, oldValue, onCleanup);
+  };
+  const res = watchIgnorable(source, _cb, options);
+  const { ignoreUpdates } = res;
+  const trigger = () => {
+    let res2;
+    ignoreUpdates(() => {
+      res2 = _cb(getWatchSources(source), getOldValue(source));
+    });
+    return res2;
+  };
+  return {
+    ...res,
+    trigger
+  };
+}
+function getWatchSources(sources) {
+  if (shared_isReactive(sources))
+    return sources;
+  if (Array.isArray(sources))
+    return sources.map((item) => toValue$1(item));
+  return toValue$1(sources);
+}
+function getOldValue(source) {
+  return Array.isArray(source) ? source.map(() => void 0) : void 0;
+}
+
+function whenever(source, cb, options) {
+  const stop = shared_watch(
+    source,
+    (v, ov, onInvalidate) => {
+      if (v) {
+        if (options == null ? void 0 : options.once)
+          shared_nextTick(() => stop());
+        cb(v, ov, onInvalidate);
+      }
+    },
+    {
+      ...options,
+      once: false
+    }
+  );
+  return stop;
+}
+
+
+
+;// ../node_modules/@vueuse/core/index.mjs
+/* unused harmony import specifier */ var core_noop;
+/* unused harmony import specifier */ var core_makeDestructurable;
+/* unused harmony import specifier */ var core_camelize;
+/* unused harmony import specifier */ var core_isIOS;
+/* unused harmony import specifier */ var core_toArray;
+/* unused harmony import specifier */ var core_notNullish;
+/* unused harmony import specifier */ var core_tryOnScopeDispose;
+/* unused harmony import specifier */ var core_tryOnMounted;
+/* unused harmony import specifier */ var core_isObject;
+/* unused harmony import specifier */ var core_objectOmit;
+/* unused harmony import specifier */ var core_promiseTimeout;
+/* unused harmony import specifier */ var core_until;
+/* unused harmony import specifier */ var core_isClient;
+/* unused harmony import specifier */ var core_injectLocal;
+/* unused harmony import specifier */ var core_provideLocal;
+/* unused harmony import specifier */ var core_pxValue;
+/* unused harmony import specifier */ var core_increaseWithUnit;
+/* unused harmony import specifier */ var core_objectEntries;
+/* unused harmony import specifier */ var core_createRef;
+/* unused harmony import specifier */ var core_useTimeoutFn;
+/* unused harmony import specifier */ var pausableWatch;
+/* unused harmony import specifier */ var core_toRef;
+/* unused harmony import specifier */ var core_createEventHook;
+/* unused harmony import specifier */ var core_useIntervalFn;
+/* unused harmony import specifier */ var core_computedWithControl;
+/* unused harmony import specifier */ var core_timestamp;
+/* unused harmony import specifier */ var core_pausableFilter;
+/* unused harmony import specifier */ var core_watchIgnorable;
+/* unused harmony import specifier */ var core_debounceFilter;
+/* unused harmony import specifier */ var core_bypassFilter;
+/* unused harmony import specifier */ var core_createFilterWrapper;
+/* unused harmony import specifier */ var core_watchImmediate;
+/* unused harmony import specifier */ var core_toRefs;
+/* unused harmony import specifier */ var core_watchOnce;
+/* unused harmony import specifier */ var core_containsProp;
+/* unused harmony import specifier */ var core_hasOwn;
+/* unused harmony import specifier */ var core_throttleFilter;
+/* unused harmony import specifier */ var core_useDebounceFn;
+/* unused harmony import specifier */ var core_useThrottleFn;
+/* unused harmony import specifier */ var core_tryOnUnmounted;
+/* unused harmony import specifier */ var core_clamp;
+/* unused harmony import specifier */ var core_syncRef;
+/* unused harmony import specifier */ var core_objectPick;
+/* unused harmony import specifier */ var core_watchWithFilter;
+/* unused harmony import specifier */ var core_identity;
+/* unused harmony import specifier */ var core_isDef;
+/* unused harmony import specifier */ var core_whenever;
+/* unused harmony import specifier */ var core_isWorker;
+/* unused harmony import specifier */ var core_isRef;
+/* unused harmony import specifier */ var core_shallowRef;
+/* unused harmony import specifier */ var core_ref;
+/* unused harmony import specifier */ var core_watchEffect;
+/* unused harmony import specifier */ var core_computed;
+/* unused harmony import specifier */ var core_inject;
+/* unused harmony import specifier */ var core_defineComponent;
+/* unused harmony import specifier */ var core_shallowReactive;
+/* unused harmony import specifier */ var core_h;
+/* unused harmony import specifier */ var core_Fragment;
+/* unused harmony import specifier */ var TransitionGroup;
+/* unused harmony import specifier */ var core_toValue;
+/* unused harmony import specifier */ var core_watch;
+/* unused harmony import specifier */ var core_getCurrentInstance;
+/* unused harmony import specifier */ var core_customRef;
+/* unused harmony import specifier */ var core_onUpdated;
+/* unused harmony import specifier */ var core_readonly;
+/* unused harmony import specifier */ var core_reactive;
+/* unused harmony import specifier */ var core_hasInjectionContext;
+/* unused harmony import specifier */ var core_nextTick;
+/* unused harmony import specifier */ var core_onMounted;
+/* unused harmony import specifier */ var core_markRaw;
+/* unused harmony import specifier */ var core_unref;
+/* unused harmony import specifier */ var core_getCurrentScope;
+/* unused harmony import specifier */ var core_isReadonly;
+/* unused harmony import specifier */ var core_onBeforeUpdate;
+
+
+
+
+function computedAsync(evaluationCallback, initialState, optionsOrRef) {
+  let options;
+  if (core_isRef(optionsOrRef)) {
+    options = {
+      evaluating: optionsOrRef
+    };
+  } else {
+    options = optionsOrRef || {};
+  }
+  const {
+    lazy = false,
+    flush = "pre",
+    evaluating = void 0,
+    shallow = true,
+    onError = core_noop
+  } = options;
+  const started = core_shallowRef(!lazy);
+  const current = shallow ? core_shallowRef(initialState) : core_ref(initialState);
+  let counter = 0;
+  core_watchEffect(async (onInvalidate) => {
+    if (!started.value)
+      return;
+    counter++;
+    const counterAtBeginning = counter;
+    let hasFinished = false;
+    if (evaluating) {
+      Promise.resolve().then(() => {
+        evaluating.value = true;
+      });
+    }
+    try {
+      const result = await evaluationCallback((cancelCallback) => {
+        onInvalidate(() => {
+          if (evaluating)
+            evaluating.value = false;
+          if (!hasFinished)
+            cancelCallback();
+        });
+      });
+      if (counterAtBeginning === counter)
+        current.value = result;
+    } catch (e) {
+      onError(e);
+    } finally {
+      if (evaluating && counterAtBeginning === counter)
+        evaluating.value = false;
+      hasFinished = true;
+    }
+  }, { flush });
+  if (lazy) {
+    return core_computed(() => {
+      started.value = true;
+      return current.value;
+    });
+  } else {
+    return current;
+  }
+}
+
+function computedInject(key, options, defaultSource, treatDefaultAsFactory) {
+  let source = core_inject(key);
+  if (defaultSource)
+    source = core_inject(key, defaultSource);
+  if (treatDefaultAsFactory)
+    source = core_inject(key, defaultSource, treatDefaultAsFactory);
+  if (typeof options === "function") {
+    return core_computed((ctx) => options(source, ctx));
+  } else {
+    return core_computed({
+      get: (ctx) => options.get(source, ctx),
+      set: options.set
+    });
+  }
+}
+
+function createReusableTemplate(options = {}) {
+  const {
+    inheritAttrs = true
+  } = options;
+  const render = core_shallowRef();
+  const define = /*@__PURE__*/ core_defineComponent({
+    setup(_, { slots }) {
+      return () => {
+        render.value = slots.default;
+      };
+    }
+  });
+  const reuse = /*@__PURE__*/ core_defineComponent({
+    inheritAttrs,
+    props: options.props,
+    setup(props, { attrs, slots }) {
+      return () => {
+        var _a;
+        if (!render.value && "production" !== "production")
+          // removed by dead control flow
+{}
+        const vnode = (_a = render.value) == null ? void 0 : _a.call(render, {
+          ...options.props == null ? keysToCamelKebabCase(attrs) : props,
+          $slots: slots
+        });
+        return inheritAttrs && (vnode == null ? void 0 : vnode.length) === 1 ? vnode[0] : vnode;
+      };
+    }
+  });
+  return core_makeDestructurable(
+    { define, reuse },
+    [define, reuse]
+  );
+}
+function keysToCamelKebabCase(obj) {
+  const newObj = {};
+  for (const key in obj)
+    newObj[core_camelize(key)] = obj[key];
+  return newObj;
+}
+
+function createTemplatePromise(options = {}) {
+  let index = 0;
+  const instances = core_ref([]);
+  function create(...args) {
+    const props = core_shallowReactive({
+      key: index++,
+      args,
+      promise: void 0,
+      resolve: () => {
+      },
+      reject: () => {
+      },
+      isResolving: false,
+      options
+    });
+    instances.value.push(props);
+    props.promise = new Promise((_resolve, _reject) => {
+      props.resolve = (v) => {
+        props.isResolving = true;
+        return _resolve(v);
+      };
+      props.reject = _reject;
+    }).finally(() => {
+      props.promise = void 0;
+      const index2 = instances.value.indexOf(props);
+      if (index2 !== -1)
+        instances.value.splice(index2, 1);
+    });
+    return props.promise;
+  }
+  function start(...args) {
+    if (options.singleton && instances.value.length > 0)
+      return instances.value[0].promise;
+    return create(...args);
+  }
+  const component = /*@__PURE__*/ core_defineComponent((_, { slots }) => {
+    const renderList = () => instances.value.map((props) => {
+      var _a;
+      return core_h(core_Fragment, { key: props.key }, (_a = slots.default) == null ? void 0 : _a.call(slots, props));
+    });
+    if (options.transition)
+      return () => core_h(TransitionGroup, options.transition, renderList);
+    return renderList;
+  });
+  component.start = start;
+  return component;
+}
+
+function createUnrefFn(fn) {
+  return function(...args) {
+    return fn.apply(this, args.map((i) => core_toValue(i)));
+  };
+}
+
+const defaultWindow = isClient ? window : void 0;
+const defaultDocument = isClient ? window.document : void 0;
+const defaultNavigator = isClient ? window.navigator : void 0;
+const defaultLocation = isClient ? window.location : void 0;
+
+function unrefElement(elRef) {
+  var _a;
+  const plain = toValue(elRef);
+  return (_a = plain == null ? void 0 : plain.$el) != null ? _a : plain;
+}
+
+function useEventListener(...args) {
+  const cleanups = [];
+  const cleanup = () => {
+    cleanups.forEach((fn) => fn());
+    cleanups.length = 0;
+  };
+  const register = (el, event, listener, options) => {
+    el.addEventListener(event, listener, options);
+    return () => el.removeEventListener(event, listener, options);
+  };
+  const firstParamTargets = runtime_core_esm_bundler_computed(() => {
+    const test = toArray(toValue(args[0])).filter((e) => e != null);
+    return test.every((e) => typeof e !== "string") ? test : void 0;
+  });
+  const stopWatch = watchImmediate(
+    () => {
+      var _a, _b;
+      return [
+        (_b = (_a = firstParamTargets.value) == null ? void 0 : _a.map((e) => unrefElement(e))) != null ? _b : [defaultWindow].filter((e) => e != null),
+        toArray(toValue(firstParamTargets.value ? args[1] : args[0])),
+        toArray(unref(firstParamTargets.value ? args[2] : args[1])),
+        // @ts-expect-error - TypeScript gets the correct types, but somehow still complains
+        toValue(firstParamTargets.value ? args[3] : args[2])
+      ];
+    },
+    ([raw_targets, raw_events, raw_listeners, raw_options]) => {
+      cleanup();
+      if (!(raw_targets == null ? void 0 : raw_targets.length) || !(raw_events == null ? void 0 : raw_events.length) || !(raw_listeners == null ? void 0 : raw_listeners.length))
+        return;
+      const optionsClone = shared_isObject(raw_options) ? { ...raw_options } : raw_options;
+      cleanups.push(
+        ...raw_targets.flatMap(
+          (el) => raw_events.flatMap(
+            (event) => raw_listeners.map((listener) => register(el, event, listener, optionsClone))
+          )
+        )
+      );
+    },
+    { flush: "post" }
+  );
+  const stop = () => {
+    stopWatch();
+    cleanup();
+  };
+  tryOnScopeDispose(cleanup);
+  return stop;
+}
+
+let _iOSWorkaround = false;
+function onClickOutside(target, handler, options = {}) {
+  const { window = defaultWindow, ignore = [], capture = true, detectIframe = false, controls = false } = options;
+  if (!window) {
+    return controls ? { stop: core_noop, cancel: core_noop, trigger: core_noop } : core_noop;
+  }
+  if (core_isIOS && !_iOSWorkaround) {
+    _iOSWorkaround = true;
+    const listenerOptions = { passive: true };
+    Array.from(window.document.body.children).forEach((el) => el.addEventListener("click", core_noop, listenerOptions));
+    window.document.documentElement.addEventListener("click", core_noop, listenerOptions);
+  }
+  let shouldListen = true;
+  const shouldIgnore = (event) => {
+    return core_toValue(ignore).some((target2) => {
+      if (typeof target2 === "string") {
+        return Array.from(window.document.querySelectorAll(target2)).some((el) => el === event.target || event.composedPath().includes(el));
+      } else {
+        const el = unrefElement(target2);
+        return el && (event.target === el || event.composedPath().includes(el));
+      }
+    });
+  };
+  function hasMultipleRoots(target2) {
+    const vm = core_toValue(target2);
+    return vm && vm.$.subTree.shapeFlag === 16;
+  }
+  function checkMultipleRoots(target2, event) {
+    const vm = core_toValue(target2);
+    const children = vm.$.subTree && vm.$.subTree.children;
+    if (children == null || !Array.isArray(children))
+      return false;
+    return children.some((child) => child.el === event.target || event.composedPath().includes(child.el));
+  }
+  const listener = (event) => {
+    const el = unrefElement(target);
+    if (event.target == null)
+      return;
+    if (!(el instanceof Element) && hasMultipleRoots(target) && checkMultipleRoots(target, event))
+      return;
+    if (!el || el === event.target || event.composedPath().includes(el))
+      return;
+    if ("detail" in event && event.detail === 0)
+      shouldListen = !shouldIgnore(event);
+    if (!shouldListen) {
+      shouldListen = true;
+      return;
+    }
+    handler(event);
+  };
+  let isProcessingClick = false;
+  const cleanup = [
+    useEventListener(window, "click", (event) => {
+      if (!isProcessingClick) {
+        isProcessingClick = true;
+        setTimeout(() => {
+          isProcessingClick = false;
+        }, 0);
+        listener(event);
+      }
+    }, { passive: true, capture }),
+    useEventListener(window, "pointerdown", (e) => {
+      const el = unrefElement(target);
+      shouldListen = !shouldIgnore(e) && !!(el && !e.composedPath().includes(el));
+    }, { passive: true }),
+    detectIframe && useEventListener(window, "blur", (event) => {
+      setTimeout(() => {
+        var _a;
+        const el = unrefElement(target);
+        if (((_a = window.document.activeElement) == null ? void 0 : _a.tagName) === "IFRAME" && !(el == null ? void 0 : el.contains(window.document.activeElement))) {
+          handler(event);
+        }
+      }, 0);
+    }, { passive: true })
+  ].filter(Boolean);
+  const stop = () => cleanup.forEach((fn) => fn());
+  if (controls) {
+    return {
+      stop,
+      cancel: () => {
+        shouldListen = false;
+      },
+      trigger: (event) => {
+        shouldListen = true;
+        listener(event);
+        shouldListen = false;
+      }
+    };
+  }
+  return stop;
+}
+
+function useMounted() {
+  const isMounted = shallowRef(false);
+  const instance = getCurrentInstance();
+  if (instance) {
+    onMounted(() => {
+      isMounted.value = true;
+    }, instance);
+  }
+  return isMounted;
+}
+
+function useSupported(callback) {
+  const isMounted = useMounted();
+  return runtime_core_esm_bundler_computed(() => {
+    isMounted.value;
+    return Boolean(callback());
+  });
+}
+
+function useMutationObserver(target, callback, options = {}) {
+  const { window = defaultWindow, ...mutationOptions } = options;
+  let observer;
+  const isSupported = useSupported(() => window && "MutationObserver" in window);
+  const cleanup = () => {
+    if (observer) {
+      observer.disconnect();
+      observer = void 0;
+    }
+  };
+  const targets = core_computed(() => {
+    const value = core_toValue(target);
+    const items = core_toArray(value).map(unrefElement).filter(core_notNullish);
+    return new Set(items);
+  });
+  const stopWatch = core_watch(
+    () => targets.value,
+    (targets2) => {
+      cleanup();
+      if (isSupported.value && targets2.size) {
+        observer = new MutationObserver(callback);
+        targets2.forEach((el) => observer.observe(el, mutationOptions));
+      }
+    },
+    { immediate: true, flush: "post" }
+  );
+  const takeRecords = () => {
+    return observer == null ? void 0 : observer.takeRecords();
+  };
+  const stop = () => {
+    stopWatch();
+    cleanup();
+  };
+  core_tryOnScopeDispose(stop);
+  return {
+    isSupported,
+    stop,
+    takeRecords
+  };
+}
+
+function onElementRemoval(target, callback, options = {}) {
+  const {
+    window = defaultWindow,
+    document = window == null ? void 0 : window.document,
+    flush = "sync"
+  } = options;
+  if (!window || !document)
+    return core_noop;
+  let stopFn;
+  const cleanupAndUpdate = (fn) => {
+    stopFn == null ? void 0 : stopFn();
+    stopFn = fn;
+  };
+  const stopWatch = core_watchEffect(() => {
+    const el = unrefElement(target);
+    if (el) {
+      const { stop } = useMutationObserver(
+        document,
+        (mutationsList) => {
+          const targetRemoved = mutationsList.map((mutation) => [...mutation.removedNodes]).flat().some((node) => node === el || node.contains(el));
+          if (targetRemoved) {
+            callback(mutationsList);
+          }
+        },
+        {
+          window,
+          childList: true,
+          subtree: true
+        }
+      );
+      cleanupAndUpdate(stop);
+    }
+  }, { flush });
+  const stopHandle = () => {
+    stopWatch();
+    cleanupAndUpdate();
+  };
+  core_tryOnScopeDispose(stopHandle);
+  return stopHandle;
+}
+
+function createKeyPredicate(keyFilter) {
+  if (typeof keyFilter === "function")
+    return keyFilter;
+  else if (typeof keyFilter === "string")
+    return (event) => event.key === keyFilter;
+  else if (Array.isArray(keyFilter))
+    return (event) => keyFilter.includes(event.key);
+  return () => true;
+}
+function onKeyStroke(...args) {
+  let key;
+  let handler;
+  let options = {};
+  if (args.length === 3) {
+    key = args[0];
+    handler = args[1];
+    options = args[2];
+  } else if (args.length === 2) {
+    if (typeof args[1] === "object") {
+      key = true;
+      handler = args[0];
+      options = args[1];
+    } else {
+      key = args[0];
+      handler = args[1];
+    }
+  } else {
+    key = true;
+    handler = args[0];
+  }
+  const {
+    target = defaultWindow,
+    eventName = "keydown",
+    passive = false,
+    dedupe = false
+  } = options;
+  const predicate = createKeyPredicate(key);
+  const listener = (e) => {
+    if (e.repeat && core_toValue(dedupe))
+      return;
+    if (predicate(e))
+      handler(e);
+  };
+  return useEventListener(target, eventName, listener, passive);
+}
+function onKeyDown(key, handler, options = {}) {
+  return onKeyStroke(key, handler, { ...options, eventName: "keydown" });
+}
+function onKeyPressed(key, handler, options = {}) {
+  return onKeyStroke(key, handler, { ...options, eventName: "keypress" });
+}
+function onKeyUp(key, handler, options = {}) {
+  return onKeyStroke(key, handler, { ...options, eventName: "keyup" });
+}
+
+const DEFAULT_DELAY = 500;
+const DEFAULT_THRESHOLD = 10;
+function onLongPress(target, handler, options) {
+  var _a, _b;
+  const elementRef = core_computed(() => unrefElement(target));
+  let timeout;
+  let posStart;
+  let startTimestamp;
+  let hasLongPressed = false;
+  function clear() {
+    if (timeout) {
+      clearTimeout(timeout);
+      timeout = void 0;
+    }
+    posStart = void 0;
+    startTimestamp = void 0;
+    hasLongPressed = false;
+  }
+  function onRelease(ev) {
+    var _a2, _b2, _c;
+    const [_startTimestamp, _posStart, _hasLongPressed] = [startTimestamp, posStart, hasLongPressed];
+    clear();
+    if (!(options == null ? void 0 : options.onMouseUp) || !_posStart || !_startTimestamp)
+      return;
+    if (((_a2 = options == null ? void 0 : options.modifiers) == null ? void 0 : _a2.self) && ev.target !== elementRef.value)
+      return;
+    if ((_b2 = options == null ? void 0 : options.modifiers) == null ? void 0 : _b2.prevent)
+      ev.preventDefault();
+    if ((_c = options == null ? void 0 : options.modifiers) == null ? void 0 : _c.stop)
+      ev.stopPropagation();
+    const dx = ev.x - _posStart.x;
+    const dy = ev.y - _posStart.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    options.onMouseUp(ev.timeStamp - _startTimestamp, distance, _hasLongPressed);
+  }
+  function onDown(ev) {
+    var _a2, _b2, _c, _d;
+    if (((_a2 = options == null ? void 0 : options.modifiers) == null ? void 0 : _a2.self) && ev.target !== elementRef.value)
+      return;
+    clear();
+    if ((_b2 = options == null ? void 0 : options.modifiers) == null ? void 0 : _b2.prevent)
+      ev.preventDefault();
+    if ((_c = options == null ? void 0 : options.modifiers) == null ? void 0 : _c.stop)
+      ev.stopPropagation();
+    posStart = {
+      x: ev.x,
+      y: ev.y
+    };
+    startTimestamp = ev.timeStamp;
+    timeout = setTimeout(
+      () => {
+        hasLongPressed = true;
+        handler(ev);
+      },
+      (_d = options == null ? void 0 : options.delay) != null ? _d : DEFAULT_DELAY
+    );
+  }
+  function onMove(ev) {
+    var _a2, _b2, _c, _d;
+    if (((_a2 = options == null ? void 0 : options.modifiers) == null ? void 0 : _a2.self) && ev.target !== elementRef.value)
+      return;
+    if (!posStart || (options == null ? void 0 : options.distanceThreshold) === false)
+      return;
+    if ((_b2 = options == null ? void 0 : options.modifiers) == null ? void 0 : _b2.prevent)
+      ev.preventDefault();
+    if ((_c = options == null ? void 0 : options.modifiers) == null ? void 0 : _c.stop)
+      ev.stopPropagation();
+    const dx = ev.x - posStart.x;
+    const dy = ev.y - posStart.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    if (distance >= ((_d = options == null ? void 0 : options.distanceThreshold) != null ? _d : DEFAULT_THRESHOLD))
+      clear();
+  }
+  const listenerOptions = {
+    capture: (_a = options == null ? void 0 : options.modifiers) == null ? void 0 : _a.capture,
+    once: (_b = options == null ? void 0 : options.modifiers) == null ? void 0 : _b.once
+  };
+  const cleanup = [
+    useEventListener(elementRef, "pointerdown", onDown, listenerOptions),
+    useEventListener(elementRef, "pointermove", onMove, listenerOptions),
+    useEventListener(elementRef, ["pointerup", "pointerleave"], onRelease, listenerOptions)
+  ];
+  const stop = () => cleanup.forEach((fn) => fn());
+  return stop;
+}
+
+function isFocusedElementEditable() {
+  const { activeElement, body } = document;
+  if (!activeElement)
+    return false;
+  if (activeElement === body)
+    return false;
+  switch (activeElement.tagName) {
+    case "INPUT":
+    case "TEXTAREA":
+      return true;
+  }
+  return activeElement.hasAttribute("contenteditable");
+}
+function isTypedCharValid({
+  keyCode,
+  metaKey,
+  ctrlKey,
+  altKey
+}) {
+  if (metaKey || ctrlKey || altKey)
+    return false;
+  if (keyCode >= 48 && keyCode <= 57 || keyCode >= 96 && keyCode <= 105)
+    return true;
+  if (keyCode >= 65 && keyCode <= 90)
+    return true;
+  return false;
+}
+function onStartTyping(callback, options = {}) {
+  const { document: document2 = defaultDocument } = options;
+  const keydown = (event) => {
+    if (!isFocusedElementEditable() && isTypedCharValid(event)) {
+      callback(event);
+    }
+  };
+  if (document2)
+    useEventListener(document2, "keydown", keydown, { passive: true });
+}
+
+function templateRef(key, initialValue = null) {
+  const instance = core_getCurrentInstance();
+  let _trigger = () => {
+  };
+  const element = core_customRef((track, trigger) => {
+    _trigger = trigger;
+    return {
+      get() {
+        var _a, _b;
+        track();
+        return (_b = (_a = instance == null ? void 0 : instance.proxy) == null ? void 0 : _a.$refs[key]) != null ? _b : initialValue;
+      },
+      set() {
+      }
+    };
+  });
+  core_tryOnMounted(_trigger);
+  core_onUpdated(_trigger);
+  return element;
+}
+
+function useActiveElement(options = {}) {
+  var _a;
+  const {
+    window = defaultWindow,
+    deep = true,
+    triggerOnRemoval = false
+  } = options;
+  const document = (_a = options.document) != null ? _a : window == null ? void 0 : window.document;
+  const getDeepActiveElement = () => {
+    var _a2;
+    let element = document == null ? void 0 : document.activeElement;
+    if (deep) {
+      while (element == null ? void 0 : element.shadowRoot)
+        element = (_a2 = element == null ? void 0 : element.shadowRoot) == null ? void 0 : _a2.activeElement;
+    }
+    return element;
+  };
+  const activeElement = core_shallowRef();
+  const trigger = () => {
+    activeElement.value = getDeepActiveElement();
+  };
+  if (window) {
+    const listenerOptions = {
+      capture: true,
+      passive: true
+    };
+    useEventListener(
+      window,
+      "blur",
+      (event) => {
+        if (event.relatedTarget !== null)
+          return;
+        trigger();
+      },
+      listenerOptions
+    );
+    useEventListener(
+      window,
+      "focus",
+      trigger,
+      listenerOptions
+    );
+  }
+  if (triggerOnRemoval) {
+    onElementRemoval(activeElement, trigger, { document });
+  }
+  trigger();
+  return activeElement;
+}
+
+function useRafFn(fn, options = {}) {
+  const {
+    immediate = true,
+    fpsLimit = void 0,
+    window = defaultWindow,
+    once = false
+  } = options;
+  const isActive = core_shallowRef(false);
+  const intervalLimit = core_computed(() => {
+    return fpsLimit ? 1e3 / core_toValue(fpsLimit) : null;
+  });
+  let previousFrameTimestamp = 0;
+  let rafId = null;
+  function loop(timestamp) {
+    if (!isActive.value || !window)
+      return;
+    if (!previousFrameTimestamp)
+      previousFrameTimestamp = timestamp;
+    const delta = timestamp - previousFrameTimestamp;
+    if (intervalLimit.value && delta < intervalLimit.value) {
+      rafId = window.requestAnimationFrame(loop);
+      return;
+    }
+    previousFrameTimestamp = timestamp;
+    fn({ delta, timestamp });
+    if (once) {
+      isActive.value = false;
+      rafId = null;
+      return;
+    }
+    rafId = window.requestAnimationFrame(loop);
+  }
+  function resume() {
+    if (!isActive.value && window) {
+      isActive.value = true;
+      previousFrameTimestamp = 0;
+      rafId = window.requestAnimationFrame(loop);
+    }
+  }
+  function pause() {
+    isActive.value = false;
+    if (rafId != null && window) {
+      window.cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+  }
+  if (immediate)
+    resume();
+  core_tryOnScopeDispose(pause);
+  return {
+    isActive: core_readonly(isActive),
+    pause,
+    resume
+  };
+}
+
+function useAnimate(target, keyframes, options) {
+  let config;
+  let animateOptions;
+  if (core_isObject(options)) {
+    config = options;
+    animateOptions = core_objectOmit(options, ["window", "immediate", "commitStyles", "persist", "onReady", "onError"]);
+  } else {
+    config = { duration: options };
+    animateOptions = options;
+  }
+  const {
+    window = defaultWindow,
+    immediate = true,
+    commitStyles,
+    persist,
+    playbackRate: _playbackRate = 1,
+    onReady,
+    onError = (e) => {
+      console.error(e);
+    }
+  } = config;
+  const isSupported = useSupported(() => window && HTMLElement && "animate" in HTMLElement.prototype);
+  const animate = core_shallowRef(void 0);
+  const store = core_shallowReactive({
+    startTime: null,
+    currentTime: null,
+    timeline: null,
+    playbackRate: _playbackRate,
+    pending: false,
+    playState: immediate ? "idle" : "paused",
+    replaceState: "active"
+  });
+  const pending = core_computed(() => store.pending);
+  const playState = core_computed(() => store.playState);
+  const replaceState = core_computed(() => store.replaceState);
+  const startTime = core_computed({
+    get() {
+      return store.startTime;
+    },
+    set(value) {
+      store.startTime = value;
+      if (animate.value)
+        animate.value.startTime = value;
+    }
+  });
+  const currentTime = core_computed({
+    get() {
+      return store.currentTime;
+    },
+    set(value) {
+      store.currentTime = value;
+      if (animate.value) {
+        animate.value.currentTime = value;
+        syncResume();
+      }
+    }
+  });
+  const timeline = core_computed({
+    get() {
+      return store.timeline;
+    },
+    set(value) {
+      store.timeline = value;
+      if (animate.value)
+        animate.value.timeline = value;
+    }
+  });
+  const playbackRate = core_computed({
+    get() {
+      return store.playbackRate;
+    },
+    set(value) {
+      store.playbackRate = value;
+      if (animate.value)
+        animate.value.playbackRate = value;
+    }
+  });
+  const play = () => {
+    if (animate.value) {
+      try {
+        animate.value.play();
+        syncResume();
+      } catch (e) {
+        syncPause();
+        onError(e);
+      }
+    } else {
+      update();
+    }
+  };
+  const pause = () => {
+    var _a;
+    try {
+      (_a = animate.value) == null ? void 0 : _a.pause();
+      syncPause();
+    } catch (e) {
+      onError(e);
+    }
+  };
+  const reverse = () => {
+    var _a;
+    if (!animate.value)
+      update();
+    try {
+      (_a = animate.value) == null ? void 0 : _a.reverse();
+      syncResume();
+    } catch (e) {
+      syncPause();
+      onError(e);
+    }
+  };
+  const finish = () => {
+    var _a;
+    try {
+      (_a = animate.value) == null ? void 0 : _a.finish();
+      syncPause();
+    } catch (e) {
+      onError(e);
+    }
+  };
+  const cancel = () => {
+    var _a;
+    try {
+      (_a = animate.value) == null ? void 0 : _a.cancel();
+      syncPause();
+    } catch (e) {
+      onError(e);
+    }
+  };
+  core_watch(() => unrefElement(target), (el) => {
+    if (el) {
+      update();
+    } else {
+      animate.value = void 0;
+    }
+  });
+  core_watch(() => keyframes, (value) => {
+    if (animate.value) {
+      update();
+      const targetEl = unrefElement(target);
+      if (targetEl) {
+        animate.value.effect = new KeyframeEffect(
+          targetEl,
+          core_toValue(value),
+          animateOptions
+        );
+      }
+    }
+  }, { deep: true });
+  core_tryOnMounted(() => update(true), false);
+  core_tryOnScopeDispose(cancel);
+  function update(init) {
+    const el = unrefElement(target);
+    if (!isSupported.value || !el)
+      return;
+    if (!animate.value)
+      animate.value = el.animate(core_toValue(keyframes), animateOptions);
+    if (persist)
+      animate.value.persist();
+    if (_playbackRate !== 1)
+      animate.value.playbackRate = _playbackRate;
+    if (init && !immediate)
+      animate.value.pause();
+    else
+      syncResume();
+    onReady == null ? void 0 : onReady(animate.value);
+  }
+  const listenerOptions = { passive: true };
+  useEventListener(animate, ["cancel", "finish", "remove"], syncPause, listenerOptions);
+  useEventListener(animate, "finish", () => {
+    var _a;
+    if (commitStyles)
+      (_a = animate.value) == null ? void 0 : _a.commitStyles();
+  }, listenerOptions);
+  const { resume: resumeRef, pause: pauseRef } = useRafFn(() => {
+    if (!animate.value)
+      return;
+    store.pending = animate.value.pending;
+    store.playState = animate.value.playState;
+    store.replaceState = animate.value.replaceState;
+    store.startTime = animate.value.startTime;
+    store.currentTime = animate.value.currentTime;
+    store.timeline = animate.value.timeline;
+    store.playbackRate = animate.value.playbackRate;
+  }, { immediate: false });
+  function syncResume() {
+    if (isSupported.value)
+      resumeRef();
+  }
+  function syncPause() {
+    if (isSupported.value && window)
+      window.requestAnimationFrame(pauseRef);
+  }
+  return {
+    isSupported,
+    animate,
+    // actions
+    play,
+    pause,
+    reverse,
+    finish,
+    cancel,
+    // state
+    pending,
+    playState,
+    replaceState,
+    startTime,
+    currentTime,
+    timeline,
+    playbackRate
+  };
+}
+
+function useAsyncQueue(tasks, options) {
+  const {
+    interrupt = true,
+    onError = core_noop,
+    onFinished = core_noop,
+    signal
+  } = options || {};
+  const promiseState = {
+    aborted: "aborted",
+    fulfilled: "fulfilled",
+    pending: "pending",
+    rejected: "rejected"
+  };
+  const initialResult = Array.from(Array.from({ length: tasks.length }), () => ({ state: promiseState.pending, data: null }));
+  const result = core_reactive(initialResult);
+  const activeIndex = core_shallowRef(-1);
+  if (!tasks || tasks.length === 0) {
+    onFinished();
+    return {
+      activeIndex,
+      result
+    };
+  }
+  function updateResult(state, res) {
+    activeIndex.value++;
+    result[activeIndex.value].data = res;
+    result[activeIndex.value].state = state;
+  }
+  tasks.reduce((prev, curr) => {
+    return prev.then((prevRes) => {
+      var _a;
+      if (signal == null ? void 0 : signal.aborted) {
+        updateResult(promiseState.aborted, new Error("aborted"));
+        return;
+      }
+      if (((_a = result[activeIndex.value]) == null ? void 0 : _a.state) === promiseState.rejected && interrupt) {
+        onFinished();
+        return;
+      }
+      const done = curr(prevRes).then((currentRes) => {
+        updateResult(promiseState.fulfilled, currentRes);
+        if (activeIndex.value === tasks.length - 1)
+          onFinished();
+        return currentRes;
+      });
+      if (!signal)
+        return done;
+      return Promise.race([done, whenAborted(signal)]);
+    }).catch((e) => {
+      if (signal == null ? void 0 : signal.aborted) {
+        updateResult(promiseState.aborted, e);
+        return e;
+      }
+      updateResult(promiseState.rejected, e);
+      onError();
+      return e;
+    });
+  }, Promise.resolve());
+  return {
+    activeIndex,
+    result
+  };
+}
+function whenAborted(signal) {
+  return new Promise((resolve, reject) => {
+    const error = new Error("aborted");
+    if (signal.aborted)
+      reject(error);
+    else
+      signal.addEventListener("abort", () => reject(error), { once: true });
+  });
+}
+
+function useAsyncState(promise, initialState, options) {
+  const {
+    immediate = true,
+    delay = 0,
+    onError = core_noop,
+    onSuccess = core_noop,
+    resetOnExecute = true,
+    shallow = true,
+    throwError
+  } = options != null ? options : {};
+  const state = shallow ? core_shallowRef(initialState) : core_ref(initialState);
+  const isReady = core_shallowRef(false);
+  const isLoading = core_shallowRef(false);
+  const error = core_shallowRef(void 0);
+  async function execute(delay2 = 0, ...args) {
+    if (resetOnExecute)
+      state.value = initialState;
+    error.value = void 0;
+    isReady.value = false;
+    isLoading.value = true;
+    if (delay2 > 0)
+      await core_promiseTimeout(delay2);
+    const _promise = typeof promise === "function" ? promise(...args) : promise;
+    try {
+      const data = await _promise;
+      state.value = data;
+      isReady.value = true;
+      onSuccess(data);
+    } catch (e) {
+      error.value = e;
+      onError(e);
+      if (throwError)
+        throw e;
+    } finally {
+      isLoading.value = false;
+    }
+    return state.value;
+  }
+  if (immediate) {
+    execute(delay);
+  }
+  const shell = {
+    state,
+    isReady,
+    isLoading,
+    error,
+    execute,
+    executeImmediate: (...args) => execute(0, ...args)
+  };
+  function waitUntilIsLoaded() {
+    return new Promise((resolve, reject) => {
+      core_until(isLoading).toBe(false).then(() => resolve(shell)).catch(reject);
+    });
+  }
+  return {
+    ...shell,
+    then(onFulfilled, onRejected) {
+      return waitUntilIsLoaded().then(onFulfilled, onRejected);
+    }
+  };
+}
+
+const defaults = {
+  array: (v) => JSON.stringify(v),
+  object: (v) => JSON.stringify(v),
+  set: (v) => JSON.stringify(Array.from(v)),
+  map: (v) => JSON.stringify(Object.fromEntries(v)),
+  null: () => ""
+};
+function getDefaultSerialization(target) {
+  if (!target)
+    return defaults.null;
+  if (target instanceof Map)
+    return defaults.map;
+  else if (target instanceof Set)
+    return defaults.set;
+  else if (Array.isArray(target))
+    return defaults.array;
+  else
+    return defaults.object;
+}
+
+function useBase64(target, options) {
+  const base64 = core_shallowRef("");
+  const promise = core_shallowRef();
+  function execute() {
+    if (!core_isClient)
+      return;
+    promise.value = new Promise((resolve, reject) => {
+      try {
+        const _target = core_toValue(target);
+        if (_target == null) {
+          resolve("");
+        } else if (typeof _target === "string") {
+          resolve(blobToBase64(new Blob([_target], { type: "text/plain" })));
+        } else if (_target instanceof Blob) {
+          resolve(blobToBase64(_target));
+        } else if (_target instanceof ArrayBuffer) {
+          resolve(window.btoa(String.fromCharCode(...new Uint8Array(_target))));
+        } else if (_target instanceof HTMLCanvasElement) {
+          resolve(_target.toDataURL(options == null ? void 0 : options.type, options == null ? void 0 : options.quality));
+        } else if (_target instanceof HTMLImageElement) {
+          const img = _target.cloneNode(false);
+          img.crossOrigin = "Anonymous";
+          imgLoaded(img).then(() => {
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            resolve(canvas.toDataURL(options == null ? void 0 : options.type, options == null ? void 0 : options.quality));
+          }).catch(reject);
+        } else if (typeof _target === "object") {
+          const _serializeFn = (options == null ? void 0 : options.serializer) || getDefaultSerialization(_target);
+          const serialized = _serializeFn(_target);
+          return resolve(blobToBase64(new Blob([serialized], { type: "application/json" })));
+        } else {
+          reject(new Error("target is unsupported types"));
+        }
+      } catch (error) {
+        reject(error);
+      }
+    });
+    promise.value.then((res) => {
+      base64.value = (options == null ? void 0 : options.dataUrl) === false ? res.replace(/^data:.*?;base64,/, "") : res;
+    });
+    return promise.value;
+  }
+  if (core_isRef(target) || typeof target === "function")
+    core_watch(target, execute, { immediate: true });
+  else
+    execute();
+  return {
+    base64,
+    promise,
+    execute
+  };
+}
+function imgLoaded(img) {
+  return new Promise((resolve, reject) => {
+    if (!img.complete) {
+      img.onload = () => {
+        resolve();
+      };
+      img.onerror = reject;
+    } else {
+      resolve();
+    }
+  });
+}
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const fr = new FileReader();
+    fr.onload = (e) => {
+      resolve(e.target.result);
+    };
+    fr.onerror = reject;
+    fr.readAsDataURL(blob);
+  });
+}
+
+function useBattery(options = {}) {
+  const { navigator = defaultNavigator } = options;
+  const events = ["chargingchange", "chargingtimechange", "dischargingtimechange", "levelchange"];
+  const isSupported = useSupported(() => navigator && "getBattery" in navigator && typeof navigator.getBattery === "function");
+  const charging = core_shallowRef(false);
+  const chargingTime = core_shallowRef(0);
+  const dischargingTime = core_shallowRef(0);
+  const level = core_shallowRef(1);
+  let battery;
+  function updateBatteryInfo() {
+    charging.value = this.charging;
+    chargingTime.value = this.chargingTime || 0;
+    dischargingTime.value = this.dischargingTime || 0;
+    level.value = this.level;
+  }
+  if (isSupported.value) {
+    navigator.getBattery().then((_battery) => {
+      battery = _battery;
+      updateBatteryInfo.call(battery);
+      useEventListener(battery, events, updateBatteryInfo, { passive: true });
+    });
+  }
+  return {
+    isSupported,
+    charging,
+    chargingTime,
+    dischargingTime,
+    level
+  };
+}
+
+function useBluetooth(options) {
+  let {
+    acceptAllDevices = false
+  } = options || {};
+  const {
+    filters = void 0,
+    optionalServices = void 0,
+    navigator = defaultNavigator
+  } = options || {};
+  const isSupported = useSupported(() => navigator && "bluetooth" in navigator);
+  const device = core_shallowRef();
+  const error = core_shallowRef(null);
+  core_watch(device, () => {
+    connectToBluetoothGATTServer();
+  });
+  async function requestDevice() {
+    if (!isSupported.value)
+      return;
+    error.value = null;
+    if (filters && filters.length > 0)
+      acceptAllDevices = false;
+    try {
+      device.value = await (navigator == null ? void 0 : navigator.bluetooth.requestDevice({
+        acceptAllDevices,
+        filters,
+        optionalServices
+      }));
+    } catch (err) {
+      error.value = err;
+    }
+  }
+  const server = core_shallowRef();
+  const isConnected = core_shallowRef(false);
+  function reset() {
+    isConnected.value = false;
+    device.value = void 0;
+    server.value = void 0;
+  }
+  async function connectToBluetoothGATTServer() {
+    error.value = null;
+    if (device.value && device.value.gatt) {
+      useEventListener(device, "gattserverdisconnected", reset, { passive: true });
+      try {
+        server.value = await device.value.gatt.connect();
+        isConnected.value = server.value.connected;
+      } catch (err) {
+        error.value = err;
+      }
+    }
+  }
+  core_tryOnMounted(() => {
+    var _a;
+    if (device.value)
+      (_a = device.value.gatt) == null ? void 0 : _a.connect();
+  });
+  core_tryOnScopeDispose(() => {
+    var _a;
+    if (device.value)
+      (_a = device.value.gatt) == null ? void 0 : _a.disconnect();
+  });
+  return {
+    isSupported,
+    isConnected: core_readonly(isConnected),
+    // Device:
+    device,
+    requestDevice,
+    // Server:
+    server,
+    // Errors:
+    error
+  };
+}
+
+const ssrWidthSymbol = Symbol("vueuse-ssr-width");
+function useSSRWidth() {
+  const ssrWidth = core_hasInjectionContext() ? core_injectLocal(ssrWidthSymbol, null) : null;
+  return typeof ssrWidth === "number" ? ssrWidth : void 0;
+}
+function provideSSRWidth(width, app) {
+  if (app !== void 0) {
+    app.provide(ssrWidthSymbol, width);
+  } else {
+    core_provideLocal(ssrWidthSymbol, width);
+  }
+}
+
+function useMediaQuery(query, options = {}) {
+  const { window = defaultWindow, ssrWidth = useSSRWidth() } = options;
+  const isSupported = useSupported(() => window && "matchMedia" in window && typeof window.matchMedia === "function");
+  const ssrSupport = core_shallowRef(typeof ssrWidth === "number");
+  const mediaQuery = core_shallowRef();
+  const matches = core_shallowRef(false);
+  const handler = (event) => {
+    matches.value = event.matches;
+  };
+  core_watchEffect(() => {
+    if (ssrSupport.value) {
+      ssrSupport.value = !isSupported.value;
+      const queryStrings = core_toValue(query).split(",");
+      matches.value = queryStrings.some((queryString) => {
+        const not = queryString.includes("not all");
+        const minWidth = queryString.match(/\(\s*min-width:\s*(-?\d+(?:\.\d*)?[a-z]+\s*)\)/);
+        const maxWidth = queryString.match(/\(\s*max-width:\s*(-?\d+(?:\.\d*)?[a-z]+\s*)\)/);
+        let res = Boolean(minWidth || maxWidth);
+        if (minWidth && res) {
+          res = ssrWidth >= core_pxValue(minWidth[1]);
+        }
+        if (maxWidth && res) {
+          res = ssrWidth <= core_pxValue(maxWidth[1]);
+        }
+        return not ? !res : res;
+      });
+      return;
+    }
+    if (!isSupported.value)
+      return;
+    mediaQuery.value = window.matchMedia(core_toValue(query));
+    matches.value = mediaQuery.value.matches;
+  });
+  useEventListener(mediaQuery, "change", handler, { passive: true });
+  return core_computed(() => matches.value);
+}
+
+const breakpointsTailwind = {
+  "sm": 640,
+  "md": 768,
+  "lg": 1024,
+  "xl": 1280,
+  "2xl": 1536
+};
+const breakpointsBootstrapV5 = {
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1400
+};
+const breakpointsVuetifyV2 = {
+  xs: 0,
+  sm: 600,
+  md: 960,
+  lg: 1264,
+  xl: 1904
+};
+const breakpointsVuetifyV3 = {
+  xs: 0,
+  sm: 600,
+  md: 960,
+  lg: 1280,
+  xl: 1920,
+  xxl: 2560
+};
+const breakpointsVuetify = (/* unused pure expression or super */ null && (breakpointsVuetifyV2));
+const breakpointsAntDesign = {
+  xs: 480,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1600
+};
+const breakpointsQuasar = {
+  xs: 0,
+  sm: 600,
+  md: 1024,
+  lg: 1440,
+  xl: 1920
+};
+const breakpointsSematic = {
+  mobileS: 320,
+  mobileM: 375,
+  mobileL: 425,
+  tablet: 768,
+  laptop: 1024,
+  laptopL: 1440,
+  desktop4K: 2560
+};
+const breakpointsMasterCss = {
+  "3xs": 360,
+  "2xs": 480,
+  "xs": 600,
+  "sm": 768,
+  "md": 1024,
+  "lg": 1280,
+  "xl": 1440,
+  "2xl": 1600,
+  "3xl": 1920,
+  "4xl": 2560
+};
+const breakpointsPrimeFlex = {
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
+};
+const breakpointsElement = {
+  xs: 0,
+  sm: 768,
+  md: 992,
+  lg: 1200,
+  xl: 1920
+};
+
+function useBreakpoints(breakpoints, options = {}) {
+  function getValue(k, delta) {
+    let v = core_toValue(breakpoints[core_toValue(k)]);
+    if (delta != null)
+      v = core_increaseWithUnit(v, delta);
+    if (typeof v === "number")
+      v = `${v}px`;
+    return v;
+  }
+  const { window = defaultWindow, strategy = "min-width", ssrWidth = useSSRWidth() } = options;
+  const ssrSupport = typeof ssrWidth === "number";
+  const mounted = ssrSupport ? core_shallowRef(false) : { value: true };
+  if (ssrSupport) {
+    core_tryOnMounted(() => mounted.value = !!window);
+  }
+  function match(query, size) {
+    if (!mounted.value && ssrSupport) {
+      return query === "min" ? ssrWidth >= core_pxValue(size) : ssrWidth <= core_pxValue(size);
+    }
+    if (!window)
+      return false;
+    return window.matchMedia(`(${query}-width: ${size})`).matches;
+  }
+  const greaterOrEqual = (k) => {
+    return useMediaQuery(() => `(min-width: ${getValue(k)})`, options);
+  };
+  const smallerOrEqual = (k) => {
+    return useMediaQuery(() => `(max-width: ${getValue(k)})`, options);
+  };
+  const shortcutMethods = Object.keys(breakpoints).reduce((shortcuts, k) => {
+    Object.defineProperty(shortcuts, k, {
+      get: () => strategy === "min-width" ? greaterOrEqual(k) : smallerOrEqual(k),
+      enumerable: true,
+      configurable: true
+    });
+    return shortcuts;
+  }, {});
+  function current() {
+    const points = Object.keys(breakpoints).map((k) => [k, shortcutMethods[k], core_pxValue(getValue(k))]).sort((a, b) => a[2] - b[2]);
+    return core_computed(() => points.filter(([, v]) => v.value).map(([k]) => k));
+  }
+  return Object.assign(shortcutMethods, {
+    greaterOrEqual,
+    smallerOrEqual,
+    greater(k) {
+      return useMediaQuery(() => `(min-width: ${getValue(k, 0.1)})`, options);
+    },
+    smaller(k) {
+      return useMediaQuery(() => `(max-width: ${getValue(k, -0.1)})`, options);
+    },
+    between(a, b) {
+      return useMediaQuery(() => `(min-width: ${getValue(a)}) and (max-width: ${getValue(b, -0.1)})`, options);
+    },
+    isGreater(k) {
+      return match("min", getValue(k, 0.1));
+    },
+    isGreaterOrEqual(k) {
+      return match("min", getValue(k));
+    },
+    isSmaller(k) {
+      return match("max", getValue(k, -0.1));
+    },
+    isSmallerOrEqual(k) {
+      return match("max", getValue(k));
+    },
+    isInBetween(a, b) {
+      return match("min", getValue(a)) && match("max", getValue(b, -0.1));
+    },
+    current,
+    active() {
+      const bps = current();
+      return core_computed(() => bps.value.length === 0 ? "" : bps.value.at(strategy === "min-width" ? -1 : 0));
+    }
+  });
+}
+
+function useBroadcastChannel(options) {
+  const {
+    name,
+    window = defaultWindow
+  } = options;
+  const isSupported = useSupported(() => window && "BroadcastChannel" in window);
+  const isClosed = core_shallowRef(false);
+  const channel = core_ref();
+  const data = core_ref();
+  const error = core_shallowRef(null);
+  const post = (data2) => {
+    if (channel.value)
+      channel.value.postMessage(data2);
+  };
+  const close = () => {
+    if (channel.value)
+      channel.value.close();
+    isClosed.value = true;
+  };
+  if (isSupported.value) {
+    core_tryOnMounted(() => {
+      error.value = null;
+      channel.value = new BroadcastChannel(name);
+      const listenerOptions = {
+        passive: true
+      };
+      useEventListener(channel, "message", (e) => {
+        data.value = e.data;
+      }, listenerOptions);
+      useEventListener(channel, "messageerror", (e) => {
+        error.value = e;
+      }, listenerOptions);
+      useEventListener(channel, "close", () => {
+        isClosed.value = true;
+      }, listenerOptions);
+    });
+  }
+  core_tryOnScopeDispose(() => {
+    close();
+  });
+  return {
+    isSupported,
+    channel,
+    data,
+    post,
+    close,
+    error,
+    isClosed
+  };
+}
+
+const WRITABLE_PROPERTIES = (/* unused pure expression or super */ null && ([
+  "hash",
+  "host",
+  "hostname",
+  "href",
+  "pathname",
+  "port",
+  "protocol",
+  "search"
+]));
+function useBrowserLocation(options = {}) {
+  const { window = defaultWindow } = options;
+  const refs = Object.fromEntries(
+    WRITABLE_PROPERTIES.map((key) => [key, core_ref()])
+  );
+  for (const [key, ref] of core_objectEntries(refs)) {
+    core_watch(ref, (value) => {
+      if (!(window == null ? void 0 : window.location) || window.location[key] === value)
+        return;
+      window.location[key] = value;
+    });
+  }
+  const buildState = (trigger) => {
+    var _a;
+    const { state: state2, length } = (window == null ? void 0 : window.history) || {};
+    const { origin } = (window == null ? void 0 : window.location) || {};
+    for (const key of WRITABLE_PROPERTIES)
+      refs[key].value = (_a = window == null ? void 0 : window.location) == null ? void 0 : _a[key];
+    return core_reactive({
+      trigger,
+      state: state2,
+      length,
+      origin,
+      ...refs
+    });
+  };
+  const state = core_ref(buildState("load"));
+  if (window) {
+    const listenerOptions = { passive: true };
+    useEventListener(window, "popstate", () => state.value = buildState("popstate"), listenerOptions);
+    useEventListener(window, "hashchange", () => state.value = buildState("hashchange"), listenerOptions);
+  }
+  return state;
+}
+
+function useCached(refValue, comparator = (a, b) => a === b, options) {
+  const { deepRefs = true, ...watchOptions } = options || {};
+  const cachedValue = core_createRef(refValue.value, deepRefs);
+  core_watch(() => refValue.value, (value) => {
+    if (!comparator(value, cachedValue.value))
+      cachedValue.value = value;
+  }, watchOptions);
+  return cachedValue;
+}
+
+function usePermission(permissionDesc, options = {}) {
+  const {
+    controls = false,
+    navigator = defaultNavigator
+  } = options;
+  const isSupported = useSupported(() => navigator && "permissions" in navigator);
+  const permissionStatus = shallowRef();
+  const desc = typeof permissionDesc === "string" ? { name: permissionDesc } : permissionDesc;
+  const state = shallowRef();
+  const update = () => {
+    var _a, _b;
+    state.value = (_b = (_a = permissionStatus.value) == null ? void 0 : _a.state) != null ? _b : "prompt";
+  };
+  useEventListener(permissionStatus, "change", update, { passive: true });
+  const query = createSingletonPromise(async () => {
+    if (!isSupported.value)
+      return;
+    if (!permissionStatus.value) {
+      try {
+        permissionStatus.value = await navigator.permissions.query(desc);
+      } catch (e) {
+        permissionStatus.value = void 0;
+      } finally {
+        update();
+      }
+    }
+    if (controls)
+      return toRaw(permissionStatus.value);
+  });
+  query();
+  if (controls) {
+    return {
+      state,
+      isSupported,
+      query
+    };
+  } else {
+    return state;
+  }
+}
+
+function useClipboard(options = {}) {
+  const {
+    navigator = defaultNavigator,
+    read = false,
+    source,
+    copiedDuring = 1500,
+    legacy = false
+  } = options;
+  const isClipboardApiSupported = useSupported(() => navigator && "clipboard" in navigator);
+  const permissionRead = usePermission("clipboard-read");
+  const permissionWrite = usePermission("clipboard-write");
+  const isSupported = runtime_core_esm_bundler_computed(() => isClipboardApiSupported.value || legacy);
+  const text = shallowRef("");
+  const copied = shallowRef(false);
+  const timeout = useTimeoutFn(() => copied.value = false, copiedDuring, { immediate: false });
+  async function updateText() {
+    let useLegacy = !(isClipboardApiSupported.value && isAllowed(permissionRead.value));
+    if (!useLegacy) {
+      try {
+        text.value = await navigator.clipboard.readText();
+      } catch (e) {
+        useLegacy = true;
+      }
+    }
+    if (useLegacy) {
+      text.value = legacyRead();
+    }
+  }
+  if (isSupported.value && read)
+    useEventListener(["copy", "cut"], updateText, { passive: true });
+  async function copy(value = toValue(source)) {
+    if (isSupported.value && value != null) {
+      let useLegacy = !(isClipboardApiSupported.value && isAllowed(permissionWrite.value));
+      if (!useLegacy) {
+        try {
+          await navigator.clipboard.writeText(value);
+        } catch (e) {
+          useLegacy = true;
+        }
+      }
+      if (useLegacy)
+        legacyCopy(value);
+      text.value = value;
+      copied.value = true;
+      timeout.start();
+    }
+  }
+  function legacyCopy(value) {
+    const ta = document.createElement("textarea");
+    ta.value = value != null ? value : "";
+    ta.style.position = "absolute";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    ta.remove();
+  }
+  function legacyRead() {
+    var _a, _b, _c;
+    return (_c = (_b = (_a = document == null ? void 0 : document.getSelection) == null ? void 0 : _a.call(document)) == null ? void 0 : _b.toString()) != null ? _c : "";
+  }
+  function isAllowed(status) {
+    return status === "granted" || status === "prompt";
+  }
+  return {
+    isSupported,
+    text,
+    copied,
+    copy
+  };
+}
+
+function useClipboardItems(options = {}) {
+  const {
+    navigator = defaultNavigator,
+    read = false,
+    source,
+    copiedDuring = 1500
+  } = options;
+  const isSupported = useSupported(() => navigator && "clipboard" in navigator);
+  const content = core_ref([]);
+  const copied = core_shallowRef(false);
+  const timeout = core_useTimeoutFn(() => copied.value = false, copiedDuring, { immediate: false });
+  function updateContent() {
+    if (isSupported.value) {
+      navigator.clipboard.read().then((items) => {
+        content.value = items;
+      });
+    }
+  }
+  if (isSupported.value && read)
+    useEventListener(["copy", "cut"], updateContent, { passive: true });
+  async function copy(value = core_toValue(source)) {
+    if (isSupported.value && value != null) {
+      await navigator.clipboard.write(value);
+      content.value = value;
+      copied.value = true;
+      timeout.start();
+    }
+  }
+  return {
+    isSupported,
+    content,
+    copied,
+    copy
+  };
+}
+
+function cloneFnJSON(source) {
+  return JSON.parse(JSON.stringify(source));
+}
+function useCloned(source, options = {}) {
+  const cloned = core_ref({});
+  const isModified = core_shallowRef(false);
+  let _lastSync = false;
+  const {
+    manual,
+    clone = cloneFnJSON,
+    // watch options
+    deep = true,
+    immediate = true
+  } = options;
+  core_watch(cloned, () => {
+    if (_lastSync) {
+      _lastSync = false;
+      return;
+    }
+    isModified.value = true;
+  }, {
+    deep: true,
+    flush: "sync"
+  });
+  function sync() {
+    _lastSync = true;
+    isModified.value = false;
+    cloned.value = clone(core_toValue(source));
+  }
+  if (!manual && (core_isRef(source) || typeof source === "function")) {
+    core_watch(source, sync, {
+      ...options,
+      deep,
+      immediate
+    });
+  } else {
+    sync();
+  }
+  return { cloned, isModified, sync };
+}
+
+const _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof __webpack_require__.g !== "undefined" ? __webpack_require__.g : typeof self !== "undefined" ? self : {};
+const globalKey = "__vueuse_ssr_handlers__";
+const handlers = /* @__PURE__ */ (/* unused pure expression or super */ null && (getHandlers()));
+function getHandlers() {
+  if (!(globalKey in _global))
+    _global[globalKey] = _global[globalKey] || {};
+  return _global[globalKey];
+}
+function getSSRHandler(key, fallback) {
+  return handlers[key] || fallback;
+}
+function setSSRHandler(key, fn) {
+  handlers[key] = fn;
+}
+
+function usePreferredDark(options) {
+  return useMediaQuery("(prefers-color-scheme: dark)", options);
+}
+
+function guessSerializerType(rawInit) {
+  return rawInit == null ? "any" : rawInit instanceof Set ? "set" : rawInit instanceof Map ? "map" : rawInit instanceof Date ? "date" : typeof rawInit === "boolean" ? "boolean" : typeof rawInit === "string" ? "string" : typeof rawInit === "object" ? "object" : !Number.isNaN(rawInit) ? "number" : "any";
+}
+
+const StorageSerializers = {
+  boolean: {
+    read: (v) => v === "true",
+    write: (v) => String(v)
+  },
+  object: {
+    read: (v) => JSON.parse(v),
+    write: (v) => JSON.stringify(v)
+  },
+  number: {
+    read: (v) => Number.parseFloat(v),
+    write: (v) => String(v)
+  },
+  any: {
+    read: (v) => v,
+    write: (v) => String(v)
+  },
+  string: {
+    read: (v) => v,
+    write: (v) => String(v)
+  },
+  map: {
+    read: (v) => new Map(JSON.parse(v)),
+    write: (v) => JSON.stringify(Array.from(v.entries()))
+  },
+  set: {
+    read: (v) => new Set(JSON.parse(v)),
+    write: (v) => JSON.stringify(Array.from(v))
+  },
+  date: {
+    read: (v) => new Date(v),
+    write: (v) => v.toISOString()
+  }
+};
+const customStorageEventName = "vueuse-storage";
+function useStorage(key, defaults, storage, options = {}) {
+  var _a;
+  const {
+    flush = "pre",
+    deep = true,
+    listenToStorageChanges = true,
+    writeDefaults = true,
+    mergeDefaults = false,
+    shallow,
+    window = defaultWindow,
+    eventFilter,
+    onError = (e) => {
+      console.error(e);
+    },
+    initOnMounted
+  } = options;
+  const data = (shallow ? core_shallowRef : core_ref)(typeof defaults === "function" ? defaults() : defaults);
+  const keyComputed = core_computed(() => core_toValue(key));
+  if (!storage) {
+    try {
+      storage = getSSRHandler("getDefaultStorage", () => {
+        var _a2;
+        return (_a2 = defaultWindow) == null ? void 0 : _a2.localStorage;
+      })();
+    } catch (e) {
+      onError(e);
+    }
+  }
+  if (!storage)
+    return data;
+  const rawInit = core_toValue(defaults);
+  const type = guessSerializerType(rawInit);
+  const serializer = (_a = options.serializer) != null ? _a : StorageSerializers[type];
+  const { pause: pauseWatch, resume: resumeWatch } = pausableWatch(
+    data,
+    () => write(data.value),
+    { flush, deep, eventFilter }
+  );
+  core_watch(keyComputed, () => update(), { flush });
+  let firstMounted = false;
+  const onStorageEvent = (ev) => {
+    if (initOnMounted && !firstMounted) {
+      return;
+    }
+    update(ev);
+  };
+  const onStorageCustomEvent = (ev) => {
+    if (initOnMounted && !firstMounted) {
+      return;
+    }
+    updateFromCustomEvent(ev);
+  };
+  if (window && listenToStorageChanges) {
+    if (storage instanceof Storage)
+      useEventListener(window, "storage", onStorageEvent, { passive: true });
+    else
+      useEventListener(window, customStorageEventName, onStorageCustomEvent);
+  }
+  if (initOnMounted) {
+    core_tryOnMounted(() => {
+      firstMounted = true;
+      update();
+    });
+  } else {
+    update();
+  }
+  function dispatchWriteEvent(oldValue, newValue) {
+    if (window) {
+      const payload = {
+        key: keyComputed.value,
+        oldValue,
+        newValue,
+        storageArea: storage
+      };
+      window.dispatchEvent(storage instanceof Storage ? new StorageEvent("storage", payload) : new CustomEvent(customStorageEventName, {
+        detail: payload
+      }));
+    }
+  }
+  function write(v) {
+    try {
+      const oldValue = storage.getItem(keyComputed.value);
+      if (v == null) {
+        dispatchWriteEvent(oldValue, null);
+        storage.removeItem(keyComputed.value);
+      } else {
+        const serialized = serializer.write(v);
+        if (oldValue !== serialized) {
+          storage.setItem(keyComputed.value, serialized);
+          dispatchWriteEvent(oldValue, serialized);
+        }
+      }
+    } catch (e) {
+      onError(e);
+    }
+  }
+  function read(event) {
+    const rawValue = event ? event.newValue : storage.getItem(keyComputed.value);
+    if (rawValue == null) {
+      if (writeDefaults && rawInit != null)
+        storage.setItem(keyComputed.value, serializer.write(rawInit));
+      return rawInit;
+    } else if (!event && mergeDefaults) {
+      const value = serializer.read(rawValue);
+      if (typeof mergeDefaults === "function")
+        return mergeDefaults(value, rawInit);
+      else if (type === "object" && !Array.isArray(value))
+        return { ...rawInit, ...value };
+      return value;
+    } else if (typeof rawValue !== "string") {
+      return rawValue;
+    } else {
+      return serializer.read(rawValue);
+    }
+  }
+  function update(event) {
+    if (event && event.storageArea !== storage)
+      return;
+    if (event && event.key == null) {
+      data.value = rawInit;
+      return;
+    }
+    if (event && event.key !== keyComputed.value)
+      return;
+    pauseWatch();
+    try {
+      if ((event == null ? void 0 : event.newValue) !== serializer.write(data.value))
+        data.value = read(event);
+    } catch (e) {
+      onError(e);
+    } finally {
+      if (event)
+        core_nextTick(resumeWatch);
+      else
+        resumeWatch();
+    }
+  }
+  function updateFromCustomEvent(event) {
+    update(event.detail);
+  }
+  return data;
+}
+
+const CSS_DISABLE_TRANS = "*,*::before,*::after{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}";
+function useColorMode(options = {}) {
+  const {
+    selector = "html",
+    attribute = "class",
+    initialValue = "auto",
+    window = defaultWindow,
+    storage,
+    storageKey = "vueuse-color-scheme",
+    listenToStorageChanges = true,
+    storageRef,
+    emitAuto,
+    disableTransition = true
+  } = options;
+  const modes = {
+    auto: "",
+    light: "light",
+    dark: "dark",
+    ...options.modes || {}
+  };
+  const preferredDark = usePreferredDark({ window });
+  const system = core_computed(() => preferredDark.value ? "dark" : "light");
+  const store = storageRef || (storageKey == null ? core_toRef(initialValue) : useStorage(storageKey, initialValue, storage, { window, listenToStorageChanges }));
+  const state = core_computed(() => store.value === "auto" ? system.value : store.value);
+  const updateHTMLAttrs = getSSRHandler(
+    "updateHTMLAttrs",
+    (selector2, attribute2, value) => {
+      const el = typeof selector2 === "string" ? window == null ? void 0 : window.document.querySelector(selector2) : unrefElement(selector2);
+      if (!el)
+        return;
+      const classesToAdd = /* @__PURE__ */ new Set();
+      const classesToRemove = /* @__PURE__ */ new Set();
+      let attributeToChange = null;
+      if (attribute2 === "class") {
+        const current = value.split(/\s/g);
+        Object.values(modes).flatMap((i) => (i || "").split(/\s/g)).filter(Boolean).forEach((v) => {
+          if (current.includes(v))
+            classesToAdd.add(v);
+          else
+            classesToRemove.add(v);
+        });
+      } else {
+        attributeToChange = { key: attribute2, value };
+      }
+      if (classesToAdd.size === 0 && classesToRemove.size === 0 && attributeToChange === null)
+        return;
+      let style;
+      if (disableTransition) {
+        style = window.document.createElement("style");
+        style.appendChild(document.createTextNode(CSS_DISABLE_TRANS));
+        window.document.head.appendChild(style);
+      }
+      for (const c of classesToAdd) {
+        el.classList.add(c);
+      }
+      for (const c of classesToRemove) {
+        el.classList.remove(c);
+      }
+      if (attributeToChange) {
+        el.setAttribute(attributeToChange.key, attributeToChange.value);
+      }
+      if (disableTransition) {
+        window.getComputedStyle(style).opacity;
+        document.head.removeChild(style);
+      }
+    }
+  );
+  function defaultOnChanged(mode) {
+    var _a;
+    updateHTMLAttrs(selector, attribute, (_a = modes[mode]) != null ? _a : mode);
+  }
+  function onChanged(mode) {
+    if (options.onChanged)
+      options.onChanged(mode, defaultOnChanged);
+    else
+      defaultOnChanged(mode);
+  }
+  core_watch(state, onChanged, { flush: "post", immediate: true });
+  core_tryOnMounted(() => onChanged(state.value));
+  const auto = core_computed({
+    get() {
+      return emitAuto ? store.value : state.value;
+    },
+    set(v) {
+      store.value = v;
+    }
+  });
+  return Object.assign(auto, { store, system, state });
+}
+
+function useConfirmDialog(revealed = core_shallowRef(false)) {
+  const confirmHook = core_createEventHook();
+  const cancelHook = core_createEventHook();
+  const revealHook = core_createEventHook();
+  let _resolve = core_noop;
+  const reveal = (data) => {
+    revealHook.trigger(data);
+    revealed.value = true;
+    return new Promise((resolve) => {
+      _resolve = resolve;
+    });
+  };
+  const confirm = (data) => {
+    revealed.value = false;
+    confirmHook.trigger(data);
+    _resolve({ data, isCanceled: false });
+  };
+  const cancel = (data) => {
+    revealed.value = false;
+    cancelHook.trigger(data);
+    _resolve({ data, isCanceled: true });
+  };
+  return {
+    isRevealed: core_computed(() => revealed.value),
+    reveal,
+    confirm,
+    cancel,
+    onReveal: revealHook.on,
+    onConfirm: confirmHook.on,
+    onCancel: cancelHook.on
+  };
+}
+
+function useCountdown(initialCountdown, options) {
+  var _a, _b;
+  const remaining = core_shallowRef(core_toValue(initialCountdown));
+  const intervalController = core_useIntervalFn(() => {
+    var _a2, _b2;
+    const value = remaining.value - 1;
+    remaining.value = value < 0 ? 0 : value;
+    (_a2 = options == null ? void 0 : options.onTick) == null ? void 0 : _a2.call(options);
+    if (remaining.value <= 0) {
+      intervalController.pause();
+      (_b2 = options == null ? void 0 : options.onComplete) == null ? void 0 : _b2.call(options);
+    }
+  }, (_a = options == null ? void 0 : options.interval) != null ? _a : 1e3, { immediate: (_b = options == null ? void 0 : options.immediate) != null ? _b : false });
+  const reset = (countdown) => {
+    var _a2;
+    remaining.value = (_a2 = core_toValue(countdown)) != null ? _a2 : core_toValue(initialCountdown);
+  };
+  const stop = () => {
+    intervalController.pause();
+    reset();
+  };
+  const resume = () => {
+    if (!intervalController.isActive.value) {
+      if (remaining.value > 0) {
+        intervalController.resume();
+      }
+    }
+  };
+  const start = (countdown) => {
+    reset(countdown);
+    intervalController.resume();
+  };
+  return {
+    remaining,
+    reset,
+    stop,
+    start,
+    pause: intervalController.pause,
+    resume,
+    isActive: intervalController.isActive
+  };
+}
+
+function useCssVar(prop, target, options = {}) {
+  const { window = defaultWindow, initialValue, observe = false } = options;
+  const variable = core_shallowRef(initialValue);
+  const elRef = core_computed(() => {
+    var _a;
+    return unrefElement(target) || ((_a = window == null ? void 0 : window.document) == null ? void 0 : _a.documentElement);
+  });
+  function updateCssVar() {
+    var _a;
+    const key = core_toValue(prop);
+    const el = core_toValue(elRef);
+    if (el && window && key) {
+      const value = (_a = window.getComputedStyle(el).getPropertyValue(key)) == null ? void 0 : _a.trim();
+      variable.value = value || variable.value || initialValue;
+    }
+  }
+  if (observe) {
+    useMutationObserver(elRef, updateCssVar, {
+      attributeFilter: ["style", "class"],
+      window
+    });
+  }
+  core_watch(
+    [elRef, () => core_toValue(prop)],
+    (_, old) => {
+      if (old[0] && old[1])
+        old[0].style.removeProperty(old[1]);
+      updateCssVar();
+    },
+    { immediate: true }
+  );
+  core_watch(
+    [variable, elRef],
+    ([val, el]) => {
+      const raw_prop = core_toValue(prop);
+      if ((el == null ? void 0 : el.style) && raw_prop) {
+        if (val == null)
+          el.style.removeProperty(raw_prop);
+        else
+          el.style.setProperty(raw_prop, val);
+      }
+    },
+    { immediate: true }
+  );
+  return variable;
+}
+
+function useCurrentElement(rootComponent) {
+  const vm = core_getCurrentInstance();
+  const currentElement = core_computedWithControl(
+    () => null,
+    () => rootComponent ? unrefElement(rootComponent) : vm.proxy.$el
+  );
+  core_onUpdated(currentElement.trigger);
+  core_onMounted(currentElement.trigger);
+  return currentElement;
+}
+
+function useCycleList(list, options) {
+  const state = core_shallowRef(getInitialValue());
+  const listRef = core_toRef(list);
+  const index = core_computed({
+    get() {
+      var _a;
+      const targetList = listRef.value;
+      let index2 = (options == null ? void 0 : options.getIndexOf) ? options.getIndexOf(state.value, targetList) : targetList.indexOf(state.value);
+      if (index2 < 0)
+        index2 = (_a = options == null ? void 0 : options.fallbackIndex) != null ? _a : 0;
+      return index2;
+    },
+    set(v) {
+      set(v);
+    }
+  });
+  function set(i) {
+    const targetList = listRef.value;
+    const length = targetList.length;
+    const index2 = (i % length + length) % length;
+    const value = targetList[index2];
+    state.value = value;
+    return value;
+  }
+  function shift(delta = 1) {
+    return set(index.value + delta);
+  }
+  function next(n = 1) {
+    return shift(n);
+  }
+  function prev(n = 1) {
+    return shift(-n);
+  }
+  function getInitialValue() {
+    var _a, _b;
+    return (_b = core_toValue((_a = options == null ? void 0 : options.initialValue) != null ? _a : core_toValue(list)[0])) != null ? _b : void 0;
+  }
+  core_watch(listRef, () => set(index.value));
+  return {
+    state,
+    index,
+    next,
+    prev,
+    go: set
+  };
+}
+
+function useDark(options = {}) {
+  const {
+    valueDark = "dark",
+    valueLight = ""
+  } = options;
+  const mode = useColorMode({
+    ...options,
+    onChanged: (mode2, defaultHandler) => {
+      var _a;
+      if (options.onChanged)
+        (_a = options.onChanged) == null ? void 0 : _a.call(options, mode2 === "dark", defaultHandler, mode2);
+      else
+        defaultHandler(mode2);
+    },
+    modes: {
+      dark: valueDark,
+      light: valueLight
+    }
+  });
+  const system = core_computed(() => mode.system.value);
+  const isDark = core_computed({
+    get() {
+      return mode.value === "dark";
+    },
+    set(v) {
+      const modeVal = v ? "dark" : "light";
+      if (system.value === modeVal)
+        mode.value = "auto";
+      else
+        mode.value = modeVal;
+    }
+  });
+  return isDark;
+}
+
+function fnBypass(v) {
+  return v;
+}
+function fnSetSource(source, value) {
+  return source.value = value;
+}
+function defaultDump(clone) {
+  return clone ? typeof clone === "function" ? clone : cloneFnJSON : fnBypass;
+}
+function defaultParse(clone) {
+  return clone ? typeof clone === "function" ? clone : cloneFnJSON : fnBypass;
+}
+function useManualRefHistory(source, options = {}) {
+  const {
+    clone = false,
+    dump = defaultDump(clone),
+    parse = defaultParse(clone),
+    setSource = fnSetSource
+  } = options;
+  function _createHistoryRecord() {
+    return core_markRaw({
+      snapshot: dump(source.value),
+      timestamp: core_timestamp()
+    });
+  }
+  const last = core_ref(_createHistoryRecord());
+  const undoStack = core_ref([]);
+  const redoStack = core_ref([]);
+  const _setSource = (record) => {
+    setSource(source, parse(record.snapshot));
+    last.value = record;
+  };
+  const commit = () => {
+    undoStack.value.unshift(last.value);
+    last.value = _createHistoryRecord();
+    if (options.capacity && undoStack.value.length > options.capacity)
+      undoStack.value.splice(options.capacity, Number.POSITIVE_INFINITY);
+    if (redoStack.value.length)
+      redoStack.value.splice(0, redoStack.value.length);
+  };
+  const clear = () => {
+    undoStack.value.splice(0, undoStack.value.length);
+    redoStack.value.splice(0, redoStack.value.length);
+  };
+  const undo = () => {
+    const state = undoStack.value.shift();
+    if (state) {
+      redoStack.value.unshift(last.value);
+      _setSource(state);
+    }
+  };
+  const redo = () => {
+    const state = redoStack.value.shift();
+    if (state) {
+      undoStack.value.unshift(last.value);
+      _setSource(state);
+    }
+  };
+  const reset = () => {
+    _setSource(last.value);
+  };
+  const history = core_computed(() => [last.value, ...undoStack.value]);
+  const canUndo = core_computed(() => undoStack.value.length > 0);
+  const canRedo = core_computed(() => redoStack.value.length > 0);
+  return {
+    source,
+    undoStack,
+    redoStack,
+    last,
+    history,
+    canUndo,
+    canRedo,
+    clear,
+    commit,
+    reset,
+    undo,
+    redo
+  };
+}
+
+function useRefHistory(source, options = {}) {
+  const {
+    deep = false,
+    flush = "pre",
+    eventFilter,
+    shouldCommit = () => true
+  } = options;
+  const {
+    eventFilter: composedFilter,
+    pause,
+    resume: resumeTracking,
+    isActive: isTracking
+  } = core_pausableFilter(eventFilter);
+  let lastRawValue = source.value;
+  const {
+    ignoreUpdates,
+    ignorePrevAsyncUpdates,
+    stop
+  } = core_watchIgnorable(
+    source,
+    commit,
+    { deep, flush, eventFilter: composedFilter }
+  );
+  function setSource(source2, value) {
+    ignorePrevAsyncUpdates();
+    ignoreUpdates(() => {
+      source2.value = value;
+      lastRawValue = value;
+    });
+  }
+  const manualHistory = useManualRefHistory(source, { ...options, clone: options.clone || deep, setSource });
+  const { clear, commit: manualCommit } = manualHistory;
+  function commit() {
+    ignorePrevAsyncUpdates();
+    if (!shouldCommit(lastRawValue, source.value))
+      return;
+    lastRawValue = source.value;
+    manualCommit();
+  }
+  function resume(commitNow) {
+    resumeTracking();
+    if (commitNow)
+      commit();
+  }
+  function batch(fn) {
+    let canceled = false;
+    const cancel = () => canceled = true;
+    ignoreUpdates(() => {
+      fn(cancel);
+    });
+    if (!canceled)
+      commit();
+  }
+  function dispose() {
+    stop();
+    clear();
+  }
+  return {
+    ...manualHistory,
+    isTracking,
+    pause,
+    resume,
+    commit,
+    batch,
+    dispose
+  };
+}
+
+function useDebouncedRefHistory(source, options = {}) {
+  const filter = options.debounce ? core_debounceFilter(options.debounce) : void 0;
+  const history = useRefHistory(source, { ...options, eventFilter: filter });
+  return {
+    ...history
+  };
+}
+
+function useDeviceMotion(options = {}) {
+  const {
+    window = defaultWindow,
+    requestPermissions = false,
+    eventFilter = core_bypassFilter
+  } = options;
+  const isSupported = useSupported(() => typeof DeviceMotionEvent !== "undefined");
+  const requirePermissions = useSupported(() => isSupported.value && "requestPermission" in DeviceMotionEvent && typeof DeviceMotionEvent.requestPermission === "function");
+  const permissionGranted = core_shallowRef(false);
+  const acceleration = core_ref({ x: null, y: null, z: null });
+  const rotationRate = core_ref({ alpha: null, beta: null, gamma: null });
+  const interval = core_shallowRef(0);
+  const accelerationIncludingGravity = core_ref({
+    x: null,
+    y: null,
+    z: null
+  });
+  function init() {
+    if (window) {
+      const onDeviceMotion = core_createFilterWrapper(
+        eventFilter,
+        (event) => {
+          var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+          acceleration.value = {
+            x: ((_a = event.acceleration) == null ? void 0 : _a.x) || null,
+            y: ((_b = event.acceleration) == null ? void 0 : _b.y) || null,
+            z: ((_c = event.acceleration) == null ? void 0 : _c.z) || null
+          };
+          accelerationIncludingGravity.value = {
+            x: ((_d = event.accelerationIncludingGravity) == null ? void 0 : _d.x) || null,
+            y: ((_e = event.accelerationIncludingGravity) == null ? void 0 : _e.y) || null,
+            z: ((_f = event.accelerationIncludingGravity) == null ? void 0 : _f.z) || null
+          };
+          rotationRate.value = {
+            alpha: ((_g = event.rotationRate) == null ? void 0 : _g.alpha) || null,
+            beta: ((_h = event.rotationRate) == null ? void 0 : _h.beta) || null,
+            gamma: ((_i = event.rotationRate) == null ? void 0 : _i.gamma) || null
+          };
+          interval.value = event.interval;
+        }
+      );
+      useEventListener(window, "devicemotion", onDeviceMotion, { passive: true });
+    }
+  }
+  const ensurePermissions = async () => {
+    if (!requirePermissions.value)
+      permissionGranted.value = true;
+    if (permissionGranted.value)
+      return;
+    if (requirePermissions.value) {
+      const requestPermission = DeviceMotionEvent.requestPermission;
+      try {
+        const response = await requestPermission();
+        if (response === "granted") {
+          permissionGranted.value = true;
+          init();
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  };
+  if (isSupported.value) {
+    if (requestPermissions && requirePermissions.value) {
+      ensurePermissions().then(() => init());
+    } else {
+      init();
+    }
+  }
+  return {
+    acceleration,
+    accelerationIncludingGravity,
+    rotationRate,
+    interval,
+    isSupported,
+    requirePermissions,
+    ensurePermissions,
+    permissionGranted
+  };
+}
+
+function useDeviceOrientation(options = {}) {
+  const { window = defaultWindow } = options;
+  const isSupported = useSupported(() => window && "DeviceOrientationEvent" in window);
+  const isAbsolute = core_shallowRef(false);
+  const alpha = core_shallowRef(null);
+  const beta = core_shallowRef(null);
+  const gamma = core_shallowRef(null);
+  if (window && isSupported.value) {
+    useEventListener(window, "deviceorientation", (event) => {
+      isAbsolute.value = event.absolute;
+      alpha.value = event.alpha;
+      beta.value = event.beta;
+      gamma.value = event.gamma;
+    }, { passive: true });
+  }
+  return {
+    isSupported,
+    isAbsolute,
+    alpha,
+    beta,
+    gamma
+  };
+}
+
+function useDevicePixelRatio(options = {}) {
+  const {
+    window = defaultWindow
+  } = options;
+  const pixelRatio = core_shallowRef(1);
+  const query = useMediaQuery(() => `(resolution: ${pixelRatio.value}dppx)`, options);
+  let stop = core_noop;
+  if (window) {
+    stop = core_watchImmediate(query, () => pixelRatio.value = window.devicePixelRatio);
+  }
+  return {
+    pixelRatio: core_readonly(pixelRatio),
+    stop
+  };
+}
+
+function useDevicesList(options = {}) {
+  const {
+    navigator = defaultNavigator,
+    requestPermissions = false,
+    constraints = { audio: true, video: true },
+    onUpdated
+  } = options;
+  const devices = core_ref([]);
+  const videoInputs = core_computed(() => devices.value.filter((i) => i.kind === "videoinput"));
+  const audioInputs = core_computed(() => devices.value.filter((i) => i.kind === "audioinput"));
+  const audioOutputs = core_computed(() => devices.value.filter((i) => i.kind === "audiooutput"));
+  const isSupported = useSupported(() => navigator && navigator.mediaDevices && navigator.mediaDevices.enumerateDevices);
+  const permissionGranted = core_shallowRef(false);
+  let stream;
+  async function update() {
+    if (!isSupported.value)
+      return;
+    devices.value = await navigator.mediaDevices.enumerateDevices();
+    onUpdated == null ? void 0 : onUpdated(devices.value);
+    if (stream) {
+      stream.getTracks().forEach((t) => t.stop());
+      stream = null;
+    }
+  }
+  async function ensurePermissions() {
+    const deviceName = constraints.video ? "camera" : "microphone";
+    if (!isSupported.value)
+      return false;
+    if (permissionGranted.value)
+      return true;
+    const { state, query } = usePermission(deviceName, { controls: true });
+    await query();
+    if (state.value !== "granted") {
+      let granted = true;
+      try {
+        const allDevices = await navigator.mediaDevices.enumerateDevices();
+        const hasCamera = allDevices.some((device) => device.kind === "videoinput");
+        const hasMicrophone = allDevices.some((device) => device.kind === "audioinput" || device.kind === "audiooutput");
+        constraints.video = hasCamera ? constraints.video : false;
+        constraints.audio = hasMicrophone ? constraints.audio : false;
+        stream = await navigator.mediaDevices.getUserMedia(constraints);
+      } catch (e) {
+        stream = null;
+        granted = false;
+      }
+      update();
+      permissionGranted.value = granted;
+    } else {
+      permissionGranted.value = true;
+    }
+    return permissionGranted.value;
+  }
+  if (isSupported.value) {
+    if (requestPermissions)
+      ensurePermissions();
+    useEventListener(navigator.mediaDevices, "devicechange", update, { passive: true });
+    update();
+  }
+  return {
+    devices,
+    ensurePermissions,
+    permissionGranted,
+    videoInputs,
+    audioInputs,
+    audioOutputs,
+    isSupported
+  };
+}
+
+function useDisplayMedia(options = {}) {
+  var _a;
+  const enabled = core_shallowRef((_a = options.enabled) != null ? _a : false);
+  const video = options.video;
+  const audio = options.audio;
+  const { navigator = defaultNavigator } = options;
+  const isSupported = useSupported(() => {
+    var _a2;
+    return (_a2 = navigator == null ? void 0 : navigator.mediaDevices) == null ? void 0 : _a2.getDisplayMedia;
+  });
+  const constraint = { audio, video };
+  const stream = core_shallowRef();
+  async function _start() {
+    var _a2;
+    if (!isSupported.value || stream.value)
+      return;
+    stream.value = await navigator.mediaDevices.getDisplayMedia(constraint);
+    (_a2 = stream.value) == null ? void 0 : _a2.getTracks().forEach((t) => useEventListener(t, "ended", stop, { passive: true }));
+    return stream.value;
+  }
+  async function _stop() {
+    var _a2;
+    (_a2 = stream.value) == null ? void 0 : _a2.getTracks().forEach((t) => t.stop());
+    stream.value = void 0;
+  }
+  function stop() {
+    _stop();
+    enabled.value = false;
+  }
+  async function start() {
+    await _start();
+    if (stream.value)
+      enabled.value = true;
+    return stream.value;
+  }
+  core_watch(
+    enabled,
+    (v) => {
+      if (v)
+        _start();
+      else
+        _stop();
+    },
+    { immediate: true }
+  );
+  return {
+    isSupported,
+    stream,
+    start,
+    stop,
+    enabled
+  };
+}
+
+function useDocumentVisibility(options = {}) {
+  const { document = defaultDocument } = options;
+  if (!document)
+    return core_shallowRef("visible");
+  const visibility = core_shallowRef(document.visibilityState);
+  useEventListener(document, "visibilitychange", () => {
+    visibility.value = document.visibilityState;
+  }, { passive: true });
+  return visibility;
+}
+
+function useDraggable(target, options = {}) {
+  var _a;
+  const {
+    pointerTypes,
+    preventDefault,
+    stopPropagation,
+    exact,
+    onMove,
+    onEnd,
+    onStart,
+    initialValue,
+    axis = "both",
+    draggingElement = defaultWindow,
+    containerElement,
+    handle: draggingHandle = target,
+    buttons = [0]
+  } = options;
+  const position = core_ref(
+    (_a = core_toValue(initialValue)) != null ? _a : { x: 0, y: 0 }
+  );
+  const pressedDelta = core_ref();
+  const filterEvent = (e) => {
+    if (pointerTypes)
+      return pointerTypes.includes(e.pointerType);
+    return true;
+  };
+  const handleEvent = (e) => {
+    if (core_toValue(preventDefault))
+      e.preventDefault();
+    if (core_toValue(stopPropagation))
+      e.stopPropagation();
+  };
+  const start = (e) => {
+    var _a2;
+    if (!core_toValue(buttons).includes(e.button))
+      return;
+    if (core_toValue(options.disabled) || !filterEvent(e))
+      return;
+    if (core_toValue(exact) && e.target !== core_toValue(target))
+      return;
+    const container = core_toValue(containerElement);
+    const containerRect = (_a2 = container == null ? void 0 : container.getBoundingClientRect) == null ? void 0 : _a2.call(container);
+    const targetRect = core_toValue(target).getBoundingClientRect();
+    const pos = {
+      x: e.clientX - (container ? targetRect.left - containerRect.left + container.scrollLeft : targetRect.left),
+      y: e.clientY - (container ? targetRect.top - containerRect.top + container.scrollTop : targetRect.top)
+    };
+    if ((onStart == null ? void 0 : onStart(pos, e)) === false)
+      return;
+    pressedDelta.value = pos;
+    handleEvent(e);
+  };
+  const move = (e) => {
+    if (core_toValue(options.disabled) || !filterEvent(e))
+      return;
+    if (!pressedDelta.value)
+      return;
+    const container = core_toValue(containerElement);
+    const targetRect = core_toValue(target).getBoundingClientRect();
+    let { x, y } = position.value;
+    if (axis === "x" || axis === "both") {
+      x = e.clientX - pressedDelta.value.x;
+      if (container)
+        x = Math.min(Math.max(0, x), container.scrollWidth - targetRect.width);
+    }
+    if (axis === "y" || axis === "both") {
+      y = e.clientY - pressedDelta.value.y;
+      if (container)
+        y = Math.min(Math.max(0, y), container.scrollHeight - targetRect.height);
+    }
+    position.value = {
+      x,
+      y
+    };
+    onMove == null ? void 0 : onMove(position.value, e);
+    handleEvent(e);
+  };
+  const end = (e) => {
+    if (core_toValue(options.disabled) || !filterEvent(e))
+      return;
+    if (!pressedDelta.value)
+      return;
+    pressedDelta.value = void 0;
+    onEnd == null ? void 0 : onEnd(position.value, e);
+    handleEvent(e);
+  };
+  if (core_isClient) {
+    const config = () => {
+      var _a2;
+      return {
+        capture: (_a2 = options.capture) != null ? _a2 : true,
+        passive: !core_toValue(preventDefault)
+      };
+    };
+    useEventListener(draggingHandle, "pointerdown", start, config);
+    useEventListener(draggingElement, "pointermove", move, config);
+    useEventListener(draggingElement, "pointerup", end, config);
+  }
+  return {
+    ...core_toRefs(position),
+    position,
+    isDragging: core_computed(() => !!pressedDelta.value),
+    style: core_computed(
+      () => `left:${position.value.x}px;top:${position.value.y}px;`
+    )
+  };
+}
+
+function useDropZone(target, options = {}) {
+  var _a, _b;
+  const isOverDropZone = core_shallowRef(false);
+  const files = core_shallowRef(null);
+  let counter = 0;
+  let isValid = true;
+  if (core_isClient) {
+    const _options = typeof options === "function" ? { onDrop: options } : options;
+    const multiple = (_a = _options.multiple) != null ? _a : true;
+    const preventDefaultForUnhandled = (_b = _options.preventDefaultForUnhandled) != null ? _b : false;
+    const getFiles = (event) => {
+      var _a2, _b2;
+      const list = Array.from((_b2 = (_a2 = event.dataTransfer) == null ? void 0 : _a2.files) != null ? _b2 : []);
+      return list.length === 0 ? null : multiple ? list : [list[0]];
+    };
+    const checkDataTypes = (types) => {
+      const dataTypes = core_unref(_options.dataTypes);
+      if (typeof dataTypes === "function")
+        return dataTypes(types);
+      if (!(dataTypes == null ? void 0 : dataTypes.length))
+        return true;
+      if (types.length === 0)
+        return false;
+      return types.every(
+        (type) => dataTypes.some((allowedType) => type.includes(allowedType))
+      );
+    };
+    const checkValidity = (items) => {
+      const types = Array.from(items != null ? items : []).map((item) => item.type);
+      const dataTypesValid = checkDataTypes(types);
+      const multipleFilesValid = multiple || items.length <= 1;
+      return dataTypesValid && multipleFilesValid;
+    };
+    const isSafari = () => /^(?:(?!chrome|android).)*safari/i.test(navigator.userAgent) && !("chrome" in window);
+    const handleDragEvent = (event, eventType) => {
+      var _a2, _b2, _c, _d, _e, _f;
+      const dataTransferItemList = (_a2 = event.dataTransfer) == null ? void 0 : _a2.items;
+      isValid = (_b2 = dataTransferItemList && checkValidity(dataTransferItemList)) != null ? _b2 : false;
+      if (preventDefaultForUnhandled) {
+        event.preventDefault();
+      }
+      if (!isSafari() && !isValid) {
+        if (event.dataTransfer) {
+          event.dataTransfer.dropEffect = "none";
+        }
+        return;
+      }
+      event.preventDefault();
+      if (event.dataTransfer) {
+        event.dataTransfer.dropEffect = "copy";
+      }
+      const currentFiles = getFiles(event);
+      switch (eventType) {
+        case "enter":
+          counter += 1;
+          isOverDropZone.value = true;
+          (_c = _options.onEnter) == null ? void 0 : _c.call(_options, null, event);
+          break;
+        case "over":
+          (_d = _options.onOver) == null ? void 0 : _d.call(_options, null, event);
+          break;
+        case "leave":
+          counter -= 1;
+          if (counter === 0)
+            isOverDropZone.value = false;
+          (_e = _options.onLeave) == null ? void 0 : _e.call(_options, null, event);
+          break;
+        case "drop":
+          counter = 0;
+          isOverDropZone.value = false;
+          if (isValid) {
+            files.value = currentFiles;
+            (_f = _options.onDrop) == null ? void 0 : _f.call(_options, currentFiles, event);
+          }
+          break;
+      }
+    };
+    useEventListener(target, "dragenter", (event) => handleDragEvent(event, "enter"));
+    useEventListener(target, "dragover", (event) => handleDragEvent(event, "over"));
+    useEventListener(target, "dragleave", (event) => handleDragEvent(event, "leave"));
+    useEventListener(target, "drop", (event) => handleDragEvent(event, "drop"));
+  }
+  return {
+    files,
+    isOverDropZone
+  };
+}
+
+function useResizeObserver(target, callback, options = {}) {
+  const { window = defaultWindow, ...observerOptions } = options;
+  let observer;
+  const isSupported = useSupported(() => window && "ResizeObserver" in window);
+  const cleanup = () => {
+    if (observer) {
+      observer.disconnect();
+      observer = void 0;
+    }
+  };
+  const targets = core_computed(() => {
+    const _targets = core_toValue(target);
+    return Array.isArray(_targets) ? _targets.map((el) => unrefElement(el)) : [unrefElement(_targets)];
+  });
+  const stopWatch = core_watch(
+    targets,
+    (els) => {
+      cleanup();
+      if (isSupported.value && window) {
+        observer = new ResizeObserver(callback);
+        for (const _el of els) {
+          if (_el)
+            observer.observe(_el, observerOptions);
+        }
+      }
+    },
+    { immediate: true, flush: "post" }
+  );
+  const stop = () => {
+    cleanup();
+    stopWatch();
+  };
+  core_tryOnScopeDispose(stop);
+  return {
+    isSupported,
+    stop
+  };
+}
+
+function useElementBounding(target, options = {}) {
+  const {
+    reset = true,
+    windowResize = true,
+    windowScroll = true,
+    immediate = true,
+    updateTiming = "sync"
+  } = options;
+  const height = core_shallowRef(0);
+  const bottom = core_shallowRef(0);
+  const left = core_shallowRef(0);
+  const right = core_shallowRef(0);
+  const top = core_shallowRef(0);
+  const width = core_shallowRef(0);
+  const x = core_shallowRef(0);
+  const y = core_shallowRef(0);
+  function recalculate() {
+    const el = unrefElement(target);
+    if (!el) {
+      if (reset) {
+        height.value = 0;
+        bottom.value = 0;
+        left.value = 0;
+        right.value = 0;
+        top.value = 0;
+        width.value = 0;
+        x.value = 0;
+        y.value = 0;
+      }
+      return;
+    }
+    const rect = el.getBoundingClientRect();
+    height.value = rect.height;
+    bottom.value = rect.bottom;
+    left.value = rect.left;
+    right.value = rect.right;
+    top.value = rect.top;
+    width.value = rect.width;
+    x.value = rect.x;
+    y.value = rect.y;
+  }
+  function update() {
+    if (updateTiming === "sync")
+      recalculate();
+    else if (updateTiming === "next-frame")
+      requestAnimationFrame(() => recalculate());
+  }
+  useResizeObserver(target, update);
+  core_watch(() => unrefElement(target), (ele) => !ele && update());
+  useMutationObserver(target, update, {
+    attributeFilter: ["style", "class"]
+  });
+  if (windowScroll)
+    useEventListener("scroll", update, { capture: true, passive: true });
+  if (windowResize)
+    useEventListener("resize", update, { passive: true });
+  core_tryOnMounted(() => {
+    if (immediate)
+      update();
+  });
+  return {
+    height,
+    bottom,
+    left,
+    right,
+    top,
+    width,
+    x,
+    y,
+    update
+  };
+}
+
+function useElementByPoint(options) {
+  const {
+    x,
+    y,
+    document = defaultDocument,
+    multiple,
+    interval = "requestAnimationFrame",
+    immediate = true
+  } = options;
+  const isSupported = useSupported(() => {
+    if (core_toValue(multiple))
+      return document && "elementsFromPoint" in document;
+    return document && "elementFromPoint" in document;
+  });
+  const element = core_shallowRef(null);
+  const cb = () => {
+    var _a, _b;
+    element.value = core_toValue(multiple) ? (_a = document == null ? void 0 : document.elementsFromPoint(core_toValue(x), core_toValue(y))) != null ? _a : [] : (_b = document == null ? void 0 : document.elementFromPoint(core_toValue(x), core_toValue(y))) != null ? _b : null;
+  };
+  const controls = interval === "requestAnimationFrame" ? useRafFn(cb, { immediate }) : core_useIntervalFn(cb, interval, { immediate });
+  return {
+    isSupported,
+    element,
+    ...controls
+  };
+}
+
+function useElementHover(el, options = {}) {
+  const {
+    delayEnter = 0,
+    delayLeave = 0,
+    triggerOnRemoval = false,
+    window = defaultWindow
+  } = options;
+  const isHovered = core_shallowRef(false);
+  let timer;
+  const toggle = (entering) => {
+    const delay = entering ? delayEnter : delayLeave;
+    if (timer) {
+      clearTimeout(timer);
+      timer = void 0;
+    }
+    if (delay)
+      timer = setTimeout(() => isHovered.value = entering, delay);
+    else
+      isHovered.value = entering;
+  };
+  if (!window)
+    return isHovered;
+  useEventListener(el, "mouseenter", () => toggle(true), { passive: true });
+  useEventListener(el, "mouseleave", () => toggle(false), { passive: true });
+  if (triggerOnRemoval) {
+    onElementRemoval(
+      core_computed(() => unrefElement(el)),
+      () => toggle(false)
+    );
+  }
+  return isHovered;
+}
+
+function useElementSize(target, initialSize = { width: 0, height: 0 }, options = {}) {
+  const { window = defaultWindow, box = "content-box" } = options;
+  const isSVG = core_computed(() => {
+    var _a, _b;
+    return (_b = (_a = unrefElement(target)) == null ? void 0 : _a.namespaceURI) == null ? void 0 : _b.includes("svg");
+  });
+  const width = core_shallowRef(initialSize.width);
+  const height = core_shallowRef(initialSize.height);
+  const { stop: stop1 } = useResizeObserver(
+    target,
+    ([entry]) => {
+      const boxSize = box === "border-box" ? entry.borderBoxSize : box === "content-box" ? entry.contentBoxSize : entry.devicePixelContentBoxSize;
+      if (window && isSVG.value) {
+        const $elem = unrefElement(target);
+        if ($elem) {
+          const rect = $elem.getBoundingClientRect();
+          width.value = rect.width;
+          height.value = rect.height;
+        }
+      } else {
+        if (boxSize) {
+          const formatBoxSize = core_toArray(boxSize);
+          width.value = formatBoxSize.reduce((acc, { inlineSize }) => acc + inlineSize, 0);
+          height.value = formatBoxSize.reduce((acc, { blockSize }) => acc + blockSize, 0);
+        } else {
+          width.value = entry.contentRect.width;
+          height.value = entry.contentRect.height;
+        }
+      }
+    },
+    options
+  );
+  core_tryOnMounted(() => {
+    const ele = unrefElement(target);
+    if (ele) {
+      width.value = "offsetWidth" in ele ? ele.offsetWidth : initialSize.width;
+      height.value = "offsetHeight" in ele ? ele.offsetHeight : initialSize.height;
+    }
+  });
+  const stop2 = core_watch(
+    () => unrefElement(target),
+    (ele) => {
+      width.value = ele ? initialSize.width : 0;
+      height.value = ele ? initialSize.height : 0;
+    }
+  );
+  function stop() {
+    stop1();
+    stop2();
+  }
+  return {
+    width,
+    height,
+    stop
+  };
+}
+
+function useIntersectionObserver(target, callback, options = {}) {
+  const {
+    root,
+    rootMargin = "0px",
+    threshold = 0,
+    window = defaultWindow,
+    immediate = true
+  } = options;
+  const isSupported = useSupported(() => window && "IntersectionObserver" in window);
+  const targets = core_computed(() => {
+    const _target = core_toValue(target);
+    return core_toArray(_target).map(unrefElement).filter(core_notNullish);
+  });
+  let cleanup = core_noop;
+  const isActive = core_shallowRef(immediate);
+  const stopWatch = isSupported.value ? core_watch(
+    () => [targets.value, unrefElement(root), isActive.value],
+    ([targets2, root2]) => {
+      cleanup();
+      if (!isActive.value)
+        return;
+      if (!targets2.length)
+        return;
+      const observer = new IntersectionObserver(
+        callback,
+        {
+          root: unrefElement(root2),
+          rootMargin,
+          threshold
+        }
+      );
+      targets2.forEach((el) => el && observer.observe(el));
+      cleanup = () => {
+        observer.disconnect();
+        cleanup = core_noop;
+      };
+    },
+    { immediate, flush: "post" }
+  ) : core_noop;
+  const stop = () => {
+    cleanup();
+    stopWatch();
+    isActive.value = false;
+  };
+  core_tryOnScopeDispose(stop);
+  return {
+    isSupported,
+    isActive,
+    pause() {
+      cleanup();
+      isActive.value = false;
+    },
+    resume() {
+      isActive.value = true;
+    },
+    stop
+  };
+}
+
+function useElementVisibility(element, options = {}) {
+  const {
+    window = defaultWindow,
+    scrollTarget,
+    threshold = 0,
+    rootMargin,
+    once = false
+  } = options;
+  const elementIsVisible = core_shallowRef(false);
+  const { stop } = useIntersectionObserver(
+    element,
+    (intersectionObserverEntries) => {
+      let isIntersecting = elementIsVisible.value;
+      let latestTime = 0;
+      for (const entry of intersectionObserverEntries) {
+        if (entry.time >= latestTime) {
+          latestTime = entry.time;
+          isIntersecting = entry.isIntersecting;
+        }
+      }
+      elementIsVisible.value = isIntersecting;
+      if (once) {
+        core_watchOnce(elementIsVisible, () => {
+          stop();
+        });
+      }
+    },
+    {
+      root: scrollTarget,
+      window,
+      threshold,
+      rootMargin: core_toValue(rootMargin)
+    }
+  );
+  return elementIsVisible;
+}
+
+const events = /* @__PURE__ */ new Map();
+
+function useEventBus(key) {
+  const scope = core_getCurrentScope();
+  function on(listener) {
+    var _a;
+    const listeners = events.get(key) || /* @__PURE__ */ new Set();
+    listeners.add(listener);
+    events.set(key, listeners);
+    const _off = () => off(listener);
+    (_a = scope == null ? void 0 : scope.cleanups) == null ? void 0 : _a.push(_off);
+    return _off;
+  }
+  function once(listener) {
+    function _listener(...args) {
+      off(_listener);
+      listener(...args);
+    }
+    return on(_listener);
+  }
+  function off(listener) {
+    const listeners = events.get(key);
+    if (!listeners)
+      return;
+    listeners.delete(listener);
+    if (!listeners.size)
+      reset();
+  }
+  function reset() {
+    events.delete(key);
+  }
+  function emit(event, payload) {
+    var _a;
+    (_a = events.get(key)) == null ? void 0 : _a.forEach((v) => v(event, payload));
+  }
+  return { on, once, off, emit, reset };
+}
+
+function resolveNestedOptions$1(options) {
+  if (options === true)
+    return {};
+  return options;
+}
+function useEventSource(url, events = [], options = {}) {
+  const event = core_shallowRef(null);
+  const data = core_shallowRef(null);
+  const status = core_shallowRef("CONNECTING");
+  const eventSource = core_ref(null);
+  const error = core_shallowRef(null);
+  const urlRef = core_toRef(url);
+  const lastEventId = core_shallowRef(null);
+  let explicitlyClosed = false;
+  let retried = 0;
+  const {
+    withCredentials = false,
+    immediate = true,
+    autoConnect = true,
+    autoReconnect
+  } = options;
+  const close = () => {
+    if (core_isClient && eventSource.value) {
+      eventSource.value.close();
+      eventSource.value = null;
+      status.value = "CLOSED";
+      explicitlyClosed = true;
+    }
+  };
+  const _init = () => {
+    if (explicitlyClosed || typeof urlRef.value === "undefined")
+      return;
+    const es = new EventSource(urlRef.value, { withCredentials });
+    status.value = "CONNECTING";
+    eventSource.value = es;
+    es.onopen = () => {
+      status.value = "OPEN";
+      error.value = null;
+    };
+    es.onerror = (e) => {
+      status.value = "CLOSED";
+      error.value = e;
+      if (es.readyState === 2 && !explicitlyClosed && autoReconnect) {
+        es.close();
+        const {
+          retries = -1,
+          delay = 1e3,
+          onFailed
+        } = resolveNestedOptions$1(autoReconnect);
+        retried += 1;
+        if (typeof retries === "number" && (retries < 0 || retried < retries))
+          setTimeout(_init, delay);
+        else if (typeof retries === "function" && retries())
+          setTimeout(_init, delay);
+        else
+          onFailed == null ? void 0 : onFailed();
+      }
+    };
+    es.onmessage = (e) => {
+      event.value = null;
+      data.value = e.data;
+      lastEventId.value = e.lastEventId;
+    };
+    for (const event_name of events) {
+      useEventListener(es, event_name, (e) => {
+        event.value = event_name;
+        data.value = e.data || null;
+        lastEventId.value = e.lastEventId || null;
+      }, { passive: true });
+    }
+  };
+  const open = () => {
+    if (!core_isClient)
+      return;
+    close();
+    explicitlyClosed = false;
+    retried = 0;
+    _init();
+  };
+  if (immediate)
+    open();
+  if (autoConnect)
+    core_watch(urlRef, open);
+  core_tryOnScopeDispose(close);
+  return {
+    eventSource,
+    event,
+    data,
+    status,
+    error,
+    open,
+    close,
+    lastEventId
+  };
+}
+
+function useEyeDropper(options = {}) {
+  const { initialValue = "" } = options;
+  const isSupported = useSupported(() => typeof window !== "undefined" && "EyeDropper" in window);
+  const sRGBHex = core_shallowRef(initialValue);
+  async function open(openOptions) {
+    if (!isSupported.value)
+      return;
+    const eyeDropper = new window.EyeDropper();
+    const result = await eyeDropper.open(openOptions);
+    sRGBHex.value = result.sRGBHex;
+    return result;
+  }
+  return { isSupported, sRGBHex, open };
+}
+
+function useFavicon(newIcon = null, options = {}) {
+  const {
+    baseUrl = "",
+    rel = "icon",
+    document = defaultDocument
+  } = options;
+  const favicon = core_toRef(newIcon);
+  const applyIcon = (icon) => {
+    const elements = document == null ? void 0 : document.head.querySelectorAll(`link[rel*="${rel}"]`);
+    if (!elements || elements.length === 0) {
+      const link = document == null ? void 0 : document.createElement("link");
+      if (link) {
+        link.rel = rel;
+        link.href = `${baseUrl}${icon}`;
+        link.type = `image/${icon.split(".").pop()}`;
+        document == null ? void 0 : document.head.append(link);
+      }
+      return;
+    }
+    elements == null ? void 0 : elements.forEach((el) => el.href = `${baseUrl}${icon}`);
+  };
+  core_watch(
+    favicon,
+    (i, o) => {
+      if (typeof i === "string" && i !== o)
+        applyIcon(i);
+    },
+    { immediate: true }
+  );
+  return favicon;
+}
+
+const payloadMapping = {
+  json: "application/json",
+  text: "text/plain"
+};
+function isFetchOptions(obj) {
+  return obj && core_containsProp(obj, "immediate", "refetch", "initialData", "timeout", "beforeFetch", "afterFetch", "onFetchError", "fetch", "updateDataOnError");
+}
+const reAbsolute = /^(?:[a-z][a-z\d+\-.]*:)?\/\//i;
+function isAbsoluteURL(url) {
+  return reAbsolute.test(url);
+}
+function headersToObject(headers) {
+  if (typeof Headers !== "undefined" && headers instanceof Headers)
+    return Object.fromEntries(headers.entries());
+  return headers;
+}
+function combineCallbacks(combination, ...callbacks) {
+  if (combination === "overwrite") {
+    return async (ctx) => {
+      let callback;
+      for (let i = callbacks.length - 1; i >= 0; i--) {
+        if (callbacks[i] != null) {
+          callback = callbacks[i];
+          break;
+        }
+      }
+      if (callback)
+        return { ...ctx, ...await callback(ctx) };
+      return ctx;
+    };
+  } else {
+    return async (ctx) => {
+      for (const callback of callbacks) {
+        if (callback)
+          ctx = { ...ctx, ...await callback(ctx) };
+      }
+      return ctx;
+    };
+  }
+}
+function createFetch(config = {}) {
+  const _combination = config.combination || "chain";
+  const _options = config.options || {};
+  const _fetchOptions = config.fetchOptions || {};
+  function useFactoryFetch(url, ...args) {
+    const computedUrl = core_computed(() => {
+      const baseUrl = core_toValue(config.baseUrl);
+      const targetUrl = core_toValue(url);
+      return baseUrl && !isAbsoluteURL(targetUrl) ? joinPaths(baseUrl, targetUrl) : targetUrl;
+    });
+    let options = _options;
+    let fetchOptions = _fetchOptions;
+    if (args.length > 0) {
+      if (isFetchOptions(args[0])) {
+        options = {
+          ...options,
+          ...args[0],
+          beforeFetch: combineCallbacks(_combination, _options.beforeFetch, args[0].beforeFetch),
+          afterFetch: combineCallbacks(_combination, _options.afterFetch, args[0].afterFetch),
+          onFetchError: combineCallbacks(_combination, _options.onFetchError, args[0].onFetchError)
+        };
+      } else {
+        fetchOptions = {
+          ...fetchOptions,
+          ...args[0],
+          headers: {
+            ...headersToObject(fetchOptions.headers) || {},
+            ...headersToObject(args[0].headers) || {}
+          }
+        };
+      }
+    }
+    if (args.length > 1 && isFetchOptions(args[1])) {
+      options = {
+        ...options,
+        ...args[1],
+        beforeFetch: combineCallbacks(_combination, _options.beforeFetch, args[1].beforeFetch),
+        afterFetch: combineCallbacks(_combination, _options.afterFetch, args[1].afterFetch),
+        onFetchError: combineCallbacks(_combination, _options.onFetchError, args[1].onFetchError)
+      };
+    }
+    return useFetch(computedUrl, fetchOptions, options);
+  }
+  return useFactoryFetch;
+}
+function useFetch(url, ...args) {
+  var _a, _b;
+  const supportsAbort = typeof AbortController === "function";
+  let fetchOptions = {};
+  let options = {
+    immediate: true,
+    refetch: false,
+    timeout: 0,
+    updateDataOnError: false
+  };
+  const config = {
+    method: "GET",
+    type: "text",
+    payload: void 0
+  };
+  if (args.length > 0) {
+    if (isFetchOptions(args[0]))
+      options = { ...options, ...args[0] };
+    else
+      fetchOptions = args[0];
+  }
+  if (args.length > 1) {
+    if (isFetchOptions(args[1]))
+      options = { ...options, ...args[1] };
+  }
+  const {
+    fetch = (_b = (_a = defaultWindow) == null ? void 0 : _a.fetch) != null ? _b : globalThis == null ? void 0 : globalThis.fetch,
+    initialData,
+    timeout
+  } = options;
+  const responseEvent = core_createEventHook();
+  const errorEvent = core_createEventHook();
+  const finallyEvent = core_createEventHook();
+  const isFinished = core_shallowRef(false);
+  const isFetching = core_shallowRef(false);
+  const aborted = core_shallowRef(false);
+  const statusCode = core_shallowRef(null);
+  const response = core_shallowRef(null);
+  const error = core_shallowRef(null);
+  const data = core_shallowRef(initialData || null);
+  const canAbort = core_computed(() => supportsAbort && isFetching.value);
+  let controller;
+  let timer;
+  const abort = (reason) => {
+    if (supportsAbort) {
+      controller == null ? void 0 : controller.abort(reason);
+      controller = new AbortController();
+      controller.signal.onabort = () => aborted.value = true;
+      fetchOptions = {
+        ...fetchOptions,
+        signal: controller.signal
+      };
+    }
+  };
+  const loading = (isLoading) => {
+    isFetching.value = isLoading;
+    isFinished.value = !isLoading;
+  };
+  if (timeout)
+    timer = core_useTimeoutFn(abort, timeout, { immediate: false });
+  let executeCounter = 0;
+  const execute = async (throwOnFailed = false) => {
+    var _a2, _b2;
+    abort();
+    loading(true);
+    error.value = null;
+    statusCode.value = null;
+    aborted.value = false;
+    executeCounter += 1;
+    const currentExecuteCounter = executeCounter;
+    const defaultFetchOptions = {
+      method: config.method,
+      headers: {}
+    };
+    const payload = core_toValue(config.payload);
+    if (payload) {
+      const headers = headersToObject(defaultFetchOptions.headers);
+      const proto = Object.getPrototypeOf(payload);
+      if (!config.payloadType && payload && (proto === Object.prototype || Array.isArray(proto)) && !(payload instanceof FormData))
+        config.payloadType = "json";
+      if (config.payloadType)
+        headers["Content-Type"] = (_a2 = payloadMapping[config.payloadType]) != null ? _a2 : config.payloadType;
+      defaultFetchOptions.body = config.payloadType === "json" ? JSON.stringify(payload) : payload;
+    }
+    let isCanceled = false;
+    const context = {
+      url: core_toValue(url),
+      options: {
+        ...defaultFetchOptions,
+        ...fetchOptions
+      },
+      cancel: () => {
+        isCanceled = true;
+      }
+    };
+    if (options.beforeFetch)
+      Object.assign(context, await options.beforeFetch(context));
+    if (isCanceled || !fetch) {
+      loading(false);
+      return Promise.resolve(null);
+    }
+    let responseData = null;
+    if (timer)
+      timer.start();
+    return fetch(
+      context.url,
+      {
+        ...defaultFetchOptions,
+        ...context.options,
+        headers: {
+          ...headersToObject(defaultFetchOptions.headers),
+          ...headersToObject((_b2 = context.options) == null ? void 0 : _b2.headers)
+        }
+      }
+    ).then(async (fetchResponse) => {
+      response.value = fetchResponse;
+      statusCode.value = fetchResponse.status;
+      responseData = await fetchResponse.clone()[config.type]();
+      if (!fetchResponse.ok) {
+        data.value = initialData || null;
+        throw new Error(fetchResponse.statusText);
+      }
+      if (options.afterFetch) {
+        ({ data: responseData } = await options.afterFetch({
+          data: responseData,
+          response: fetchResponse,
+          context,
+          execute
+        }));
+      }
+      data.value = responseData;
+      responseEvent.trigger(fetchResponse);
+      return fetchResponse;
+    }).catch(async (fetchError) => {
+      let errorData = fetchError.message || fetchError.name;
+      if (options.onFetchError) {
+        ({ error: errorData, data: responseData } = await options.onFetchError({
+          data: responseData,
+          error: fetchError,
+          response: response.value,
+          context,
+          execute
+        }));
+      }
+      error.value = errorData;
+      if (options.updateDataOnError)
+        data.value = responseData;
+      errorEvent.trigger(fetchError);
+      if (throwOnFailed)
+        throw fetchError;
+      return null;
+    }).finally(() => {
+      if (currentExecuteCounter === executeCounter)
+        loading(false);
+      if (timer)
+        timer.stop();
+      finallyEvent.trigger(null);
+    });
+  };
+  const refetch = core_toRef(options.refetch);
+  core_watch(
+    [
+      refetch,
+      core_toRef(url)
+    ],
+    ([refetch2]) => refetch2 && execute(),
+    { deep: true }
+  );
+  const shell = {
+    isFinished: core_readonly(isFinished),
+    isFetching: core_readonly(isFetching),
+    statusCode,
+    response,
+    error,
+    data,
+    canAbort,
+    aborted,
+    abort,
+    execute,
+    onFetchResponse: responseEvent.on,
+    onFetchError: errorEvent.on,
+    onFetchFinally: finallyEvent.on,
+    // method
+    get: setMethod("GET"),
+    put: setMethod("PUT"),
+    post: setMethod("POST"),
+    delete: setMethod("DELETE"),
+    patch: setMethod("PATCH"),
+    head: setMethod("HEAD"),
+    options: setMethod("OPTIONS"),
+    // type
+    json: setType("json"),
+    text: setType("text"),
+    blob: setType("blob"),
+    arrayBuffer: setType("arrayBuffer"),
+    formData: setType("formData")
+  };
+  function setMethod(method) {
+    return (payload, payloadType) => {
+      if (!isFetching.value) {
+        config.method = method;
+        config.payload = payload;
+        config.payloadType = payloadType;
+        if (core_isRef(config.payload)) {
+          core_watch(
+            [
+              refetch,
+              core_toRef(config.payload)
+            ],
+            ([refetch2]) => refetch2 && execute(),
+            { deep: true }
+          );
+        }
+        return {
+          ...shell,
+          then(onFulfilled, onRejected) {
+            return waitUntilFinished().then(onFulfilled, onRejected);
+          }
+        };
+      }
+      return void 0;
+    };
+  }
+  function waitUntilFinished() {
+    return new Promise((resolve, reject) => {
+      core_until(isFinished).toBe(true).then(() => resolve(shell)).catch(reject);
+    });
+  }
+  function setType(type) {
+    return () => {
+      if (!isFetching.value) {
+        config.type = type;
+        return {
+          ...shell,
+          then(onFulfilled, onRejected) {
+            return waitUntilFinished().then(onFulfilled, onRejected);
+          }
+        };
+      }
+      return void 0;
+    };
+  }
+  if (options.immediate)
+    Promise.resolve().then(() => execute());
+  return {
+    ...shell,
+    then(onFulfilled, onRejected) {
+      return waitUntilFinished().then(onFulfilled, onRejected);
+    }
+  };
+}
+function joinPaths(start, end) {
+  if (!start.endsWith("/") && !end.startsWith("/")) {
+    return `${start}/${end}`;
+  }
+  if (start.endsWith("/") && end.startsWith("/")) {
+    return `${start.slice(0, -1)}${end}`;
+  }
+  return `${start}${end}`;
+}
+
+const DEFAULT_OPTIONS = {
+  multiple: true,
+  accept: "*",
+  reset: false,
+  directory: false
+};
+function prepareInitialFiles(files) {
+  if (!files)
+    return null;
+  if (files instanceof FileList)
+    return files;
+  const dt = new DataTransfer();
+  for (const file of files) {
+    dt.items.add(file);
+  }
+  return dt.files;
+}
+function useFileDialog(options = {}) {
+  const {
+    document = defaultDocument
+  } = options;
+  const files = core_ref(prepareInitialFiles(options.initialFiles));
+  const { on: onChange, trigger: changeTrigger } = core_createEventHook();
+  const { on: onCancel, trigger: cancelTrigger } = core_createEventHook();
+  let input;
+  if (document) {
+    input = unrefElement(options.input) || document.createElement("input");
+    input.type = "file";
+    input.onchange = (event) => {
+      const result = event.target;
+      files.value = result.files;
+      changeTrigger(files.value);
+    };
+    input.oncancel = () => {
+      cancelTrigger();
+    };
+  }
+  const reset = () => {
+    files.value = null;
+    if (input && input.value) {
+      input.value = "";
+      changeTrigger(null);
+    }
+  };
+  const open = (localOptions) => {
+    if (!input)
+      return;
+    const _options = {
+      ...DEFAULT_OPTIONS,
+      ...options,
+      ...localOptions
+    };
+    input.multiple = _options.multiple;
+    input.accept = _options.accept;
+    input.webkitdirectory = _options.directory;
+    if (core_hasOwn(_options, "capture"))
+      input.capture = _options.capture;
+    if (_options.reset)
+      reset();
+    input.click();
+  };
+  return {
+    files: core_readonly(files),
+    open,
+    reset,
+    onCancel,
+    onChange
+  };
+}
+
+function useFileSystemAccess(options = {}) {
+  const {
+    window: _window = defaultWindow,
+    dataType = "Text"
+  } = options;
+  const window = _window;
+  const isSupported = useSupported(() => window && "showSaveFilePicker" in window && "showOpenFilePicker" in window);
+  const fileHandle = core_shallowRef();
+  const data = core_shallowRef();
+  const file = core_shallowRef();
+  const fileName = core_computed(() => {
+    var _a, _b;
+    return (_b = (_a = file.value) == null ? void 0 : _a.name) != null ? _b : "";
+  });
+  const fileMIME = core_computed(() => {
+    var _a, _b;
+    return (_b = (_a = file.value) == null ? void 0 : _a.type) != null ? _b : "";
+  });
+  const fileSize = core_computed(() => {
+    var _a, _b;
+    return (_b = (_a = file.value) == null ? void 0 : _a.size) != null ? _b : 0;
+  });
+  const fileLastModified = core_computed(() => {
+    var _a, _b;
+    return (_b = (_a = file.value) == null ? void 0 : _a.lastModified) != null ? _b : 0;
+  });
+  async function open(_options = {}) {
+    if (!isSupported.value)
+      return;
+    const [handle] = await window.showOpenFilePicker({ ...core_toValue(options), ..._options });
+    fileHandle.value = handle;
+    await updateData();
+  }
+  async function create(_options = {}) {
+    if (!isSupported.value)
+      return;
+    fileHandle.value = await window.showSaveFilePicker({ ...options, ..._options });
+    data.value = void 0;
+    await updateData();
+  }
+  async function save(_options = {}) {
+    if (!isSupported.value)
+      return;
+    if (!fileHandle.value)
+      return saveAs(_options);
+    if (data.value) {
+      const writableStream = await fileHandle.value.createWritable();
+      await writableStream.write(data.value);
+      await writableStream.close();
+    }
+    await updateFile();
+  }
+  async function saveAs(_options = {}) {
+    if (!isSupported.value)
+      return;
+    fileHandle.value = await window.showSaveFilePicker({ ...options, ..._options });
+    if (data.value) {
+      const writableStream = await fileHandle.value.createWritable();
+      await writableStream.write(data.value);
+      await writableStream.close();
+    }
+    await updateFile();
+  }
+  async function updateFile() {
+    var _a;
+    file.value = await ((_a = fileHandle.value) == null ? void 0 : _a.getFile());
+  }
+  async function updateData() {
+    var _a, _b;
+    await updateFile();
+    const type = core_toValue(dataType);
+    if (type === "Text")
+      data.value = await ((_a = file.value) == null ? void 0 : _a.text());
+    else if (type === "ArrayBuffer")
+      data.value = await ((_b = file.value) == null ? void 0 : _b.arrayBuffer());
+    else if (type === "Blob")
+      data.value = file.value;
+  }
+  core_watch(() => core_toValue(dataType), updateData);
+  return {
+    isSupported,
+    data,
+    file,
+    fileName,
+    fileMIME,
+    fileSize,
+    fileLastModified,
+    open,
+    create,
+    save,
+    saveAs,
+    updateData
+  };
+}
+
+function useFocus(target, options = {}) {
+  const { initialValue = false, focusVisible = false, preventScroll = false } = options;
+  const innerFocused = core_shallowRef(false);
+  const targetElement = core_computed(() => unrefElement(target));
+  const listenerOptions = { passive: true };
+  useEventListener(targetElement, "focus", (event) => {
+    var _a, _b;
+    if (!focusVisible || ((_b = (_a = event.target).matches) == null ? void 0 : _b.call(_a, ":focus-visible")))
+      innerFocused.value = true;
+  }, listenerOptions);
+  useEventListener(targetElement, "blur", () => innerFocused.value = false, listenerOptions);
+  const focused = core_computed({
+    get: () => innerFocused.value,
+    set(value) {
+      var _a, _b;
+      if (!value && innerFocused.value)
+        (_a = targetElement.value) == null ? void 0 : _a.blur();
+      else if (value && !innerFocused.value)
+        (_b = targetElement.value) == null ? void 0 : _b.focus({ preventScroll });
+    }
+  });
+  core_watch(
+    targetElement,
+    () => {
+      focused.value = initialValue;
+    },
+    { immediate: true, flush: "post" }
+  );
+  return { focused };
+}
+
+const EVENT_FOCUS_IN = "focusin";
+const EVENT_FOCUS_OUT = "focusout";
+const PSEUDO_CLASS_FOCUS_WITHIN = ":focus-within";
+function useFocusWithin(target, options = {}) {
+  const { window = defaultWindow } = options;
+  const targetElement = core_computed(() => unrefElement(target));
+  const _focused = core_shallowRef(false);
+  const focused = core_computed(() => _focused.value);
+  const activeElement = useActiveElement(options);
+  if (!window || !activeElement.value) {
+    return { focused };
+  }
+  const listenerOptions = { passive: true };
+  useEventListener(targetElement, EVENT_FOCUS_IN, () => _focused.value = true, listenerOptions);
+  useEventListener(targetElement, EVENT_FOCUS_OUT, () => {
+    var _a, _b, _c;
+    return _focused.value = (_c = (_b = (_a = targetElement.value) == null ? void 0 : _a.matches) == null ? void 0 : _b.call(_a, PSEUDO_CLASS_FOCUS_WITHIN)) != null ? _c : false;
+  }, listenerOptions);
+  return { focused };
+}
+
+function useFps(options) {
+  var _a;
+  const fps = core_shallowRef(0);
+  if (typeof performance === "undefined")
+    return fps;
+  const every = (_a = options == null ? void 0 : options.every) != null ? _a : 10;
+  let last = performance.now();
+  let ticks = 0;
+  useRafFn(() => {
+    ticks += 1;
+    if (ticks >= every) {
+      const now = performance.now();
+      const diff = now - last;
+      fps.value = Math.round(1e3 / (diff / ticks));
+      last = now;
+      ticks = 0;
+    }
+  });
+  return fps;
+}
+
+const eventHandlers = (/* unused pure expression or super */ null && ([
+  "fullscreenchange",
+  "webkitfullscreenchange",
+  "webkitendfullscreen",
+  "mozfullscreenchange",
+  "MSFullscreenChange"
+]));
+function useFullscreen(target, options = {}) {
+  const {
+    document = defaultDocument,
+    autoExit = false
+  } = options;
+  const targetRef = core_computed(() => {
+    var _a;
+    return (_a = unrefElement(target)) != null ? _a : document == null ? void 0 : document.documentElement;
+  });
+  const isFullscreen = core_shallowRef(false);
+  const requestMethod = core_computed(() => {
+    return [
+      "requestFullscreen",
+      "webkitRequestFullscreen",
+      "webkitEnterFullscreen",
+      "webkitEnterFullScreen",
+      "webkitRequestFullScreen",
+      "mozRequestFullScreen",
+      "msRequestFullscreen"
+    ].find((m) => document && m in document || targetRef.value && m in targetRef.value);
+  });
+  const exitMethod = core_computed(() => {
+    return [
+      "exitFullscreen",
+      "webkitExitFullscreen",
+      "webkitExitFullScreen",
+      "webkitCancelFullScreen",
+      "mozCancelFullScreen",
+      "msExitFullscreen"
+    ].find((m) => document && m in document || targetRef.value && m in targetRef.value);
+  });
+  const fullscreenEnabled = core_computed(() => {
+    return [
+      "fullScreen",
+      "webkitIsFullScreen",
+      "webkitDisplayingFullscreen",
+      "mozFullScreen",
+      "msFullscreenElement"
+    ].find((m) => document && m in document || targetRef.value && m in targetRef.value);
+  });
+  const fullscreenElementMethod = [
+    "fullscreenElement",
+    "webkitFullscreenElement",
+    "mozFullScreenElement",
+    "msFullscreenElement"
+  ].find((m) => document && m in document);
+  const isSupported = useSupported(() => targetRef.value && document && requestMethod.value !== void 0 && exitMethod.value !== void 0 && fullscreenEnabled.value !== void 0);
+  const isCurrentElementFullScreen = () => {
+    if (fullscreenElementMethod)
+      return (document == null ? void 0 : document[fullscreenElementMethod]) === targetRef.value;
+    return false;
+  };
+  const isElementFullScreen = () => {
+    if (fullscreenEnabled.value) {
+      if (document && document[fullscreenEnabled.value] != null) {
+        return document[fullscreenEnabled.value];
+      } else {
+        const target2 = targetRef.value;
+        if ((target2 == null ? void 0 : target2[fullscreenEnabled.value]) != null) {
+          return Boolean(target2[fullscreenEnabled.value]);
+        }
+      }
+    }
+    return false;
+  };
+  async function exit() {
+    if (!isSupported.value || !isFullscreen.value)
+      return;
+    if (exitMethod.value) {
+      if ((document == null ? void 0 : document[exitMethod.value]) != null) {
+        await document[exitMethod.value]();
+      } else {
+        const target2 = targetRef.value;
+        if ((target2 == null ? void 0 : target2[exitMethod.value]) != null)
+          await target2[exitMethod.value]();
+      }
+    }
+    isFullscreen.value = false;
+  }
+  async function enter() {
+    if (!isSupported.value || isFullscreen.value)
+      return;
+    if (isElementFullScreen())
+      await exit();
+    const target2 = targetRef.value;
+    if (requestMethod.value && (target2 == null ? void 0 : target2[requestMethod.value]) != null) {
+      await target2[requestMethod.value]();
+      isFullscreen.value = true;
+    }
+  }
+  async function toggle() {
+    await (isFullscreen.value ? exit() : enter());
+  }
+  const handlerCallback = () => {
+    const isElementFullScreenValue = isElementFullScreen();
+    if (!isElementFullScreenValue || isElementFullScreenValue && isCurrentElementFullScreen())
+      isFullscreen.value = isElementFullScreenValue;
+  };
+  const listenerOptions = { capture: false, passive: true };
+  useEventListener(document, eventHandlers, handlerCallback, listenerOptions);
+  useEventListener(() => unrefElement(targetRef), eventHandlers, handlerCallback, listenerOptions);
+  core_tryOnMounted(handlerCallback, false);
+  if (autoExit)
+    core_tryOnScopeDispose(exit);
+  return {
+    isSupported,
+    isFullscreen,
+    enter,
+    exit,
+    toggle
+  };
+}
+
+function mapGamepadToXbox360Controller(gamepad) {
+  return core_computed(() => {
+    if (gamepad.value) {
+      return {
+        buttons: {
+          a: gamepad.value.buttons[0],
+          b: gamepad.value.buttons[1],
+          x: gamepad.value.buttons[2],
+          y: gamepad.value.buttons[3]
+        },
+        bumper: {
+          left: gamepad.value.buttons[4],
+          right: gamepad.value.buttons[5]
+        },
+        triggers: {
+          left: gamepad.value.buttons[6],
+          right: gamepad.value.buttons[7]
+        },
+        stick: {
+          left: {
+            horizontal: gamepad.value.axes[0],
+            vertical: gamepad.value.axes[1],
+            button: gamepad.value.buttons[10]
+          },
+          right: {
+            horizontal: gamepad.value.axes[2],
+            vertical: gamepad.value.axes[3],
+            button: gamepad.value.buttons[11]
+          }
+        },
+        dpad: {
+          up: gamepad.value.buttons[12],
+          down: gamepad.value.buttons[13],
+          left: gamepad.value.buttons[14],
+          right: gamepad.value.buttons[15]
+        },
+        back: gamepad.value.buttons[8],
+        start: gamepad.value.buttons[9]
+      };
+    }
+    return null;
+  });
+}
+function useGamepad(options = {}) {
+  const {
+    navigator = defaultNavigator
+  } = options;
+  const isSupported = useSupported(() => navigator && "getGamepads" in navigator);
+  const gamepads = core_ref([]);
+  const onConnectedHook = core_createEventHook();
+  const onDisconnectedHook = core_createEventHook();
+  const stateFromGamepad = (gamepad) => {
+    const hapticActuators = [];
+    const vibrationActuator = "vibrationActuator" in gamepad ? gamepad.vibrationActuator : null;
+    if (vibrationActuator)
+      hapticActuators.push(vibrationActuator);
+    if (gamepad.hapticActuators)
+      hapticActuators.push(...gamepad.hapticActuators);
+    return {
+      id: gamepad.id,
+      index: gamepad.index,
+      connected: gamepad.connected,
+      mapping: gamepad.mapping,
+      timestamp: gamepad.timestamp,
+      vibrationActuator: gamepad.vibrationActuator,
+      hapticActuators,
+      axes: gamepad.axes.map((axes) => axes),
+      buttons: gamepad.buttons.map((button) => ({ pressed: button.pressed, touched: button.touched, value: button.value }))
+    };
+  };
+  const updateGamepadState = () => {
+    const _gamepads = (navigator == null ? void 0 : navigator.getGamepads()) || [];
+    for (const gamepad of _gamepads) {
+      if (gamepad && gamepads.value[gamepad.index])
+        gamepads.value[gamepad.index] = stateFromGamepad(gamepad);
+    }
+  };
+  const { isActive, pause, resume } = useRafFn(updateGamepadState);
+  const onGamepadConnected = (gamepad) => {
+    if (!gamepads.value.some(({ index }) => index === gamepad.index)) {
+      gamepads.value.push(stateFromGamepad(gamepad));
+      onConnectedHook.trigger(gamepad.index);
+    }
+    resume();
+  };
+  const onGamepadDisconnected = (gamepad) => {
+    gamepads.value = gamepads.value.filter((x) => x.index !== gamepad.index);
+    onDisconnectedHook.trigger(gamepad.index);
+  };
+  const listenerOptions = { passive: true };
+  useEventListener("gamepadconnected", (e) => onGamepadConnected(e.gamepad), listenerOptions);
+  useEventListener("gamepaddisconnected", (e) => onGamepadDisconnected(e.gamepad), listenerOptions);
+  core_tryOnMounted(() => {
+    const _gamepads = (navigator == null ? void 0 : navigator.getGamepads()) || [];
+    for (const gamepad of _gamepads) {
+      if (gamepad && gamepads.value[gamepad.index])
+        onGamepadConnected(gamepad);
+    }
+  });
+  pause();
+  return {
+    isSupported,
+    onConnected: onConnectedHook.on,
+    onDisconnected: onDisconnectedHook.on,
+    gamepads,
+    pause,
+    resume,
+    isActive
+  };
+}
+
+function useGeolocation(options = {}) {
+  const {
+    enableHighAccuracy = true,
+    maximumAge = 3e4,
+    timeout = 27e3,
+    navigator = defaultNavigator,
+    immediate = true
+  } = options;
+  const isSupported = useSupported(() => navigator && "geolocation" in navigator);
+  const locatedAt = core_shallowRef(null);
+  const error = core_shallowRef(null);
+  const coords = core_ref({
+    accuracy: 0,
+    latitude: Number.POSITIVE_INFINITY,
+    longitude: Number.POSITIVE_INFINITY,
+    altitude: null,
+    altitudeAccuracy: null,
+    heading: null,
+    speed: null
+  });
+  function updatePosition(position) {
+    locatedAt.value = position.timestamp;
+    coords.value = position.coords;
+    error.value = null;
+  }
+  let watcher;
+  function resume() {
+    if (isSupported.value) {
+      watcher = navigator.geolocation.watchPosition(
+        updatePosition,
+        (err) => error.value = err,
+        {
+          enableHighAccuracy,
+          maximumAge,
+          timeout
+        }
+      );
+    }
+  }
+  if (immediate)
+    resume();
+  function pause() {
+    if (watcher && navigator)
+      navigator.geolocation.clearWatch(watcher);
+  }
+  core_tryOnScopeDispose(() => {
+    pause();
+  });
+  return {
+    isSupported,
+    coords,
+    locatedAt,
+    error,
+    resume,
+    pause
+  };
+}
+
+const defaultEvents$1 = (/* unused pure expression or super */ null && (["mousemove", "mousedown", "resize", "keydown", "touchstart", "wheel"]));
+const oneMinute = 6e4;
+function useIdle(timeout = oneMinute, options = {}) {
+  const {
+    initialState = false,
+    listenForVisibilityChange = true,
+    events = defaultEvents$1,
+    window = defaultWindow,
+    eventFilter = core_throttleFilter(50)
+  } = options;
+  const idle = core_shallowRef(initialState);
+  const lastActive = core_shallowRef(core_timestamp());
+  let timer;
+  const reset = () => {
+    idle.value = false;
+    clearTimeout(timer);
+    timer = setTimeout(() => idle.value = true, timeout);
+  };
+  const onEvent = core_createFilterWrapper(
+    eventFilter,
+    () => {
+      lastActive.value = core_timestamp();
+      reset();
+    }
+  );
+  if (window) {
+    const document = window.document;
+    const listenerOptions = { passive: true };
+    for (const event of events)
+      useEventListener(window, event, onEvent, listenerOptions);
+    if (listenForVisibilityChange) {
+      useEventListener(document, "visibilitychange", () => {
+        if (!document.hidden)
+          onEvent();
+      }, listenerOptions);
+    }
+    if (!initialState)
+      reset();
+  }
+  return {
+    idle,
+    lastActive,
+    reset
+  };
+}
+
+async function loadImage(options) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const { src, srcset, sizes, class: clazz, loading, crossorigin, referrerPolicy, width, height, decoding, fetchPriority, ismap, usemap } = options;
+    img.src = src;
+    if (srcset != null)
+      img.srcset = srcset;
+    if (sizes != null)
+      img.sizes = sizes;
+    if (clazz != null)
+      img.className = clazz;
+    if (loading != null)
+      img.loading = loading;
+    if (crossorigin != null)
+      img.crossOrigin = crossorigin;
+    if (referrerPolicy != null)
+      img.referrerPolicy = referrerPolicy;
+    if (width != null)
+      img.width = width;
+    if (height != null)
+      img.height = height;
+    if (decoding != null)
+      img.decoding = decoding;
+    if (fetchPriority != null)
+      img.fetchPriority = fetchPriority;
+    if (ismap != null)
+      img.isMap = ismap;
+    if (usemap != null)
+      img.useMap = usemap;
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+  });
+}
+function useImage(options, asyncStateOptions = {}) {
+  const state = useAsyncState(
+    () => loadImage(core_toValue(options)),
+    void 0,
+    {
+      resetOnExecute: true,
+      ...asyncStateOptions
+    }
+  );
+  core_watch(
+    () => core_toValue(options),
+    () => state.execute(asyncStateOptions.delay),
+    { deep: true }
+  );
+  return state;
+}
+
+function resolveElement(el) {
+  if (typeof Window !== "undefined" && el instanceof Window)
+    return el.document.documentElement;
+  if (typeof Document !== "undefined" && el instanceof Document)
+    return el.documentElement;
+  return el;
+}
+
+const ARRIVED_STATE_THRESHOLD_PIXELS = 1;
+function useScroll(element, options = {}) {
+  const {
+    throttle = 0,
+    idle = 200,
+    onStop = core_noop,
+    onScroll = core_noop,
+    offset = {
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0
+    },
+    observe: _observe = {
+      mutation: false
+    },
+    eventListenerOptions = {
+      capture: false,
+      passive: true
+    },
+    behavior = "auto",
+    window = defaultWindow,
+    onError = (e) => {
+      console.error(e);
+    }
+  } = options;
+  const observe = typeof _observe === "boolean" ? {
+    mutation: _observe
+  } : _observe;
+  const internalX = core_shallowRef(0);
+  const internalY = core_shallowRef(0);
+  const x = core_computed({
+    get() {
+      return internalX.value;
+    },
+    set(x2) {
+      scrollTo(x2, void 0);
+    }
+  });
+  const y = core_computed({
+    get() {
+      return internalY.value;
+    },
+    set(y2) {
+      scrollTo(void 0, y2);
+    }
+  });
+  function scrollTo(_x, _y) {
+    var _a, _b, _c, _d;
+    if (!window)
+      return;
+    const _element = core_toValue(element);
+    if (!_element)
+      return;
+    (_c = _element instanceof Document ? window.document.body : _element) == null ? void 0 : _c.scrollTo({
+      top: (_a = core_toValue(_y)) != null ? _a : y.value,
+      left: (_b = core_toValue(_x)) != null ? _b : x.value,
+      behavior: core_toValue(behavior)
+    });
+    const scrollContainer = ((_d = _element == null ? void 0 : _element.document) == null ? void 0 : _d.documentElement) || (_element == null ? void 0 : _element.documentElement) || _element;
+    if (x != null)
+      internalX.value = scrollContainer.scrollLeft;
+    if (y != null)
+      internalY.value = scrollContainer.scrollTop;
+  }
+  const isScrolling = core_shallowRef(false);
+  const arrivedState = core_reactive({
+    left: true,
+    right: false,
+    top: true,
+    bottom: false
+  });
+  const directions = core_reactive({
+    left: false,
+    right: false,
+    top: false,
+    bottom: false
+  });
+  const onScrollEnd = (e) => {
+    if (!isScrolling.value)
+      return;
+    isScrolling.value = false;
+    directions.left = false;
+    directions.right = false;
+    directions.top = false;
+    directions.bottom = false;
+    onStop(e);
+  };
+  const onScrollEndDebounced = core_useDebounceFn(onScrollEnd, throttle + idle);
+  const setArrivedState = (target) => {
+    var _a;
+    if (!window)
+      return;
+    const el = ((_a = target == null ? void 0 : target.document) == null ? void 0 : _a.documentElement) || (target == null ? void 0 : target.documentElement) || unrefElement(target);
+    const { display, flexDirection, direction } = getComputedStyle(el);
+    const directionMultipler = direction === "rtl" ? -1 : 1;
+    const scrollLeft = el.scrollLeft;
+    directions.left = scrollLeft < internalX.value;
+    directions.right = scrollLeft > internalX.value;
+    const left = Math.abs(scrollLeft * directionMultipler) <= (offset.left || 0);
+    const right = Math.abs(scrollLeft * directionMultipler) + el.clientWidth >= el.scrollWidth - (offset.right || 0) - ARRIVED_STATE_THRESHOLD_PIXELS;
+    if (display === "flex" && flexDirection === "row-reverse") {
+      arrivedState.left = right;
+      arrivedState.right = left;
+    } else {
+      arrivedState.left = left;
+      arrivedState.right = right;
+    }
+    internalX.value = scrollLeft;
+    let scrollTop = el.scrollTop;
+    if (target === window.document && !scrollTop)
+      scrollTop = window.document.body.scrollTop;
+    directions.top = scrollTop < internalY.value;
+    directions.bottom = scrollTop > internalY.value;
+    const top = Math.abs(scrollTop) <= (offset.top || 0);
+    const bottom = Math.abs(scrollTop) + el.clientHeight >= el.scrollHeight - (offset.bottom || 0) - ARRIVED_STATE_THRESHOLD_PIXELS;
+    if (display === "flex" && flexDirection === "column-reverse") {
+      arrivedState.top = bottom;
+      arrivedState.bottom = top;
+    } else {
+      arrivedState.top = top;
+      arrivedState.bottom = bottom;
+    }
+    internalY.value = scrollTop;
+  };
+  const onScrollHandler = (e) => {
+    var _a;
+    if (!window)
+      return;
+    const eventTarget = (_a = e.target.documentElement) != null ? _a : e.target;
+    setArrivedState(eventTarget);
+    isScrolling.value = true;
+    onScrollEndDebounced(e);
+    onScroll(e);
+  };
+  useEventListener(
+    element,
+    "scroll",
+    throttle ? core_useThrottleFn(onScrollHandler, throttle, true, false) : onScrollHandler,
+    eventListenerOptions
+  );
+  core_tryOnMounted(() => {
+    try {
+      const _element = core_toValue(element);
+      if (!_element)
+        return;
+      setArrivedState(_element);
+    } catch (e) {
+      onError(e);
+    }
+  });
+  if ((observe == null ? void 0 : observe.mutation) && element != null && element !== window && element !== document) {
+    useMutationObserver(
+      element,
+      () => {
+        const _element = core_toValue(element);
+        if (!_element)
+          return;
+        setArrivedState(_element);
+      },
+      {
+        attributes: true,
+        childList: true,
+        subtree: true
+      }
+    );
+  }
+  useEventListener(
+    element,
+    "scrollend",
+    onScrollEnd,
+    eventListenerOptions
+  );
+  return {
+    x,
+    y,
+    isScrolling,
+    arrivedState,
+    directions,
+    measure() {
+      const _element = core_toValue(element);
+      if (window && _element)
+        setArrivedState(_element);
+    }
+  };
+}
+
+function useInfiniteScroll(element, onLoadMore, options = {}) {
+  var _a;
+  const {
+    direction = "bottom",
+    interval = 100,
+    canLoadMore = () => true
+  } = options;
+  const state = core_reactive(useScroll(
+    element,
+    {
+      ...options,
+      offset: {
+        [direction]: (_a = options.distance) != null ? _a : 0,
+        ...options.offset
+      }
+    }
+  ));
+  const promise = core_ref();
+  const isLoading = core_computed(() => !!promise.value);
+  const observedElement = core_computed(() => {
+    return resolveElement(core_toValue(element));
+  });
+  const isElementVisible = useElementVisibility(observedElement);
+  function checkAndLoad() {
+    state.measure();
+    if (!observedElement.value || !isElementVisible.value || !canLoadMore(observedElement.value))
+      return;
+    const { scrollHeight, clientHeight, scrollWidth, clientWidth } = observedElement.value;
+    const isNarrower = direction === "bottom" || direction === "top" ? scrollHeight <= clientHeight : scrollWidth <= clientWidth;
+    if (state.arrivedState[direction] || isNarrower) {
+      if (!promise.value) {
+        promise.value = Promise.all([
+          onLoadMore(state),
+          new Promise((resolve) => setTimeout(resolve, interval))
+        ]).finally(() => {
+          promise.value = null;
+          core_nextTick(() => checkAndLoad());
+        });
+      }
+    }
+  }
+  const stop = core_watch(
+    () => [state.arrivedState[direction], isElementVisible.value],
+    checkAndLoad,
+    { immediate: true }
+  );
+  core_tryOnUnmounted(stop);
+  return {
+    isLoading,
+    reset() {
+      core_nextTick(() => checkAndLoad());
+    }
+  };
+}
+
+const defaultEvents = (/* unused pure expression or super */ null && (["mousedown", "mouseup", "keydown", "keyup"]));
+function useKeyModifier(modifier, options = {}) {
+  const {
+    events = defaultEvents,
+    document = defaultDocument,
+    initial = null
+  } = options;
+  const state = core_shallowRef(initial);
+  if (document) {
+    events.forEach((listenerEvent) => {
+      useEventListener(document, listenerEvent, (evt) => {
+        if (typeof evt.getModifierState === "function")
+          state.value = evt.getModifierState(modifier);
+      }, { passive: true });
+    });
+  }
+  return state;
+}
+
+function useLocalStorage(key, initialValue, options = {}) {
+  const { window = defaultWindow } = options;
+  return useStorage(key, initialValue, window == null ? void 0 : window.localStorage, options);
+}
+
+const DefaultMagicKeysAliasMap = {
+  ctrl: "control",
+  command: "meta",
+  cmd: "meta",
+  option: "alt",
+  up: "arrowup",
+  down: "arrowdown",
+  left: "arrowleft",
+  right: "arrowright"
+};
+
+function useMagicKeys(options = {}) {
+  const {
+    reactive: useReactive = false,
+    target = defaultWindow,
+    aliasMap = DefaultMagicKeysAliasMap,
+    passive = true,
+    onEventFired = core_noop
+  } = options;
+  const current = core_reactive(/* @__PURE__ */ new Set());
+  const obj = {
+    toJSON() {
+      return {};
+    },
+    current
+  };
+  const refs = useReactive ? core_reactive(obj) : obj;
+  const metaDeps = /* @__PURE__ */ new Set();
+  const shiftDeps = /* @__PURE__ */ new Set();
+  const usedKeys = /* @__PURE__ */ new Set();
+  function setRefs(key, value) {
+    if (key in refs) {
+      if (useReactive)
+        refs[key] = value;
+      else
+        refs[key].value = value;
+    }
+  }
+  function reset() {
+    current.clear();
+    for (const key of usedKeys)
+      setRefs(key, false);
+  }
+  function updateRefs(e, value) {
+    var _a, _b;
+    const key = (_a = e.key) == null ? void 0 : _a.toLowerCase();
+    const code = (_b = e.code) == null ? void 0 : _b.toLowerCase();
+    const values = [code, key].filter(Boolean);
+    if (key) {
+      if (value)
+        current.add(key);
+      else
+        current.delete(key);
+    }
+    for (const key2 of values) {
+      usedKeys.add(key2);
+      setRefs(key2, value);
+    }
+    if (key === "shift" && !value) {
+      shiftDeps.forEach((key2) => {
+        current.delete(key2);
+        setRefs(key2, false);
+      });
+      shiftDeps.clear();
+    } else if (typeof e.getModifierState === "function" && e.getModifierState("Shift") && value) {
+      [...current, ...values].forEach((key2) => shiftDeps.add(key2));
+    }
+    if (key === "meta" && !value) {
+      metaDeps.forEach((key2) => {
+        current.delete(key2);
+        setRefs(key2, false);
+      });
+      metaDeps.clear();
+    } else if (typeof e.getModifierState === "function" && e.getModifierState("Meta") && value) {
+      [...current, ...values].forEach((key2) => metaDeps.add(key2));
+    }
+  }
+  useEventListener(target, "keydown", (e) => {
+    updateRefs(e, true);
+    return onEventFired(e);
+  }, { passive });
+  useEventListener(target, "keyup", (e) => {
+    updateRefs(e, false);
+    return onEventFired(e);
+  }, { passive });
+  useEventListener("blur", reset, { passive });
+  useEventListener("focus", reset, { passive });
+  const proxy = new Proxy(
+    refs,
+    {
+      get(target2, prop, rec) {
+        if (typeof prop !== "string")
+          return Reflect.get(target2, prop, rec);
+        prop = prop.toLowerCase();
+        if (prop in aliasMap)
+          prop = aliasMap[prop];
+        if (!(prop in refs)) {
+          if (/[+_-]/.test(prop)) {
+            const keys = prop.split(/[+_-]/g).map((i) => i.trim());
+            refs[prop] = core_computed(() => keys.map((key) => core_toValue(proxy[key])).every(Boolean));
+          } else {
+            refs[prop] = core_shallowRef(false);
+          }
+        }
+        const r = Reflect.get(target2, prop, rec);
+        return useReactive ? core_toValue(r) : r;
+      }
+    }
+  );
+  return proxy;
+}
+
+function usingElRef(source, cb) {
+  if (core_toValue(source))
+    cb(core_toValue(source));
+}
+function timeRangeToArray(timeRanges) {
+  let ranges = [];
+  for (let i = 0; i < timeRanges.length; ++i)
+    ranges = [...ranges, [timeRanges.start(i), timeRanges.end(i)]];
+  return ranges;
+}
+function tracksToArray(tracks) {
+  return Array.from(tracks).map(({ label, kind, language, mode, activeCues, cues, inBandMetadataTrackDispatchType }, id) => ({ id, label, kind, language, mode, activeCues, cues, inBandMetadataTrackDispatchType }));
+}
+const defaultOptions = {
+  src: "",
+  tracks: []
+};
+function useMediaControls(target, options = {}) {
+  target = core_toRef(target);
+  options = {
+    ...defaultOptions,
+    ...options
+  };
+  const {
+    document = defaultDocument
+  } = options;
+  const listenerOptions = { passive: true };
+  const currentTime = core_shallowRef(0);
+  const duration = core_shallowRef(0);
+  const seeking = core_shallowRef(false);
+  const volume = core_shallowRef(1);
+  const waiting = core_shallowRef(false);
+  const ended = core_shallowRef(false);
+  const playing = core_shallowRef(false);
+  const rate = core_shallowRef(1);
+  const stalled = core_shallowRef(false);
+  const buffered = core_ref([]);
+  const tracks = core_ref([]);
+  const selectedTrack = core_shallowRef(-1);
+  const isPictureInPicture = core_shallowRef(false);
+  const muted = core_shallowRef(false);
+  const supportsPictureInPicture = document && "pictureInPictureEnabled" in document;
+  const sourceErrorEvent = core_createEventHook();
+  const playbackErrorEvent = core_createEventHook();
+  const disableTrack = (track) => {
+    usingElRef(target, (el) => {
+      if (track) {
+        const id = typeof track === "number" ? track : track.id;
+        el.textTracks[id].mode = "disabled";
+      } else {
+        for (let i = 0; i < el.textTracks.length; ++i)
+          el.textTracks[i].mode = "disabled";
+      }
+      selectedTrack.value = -1;
+    });
+  };
+  const enableTrack = (track, disableTracks = true) => {
+    usingElRef(target, (el) => {
+      const id = typeof track === "number" ? track : track.id;
+      if (disableTracks)
+        disableTrack();
+      el.textTracks[id].mode = "showing";
+      selectedTrack.value = id;
+    });
+  };
+  const togglePictureInPicture = () => {
+    return new Promise((resolve, reject) => {
+      usingElRef(target, async (el) => {
+        if (supportsPictureInPicture) {
+          if (!isPictureInPicture.value) {
+            el.requestPictureInPicture().then(resolve).catch(reject);
+          } else {
+            document.exitPictureInPicture().then(resolve).catch(reject);
+          }
+        }
+      });
+    });
+  };
+  core_watchEffect(() => {
+    if (!document)
+      return;
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    const src = core_toValue(options.src);
+    let sources = [];
+    if (!src)
+      return;
+    if (typeof src === "string")
+      sources = [{ src }];
+    else if (Array.isArray(src))
+      sources = src;
+    else if (core_isObject(src))
+      sources = [src];
+    el.querySelectorAll("source").forEach((e) => {
+      e.remove();
+    });
+    sources.forEach(({ src: src2, type, media }) => {
+      const source = document.createElement("source");
+      source.setAttribute("src", src2);
+      source.setAttribute("type", type || "");
+      source.setAttribute("media", media || "");
+      useEventListener(source, "error", sourceErrorEvent.trigger, listenerOptions);
+      el.appendChild(source);
+    });
+    el.load();
+  });
+  core_watch([target, volume], () => {
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    el.volume = volume.value;
+  });
+  core_watch([target, muted], () => {
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    el.muted = muted.value;
+  });
+  core_watch([target, rate], () => {
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    el.playbackRate = rate.value;
+  });
+  core_watchEffect(() => {
+    if (!document)
+      return;
+    const textTracks = core_toValue(options.tracks);
+    const el = core_toValue(target);
+    if (!textTracks || !textTracks.length || !el)
+      return;
+    el.querySelectorAll("track").forEach((e) => e.remove());
+    textTracks.forEach(({ default: isDefault, kind, label, src, srcLang }, i) => {
+      const track = document.createElement("track");
+      track.default = isDefault || false;
+      track.kind = kind;
+      track.label = label;
+      track.src = src;
+      track.srclang = srcLang;
+      if (track.default)
+        selectedTrack.value = i;
+      el.appendChild(track);
+    });
+  });
+  const { ignoreUpdates: ignoreCurrentTimeUpdates } = core_watchIgnorable(currentTime, (time) => {
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    el.currentTime = time;
+  });
+  const { ignoreUpdates: ignorePlayingUpdates } = core_watchIgnorable(playing, (isPlaying) => {
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    if (isPlaying) {
+      el.play().catch((e) => {
+        playbackErrorEvent.trigger(e);
+        throw e;
+      });
+    } else {
+      el.pause();
+    }
+  });
+  useEventListener(
+    target,
+    "timeupdate",
+    () => ignoreCurrentTimeUpdates(() => currentTime.value = core_toValue(target).currentTime),
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "durationchange",
+    () => duration.value = core_toValue(target).duration,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "progress",
+    () => buffered.value = timeRangeToArray(core_toValue(target).buffered),
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "seeking",
+    () => seeking.value = true,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "seeked",
+    () => seeking.value = false,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    ["waiting", "loadstart"],
+    () => {
+      waiting.value = true;
+      ignorePlayingUpdates(() => playing.value = false);
+    },
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "loadeddata",
+    () => waiting.value = false,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "playing",
+    () => {
+      waiting.value = false;
+      ended.value = false;
+      ignorePlayingUpdates(() => playing.value = true);
+    },
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "ratechange",
+    () => rate.value = core_toValue(target).playbackRate,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "stalled",
+    () => stalled.value = true,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "ended",
+    () => ended.value = true,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "pause",
+    () => ignorePlayingUpdates(() => playing.value = false),
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "play",
+    () => ignorePlayingUpdates(() => playing.value = true),
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "enterpictureinpicture",
+    () => isPictureInPicture.value = true,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "leavepictureinpicture",
+    () => isPictureInPicture.value = false,
+    listenerOptions
+  );
+  useEventListener(
+    target,
+    "volumechange",
+    () => {
+      const el = core_toValue(target);
+      if (!el)
+        return;
+      volume.value = el.volume;
+      muted.value = el.muted;
+    },
+    listenerOptions
+  );
+  const listeners = [];
+  const stop = core_watch([target], () => {
+    const el = core_toValue(target);
+    if (!el)
+      return;
+    stop();
+    listeners[0] = useEventListener(el.textTracks, "addtrack", () => tracks.value = tracksToArray(el.textTracks), listenerOptions);
+    listeners[1] = useEventListener(el.textTracks, "removetrack", () => tracks.value = tracksToArray(el.textTracks), listenerOptions);
+    listeners[2] = useEventListener(el.textTracks, "change", () => tracks.value = tracksToArray(el.textTracks), listenerOptions);
+  });
+  core_tryOnScopeDispose(() => listeners.forEach((listener) => listener()));
+  return {
+    currentTime,
+    duration,
+    waiting,
+    seeking,
+    ended,
+    stalled,
+    buffered,
+    playing,
+    rate,
+    // Volume
+    volume,
+    muted,
+    // Tracks
+    tracks,
+    selectedTrack,
+    enableTrack,
+    disableTrack,
+    // Picture in Picture
+    supportsPictureInPicture,
+    togglePictureInPicture,
+    isPictureInPicture,
+    // Events
+    onSourceError: sourceErrorEvent.on,
+    onPlaybackError: playbackErrorEvent.on
+  };
+}
+
+function useMemoize(resolver, options) {
+  const initCache = () => {
+    if (options == null ? void 0 : options.cache)
+      return core_shallowReactive(options.cache);
+    return core_shallowReactive(/* @__PURE__ */ new Map());
+  };
+  const cache = initCache();
+  const generateKey = (...args) => (options == null ? void 0 : options.getKey) ? options.getKey(...args) : JSON.stringify(args);
+  const _loadData = (key, ...args) => {
+    cache.set(key, resolver(...args));
+    return cache.get(key);
+  };
+  const loadData = (...args) => _loadData(generateKey(...args), ...args);
+  const deleteData = (...args) => {
+    cache.delete(generateKey(...args));
+  };
+  const clearData = () => {
+    cache.clear();
+  };
+  const memoized = (...args) => {
+    const key = generateKey(...args);
+    if (cache.has(key))
+      return cache.get(key);
+    return _loadData(key, ...args);
+  };
+  memoized.load = loadData;
+  memoized.delete = deleteData;
+  memoized.clear = clearData;
+  memoized.generateKey = generateKey;
+  memoized.cache = cache;
+  return memoized;
+}
+
+function useMemory(options = {}) {
+  const memory = core_ref();
+  const isSupported = useSupported(() => typeof performance !== "undefined" && "memory" in performance);
+  if (isSupported.value) {
+    const { interval = 1e3 } = options;
+    core_useIntervalFn(() => {
+      memory.value = performance.memory;
+    }, interval, { immediate: options.immediate, immediateCallback: options.immediateCallback });
+  }
+  return { isSupported, memory };
+}
+
+const UseMouseBuiltinExtractors = {
+  page: (event) => [event.pageX, event.pageY],
+  client: (event) => [event.clientX, event.clientY],
+  screen: (event) => [event.screenX, event.screenY],
+  movement: (event) => event instanceof MouseEvent ? [event.movementX, event.movementY] : null
+};
+function useMouse(options = {}) {
+  const {
+    type = "page",
+    touch = true,
+    resetOnTouchEnds = false,
+    initialValue = { x: 0, y: 0 },
+    window = defaultWindow,
+    target = window,
+    scroll = true,
+    eventFilter
+  } = options;
+  let _prevMouseEvent = null;
+  let _prevScrollX = 0;
+  let _prevScrollY = 0;
+  const x = core_shallowRef(initialValue.x);
+  const y = core_shallowRef(initialValue.y);
+  const sourceType = core_shallowRef(null);
+  const extractor = typeof type === "function" ? type : UseMouseBuiltinExtractors[type];
+  const mouseHandler = (event) => {
+    const result = extractor(event);
+    _prevMouseEvent = event;
+    if (result) {
+      [x.value, y.value] = result;
+      sourceType.value = "mouse";
+    }
+    if (window) {
+      _prevScrollX = window.scrollX;
+      _prevScrollY = window.scrollY;
+    }
+  };
+  const touchHandler = (event) => {
+    if (event.touches.length > 0) {
+      const result = extractor(event.touches[0]);
+      if (result) {
+        [x.value, y.value] = result;
+        sourceType.value = "touch";
+      }
+    }
+  };
+  const scrollHandler = () => {
+    if (!_prevMouseEvent || !window)
+      return;
+    const pos = extractor(_prevMouseEvent);
+    if (_prevMouseEvent instanceof MouseEvent && pos) {
+      x.value = pos[0] + window.scrollX - _prevScrollX;
+      y.value = pos[1] + window.scrollY - _prevScrollY;
+    }
+  };
+  const reset = () => {
+    x.value = initialValue.x;
+    y.value = initialValue.y;
+  };
+  const mouseHandlerWrapper = eventFilter ? (event) => eventFilter(() => mouseHandler(event), {}) : (event) => mouseHandler(event);
+  const touchHandlerWrapper = eventFilter ? (event) => eventFilter(() => touchHandler(event), {}) : (event) => touchHandler(event);
+  const scrollHandlerWrapper = eventFilter ? () => eventFilter(() => scrollHandler(), {}) : () => scrollHandler();
+  if (target) {
+    const listenerOptions = { passive: true };
+    useEventListener(target, ["mousemove", "dragover"], mouseHandlerWrapper, listenerOptions);
+    if (touch && type !== "movement") {
+      useEventListener(target, ["touchstart", "touchmove"], touchHandlerWrapper, listenerOptions);
+      if (resetOnTouchEnds)
+        useEventListener(target, "touchend", reset, listenerOptions);
+    }
+    if (scroll && type === "page")
+      useEventListener(window, "scroll", scrollHandlerWrapper, listenerOptions);
+  }
+  return {
+    x,
+    y,
+    sourceType
+  };
+}
+
+function useMouseInElement(target, options = {}) {
+  const {
+    windowResize = true,
+    windowScroll = true,
+    handleOutside = true,
+    window = defaultWindow
+  } = options;
+  const type = options.type || "page";
+  const { x, y, sourceType } = useMouse(options);
+  const targetRef = core_shallowRef(target != null ? target : window == null ? void 0 : window.document.body);
+  const elementX = core_shallowRef(0);
+  const elementY = core_shallowRef(0);
+  const elementPositionX = core_shallowRef(0);
+  const elementPositionY = core_shallowRef(0);
+  const elementHeight = core_shallowRef(0);
+  const elementWidth = core_shallowRef(0);
+  const isOutside = core_shallowRef(true);
+  function update() {
+    if (!window)
+      return;
+    const el = unrefElement(targetRef);
+    if (!el || !(el instanceof Element))
+      return;
+    const {
+      left,
+      top,
+      width,
+      height
+    } = el.getBoundingClientRect();
+    elementPositionX.value = left + (type === "page" ? window.pageXOffset : 0);
+    elementPositionY.value = top + (type === "page" ? window.pageYOffset : 0);
+    elementHeight.value = height;
+    elementWidth.value = width;
+    const elX = x.value - elementPositionX.value;
+    const elY = y.value - elementPositionY.value;
+    isOutside.value = width === 0 || height === 0 || elX < 0 || elY < 0 || elX > width || elY > height;
+    if (handleOutside) {
+      elementX.value = elX;
+      elementY.value = elY;
+    }
+  }
+  const stopFnList = [];
+  function stop() {
+    stopFnList.forEach((fn) => fn());
+    stopFnList.length = 0;
+  }
+  core_tryOnMounted(() => {
+    update();
+  });
+  if (window) {
+    const {
+      stop: stopResizeObserver
+    } = useResizeObserver(targetRef, update);
+    const {
+      stop: stopMutationObserver
+    } = useMutationObserver(targetRef, update, {
+      attributeFilter: ["style", "class"]
+    });
+    const stopWatch = core_watch(
+      [targetRef, x, y],
+      update
+    );
+    stopFnList.push(
+      stopResizeObserver,
+      stopMutationObserver,
+      stopWatch
+    );
+    useEventListener(
+      document,
+      "mouseleave",
+      () => isOutside.value = true,
+      { passive: true }
+    );
+    if (windowScroll) {
+      stopFnList.push(
+        useEventListener("scroll", update, { capture: true, passive: true })
+      );
+    }
+    if (windowResize) {
+      stopFnList.push(
+        useEventListener("resize", update, { passive: true })
+      );
+    }
+  }
+  return {
+    x,
+    y,
+    sourceType,
+    elementX,
+    elementY,
+    elementPositionX,
+    elementPositionY,
+    elementHeight,
+    elementWidth,
+    isOutside,
+    stop
+  };
+}
+
+function useMousePressed(options = {}) {
+  const {
+    touch = true,
+    drag = true,
+    capture = false,
+    initialValue = false,
+    window = defaultWindow
+  } = options;
+  const pressed = core_shallowRef(initialValue);
+  const sourceType = core_shallowRef(null);
+  if (!window) {
+    return {
+      pressed,
+      sourceType
+    };
+  }
+  const onPressed = (srcType) => (event) => {
+    var _a;
+    pressed.value = true;
+    sourceType.value = srcType;
+    (_a = options.onPressed) == null ? void 0 : _a.call(options, event);
+  };
+  const onReleased = (event) => {
+    var _a;
+    pressed.value = false;
+    sourceType.value = null;
+    (_a = options.onReleased) == null ? void 0 : _a.call(options, event);
+  };
+  const target = core_computed(() => unrefElement(options.target) || window);
+  const listenerOptions = { passive: true, capture };
+  useEventListener(target, "mousedown", onPressed("mouse"), listenerOptions);
+  useEventListener(window, "mouseleave", onReleased, listenerOptions);
+  useEventListener(window, "mouseup", onReleased, listenerOptions);
+  if (drag) {
+    useEventListener(target, "dragstart", onPressed("mouse"), listenerOptions);
+    useEventListener(window, "drop", onReleased, listenerOptions);
+    useEventListener(window, "dragend", onReleased, listenerOptions);
+  }
+  if (touch) {
+    useEventListener(target, "touchstart", onPressed("touch"), listenerOptions);
+    useEventListener(window, "touchend", onReleased, listenerOptions);
+    useEventListener(window, "touchcancel", onReleased, listenerOptions);
+  }
+  return {
+    pressed,
+    sourceType
+  };
+}
+
+function useNavigatorLanguage(options = {}) {
+  const { window = defaultWindow } = options;
+  const navigator = window == null ? void 0 : window.navigator;
+  const isSupported = useSupported(() => navigator && "language" in navigator);
+  const language = core_shallowRef(navigator == null ? void 0 : navigator.language);
+  useEventListener(window, "languagechange", () => {
+    if (navigator)
+      language.value = navigator.language;
+  }, { passive: true });
+  return {
+    isSupported,
+    language
+  };
+}
+
+function useNetwork(options = {}) {
+  const { window = defaultWindow } = options;
+  const navigator = window == null ? void 0 : window.navigator;
+  const isSupported = useSupported(() => navigator && "connection" in navigator);
+  const isOnline = core_shallowRef(true);
+  const saveData = core_shallowRef(false);
+  const offlineAt = core_shallowRef(void 0);
+  const onlineAt = core_shallowRef(void 0);
+  const downlink = core_shallowRef(void 0);
+  const downlinkMax = core_shallowRef(void 0);
+  const rtt = core_shallowRef(void 0);
+  const effectiveType = core_shallowRef(void 0);
+  const type = core_shallowRef("unknown");
+  const connection = isSupported.value && navigator.connection;
+  function updateNetworkInformation() {
+    if (!navigator)
+      return;
+    isOnline.value = navigator.onLine;
+    offlineAt.value = isOnline.value ? void 0 : Date.now();
+    onlineAt.value = isOnline.value ? Date.now() : void 0;
+    if (connection) {
+      downlink.value = connection.downlink;
+      downlinkMax.value = connection.downlinkMax;
+      effectiveType.value = connection.effectiveType;
+      rtt.value = connection.rtt;
+      saveData.value = connection.saveData;
+      type.value = connection.type;
+    }
+  }
+  const listenerOptions = { passive: true };
+  if (window) {
+    useEventListener(window, "offline", () => {
+      isOnline.value = false;
+      offlineAt.value = Date.now();
+    }, listenerOptions);
+    useEventListener(window, "online", () => {
+      isOnline.value = true;
+      onlineAt.value = Date.now();
+    }, listenerOptions);
+  }
+  if (connection)
+    useEventListener(connection, "change", updateNetworkInformation, listenerOptions);
+  updateNetworkInformation();
+  return {
+    isSupported,
+    isOnline: core_readonly(isOnline),
+    saveData: core_readonly(saveData),
+    offlineAt: core_readonly(offlineAt),
+    onlineAt: core_readonly(onlineAt),
+    downlink: core_readonly(downlink),
+    downlinkMax: core_readonly(downlinkMax),
+    effectiveType: core_readonly(effectiveType),
+    rtt: core_readonly(rtt),
+    type: core_readonly(type)
+  };
+}
+
+function useNow(options = {}) {
+  const {
+    controls: exposeControls = false,
+    interval = "requestAnimationFrame",
+    immediate = true
+  } = options;
+  const now = core_ref(/* @__PURE__ */ new Date());
+  const update = () => now.value = /* @__PURE__ */ new Date();
+  const controls = interval === "requestAnimationFrame" ? useRafFn(update, { immediate }) : core_useIntervalFn(update, interval, { immediate });
+  if (exposeControls) {
+    return {
+      now,
+      ...controls
+    };
+  } else {
+    return now;
+  }
+}
+
+function useObjectUrl(object) {
+  const url = core_shallowRef();
+  const release = () => {
+    if (url.value)
+      URL.revokeObjectURL(url.value);
+    url.value = void 0;
+  };
+  core_watch(
+    () => core_toValue(object),
+    (newObject) => {
+      release();
+      if (newObject)
+        url.value = URL.createObjectURL(newObject);
+    },
+    { immediate: true }
+  );
+  core_tryOnScopeDispose(release);
+  return core_readonly(url);
+}
+
+function useClamp(value, min, max) {
+  if (typeof value === "function" || core_isReadonly(value))
+    return core_computed(() => core_clamp(core_toValue(value), core_toValue(min), core_toValue(max)));
+  const _value = core_ref(value);
+  return core_computed({
+    get() {
+      return _value.value = core_clamp(_value.value, core_toValue(min), core_toValue(max));
+    },
+    set(value2) {
+      _value.value = core_clamp(value2, core_toValue(min), core_toValue(max));
+    }
+  });
+}
+
+function useOffsetPagination(options) {
+  const {
+    total = Number.POSITIVE_INFINITY,
+    pageSize = 10,
+    page = 1,
+    onPageChange = core_noop,
+    onPageSizeChange = core_noop,
+    onPageCountChange = core_noop
+  } = options;
+  const currentPageSize = useClamp(pageSize, 1, Number.POSITIVE_INFINITY);
+  const pageCount = core_computed(() => Math.max(
+    1,
+    Math.ceil(core_toValue(total) / core_toValue(currentPageSize))
+  ));
+  const currentPage = useClamp(page, 1, pageCount);
+  const isFirstPage = core_computed(() => currentPage.value === 1);
+  const isLastPage = core_computed(() => currentPage.value === pageCount.value);
+  if (core_isRef(page)) {
+    core_syncRef(page, currentPage, {
+      direction: core_isReadonly(page) ? "ltr" : "both"
+    });
+  }
+  if (core_isRef(pageSize)) {
+    core_syncRef(pageSize, currentPageSize, {
+      direction: core_isReadonly(pageSize) ? "ltr" : "both"
+    });
+  }
+  function prev() {
+    currentPage.value--;
+  }
+  function next() {
+    currentPage.value++;
+  }
+  const returnValue = {
+    currentPage,
+    currentPageSize,
+    pageCount,
+    isFirstPage,
+    isLastPage,
+    prev,
+    next
+  };
+  core_watch(currentPage, () => {
+    onPageChange(core_reactive(returnValue));
+  });
+  core_watch(currentPageSize, () => {
+    onPageSizeChange(core_reactive(returnValue));
+  });
+  core_watch(pageCount, () => {
+    onPageCountChange(core_reactive(returnValue));
+  });
+  return returnValue;
+}
+
+function useOnline(options = {}) {
+  const { isOnline } = useNetwork(options);
+  return isOnline;
+}
+
+function usePageLeave(options = {}) {
+  const { window = defaultWindow } = options;
+  const isLeft = core_shallowRef(false);
+  const handler = (event) => {
+    if (!window)
+      return;
+    event = event || window.event;
+    const from = event.relatedTarget || event.toElement;
+    isLeft.value = !from;
+  };
+  if (window) {
+    const listenerOptions = { passive: true };
+    useEventListener(window, "mouseout", handler, listenerOptions);
+    useEventListener(window.document, "mouseleave", handler, listenerOptions);
+    useEventListener(window.document, "mouseenter", handler, listenerOptions);
+  }
+  return isLeft;
+}
+
+function useScreenOrientation(options = {}) {
+  const {
+    window = defaultWindow
+  } = options;
+  const isSupported = useSupported(() => window && "screen" in window && "orientation" in window.screen);
+  const screenOrientation = isSupported.value ? window.screen.orientation : {};
+  const orientation = core_ref(screenOrientation.type);
+  const angle = core_shallowRef(screenOrientation.angle || 0);
+  if (isSupported.value) {
+    useEventListener(window, "orientationchange", () => {
+      orientation.value = screenOrientation.type;
+      angle.value = screenOrientation.angle;
+    }, { passive: true });
+  }
+  const lockOrientation = (type) => {
+    if (isSupported.value && typeof screenOrientation.lock === "function")
+      return screenOrientation.lock(type);
+    return Promise.reject(new Error("Not supported"));
+  };
+  const unlockOrientation = () => {
+    if (isSupported.value && typeof screenOrientation.unlock === "function")
+      screenOrientation.unlock();
+  };
+  return {
+    isSupported,
+    orientation,
+    angle,
+    lockOrientation,
+    unlockOrientation
+  };
+}
+
+function useParallax(target, options = {}) {
+  const {
+    deviceOrientationTiltAdjust = (i) => i,
+    deviceOrientationRollAdjust = (i) => i,
+    mouseTiltAdjust = (i) => i,
+    mouseRollAdjust = (i) => i,
+    window = defaultWindow
+  } = options;
+  const orientation = core_reactive(useDeviceOrientation({ window }));
+  const screenOrientation = core_reactive(useScreenOrientation({ window }));
+  const {
+    elementX: x,
+    elementY: y,
+    elementWidth: width,
+    elementHeight: height
+  } = useMouseInElement(target, { handleOutside: false, window });
+  const source = core_computed(() => {
+    if (orientation.isSupported && (orientation.alpha != null && orientation.alpha !== 0 || orientation.gamma != null && orientation.gamma !== 0)) {
+      return "deviceOrientation";
+    }
+    return "mouse";
+  });
+  const roll = core_computed(() => {
+    if (source.value === "deviceOrientation") {
+      let value;
+      switch (screenOrientation.orientation) {
+        case "landscape-primary":
+          value = orientation.gamma / 90;
+          break;
+        case "landscape-secondary":
+          value = -orientation.gamma / 90;
+          break;
+        case "portrait-primary":
+          value = -orientation.beta / 90;
+          break;
+        case "portrait-secondary":
+          value = orientation.beta / 90;
+          break;
+        default:
+          value = -orientation.beta / 90;
+      }
+      return deviceOrientationRollAdjust(value);
+    } else {
+      const value = -(y.value - height.value / 2) / height.value;
+      return mouseRollAdjust(value);
+    }
+  });
+  const tilt = core_computed(() => {
+    if (source.value === "deviceOrientation") {
+      let value;
+      switch (screenOrientation.orientation) {
+        case "landscape-primary":
+          value = orientation.beta / 90;
+          break;
+        case "landscape-secondary":
+          value = -orientation.beta / 90;
+          break;
+        case "portrait-primary":
+          value = orientation.gamma / 90;
+          break;
+        case "portrait-secondary":
+          value = -orientation.gamma / 90;
+          break;
+        default:
+          value = orientation.gamma / 90;
+      }
+      return deviceOrientationTiltAdjust(value);
+    } else {
+      const value = (x.value - width.value / 2) / width.value;
+      return mouseTiltAdjust(value);
+    }
+  });
+  return { roll, tilt, source };
+}
+
+function useParentElement(element = useCurrentElement()) {
+  const parentElement = core_shallowRef();
+  const update = () => {
+    const el = unrefElement(element);
+    if (el)
+      parentElement.value = el.parentElement;
+  };
+  core_tryOnMounted(update);
+  core_watch(() => core_toValue(element), update);
+  return parentElement;
+}
+
+function usePerformanceObserver(options, callback) {
+  const {
+    window = defaultWindow,
+    immediate = true,
+    ...performanceOptions
+  } = options;
+  const isSupported = useSupported(() => window && "PerformanceObserver" in window);
+  let observer;
+  const stop = () => {
+    observer == null ? void 0 : observer.disconnect();
+  };
+  const start = () => {
+    if (isSupported.value) {
+      stop();
+      observer = new PerformanceObserver(callback);
+      observer.observe(performanceOptions);
+    }
+  };
+  core_tryOnScopeDispose(stop);
+  if (immediate)
+    start();
+  return {
+    isSupported,
+    start,
+    stop
+  };
+}
+
+const defaultState = {
+  x: 0,
+  y: 0,
+  pointerId: 0,
+  pressure: 0,
+  tiltX: 0,
+  tiltY: 0,
+  width: 0,
+  height: 0,
+  twist: 0,
+  pointerType: null
+};
+const keys = /* @__PURE__ */ (/* unused pure expression or super */ null && (Object.keys(defaultState)));
+function usePointer(options = {}) {
+  const {
+    target = defaultWindow
+  } = options;
+  const isInside = core_shallowRef(false);
+  const state = core_ref(options.initialValue || {});
+  Object.assign(state.value, defaultState, state.value);
+  const handler = (event) => {
+    isInside.value = true;
+    if (options.pointerTypes && !options.pointerTypes.includes(event.pointerType))
+      return;
+    state.value = core_objectPick(event, keys, false);
+  };
+  if (target) {
+    const listenerOptions = { passive: true };
+    useEventListener(target, ["pointerdown", "pointermove", "pointerup"], handler, listenerOptions);
+    useEventListener(target, "pointerleave", () => isInside.value = false, listenerOptions);
+  }
+  return {
+    ...core_toRefs(state),
+    isInside
+  };
+}
+
+function usePointerLock(target, options = {}) {
+  const { document = defaultDocument } = options;
+  const isSupported = useSupported(() => document && "pointerLockElement" in document);
+  const element = core_shallowRef();
+  const triggerElement = core_shallowRef();
+  let targetElement;
+  if (isSupported.value) {
+    const listenerOptions = { passive: true };
+    useEventListener(document, "pointerlockchange", () => {
+      var _a;
+      const currentElement = (_a = document.pointerLockElement) != null ? _a : element.value;
+      if (targetElement && currentElement === targetElement) {
+        element.value = document.pointerLockElement;
+        if (!element.value)
+          targetElement = triggerElement.value = null;
+      }
+    }, listenerOptions);
+    useEventListener(document, "pointerlockerror", () => {
+      var _a;
+      const currentElement = (_a = document.pointerLockElement) != null ? _a : element.value;
+      if (targetElement && currentElement === targetElement) {
+        const action = document.pointerLockElement ? "release" : "acquire";
+        throw new Error(`Failed to ${action} pointer lock.`);
+      }
+    }, listenerOptions);
+  }
+  async function lock(e) {
+    var _a;
+    if (!isSupported.value)
+      throw new Error("Pointer Lock API is not supported by your browser.");
+    triggerElement.value = e instanceof Event ? e.currentTarget : null;
+    targetElement = e instanceof Event ? (_a = unrefElement(target)) != null ? _a : triggerElement.value : unrefElement(e);
+    if (!targetElement)
+      throw new Error("Target element undefined.");
+    targetElement.requestPointerLock();
+    return await core_until(element).toBe(targetElement);
+  }
+  async function unlock() {
+    if (!element.value)
+      return false;
+    document.exitPointerLock();
+    await core_until(element).toBeNull();
+    return true;
+  }
+  return {
+    isSupported,
+    element,
+    triggerElement,
+    lock,
+    unlock
+  };
+}
+
+function usePointerSwipe(target, options = {}) {
+  const targetRef = core_toRef(target);
+  const {
+    threshold = 50,
+    onSwipe,
+    onSwipeEnd,
+    onSwipeStart,
+    disableTextSelect = false
+  } = options;
+  const posStart = core_reactive({ x: 0, y: 0 });
+  const updatePosStart = (x, y) => {
+    posStart.x = x;
+    posStart.y = y;
+  };
+  const posEnd = core_reactive({ x: 0, y: 0 });
+  const updatePosEnd = (x, y) => {
+    posEnd.x = x;
+    posEnd.y = y;
+  };
+  const distanceX = core_computed(() => posStart.x - posEnd.x);
+  const distanceY = core_computed(() => posStart.y - posEnd.y);
+  const { max, abs } = Math;
+  const isThresholdExceeded = core_computed(() => max(abs(distanceX.value), abs(distanceY.value)) >= threshold);
+  const isSwiping = core_shallowRef(false);
+  const isPointerDown = core_shallowRef(false);
+  const direction = core_computed(() => {
+    if (!isThresholdExceeded.value)
+      return "none";
+    if (abs(distanceX.value) > abs(distanceY.value)) {
+      return distanceX.value > 0 ? "left" : "right";
+    } else {
+      return distanceY.value > 0 ? "up" : "down";
+    }
+  });
+  const eventIsAllowed = (e) => {
+    var _a, _b, _c;
+    const isReleasingButton = e.buttons === 0;
+    const isPrimaryButton = e.buttons === 1;
+    return (_c = (_b = (_a = options.pointerTypes) == null ? void 0 : _a.includes(e.pointerType)) != null ? _b : isReleasingButton || isPrimaryButton) != null ? _c : true;
+  };
+  const listenerOptions = { passive: true };
+  const stops = [
+    useEventListener(target, "pointerdown", (e) => {
+      if (!eventIsAllowed(e))
+        return;
+      isPointerDown.value = true;
+      const eventTarget = e.target;
+      eventTarget == null ? void 0 : eventTarget.setPointerCapture(e.pointerId);
+      const { clientX: x, clientY: y } = e;
+      updatePosStart(x, y);
+      updatePosEnd(x, y);
+      onSwipeStart == null ? void 0 : onSwipeStart(e);
+    }, listenerOptions),
+    useEventListener(target, "pointermove", (e) => {
+      if (!eventIsAllowed(e))
+        return;
+      if (!isPointerDown.value)
+        return;
+      const { clientX: x, clientY: y } = e;
+      updatePosEnd(x, y);
+      if (!isSwiping.value && isThresholdExceeded.value)
+        isSwiping.value = true;
+      if (isSwiping.value)
+        onSwipe == null ? void 0 : onSwipe(e);
+    }, listenerOptions),
+    useEventListener(target, "pointerup", (e) => {
+      if (!eventIsAllowed(e))
+        return;
+      if (isSwiping.value)
+        onSwipeEnd == null ? void 0 : onSwipeEnd(e, direction.value);
+      isPointerDown.value = false;
+      isSwiping.value = false;
+    }, listenerOptions)
+  ];
+  core_tryOnMounted(() => {
+    var _a, _b, _c, _d, _e, _f, _g, _h;
+    (_b = (_a = targetRef.value) == null ? void 0 : _a.style) == null ? void 0 : _b.setProperty("touch-action", "pan-y");
+    if (disableTextSelect) {
+      (_d = (_c = targetRef.value) == null ? void 0 : _c.style) == null ? void 0 : _d.setProperty("-webkit-user-select", "none");
+      (_f = (_e = targetRef.value) == null ? void 0 : _e.style) == null ? void 0 : _f.setProperty("-ms-user-select", "none");
+      (_h = (_g = targetRef.value) == null ? void 0 : _g.style) == null ? void 0 : _h.setProperty("user-select", "none");
+    }
+  });
+  const stop = () => stops.forEach((s) => s());
+  return {
+    isSwiping: core_readonly(isSwiping),
+    direction: core_readonly(direction),
+    posStart: core_readonly(posStart),
+    posEnd: core_readonly(posEnd),
+    distanceX,
+    distanceY,
+    stop
+  };
+}
+
+function usePreferredColorScheme(options) {
+  const isLight = useMediaQuery("(prefers-color-scheme: light)", options);
+  const isDark = useMediaQuery("(prefers-color-scheme: dark)", options);
+  return core_computed(() => {
+    if (isDark.value)
+      return "dark";
+    if (isLight.value)
+      return "light";
+    return "no-preference";
+  });
+}
+
+function usePreferredContrast(options) {
+  const isMore = useMediaQuery("(prefers-contrast: more)", options);
+  const isLess = useMediaQuery("(prefers-contrast: less)", options);
+  const isCustom = useMediaQuery("(prefers-contrast: custom)", options);
+  return core_computed(() => {
+    if (isMore.value)
+      return "more";
+    if (isLess.value)
+      return "less";
+    if (isCustom.value)
+      return "custom";
+    return "no-preference";
+  });
+}
+
+function usePreferredLanguages(options = {}) {
+  const { window = defaultWindow } = options;
+  if (!window)
+    return core_ref(["en"]);
+  const navigator = window.navigator;
+  const value = core_ref(navigator.languages);
+  useEventListener(window, "languagechange", () => {
+    value.value = navigator.languages;
+  }, { passive: true });
+  return value;
+}
+
+function usePreferredReducedMotion(options) {
+  const isReduced = useMediaQuery("(prefers-reduced-motion: reduce)", options);
+  return core_computed(() => {
+    if (isReduced.value)
+      return "reduce";
+    return "no-preference";
+  });
+}
+
+function usePreferredReducedTransparency(options) {
+  const isReduced = useMediaQuery("(prefers-reduced-transparency: reduce)", options);
+  return core_computed(() => {
+    if (isReduced.value)
+      return "reduce";
+    return "no-preference";
+  });
+}
+
+function usePrevious(value, initialValue) {
+  const previous = core_shallowRef(initialValue);
+  core_watch(
+    core_toRef(value),
+    (_, oldValue) => {
+      previous.value = oldValue;
+    },
+    { flush: "sync" }
+  );
+  return core_readonly(previous);
+}
+
+const topVarName = "--vueuse-safe-area-top";
+const rightVarName = "--vueuse-safe-area-right";
+const bottomVarName = "--vueuse-safe-area-bottom";
+const leftVarName = "--vueuse-safe-area-left";
+function useScreenSafeArea() {
+  const top = core_shallowRef("");
+  const right = core_shallowRef("");
+  const bottom = core_shallowRef("");
+  const left = core_shallowRef("");
+  if (core_isClient) {
+    const topCssVar = useCssVar(topVarName);
+    const rightCssVar = useCssVar(rightVarName);
+    const bottomCssVar = useCssVar(bottomVarName);
+    const leftCssVar = useCssVar(leftVarName);
+    topCssVar.value = "env(safe-area-inset-top, 0px)";
+    rightCssVar.value = "env(safe-area-inset-right, 0px)";
+    bottomCssVar.value = "env(safe-area-inset-bottom, 0px)";
+    leftCssVar.value = "env(safe-area-inset-left, 0px)";
+    core_tryOnMounted(update);
+    useEventListener("resize", core_useDebounceFn(update), { passive: true });
+  }
+  function update() {
+    top.value = getValue(topVarName);
+    right.value = getValue(rightVarName);
+    bottom.value = getValue(bottomVarName);
+    left.value = getValue(leftVarName);
+  }
+  return {
+    top,
+    right,
+    bottom,
+    left,
+    update
+  };
+}
+function getValue(position) {
+  return getComputedStyle(document.documentElement).getPropertyValue(position);
+}
+
+function useScriptTag(src, onLoaded = core_noop, options = {}) {
+  const {
+    immediate = true,
+    manual = false,
+    type = "text/javascript",
+    async = true,
+    crossOrigin,
+    referrerPolicy,
+    noModule,
+    defer,
+    document = defaultDocument,
+    attrs = {},
+    nonce = void 0
+  } = options;
+  const scriptTag = core_shallowRef(null);
+  let _promise = null;
+  const loadScript = (waitForScriptLoad) => new Promise((resolve, reject) => {
+    const resolveWithElement = (el2) => {
+      scriptTag.value = el2;
+      resolve(el2);
+      return el2;
+    };
+    if (!document) {
+      resolve(false);
+      return;
+    }
+    let shouldAppend = false;
+    let el = document.querySelector(`script[src="${core_toValue(src)}"]`);
+    if (!el) {
+      el = document.createElement("script");
+      el.type = type;
+      el.async = async;
+      el.src = core_toValue(src);
+      if (defer)
+        el.defer = defer;
+      if (crossOrigin)
+        el.crossOrigin = crossOrigin;
+      if (noModule)
+        el.noModule = noModule;
+      if (referrerPolicy)
+        el.referrerPolicy = referrerPolicy;
+      if (nonce) {
+        el.nonce = nonce;
+      }
+      Object.entries(attrs).forEach(([name, value]) => el == null ? void 0 : el.setAttribute(name, value));
+      shouldAppend = true;
+    } else if (el.hasAttribute("data-loaded")) {
+      resolveWithElement(el);
+    }
+    const listenerOptions = {
+      passive: true
+    };
+    useEventListener(el, "error", (event) => reject(event), listenerOptions);
+    useEventListener(el, "abort", (event) => reject(event), listenerOptions);
+    useEventListener(el, "load", () => {
+      el.setAttribute("data-loaded", "true");
+      onLoaded(el);
+      resolveWithElement(el);
+    }, listenerOptions);
+    if (shouldAppend)
+      el = document.head.appendChild(el);
+    if (!waitForScriptLoad)
+      resolveWithElement(el);
+  });
+  const load = (waitForScriptLoad = true) => {
+    if (!_promise)
+      _promise = loadScript(waitForScriptLoad);
+    return _promise;
+  };
+  const unload = () => {
+    if (!document)
+      return;
+    _promise = null;
+    if (scriptTag.value)
+      scriptTag.value = null;
+    const el = document.querySelector(`script[src="${core_toValue(src)}"]`);
+    if (el)
+      document.head.removeChild(el);
+  };
+  if (immediate && !manual)
+    core_tryOnMounted(load);
+  if (!manual)
+    core_tryOnUnmounted(unload);
+  return { scriptTag, load, unload };
+}
+
+function checkOverflowScroll(ele) {
+  const style = window.getComputedStyle(ele);
+  if (style.overflowX === "scroll" || style.overflowY === "scroll" || style.overflowX === "auto" && ele.clientWidth < ele.scrollWidth || style.overflowY === "auto" && ele.clientHeight < ele.scrollHeight) {
+    return true;
+  } else {
+    const parent = ele.parentNode;
+    if (!parent || parent.tagName === "BODY")
+      return false;
+    return checkOverflowScroll(parent);
+  }
+}
+function preventDefault(rawEvent) {
+  const e = rawEvent || window.event;
+  const _target = e.target;
+  if (checkOverflowScroll(_target))
+    return false;
+  if (e.touches.length > 1)
+    return true;
+  if (e.preventDefault)
+    e.preventDefault();
+  return false;
+}
+const elInitialOverflow = /* @__PURE__ */ new WeakMap();
+function useScrollLock(element, initialState = false) {
+  const isLocked = core_shallowRef(initialState);
+  let stopTouchMoveListener = null;
+  let initialOverflow = "";
+  core_watch(core_toRef(element), (el) => {
+    const target = resolveElement(core_toValue(el));
+    if (target) {
+      const ele = target;
+      if (!elInitialOverflow.get(ele))
+        elInitialOverflow.set(ele, ele.style.overflow);
+      if (ele.style.overflow !== "hidden")
+        initialOverflow = ele.style.overflow;
+      if (ele.style.overflow === "hidden")
+        return isLocked.value = true;
+      if (isLocked.value)
+        return ele.style.overflow = "hidden";
+    }
+  }, {
+    immediate: true
+  });
+  const lock = () => {
+    const el = resolveElement(core_toValue(element));
+    if (!el || isLocked.value)
+      return;
+    if (core_isIOS) {
+      stopTouchMoveListener = useEventListener(
+        el,
+        "touchmove",
+        (e) => {
+          preventDefault(e);
+        },
+        { passive: false }
+      );
+    }
+    el.style.overflow = "hidden";
+    isLocked.value = true;
+  };
+  const unlock = () => {
+    const el = resolveElement(core_toValue(element));
+    if (!el || !isLocked.value)
+      return;
+    if (core_isIOS)
+      stopTouchMoveListener == null ? void 0 : stopTouchMoveListener();
+    el.style.overflow = initialOverflow;
+    elInitialOverflow.delete(el);
+    isLocked.value = false;
+  };
+  core_tryOnScopeDispose(unlock);
+  return core_computed({
+    get() {
+      return isLocked.value;
+    },
+    set(v) {
+      if (v)
+        lock();
+      else unlock();
+    }
+  });
+}
+
+function useSessionStorage(key, initialValue, options = {}) {
+  const { window = defaultWindow } = options;
+  return useStorage(key, initialValue, window == null ? void 0 : window.sessionStorage, options);
+}
+
+function useShare(shareOptions = {}, options = {}) {
+  const { navigator = defaultNavigator } = options;
+  const _navigator = navigator;
+  const isSupported = useSupported(() => _navigator && "canShare" in _navigator);
+  const share = async (overrideOptions = {}) => {
+    if (isSupported.value) {
+      const data = {
+        ...core_toValue(shareOptions),
+        ...core_toValue(overrideOptions)
+      };
+      let granted = true;
+      if (data.files && _navigator.canShare)
+        granted = _navigator.canShare({ files: data.files });
+      if (granted)
+        return _navigator.share(data);
+    }
+  };
+  return {
+    isSupported,
+    share
+  };
+}
+
+const defaultSortFn = (source, compareFn) => source.sort(compareFn);
+const defaultCompare = (a, b) => a - b;
+function useSorted(...args) {
+  var _a, _b, _c, _d;
+  const [source] = args;
+  let compareFn = defaultCompare;
+  let options = {};
+  if (args.length === 2) {
+    if (typeof args[1] === "object") {
+      options = args[1];
+      compareFn = (_a = options.compareFn) != null ? _a : defaultCompare;
+    } else {
+      compareFn = (_b = args[1]) != null ? _b : defaultCompare;
+    }
+  } else if (args.length > 2) {
+    compareFn = (_c = args[1]) != null ? _c : defaultCompare;
+    options = (_d = args[2]) != null ? _d : {};
+  }
+  const {
+    dirty = false,
+    sortFn = defaultSortFn
+  } = options;
+  if (!dirty)
+    return core_computed(() => sortFn([...core_toValue(source)], compareFn));
+  core_watchEffect(() => {
+    const result = sortFn(core_toValue(source), compareFn);
+    if (core_isRef(source))
+      source.value = result;
+    else
+      source.splice(0, source.length, ...result);
+  });
+  return source;
+}
+
+function useSpeechRecognition(options = {}) {
+  const {
+    interimResults = true,
+    continuous = true,
+    maxAlternatives = 1,
+    window = defaultWindow
+  } = options;
+  const lang = core_toRef(options.lang || "en-US");
+  const isListening = core_shallowRef(false);
+  const isFinal = core_shallowRef(false);
+  const result = core_shallowRef("");
+  const error = core_shallowRef(void 0);
+  let recognition;
+  const start = () => {
+    isListening.value = true;
+  };
+  const stop = () => {
+    isListening.value = false;
+  };
+  const toggle = (value = !isListening.value) => {
+    if (value) {
+      start();
+    } else {
+      stop();
+    }
+  };
+  const SpeechRecognition = window && (window.SpeechRecognition || window.webkitSpeechRecognition);
+  const isSupported = useSupported(() => SpeechRecognition);
+  if (isSupported.value) {
+    recognition = new SpeechRecognition();
+    recognition.continuous = continuous;
+    recognition.interimResults = interimResults;
+    recognition.lang = core_toValue(lang);
+    recognition.maxAlternatives = maxAlternatives;
+    recognition.onstart = () => {
+      isListening.value = true;
+      isFinal.value = false;
+    };
+    core_watch(lang, (lang2) => {
+      if (recognition && !isListening.value)
+        recognition.lang = lang2;
+    });
+    recognition.onresult = (event) => {
+      const currentResult = event.results[event.resultIndex];
+      const { transcript } = currentResult[0];
+      isFinal.value = currentResult.isFinal;
+      result.value = transcript;
+      error.value = void 0;
+    };
+    recognition.onerror = (event) => {
+      error.value = event;
+    };
+    recognition.onend = () => {
+      isListening.value = false;
+      recognition.lang = core_toValue(lang);
+    };
+    core_watch(isListening, (newValue, oldValue) => {
+      if (newValue === oldValue)
+        return;
+      if (newValue)
+        recognition.start();
+      else
+        recognition.stop();
+    });
+  }
+  core_tryOnScopeDispose(() => {
+    stop();
+  });
+  return {
+    isSupported,
+    isListening,
+    isFinal,
+    recognition,
+    result,
+    error,
+    toggle,
+    start,
+    stop
+  };
+}
+
+function useSpeechSynthesis(text, options = {}) {
+  const {
+    pitch = 1,
+    rate = 1,
+    volume = 1,
+    window = defaultWindow
+  } = options;
+  const synth = window && window.speechSynthesis;
+  const isSupported = useSupported(() => synth);
+  const isPlaying = core_shallowRef(false);
+  const status = core_shallowRef("init");
+  const spokenText = core_toRef(text || "");
+  const lang = core_toRef(options.lang || "en-US");
+  const error = core_shallowRef(void 0);
+  const toggle = (value = !isPlaying.value) => {
+    isPlaying.value = value;
+  };
+  const bindEventsForUtterance = (utterance2) => {
+    utterance2.lang = core_toValue(lang);
+    utterance2.voice = core_toValue(options.voice) || null;
+    utterance2.pitch = core_toValue(pitch);
+    utterance2.rate = core_toValue(rate);
+    utterance2.volume = volume;
+    utterance2.onstart = () => {
+      isPlaying.value = true;
+      status.value = "play";
+    };
+    utterance2.onpause = () => {
+      isPlaying.value = false;
+      status.value = "pause";
+    };
+    utterance2.onresume = () => {
+      isPlaying.value = true;
+      status.value = "play";
+    };
+    utterance2.onend = () => {
+      isPlaying.value = false;
+      status.value = "end";
+    };
+    utterance2.onerror = (event) => {
+      error.value = event;
+    };
+  };
+  const utterance = core_computed(() => {
+    isPlaying.value = false;
+    status.value = "init";
+    const newUtterance = new SpeechSynthesisUtterance(spokenText.value);
+    bindEventsForUtterance(newUtterance);
+    return newUtterance;
+  });
+  const speak = () => {
+    synth.cancel();
+    if (utterance)
+      synth.speak(utterance.value);
+  };
+  const stop = () => {
+    synth.cancel();
+    isPlaying.value = false;
+  };
+  if (isSupported.value) {
+    bindEventsForUtterance(utterance.value);
+    core_watch(lang, (lang2) => {
+      if (utterance.value && !isPlaying.value)
+        utterance.value.lang = lang2;
+    });
+    if (options.voice) {
+      core_watch(options.voice, () => {
+        synth.cancel();
+      });
+    }
+    core_watch(isPlaying, () => {
+      if (isPlaying.value)
+        synth.resume();
+      else
+        synth.pause();
+    });
+  }
+  core_tryOnScopeDispose(() => {
+    isPlaying.value = false;
+  });
+  return {
+    isSupported,
+    isPlaying,
+    status,
+    utterance,
+    error,
+    stop,
+    toggle,
+    speak
+  };
+}
+
+function useStepper(steps, initialStep) {
+  const stepsRef = core_ref(steps);
+  const stepNames = core_computed(() => Array.isArray(stepsRef.value) ? stepsRef.value : Object.keys(stepsRef.value));
+  const index = core_ref(stepNames.value.indexOf(initialStep != null ? initialStep : stepNames.value[0]));
+  const current = core_computed(() => at(index.value));
+  const isFirst = core_computed(() => index.value === 0);
+  const isLast = core_computed(() => index.value === stepNames.value.length - 1);
+  const next = core_computed(() => stepNames.value[index.value + 1]);
+  const previous = core_computed(() => stepNames.value[index.value - 1]);
+  function at(index2) {
+    if (Array.isArray(stepsRef.value))
+      return stepsRef.value[index2];
+    return stepsRef.value[stepNames.value[index2]];
+  }
+  function get(step) {
+    if (!stepNames.value.includes(step))
+      return;
+    return at(stepNames.value.indexOf(step));
+  }
+  function goTo(step) {
+    if (stepNames.value.includes(step))
+      index.value = stepNames.value.indexOf(step);
+  }
+  function goToNext() {
+    if (isLast.value)
+      return;
+    index.value++;
+  }
+  function goToPrevious() {
+    if (isFirst.value)
+      return;
+    index.value--;
+  }
+  function goBackTo(step) {
+    if (isAfter(step))
+      goTo(step);
+  }
+  function isNext(step) {
+    return stepNames.value.indexOf(step) === index.value + 1;
+  }
+  function isPrevious(step) {
+    return stepNames.value.indexOf(step) === index.value - 1;
+  }
+  function isCurrent(step) {
+    return stepNames.value.indexOf(step) === index.value;
+  }
+  function isBefore(step) {
+    return index.value < stepNames.value.indexOf(step);
+  }
+  function isAfter(step) {
+    return index.value > stepNames.value.indexOf(step);
+  }
+  return {
+    steps: stepsRef,
+    stepNames,
+    index,
+    current,
+    next,
+    previous,
+    isFirst,
+    isLast,
+    at,
+    get,
+    goTo,
+    goToNext,
+    goToPrevious,
+    goBackTo,
+    isNext,
+    isPrevious,
+    isCurrent,
+    isBefore,
+    isAfter
+  };
+}
+
+function useStorageAsync(key, initialValue, storage, options = {}) {
+  var _a;
+  const {
+    flush = "pre",
+    deep = true,
+    listenToStorageChanges = true,
+    writeDefaults = true,
+    mergeDefaults = false,
+    shallow,
+    window = defaultWindow,
+    eventFilter,
+    onError = (e) => {
+      console.error(e);
+    }
+  } = options;
+  const rawInit = core_toValue(initialValue);
+  const type = guessSerializerType(rawInit);
+  const data = (shallow ? core_shallowRef : core_ref)(core_toValue(initialValue));
+  const serializer = (_a = options.serializer) != null ? _a : StorageSerializers[type];
+  if (!storage) {
+    try {
+      storage = getSSRHandler("getDefaultStorageAsync", () => {
+        var _a2;
+        return (_a2 = defaultWindow) == null ? void 0 : _a2.localStorage;
+      })();
+    } catch (e) {
+      onError(e);
+    }
+  }
+  async function read(event) {
+    if (!storage || event && event.key !== key)
+      return;
+    try {
+      const rawValue = event ? event.newValue : await storage.getItem(key);
+      if (rawValue == null) {
+        data.value = rawInit;
+        if (writeDefaults && rawInit !== null)
+          await storage.setItem(key, await serializer.write(rawInit));
+      } else if (mergeDefaults) {
+        const value = await serializer.read(rawValue);
+        if (typeof mergeDefaults === "function")
+          data.value = mergeDefaults(value, rawInit);
+        else if (type === "object" && !Array.isArray(value))
+          data.value = { ...rawInit, ...value };
+        else data.value = value;
+      } else {
+        data.value = await serializer.read(rawValue);
+      }
+    } catch (e) {
+      onError(e);
+    }
+  }
+  read();
+  if (window && listenToStorageChanges)
+    useEventListener(window, "storage", (e) => Promise.resolve().then(() => read(e)), { passive: true });
+  if (storage) {
+    core_watchWithFilter(
+      data,
+      async () => {
+        try {
+          if (data.value == null)
+            await storage.removeItem(key);
+          else
+            await storage.setItem(key, await serializer.write(data.value));
+        } catch (e) {
+          onError(e);
+        }
+      },
+      {
+        flush,
+        deep,
+        eventFilter
+      }
+    );
+  }
+  return data;
+}
+
+let _id = 0;
+function useStyleTag(css, options = {}) {
+  const isLoaded = core_shallowRef(false);
+  const {
+    document = defaultDocument,
+    immediate = true,
+    manual = false,
+    id = `vueuse_styletag_${++_id}`
+  } = options;
+  const cssRef = core_shallowRef(css);
+  let stop = () => {
+  };
+  const load = () => {
+    if (!document)
+      return;
+    const el = document.getElementById(id) || document.createElement("style");
+    if (!el.isConnected) {
+      el.id = id;
+      if (options.nonce)
+        el.nonce = options.nonce;
+      if (options.media)
+        el.media = options.media;
+      document.head.appendChild(el);
+    }
+    if (isLoaded.value)
+      return;
+    stop = core_watch(
+      cssRef,
+      (value) => {
+        el.textContent = value;
+      },
+      { immediate: true }
+    );
+    isLoaded.value = true;
+  };
+  const unload = () => {
+    if (!document || !isLoaded.value)
+      return;
+    stop();
+    document.head.removeChild(document.getElementById(id));
+    isLoaded.value = false;
+  };
+  if (immediate && !manual)
+    core_tryOnMounted(load);
+  if (!manual)
+    core_tryOnScopeDispose(unload);
+  return {
+    id,
+    css: cssRef,
+    unload,
+    load,
+    isLoaded: core_readonly(isLoaded)
+  };
+}
+
+function useSwipe(target, options = {}) {
+  const {
+    threshold = 50,
+    onSwipe,
+    onSwipeEnd,
+    onSwipeStart,
+    passive = true
+  } = options;
+  const coordsStart = core_reactive({ x: 0, y: 0 });
+  const coordsEnd = core_reactive({ x: 0, y: 0 });
+  const diffX = core_computed(() => coordsStart.x - coordsEnd.x);
+  const diffY = core_computed(() => coordsStart.y - coordsEnd.y);
+  const { max, abs } = Math;
+  const isThresholdExceeded = core_computed(() => max(abs(diffX.value), abs(diffY.value)) >= threshold);
+  const isSwiping = core_shallowRef(false);
+  const direction = core_computed(() => {
+    if (!isThresholdExceeded.value)
+      return "none";
+    if (abs(diffX.value) > abs(diffY.value)) {
+      return diffX.value > 0 ? "left" : "right";
+    } else {
+      return diffY.value > 0 ? "up" : "down";
+    }
+  });
+  const getTouchEventCoords = (e) => [e.touches[0].clientX, e.touches[0].clientY];
+  const updateCoordsStart = (x, y) => {
+    coordsStart.x = x;
+    coordsStart.y = y;
+  };
+  const updateCoordsEnd = (x, y) => {
+    coordsEnd.x = x;
+    coordsEnd.y = y;
+  };
+  const listenerOptions = { passive, capture: !passive };
+  const onTouchEnd = (e) => {
+    if (isSwiping.value)
+      onSwipeEnd == null ? void 0 : onSwipeEnd(e, direction.value);
+    isSwiping.value = false;
+  };
+  const stops = [
+    useEventListener(target, "touchstart", (e) => {
+      if (e.touches.length !== 1)
+        return;
+      const [x, y] = getTouchEventCoords(e);
+      updateCoordsStart(x, y);
+      updateCoordsEnd(x, y);
+      onSwipeStart == null ? void 0 : onSwipeStart(e);
+    }, listenerOptions),
+    useEventListener(target, "touchmove", (e) => {
+      if (e.touches.length !== 1)
+        return;
+      const [x, y] = getTouchEventCoords(e);
+      updateCoordsEnd(x, y);
+      if (listenerOptions.capture && !listenerOptions.passive && Math.abs(diffX.value) > Math.abs(diffY.value))
+        e.preventDefault();
+      if (!isSwiping.value && isThresholdExceeded.value)
+        isSwiping.value = true;
+      if (isSwiping.value)
+        onSwipe == null ? void 0 : onSwipe(e);
+    }, listenerOptions),
+    useEventListener(target, ["touchend", "touchcancel"], onTouchEnd, listenerOptions)
+  ];
+  const stop = () => stops.forEach((s) => s());
+  return {
+    isSwiping,
+    direction,
+    coordsStart,
+    coordsEnd,
+    lengthX: diffX,
+    lengthY: diffY,
+    stop,
+    // TODO: Remove in the next major version
+    isPassiveEventSupported: true
+  };
+}
+
+function useTemplateRefsList() {
+  const refs = core_ref([]);
+  refs.value.set = (el) => {
+    if (el)
+      refs.value.push(el);
+  };
+  core_onBeforeUpdate(() => {
+    refs.value.length = 0;
+  });
+  return refs;
+}
+
+function useTextDirection(options = {}) {
+  const {
+    document = defaultDocument,
+    selector = "html",
+    observe = false,
+    initialValue = "ltr"
+  } = options;
+  function getValue() {
+    var _a, _b;
+    return (_b = (_a = document == null ? void 0 : document.querySelector(selector)) == null ? void 0 : _a.getAttribute("dir")) != null ? _b : initialValue;
+  }
+  const dir = core_ref(getValue());
+  core_tryOnMounted(() => dir.value = getValue());
+  if (observe && document) {
+    useMutationObserver(
+      document.querySelector(selector),
+      () => dir.value = getValue(),
+      { attributes: true }
+    );
+  }
+  return core_computed({
+    get() {
+      return dir.value;
+    },
+    set(v) {
+      var _a, _b;
+      dir.value = v;
+      if (!document)
+        return;
+      if (dir.value)
+        (_a = document.querySelector(selector)) == null ? void 0 : _a.setAttribute("dir", dir.value);
+      else
+        (_b = document.querySelector(selector)) == null ? void 0 : _b.removeAttribute("dir");
+    }
+  });
+}
+
+function getRangesFromSelection(selection) {
+  var _a;
+  const rangeCount = (_a = selection.rangeCount) != null ? _a : 0;
+  return Array.from({ length: rangeCount }, (_, i) => selection.getRangeAt(i));
+}
+function useTextSelection(options = {}) {
+  const {
+    window = defaultWindow
+  } = options;
+  const selection = core_ref(null);
+  const text = core_computed(() => {
+    var _a, _b;
+    return (_b = (_a = selection.value) == null ? void 0 : _a.toString()) != null ? _b : "";
+  });
+  const ranges = core_computed(() => selection.value ? getRangesFromSelection(selection.value) : []);
+  const rects = core_computed(() => ranges.value.map((range) => range.getBoundingClientRect()));
+  function onSelectionChange() {
+    selection.value = null;
+    if (window)
+      selection.value = window.getSelection();
+  }
+  if (window)
+    useEventListener(window.document, "selectionchange", onSelectionChange, { passive: true });
+  return {
+    text,
+    rects,
+    ranges,
+    selection
+  };
+}
+
+function tryRequestAnimationFrame(window = defaultWindow, fn) {
+  if (window && typeof window.requestAnimationFrame === "function") {
+    window.requestAnimationFrame(fn);
+  } else {
+    fn();
+  }
+}
+function useTextareaAutosize(options = {}) {
+  var _a, _b;
+  const { window = defaultWindow } = options;
+  const textarea = core_toRef(options == null ? void 0 : options.element);
+  const input = core_toRef((_a = options == null ? void 0 : options.input) != null ? _a : "");
+  const styleProp = (_b = options == null ? void 0 : options.styleProp) != null ? _b : "height";
+  const textareaScrollHeight = core_shallowRef(1);
+  const textareaOldWidth = core_shallowRef(0);
+  function triggerResize() {
+    var _a2;
+    if (!textarea.value)
+      return;
+    let height = "";
+    textarea.value.style[styleProp] = "1px";
+    textareaScrollHeight.value = (_a2 = textarea.value) == null ? void 0 : _a2.scrollHeight;
+    const _styleTarget = core_toValue(options == null ? void 0 : options.styleTarget);
+    if (_styleTarget)
+      _styleTarget.style[styleProp] = `${textareaScrollHeight.value}px`;
+    else
+      height = `${textareaScrollHeight.value}px`;
+    textarea.value.style[styleProp] = height;
+  }
+  core_watch([input, textarea], () => core_nextTick(triggerResize), { immediate: true });
+  core_watch(textareaScrollHeight, () => {
+    var _a2;
+    return (_a2 = options == null ? void 0 : options.onResize) == null ? void 0 : _a2.call(options);
+  });
+  useResizeObserver(textarea, ([{ contentRect }]) => {
+    if (textareaOldWidth.value === contentRect.width)
+      return;
+    tryRequestAnimationFrame(window, () => {
+      textareaOldWidth.value = contentRect.width;
+      triggerResize();
+    });
+  });
+  if (options == null ? void 0 : options.watch)
+    core_watch(options.watch, triggerResize, { immediate: true, deep: true });
+  return {
+    textarea,
+    input,
+    triggerResize
+  };
+}
+
+function useThrottledRefHistory(source, options = {}) {
+  const { throttle = 200, trailing = true } = options;
+  const filter = core_throttleFilter(throttle, trailing);
+  const history = useRefHistory(source, { ...options, eventFilter: filter });
+  return {
+    ...history
+  };
+}
+
+const DEFAULT_UNITS = [
+  { max: 6e4, value: 1e3, name: "second" },
+  { max: 276e4, value: 6e4, name: "minute" },
+  { max: 72e6, value: 36e5, name: "hour" },
+  { max: 5184e5, value: 864e5, name: "day" },
+  { max: 24192e5, value: 6048e5, name: "week" },
+  { max: 28512e6, value: 2592e6, name: "month" },
+  { max: Number.POSITIVE_INFINITY, value: 31536e6, name: "year" }
+];
+const DEFAULT_MESSAGES = {
+  justNow: "just now",
+  past: (n) => n.match(/\d/) ? `${n} ago` : n,
+  future: (n) => n.match(/\d/) ? `in ${n}` : n,
+  month: (n, past) => n === 1 ? past ? "last month" : "next month" : `${n} month${n > 1 ? "s" : ""}`,
+  year: (n, past) => n === 1 ? past ? "last year" : "next year" : `${n} year${n > 1 ? "s" : ""}`,
+  day: (n, past) => n === 1 ? past ? "yesterday" : "tomorrow" : `${n} day${n > 1 ? "s" : ""}`,
+  week: (n, past) => n === 1 ? past ? "last week" : "next week" : `${n} week${n > 1 ? "s" : ""}`,
+  hour: (n) => `${n} hour${n > 1 ? "s" : ""}`,
+  minute: (n) => `${n} minute${n > 1 ? "s" : ""}`,
+  second: (n) => `${n} second${n > 1 ? "s" : ""}`,
+  invalid: ""
+};
+function DEFAULT_FORMATTER(date) {
+  return date.toISOString().slice(0, 10);
+}
+function useTimeAgo(time, options = {}) {
+  const {
+    controls: exposeControls = false,
+    updateInterval = 3e4
+  } = options;
+  const { now, ...controls } = useNow({ interval: updateInterval, controls: true });
+  const timeAgo = core_computed(() => formatTimeAgo(new Date(core_toValue(time)), options, core_toValue(now)));
+  if (exposeControls) {
+    return {
+      timeAgo,
+      ...controls
+    };
+  } else {
+    return timeAgo;
+  }
+}
+function formatTimeAgo(from, options = {}, now = Date.now()) {
+  var _a;
+  const {
+    max,
+    messages = DEFAULT_MESSAGES,
+    fullDateFormatter = DEFAULT_FORMATTER,
+    units = DEFAULT_UNITS,
+    showSecond = false,
+    rounding = "round"
+  } = options;
+  const roundFn = typeof rounding === "number" ? (n) => +n.toFixed(rounding) : Math[rounding];
+  const diff = +now - +from;
+  const absDiff = Math.abs(diff);
+  function getValue(diff2, unit) {
+    return roundFn(Math.abs(diff2) / unit.value);
+  }
+  function format(diff2, unit) {
+    const val = getValue(diff2, unit);
+    const past = diff2 > 0;
+    const str = applyFormat(unit.name, val, past);
+    return applyFormat(past ? "past" : "future", str, past);
+  }
+  function applyFormat(name, val, isPast) {
+    const formatter = messages[name];
+    if (typeof formatter === "function")
+      return formatter(val, isPast);
+    return formatter.replace("{0}", val.toString());
+  }
+  if (absDiff < 6e4 && !showSecond)
+    return messages.justNow;
+  if (typeof max === "number" && absDiff > max)
+    return fullDateFormatter(new Date(from));
+  if (typeof max === "string") {
+    const unitMax = (_a = units.find((i) => i.name === max)) == null ? void 0 : _a.max;
+    if (unitMax && absDiff > unitMax)
+      return fullDateFormatter(new Date(from));
+  }
+  for (const [idx, unit] of units.entries()) {
+    const val = getValue(diff, unit);
+    if (val <= 0 && units[idx - 1])
+      return format(diff, units[idx - 1]);
+    if (absDiff < unit.max)
+      return format(diff, unit);
+  }
+  return messages.invalid;
+}
+
+function useTimeoutPoll(fn, interval, options = {}) {
+  const {
+    immediate = true,
+    immediateCallback = false
+  } = options;
+  const { start } = core_useTimeoutFn(loop, interval, { immediate });
+  const isActive = core_shallowRef(false);
+  async function loop() {
+    if (!isActive.value)
+      return;
+    await fn();
+    start();
+  }
+  function resume() {
+    if (!isActive.value) {
+      isActive.value = true;
+      if (immediateCallback)
+        fn();
+      start();
+    }
+  }
+  function pause() {
+    isActive.value = false;
+  }
+  if (immediate && core_isClient)
+    resume();
+  core_tryOnScopeDispose(pause);
+  return {
+    isActive,
+    pause,
+    resume
+  };
+}
+
+function useTimestamp(options = {}) {
+  const {
+    controls: exposeControls = false,
+    offset = 0,
+    immediate = true,
+    interval = "requestAnimationFrame",
+    callback
+  } = options;
+  const ts = core_shallowRef(core_timestamp() + offset);
+  const update = () => ts.value = core_timestamp() + offset;
+  const cb = callback ? () => {
+    update();
+    callback(ts.value);
+  } : update;
+  const controls = interval === "requestAnimationFrame" ? useRafFn(cb, { immediate }) : core_useIntervalFn(cb, interval, { immediate });
+  if (exposeControls) {
+    return {
+      timestamp: ts,
+      ...controls
+    };
+  } else {
+    return ts;
+  }
+}
+
+function useTitle(newTitle = null, options = {}) {
+  var _a, _b, _c;
+  const {
+    document = defaultDocument,
+    restoreOnUnmount = (t) => t
+  } = options;
+  const originalTitle = (_a = document == null ? void 0 : document.title) != null ? _a : "";
+  const title = core_toRef((_b = newTitle != null ? newTitle : document == null ? void 0 : document.title) != null ? _b : null);
+  const isReadonly = !!(newTitle && typeof newTitle === "function");
+  function format(t) {
+    if (!("titleTemplate" in options))
+      return t;
+    const template = options.titleTemplate || "%s";
+    return typeof template === "function" ? template(t) : core_toValue(template).replace(/%s/g, t);
+  }
+  core_watch(
+    title,
+    (newValue, oldValue) => {
+      if (newValue !== oldValue && document)
+        document.title = format(newValue != null ? newValue : "");
+    },
+    { immediate: true }
+  );
+  if (options.observe && !options.titleTemplate && document && !isReadonly) {
+    useMutationObserver(
+      (_c = document.head) == null ? void 0 : _c.querySelector("title"),
+      () => {
+        if (document && document.title !== title.value)
+          title.value = format(document.title);
+      },
+      { childList: true }
+    );
+  }
+  core_tryOnScopeDispose(() => {
+    if (restoreOnUnmount) {
+      const restoredTitle = restoreOnUnmount(originalTitle, title.value || "");
+      if (restoredTitle != null && document)
+        document.title = restoredTitle;
+    }
+  });
+  return title;
+}
+
+const _TransitionPresets = {
+  easeInSine: [0.12, 0, 0.39, 0],
+  easeOutSine: [0.61, 1, 0.88, 1],
+  easeInOutSine: [0.37, 0, 0.63, 1],
+  easeInQuad: [0.11, 0, 0.5, 0],
+  easeOutQuad: [0.5, 1, 0.89, 1],
+  easeInOutQuad: [0.45, 0, 0.55, 1],
+  easeInCubic: [0.32, 0, 0.67, 0],
+  easeOutCubic: [0.33, 1, 0.68, 1],
+  easeInOutCubic: [0.65, 0, 0.35, 1],
+  easeInQuart: [0.5, 0, 0.75, 0],
+  easeOutQuart: [0.25, 1, 0.5, 1],
+  easeInOutQuart: [0.76, 0, 0.24, 1],
+  easeInQuint: [0.64, 0, 0.78, 0],
+  easeOutQuint: [0.22, 1, 0.36, 1],
+  easeInOutQuint: [0.83, 0, 0.17, 1],
+  easeInExpo: [0.7, 0, 0.84, 0],
+  easeOutExpo: [0.16, 1, 0.3, 1],
+  easeInOutExpo: [0.87, 0, 0.13, 1],
+  easeInCirc: [0.55, 0, 1, 0.45],
+  easeOutCirc: [0, 0.55, 0.45, 1],
+  easeInOutCirc: [0.85, 0, 0.15, 1],
+  easeInBack: [0.36, 0, 0.66, -0.56],
+  easeOutBack: [0.34, 1.56, 0.64, 1],
+  easeInOutBack: [0.68, -0.6, 0.32, 1.6]
+};
+const TransitionPresets = /* @__PURE__ */ Object.assign({}, { linear: identity }, _TransitionPresets);
+function createEasingFunction([p0, p1, p2, p3]) {
+  const a = (a1, a2) => 1 - 3 * a2 + 3 * a1;
+  const b = (a1, a2) => 3 * a2 - 6 * a1;
+  const c = (a1) => 3 * a1;
+  const calcBezier = (t, a1, a2) => ((a(a1, a2) * t + b(a1, a2)) * t + c(a1)) * t;
+  const getSlope = (t, a1, a2) => 3 * a(a1, a2) * t * t + 2 * b(a1, a2) * t + c(a1);
+  const getTforX = (x) => {
+    let aGuessT = x;
+    for (let i = 0; i < 4; ++i) {
+      const currentSlope = getSlope(aGuessT, p0, p2);
+      if (currentSlope === 0)
+        return aGuessT;
+      const currentX = calcBezier(aGuessT, p0, p2) - x;
+      aGuessT -= currentX / currentSlope;
+    }
+    return aGuessT;
+  };
+  return (x) => p0 === p1 && p2 === p3 ? x : calcBezier(getTforX(x), p1, p3);
+}
+function lerp(a, b, alpha) {
+  return a + alpha * (b - a);
+}
+function toVec(t) {
+  return (typeof t === "number" ? [t] : t) || [];
+}
+function executeTransition(source, from, to, options = {}) {
+  var _a, _b;
+  const fromVal = core_toValue(from);
+  const toVal = core_toValue(to);
+  const v1 = toVec(fromVal);
+  const v2 = toVec(toVal);
+  const duration = (_a = core_toValue(options.duration)) != null ? _a : 1e3;
+  const startedAt = Date.now();
+  const endAt = Date.now() + duration;
+  const trans = typeof options.transition === "function" ? options.transition : (_b = core_toValue(options.transition)) != null ? _b : core_identity;
+  const ease = typeof trans === "function" ? trans : createEasingFunction(trans);
+  return new Promise((resolve) => {
+    source.value = fromVal;
+    const tick = () => {
+      var _a2;
+      if ((_a2 = options.abort) == null ? void 0 : _a2.call(options)) {
+        resolve();
+        return;
+      }
+      const now = Date.now();
+      const alpha = ease((now - startedAt) / duration);
+      const arr = toVec(source.value).map((n, i) => lerp(v1[i], v2[i], alpha));
+      if (Array.isArray(source.value))
+        source.value = arr.map((n, i) => {
+          var _a3, _b2;
+          return lerp((_a3 = v1[i]) != null ? _a3 : 0, (_b2 = v2[i]) != null ? _b2 : 0, alpha);
+        });
+      else if (typeof source.value === "number")
+        source.value = arr[0];
+      if (now < endAt) {
+        requestAnimationFrame(tick);
+      } else {
+        source.value = toVal;
+        resolve();
+      }
+    };
+    tick();
+  });
+}
+function useTransition(source, options = {}) {
+  let currentId = 0;
+  const sourceVal = () => {
+    const v = core_toValue(source);
+    return typeof v === "number" ? v : v.map(core_toValue);
+  };
+  const outputRef = core_ref(sourceVal());
+  core_watch(sourceVal, async (to) => {
+    var _a, _b;
+    if (core_toValue(options.disabled))
+      return;
+    const id = ++currentId;
+    if (options.delay)
+      await core_promiseTimeout(core_toValue(options.delay));
+    if (id !== currentId)
+      return;
+    const toVal = Array.isArray(to) ? to.map(core_toValue) : core_toValue(to);
+    (_a = options.onStarted) == null ? void 0 : _a.call(options);
+    await executeTransition(outputRef, outputRef.value, toVal, {
+      ...options,
+      abort: () => {
+        var _a2;
+        return id !== currentId || ((_a2 = options.abort) == null ? void 0 : _a2.call(options));
+      }
+    });
+    (_b = options.onFinished) == null ? void 0 : _b.call(options);
+  }, { deep: true });
+  core_watch(() => core_toValue(options.disabled), (disabled) => {
+    if (disabled) {
+      currentId++;
+      outputRef.value = sourceVal();
+    }
+  });
+  core_tryOnScopeDispose(() => {
+    currentId++;
+  });
+  return core_computed(() => core_toValue(options.disabled) ? sourceVal() : outputRef.value);
+}
+
+function useUrlSearchParams(mode = "history", options = {}) {
+  const {
+    initialValue = {},
+    removeNullishValues = true,
+    removeFalsyValues = false,
+    write: enableWrite = true,
+    writeMode = "replace",
+    window = defaultWindow,
+    stringify = (params) => params.toString()
+  } = options;
+  if (!window)
+    return core_reactive(initialValue);
+  const state = core_reactive({});
+  function getRawParams() {
+    if (mode === "history") {
+      return window.location.search || "";
+    } else if (mode === "hash") {
+      const hash = window.location.hash || "";
+      const index = hash.indexOf("?");
+      return index > 0 ? hash.slice(index) : "";
+    } else {
+      return (window.location.hash || "").replace(/^#/, "");
+    }
+  }
+  function constructQuery(params) {
+    const stringified = stringify(params);
+    if (mode === "history")
+      return `${stringified ? `?${stringified}` : ""}${window.location.hash || ""}`;
+    if (mode === "hash-params")
+      return `${window.location.search || ""}${stringified ? `#${stringified}` : ""}`;
+    const hash = window.location.hash || "#";
+    const index = hash.indexOf("?");
+    if (index > 0)
+      return `${window.location.search || ""}${hash.slice(0, index)}${stringified ? `?${stringified}` : ""}`;
+    return `${window.location.search || ""}${hash}${stringified ? `?${stringified}` : ""}`;
+  }
+  function read() {
+    return new URLSearchParams(getRawParams());
+  }
+  function updateState(params) {
+    const unusedKeys = new Set(Object.keys(state));
+    for (const key of params.keys()) {
+      const paramsForKey = params.getAll(key);
+      state[key] = paramsForKey.length > 1 ? paramsForKey : params.get(key) || "";
+      unusedKeys.delete(key);
+    }
+    Array.from(unusedKeys).forEach((key) => delete state[key]);
+  }
+  const { pause, resume } = pausableWatch(
+    state,
+    () => {
+      const params = new URLSearchParams("");
+      Object.keys(state).forEach((key) => {
+        const mapEntry = state[key];
+        if (Array.isArray(mapEntry))
+          mapEntry.forEach((value) => params.append(key, value));
+        else if (removeNullishValues && mapEntry == null)
+          params.delete(key);
+        else if (removeFalsyValues && !mapEntry)
+          params.delete(key);
+        else
+          params.set(key, mapEntry);
+      });
+      write(params, false);
+    },
+    { deep: true }
+  );
+  function write(params, shouldUpdate) {
+    pause();
+    if (shouldUpdate)
+      updateState(params);
+    if (writeMode === "replace") {
+      window.history.replaceState(
+        window.history.state,
+        window.document.title,
+        window.location.pathname + constructQuery(params)
+      );
+    } else {
+      window.history.pushState(
+        window.history.state,
+        window.document.title,
+        window.location.pathname + constructQuery(params)
+      );
+    }
+    resume();
+  }
+  function onChanged() {
+    if (!enableWrite)
+      return;
+    write(read(), true);
+  }
+  const listenerOptions = { passive: true };
+  useEventListener(window, "popstate", onChanged, listenerOptions);
+  if (mode !== "history")
+    useEventListener(window, "hashchange", onChanged, listenerOptions);
+  const initial = read();
+  if (initial.keys().next().value)
+    updateState(initial);
+  else
+    Object.assign(state, initialValue);
+  return state;
+}
+
+function useUserMedia(options = {}) {
+  var _a, _b;
+  const enabled = core_shallowRef((_a = options.enabled) != null ? _a : false);
+  const autoSwitch = core_shallowRef((_b = options.autoSwitch) != null ? _b : true);
+  const constraints = core_ref(options.constraints);
+  const { navigator = defaultNavigator } = options;
+  const isSupported = useSupported(() => {
+    var _a2;
+    return (_a2 = navigator == null ? void 0 : navigator.mediaDevices) == null ? void 0 : _a2.getUserMedia;
+  });
+  const stream = core_shallowRef();
+  function getDeviceOptions(type) {
+    switch (type) {
+      case "video": {
+        if (constraints.value)
+          return constraints.value.video || false;
+        break;
+      }
+      case "audio": {
+        if (constraints.value)
+          return constraints.value.audio || false;
+        break;
+      }
+    }
+  }
+  async function _start() {
+    if (!isSupported.value || stream.value)
+      return;
+    stream.value = await navigator.mediaDevices.getUserMedia({
+      video: getDeviceOptions("video"),
+      audio: getDeviceOptions("audio")
+    });
+    return stream.value;
+  }
+  function _stop() {
+    var _a2;
+    (_a2 = stream.value) == null ? void 0 : _a2.getTracks().forEach((t) => t.stop());
+    stream.value = void 0;
+  }
+  function stop() {
+    _stop();
+    enabled.value = false;
+  }
+  async function start() {
+    await _start();
+    if (stream.value)
+      enabled.value = true;
+    return stream.value;
+  }
+  async function restart() {
+    _stop();
+    return await start();
+  }
+  core_watch(
+    enabled,
+    (v) => {
+      if (v)
+        _start();
+      else _stop();
+    },
+    { immediate: true }
+  );
+  core_watch(
+    constraints,
+    () => {
+      if (autoSwitch.value && stream.value)
+        restart();
+    },
+    { immediate: true }
+  );
+  core_tryOnScopeDispose(() => {
+    stop();
+  });
+  return {
+    isSupported,
+    stream,
+    start,
+    stop,
+    restart,
+    constraints,
+    enabled,
+    autoSwitch
+  };
+}
+
+function useVModel(props, key, emit, options = {}) {
+  var _a, _b, _c;
+  const {
+    clone = false,
+    passive = false,
+    eventName,
+    deep = false,
+    defaultValue,
+    shouldEmit
+  } = options;
+  const vm = core_getCurrentInstance();
+  const _emit = emit || (vm == null ? void 0 : vm.emit) || ((_a = vm == null ? void 0 : vm.$emit) == null ? void 0 : _a.bind(vm)) || ((_c = (_b = vm == null ? void 0 : vm.proxy) == null ? void 0 : _b.$emit) == null ? void 0 : _c.bind(vm == null ? void 0 : vm.proxy));
+  let event = eventName;
+  if (!key) {
+    key = "modelValue";
+  }
+  event = event || `update:${key.toString()}`;
+  const cloneFn = (val) => !clone ? val : typeof clone === "function" ? clone(val) : cloneFnJSON(val);
+  const getValue = () => core_isDef(props[key]) ? cloneFn(props[key]) : defaultValue;
+  const triggerEmit = (value) => {
+    if (shouldEmit) {
+      if (shouldEmit(value))
+        _emit(event, value);
+    } else {
+      _emit(event, value);
+    }
+  };
+  if (passive) {
+    const initialValue = getValue();
+    const proxy = core_ref(initialValue);
+    let isUpdating = false;
+    core_watch(
+      () => props[key],
+      (v) => {
+        if (!isUpdating) {
+          isUpdating = true;
+          proxy.value = cloneFn(v);
+          core_nextTick(() => isUpdating = false);
+        }
+      }
+    );
+    core_watch(
+      proxy,
+      (v) => {
+        if (!isUpdating && (v !== props[key] || deep))
+          triggerEmit(v);
+      },
+      { deep }
+    );
+    return proxy;
+  } else {
+    return core_computed({
+      get() {
+        return getValue();
+      },
+      set(value) {
+        triggerEmit(value);
+      }
+    });
+  }
+}
+
+function useVModels(props, emit, options = {}) {
+  const ret = {};
+  for (const key in props) {
+    ret[key] = useVModel(
+      props,
+      key,
+      emit,
+      options
+    );
+  }
+  return ret;
+}
+
+function useVibrate(options) {
+  const {
+    pattern = [],
+    interval = 0,
+    navigator = defaultNavigator
+  } = options || {};
+  const isSupported = useSupported(() => typeof navigator !== "undefined" && "vibrate" in navigator);
+  const patternRef = core_toRef(pattern);
+  let intervalControls;
+  const vibrate = (pattern2 = patternRef.value) => {
+    if (isSupported.value)
+      navigator.vibrate(pattern2);
+  };
+  const stop = () => {
+    if (isSupported.value)
+      navigator.vibrate(0);
+    intervalControls == null ? void 0 : intervalControls.pause();
+  };
+  if (interval > 0) {
+    intervalControls = core_useIntervalFn(
+      vibrate,
+      interval,
+      {
+        immediate: false,
+        immediateCallback: false
+      }
+    );
+  }
+  return {
+    isSupported,
+    pattern,
+    intervalControls,
+    vibrate,
+    stop
+  };
+}
+
+function useVirtualList(list, options) {
+  const { containerStyle, wrapperProps, scrollTo, calculateRange, currentList, containerRef } = "itemHeight" in options ? useVerticalVirtualList(options, list) : useHorizontalVirtualList(options, list);
+  return {
+    list: currentList,
+    scrollTo,
+    containerProps: {
+      ref: containerRef,
+      onScroll: () => {
+        calculateRange();
+      },
+      style: containerStyle
+    },
+    wrapperProps
+  };
+}
+function useVirtualListResources(list) {
+  const containerRef = core_shallowRef(null);
+  const size = useElementSize(containerRef);
+  const currentList = core_ref([]);
+  const source = core_shallowRef(list);
+  const state = core_ref({ start: 0, end: 10 });
+  return { state, source, currentList, size, containerRef };
+}
+function createGetViewCapacity(state, source, itemSize) {
+  return (containerSize) => {
+    if (typeof itemSize === "number")
+      return Math.ceil(containerSize / itemSize);
+    const { start = 0 } = state.value;
+    let sum = 0;
+    let capacity = 0;
+    for (let i = start; i < source.value.length; i++) {
+      const size = itemSize(i);
+      sum += size;
+      capacity = i;
+      if (sum > containerSize)
+        break;
+    }
+    return capacity - start;
+  };
+}
+function createGetOffset(source, itemSize) {
+  return (scrollDirection) => {
+    if (typeof itemSize === "number")
+      return Math.floor(scrollDirection / itemSize) + 1;
+    let sum = 0;
+    let offset = 0;
+    for (let i = 0; i < source.value.length; i++) {
+      const size = itemSize(i);
+      sum += size;
+      if (sum >= scrollDirection) {
+        offset = i;
+        break;
+      }
+    }
+    return offset + 1;
+  };
+}
+function createCalculateRange(type, overscan, getOffset, getViewCapacity, { containerRef, state, currentList, source }) {
+  return () => {
+    const element = containerRef.value;
+    if (element) {
+      const offset = getOffset(type === "vertical" ? element.scrollTop : element.scrollLeft);
+      const viewCapacity = getViewCapacity(type === "vertical" ? element.clientHeight : element.clientWidth);
+      const from = offset - overscan;
+      const to = offset + viewCapacity + overscan;
+      state.value = {
+        start: from < 0 ? 0 : from,
+        end: to > source.value.length ? source.value.length : to
+      };
+      currentList.value = source.value.slice(state.value.start, state.value.end).map((ele, index) => ({
+        data: ele,
+        index: index + state.value.start
+      }));
+    }
+  };
+}
+function createGetDistance(itemSize, source) {
+  return (index) => {
+    if (typeof itemSize === "number") {
+      const size2 = index * itemSize;
+      return size2;
+    }
+    const size = source.value.slice(0, index).reduce((sum, _, i) => sum + itemSize(i), 0);
+    return size;
+  };
+}
+function useWatchForSizes(size, list, containerRef, calculateRange) {
+  core_watch([size.width, size.height, list, containerRef], () => {
+    calculateRange();
+  });
+}
+function createComputedTotalSize(itemSize, source) {
+  return core_computed(() => {
+    if (typeof itemSize === "number")
+      return source.value.length * itemSize;
+    return source.value.reduce((sum, _, index) => sum + itemSize(index), 0);
+  });
+}
+const scrollToDictionaryForElementScrollKey = {
+  horizontal: "scrollLeft",
+  vertical: "scrollTop"
+};
+function createScrollTo(type, calculateRange, getDistance, containerRef) {
+  return (index) => {
+    if (containerRef.value) {
+      containerRef.value[scrollToDictionaryForElementScrollKey[type]] = getDistance(index);
+      calculateRange();
+    }
+  };
+}
+function useHorizontalVirtualList(options, list) {
+  const resources = useVirtualListResources(list);
+  const { state, source, currentList, size, containerRef } = resources;
+  const containerStyle = { overflowX: "auto" };
+  const { itemWidth, overscan = 5 } = options;
+  const getViewCapacity = createGetViewCapacity(state, source, itemWidth);
+  const getOffset = createGetOffset(source, itemWidth);
+  const calculateRange = createCalculateRange("horizontal", overscan, getOffset, getViewCapacity, resources);
+  const getDistanceLeft = createGetDistance(itemWidth, source);
+  const offsetLeft = core_computed(() => getDistanceLeft(state.value.start));
+  const totalWidth = createComputedTotalSize(itemWidth, source);
+  useWatchForSizes(size, list, containerRef, calculateRange);
+  const scrollTo = createScrollTo("horizontal", calculateRange, getDistanceLeft, containerRef);
+  const wrapperProps = core_computed(() => {
+    return {
+      style: {
+        height: "100%",
+        width: `${totalWidth.value - offsetLeft.value}px`,
+        marginLeft: `${offsetLeft.value}px`,
+        display: "flex"
+      }
+    };
+  });
+  return {
+    scrollTo,
+    calculateRange,
+    wrapperProps,
+    containerStyle,
+    currentList,
+    containerRef
+  };
+}
+function useVerticalVirtualList(options, list) {
+  const resources = useVirtualListResources(list);
+  const { state, source, currentList, size, containerRef } = resources;
+  const containerStyle = { overflowY: "auto" };
+  const { itemHeight, overscan = 5 } = options;
+  const getViewCapacity = createGetViewCapacity(state, source, itemHeight);
+  const getOffset = createGetOffset(source, itemHeight);
+  const calculateRange = createCalculateRange("vertical", overscan, getOffset, getViewCapacity, resources);
+  const getDistanceTop = createGetDistance(itemHeight, source);
+  const offsetTop = core_computed(() => getDistanceTop(state.value.start));
+  const totalHeight = createComputedTotalSize(itemHeight, source);
+  useWatchForSizes(size, list, containerRef, calculateRange);
+  const scrollTo = createScrollTo("vertical", calculateRange, getDistanceTop, containerRef);
+  const wrapperProps = core_computed(() => {
+    return {
+      style: {
+        width: "100%",
+        height: `${totalHeight.value - offsetTop.value}px`,
+        marginTop: `${offsetTop.value}px`
+      }
+    };
+  });
+  return {
+    calculateRange,
+    scrollTo,
+    containerStyle,
+    wrapperProps,
+    currentList,
+    containerRef
+  };
+}
+
+function useWakeLock(options = {}) {
+  const {
+    navigator = defaultNavigator,
+    document = defaultDocument
+  } = options;
+  const requestedType = core_shallowRef(false);
+  const sentinel = core_shallowRef(null);
+  const documentVisibility = useDocumentVisibility({ document });
+  const isSupported = useSupported(() => navigator && "wakeLock" in navigator);
+  const isActive = core_computed(() => !!sentinel.value && documentVisibility.value === "visible");
+  if (isSupported.value) {
+    useEventListener(sentinel, "release", () => {
+      var _a, _b;
+      requestedType.value = (_b = (_a = sentinel.value) == null ? void 0 : _a.type) != null ? _b : false;
+    }, { passive: true });
+    core_whenever(
+      () => documentVisibility.value === "visible" && (document == null ? void 0 : document.visibilityState) === "visible" && requestedType.value,
+      (type) => {
+        requestedType.value = false;
+        forceRequest(type);
+      }
+    );
+  }
+  async function forceRequest(type) {
+    var _a;
+    await ((_a = sentinel.value) == null ? void 0 : _a.release());
+    sentinel.value = isSupported.value ? await navigator.wakeLock.request(type) : null;
+  }
+  async function request(type) {
+    if (documentVisibility.value === "visible")
+      await forceRequest(type);
+    else
+      requestedType.value = type;
+  }
+  async function release() {
+    requestedType.value = false;
+    const s = sentinel.value;
+    sentinel.value = null;
+    await (s == null ? void 0 : s.release());
+  }
+  return {
+    sentinel,
+    isSupported,
+    isActive,
+    request,
+    forceRequest,
+    release
+  };
+}
+
+function useWebNotification(options = {}) {
+  const {
+    window = defaultWindow,
+    requestPermissions: _requestForPermissions = true
+  } = options;
+  const defaultWebNotificationOptions = options;
+  const isSupported = useSupported(() => {
+    if (!window || !("Notification" in window))
+      return false;
+    if (Notification.permission === "granted")
+      return true;
+    try {
+      const notification2 = new Notification("");
+      notification2.onshow = () => {
+        notification2.close();
+      };
+    } catch (e) {
+      if (e.name === "TypeError")
+        return false;
+    }
+    return true;
+  });
+  const permissionGranted = core_shallowRef(isSupported.value && "permission" in Notification && Notification.permission === "granted");
+  const notification = core_ref(null);
+  const ensurePermissions = async () => {
+    if (!isSupported.value)
+      return;
+    if (!permissionGranted.value && Notification.permission !== "denied") {
+      const result = await Notification.requestPermission();
+      if (result === "granted")
+        permissionGranted.value = true;
+    }
+    return permissionGranted.value;
+  };
+  const { on: onClick, trigger: clickTrigger } = core_createEventHook();
+  const { on: onShow, trigger: showTrigger } = core_createEventHook();
+  const { on: onError, trigger: errorTrigger } = core_createEventHook();
+  const { on: onClose, trigger: closeTrigger } = core_createEventHook();
+  const show = async (overrides) => {
+    if (!isSupported.value || !permissionGranted.value)
+      return;
+    const options2 = Object.assign({}, defaultWebNotificationOptions, overrides);
+    notification.value = new Notification(options2.title || "", options2);
+    notification.value.onclick = clickTrigger;
+    notification.value.onshow = showTrigger;
+    notification.value.onerror = errorTrigger;
+    notification.value.onclose = closeTrigger;
+    return notification.value;
+  };
+  const close = () => {
+    if (notification.value)
+      notification.value.close();
+    notification.value = null;
+  };
+  if (_requestForPermissions)
+    core_tryOnMounted(ensurePermissions);
+  core_tryOnScopeDispose(close);
+  if (isSupported.value && window) {
+    const document = window.document;
+    useEventListener(document, "visibilitychange", (e) => {
+      e.preventDefault();
+      if (document.visibilityState === "visible") {
+        close();
+      }
+    });
+  }
+  return {
+    isSupported,
+    notification,
+    ensurePermissions,
+    permissionGranted,
+    show,
+    close,
+    onClick,
+    onShow,
+    onError,
+    onClose
+  };
+}
+
+const DEFAULT_PING_MESSAGE = "ping";
+function resolveNestedOptions(options) {
+  if (options === true)
+    return {};
+  return options;
+}
+function useWebSocket(url, options = {}) {
+  const {
+    onConnected,
+    onDisconnected,
+    onError,
+    onMessage,
+    immediate = true,
+    autoConnect = true,
+    autoClose = true,
+    protocols = []
+  } = options;
+  const data = core_ref(null);
+  const status = core_shallowRef("CLOSED");
+  const wsRef = core_ref();
+  const urlRef = core_toRef(url);
+  let heartbeatPause;
+  let heartbeatResume;
+  let explicitlyClosed = false;
+  let retried = 0;
+  let bufferedData = [];
+  let retryTimeout;
+  let pongTimeoutWait;
+  const _sendBuffer = () => {
+    if (bufferedData.length && wsRef.value && status.value === "OPEN") {
+      for (const buffer of bufferedData)
+        wsRef.value.send(buffer);
+      bufferedData = [];
+    }
+  };
+  const resetRetry = () => {
+    if (retryTimeout != null) {
+      clearTimeout(retryTimeout);
+      retryTimeout = void 0;
+    }
+  };
+  const resetHeartbeat = () => {
+    clearTimeout(pongTimeoutWait);
+    pongTimeoutWait = void 0;
+  };
+  const close = (code = 1e3, reason) => {
+    resetRetry();
+    if (!core_isClient && !core_isWorker || !wsRef.value)
+      return;
+    explicitlyClosed = true;
+    resetHeartbeat();
+    heartbeatPause == null ? void 0 : heartbeatPause();
+    wsRef.value.close(code, reason);
+    wsRef.value = void 0;
+  };
+  const send = (data2, useBuffer = true) => {
+    if (!wsRef.value || status.value !== "OPEN") {
+      if (useBuffer)
+        bufferedData.push(data2);
+      return false;
+    }
+    _sendBuffer();
+    wsRef.value.send(data2);
+    return true;
+  };
+  const _init = () => {
+    if (explicitlyClosed || typeof urlRef.value === "undefined")
+      return;
+    const ws = new WebSocket(urlRef.value, protocols);
+    wsRef.value = ws;
+    status.value = "CONNECTING";
+    ws.onopen = () => {
+      status.value = "OPEN";
+      retried = 0;
+      onConnected == null ? void 0 : onConnected(ws);
+      heartbeatResume == null ? void 0 : heartbeatResume();
+      _sendBuffer();
+    };
+    ws.onclose = (ev) => {
+      status.value = "CLOSED";
+      resetHeartbeat();
+      heartbeatPause == null ? void 0 : heartbeatPause();
+      onDisconnected == null ? void 0 : onDisconnected(ws, ev);
+      if (!explicitlyClosed && options.autoReconnect && (wsRef.value == null || ws === wsRef.value)) {
+        const {
+          retries = -1,
+          delay = 1e3,
+          onFailed
+        } = resolveNestedOptions(options.autoReconnect);
+        const checkRetires = typeof retries === "function" ? retries : () => typeof retries === "number" && (retries < 0 || retried < retries);
+        if (checkRetires(retried)) {
+          retried += 1;
+          retryTimeout = setTimeout(_init, delay);
+        } else {
+          onFailed == null ? void 0 : onFailed();
+        }
+      }
+    };
+    ws.onerror = (e) => {
+      onError == null ? void 0 : onError(ws, e);
+    };
+    ws.onmessage = (e) => {
+      if (options.heartbeat) {
+        resetHeartbeat();
+        const {
+          message = DEFAULT_PING_MESSAGE,
+          responseMessage = message
+        } = resolveNestedOptions(options.heartbeat);
+        if (e.data === core_toValue(responseMessage))
+          return;
+      }
+      data.value = e.data;
+      onMessage == null ? void 0 : onMessage(ws, e);
+    };
+  };
+  if (options.heartbeat) {
+    const {
+      message = DEFAULT_PING_MESSAGE,
+      interval = 1e3,
+      pongTimeout = 1e3
+    } = resolveNestedOptions(options.heartbeat);
+    const { pause, resume } = core_useIntervalFn(
+      () => {
+        send(core_toValue(message), false);
+        if (pongTimeoutWait != null)
+          return;
+        pongTimeoutWait = setTimeout(() => {
+          close();
+          explicitlyClosed = false;
+        }, pongTimeout);
+      },
+      interval,
+      { immediate: false }
+    );
+    heartbeatPause = pause;
+    heartbeatResume = resume;
+  }
+  if (autoClose) {
+    if (core_isClient)
+      useEventListener("beforeunload", () => close(), { passive: true });
+    core_tryOnScopeDispose(close);
+  }
+  const open = () => {
+    if (!core_isClient && !core_isWorker)
+      return;
+    close();
+    explicitlyClosed = false;
+    retried = 0;
+    _init();
+  };
+  if (immediate)
+    open();
+  if (autoConnect)
+    core_watch(urlRef, open);
+  return {
+    data,
+    status,
+    close,
+    send,
+    open,
+    ws: wsRef
+  };
+}
+
+function useWebWorker(arg0, workerOptions, options) {
+  const {
+    window = defaultWindow
+  } = options != null ? options : {};
+  const data = core_ref(null);
+  const worker = core_shallowRef();
+  const post = (...args) => {
+    if (!worker.value)
+      return;
+    worker.value.postMessage(...args);
+  };
+  const terminate = function terminate2() {
+    if (!worker.value)
+      return;
+    worker.value.terminate();
+  };
+  if (window) {
+    if (typeof arg0 === "string")
+      worker.value = new Worker(arg0, workerOptions);
+    else if (typeof arg0 === "function")
+      worker.value = arg0();
+    else
+      worker.value = arg0;
+    worker.value.onmessage = (e) => {
+      data.value = e.data;
+    };
+    core_tryOnScopeDispose(() => {
+      if (worker.value)
+        worker.value.terminate();
+    });
+  }
+  return {
+    data,
+    post,
+    terminate,
+    worker
+  };
+}
+
+function depsParser(deps, localDeps) {
+  if (deps.length === 0 && localDeps.length === 0)
+    return "";
+  const depsString = deps.map((dep) => `'${dep}'`).toString();
+  const depsFunctionString = localDeps.filter((dep) => typeof dep === "function").map((fn) => {
+    const str = fn.toString();
+    if (str.trim().startsWith("function")) {
+      return str;
+    } else {
+      const name = fn.name;
+      return `const ${name} = ${str}`;
+    }
+  }).join(";");
+  const importString = `importScripts(${depsString});`;
+  return `${depsString.trim() === "" ? "" : importString} ${depsFunctionString}`;
+}
+
+function jobRunner(userFunc) {
+  return (e) => {
+    const userFuncArgs = e.data[0];
+    return Promise.resolve(userFunc.apply(void 0, userFuncArgs)).then((result) => {
+      postMessage(["SUCCESS", result]);
+    }).catch((error) => {
+      postMessage(["ERROR", error]);
+    });
+  };
+}
+
+function createWorkerBlobUrl(fn, deps, localDeps) {
+  const blobCode = `${depsParser(deps, localDeps)}; onmessage=(${jobRunner})(${fn})`;
+  const blob = new Blob([blobCode], { type: "text/javascript" });
+  const url = URL.createObjectURL(blob);
+  return url;
+}
+
+function useWebWorkerFn(fn, options = {}) {
+  const {
+    dependencies = [],
+    localDependencies = [],
+    timeout,
+    window = defaultWindow
+  } = options;
+  const worker = core_ref();
+  const workerStatus = core_shallowRef("PENDING");
+  const promise = core_ref({});
+  const timeoutId = core_shallowRef();
+  const workerTerminate = (status = "PENDING") => {
+    if (worker.value && worker.value._url && window) {
+      worker.value.terminate();
+      URL.revokeObjectURL(worker.value._url);
+      promise.value = {};
+      worker.value = void 0;
+      window.clearTimeout(timeoutId.value);
+      workerStatus.value = status;
+    }
+  };
+  workerTerminate();
+  core_tryOnScopeDispose(workerTerminate);
+  const generateWorker = () => {
+    const blobUrl = createWorkerBlobUrl(fn, dependencies, localDependencies);
+    const newWorker = new Worker(blobUrl);
+    newWorker._url = blobUrl;
+    newWorker.onmessage = (e) => {
+      const { resolve = () => {
+      }, reject = () => {
+      } } = promise.value;
+      const [status, result] = e.data;
+      switch (status) {
+        case "SUCCESS":
+          resolve(result);
+          workerTerminate(status);
+          break;
+        default:
+          reject(result);
+          workerTerminate("ERROR");
+          break;
+      }
+    };
+    newWorker.onerror = (e) => {
+      const { reject = () => {
+      } } = promise.value;
+      e.preventDefault();
+      reject(e);
+      workerTerminate("ERROR");
+    };
+    if (timeout) {
+      timeoutId.value = setTimeout(
+        () => workerTerminate("TIMEOUT_EXPIRED"),
+        timeout
+      );
+    }
+    return newWorker;
+  };
+  const callWorker = (...fnArgs) => new Promise((resolve, reject) => {
+    var _a;
+    promise.value = {
+      resolve,
+      reject
+    };
+    (_a = worker.value) == null ? void 0 : _a.postMessage([[...fnArgs]]);
+    workerStatus.value = "RUNNING";
+  });
+  const workerFn = (...fnArgs) => {
+    if (workerStatus.value === "RUNNING") {
+      console.error(
+        "[useWebWorkerFn] You can only run one instance of the worker at a time."
+      );
+      return Promise.reject();
+    }
+    worker.value = generateWorker();
+    return callWorker(...fnArgs);
+  };
+  return {
+    workerFn,
+    workerStatus,
+    workerTerminate
+  };
+}
+
+function useWindowFocus(options = {}) {
+  const { window = defaultWindow } = options;
+  if (!window)
+    return core_shallowRef(false);
+  const focused = core_shallowRef(window.document.hasFocus());
+  const listenerOptions = { passive: true };
+  useEventListener(window, "blur", () => {
+    focused.value = false;
+  }, listenerOptions);
+  useEventListener(window, "focus", () => {
+    focused.value = true;
+  }, listenerOptions);
+  return focused;
+}
+
+function useWindowScroll(options = {}) {
+  const { window = defaultWindow, ...rest } = options;
+  return useScroll(window, rest);
+}
+
+function useWindowSize(options = {}) {
+  const {
+    window = defaultWindow,
+    initialWidth = Number.POSITIVE_INFINITY,
+    initialHeight = Number.POSITIVE_INFINITY,
+    listenOrientation = true,
+    includeScrollbar = true,
+    type = "inner"
+  } = options;
+  const width = core_shallowRef(initialWidth);
+  const height = core_shallowRef(initialHeight);
+  const update = () => {
+    if (window) {
+      if (type === "outer") {
+        width.value = window.outerWidth;
+        height.value = window.outerHeight;
+      } else if (type === "visual" && window.visualViewport) {
+        const { width: visualViewportWidth, height: visualViewportHeight, scale } = window.visualViewport;
+        width.value = Math.round(visualViewportWidth * scale);
+        height.value = Math.round(visualViewportHeight * scale);
+      } else if (includeScrollbar) {
+        width.value = window.innerWidth;
+        height.value = window.innerHeight;
+      } else {
+        width.value = window.document.documentElement.clientWidth;
+        height.value = window.document.documentElement.clientHeight;
+      }
+    }
+  };
+  update();
+  core_tryOnMounted(update);
+  const listenerOptions = { passive: true };
+  useEventListener("resize", update, listenerOptions);
+  if (window && type === "visual" && window.visualViewport) {
+    useEventListener(window.visualViewport, "resize", update, listenerOptions);
+  }
+  if (listenOrientation) {
+    const matches = useMediaQuery("(orientation: portrait)");
+    core_watch(matches, () => update());
+  }
+  return { width, height };
+}
+
+
+
+
+/***/ },
+
+/***/ 42408
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   c: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _lib_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(78056);
+/* harmony import */ var _lib_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(59677);
 // https://nodejs.org/api/packages.html#packages_writing_dual_packages_while_avoiding_or_minimizing_hazards
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_lib_index_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
-/***/ }),
+/***/ },
 
-/***/ 39192:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ 33983
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  c: () => (/* reexport */ markdown_it_lib)
+  A: () => (/* reexport */ markdown_it_lib)
 });
 
 // NAMESPACE OBJECT: ../node_modules/mdurl/index.mjs
@@ -81049,7 +101188,7 @@ __webpack_require__.d(helpers_namespaceObject, {
   parseLinkTitle: () => (parseLinkTitle)
 });
 
-;// CONCATENATED MODULE: ../node_modules/mdurl/lib/decode.mjs
+;// ../node_modules/mdurl/lib/decode.mjs
 /* eslint-disable no-bitwise */
 
 const decodeCache = {}
@@ -81163,7 +101302,7 @@ decode.componentChars = ''
 
 /* harmony default export */ const lib_decode = (decode);
 
-;// CONCATENATED MODULE: ../node_modules/mdurl/lib/encode.mjs
+;// ../node_modules/mdurl/lib/encode.mjs
 const encodeCache = {}
 
 // Create a lookup array where anything but characters in `chars` string
@@ -81254,7 +101393,7 @@ encode.componentChars = "-_.!~*'()"
 
 /* harmony default export */ const lib_encode = (encode);
 
-;// CONCATENATED MODULE: ../node_modules/mdurl/lib/format.mjs
+;// ../node_modules/mdurl/lib/format.mjs
 function format (url) {
   let result = ''
 
@@ -81277,7 +101416,7 @@ function format (url) {
   return result
 };
 
-;// CONCATENATED MODULE: ../node_modules/mdurl/lib/parse.mjs
+;// ../node_modules/mdurl/lib/parse.mjs
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -81587,7 +101726,7 @@ Url.prototype.parseHost = function (host) {
 
 /* harmony default export */ const parse = (urlParse);
 
-;// CONCATENATED MODULE: ../node_modules/mdurl/index.mjs
+;// ../node_modules/mdurl/index.mjs
 
 
 
@@ -81595,19 +101734,19 @@ Url.prototype.parseHost = function (host) {
 
 
 
-;// CONCATENATED MODULE: ../node_modules/uc.micro/categories/P/regex.mjs
+;// ../node_modules/uc.micro/categories/P/regex.mjs
 /* harmony default export */ const regex = (/[!-#%-\*,-\/:;\?@\[-\]_\{\}\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061D-\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1B7D\u1B7E\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52-\u2E5D\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]|\uD800[\uDD00-\uDD02\uDF9F\uDFD0]|\uD801\uDD6F|\uD802[\uDC57\uDD1F\uDD3F\uDE50-\uDE58\uDE7F\uDEF0-\uDEF6\uDF39-\uDF3F\uDF99-\uDF9C]|\uD803[\uDEAD\uDF55-\uDF59\uDF86-\uDF89]|\uD804[\uDC47-\uDC4D\uDCBB\uDCBC\uDCBE-\uDCC1\uDD40-\uDD43\uDD74\uDD75\uDDC5-\uDDC8\uDDCD\uDDDB\uDDDD-\uDDDF\uDE38-\uDE3D\uDEA9]|\uD805[\uDC4B-\uDC4F\uDC5A\uDC5B\uDC5D\uDCC6\uDDC1-\uDDD7\uDE41-\uDE43\uDE60-\uDE6C\uDEB9\uDF3C-\uDF3E]|\uD806[\uDC3B\uDD44-\uDD46\uDDE2\uDE3F-\uDE46\uDE9A-\uDE9C\uDE9E-\uDEA2\uDF00-\uDF09]|\uD807[\uDC41-\uDC45\uDC70\uDC71\uDEF7\uDEF8\uDF43-\uDF4F\uDFFF]|\uD809[\uDC70-\uDC74]|\uD80B[\uDFF1\uDFF2]|\uD81A[\uDE6E\uDE6F\uDEF5\uDF37-\uDF3B\uDF44]|\uD81B[\uDE97-\uDE9A\uDFE2]|\uD82F\uDC9F|\uD836[\uDE87-\uDE8B]|\uD83A[\uDD5E\uDD5F]/);
-;// CONCATENATED MODULE: ../node_modules/uc.micro/categories/S/regex.mjs
+;// ../node_modules/uc.micro/categories/S/regex.mjs
 /* harmony default export */ const S_regex = (/[\$\+<->\^`\|~\xA2-\xA6\xA8\xA9\xAC\xAE-\xB1\xB4\xB8\xD7\xF7\u02C2-\u02C5\u02D2-\u02DF\u02E5-\u02EB\u02ED\u02EF-\u02FF\u0375\u0384\u0385\u03F6\u0482\u058D-\u058F\u0606-\u0608\u060B\u060E\u060F\u06DE\u06E9\u06FD\u06FE\u07F6\u07FE\u07FF\u0888\u09F2\u09F3\u09FA\u09FB\u0AF1\u0B70\u0BF3-\u0BFA\u0C7F\u0D4F\u0D79\u0E3F\u0F01-\u0F03\u0F13\u0F15-\u0F17\u0F1A-\u0F1F\u0F34\u0F36\u0F38\u0FBE-\u0FC5\u0FC7-\u0FCC\u0FCE\u0FCF\u0FD5-\u0FD8\u109E\u109F\u1390-\u1399\u166D\u17DB\u1940\u19DE-\u19FF\u1B61-\u1B6A\u1B74-\u1B7C\u1FBD\u1FBF-\u1FC1\u1FCD-\u1FCF\u1FDD-\u1FDF\u1FED-\u1FEF\u1FFD\u1FFE\u2044\u2052\u207A-\u207C\u208A-\u208C\u20A0-\u20C0\u2100\u2101\u2103-\u2106\u2108\u2109\u2114\u2116-\u2118\u211E-\u2123\u2125\u2127\u2129\u212E\u213A\u213B\u2140-\u2144\u214A-\u214D\u214F\u218A\u218B\u2190-\u2307\u230C-\u2328\u232B-\u2426\u2440-\u244A\u249C-\u24E9\u2500-\u2767\u2794-\u27C4\u27C7-\u27E5\u27F0-\u2982\u2999-\u29D7\u29DC-\u29FB\u29FE-\u2B73\u2B76-\u2B95\u2B97-\u2BFF\u2CE5-\u2CEA\u2E50\u2E51\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u2FF0-\u2FFF\u3004\u3012\u3013\u3020\u3036\u3037\u303E\u303F\u309B\u309C\u3190\u3191\u3196-\u319F\u31C0-\u31E3\u31EF\u3200-\u321E\u322A-\u3247\u3250\u3260-\u327F\u328A-\u32B0\u32C0-\u33FF\u4DC0-\u4DFF\uA490-\uA4C6\uA700-\uA716\uA720\uA721\uA789\uA78A\uA828-\uA82B\uA836-\uA839\uAA77-\uAA79\uAB5B\uAB6A\uAB6B\uFB29\uFBB2-\uFBC2\uFD40-\uFD4F\uFDCF\uFDFC-\uFDFF\uFE62\uFE64-\uFE66\uFE69\uFF04\uFF0B\uFF1C-\uFF1E\uFF3E\uFF40\uFF5C\uFF5E\uFFE0-\uFFE6\uFFE8-\uFFEE\uFFFC\uFFFD]|\uD800[\uDD37-\uDD3F\uDD79-\uDD89\uDD8C-\uDD8E\uDD90-\uDD9C\uDDA0\uDDD0-\uDDFC]|\uD802[\uDC77\uDC78\uDEC8]|\uD805\uDF3F|\uD807[\uDFD5-\uDFF1]|\uD81A[\uDF3C-\uDF3F\uDF45]|\uD82F\uDC9C|\uD833[\uDF50-\uDFC3]|\uD834[\uDC00-\uDCF5\uDD00-\uDD26\uDD29-\uDD64\uDD6A-\uDD6C\uDD83\uDD84\uDD8C-\uDDA9\uDDAE-\uDDEA\uDE00-\uDE41\uDE45\uDF00-\uDF56]|\uD835[\uDEC1\uDEDB\uDEFB\uDF15\uDF35\uDF4F\uDF6F\uDF89\uDFA9\uDFC3]|\uD836[\uDC00-\uDDFF\uDE37-\uDE3A\uDE6D-\uDE74\uDE76-\uDE83\uDE85\uDE86]|\uD838[\uDD4F\uDEFF]|\uD83B[\uDCAC\uDCB0\uDD2E\uDEF0\uDEF1]|\uD83C[\uDC00-\uDC2B\uDC30-\uDC93\uDCA0-\uDCAE\uDCB1-\uDCBF\uDCC1-\uDCCF\uDCD1-\uDCF5\uDD0D-\uDDAD\uDDE6-\uDE02\uDE10-\uDE3B\uDE40-\uDE48\uDE50\uDE51\uDE60-\uDE65\uDF00-\uDFFF]|\uD83D[\uDC00-\uDED7\uDEDC-\uDEEC\uDEF0-\uDEFC\uDF00-\uDF76\uDF7B-\uDFD9\uDFE0-\uDFEB\uDFF0]|\uD83E[\uDC00-\uDC0B\uDC10-\uDC47\uDC50-\uDC59\uDC60-\uDC87\uDC90-\uDCAD\uDCB0\uDCB1\uDD00-\uDE53\uDE60-\uDE6D\uDE70-\uDE7C\uDE80-\uDE88\uDE90-\uDEBD\uDEBF-\uDEC5\uDECE-\uDEDB\uDEE0-\uDEE8\uDEF0-\uDEF8\uDF00-\uDF92\uDF94-\uDFCA]/);
-;// CONCATENATED MODULE: ../node_modules/uc.micro/properties/Any/regex.mjs
+;// ../node_modules/uc.micro/properties/Any/regex.mjs
 /* harmony default export */ const Any_regex = (/[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/);
-;// CONCATENATED MODULE: ../node_modules/uc.micro/categories/Cc/regex.mjs
+;// ../node_modules/uc.micro/categories/Cc/regex.mjs
 /* harmony default export */ const Cc_regex = (/[\0-\x1F\x7F-\x9F]/);
-;// CONCATENATED MODULE: ../node_modules/uc.micro/categories/Cf/regex.mjs
+;// ../node_modules/uc.micro/categories/Cf/regex.mjs
 /* harmony default export */ const Cf_regex = (/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/);
-;// CONCATENATED MODULE: ../node_modules/uc.micro/categories/Z/regex.mjs
+;// ../node_modules/uc.micro/categories/Z/regex.mjs
 /* harmony default export */ const Z_regex = (/[ \xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/);
-;// CONCATENATED MODULE: ../node_modules/uc.micro/index.mjs
+;// ../node_modules/uc.micro/index.mjs
 
 
 
@@ -81617,7 +101756,7 @@ Url.prototype.parseHost = function (host) {
 
 
 
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/generated/decode-data-html.js
+;// ../node_modules/entities/lib/esm/generated/decode-data-html.js
 // Generated using scripts/write-decode-map.ts
 /* harmony default export */ const decode_data_html = (new Uint16Array(
 // prettier-ignore
@@ -81625,7 +101764,7 @@ Url.prototype.parseHost = function (host) {
     .split("")
     .map((c) => c.charCodeAt(0))));
 //# sourceMappingURL=decode-data-html.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/generated/decode-data-xml.js
+;// ../node_modules/entities/lib/esm/generated/decode-data-xml.js
 // Generated using scripts/write-decode-map.ts
 /* harmony default export */ const decode_data_xml = (new Uint16Array(
 // prettier-ignore
@@ -81633,7 +101772,7 @@ Url.prototype.parseHost = function (host) {
     .split("")
     .map((c) => c.charCodeAt(0))));
 //# sourceMappingURL=decode-data-xml.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/decode_codepoint.js
+;// ../node_modules/entities/lib/esm/decode_codepoint.js
 // Adapted from https://github.com/mathiasbynens/he/blob/36afe179392226cf1b6ccdb16ebbb7a5a844d93a/src/he.js#L106-L134
 var _a;
 const decodeMap = new Map([
@@ -81705,7 +101844,7 @@ function decodeCodePoint(codePoint) {
     return fromCodePoint(replaceCodePoint(codePoint));
 }
 //# sourceMappingURL=decode_codepoint.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/decode.js
+;// ../node_modules/entities/lib/esm/decode.js
 
 
 
@@ -81764,7 +101903,7 @@ var EntityDecoderState;
     EntityDecoderState[EntityDecoderState["NumericHex"] = 3] = "NumericHex";
     EntityDecoderState[EntityDecoderState["NamedEntity"] = 4] = "NamedEntity";
 })(EntityDecoderState || (EntityDecoderState = {}));
-var decode_DecodingMode;
+var DecodingMode;
 (function (DecodingMode) {
     /** Entities in text nodes that can end with any character. */
     DecodingMode[DecodingMode["Legacy"] = 0] = "Legacy";
@@ -81772,7 +101911,7 @@ var decode_DecodingMode;
     DecodingMode[DecodingMode["Strict"] = 1] = "Strict";
     /** Entities in attributes have limitations on ending characters. */
     DecodingMode[DecodingMode["Attribute"] = 2] = "Attribute";
-})(decode_DecodingMode || (decode_DecodingMode = {}));
+})(DecodingMode || (DecodingMode = {}));
 /**
  * Token decoder with support of writing partial entities.
  */
@@ -81811,7 +101950,7 @@ class EntityDecoder {
         /** The number of characters that were consumed in excess. */
         this.excess = 1;
         /** The mode in which the decoder is operating. */
-        this.decodeMode = decode_DecodingMode.Strict;
+        this.decodeMode = DecodingMode.Strict;
     }
     /** Resets the instance to make it reusable. */
     startEntity(decodeMode) {
@@ -81960,7 +102099,7 @@ class EntityDecoder {
         if (lastCp === CharCodes.SEMI) {
             this.consumed += 1;
         }
-        else if (this.decodeMode === decode_DecodingMode.Strict) {
+        else if (this.decodeMode === DecodingMode.Strict) {
             return 0;
         }
         this.emitCodePoint(replaceCodePoint(this.result), this.consumed);
@@ -81992,7 +102131,7 @@ class EntityDecoder {
             if (this.treeIndex < 0) {
                 return this.result === 0 ||
                     // If we are parsing an attribute
-                    (this.decodeMode === decode_DecodingMode.Attribute &&
+                    (this.decodeMode === DecodingMode.Attribute &&
                         // We shouldn't have consumed any characters after the entity,
                         (valueLength === 0 ||
                             // And there should be no invalid characters.
@@ -82009,7 +102148,7 @@ class EntityDecoder {
                     return this.emitNamedEntityData(this.treeIndex, valueLength, this.consumed + this.excess);
                 }
                 // If we encounter a non-terminated (legacy) entity while parsing strictly, then ignore it.
-                if (this.decodeMode !== decode_DecodingMode.Strict) {
+                if (this.decodeMode !== DecodingMode.Strict) {
                     this.result = this.treeIndex;
                     this.consumed += this.excess;
                     this.excess = 0;
@@ -82064,7 +102203,7 @@ class EntityDecoder {
             case EntityDecoderState.NamedEntity: {
                 // Emit a named entity if we have one.
                 return this.result !== 0 &&
-                    (this.decodeMode !== decode_DecodingMode.Attribute ||
+                    (this.decodeMode !== DecodingMode.Attribute ||
                         this.result === this.treeIndex)
                     ? this.emitNotTerminatedNamedEntity()
                     : 0;
@@ -82171,7 +102310,7 @@ const xmlDecoder = getDecoder(decode_data_xml);
  * @param mode The decoding mode.
  * @returns The decoded string.
  */
-function decode_decodeHTML(str, mode = decode_DecodingMode.Legacy) {
+function decodeHTML(str, mode = DecodingMode.Legacy) {
     return htmlDecoder(str, mode);
 }
 /**
@@ -82181,7 +102320,7 @@ function decode_decodeHTML(str, mode = decode_DecodingMode.Legacy) {
  * @returns The decoded string.
  */
 function decodeHTMLAttribute(str) {
-    return htmlDecoder(str, decode_DecodingMode.Attribute);
+    return htmlDecoder(str, DecodingMode.Attribute);
 }
 /**
  * Decodes an HTML string, requiring all entities to be terminated by a semicolon.
@@ -82190,7 +102329,7 @@ function decodeHTMLAttribute(str) {
  * @returns The decoded string.
  */
 function decodeHTMLStrict(str) {
-    return htmlDecoder(str, decode_DecodingMode.Strict);
+    return htmlDecoder(str, DecodingMode.Strict);
 }
 /**
  * Decodes an XML string, requiring all entities to be terminated by a semicolon.
@@ -82198,11 +102337,11 @@ function decodeHTMLStrict(str) {
  * @param str The string to decode.
  * @returns The decoded string.
  */
-function decode_decodeXML(str) {
-    return xmlDecoder(str, decode_DecodingMode.Strict);
+function decodeXML(str) {
+    return xmlDecoder(str, DecodingMode.Strict);
 }
 //# sourceMappingURL=decode.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/generated/encode-html.js
+;// ../node_modules/entities/lib/esm/generated/encode-html.js
 // Generated using scripts/write-encode-map.ts
 function restoreDiff(arr) {
     for (let i = 1; i < arr.length; i++) {
@@ -82213,8 +102352,8 @@ function restoreDiff(arr) {
 // prettier-ignore
 /* harmony default export */ const encode_html = (new Map(/* #__PURE__ */ restoreDiff([[9, "&Tab;"], [0, "&NewLine;"], [22, "&excl;"], [0, "&quot;"], [0, "&num;"], [0, "&dollar;"], [0, "&percnt;"], [0, "&amp;"], [0, "&apos;"], [0, "&lpar;"], [0, "&rpar;"], [0, "&ast;"], [0, "&plus;"], [0, "&comma;"], [1, "&period;"], [0, "&sol;"], [10, "&colon;"], [0, "&semi;"], [0, { v: "&lt;", n: 8402, o: "&nvlt;" }], [0, { v: "&equals;", n: 8421, o: "&bne;" }], [0, { v: "&gt;", n: 8402, o: "&nvgt;" }], [0, "&quest;"], [0, "&commat;"], [26, "&lbrack;"], [0, "&bsol;"], [0, "&rbrack;"], [0, "&Hat;"], [0, "&lowbar;"], [0, "&DiacriticalGrave;"], [5, { n: 106, o: "&fjlig;" }], [20, "&lbrace;"], [0, "&verbar;"], [0, "&rbrace;"], [34, "&nbsp;"], [0, "&iexcl;"], [0, "&cent;"], [0, "&pound;"], [0, "&curren;"], [0, "&yen;"], [0, "&brvbar;"], [0, "&sect;"], [0, "&die;"], [0, "&copy;"], [0, "&ordf;"], [0, "&laquo;"], [0, "&not;"], [0, "&shy;"], [0, "&circledR;"], [0, "&macr;"], [0, "&deg;"], [0, "&PlusMinus;"], [0, "&sup2;"], [0, "&sup3;"], [0, "&acute;"], [0, "&micro;"], [0, "&para;"], [0, "&centerdot;"], [0, "&cedil;"], [0, "&sup1;"], [0, "&ordm;"], [0, "&raquo;"], [0, "&frac14;"], [0, "&frac12;"], [0, "&frac34;"], [0, "&iquest;"], [0, "&Agrave;"], [0, "&Aacute;"], [0, "&Acirc;"], [0, "&Atilde;"], [0, "&Auml;"], [0, "&angst;"], [0, "&AElig;"], [0, "&Ccedil;"], [0, "&Egrave;"], [0, "&Eacute;"], [0, "&Ecirc;"], [0, "&Euml;"], [0, "&Igrave;"], [0, "&Iacute;"], [0, "&Icirc;"], [0, "&Iuml;"], [0, "&ETH;"], [0, "&Ntilde;"], [0, "&Ograve;"], [0, "&Oacute;"], [0, "&Ocirc;"], [0, "&Otilde;"], [0, "&Ouml;"], [0, "&times;"], [0, "&Oslash;"], [0, "&Ugrave;"], [0, "&Uacute;"], [0, "&Ucirc;"], [0, "&Uuml;"], [0, "&Yacute;"], [0, "&THORN;"], [0, "&szlig;"], [0, "&agrave;"], [0, "&aacute;"], [0, "&acirc;"], [0, "&atilde;"], [0, "&auml;"], [0, "&aring;"], [0, "&aelig;"], [0, "&ccedil;"], [0, "&egrave;"], [0, "&eacute;"], [0, "&ecirc;"], [0, "&euml;"], [0, "&igrave;"], [0, "&iacute;"], [0, "&icirc;"], [0, "&iuml;"], [0, "&eth;"], [0, "&ntilde;"], [0, "&ograve;"], [0, "&oacute;"], [0, "&ocirc;"], [0, "&otilde;"], [0, "&ouml;"], [0, "&div;"], [0, "&oslash;"], [0, "&ugrave;"], [0, "&uacute;"], [0, "&ucirc;"], [0, "&uuml;"], [0, "&yacute;"], [0, "&thorn;"], [0, "&yuml;"], [0, "&Amacr;"], [0, "&amacr;"], [0, "&Abreve;"], [0, "&abreve;"], [0, "&Aogon;"], [0, "&aogon;"], [0, "&Cacute;"], [0, "&cacute;"], [0, "&Ccirc;"], [0, "&ccirc;"], [0, "&Cdot;"], [0, "&cdot;"], [0, "&Ccaron;"], [0, "&ccaron;"], [0, "&Dcaron;"], [0, "&dcaron;"], [0, "&Dstrok;"], [0, "&dstrok;"], [0, "&Emacr;"], [0, "&emacr;"], [2, "&Edot;"], [0, "&edot;"], [0, "&Eogon;"], [0, "&eogon;"], [0, "&Ecaron;"], [0, "&ecaron;"], [0, "&Gcirc;"], [0, "&gcirc;"], [0, "&Gbreve;"], [0, "&gbreve;"], [0, "&Gdot;"], [0, "&gdot;"], [0, "&Gcedil;"], [1, "&Hcirc;"], [0, "&hcirc;"], [0, "&Hstrok;"], [0, "&hstrok;"], [0, "&Itilde;"], [0, "&itilde;"], [0, "&Imacr;"], [0, "&imacr;"], [2, "&Iogon;"], [0, "&iogon;"], [0, "&Idot;"], [0, "&imath;"], [0, "&IJlig;"], [0, "&ijlig;"], [0, "&Jcirc;"], [0, "&jcirc;"], [0, "&Kcedil;"], [0, "&kcedil;"], [0, "&kgreen;"], [0, "&Lacute;"], [0, "&lacute;"], [0, "&Lcedil;"], [0, "&lcedil;"], [0, "&Lcaron;"], [0, "&lcaron;"], [0, "&Lmidot;"], [0, "&lmidot;"], [0, "&Lstrok;"], [0, "&lstrok;"], [0, "&Nacute;"], [0, "&nacute;"], [0, "&Ncedil;"], [0, "&ncedil;"], [0, "&Ncaron;"], [0, "&ncaron;"], [0, "&napos;"], [0, "&ENG;"], [0, "&eng;"], [0, "&Omacr;"], [0, "&omacr;"], [2, "&Odblac;"], [0, "&odblac;"], [0, "&OElig;"], [0, "&oelig;"], [0, "&Racute;"], [0, "&racute;"], [0, "&Rcedil;"], [0, "&rcedil;"], [0, "&Rcaron;"], [0, "&rcaron;"], [0, "&Sacute;"], [0, "&sacute;"], [0, "&Scirc;"], [0, "&scirc;"], [0, "&Scedil;"], [0, "&scedil;"], [0, "&Scaron;"], [0, "&scaron;"], [0, "&Tcedil;"], [0, "&tcedil;"], [0, "&Tcaron;"], [0, "&tcaron;"], [0, "&Tstrok;"], [0, "&tstrok;"], [0, "&Utilde;"], [0, "&utilde;"], [0, "&Umacr;"], [0, "&umacr;"], [0, "&Ubreve;"], [0, "&ubreve;"], [0, "&Uring;"], [0, "&uring;"], [0, "&Udblac;"], [0, "&udblac;"], [0, "&Uogon;"], [0, "&uogon;"], [0, "&Wcirc;"], [0, "&wcirc;"], [0, "&Ycirc;"], [0, "&ycirc;"], [0, "&Yuml;"], [0, "&Zacute;"], [0, "&zacute;"], [0, "&Zdot;"], [0, "&zdot;"], [0, "&Zcaron;"], [0, "&zcaron;"], [19, "&fnof;"], [34, "&imped;"], [63, "&gacute;"], [65, "&jmath;"], [142, "&circ;"], [0, "&caron;"], [16, "&breve;"], [0, "&DiacriticalDot;"], [0, "&ring;"], [0, "&ogon;"], [0, "&DiacriticalTilde;"], [0, "&dblac;"], [51, "&DownBreve;"], [127, "&Alpha;"], [0, "&Beta;"], [0, "&Gamma;"], [0, "&Delta;"], [0, "&Epsilon;"], [0, "&Zeta;"], [0, "&Eta;"], [0, "&Theta;"], [0, "&Iota;"], [0, "&Kappa;"], [0, "&Lambda;"], [0, "&Mu;"], [0, "&Nu;"], [0, "&Xi;"], [0, "&Omicron;"], [0, "&Pi;"], [0, "&Rho;"], [1, "&Sigma;"], [0, "&Tau;"], [0, "&Upsilon;"], [0, "&Phi;"], [0, "&Chi;"], [0, "&Psi;"], [0, "&ohm;"], [7, "&alpha;"], [0, "&beta;"], [0, "&gamma;"], [0, "&delta;"], [0, "&epsi;"], [0, "&zeta;"], [0, "&eta;"], [0, "&theta;"], [0, "&iota;"], [0, "&kappa;"], [0, "&lambda;"], [0, "&mu;"], [0, "&nu;"], [0, "&xi;"], [0, "&omicron;"], [0, "&pi;"], [0, "&rho;"], [0, "&sigmaf;"], [0, "&sigma;"], [0, "&tau;"], [0, "&upsi;"], [0, "&phi;"], [0, "&chi;"], [0, "&psi;"], [0, "&omega;"], [7, "&thetasym;"], [0, "&Upsi;"], [2, "&phiv;"], [0, "&piv;"], [5, "&Gammad;"], [0, "&digamma;"], [18, "&kappav;"], [0, "&rhov;"], [3, "&epsiv;"], [0, "&backepsilon;"], [10, "&IOcy;"], [0, "&DJcy;"], [0, "&GJcy;"], [0, "&Jukcy;"], [0, "&DScy;"], [0, "&Iukcy;"], [0, "&YIcy;"], [0, "&Jsercy;"], [0, "&LJcy;"], [0, "&NJcy;"], [0, "&TSHcy;"], [0, "&KJcy;"], [1, "&Ubrcy;"], [0, "&DZcy;"], [0, "&Acy;"], [0, "&Bcy;"], [0, "&Vcy;"], [0, "&Gcy;"], [0, "&Dcy;"], [0, "&IEcy;"], [0, "&ZHcy;"], [0, "&Zcy;"], [0, "&Icy;"], [0, "&Jcy;"], [0, "&Kcy;"], [0, "&Lcy;"], [0, "&Mcy;"], [0, "&Ncy;"], [0, "&Ocy;"], [0, "&Pcy;"], [0, "&Rcy;"], [0, "&Scy;"], [0, "&Tcy;"], [0, "&Ucy;"], [0, "&Fcy;"], [0, "&KHcy;"], [0, "&TScy;"], [0, "&CHcy;"], [0, "&SHcy;"], [0, "&SHCHcy;"], [0, "&HARDcy;"], [0, "&Ycy;"], [0, "&SOFTcy;"], [0, "&Ecy;"], [0, "&YUcy;"], [0, "&YAcy;"], [0, "&acy;"], [0, "&bcy;"], [0, "&vcy;"], [0, "&gcy;"], [0, "&dcy;"], [0, "&iecy;"], [0, "&zhcy;"], [0, "&zcy;"], [0, "&icy;"], [0, "&jcy;"], [0, "&kcy;"], [0, "&lcy;"], [0, "&mcy;"], [0, "&ncy;"], [0, "&ocy;"], [0, "&pcy;"], [0, "&rcy;"], [0, "&scy;"], [0, "&tcy;"], [0, "&ucy;"], [0, "&fcy;"], [0, "&khcy;"], [0, "&tscy;"], [0, "&chcy;"], [0, "&shcy;"], [0, "&shchcy;"], [0, "&hardcy;"], [0, "&ycy;"], [0, "&softcy;"], [0, "&ecy;"], [0, "&yucy;"], [0, "&yacy;"], [1, "&iocy;"], [0, "&djcy;"], [0, "&gjcy;"], [0, "&jukcy;"], [0, "&dscy;"], [0, "&iukcy;"], [0, "&yicy;"], [0, "&jsercy;"], [0, "&ljcy;"], [0, "&njcy;"], [0, "&tshcy;"], [0, "&kjcy;"], [1, "&ubrcy;"], [0, "&dzcy;"], [7074, "&ensp;"], [0, "&emsp;"], [0, "&emsp13;"], [0, "&emsp14;"], [1, "&numsp;"], [0, "&puncsp;"], [0, "&ThinSpace;"], [0, "&hairsp;"], [0, "&NegativeMediumSpace;"], [0, "&zwnj;"], [0, "&zwj;"], [0, "&lrm;"], [0, "&rlm;"], [0, "&dash;"], [2, "&ndash;"], [0, "&mdash;"], [0, "&horbar;"], [0, "&Verbar;"], [1, "&lsquo;"], [0, "&CloseCurlyQuote;"], [0, "&lsquor;"], [1, "&ldquo;"], [0, "&CloseCurlyDoubleQuote;"], [0, "&bdquo;"], [1, "&dagger;"], [0, "&Dagger;"], [0, "&bull;"], [2, "&nldr;"], [0, "&hellip;"], [9, "&permil;"], [0, "&pertenk;"], [0, "&prime;"], [0, "&Prime;"], [0, "&tprime;"], [0, "&backprime;"], [3, "&lsaquo;"], [0, "&rsaquo;"], [3, "&oline;"], [2, "&caret;"], [1, "&hybull;"], [0, "&frasl;"], [10, "&bsemi;"], [7, "&qprime;"], [7, { v: "&MediumSpace;", n: 8202, o: "&ThickSpace;" }], [0, "&NoBreak;"], [0, "&af;"], [0, "&InvisibleTimes;"], [0, "&ic;"], [72, "&euro;"], [46, "&tdot;"], [0, "&DotDot;"], [37, "&complexes;"], [2, "&incare;"], [4, "&gscr;"], [0, "&hamilt;"], [0, "&Hfr;"], [0, "&Hopf;"], [0, "&planckh;"], [0, "&hbar;"], [0, "&imagline;"], [0, "&Ifr;"], [0, "&lagran;"], [0, "&ell;"], [1, "&naturals;"], [0, "&numero;"], [0, "&copysr;"], [0, "&weierp;"], [0, "&Popf;"], [0, "&Qopf;"], [0, "&realine;"], [0, "&real;"], [0, "&reals;"], [0, "&rx;"], [3, "&trade;"], [1, "&integers;"], [2, "&mho;"], [0, "&zeetrf;"], [0, "&iiota;"], [2, "&bernou;"], [0, "&Cayleys;"], [1, "&escr;"], [0, "&Escr;"], [0, "&Fouriertrf;"], [1, "&Mellintrf;"], [0, "&order;"], [0, "&alefsym;"], [0, "&beth;"], [0, "&gimel;"], [0, "&daleth;"], [12, "&CapitalDifferentialD;"], [0, "&dd;"], [0, "&ee;"], [0, "&ii;"], [10, "&frac13;"], [0, "&frac23;"], [0, "&frac15;"], [0, "&frac25;"], [0, "&frac35;"], [0, "&frac45;"], [0, "&frac16;"], [0, "&frac56;"], [0, "&frac18;"], [0, "&frac38;"], [0, "&frac58;"], [0, "&frac78;"], [49, "&larr;"], [0, "&ShortUpArrow;"], [0, "&rarr;"], [0, "&darr;"], [0, "&harr;"], [0, "&updownarrow;"], [0, "&nwarr;"], [0, "&nearr;"], [0, "&LowerRightArrow;"], [0, "&LowerLeftArrow;"], [0, "&nlarr;"], [0, "&nrarr;"], [1, { v: "&rarrw;", n: 824, o: "&nrarrw;" }], [0, "&Larr;"], [0, "&Uarr;"], [0, "&Rarr;"], [0, "&Darr;"], [0, "&larrtl;"], [0, "&rarrtl;"], [0, "&LeftTeeArrow;"], [0, "&mapstoup;"], [0, "&map;"], [0, "&DownTeeArrow;"], [1, "&hookleftarrow;"], [0, "&hookrightarrow;"], [0, "&larrlp;"], [0, "&looparrowright;"], [0, "&harrw;"], [0, "&nharr;"], [1, "&lsh;"], [0, "&rsh;"], [0, "&ldsh;"], [0, "&rdsh;"], [1, "&crarr;"], [0, "&cularr;"], [0, "&curarr;"], [2, "&circlearrowleft;"], [0, "&circlearrowright;"], [0, "&leftharpoonup;"], [0, "&DownLeftVector;"], [0, "&RightUpVector;"], [0, "&LeftUpVector;"], [0, "&rharu;"], [0, "&DownRightVector;"], [0, "&dharr;"], [0, "&dharl;"], [0, "&RightArrowLeftArrow;"], [0, "&udarr;"], [0, "&LeftArrowRightArrow;"], [0, "&leftleftarrows;"], [0, "&upuparrows;"], [0, "&rightrightarrows;"], [0, "&ddarr;"], [0, "&leftrightharpoons;"], [0, "&Equilibrium;"], [0, "&nlArr;"], [0, "&nhArr;"], [0, "&nrArr;"], [0, "&DoubleLeftArrow;"], [0, "&DoubleUpArrow;"], [0, "&DoubleRightArrow;"], [0, "&dArr;"], [0, "&DoubleLeftRightArrow;"], [0, "&DoubleUpDownArrow;"], [0, "&nwArr;"], [0, "&neArr;"], [0, "&seArr;"], [0, "&swArr;"], [0, "&lAarr;"], [0, "&rAarr;"], [1, "&zigrarr;"], [6, "&larrb;"], [0, "&rarrb;"], [15, "&DownArrowUpArrow;"], [7, "&loarr;"], [0, "&roarr;"], [0, "&hoarr;"], [0, "&forall;"], [0, "&comp;"], [0, { v: "&part;", n: 824, o: "&npart;" }], [0, "&exist;"], [0, "&nexist;"], [0, "&empty;"], [1, "&Del;"], [0, "&Element;"], [0, "&NotElement;"], [1, "&ni;"], [0, "&notni;"], [2, "&prod;"], [0, "&coprod;"], [0, "&sum;"], [0, "&minus;"], [0, "&MinusPlus;"], [0, "&dotplus;"], [1, "&Backslash;"], [0, "&lowast;"], [0, "&compfn;"], [1, "&radic;"], [2, "&prop;"], [0, "&infin;"], [0, "&angrt;"], [0, { v: "&ang;", n: 8402, o: "&nang;" }], [0, "&angmsd;"], [0, "&angsph;"], [0, "&mid;"], [0, "&nmid;"], [0, "&DoubleVerticalBar;"], [0, "&NotDoubleVerticalBar;"], [0, "&and;"], [0, "&or;"], [0, { v: "&cap;", n: 65024, o: "&caps;" }], [0, { v: "&cup;", n: 65024, o: "&cups;" }], [0, "&int;"], [0, "&Int;"], [0, "&iiint;"], [0, "&conint;"], [0, "&Conint;"], [0, "&Cconint;"], [0, "&cwint;"], [0, "&ClockwiseContourIntegral;"], [0, "&awconint;"], [0, "&there4;"], [0, "&becaus;"], [0, "&ratio;"], [0, "&Colon;"], [0, "&dotminus;"], [1, "&mDDot;"], [0, "&homtht;"], [0, { v: "&sim;", n: 8402, o: "&nvsim;" }], [0, { v: "&backsim;", n: 817, o: "&race;" }], [0, { v: "&ac;", n: 819, o: "&acE;" }], [0, "&acd;"], [0, "&VerticalTilde;"], [0, "&NotTilde;"], [0, { v: "&eqsim;", n: 824, o: "&nesim;" }], [0, "&sime;"], [0, "&NotTildeEqual;"], [0, "&cong;"], [0, "&simne;"], [0, "&ncong;"], [0, "&ap;"], [0, "&nap;"], [0, "&ape;"], [0, { v: "&apid;", n: 824, o: "&napid;" }], [0, "&backcong;"], [0, { v: "&asympeq;", n: 8402, o: "&nvap;" }], [0, { v: "&bump;", n: 824, o: "&nbump;" }], [0, { v: "&bumpe;", n: 824, o: "&nbumpe;" }], [0, { v: "&doteq;", n: 824, o: "&nedot;" }], [0, "&doteqdot;"], [0, "&efDot;"], [0, "&erDot;"], [0, "&Assign;"], [0, "&ecolon;"], [0, "&ecir;"], [0, "&circeq;"], [1, "&wedgeq;"], [0, "&veeeq;"], [1, "&triangleq;"], [2, "&equest;"], [0, "&ne;"], [0, { v: "&Congruent;", n: 8421, o: "&bnequiv;" }], [0, "&nequiv;"], [1, { v: "&le;", n: 8402, o: "&nvle;" }], [0, { v: "&ge;", n: 8402, o: "&nvge;" }], [0, { v: "&lE;", n: 824, o: "&nlE;" }], [0, { v: "&gE;", n: 824, o: "&ngE;" }], [0, { v: "&lnE;", n: 65024, o: "&lvertneqq;" }], [0, { v: "&gnE;", n: 65024, o: "&gvertneqq;" }], [0, { v: "&ll;", n: new Map(/* #__PURE__ */ restoreDiff([[824, "&nLtv;"], [7577, "&nLt;"]])) }], [0, { v: "&gg;", n: new Map(/* #__PURE__ */ restoreDiff([[824, "&nGtv;"], [7577, "&nGt;"]])) }], [0, "&between;"], [0, "&NotCupCap;"], [0, "&nless;"], [0, "&ngt;"], [0, "&nle;"], [0, "&nge;"], [0, "&lesssim;"], [0, "&GreaterTilde;"], [0, "&nlsim;"], [0, "&ngsim;"], [0, "&LessGreater;"], [0, "&gl;"], [0, "&NotLessGreater;"], [0, "&NotGreaterLess;"], [0, "&pr;"], [0, "&sc;"], [0, "&prcue;"], [0, "&sccue;"], [0, "&PrecedesTilde;"], [0, { v: "&scsim;", n: 824, o: "&NotSucceedsTilde;" }], [0, "&NotPrecedes;"], [0, "&NotSucceeds;"], [0, { v: "&sub;", n: 8402, o: "&NotSubset;" }], [0, { v: "&sup;", n: 8402, o: "&NotSuperset;" }], [0, "&nsub;"], [0, "&nsup;"], [0, "&sube;"], [0, "&supe;"], [0, "&NotSubsetEqual;"], [0, "&NotSupersetEqual;"], [0, { v: "&subne;", n: 65024, o: "&varsubsetneq;" }], [0, { v: "&supne;", n: 65024, o: "&varsupsetneq;" }], [1, "&cupdot;"], [0, "&UnionPlus;"], [0, { v: "&sqsub;", n: 824, o: "&NotSquareSubset;" }], [0, { v: "&sqsup;", n: 824, o: "&NotSquareSuperset;" }], [0, "&sqsube;"], [0, "&sqsupe;"], [0, { v: "&sqcap;", n: 65024, o: "&sqcaps;" }], [0, { v: "&sqcup;", n: 65024, o: "&sqcups;" }], [0, "&CirclePlus;"], [0, "&CircleMinus;"], [0, "&CircleTimes;"], [0, "&osol;"], [0, "&CircleDot;"], [0, "&circledcirc;"], [0, "&circledast;"], [1, "&circleddash;"], [0, "&boxplus;"], [0, "&boxminus;"], [0, "&boxtimes;"], [0, "&dotsquare;"], [0, "&RightTee;"], [0, "&dashv;"], [0, "&DownTee;"], [0, "&bot;"], [1, "&models;"], [0, "&DoubleRightTee;"], [0, "&Vdash;"], [0, "&Vvdash;"], [0, "&VDash;"], [0, "&nvdash;"], [0, "&nvDash;"], [0, "&nVdash;"], [0, "&nVDash;"], [0, "&prurel;"], [1, "&LeftTriangle;"], [0, "&RightTriangle;"], [0, { v: "&LeftTriangleEqual;", n: 8402, o: "&nvltrie;" }], [0, { v: "&RightTriangleEqual;", n: 8402, o: "&nvrtrie;" }], [0, "&origof;"], [0, "&imof;"], [0, "&multimap;"], [0, "&hercon;"], [0, "&intcal;"], [0, "&veebar;"], [1, "&barvee;"], [0, "&angrtvb;"], [0, "&lrtri;"], [0, "&bigwedge;"], [0, "&bigvee;"], [0, "&bigcap;"], [0, "&bigcup;"], [0, "&diam;"], [0, "&sdot;"], [0, "&sstarf;"], [0, "&divideontimes;"], [0, "&bowtie;"], [0, "&ltimes;"], [0, "&rtimes;"], [0, "&leftthreetimes;"], [0, "&rightthreetimes;"], [0, "&backsimeq;"], [0, "&curlyvee;"], [0, "&curlywedge;"], [0, "&Sub;"], [0, "&Sup;"], [0, "&Cap;"], [0, "&Cup;"], [0, "&fork;"], [0, "&epar;"], [0, "&lessdot;"], [0, "&gtdot;"], [0, { v: "&Ll;", n: 824, o: "&nLl;" }], [0, { v: "&Gg;", n: 824, o: "&nGg;" }], [0, { v: "&leg;", n: 65024, o: "&lesg;" }], [0, { v: "&gel;", n: 65024, o: "&gesl;" }], [2, "&cuepr;"], [0, "&cuesc;"], [0, "&NotPrecedesSlantEqual;"], [0, "&NotSucceedsSlantEqual;"], [0, "&NotSquareSubsetEqual;"], [0, "&NotSquareSupersetEqual;"], [2, "&lnsim;"], [0, "&gnsim;"], [0, "&precnsim;"], [0, "&scnsim;"], [0, "&nltri;"], [0, "&NotRightTriangle;"], [0, "&nltrie;"], [0, "&NotRightTriangleEqual;"], [0, "&vellip;"], [0, "&ctdot;"], [0, "&utdot;"], [0, "&dtdot;"], [0, "&disin;"], [0, "&isinsv;"], [0, "&isins;"], [0, { v: "&isindot;", n: 824, o: "&notindot;" }], [0, "&notinvc;"], [0, "&notinvb;"], [1, { v: "&isinE;", n: 824, o: "&notinE;" }], [0, "&nisd;"], [0, "&xnis;"], [0, "&nis;"], [0, "&notnivc;"], [0, "&notnivb;"], [6, "&barwed;"], [0, "&Barwed;"], [1, "&lceil;"], [0, "&rceil;"], [0, "&LeftFloor;"], [0, "&rfloor;"], [0, "&drcrop;"], [0, "&dlcrop;"], [0, "&urcrop;"], [0, "&ulcrop;"], [0, "&bnot;"], [1, "&profline;"], [0, "&profsurf;"], [1, "&telrec;"], [0, "&target;"], [5, "&ulcorn;"], [0, "&urcorn;"], [0, "&dlcorn;"], [0, "&drcorn;"], [2, "&frown;"], [0, "&smile;"], [9, "&cylcty;"], [0, "&profalar;"], [7, "&topbot;"], [6, "&ovbar;"], [1, "&solbar;"], [60, "&angzarr;"], [51, "&lmoustache;"], [0, "&rmoustache;"], [2, "&OverBracket;"], [0, "&bbrk;"], [0, "&bbrktbrk;"], [37, "&OverParenthesis;"], [0, "&UnderParenthesis;"], [0, "&OverBrace;"], [0, "&UnderBrace;"], [2, "&trpezium;"], [4, "&elinters;"], [59, "&blank;"], [164, "&circledS;"], [55, "&boxh;"], [1, "&boxv;"], [9, "&boxdr;"], [3, "&boxdl;"], [3, "&boxur;"], [3, "&boxul;"], [3, "&boxvr;"], [7, "&boxvl;"], [7, "&boxhd;"], [7, "&boxhu;"], [7, "&boxvh;"], [19, "&boxH;"], [0, "&boxV;"], [0, "&boxdR;"], [0, "&boxDr;"], [0, "&boxDR;"], [0, "&boxdL;"], [0, "&boxDl;"], [0, "&boxDL;"], [0, "&boxuR;"], [0, "&boxUr;"], [0, "&boxUR;"], [0, "&boxuL;"], [0, "&boxUl;"], [0, "&boxUL;"], [0, "&boxvR;"], [0, "&boxVr;"], [0, "&boxVR;"], [0, "&boxvL;"], [0, "&boxVl;"], [0, "&boxVL;"], [0, "&boxHd;"], [0, "&boxhD;"], [0, "&boxHD;"], [0, "&boxHu;"], [0, "&boxhU;"], [0, "&boxHU;"], [0, "&boxvH;"], [0, "&boxVh;"], [0, "&boxVH;"], [19, "&uhblk;"], [3, "&lhblk;"], [3, "&block;"], [8, "&blk14;"], [0, "&blk12;"], [0, "&blk34;"], [13, "&square;"], [8, "&blacksquare;"], [0, "&EmptyVerySmallSquare;"], [1, "&rect;"], [0, "&marker;"], [2, "&fltns;"], [1, "&bigtriangleup;"], [0, "&blacktriangle;"], [0, "&triangle;"], [2, "&blacktriangleright;"], [0, "&rtri;"], [3, "&bigtriangledown;"], [0, "&blacktriangledown;"], [0, "&dtri;"], [2, "&blacktriangleleft;"], [0, "&ltri;"], [6, "&loz;"], [0, "&cir;"], [32, "&tridot;"], [2, "&bigcirc;"], [8, "&ultri;"], [0, "&urtri;"], [0, "&lltri;"], [0, "&EmptySmallSquare;"], [0, "&FilledSmallSquare;"], [8, "&bigstar;"], [0, "&star;"], [7, "&phone;"], [49, "&female;"], [1, "&male;"], [29, "&spades;"], [2, "&clubs;"], [1, "&hearts;"], [0, "&diamondsuit;"], [3, "&sung;"], [2, "&flat;"], [0, "&natural;"], [0, "&sharp;"], [163, "&check;"], [3, "&cross;"], [8, "&malt;"], [21, "&sext;"], [33, "&VerticalSeparator;"], [25, "&lbbrk;"], [0, "&rbbrk;"], [84, "&bsolhsub;"], [0, "&suphsol;"], [28, "&LeftDoubleBracket;"], [0, "&RightDoubleBracket;"], [0, "&lang;"], [0, "&rang;"], [0, "&Lang;"], [0, "&Rang;"], [0, "&loang;"], [0, "&roang;"], [7, "&longleftarrow;"], [0, "&longrightarrow;"], [0, "&longleftrightarrow;"], [0, "&DoubleLongLeftArrow;"], [0, "&DoubleLongRightArrow;"], [0, "&DoubleLongLeftRightArrow;"], [1, "&longmapsto;"], [2, "&dzigrarr;"], [258, "&nvlArr;"], [0, "&nvrArr;"], [0, "&nvHarr;"], [0, "&Map;"], [6, "&lbarr;"], [0, "&bkarow;"], [0, "&lBarr;"], [0, "&dbkarow;"], [0, "&drbkarow;"], [0, "&DDotrahd;"], [0, "&UpArrowBar;"], [0, "&DownArrowBar;"], [2, "&Rarrtl;"], [2, "&latail;"], [0, "&ratail;"], [0, "&lAtail;"], [0, "&rAtail;"], [0, "&larrfs;"], [0, "&rarrfs;"], [0, "&larrbfs;"], [0, "&rarrbfs;"], [2, "&nwarhk;"], [0, "&nearhk;"], [0, "&hksearow;"], [0, "&hkswarow;"], [0, "&nwnear;"], [0, "&nesear;"], [0, "&seswar;"], [0, "&swnwar;"], [8, { v: "&rarrc;", n: 824, o: "&nrarrc;" }], [1, "&cudarrr;"], [0, "&ldca;"], [0, "&rdca;"], [0, "&cudarrl;"], [0, "&larrpl;"], [2, "&curarrm;"], [0, "&cularrp;"], [7, "&rarrpl;"], [2, "&harrcir;"], [0, "&Uarrocir;"], [0, "&lurdshar;"], [0, "&ldrushar;"], [2, "&LeftRightVector;"], [0, "&RightUpDownVector;"], [0, "&DownLeftRightVector;"], [0, "&LeftUpDownVector;"], [0, "&LeftVectorBar;"], [0, "&RightVectorBar;"], [0, "&RightUpVectorBar;"], [0, "&RightDownVectorBar;"], [0, "&DownLeftVectorBar;"], [0, "&DownRightVectorBar;"], [0, "&LeftUpVectorBar;"], [0, "&LeftDownVectorBar;"], [0, "&LeftTeeVector;"], [0, "&RightTeeVector;"], [0, "&RightUpTeeVector;"], [0, "&RightDownTeeVector;"], [0, "&DownLeftTeeVector;"], [0, "&DownRightTeeVector;"], [0, "&LeftUpTeeVector;"], [0, "&LeftDownTeeVector;"], [0, "&lHar;"], [0, "&uHar;"], [0, "&rHar;"], [0, "&dHar;"], [0, "&luruhar;"], [0, "&ldrdhar;"], [0, "&ruluhar;"], [0, "&rdldhar;"], [0, "&lharul;"], [0, "&llhard;"], [0, "&rharul;"], [0, "&lrhard;"], [0, "&udhar;"], [0, "&duhar;"], [0, "&RoundImplies;"], [0, "&erarr;"], [0, "&simrarr;"], [0, "&larrsim;"], [0, "&rarrsim;"], [0, "&rarrap;"], [0, "&ltlarr;"], [1, "&gtrarr;"], [0, "&subrarr;"], [1, "&suplarr;"], [0, "&lfisht;"], [0, "&rfisht;"], [0, "&ufisht;"], [0, "&dfisht;"], [5, "&lopar;"], [0, "&ropar;"], [4, "&lbrke;"], [0, "&rbrke;"], [0, "&lbrkslu;"], [0, "&rbrksld;"], [0, "&lbrksld;"], [0, "&rbrkslu;"], [0, "&langd;"], [0, "&rangd;"], [0, "&lparlt;"], [0, "&rpargt;"], [0, "&gtlPar;"], [0, "&ltrPar;"], [3, "&vzigzag;"], [1, "&vangrt;"], [0, "&angrtvbd;"], [6, "&ange;"], [0, "&range;"], [0, "&dwangle;"], [0, "&uwangle;"], [0, "&angmsdaa;"], [0, "&angmsdab;"], [0, "&angmsdac;"], [0, "&angmsdad;"], [0, "&angmsdae;"], [0, "&angmsdaf;"], [0, "&angmsdag;"], [0, "&angmsdah;"], [0, "&bemptyv;"], [0, "&demptyv;"], [0, "&cemptyv;"], [0, "&raemptyv;"], [0, "&laemptyv;"], [0, "&ohbar;"], [0, "&omid;"], [0, "&opar;"], [1, "&operp;"], [1, "&olcross;"], [0, "&odsold;"], [1, "&olcir;"], [0, "&ofcir;"], [0, "&olt;"], [0, "&ogt;"], [0, "&cirscir;"], [0, "&cirE;"], [0, "&solb;"], [0, "&bsolb;"], [3, "&boxbox;"], [3, "&trisb;"], [0, "&rtriltri;"], [0, { v: "&LeftTriangleBar;", n: 824, o: "&NotLeftTriangleBar;" }], [0, { v: "&RightTriangleBar;", n: 824, o: "&NotRightTriangleBar;" }], [11, "&iinfin;"], [0, "&infintie;"], [0, "&nvinfin;"], [4, "&eparsl;"], [0, "&smeparsl;"], [0, "&eqvparsl;"], [5, "&blacklozenge;"], [8, "&RuleDelayed;"], [1, "&dsol;"], [9, "&bigodot;"], [0, "&bigoplus;"], [0, "&bigotimes;"], [1, "&biguplus;"], [1, "&bigsqcup;"], [5, "&iiiint;"], [0, "&fpartint;"], [2, "&cirfnint;"], [0, "&awint;"], [0, "&rppolint;"], [0, "&scpolint;"], [0, "&npolint;"], [0, "&pointint;"], [0, "&quatint;"], [0, "&intlarhk;"], [10, "&pluscir;"], [0, "&plusacir;"], [0, "&simplus;"], [0, "&plusdu;"], [0, "&plussim;"], [0, "&plustwo;"], [1, "&mcomma;"], [0, "&minusdu;"], [2, "&loplus;"], [0, "&roplus;"], [0, "&Cross;"], [0, "&timesd;"], [0, "&timesbar;"], [1, "&smashp;"], [0, "&lotimes;"], [0, "&rotimes;"], [0, "&otimesas;"], [0, "&Otimes;"], [0, "&odiv;"], [0, "&triplus;"], [0, "&triminus;"], [0, "&tritime;"], [0, "&intprod;"], [2, "&amalg;"], [0, "&capdot;"], [1, "&ncup;"], [0, "&ncap;"], [0, "&capand;"], [0, "&cupor;"], [0, "&cupcap;"], [0, "&capcup;"], [0, "&cupbrcap;"], [0, "&capbrcup;"], [0, "&cupcup;"], [0, "&capcap;"], [0, "&ccups;"], [0, "&ccaps;"], [2, "&ccupssm;"], [2, "&And;"], [0, "&Or;"], [0, "&andand;"], [0, "&oror;"], [0, "&orslope;"], [0, "&andslope;"], [1, "&andv;"], [0, "&orv;"], [0, "&andd;"], [0, "&ord;"], [1, "&wedbar;"], [6, "&sdote;"], [3, "&simdot;"], [2, { v: "&congdot;", n: 824, o: "&ncongdot;" }], [0, "&easter;"], [0, "&apacir;"], [0, { v: "&apE;", n: 824, o: "&napE;" }], [0, "&eplus;"], [0, "&pluse;"], [0, "&Esim;"], [0, "&Colone;"], [0, "&Equal;"], [1, "&ddotseq;"], [0, "&equivDD;"], [0, "&ltcir;"], [0, "&gtcir;"], [0, "&ltquest;"], [0, "&gtquest;"], [0, { v: "&leqslant;", n: 824, o: "&nleqslant;" }], [0, { v: "&geqslant;", n: 824, o: "&ngeqslant;" }], [0, "&lesdot;"], [0, "&gesdot;"], [0, "&lesdoto;"], [0, "&gesdoto;"], [0, "&lesdotor;"], [0, "&gesdotol;"], [0, "&lap;"], [0, "&gap;"], [0, "&lne;"], [0, "&gne;"], [0, "&lnap;"], [0, "&gnap;"], [0, "&lEg;"], [0, "&gEl;"], [0, "&lsime;"], [0, "&gsime;"], [0, "&lsimg;"], [0, "&gsiml;"], [0, "&lgE;"], [0, "&glE;"], [0, "&lesges;"], [0, "&gesles;"], [0, "&els;"], [0, "&egs;"], [0, "&elsdot;"], [0, "&egsdot;"], [0, "&el;"], [0, "&eg;"], [2, "&siml;"], [0, "&simg;"], [0, "&simlE;"], [0, "&simgE;"], [0, { v: "&LessLess;", n: 824, o: "&NotNestedLessLess;" }], [0, { v: "&GreaterGreater;", n: 824, o: "&NotNestedGreaterGreater;" }], [1, "&glj;"], [0, "&gla;"], [0, "&ltcc;"], [0, "&gtcc;"], [0, "&lescc;"], [0, "&gescc;"], [0, "&smt;"], [0, "&lat;"], [0, { v: "&smte;", n: 65024, o: "&smtes;" }], [0, { v: "&late;", n: 65024, o: "&lates;" }], [0, "&bumpE;"], [0, { v: "&PrecedesEqual;", n: 824, o: "&NotPrecedesEqual;" }], [0, { v: "&sce;", n: 824, o: "&NotSucceedsEqual;" }], [2, "&prE;"], [0, "&scE;"], [0, "&precneqq;"], [0, "&scnE;"], [0, "&prap;"], [0, "&scap;"], [0, "&precnapprox;"], [0, "&scnap;"], [0, "&Pr;"], [0, "&Sc;"], [0, "&subdot;"], [0, "&supdot;"], [0, "&subplus;"], [0, "&supplus;"], [0, "&submult;"], [0, "&supmult;"], [0, "&subedot;"], [0, "&supedot;"], [0, { v: "&subE;", n: 824, o: "&nsubE;" }], [0, { v: "&supE;", n: 824, o: "&nsupE;" }], [0, "&subsim;"], [0, "&supsim;"], [2, { v: "&subnE;", n: 65024, o: "&varsubsetneqq;" }], [0, { v: "&supnE;", n: 65024, o: "&varsupsetneqq;" }], [2, "&csub;"], [0, "&csup;"], [0, "&csube;"], [0, "&csupe;"], [0, "&subsup;"], [0, "&supsub;"], [0, "&subsub;"], [0, "&supsup;"], [0, "&suphsub;"], [0, "&supdsub;"], [0, "&forkv;"], [0, "&topfork;"], [0, "&mlcp;"], [8, "&Dashv;"], [1, "&Vdashl;"], [0, "&Barv;"], [0, "&vBar;"], [0, "&vBarv;"], [1, "&Vbar;"], [0, "&Not;"], [0, "&bNot;"], [0, "&rnmid;"], [0, "&cirmid;"], [0, "&midcir;"], [0, "&topcir;"], [0, "&nhpar;"], [0, "&parsim;"], [9, { v: "&parsl;", n: 8421, o: "&nparsl;" }], [44343, { n: new Map(/* #__PURE__ */ restoreDiff([[56476, "&Ascr;"], [1, "&Cscr;"], [0, "&Dscr;"], [2, "&Gscr;"], [2, "&Jscr;"], [0, "&Kscr;"], [2, "&Nscr;"], [0, "&Oscr;"], [0, "&Pscr;"], [0, "&Qscr;"], [1, "&Sscr;"], [0, "&Tscr;"], [0, "&Uscr;"], [0, "&Vscr;"], [0, "&Wscr;"], [0, "&Xscr;"], [0, "&Yscr;"], [0, "&Zscr;"], [0, "&ascr;"], [0, "&bscr;"], [0, "&cscr;"], [0, "&dscr;"], [1, "&fscr;"], [1, "&hscr;"], [0, "&iscr;"], [0, "&jscr;"], [0, "&kscr;"], [0, "&lscr;"], [0, "&mscr;"], [0, "&nscr;"], [1, "&pscr;"], [0, "&qscr;"], [0, "&rscr;"], [0, "&sscr;"], [0, "&tscr;"], [0, "&uscr;"], [0, "&vscr;"], [0, "&wscr;"], [0, "&xscr;"], [0, "&yscr;"], [0, "&zscr;"], [52, "&Afr;"], [0, "&Bfr;"], [1, "&Dfr;"], [0, "&Efr;"], [0, "&Ffr;"], [0, "&Gfr;"], [2, "&Jfr;"], [0, "&Kfr;"], [0, "&Lfr;"], [0, "&Mfr;"], [0, "&Nfr;"], [0, "&Ofr;"], [0, "&Pfr;"], [0, "&Qfr;"], [1, "&Sfr;"], [0, "&Tfr;"], [0, "&Ufr;"], [0, "&Vfr;"], [0, "&Wfr;"], [0, "&Xfr;"], [0, "&Yfr;"], [1, "&afr;"], [0, "&bfr;"], [0, "&cfr;"], [0, "&dfr;"], [0, "&efr;"], [0, "&ffr;"], [0, "&gfr;"], [0, "&hfr;"], [0, "&ifr;"], [0, "&jfr;"], [0, "&kfr;"], [0, "&lfr;"], [0, "&mfr;"], [0, "&nfr;"], [0, "&ofr;"], [0, "&pfr;"], [0, "&qfr;"], [0, "&rfr;"], [0, "&sfr;"], [0, "&tfr;"], [0, "&ufr;"], [0, "&vfr;"], [0, "&wfr;"], [0, "&xfr;"], [0, "&yfr;"], [0, "&zfr;"], [0, "&Aopf;"], [0, "&Bopf;"], [1, "&Dopf;"], [0, "&Eopf;"], [0, "&Fopf;"], [0, "&Gopf;"], [1, "&Iopf;"], [0, "&Jopf;"], [0, "&Kopf;"], [0, "&Lopf;"], [0, "&Mopf;"], [1, "&Oopf;"], [3, "&Sopf;"], [0, "&Topf;"], [0, "&Uopf;"], [0, "&Vopf;"], [0, "&Wopf;"], [0, "&Xopf;"], [0, "&Yopf;"], [1, "&aopf;"], [0, "&bopf;"], [0, "&copf;"], [0, "&dopf;"], [0, "&eopf;"], [0, "&fopf;"], [0, "&gopf;"], [0, "&hopf;"], [0, "&iopf;"], [0, "&jopf;"], [0, "&kopf;"], [0, "&lopf;"], [0, "&mopf;"], [0, "&nopf;"], [0, "&oopf;"], [0, "&popf;"], [0, "&qopf;"], [0, "&ropf;"], [0, "&sopf;"], [0, "&topf;"], [0, "&uopf;"], [0, "&vopf;"], [0, "&wopf;"], [0, "&xopf;"], [0, "&yopf;"], [0, "&zopf;"]])) }], [8906, "&fflig;"], [0, "&filig;"], [0, "&fllig;"], [0, "&ffilig;"], [0, "&ffllig;"]])));
 //# sourceMappingURL=encode-html.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/escape.js
-const escape_xmlReplacer = /["&'<>$\x80-\uFFFF]/g;
+;// ../node_modules/entities/lib/esm/escape.js
+const xmlReplacer = /["&'<>$\x80-\uFFFF]/g;
 const xmlCodeMap = new Map([
     [34, "&quot;"],
     [38, "&amp;"],
@@ -82223,7 +102362,7 @@ const xmlCodeMap = new Map([
     [62, "&gt;"],
 ]);
 // For compatibility with node < 4, we wrap `codePointAt`
-const escape_getCodePoint = 
+const getCodePoint = 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? (str, index) => str.codePointAt(index)
@@ -82241,11 +102380,11 @@ String.prototype.codePointAt != null
  * If a character has no equivalent entity, a
  * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
  */
-function escape_encodeXML(str) {
+function encodeXML(str) {
     let ret = "";
     let lastIdx = 0;
     let match;
-    while ((match = escape_xmlReplacer.exec(str)) !== null) {
+    while ((match = xmlReplacer.exec(str)) !== null) {
         const i = match.index;
         const char = str.charCodeAt(i);
         const next = xmlCodeMap.get(char);
@@ -82254,9 +102393,9 @@ function escape_encodeXML(str) {
             lastIdx = i + 1;
         }
         else {
-            ret += `${str.substring(lastIdx, i)}&#x${escape_getCodePoint(str, i).toString(16)};`;
+            ret += `${str.substring(lastIdx, i)}&#x${getCodePoint(str, i).toString(16)};`;
             // Increase by 1 if we have a surrogate pair
-            lastIdx = escape_xmlReplacer.lastIndex += Number((char & 0xfc00) === 0xd800);
+            lastIdx = xmlReplacer.lastIndex += Number((char & 0xfc00) === 0xd800);
         }
     }
     return ret + str.substr(lastIdx);
@@ -82270,7 +102409,7 @@ function escape_encodeXML(str) {
  *
  * @param data String to escape.
  */
-const escape_escape = (/* unused pure expression or super */ null && (escape_encodeXML));
+const escape_escape = (/* unused pure expression or super */ null && (encodeXML));
 /**
  * Creates a function that escapes all characters matched by the given regular
  * expression using the given map of characters to escape to their entities.
@@ -82305,14 +102444,14 @@ function getEscaper(regex, map) {
  *
  * @param data String to escape.
  */
-const escape_escapeUTF8 = getEscaper(/[&<>'"]/g, xmlCodeMap);
+const escapeUTF8 = getEscaper(/[&<>'"]/g, xmlCodeMap);
 /**
  * Encodes all characters that have to be escaped in HTML attributes,
  * following {@link https://html.spec.whatwg.org/multipage/parsing.html#escapingString}.
  *
  * @param data String to escape.
  */
-const escape_escapeAttribute = getEscaper(/["&\u00A0]/g, new Map([
+const escapeAttribute = getEscaper(/["&\u00A0]/g, new Map([
     [34, "&quot;"],
     [38, "&amp;"],
     [160, "&nbsp;"],
@@ -82323,14 +102462,17 @@ const escape_escapeAttribute = getEscaper(/["&\u00A0]/g, new Map([
  *
  * @param data String to escape.
  */
-const escape_escapeText = getEscaper(/[&<>\u00A0]/g, new Map([
+const escapeText = getEscaper(/[&<>\u00A0]/g, new Map([
     [38, "&amp;"],
     [60, "&lt;"],
     [62, "&gt;"],
     [160, "&nbsp;"],
 ]));
 //# sourceMappingURL=escape.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/encode.js
+;// ../node_modules/entities/lib/esm/encode.js
+/* unused harmony import specifier */ var htmlTrie;
+/* unused harmony import specifier */ var encode_xmlReplacer;
+/* unused harmony import specifier */ var encode_getCodePoint;
 
 
 const htmlReplacer = /[\t\n!-,./:-@[-`\f{-}$\x80-\uFFFF]/g;
@@ -82345,7 +102487,7 @@ const htmlReplacer = /[\t\n!-,./:-@[-`\f{-}$\x80-\uFFFF]/g;
  * If a character has no equivalent entity, a numeric hexadecimal reference
  * (eg. `&#xfc;`) will be used.
  */
-function encode_encodeHTML(data) {
+function encodeHTML(data) {
     return encodeHTMLTrieRe(htmlReplacer, data);
 }
 /**
@@ -82356,8 +102498,8 @@ function encode_encodeHTML(data) {
  * If a character has no equivalent entity, a numeric hexadecimal reference
  * (eg. `&#xfc;`) will be used.
  */
-function encode_encodeNonAsciiHTML(data) {
-    return encodeHTMLTrieRe(xmlReplacer, data);
+function encodeNonAsciiHTML(data) {
+    return encodeHTMLTrieRe(encode_xmlReplacer, data);
 }
 function encodeHTMLTrieRe(regExp, str) {
     let ret = "";
@@ -82391,7 +102533,7 @@ function encodeHTMLTrieRe(regExp, str) {
             lastIdx = i + 1;
         }
         else {
-            const cp = getCodePoint(str, i);
+            const cp = encode_getCodePoint(str, i);
             ret += `&#x${cp.toString(16)};`;
             // Increase by 1 if we have a surrogate pair
             lastIdx = regExp.lastIndex += Number(cp !== char);
@@ -82400,7 +102542,16 @@ function encodeHTMLTrieRe(regExp, str) {
     return ret + str.substr(lastIdx);
 }
 //# sourceMappingURL=encode.js.map
-;// CONCATENATED MODULE: ../node_modules/entities/lib/esm/index.js
+;// ../node_modules/entities/lib/esm/index.js
+/* unused harmony import specifier */ var esm_decodeHTML;
+/* unused harmony import specifier */ var esm_decodeXML;
+/* unused harmony import specifier */ var esm_DecodingMode;
+/* unused harmony import specifier */ var esm_encodeNonAsciiHTML;
+/* unused harmony import specifier */ var esm_encodeHTML;
+/* unused harmony import specifier */ var esm_escapeUTF8;
+/* unused harmony import specifier */ var esm_escapeAttribute;
+/* unused harmony import specifier */ var esm_escapeText;
+/* unused harmony import specifier */ var esm_encodeXML;
 
 
 
@@ -82451,9 +102602,9 @@ function esm_decode(data, options = EntityLevel.XML) {
     const level = typeof options === "number" ? options : options.level;
     if (level === EntityLevel.HTML) {
         const mode = typeof options === "object" ? options.mode : undefined;
-        return decodeHTML(data, mode);
+        return esm_decodeHTML(data, mode);
     }
-    return decodeXML(data);
+    return esm_decodeXML(data);
 }
 /**
  * Decodes a string with entities. Does not allow missing trailing semicolons for entities.
@@ -82465,7 +102616,7 @@ function esm_decode(data, options = EntityLevel.XML) {
 function decodeStrict(data, options = EntityLevel.XML) {
     var _a;
     const opts = typeof options === "number" ? { level: options } : options;
-    (_a = opts.mode) !== null && _a !== void 0 ? _a : (opts.mode = DecodingMode.Strict);
+    (_a = opts.mode) !== null && _a !== void 0 ? _a : (opts.mode = esm_DecodingMode.Strict);
     return esm_decode(data, opts);
 }
 /**
@@ -82478,25 +102629,25 @@ function esm_encode(data, options = EntityLevel.XML) {
     const opts = typeof options === "number" ? { level: options } : options;
     // Mode `UTF8` just escapes XML entities
     if (opts.mode === EncodingMode.UTF8)
-        return escapeUTF8(data);
+        return esm_escapeUTF8(data);
     if (opts.mode === EncodingMode.Attribute)
-        return escapeAttribute(data);
+        return esm_escapeAttribute(data);
     if (opts.mode === EncodingMode.Text)
-        return escapeText(data);
+        return esm_escapeText(data);
     if (opts.level === EntityLevel.HTML) {
         if (opts.mode === EncodingMode.ASCII) {
-            return encodeNonAsciiHTML(data);
+            return esm_encodeNonAsciiHTML(data);
         }
-        return encodeHTML(data);
+        return esm_encodeHTML(data);
     }
     // ASCII and Extensive are equivalent
-    return encodeXML(data);
+    return esm_encodeXML(data);
 }
 
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/common/utils.mjs
+;// ../node_modules/markdown-it/lib/common/utils.mjs
 // Utilities
 //
 
@@ -82588,7 +102739,7 @@ function replaceEntityPattern (match, name) {
     return match
   }
 
-  const decoded = decode_decodeHTML(match)
+  const decoded = decodeHTML(match)
   if (decoded !== match) {
     return decoded
   }
@@ -82785,7 +102936,7 @@ const lib = { mdurl: mdurl_namespaceObject, ucmicro: uc_micro_namespaceObject }
 
 
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/helpers/parse_link_label.mjs
+;// ../node_modules/markdown-it/lib/helpers/parse_link_label.mjs
 // Parse link label
 //
 // this function assumes that first character ("[") already matches;
@@ -82836,7 +102987,7 @@ function parseLinkLabel (state, start, disableNested) {
   return labelEnd
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/helpers/parse_link_destination.mjs
+;// ../node_modules/markdown-it/lib/helpers/parse_link_destination.mjs
 // Parse link destination
 //
 
@@ -82915,7 +103066,7 @@ function parseLinkDestination (str, start, max) {
   return result
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/helpers/parse_link_title.mjs
+;// ../node_modules/markdown-it/lib/helpers/parse_link_title.mjs
 // Parse link title
 //
 
@@ -82983,7 +103134,7 @@ function parseLinkTitle (str, start, max, prev_state) {
   return state
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/helpers/index.mjs
+;// ../node_modules/markdown-it/lib/helpers/index.mjs
 // Just a shortcut for bulk export
 
 
@@ -82992,7 +103143,7 @@ function parseLinkTitle (str, start, max, prev_state) {
 
 
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/renderer.mjs
+;// ../node_modules/markdown-it/lib/renderer.mjs
 /**
  * class Renderer
  *
@@ -83316,7 +103467,7 @@ Renderer.prototype.render = function (tokens, options, env) {
 
 /* harmony default export */ const renderer = (Renderer);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/ruler.mjs
+;// ../node_modules/markdown-it/lib/ruler.mjs
 /**
  * class Ruler
  *
@@ -83658,7 +103809,7 @@ Ruler.prototype.getRules = function (chainName) {
 
 /* harmony default export */ const ruler = (Ruler);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/token.mjs
+;// ../node_modules/markdown-it/lib/token.mjs
 // Token class
 
 /**
@@ -83851,7 +104002,7 @@ Token.prototype.attrJoin = function attrJoin (name, value) {
 
 /* harmony default export */ const lib_token = (Token);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/state_core.mjs
+;// ../node_modules/markdown-it/lib/rules_core/state_core.mjs
 // Core state object
 //
 
@@ -83870,7 +104021,7 @@ StateCore.prototype.Token = lib_token
 
 /* harmony default export */ const state_core = (StateCore);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/normalize.mjs
+;// ../node_modules/markdown-it/lib/rules_core/normalize.mjs
 // Normalize input string
 
 // https://spec.commonmark.org/0.29/#line-ending
@@ -83889,7 +104040,7 @@ function normalize (state) {
   state.src = str
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/block.mjs
+;// ../node_modules/markdown-it/lib/rules_core/block.mjs
 function block (state) {
   let token
 
@@ -83904,7 +104055,7 @@ function block (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/inline.mjs
+;// ../node_modules/markdown-it/lib/rules_core/inline.mjs
 function inline (state) {
   const tokens = state.tokens
 
@@ -83917,7 +104068,7 @@ function inline (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/linkify.mjs
+;// ../node_modules/markdown-it/lib/rules_core/linkify.mjs
 // Replace link-like texts with link nodes.
 //
 // Currently restricted by `md.validateLink()` to http/https/ftp
@@ -84053,7 +104204,7 @@ function linkify (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/replacements.mjs
+;// ../node_modules/markdown-it/lib/rules_core/replacements.mjs
 // Simple typographic replacements
 //
 // (c) (C) → ©
@@ -84156,7 +104307,7 @@ function replace (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/smartquotes.mjs
+;// ../node_modules/markdown-it/lib/rules_core/smartquotes.mjs
 // Convert straight quotation marks to typographic ones
 //
 
@@ -84351,7 +104502,7 @@ function smartquotes (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_core/text_join.mjs
+;// ../node_modules/markdown-it/lib/rules_core/text_join.mjs
 // Join raw text tokens with the rest of the text
 //
 // This is set as a separate rule to provide an opportunity for plugins
@@ -84396,7 +104547,7 @@ function text_join (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/parser_core.mjs
+;// ../node_modules/markdown-it/lib/parser_core.mjs
 /** internal
  * class Core
  *
@@ -84460,7 +104611,7 @@ Core.prototype.State = state_core
 
 /* harmony default export */ const parser_core = (Core);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/state_block.mjs
+;// ../node_modules/markdown-it/lib/rules_block/state_block.mjs
 // Parser state class
 
 
@@ -84682,7 +104833,7 @@ StateBlock.prototype.Token = lib_token
 
 /* harmony default export */ const state_block = (StateBlock);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/table.mjs
+;// ../node_modules/markdown-it/lib/rules_block/table.mjs
 // GFM table, https://github.github.com/gfm/#tables-extension-
 
 
@@ -84912,7 +105063,7 @@ function table (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/code.mjs
+;// ../node_modules/markdown-it/lib/rules_block/code.mjs
 // Code block (4 spaces padded)
 
 function code (state, startLine, endLine/*, silent */) {
@@ -84944,7 +105095,7 @@ function code (state, startLine, endLine/*, silent */) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/fence.mjs
+;// ../node_modules/markdown-it/lib/rules_block/fence.mjs
 // fences (``` lang, ~~~ lang)
 
 function fence (state, startLine, endLine, silent) {
@@ -85040,7 +105191,7 @@ function fence (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/blockquote.mjs
+;// ../node_modules/markdown-it/lib/rules_block/blockquote.mjs
 // Block quotes
 
 
@@ -85251,7 +105402,7 @@ function blockquote (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/hr.mjs
+;// ../node_modules/markdown-it/lib/rules_block/hr.mjs
 // Horizontal rule
 
 
@@ -85293,7 +105444,7 @@ function hr (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/list.mjs
+;// ../node_modules/markdown-it/lib/rules_block/list.mjs
 // Lists
 
 
@@ -85626,7 +105777,7 @@ function list (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/reference.mjs
+;// ../node_modules/markdown-it/lib/rules_block/reference.mjs
 
 
 function reference (state, startLine, _endLine, silent) {
@@ -85840,7 +105991,7 @@ function reference (state, startLine, _endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/common/html_blocks.mjs
+;// ../node_modules/markdown-it/lib/common/html_blocks.mjs
 // List of valid html blocks names, according to commonmark spec
 // https://spec.commonmark.org/0.30/#html-blocks
 
@@ -85909,7 +106060,7 @@ function reference (state, startLine, _endLine, silent) {
   'ul'
 ]);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/common/html_re.mjs
+;// ../node_modules/markdown-it/lib/common/html_re.mjs
 // Regexps to match html elements
 
 const attr_name     = '[a-zA-Z_:][a-zA-Z0-9:._-]*'
@@ -85936,7 +106087,7 @@ const HTML_OPEN_CLOSE_TAG_RE = new RegExp('^(?:' + open_tag + '|' + close_tag + 
 
 
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/html_block.mjs
+;// ../node_modules/markdown-it/lib/rules_block/html_block.mjs
 // HTML block
 
 
@@ -86007,7 +106158,7 @@ function html_block (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/heading.mjs
+;// ../node_modules/markdown-it/lib/rules_block/heading.mjs
 // heading (#, ##, ...)
 
 
@@ -86060,7 +106211,7 @@ function heading (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/lheading.mjs
+;// ../node_modules/markdown-it/lib/rules_block/lheading.mjs
 // lheading (---, ===)
 
 function lheading (state, startLine, endLine/*, silent */) {
@@ -86144,7 +106295,7 @@ function lheading (state, startLine, endLine/*, silent */) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_block/paragraph.mjs
+;// ../node_modules/markdown-it/lib/rules_block/paragraph.mjs
 // Paragraph
 
 function paragraph (state, startLine, endLine) {
@@ -86192,7 +106343,7 @@ function paragraph (state, startLine, endLine) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/parser_block.mjs
+;// ../node_modules/markdown-it/lib/parser_block.mjs
 /** internal
  * class ParserBlock
  *
@@ -86328,7 +106479,7 @@ ParserBlock.prototype.State = state_block
 
 /* harmony default export */ const parser_block = (ParserBlock);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/state_inline.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/state_inline.mjs
 // Inline parser state
 
 
@@ -86453,7 +106604,7 @@ StateInline.prototype.Token = lib_token
 
 /* harmony default export */ const state_inline = (StateInline);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/text.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/text.mjs
 // Skip text characters for text token, place those to pending buffer
 // and increment current pos
 
@@ -86541,7 +106692,7 @@ module.exports = function text(state, silent) {
   return true;
 }; */
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/linkify.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/linkify.mjs
 // Process links like https://example.org/
 
 // RFC3986: scheme = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
@@ -86599,7 +106750,7 @@ function linkify_linkify (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/newline.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/newline.mjs
 // Proceess '\n'
 
 
@@ -86643,7 +106794,7 @@ function newline (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/escape.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/escape.mjs
 // Process escaped chars and hardbreaks
 
 
@@ -86714,7 +106865,7 @@ function rules_inline_escape_escape (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/backticks.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/backticks.mjs
 // Parse backticks
 
 function backtick (state, silent) {
@@ -86776,7 +106927,7 @@ function backtick (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/strikethrough.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/strikethrough.mjs
 // ~~strike through~~
 //
 
@@ -86905,7 +107056,7 @@ function strikethrough_postProcess (state) {
   postProcess: strikethrough_postProcess
 });
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/emphasis.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/emphasis.mjs
 // Process *this* and _that_
 //
 
@@ -87030,7 +107181,7 @@ function emphasis_post_process (state) {
   postProcess: emphasis_post_process
 });
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/link.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/link.mjs
 // Process [link](<to> "stuff")
 
 
@@ -87171,7 +107322,7 @@ function link_link (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/image.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/image.mjs
 // Process ![image](<src> "title")
 
 
@@ -87311,7 +107462,7 @@ function image_image (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/autolink.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/autolink.mjs
 // Process autolinks '<protocol:...>'
 
 /* eslint max-len:0 */
@@ -87385,7 +107536,7 @@ function autolink (state, silent) {
   return false
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/html_inline.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/html_inline.mjs
 // Process html tags
 
 
@@ -87437,7 +107588,7 @@ function html_inline (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/entity.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/entity.mjs
 // Process html entity - &#123;, &#xAF;, &quot;, ...
 
 
@@ -87473,7 +107624,7 @@ function entity (state, silent) {
   } else {
     const match = state.src.slice(pos).match(NAMED_RE)
     if (match) {
-      const decoded = decode_decodeHTML(match[0])
+      const decoded = decodeHTML(match[0])
       if (decoded !== match[0]) {
         if (!silent) {
           const token   = state.push('text_special', '', 0)
@@ -87490,7 +107641,7 @@ function entity (state, silent) {
   return false
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/balance_pairs.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/balance_pairs.mjs
 // For each opening emphasis-like marker find a matching closing one
 //
 
@@ -87616,7 +107767,7 @@ function link_pairs (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/rules_inline/fragments_join.mjs
+;// ../node_modules/markdown-it/lib/rules_inline/fragments_join.mjs
 // Clean up tokens after emphasis and strikethrough postprocessing:
 // merge adjacent text nodes into one and re-calculate all token levels
 //
@@ -87656,7 +107807,7 @@ function fragments_join (state) {
   }
 }
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/parser_inline.mjs
+;// ../node_modules/markdown-it/lib/parser_inline.mjs
 /** internal
  * class ParserInline
  *
@@ -87855,7 +108006,8 @@ ParserInline.prototype.State = state_inline
 
 /* harmony default export */ const parser_inline = (ParserInline);
 
-;// CONCATENATED MODULE: ../node_modules/linkify-it/lib/re.mjs
+;// ../node_modules/linkify-it/lib/re.mjs
+Object.defineProperty(lib_re, "name", { value: "default", configurable: true });
 
 
 /* harmony default export */ function lib_re(opts) {
@@ -88046,7 +108198,7 @@ ParserInline.prototype.State = state_inline
   return re
 }
 
-;// CONCATENATED MODULE: ../node_modules/linkify-it/index.mjs
+;// ../node_modules/linkify-it/index.mjs
 
 
 //
@@ -88690,7 +108842,7 @@ LinkifyIt.prototype.onCompile = function onCompile () {
 
 /* harmony default export */ const linkify_it = (LinkifyIt);
 
-;// CONCATENATED MODULE: ../node_modules/punycode.js/punycode.es6.js
+;// ../node_modules/punycode.js/punycode.es6.js
 
 
 /** Highest positive signed 32-bit float value */
@@ -89136,7 +109288,7 @@ const punycode = {
 
 /* harmony default export */ const punycode_es6 = (punycode);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/presets/default.mjs
+;// ../node_modules/markdown-it/lib/presets/default.mjs
 // markdown-it default options
 
 /* harmony default export */ const presets_default = ({
@@ -89185,7 +109337,7 @@ const punycode = {
   }
 });
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/presets/zero.mjs
+;// ../node_modules/markdown-it/lib/presets/zero.mjs
 // "Zero" preset, with nothing enabled. Useful for manual configuring of simple
 // modes. For example, to parse bold/italic only.
 
@@ -89257,7 +109409,7 @@ const punycode = {
   }
 });
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/presets/commonmark.mjs
+;// ../node_modules/markdown-it/lib/presets/commonmark.mjs
 // Commonmark default options
 
 /* harmony default export */ const commonmark = ({
@@ -89347,7 +109499,7 @@ const punycode = {
   }
 });
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/lib/index.mjs
+;// ../node_modules/markdown-it/lib/index.mjs
 // Main parser class
 
 
@@ -89914,10 +110066,10 @@ MarkdownIt.prototype.renderInline = function (src, env) {
 
 /* harmony default export */ const markdown_it_lib = (MarkdownIt);
 
-;// CONCATENATED MODULE: ../node_modules/markdown-it/index.mjs
+;// ../node_modules/markdown-it/index.mjs
 
 
 
-/***/ })
+/***/ }
 
 }]);

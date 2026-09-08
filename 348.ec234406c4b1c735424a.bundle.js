@@ -1,15 +1,15 @@
 "use strict";
-(self["webpackChunktest"] = self["webpackChunktest"] || []).push([[384],{
+(self["webpackChunktest"] = self["webpackChunktest"] || []).push([[348],{
 
-/***/ 18152:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ 45667
+(__unused_webpack_module, exports) {
 
 var __webpack_unused_export__;
 
 __webpack_unused_export__ = ({ value: true });
 // runtime helper for setting properties on components
 // in a tree-shakable way
-exports.c = (sfc, props) => {
+exports.A = (sfc, props) => {
     const target = sfc.__vccOpts || sfc;
     for (const [key, val] of props) {
         target[key] = val;
@@ -18,31 +18,31 @@ exports.c = (sfc, props) => {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ 79224:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ 55
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   GkE: () => (/* binding */ MeshLambertMaterial),
-/* harmony export */   KAh: () => (/* binding */ Scene),
-/* harmony export */   KGb: () => (/* binding */ PointLight),
-/* harmony export */   KO0: () => (/* binding */ Spherical),
-/* harmony export */   MxU: () => (/* binding */ Quaternion),
-/* harmony export */   NGv: () => (/* binding */ Plane),
-/* harmony export */   O4c: () => (/* binding */ Vector3),
-/* harmony export */   OIf: () => (/* binding */ PerspectiveCamera),
-/* harmony export */   Q5g: () => (/* binding */ EventDispatcher),
-/* harmony export */   SA0: () => (/* binding */ Vector2),
-/* harmony export */   Ss9: () => (/* binding */ Mesh),
-/* harmony export */   WgP: () => (/* binding */ Ray),
-/* harmony export */   _E$: () => (/* binding */ AmbientLight),
-/* harmony export */   _gS: () => (/* binding */ AxesHelper),
-/* harmony export */   a04: () => (/* binding */ MOUSE),
-/* harmony export */   gpv: () => (/* binding */ WebGLRenderer),
-/* harmony export */   o1_: () => (/* binding */ BoxGeometry),
-/* harmony export */   uSF: () => (/* binding */ TOUCH),
-/* harmony export */   yMQ: () => (/* binding */ MathUtils)
+/* harmony export */   $p8: () => (/* binding */ AmbientLight),
+/* harmony export */   G_z: () => (/* binding */ MeshLambertMaterial),
+/* harmony export */   HiM: () => (/* binding */ PointLight),
+/* harmony export */   I9Y: () => (/* binding */ Vector2),
+/* harmony export */   IzY: () => (/* binding */ AxesHelper),
+/* harmony export */   JeP: () => (/* binding */ WebGLRenderer),
+/* harmony export */   PTz: () => (/* binding */ Quaternion),
+/* harmony export */   Pq0: () => (/* binding */ Vector3),
+/* harmony export */   Qev: () => (/* binding */ EventDispatcher),
+/* harmony export */   RlV: () => (/* binding */ Ray),
+/* harmony export */   YHV: () => (/* binding */ Spherical),
+/* harmony export */   Z58: () => (/* binding */ Scene),
+/* harmony export */   Zcv: () => (/* binding */ Plane),
+/* harmony export */   cj9: () => (/* binding */ MathUtils),
+/* harmony export */   eaF: () => (/* binding */ Mesh),
+/* harmony export */   iNn: () => (/* binding */ BoxGeometry),
+/* harmony export */   kBv: () => (/* binding */ MOUSE),
+/* harmony export */   ubm: () => (/* binding */ PerspectiveCamera),
+/* harmony export */   wtR: () => (/* binding */ TOUCH)
 /* harmony export */ });
 /* unused harmony exports ACESFilmicToneMapping, AddEquation, AddOperation, AdditiveAnimationBlendMode, AdditiveBlending, AgXToneMapping, AlphaFormat, AlwaysCompare, AlwaysDepth, AlwaysStencilFunc, AnimationAction, AnimationClip, AnimationLoader, AnimationMixer, AnimationObjectGroup, AnimationUtils, ArcCurve, ArrayCamera, ArrowHelper, AttachedBindMode, Audio, AudioAnalyser, AudioContext, AudioListener, AudioLoader, BackSide, BasicDepthPacking, BasicShadowMap, BatchedMesh, Bone, BooleanKeyframeTrack, Box2, Box3, Box3Helper, BoxHelper, BufferAttribute, BufferGeometry, BufferGeometryLoader, ByteType, Cache, Camera, CameraHelper, CanvasTexture, CapsuleGeometry, CatmullRomCurve3, CineonToneMapping, CircleGeometry, ClampToEdgeWrapping, Clock, Color, ColorKeyframeTrack, ColorManagement, CompressedArrayTexture, CompressedCubeTexture, CompressedTexture, CompressedTextureLoader, ConeGeometry, ConstantAlphaFactor, ConstantColorFactor, CubeCamera, CubeReflectionMapping, CubeRefractionMapping, CubeTexture, CubeTextureLoader, CubeUVReflectionMapping, CubicBezierCurve, CubicBezierCurve3, CubicInterpolant, CullFaceBack, CullFaceFront, CullFaceFrontBack, CullFaceNone, Curve, CurvePath, CustomBlending, CustomToneMapping, CylinderGeometry, Cylindrical, Data3DTexture, DataArrayTexture, DataTexture, DataTextureLoader, DataUtils, DecrementStencilOp, DecrementWrapStencilOp, DefaultLoadingManager, DepthFormat, DepthStencilFormat, DepthTexture, DetachedBindMode, DirectionalLight, DirectionalLightHelper, DiscreteInterpolant, DisplayP3ColorSpace, DodecahedronGeometry, DoubleSide, DstAlphaFactor, DstColorFactor, DynamicCopyUsage, DynamicDrawUsage, DynamicReadUsage, EdgesGeometry, EllipseCurve, EqualCompare, EqualDepth, EqualStencilFunc, EquirectangularReflectionMapping, EquirectangularRefractionMapping, Euler, ExtrudeGeometry, FileLoader, Float16BufferAttribute, Float32BufferAttribute, Float64BufferAttribute, FloatType, Fog, FogExp2, FramebufferTexture, FrontSide, Frustum, GLBufferAttribute, GLSL1, GLSL3, GreaterCompare, GreaterDepth, GreaterEqualCompare, GreaterEqualDepth, GreaterEqualStencilFunc, GreaterStencilFunc, GridHelper, Group, HalfFloatType, HemisphereLight, HemisphereLightHelper, IcosahedronGeometry, ImageBitmapLoader, ImageLoader, ImageUtils, IncrementStencilOp, IncrementWrapStencilOp, InstancedBufferAttribute, InstancedBufferGeometry, InstancedInterleavedBuffer, InstancedMesh, Int16BufferAttribute, Int32BufferAttribute, Int8BufferAttribute, IntType, InterleavedBuffer, InterleavedBufferAttribute, Interpolant, InterpolateDiscrete, InterpolateLinear, InterpolateSmooth, InvertStencilOp, KeepStencilOp, KeyframeTrack, LOD, LatheGeometry, Layers, LessCompare, LessDepth, LessEqualCompare, LessEqualDepth, LessEqualStencilFunc, LessStencilFunc, Light, LightProbe, Line, Line3, LineBasicMaterial, LineCurve, LineCurve3, LineDashedMaterial, LineLoop, LineSegments, LinearDisplayP3ColorSpace, LinearEncoding, LinearFilter, LinearInterpolant, LinearMipMapLinearFilter, LinearMipMapNearestFilter, LinearMipmapLinearFilter, LinearMipmapNearestFilter, LinearSRGBColorSpace, LinearToneMapping, LinearTransfer, Loader, LoaderUtils, LoadingManager, LoopOnce, LoopPingPong, LoopRepeat, LuminanceAlphaFormat, LuminanceFormat, Material, MaterialLoader, Matrix3, Matrix4, MaxEquation, MeshBasicMaterial, MeshDepthMaterial, MeshDistanceMaterial, MeshMatcapMaterial, MeshNormalMaterial, MeshPhongMaterial, MeshPhysicalMaterial, MeshStandardMaterial, MeshToonMaterial, MinEquation, MirroredRepeatWrapping, MixOperation, MultiplyBlending, MultiplyOperation, NearestFilter, NearestMipMapLinearFilter, NearestMipMapNearestFilter, NearestMipmapLinearFilter, NearestMipmapNearestFilter, NeverCompare, NeverDepth, NeverStencilFunc, NoBlending, NoColorSpace, NoToneMapping, NormalAnimationBlendMode, NormalBlending, NotEqualCompare, NotEqualDepth, NotEqualStencilFunc, NumberKeyframeTrack, Object3D, ObjectLoader, ObjectSpaceNormalMap, OctahedronGeometry, OneFactor, OneMinusConstantAlphaFactor, OneMinusConstantColorFactor, OneMinusDstAlphaFactor, OneMinusDstColorFactor, OneMinusSrcAlphaFactor, OneMinusSrcColorFactor, OrthographicCamera, P3Primaries, PCFShadowMap, PCFSoftShadowMap, PMREMGenerator, Path, PlaneGeometry, PlaneHelper, PointLightHelper, Points, PointsMaterial, PolarGridHelper, PolyhedronGeometry, PositionalAudio, PropertyBinding, PropertyMixer, QuadraticBezierCurve, QuadraticBezierCurve3, QuaternionKeyframeTrack, QuaternionLinearInterpolant, RED_GREEN_RGTC2_Format, RED_RGTC1_Format, REVISION, RGBADepthPacking, RGBAFormat, RGBAIntegerFormat, RGBA_ASTC_10x10_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_BPTC_Format, RGBA_ETC2_EAC_Format, RGBA_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGB_BPTC_SIGNED_Format, RGB_BPTC_UNSIGNED_Format, RGB_ETC1_Format, RGB_ETC2_Format, RGB_PVRTC_2BPPV1_Format, RGB_PVRTC_4BPPV1_Format, RGB_S3TC_DXT1_Format, RGFormat, RGIntegerFormat, RawShaderMaterial, Raycaster, Rec709Primaries, RectAreaLight, RedFormat, RedIntegerFormat, ReinhardToneMapping, RenderTarget, RepeatWrapping, ReplaceStencilOp, ReverseSubtractEquation, RingGeometry, SIGNED_RED_GREEN_RGTC2_Format, SIGNED_RED_RGTC1_Format, SRGBColorSpace, SRGBTransfer, ShaderChunk, ShaderLib, ShaderMaterial, ShadowMaterial, Shape, ShapeGeometry, ShapePath, ShapeUtils, ShortType, Skeleton, SkeletonHelper, SkinnedMesh, Source, Sphere, SphereGeometry, SphericalHarmonics3, SplineCurve, SpotLight, SpotLightHelper, Sprite, SpriteMaterial, SrcAlphaFactor, SrcAlphaSaturateFactor, SrcColorFactor, StaticCopyUsage, StaticDrawUsage, StaticReadUsage, StereoCamera, StreamCopyUsage, StreamDrawUsage, StreamReadUsage, StringKeyframeTrack, SubtractEquation, SubtractiveBlending, TangentSpaceNormalMap, TetrahedronGeometry, Texture, TextureLoader, TorusGeometry, TorusKnotGeometry, Triangle, TriangleFanDrawMode, TriangleStripDrawMode, TrianglesDrawMode, TubeGeometry, UVMapping, Uint16BufferAttribute, Uint32BufferAttribute, Uint8BufferAttribute, Uint8ClampedBufferAttribute, Uniform, UniformsGroup, UniformsLib, UniformsUtils, UnsignedByteType, UnsignedInt248Type, UnsignedIntType, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedShortType, VSMShadowMap, Vector4, VectorKeyframeTrack, VideoTexture, WebGL1Renderer, WebGL3DRenderTarget, WebGLArrayRenderTarget, WebGLCoordinateSystem, WebGLCubeRenderTarget, WebGLMultipleRenderTargets, WebGLRenderTarget, WebGLUtils, WebGPUCoordinateSystem, WireframeGeometry, WrapAroundEnding, ZeroCurvatureEnding, ZeroFactor, ZeroSlopeEnding, ZeroStencilOp, _SRGBAFormat, createCanvasElement, sRGBEncoding */
 /**
@@ -53363,15 +53363,15 @@ if ( typeof window !== 'undefined' ) {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ 79404:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ 23606
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   g: () => (/* binding */ OrbitControls)
+/* harmony export */   N: () => (/* binding */ OrbitControls)
 /* harmony export */ });
-/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79224);
+/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
 
 
 // OrbitControls performs orbiting, dollying (zooming), and panning.
@@ -53384,11 +53384,11 @@ if ( typeof window !== 'undefined' ) {
 const _changeEvent = { type: 'change' };
 const _startEvent = { type: 'start' };
 const _endEvent = { type: 'end' };
-const _ray = new three__WEBPACK_IMPORTED_MODULE_0__/* .Ray */ .WgP();
-const _plane = new three__WEBPACK_IMPORTED_MODULE_0__/* .Plane */ .NGv();
-const TILT_LIMIT = Math.cos( 70 * three__WEBPACK_IMPORTED_MODULE_0__/* .MathUtils */ .yMQ.DEG2RAD );
+const _ray = new three__WEBPACK_IMPORTED_MODULE_0__/* .Ray */ .RlV();
+const _plane = new three__WEBPACK_IMPORTED_MODULE_0__/* .Plane */ .Zcv();
+const TILT_LIMIT = Math.cos( 70 * three__WEBPACK_IMPORTED_MODULE_0__/* .MathUtils */ .cj9.DEG2RAD );
 
-class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatcher */ .Q5g {
+class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatcher */ .Qev {
 
 	constructor( object, domElement ) {
 
@@ -53402,10 +53402,10 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 		this.enabled = true;
 
 		// "target" sets the location of focus, where the object orbits around
-		this.target = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+		this.target = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 		// Sets the 3D cursor (similar to Blender), from which the maxTargetRadius takes effect
-		this.cursor = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+		this.cursor = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 		// How far you can dolly in and out ( PerspectiveCamera only )
 		this.minDistance = 0;
@@ -53459,10 +53459,10 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 		this.keys = { LEFT: 'ArrowLeft', UP: 'ArrowUp', RIGHT: 'ArrowRight', BOTTOM: 'ArrowDown' };
 
 		// Mouse buttons
-		this.mouseButtons = { LEFT: three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .a04.ROTATE, MIDDLE: three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .a04.DOLLY, RIGHT: three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .a04.PAN };
+		this.mouseButtons = { LEFT: three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .kBv.ROTATE, MIDDLE: three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .kBv.DOLLY, RIGHT: three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .kBv.PAN };
 
 		// Touch fingers
-		this.touches = { ONE: three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .uSF.ROTATE, TWO: three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .uSF.DOLLY_PAN };
+		this.touches = { ONE: three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .wtR.ROTATE, TWO: three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .wtR.DOLLY_PAN };
 
 		// for reset
 		this.target0 = this.target.clone();
@@ -53534,15 +53534,15 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 		// this method is exposed, but perhaps it would be better if we can make it private...
 		this.update = function () {
 
-			const offset = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+			const offset = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 			// so camera.up is the orbit axis
-			const quat = new three__WEBPACK_IMPORTED_MODULE_0__/* .Quaternion */ .MxU().setFromUnitVectors( object.up, new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c( 0, 1, 0 ) );
+			const quat = new three__WEBPACK_IMPORTED_MODULE_0__/* .Quaternion */ .PTz().setFromUnitVectors( object.up, new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0( 0, 1, 0 ) );
 			const quatInverse = quat.clone().invert();
 
-			const lastPosition = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
-			const lastQuaternion = new three__WEBPACK_IMPORTED_MODULE_0__/* .Quaternion */ .MxU();
-			const lastTargetPosition = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+			const lastPosition = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
+			const lastQuaternion = new three__WEBPACK_IMPORTED_MODULE_0__/* .Quaternion */ .PTz();
+			const lastTargetPosition = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 			const twoPI = 2 * Math.PI;
 
@@ -53679,14 +53679,14 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 					} else if ( scope.object.isOrthographicCamera ) {
 
 						// adjust the ortho camera position based on zoom changes
-						const mouseBefore = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c( mouse.x, mouse.y, 0 );
+						const mouseBefore = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0( mouse.x, mouse.y, 0 );
 						mouseBefore.unproject( scope.object );
 
 						scope.object.zoom = Math.max( scope.minZoom, Math.min( scope.maxZoom, scope.object.zoom / scale ) );
 						scope.object.updateProjectionMatrix();
 						zoomChanged = true;
 
-						const mouseAfter = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c( mouse.x, mouse.y, 0 );
+						const mouseAfter = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0( mouse.x, mouse.y, 0 );
 						mouseAfter.unproject( scope.object );
 
 						scope.object.position.sub( mouseAfter ).add( mouseBefore );
@@ -53821,26 +53821,26 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 		const EPS = 0.000001;
 
 		// current position in spherical coordinates
-		const spherical = new three__WEBPACK_IMPORTED_MODULE_0__/* .Spherical */ .KO0();
-		const sphericalDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Spherical */ .KO0();
+		const spherical = new three__WEBPACK_IMPORTED_MODULE_0__/* .Spherical */ .YHV();
+		const sphericalDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Spherical */ .YHV();
 
 		let scale = 1;
-		const panOffset = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+		const panOffset = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
-		const rotateStart = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
-		const rotateEnd = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
-		const rotateDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
+		const rotateStart = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
+		const rotateEnd = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
+		const rotateDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
 
-		const panStart = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
-		const panEnd = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
-		const panDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
+		const panStart = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
+		const panEnd = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
+		const panDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
 
-		const dollyStart = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
-		const dollyEnd = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
-		const dollyDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
+		const dollyStart = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
+		const dollyEnd = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
+		const dollyDelta = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
 
-		const dollyDirection = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
-		const mouse = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
+		const dollyDirection = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
+		const mouse = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
 		let performCursorZoom = false;
 
 		const pointers = [];
@@ -53883,7 +53883,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 		const panLeft = function () {
 
-			const v = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+			const v = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 			return function panLeft( distance, objectMatrix ) {
 
@@ -53898,7 +53898,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 		const panUp = function () {
 
-			const v = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+			const v = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 			return function panUp( distance, objectMatrix ) {
 
@@ -53924,7 +53924,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 		// deltaX and deltaY are in pixels; right and down are positive
 		const pan = function () {
 
-			const offset = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .O4c();
+			const offset = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector3 */ .Pq0();
 
 			return function pan( deltaX, deltaY ) {
 
@@ -54468,7 +54468,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 			switch ( mouseAction ) {
 
-				case three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .a04.DOLLY:
+				case three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .kBv.DOLLY:
 
 					if ( scope.enableZoom === false ) return;
 
@@ -54478,7 +54478,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 					break;
 
-				case three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .a04.ROTATE:
+				case three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .kBv.ROTATE:
 
 					if ( event.ctrlKey || event.metaKey || event.shiftKey ) {
 
@@ -54500,7 +54500,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 					break;
 
-				case three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .a04.PAN:
+				case three__WEBPACK_IMPORTED_MODULE_0__/* .MOUSE */ .kBv.PAN:
 
 					if ( event.ctrlKey || event.metaKey || event.shiftKey ) {
 
@@ -54664,7 +54664,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 					switch ( scope.touches.ONE ) {
 
-						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .uSF.ROTATE:
+						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .wtR.ROTATE:
 
 							if ( scope.enableRotate === false ) return;
 
@@ -54674,7 +54674,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 							break;
 
-						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .uSF.PAN:
+						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .wtR.PAN:
 
 							if ( scope.enablePan === false ) return;
 
@@ -54696,7 +54696,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 					switch ( scope.touches.TWO ) {
 
-						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .uSF.DOLLY_PAN:
+						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .wtR.DOLLY_PAN:
 
 							if ( scope.enableZoom === false && scope.enablePan === false ) return;
 
@@ -54706,7 +54706,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 							break;
 
-						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .uSF.DOLLY_ROTATE:
+						case three__WEBPACK_IMPORTED_MODULE_0__/* .TOUCH */ .wtR.DOLLY_ROTATE:
 
 							if ( scope.enableZoom === false && scope.enableRotate === false ) return;
 
@@ -54829,7 +54829,7 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 			if ( position === undefined ) {
 
-				position = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .SA0();
+				position = new three__WEBPACK_IMPORTED_MODULE_0__/* .Vector2 */ .I9Y();
 				pointerPositions[ event.pointerId ] = position;
 
 			}
@@ -54869,6 +54869,6 @@ class OrbitControls extends three__WEBPACK_IMPORTED_MODULE_0__/* .EventDispatche
 
 
 
-/***/ })
+/***/ }
 
 }]);
