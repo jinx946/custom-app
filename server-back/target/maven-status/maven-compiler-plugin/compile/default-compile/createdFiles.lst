@@ -1,0 +1,12 @@
+com\custom\controller\UserController.class
+com\custom\controller\UserController$RegisterRequest.class
+com\custom\entity\ApiRequestLog.class
+com\custom\aspect\ApiRequestLogAspect.class
+com\custom\service\UserService.class
+com\custom\repository\UserRepository.class
+com\custom\service\ApiRequestLogService.class
+com\custom\config\JacksonConfig.class
+com\custom\controller\UserController$LoginRequest.class
+com\custom\entity\User.class
+com\custom\ServerBackApplication.class
+com\custom\repository\ApiRequestLogRepository.class

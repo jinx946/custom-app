@@ -14,7 +14,7 @@ export const routerListConfig = [
   { name: "md", path: "md" },
   { name: "test", path: "test" },
   { name: "element plus", path: "elementDemo" },
-  { name: "登录界面", path: "loginDemo" },
+  { name: "登录界面", path: "login" },
   { name: "AI聊天", path: "aiDemo" },
   { name: "数据转换", path: "transform" },
 ];

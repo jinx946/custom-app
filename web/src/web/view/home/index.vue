@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     首页
-
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
     <!-- <el-button
       v-for="(item, index) in routerList"
       :key="index"
@@ -12,20 +12,20 @@
   </div>
 </template>
 <script setup>
-import { ref, reactive, onMounted } from 'vue';
-import { useRouter, useRoute } from '_router/config.js';
+import { ref, reactive, onMounted } from "vue";
+import { useRouter, useRoute } from "_router/config.js";
 const router = useRouter();
 
 const routerList = reactive([
-  { name: 'threeDemo', path: 'three' },
-  { name: 'cesiumDemo', path: 'cesium' },
+  { name: "threeDemo", path: "three" },
+  { name: "cesiumDemo", path: "cesium" },
 ]);
 const count = ref(0);
 function increment() {
   count.value++;
 }
 function routerGo(path) {
-  console.log('path: ', path);
+  console.log("path: ", path);
   router.push({
     name: path,
   });

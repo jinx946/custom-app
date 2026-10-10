@@ -1,12 +1,16 @@
 ```
 user 123456 3306
+compeny  root 123
 电脑 服务 mysql服务是否启动
+启动  net start MySQL
+停止  net stop MySQL
 cmd 命令行
 启动  mysqld --console;   关闭  mysqladmin -uroot shutdown;
 登录  mysql -u root -p;
 显示数据库  show databases;
 创建数据库  create database appsql;
 创建表  create table appsql_user( id  INT NOT NULL AUTO_INCREMENT, user_name CHAR(100), name CHAR(100), paasword CHAR(50),infor VARCHAR(1000),level INT,PRIMARY KEY( id )) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+选择数据库  USE appsql;
 查看表  show tables; desc appsql_user(表名);
 删除表   DROP TABLE  TABLE_NAME(表名);
 

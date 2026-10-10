@@ -13,8 +13,8 @@ const devConfig = {
   mode: "development",
   devtool: "eval-cheap-module-source-map", //映射回源代码位置
   devServer: {
-    host: "localhost", // 启动服务器域名
-    port: "9527", // 启动服务器端口号
+    host: "127.0.0.1", // 启动服务器域名
+    port: "3000", // 启动服务器端口号
     open: false, // 是否自动打开浏览器
     static: {
       directory: path.join(__dirname, "..", PUBLIC_PATH),
@@ -25,6 +25,13 @@ const devConfig = {
     },
     // 新增代理配置
     proxy: {
+      "/api": {
+        target: "http://localhost:3600/api",
+        changeOrigin: true, // 允许跨域
+        pathRewrite: {
+          "^/api": "", // 将 /api 重写为空 /api
+        },
+      },
       "/ai-api/v1": {
         target: "http://114.119.174.47:3010/v1",
         changeOrigin: true, // 允许跨域
@@ -37,6 +44,7 @@ const devConfig = {
         },
       },
     },
+    historyApiFallback: true, // 解决路由刷新404问题
   }, //开发服务配置
 };
 
