@@ -10,3 +10,4 @@
 1. 2026-10-10 项目搭建完成、ai生成项目代码、接口调用成功，数据库写入成功
    日志记录模块正常运行，日志记录成功。
    增加vscode 热更新功能，实现代码修改后自动重启项目。 pom.xml 配置  spring-boot-devtools +  settings.json 配置  "java.autobuild.enabled": true
+   调试： Debugger for Java 插件 + F5 启动调试模式 进入
