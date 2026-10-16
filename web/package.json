@@ -40,6 +40,7 @@
     "echarts": "^5.5.1",
     "element-plus": "^2.4.2",
     "file-saver": "^2.0.5",
+    "monaco-editor": "^0.57.0",
     "pinia": "^2.1.7",
     "proj4": "^2.11.0",
     "socket.io": "^4.7.2",

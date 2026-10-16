@@ -17,4 +17,5 @@ export const routerListConfig = [
   { name: "登录界面", path: "login" },
   { name: "AI聊天", path: "aiDemo" },
   { name: "数据转换", path: "transform" },
+  { name: "代码编辑器", path: "monacoEditor" },
 ];
