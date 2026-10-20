@@ -33,8 +33,9 @@ const devConfig = {
         },
       },
       "/ai-api/v1": {
-        target: "http://114.119.174.47:3010/v1",
+        target: "https://futurefab-mind-gw.dev.futurefab.cn/v1",
         changeOrigin: true, // 允许跨域
+        secure: false,
         pathRewrite: {
           "^/ai-api/v1": "", // 将 /ai-api/v1 重写为空，因为 target 已经包含了 /v1
           // 如果目标地址是 http://114.119.174.47:3010 (没有/v1)，则不需要 pathRewrite 或改为 '^/ai-api/v1': '/v1'
